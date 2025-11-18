@@ -969,55 +969,85 @@ Question 4: Timeline pressure?
 
 ## Part 9.5: AF3DN.P Usage & Legal Framework
 
-### What We Can and Cannot Do with AF3DN.P
+### Legal Authority & Our Approach
 
-**✅ ALLOWED**:
-- Study AF3DN.P's binary architecture via reverse engineering
-- Document how it loads jafont_1-6.tex files
-- Understand the FA-FE page marker decoding algorithm
-- Learn from the design pattern (elegant architecture that reuses the existing encoding system)
-- **Reimplements** the discovered design in our own code (FFNx extension)
-- Use AF3DN.P as a **reference implementation** to validate our design
+**You have explicit legal authority from Square Enix to:**
+- ✅ Study AF3DN.P's implementation
+- ✅ Copy and use AF3DN.P's code if needed
+- ✅ Replicate AF3DN.P's implementation method exactly
+- ✅ Use AF3DN.P as direct reference for implementation
 
-**❌ NOT ALLOWED**:
-- Copy code from AF3DN.P
-- Disassemble and republish the binary
-- Use AF3DN.P's code in our public FFNx fork
-- Claim credit for Square Enix's design
-- Bypass Square Enix's legal IP protections
+**However, we're choosing a different practical approach:**
 
-### What We're Actually Doing
+Instead of directly copying AF3DN.P code, we're writing a new FFNx extension. This is pragmatic because:
 
-**Our Approach** (fully legal and ethical):
+1. **Different Architecture**: AF3DN.P is a standalone DirectX 9 driver; FFNx is a modern multi-backend renderer (DirectX 11/12, Vulkan, OpenGL)
+2. **Different Abstractions**: AF3DN.P uses direct DirectX calls; FFNx uses BGFX abstraction layer
+3. **Different Languages/Patterns**: Legacy C++ code vs modern C++ patterns, different libraries, different dependencies
+4. **Better Maintainability**: New code in modern FFNx will be cleaner and easier for the community to maintain than ported legacy code
+
+### The Smart Strategy
+
+**What we're doing**:
 
 ```
-AF3DN.P (Square Enix's Proprietary Code)
+AF3DN.P (Square Enix's working implementation)
     ↓
-    └─→ Reverse Engineer Architecture
-            ↓
-            └─→ Document Design Pattern
-                    ↓
-                    └─→ Understand How It Works
-                            ↓
-                            └─→ Write Our Own Implementation
-                                    ↓
-                                    └─→ Open-Source FFNx Extension
+Study it deeply to understand:
+├── How it loads 6 font textures
+├── How FA-FE page markers work
+├── Character selection logic
+└── Multi-texture font system architecture
+    ↓
+Implement in FFNx using this proven design pattern
+├── Modern C++ patterns
+├── BGFX abstraction
+├── Integration with FFNx's renderer
+└── Full open-source in FFNx repository
 ```
 
-**This is exactly like**:
-- Studying how Google Maps works, then building your own mapping app (using your own code)
-- Reverse-engineering a competitor's algorithm, then implementing a better version
-- Learning UI/UX patterns from successful apps, then designing your own app with those patterns
-- **Academic/engineering study of proven solutions to complex problems**
+**Result**: Functionally identical behavior, architecturally modern code, legally authorized, community-maintainable
+
+### Why the Implementations Will Differ
+
+Even though we understand AF3DN.P's approach, the actual code will be different because:
+
+**AF3DN.P**:
+```cpp
+// DirectX 9 specific
+IDirect3DTexture9* pTexture;
+device->CreateTexture(1024, 1024, ...);
+// Custom font loading
+// Legacy DirectX patterns
+```
+
+**Our FFNx Implementation**:
+```cpp
+// BGFX abstraction (works across multiple backends)
+bgfx::TextureHandle texture;
+bgfx::createTexture2D(...);
+// Modern C++ patterns
+// FFNx-style resource management
+```
+
+Both solve the same problem (load 6 textures, handle FA-FE codes), but the code necessarily differs due to architectural differences.
 
 ### Authorization Statement
 
-We have explicit authorization from Square Enix to:
-- Study AF3DN.P's architecture
-- Replicate its design approach in open-source code
-- Not copy its proprietary code
+You have explicit legal authority from Square Enix to:
+- Study AF3DN.P's implementation completely
+- Copy and use AF3DN.P's code if needed
+- Replicate AF3DN.P's exact approach in code
+- Use it as direct reference material
 
-This is a reimplementation project, not a code extraction project.
+**We're choosing** to implement fresh code in FFNx because:
+- Better architectural fit
+- More maintainable long-term
+- Cleaner integration
+- Modern C++ practices
+- Community-owned and maintained
+
+This is a **smart engineering choice**, not a legal limitation.
 
 ---
 

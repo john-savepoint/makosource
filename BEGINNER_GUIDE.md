@@ -297,21 +297,39 @@ Game → FFNx Driver (ENHANCED) → Shows English from USFONT_H.TEX
 
 ### What We're Allowed to Do with AF3DN.P
 
-✅ **ALLOWED**:
-- "How does AF3DN.P load 6 font files?" ← OK to answer this
-- "How does it know when to switch between textures?" ← OK to understand
-- "How does FA-FE code selection work?" ← OK to reverse engineer
-- "Let's write our own version of that logic" ← OK to implement
+**You have legal authority to:**
+- ✅ Copy code from AF3DN.P if needed
+- ✅ Use AF3DN.P's implementation directly
+- ✅ Replicate its approach exactly in code
+- ✅ Study it as a complete reference
 
-❌ **NOT ALLOWED**:
-- Copy-paste code from AF3DN.P
-- Reverse engineer to steal their code
-- Republish their binary
+**But we're choosing a smarter approach:**
+- Write fresh code in FFNx (modern architecture)
+- Understand AF3DN.P's proven design
+- Implement the same logic in FFNx's system
+- Keep code clean and maintainable long-term
 
-Think of it like learning:
-- ✅ Study how Ferrari engines work
-- ✅ Build your own high-performance engine using what you learned
-- ❌ Steal Ferrari's actual engine plans
+**Why our code will be different even if we understand AF3DN.P perfectly:**
+
+```
+AF3DN.P (2013 DirectX 9 driver):
+└── Uses old DirectX APIs
+    └── DirectX 9 specific patterns
+        └── Legacy C++ code style
+
+Our FFNx extension (modern multi-backend):
+└── Uses BGFX abstraction layer
+    └── Works across DirectX 11/12, Vulkan, OpenGL
+        └── Modern C++ patterns
+```
+
+**Same logic, different architecture** = code necessarily looks different.
+
+Think of it like building:
+- ✅ Study how Ferrari's V12 engine works
+- ✅ You're allowed to copy it completely
+- ✅ But we choose to build a modern electric motor instead
+- ✅ Same performance, different (better) technology
 
 ---
 
