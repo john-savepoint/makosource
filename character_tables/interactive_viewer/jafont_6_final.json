@@ -1,0 +1,2050 @@
+[
+  {
+    "texture": "jafont_6",
+    "index": 0,
+    "grid_x": 0,
+    "grid_y": 0,
+    "character": "孫",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 1,
+    "grid_x": 1,
+    "grid_y": 0,
+    "character": "継",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 2,
+    "grid_x": 2,
+    "grid_y": 0,
+    "character": "団",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 3,
+    "grid_x": 3,
+    "grid_y": 0,
+    "character": "給",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 4,
+    "grid_x": 4,
+    "grid_y": 0,
+    "character": "抗",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 5,
+    "grid_x": 5,
+    "grid_y": 0,
+    "character": "違",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 6,
+    "grid_x": 6,
+    "grid_y": 0,
+    "character": "提",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 7,
+    "grid_x": 7,
+    "grid_y": 0,
+    "character": "断",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 8,
+    "grid_x": 8,
+    "grid_y": 0,
+    "character": "島",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 9,
+    "grid_x": 9,
+    "grid_y": 0,
+    "character": "栄",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 10,
+    "grid_x": 10,
+    "grid_y": 0,
+    "character": "油",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 11,
+    "grid_x": 11,
+    "grid_y": 0,
+    "character": "就",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 12,
+    "grid_x": 12,
+    "grid_y": 0,
+    "character": "僕",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 13,
+    "grid_x": 13,
+    "grid_y": 0,
+    "character": "存",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 14,
+    "grid_x": 14,
+    "grid_y": 0,
+    "character": "企",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 15,
+    "grid_x": 15,
+    "grid_y": 0,
+    "character": "比",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 16,
+    "grid_x": 0,
+    "grid_y": 1,
+    "character": "浸",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 17,
+    "grid_x": 1,
+    "grid_y": 1,
+    "character": "非",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 18,
+    "grid_x": 2,
+    "grid_y": 1,
+    "character": "応",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 19,
+    "grid_x": 3,
+    "grid_y": 1,
+    "character": "細",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 20,
+    "grid_x": 4,
+    "grid_y": 1,
+    "character": "承",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 21,
+    "grid_x": 5,
+    "grid_y": 1,
+    "character": "編",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 22,
+    "grid_x": 6,
+    "grid_y": 1,
+    "character": "排",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 23,
+    "grid_x": 7,
+    "grid_y": 1,
+    "character": "努",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 24,
+    "grid_x": 8,
+    "grid_y": 1,
+    "character": "締",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 25,
+    "grid_x": 9,
+    "grid_y": 1,
+    "character": "談",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 26,
+    "grid_x": 10,
+    "grid_y": 1,
+    "character": "趣",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 27,
+    "grid_x": 11,
+    "grid_y": 1,
+    "character": "埋",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 28,
+    "grid_x": 12,
+    "grid_y": 1,
+    "character": "営",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 29,
+    "grid_x": 13,
+    "grid_y": 1,
+    "character": "文",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 30,
+    "grid_x": 14,
+    "grid_y": 1,
+    "character": "夏",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 31,
+    "grid_x": 15,
+    "grid_y": 1,
+    "character": "個",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 32,
+    "grid_x": 0,
+    "grid_y": 2,
+    "character": "益",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 33,
+    "grid_x": 1,
+    "grid_y": 2,
+    "character": "損",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 34,
+    "grid_x": 2,
+    "grid_y": 2,
+    "character": "額",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 35,
+    "grid_x": 3,
+    "grid_y": 2,
+    "character": "区",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 36,
+    "grid_x": 4,
+    "grid_y": 2,
+    "character": "寒",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 37,
+    "grid_x": 5,
+    "grid_y": 2,
+    "character": "簡",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 38,
+    "grid_x": 6,
+    "grid_y": 2,
+    "character": "遣",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 39,
+    "grid_x": 7,
+    "grid_y": 2,
+    "character": "例",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 40,
+    "grid_x": 8,
+    "grid_y": 2,
+    "character": "肉",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 41,
+    "grid_x": 9,
+    "grid_y": 2,
+    "character": "博",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 42,
+    "grid_x": 10,
+    "grid_y": 2,
+    "character": "幻",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 43,
+    "grid_x": 11,
+    "grid_y": 2,
+    "character": "量",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 44,
+    "grid_x": 12,
+    "grid_y": 2,
+    "character": "昔",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 45,
+    "grid_x": 13,
+    "grid_y": 2,
+    "character": "臓",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 46,
+    "grid_x": 14,
+    "grid_y": 2,
+    "character": "負",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 47,
+    "grid_x": 15,
+    "grid_y": 2,
+    "character": "討",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 48,
+    "grid_x": 0,
+    "grid_y": 3,
+    "character": "悔",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 49,
+    "grid_x": 1,
+    "grid_y": 3,
+    "character": "膨",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 50,
+    "grid_x": 2,
+    "grid_y": 3,
+    "character": "飲",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 51,
+    "grid_x": 3,
+    "grid_y": 3,
+    "character": "妄",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 52,
+    "grid_x": 4,
+    "grid_y": 3,
+    "character": "越",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 53,
+    "grid_x": 5,
+    "grid_y": 3,
+    "character": "憎",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 54,
+    "grid_x": 6,
+    "grid_y": 3,
+    "character": "増",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 55,
+    "grid_x": 7,
+    "grid_y": 3,
+    "character": "枚",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 56,
+    "grid_x": 8,
+    "grid_y": 3,
+    "character": "皆",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 57,
+    "grid_x": 9,
+    "grid_y": 3,
+    "character": "愚",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 58,
+    "grid_x": 10,
+    "grid_y": 3,
+    "character": "療",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 59,
+    "grid_x": 11,
+    "grid_y": 3,
+    "character": "庫",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 60,
+    "grid_x": 12,
+    "grid_y": 3,
+    "character": "涙",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 61,
+    "grid_x": 13,
+    "grid_y": 3,
+    "character": "照",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 62,
+    "grid_x": 14,
+    "grid_y": 3,
+    "character": "冗",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 63,
+    "grid_x": 15,
+    "grid_y": 3,
+    "character": "壇",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 64,
+    "grid_x": 0,
+    "grid_y": 4,
+    "character": "坂",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 65,
+    "grid_x": 1,
+    "grid_y": 4,
+    "character": "訳",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 66,
+    "grid_x": 2,
+    "grid_y": 4,
+    "character": "抱",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 67,
+    "grid_x": 3,
+    "grid_y": 4,
+    "character": "薄",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 68,
+    "grid_x": 4,
+    "grid_y": 4,
+    "character": "義",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 69,
+    "grid_x": 5,
+    "grid_y": 4,
+    "character": "騒",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 70,
+    "grid_x": 6,
+    "grid_y": 4,
+    "character": "奴",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 71,
+    "grid_x": 7,
+    "grid_y": 4,
+    "character": "丈",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 72,
+    "grid_x": 8,
+    "grid_y": 4,
+    "character": "捕",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 73,
+    "grid_x": 9,
+    "grid_y": 4,
+    "character": "被",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 74,
+    "grid_x": 10,
+    "grid_y": 4,
+    "character": "概",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 75,
+    "grid_x": 11,
+    "grid_y": 4,
+    "character": "招",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 76,
+    "grid_x": 12,
+    "grid_y": 4,
+    "character": "劣",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 77,
+    "grid_x": 13,
+    "grid_y": 4,
+    "character": "較",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 78,
+    "grid_x": 14,
+    "grid_y": 4,
+    "character": "析",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 79,
+    "grid_x": 15,
+    "grid_y": 4,
+    "character": "繁",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 80,
+    "grid_x": 0,
+    "grid_y": 5,
+    "character": "殖",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 81,
+    "grid_x": 1,
+    "grid_y": 5,
+    "character": "耐",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 82,
+    "grid_x": 2,
+    "grid_y": 5,
+    "character": "論",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 83,
+    "grid_x": 3,
+    "grid_y": 5,
+    "character": "貴",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 84,
+    "grid_x": 4,
+    "grid_y": 5,
+    "character": "称",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 85,
+    "grid_x": 5,
+    "grid_y": 5,
+    "character": "千",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 86,
+    "grid_x": 6,
+    "grid_y": 5,
+    "character": "歴",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 87,
+    "grid_x": 7,
+    "grid_y": 5,
+    "character": "史",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 88,
+    "grid_x": 8,
+    "grid_y": 5,
+    "character": "募",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 89,
+    "grid_x": 9,
+    "grid_y": 5,
+    "character": "容",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 90,
+    "grid_x": 10,
+    "grid_y": 5,
+    "character": "噂",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 91,
+    "grid_x": 11,
+    "grid_y": 5,
+    "character": "壱",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 92,
+    "grid_x": 12,
+    "grid_y": 5,
+    "character": "胞",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 93,
+    "grid_x": 13,
+    "grid_y": 5,
+    "character": "鳴",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 94,
+    "grid_x": 14,
+    "grid_y": 5,
+    "character": "表",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 95,
+    "grid_x": 15,
+    "grid_y": 5,
+    "character": "雑",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 96,
+    "grid_x": 0,
+    "grid_y": 6,
+    "character": "職",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 97,
+    "grid_x": 1,
+    "grid_y": 6,
+    "character": "妹",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 98,
+    "grid_x": 2,
+    "grid_y": 6,
+    "character": "氏",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 99,
+    "grid_x": 3,
+    "grid_y": 6,
+    "character": "踊",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 100,
+    "grid_x": 4,
+    "grid_y": 6,
+    "character": "停",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 101,
+    "grid_x": 5,
+    "grid_y": 6,
+    "character": "罪",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 102,
+    "grid_x": 6,
+    "grid_y": 6,
+    "character": "甘",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 103,
+    "grid_x": 7,
+    "grid_y": 6,
+    "character": "建",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 104,
+    "grid_x": 8,
+    "grid_y": 6,
+    "character": "焼",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 105,
+    "grid_x": 9,
+    "grid_y": 6,
+    "character": "払",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 106,
+    "grid_x": 10,
+    "grid_y": 6,
+    "character": "侵",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 107,
+    "grid_x": 11,
+    "grid_y": 6,
+    "character": "頃",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 108,
+    "grid_x": 12,
+    "grid_y": 6,
+    "character": "愛",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 109,
+    "grid_x": 13,
+    "grid_y": 6,
+    "character": "便",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 110,
+    "grid_x": 14,
+    "grid_y": 6,
+    "character": "田",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 111,
+    "grid_x": 15,
+    "grid_y": 6,
+    "character": "舎",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 112,
+    "grid_x": 0,
+    "grid_y": 7,
+    "character": "孤",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 113,
+    "grid_x": 1,
+    "grid_y": 7,
+    "character": "晩",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 114,
+    "grid_x": 2,
+    "grid_y": 7,
+    "character": "清",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 115,
+    "grid_x": 3,
+    "grid_y": 7,
+    "character": "際",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 116,
+    "grid_x": 4,
+    "grid_y": 7,
+    "character": "領",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 117,
+    "grid_x": 5,
+    "grid_y": 7,
+    "character": "評",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 118,
+    "grid_x": 6,
+    "grid_y": 7,
+    "character": "課",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 119,
+    "grid_x": 7,
+    "grid_y": 7,
+    "character": "勤",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 120,
+    "grid_x": 8,
+    "grid_y": 7,
+    "character": "謝",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 121,
+    "grid_x": 9,
+    "grid_y": 7,
+    "character": "才",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 122,
+    "grid_x": 10,
+    "grid_y": 7,
+    "character": "偉",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 123,
+    "grid_x": 11,
+    "grid_y": 7,
+    "character": "誤",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 124,
+    "grid_x": 12,
+    "grid_y": 7,
+    "character": "価",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 125,
+    "grid_x": 13,
+    "grid_y": 7,
+    "character": "欠",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 126,
+    "grid_x": 14,
+    "grid_y": 7,
+    "character": "寄",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 127,
+    "grid_x": 15,
+    "grid_y": 7,
+    "character": "忙",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 128,
+    "grid_x": 0,
+    "grid_y": 8,
+    "character": "従",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 129,
+    "grid_x": 1,
+    "grid_y": 8,
+    "character": "五",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 130,
+    "grid_x": 2,
+    "grid_y": 8,
+    "character": "送",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 131,
+    "grid_x": 3,
+    "grid_y": 8,
+    "character": "周",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 132,
+    "grid_x": 4,
+    "grid_y": 8,
+    "character": "頑",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 133,
+    "grid_x": 5,
+    "grid_y": 8,
+    "character": "労",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 134,
+    "grid_x": 6,
+    "grid_y": 8,
+    "character": "植",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 135,
+    "grid_x": 7,
+    "grid_y": 8,
+    "character": "施",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 136,
+    "grid_x": 8,
+    "grid_y": 8,
+    "character": "販",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 137,
+    "grid_x": 9,
+    "grid_y": 8,
+    "character": "台",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 138,
+    "grid_x": 10,
+    "grid_y": 8,
+    "character": "度",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 139,
+    "grid_x": 11,
+    "grid_y": 8,
+    "character": "嫌",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 140,
+    "grid_x": 12,
+    "grid_y": 8,
+    "character": "諸",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 141,
+    "grid_x": 13,
+    "grid_y": 8,
+    "character": "習",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 142,
+    "grid_x": 14,
+    "grid_y": 8,
+    "character": "緒",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 143,
+    "grid_x": 15,
+    "grid_y": 8,
+    "character": "誘",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 144,
+    "grid_x": 0,
+    "grid_y": 9,
+    "character": "仮",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 145,
+    "grid_x": 1,
+    "grid_y": 9,
+    "character": "借",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 146,
+    "grid_x": 2,
+    "grid_y": 9,
+    "character": "輩",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 147,
+    "grid_x": 3,
+    "grid_y": 9,
+    "character": "席",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 148,
+    "grid_x": 4,
+    "grid_y": 9,
+    "character": "戒",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 149,
+    "grid_x": 5,
+    "grid_y": 9,
+    "character": "弟",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 150,
+    "grid_x": 6,
+    "grid_y": 9,
+    "character": "珍",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 151,
+    "grid_x": 7,
+    "grid_y": 9,
+    "character": "酔",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 152,
+    "grid_x": 8,
+    "grid_y": 9,
+    "character": "試",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 153,
+    "grid_x": 9,
+    "grid_y": 9,
+    "character": "騎",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 154,
+    "grid_x": 10,
+    "grid_y": 9,
+    "character": "霜",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 155,
+    "grid_x": 11,
+    "grid_y": 9,
+    "character": "鉱",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 156,
+    "grid_x": 12,
+    "grid_y": 9,
+    "character": "裕",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 157,
+    "grid_x": 13,
+    "grid_y": 9,
+    "character": "票",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 158,
+    "grid_x": 14,
+    "grid_y": 9,
+    "character": "券",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 159,
+    "grid_x": 15,
+    "grid_y": 9,
+    "character": "専",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 160,
+    "grid_x": 0,
+    "grid_y": 10,
+    "character": "祖",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 161,
+    "grid_x": 1,
+    "grid_y": 10,
+    "character": "惰",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 162,
+    "grid_x": 2,
+    "grid_y": 10,
+    "character": "偶",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 163,
+    "grid_x": 3,
+    "grid_y": 10,
+    "character": "怠",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 164,
+    "grid_x": 4,
+    "grid_y": 10,
+    "character": "罰",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 165,
+    "grid_x": 5,
+    "grid_y": 10,
+    "character": "熟",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 166,
+    "grid_x": 6,
+    "grid_y": 10,
+    "character": "牲",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 167,
+    "grid_x": 7,
+    "grid_y": 10,
+    "character": "燃",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 168,
+    "grid_x": 8,
+    "grid_y": 10,
+    "character": "犠",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 169,
+    "grid_x": 9,
+    "grid_y": 10,
+    "character": "快",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 170,
+    "grid_x": 10,
+    "grid_y": 10,
+    "character": "劇",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 171,
+    "grid_x": 11,
+    "grid_y": 10,
+    "character": "拠",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 172,
+    "grid_x": 12,
+    "grid_y": 10,
+    "character": "厄",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 173,
+    "grid_x": 13,
+    "grid_y": 10,
+    "character": "抵",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 174,
+    "grid_x": 14,
+    "grid_y": 10,
+    "character": "適",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 175,
+    "grid_x": 15,
+    "grid_y": 10,
+    "character": "程",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 176,
+    "grid_x": 0,
+    "grid_y": 11,
+    "character": "繰",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 177,
+    "grid_x": 1,
+    "grid_y": 11,
+    "character": "腹",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 178,
+    "grid_x": 2,
+    "grid_y": 11,
+    "character": "橋",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 179,
+    "grid_x": 3,
+    "grid_y": 11,
+    "character": "白",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 180,
+    "grid_x": 4,
+    "grid_y": 11,
+    "character": "処",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 181,
+    "grid_x": 5,
+    "grid_y": 11,
+    "character": "匹",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 182,
+    "grid_x": 6,
+    "grid_y": 11,
+    "character": "杯",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 183,
+    "grid_x": 7,
+    "grid_y": 11,
+    "character": "暑",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 184,
+    "grid_x": 8,
+    "grid_y": 11,
+    "character": "坊",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 185,
+    "grid_x": 9,
+    "grid_y": 11,
+    "character": "週",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 186,
+    "grid_x": 10,
+    "grid_y": 11,
+    "character": "秀",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 187,
+    "grid_x": 11,
+    "grid_y": 11,
+    "character": "看",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 188,
+    "grid_x": 12,
+    "grid_y": 11,
+    "character": "軽",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 189,
+    "grid_x": 13,
+    "grid_y": 11,
+    "character": "幕",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 190,
+    "grid_x": 14,
+    "grid_y": 11,
+    "character": "和",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 191,
+    "grid_x": 15,
+    "grid_y": 11,
+    "character": "平",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 192,
+    "grid_x": 0,
+    "grid_y": 12,
+    "character": "王",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 193,
+    "grid_x": 1,
+    "grid_y": 12,
+    "character": "姫",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 194,
+    "grid_x": 2,
+    "grid_y": 12,
+    "character": "庭",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 195,
+    "grid_x": 3,
+    "grid_y": 12,
+    "character": "観",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 196,
+    "grid_x": 4,
+    "grid_y": 12,
+    "character": "航",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 197,
+    "grid_x": 5,
+    "grid_y": 12,
+    "character": "横",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 198,
+    "grid_x": 6,
+    "grid_y": 12,
+    "character": "帳",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 199,
+    "grid_x": 7,
+    "grid_y": 12,
+    "character": "丘",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 200,
+    "grid_x": 8,
+    "grid_y": 12,
+    "character": "亭",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 201,
+    "grid_x": 9,
+    "grid_y": 12,
+    "character": "財",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 202,
+    "grid_x": 10,
+    "grid_y": 12,
+    "character": "律",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 203,
+    "grid_x": 11,
+    "grid_y": 12,
+    "character": "布",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 204,
+    "grid_x": 12,
+    "grid_y": 12,
+    "character": "規",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 205,
+    "grid_x": 13,
+    "grid_y": 12,
+    "character": "謀",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 206,
+    "grid_x": 14,
+    "grid_y": 12,
+    "character": "積",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 207,
+    "grid_x": 15,
+    "grid_y": 12,
+    "character": "刻",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 208,
+    "grid_x": 0,
+    "grid_y": 13,
+    "character": "陥",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 209,
+    "grid_x": 1,
+    "grid_y": 13,
+    "character": "類",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 210,
+    "grid_x": 2,
+    "grid_y": 13,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 211,
+    "grid_x": 3,
+    "grid_y": 13,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 212,
+    "grid_x": 4,
+    "grid_y": 13,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 213,
+    "grid_x": 5,
+    "grid_y": 13,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 214,
+    "grid_x": 6,
+    "grid_y": 13,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 215,
+    "grid_x": 7,
+    "grid_y": 13,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 216,
+    "grid_x": 8,
+    "grid_y": 13,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 217,
+    "grid_x": 9,
+    "grid_y": 13,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 218,
+    "grid_x": 10,
+    "grid_y": 13,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 219,
+    "grid_x": 11,
+    "grid_y": 13,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 220,
+    "grid_x": 12,
+    "grid_y": 13,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 221,
+    "grid_x": 13,
+    "grid_y": 13,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 222,
+    "grid_x": 14,
+    "grid_y": 13,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 223,
+    "grid_x": 15,
+    "grid_y": 13,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 224,
+    "grid_x": 0,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 225,
+    "grid_x": 1,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 226,
+    "grid_x": 2,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 227,
+    "grid_x": 3,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 228,
+    "grid_x": 4,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 229,
+    "grid_x": 5,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 230,
+    "grid_x": 6,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 231,
+    "grid_x": 7,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 232,
+    "grid_x": 8,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 233,
+    "grid_x": 9,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 234,
+    "grid_x": 10,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 235,
+    "grid_x": 11,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 236,
+    "grid_x": 12,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 237,
+    "grid_x": 13,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 238,
+    "grid_x": 14,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 239,
+    "grid_x": 15,
+    "grid_y": 14,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 240,
+    "grid_x": 0,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 241,
+    "grid_x": 1,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 242,
+    "grid_x": 2,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 243,
+    "grid_x": 3,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 244,
+    "grid_x": 4,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 245,
+    "grid_x": 5,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 246,
+    "grid_x": 6,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 247,
+    "grid_x": 7,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 248,
+    "grid_x": 8,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 249,
+    "grid_x": 9,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 250,
+    "grid_x": 10,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 251,
+    "grid_x": 11,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 252,
+    "grid_x": 12,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 253,
+    "grid_x": 13,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 254,
+    "grid_x": 14,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  },
+  {
+    "texture": "jafont_6",
+    "index": 255,
+    "grid_x": 15,
+    "grid_y": 15,
+    "character": "",
+    "baseline": "mangaocr"
+  }
+]

@@ -1,0 +1,7682 @@
+{
+  "00": {
+    "character": "バ",
+    "confidence": 86.0,
+    "needs_review": false
+  },
+  "01": {
+    "character": "ば",
+    "confidence": 94.0,
+    "needs_review": false
+  },
+  "02": {
+    "character": "ビ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "03": {
+    "character": "び",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "04": {
+    "character": "ブ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "05": {
+    "character": "AN",
+    "confidence": 78.0,
+    "needs_review": false
+  },
+  "06": {
+    "character": "バ",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "07": {
+    "character": "だ",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "08": {
+    "character": "ボ",
+    "confidence": 36.0,
+    "needs_review": true
+  },
+  "09": {
+    "character": "ぼ",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "0A": {
+    "character": "ガ",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "0B": {
+    "character": "が",
+    "confidence": 95.0,
+    "needs_review": false
+  },
+  "0C": {
+    "character": "ギ",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "0D": {
+    "character": "さ",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "0E": {
+    "character": "グ",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "0F": {
+    "character": "で",
+    "confidence": 80.0,
+    "needs_review": false
+  },
+  "10": {
+    "character": "ゲ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "11": {
+    "character": "げ",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "12": {
+    "character": "ゴ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "13": {
+    "character": "ご",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "14": {
+    "character": "ザ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "15": {
+    "character": "ざ",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "16": {
+    "character": "ジ",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "17": {
+    "character": "じ",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "18": {
+    "character": "ズ",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "19": {
+    "character": "ず",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "1A": {
+    "character": "ゼ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "1B": {
+    "character": "ぜ",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "1C": {
+    "character": "ゾ",
+    "confidence": 56.0,
+    "needs_review": true
+  },
+  "1D": {
+    "character": "ぞ",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "1E": {
+    "character": "ダ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "1F": {
+    "character": "だ",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "20": {
+    "character": "ヂ",
+    "confidence": 75.0,
+    "needs_review": false
+  },
+  "21": {
+    "character": "ぢ",
+    "confidence": 77.0,
+    "needs_review": false
+  },
+  "22": {
+    "character": "ツ",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "23": {
+    "character": "づ",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "24": {
+    "character": "デ",
+    "confidence": 76.0,
+    "needs_review": false
+  },
+  "25": {
+    "character": "で",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "26": {
+    "character": "ド",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "27": {
+    "character": "ど",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "28": {
+    "character": "ヴ",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "29": {
+    "character": "バ",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "2A": {
+    "character": "ば",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "2B": {
+    "character": "ビ",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "2C": {
+    "character": "び",
+    "confidence": 82.0,
+    "needs_review": false
+  },
+  "2D": {
+    "character": "プ",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "2E": {
+    "character": "AN",
+    "confidence": 83.0,
+    "needs_review": false
+  },
+  "2F": {
+    "character": "NX",
+    "confidence": 78.0,
+    "needs_review": false
+  },
+  "30": {
+    "character": "X",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "31": {
+    "character": "ポ",
+    "confidence": 54.0,
+    "needs_review": true
+  },
+  "32": {
+    "character": "ぼ",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "33": {
+    "character": "%",
+    "confidence": 64.0,
+    "needs_review": true
+  },
+  "34": {
+    "character": "1",
+    "confidence": 66.0,
+    "needs_review": true
+  },
+  "35": {
+    "character": "の",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "36": {
+    "character": "3",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "37": {
+    "character": "4",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "38": {
+    "character": "つ",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "39": {
+    "character": "6",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "3A": {
+    "character": "7",
+    "confidence": 79.0,
+    "needs_review": false
+  },
+  "3B": {
+    "character": "<",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "3C": {
+    "character": "9",
+    "confidence": 63.0,
+    "needs_review": true
+  },
+  "3D": {
+    "character": "\\",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "3E": {
+    "character": "O",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "3F": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "40": {
+    "character": "人",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "41": {
+    "character": "は",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "42": {
+    "character": "ヒ",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "43": {
+    "character": "ひ",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "44": {
+    "character": "フ",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "45": {
+    "character": "/",
+    "confidence": 86.0,
+    "needs_review": false
+  },
+  "46": {
+    "character": "N",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "47": {
+    "character": "N",
+    "confidence": 83.0,
+    "needs_review": false
+  },
+  "48": {
+    "character": "小",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "49": {
+    "character": "は",
+    "confidence": 80.0,
+    "needs_review": false
+  },
+  "4A": {
+    "character": "カ",
+    "confidence": 41.0,
+    "needs_review": true
+  },
+  "4B": {
+    "character": "か",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "4C": {
+    "character": "キ",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "4D": {
+    "character": "さ",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "4E": {
+    "character": "ク",
+    "confidence": 83.0,
+    "needs_review": false
+  },
+  "4F": {
+    "character": "く",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "50": {
+    "character": "ケ",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "51": {
+    "character": "け",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "52": {
+    "character": "=)",
+    "confidence": 36.0,
+    "needs_review": true
+  },
+  "53": {
+    "character": "ー",
+    "confidence": 26.0,
+    "needs_review": true
+  },
+  "54": {
+    "character": "サ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "55": {
+    "character": "さ",
+    "confidence": 82.0,
+    "needs_review": false
+  },
+  "56": {
+    "character": "ン",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "57": {
+    "character": "し",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "58": {
+    "character": "4",
+    "confidence": 61.0,
+    "needs_review": true
+  },
+  "59": {
+    "character": "¢t",
+    "confidence": 22.0,
+    "needs_review": true
+  },
+  "5A": {
+    "character": "セ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "5B": {
+    "character": "せ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "5C": {
+    "character": "J",
+    "confidence": 65.0,
+    "needs_review": true
+  },
+  "5D": {
+    "character": "で",
+    "confidence": 65.0,
+    "needs_review": true
+  },
+  "5E": {
+    "character": "4",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "5F": {
+    "character": "た",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "60": {
+    "character": "ナ",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "61": {
+    "character": "ち",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "62": {
+    "character": "ツ",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "63": {
+    "character": "つ",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "64": {
+    "character": "テ",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "65": {
+    "character": "て",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "66": {
+    "character": "ト",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "67": {
+    "character": "と",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "68": {
+    "character": "「",
+    "confidence": 79.0,
+    "needs_review": false
+  },
+  "69": {
+    "character": "つう",
+    "confidence": 33.0,
+    "needs_review": true
+  },
+  "6A": {
+    "character": "ア",
+    "confidence": 52.0,
+    "needs_review": true
+  },
+  "6B": {
+    "character": "あ",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "6C": {
+    "character": "イ",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "6D": {
+    "character": "い",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "6E": {
+    "character": "+L",
+    "confidence": 48.0,
+    "needs_review": true
+  },
+  "6F": {
+    "character": "え",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "70": {
+    "character": "オ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "71": {
+    "character": "お",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "72": {
+    "character": "ナ",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "73": {
+    "character": "な",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "74": {
+    "character": "し",
+    "confidence": 75.0,
+    "needs_review": false
+  },
+  "75": {
+    "character": "に",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "76": {
+    "character": "メ",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "77": {
+    "character": "ぬ",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "78": {
+    "character": "ネ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "79": {
+    "character": "ね",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "7A": {
+    "character": "ノ",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "7B": {
+    "character": "の",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "7C": {
+    "character": "マ",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "7D": {
+    "character": "ま",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "7E": {
+    "character": "に",
+    "confidence": 67.0,
+    "needs_review": true
+  },
+  "7F": {
+    "character": "の",
+    "confidence": 78.0,
+    "needs_review": false
+  },
+  "80": {
+    "character": "ム",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "81": {
+    "character": "む",
+    "confidence": 83.0,
+    "needs_review": false
+  },
+  "82": {
+    "character": "メ",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "83": {
+    "character": "め",
+    "confidence": 82.0,
+    "needs_review": false
+  },
+  "84": {
+    "character": "E",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "85": {
+    "character": "も",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "86": {
+    "character": "フ",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "87": {
+    "character": "ら",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "88": {
+    "character": "リ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "89": {
+    "character": "ワ",
+    "confidence": 51.0,
+    "needs_review": true
+  },
+  "8A": {
+    "character": "ル",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "8B": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "8C": {
+    "character": "レ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "8D": {
+    "character": "れ",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "8E": {
+    "character": "CO",
+    "confidence": 42.0,
+    "needs_review": true
+  },
+  "8F": {
+    "character": "ろ",
+    "confidence": 82.0,
+    "needs_review": false
+  },
+  "90": {
+    "character": "ヤ",
+    "confidence": 86.0,
+    "needs_review": false
+  },
+  "91": {
+    "character": "や",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "92": {
+    "character": "上",
+    "confidence": 44.0,
+    "needs_review": true
+  },
+  "93": {
+    "character": "ゆ",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "94": {
+    "character": "ゴ",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "95": {
+    "character": "よ",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "96": {
+    "character": "yy,",
+    "confidence": 23.0,
+    "needs_review": true
+  },
+  "97": {
+    "character": "わ",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "98": {
+    "character": "ン",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "99": {
+    "character": "ん",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "9A": {
+    "character": "J",
+    "confidence": 58.0,
+    "needs_review": true
+  },
+  "9B": {
+    "character": "を",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "9C": {
+    "character": "ツ",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "9D": {
+    "character": "つ",
+    "confidence": 61.0,
+    "needs_review": true
+  },
+  "9E": {
+    "character": "ヤ",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "9F": {
+    "character": "や",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "A0": {
+    "character": "ユ",
+    "confidence": 59.0,
+    "needs_review": true
+  },
+  "A1": {
+    "character": "ゆ",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "A2": {
+    "character": "ゴ",
+    "confidence": 78.0,
+    "needs_review": false
+  },
+  "A3": {
+    "character": "よ",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "A4": {
+    "character": "ア",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "A5": {
+    "character": "D",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "A6": {
+    "character": "イ",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "A7": {
+    "character": "い",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "A8": {
+    "character": "ワ",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "A9": {
+    "character": "う",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "AA": {
+    "character": "+L",
+    "confidence": 17.0,
+    "needs_review": true
+  },
+  "AB": {
+    "character": "え",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "AC": {
+    "character": "オ",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "AD": {
+    "character": "お",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "AE": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "AF": {
+    "character": "?",
+    "confidence": 58.0,
+    "needs_review": true
+  },
+  "B0": {
+    "character": "『",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "B1": {
+    "character": "』",
+    "confidence": 73.0,
+    "needs_review": false
+  },
+  "B2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "B3": {
+    "character": "十",
+    "confidence": 69.0,
+    "needs_review": true
+  },
+  "B4": {
+    "character": "A",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "B5": {
+    "character": "Ss)",
+    "confidence": 20.0,
+    "needs_review": true
+  },
+  "B6": {
+    "character": "C",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "B7": {
+    "character": "D",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "B8": {
+    "character": "E",
+    "confidence": 83.0,
+    "needs_review": false
+  },
+  "B9": {
+    "character": "F",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "BA": {
+    "character": "G",
+    "confidence": 73.0,
+    "needs_review": false
+  },
+  "BB": {
+    "character": "H",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "BC": {
+    "character": "1",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "BD": {
+    "character": "J",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "BE": {
+    "character": "K",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "BF": {
+    "character": "L",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "C0": {
+    "character": "M",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "C1": {
+    "character": "N",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "C2": {
+    "character": "O",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "C3": {
+    "character": "p",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "C4": {
+    "character": "@",
+    "confidence": 82.0,
+    "needs_review": false
+  },
+  "C5": {
+    "character": "ド",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "C6": {
+    "character": "つ",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "C7": {
+    "character": "T",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "C8": {
+    "character": "U",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "C9": {
+    "character": "V",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "CA": {
+    "character": "W",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "CB": {
+    "character": "X",
+    "confidence": 76.0,
+    "needs_review": false
+  },
+  "CC": {
+    "character": "Y",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "CD": {
+    "character": "Z",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "CE": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "CF": {
+    "character": "ポ",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "D0": {
+    "character": "し",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "D1": {
+    "character": "od",
+    "confidence": 39.0,
+    "needs_review": true
+  },
+  "D2": {
+    "character": "の",
+    "confidence": 82.0,
+    "needs_review": false
+  },
+  "D3": {
+    "character": "20",
+    "confidence": 82.0,
+    "needs_review": false
+  },
+  "D4": {
+    "character": "ン",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "D5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "D6": {
+    "character": "S",
+    "confidence": 50.0,
+    "needs_review": true
+  },
+  "D7": {
+    "character": "【",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "D8": {
+    "character": "】",
+    "confidence": 59.0,
+    "needs_review": true
+  },
+  "D9": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "DA": {
+    "character": "ー",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "DB": {
+    "character": "2",
+    "confidence": 83.0,
+    "needs_review": false
+  },
+  "DC": {
+    "character": "6",
+    "confidence": 75.0,
+    "needs_review": false
+  },
+  "DD": {
+    "character": "[",
+    "confidence": 48.0,
+    "needs_review": true
+  },
+  "DE": {
+    "character": "」",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "DF": {
+    "character": "(",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "E0": {
+    "character": ")",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "E1": {
+    "character": "—",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "E2": {
+    "character": "—",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "E3": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "E4": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "E5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "E6": {
+    "character": "4|",
+    "confidence": 77.0,
+    "needs_review": false
+  },
+  "E7": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "E8": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "E9": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "EA": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "EB": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "EC": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "ED": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "EE": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "EF": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "F0": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "F1": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "F2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "F3": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "F4": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "F5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "F6": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "F7": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "F8": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "F9": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_00": {
+    "character": "必",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FA_01": {
+    "character": "徹",
+    "confidence": 16.0,
+    "needs_review": true
+  },
+  "FA_02": {
+    "character": "技",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FA_03": {
+    "character": "地",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_04": {
+    "character": "舌",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_05": {
+    "character": "ル",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_06": {
+    "character": "欠",
+    "confidence": 19.0,
+    "needs_review": true
+  },
+  "FA_07": {
+    "character": "裁",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_08": {
+    "character": "雷",
+    "confidence": 44.0,
+    "needs_review": true
+  },
+  "FA_09": {
+    "character": "大",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FA_0A": {
+    "character": "AX",
+    "confidence": 45.0,
+    "needs_review": true
+  },
+  "FA_0B": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_0C": {
+    "character": "大",
+    "confidence": 38.0,
+    "needs_review": true
+  },
+  "FA_0D": {
+    "character": "員",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_0E": {
+    "character": "村",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_0F": {
+    "character": "海",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_10": {
+    "character": "衝",
+    "confidence": 16.0,
+    "needs_review": true
+  },
+  "FA_11": {
+    "character": "聖",
+    "confidence": 43.0,
+    "needs_review": true
+  },
+  "FA_12": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_13": {
+    "character": "判",
+    "confidence": 78.0,
+    "needs_review": false
+  },
+  "FA_14": {
+    "character": "転",
+    "confidence": 52.0,
+    "needs_review": true
+  },
+  "FA_15": {
+    "character": "生",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FA_16": {
+    "character": "必",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_17": {
+    "character": "暗",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FA_18": {
+    "character": "の",
+    "confidence": 75.0,
+    "needs_review": false
+  },
+  "FA_19": {
+    "character": "釜",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "FA_1A": {
+    "character": "大",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FA_1B": {
+    "character": "朋",
+    "confidence": 83.0,
+    "needs_review": false
+  },
+  "FA_1C": {
+    "character": "ビー",
+    "confidence": 48.0,
+    "needs_review": true
+  },
+  "FA_1D": {
+    "character": "寄",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_1E": {
+    "character": "式",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FA_1F": {
+    "character": "目",
+    "confidence": 59.0,
+    "needs_review": true
+  },
+  "FA_20": {
+    "character": "爆",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FA_21": {
+    "character": "使",
+    "confidence": 83.0,
+    "needs_review": false
+  },
+  "FA_22": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_23": {
+    "character": "身",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_24": {
+    "character": "三",
+    "confidence": 53.0,
+    "needs_review": true
+  },
+  "FA_25": {
+    "character": "選",
+    "confidence": 67.0,
+    "needs_review": true
+  },
+  "FA_26": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_27": {
+    "character": "宇",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_28": {
+    "character": "石",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_29": {
+    "character": "凶",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "FA_2A": {
+    "character": "破",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FA_2B": {
+    "character": "眺",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FA_2C": {
+    "character": "撃",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_2D": {
+    "character": "画",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_2E": {
+    "character": "請",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_2F": {
+    "character": "晴",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FA_30": {
+    "character": "点",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FA_31": {
+    "character": "晴",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "FA_32": {
+    "character": "起",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_33": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_34": {
+    "character": "武",
+    "confidence": 67.0,
+    "needs_review": true
+  },
+  "FA_35": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_36": {
+    "character": "計",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_37": {
+    "character": "癒",
+    "confidence": 17.0,
+    "needs_review": true
+  },
+  "FA_38": {
+    "character": "風",
+    "confidence": 62.0,
+    "needs_review": true
+  },
+  "FA_39": {
+    "character": "牙",
+    "confidence": 57.0,
+    "needs_review": true
+  },
+  "FA_3A": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_3B": {
+    "character": "3|",
+    "confidence": 60.0,
+    "needs_review": true
+  },
+  "FA_3C": {
+    "character": "EI",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_3D": {
+    "character": "吹",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_3E": {
+    "character": "徐",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_3F": {
+    "character": "年",
+    "confidence": 69.0,
+    "needs_review": true
+  },
+  "FA_40": {
+    "character": "守",
+    "confidence": 72.0,
+    "needs_review": false
+  },
+  "FA_41": {
+    "character": "護",
+    "confidence": 63.0,
+    "needs_review": true
+  },
+  "FA_42": {
+    "character": "Gh",
+    "confidence": 29.0,
+    "needs_review": true
+  },
+  "FA_43": {
+    "character": "設",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_44": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_45": {
+    "character": "福",
+    "confidence": 19.0,
+    "needs_review": true
+  },
+  "FA_46": {
+    "character": "音",
+    "confidence": 75.0,
+    "needs_review": false
+  },
+  "FA_47": {
+    "character": "党",
+    "confidence": 35.0,
+    "needs_review": true
+  },
+  "FA_48": {
+    "character": "打",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FA_49": {
+    "character": "水",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_4A": {
+    "character": "血",
+    "confidence": 54.0,
+    "needs_review": true
+  },
+  "FA_4B": {
+    "character": "忠",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_4C": {
+    "character": "和",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_4D": {
+    "character": "較",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_4E": {
+    "character": "合",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_4F": {
+    "character": "体",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_50": {
+    "character": "疾",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_51": {
+    "character": "迅",
+    "confidence": 31.0,
+    "needs_review": true
+  },
+  "FA_52": {
+    "character": "明",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_53": {
+    "character": "見",
+    "confidence": 12.0,
+    "needs_review": true
+  },
+  "FA_54": {
+    "character": "止",
+    "confidence": 47.0,
+    "needs_review": true
+  },
+  "FA_55": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_56": {
+    "character": "山",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FA_57": {
+    "character": "傾",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_58": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_59": {
+    "character": "皿",
+    "confidence": 36.0,
+    "needs_review": true
+  },
+  "FA_5A": {
+    "character": "2",
+    "confidence": 53.0,
+    "needs_review": true
+  },
+  "FA_5B": {
+    "character": "避",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_5C": {
+    "character": "袖",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FA_5D": {
+    "character": "MM",
+    "confidence": 21.0,
+    "needs_review": true
+  },
+  "FA_5E": {
+    "character": "触",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_5F": {
+    "character": "者",
+    "confidence": 94.0,
+    "needs_review": false
+  },
+  "FA_60": {
+    "character": "滅",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_61": {
+    "character": "条",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_62": {
+    "character": "維",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_63": {
+    "character": "万",
+    "confidence": 95.0,
+    "needs_review": false
+  },
+  "FA_64": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_65": {
+    "character": "装",
+    "confidence": 58.0,
+    "needs_review": true
+  },
+  "FA_66": {
+    "character": "備",
+    "confidence": 72.0,
+    "needs_review": false
+  },
+  "FA_67": {
+    "character": "ぞ",
+    "confidence": 19.0,
+    "needs_review": true
+  },
+  "FA_68": {
+    "character": "攻",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_69": {
+    "character": "魔",
+    "confidence": 65.0,
+    "needs_review": true
+  },
+  "FA_6A": {
+    "character": "法",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_6B": {
+    "character": "百",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_6C": {
+    "character": "喚",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FA_6D": {
+    "character": "人",
+    "confidence": 37.0,
+    "needs_review": true
+  },
+  "FA_6E": {
+    "character": "呼",
+    "confidence": 39.0,
+    "needs_review": true
+  },
+  "FA_6F": {
+    "character": "出",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_70": {
+    "character": "持",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_71": {
+    "character": "相",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FA_72": {
+    "character": "手",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FA_73": {
+    "character": "物",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_74": {
+    "character": "上",
+    "confidence": 27.0,
+    "needs_review": true
+  },
+  "FA_75": {
+    "character": "に",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "FA_76": {
+    "character": "9",
+    "confidence": 11.0,
+    "needs_review": true
+  },
+  "FA_77": {
+    "character": "投",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FA_78": {
+    "character": "付",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FA_79": {
+    "character": "呈",
+    "confidence": 19.0,
+    "needs_review": true
+  },
+  "FA_7A": {
+    "character": "変",
+    "confidence": 22.0,
+    "needs_review": true
+  },
+  "FA_7B": {
+    "character": "化",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FA_7C": {
+    "character": "片",
+    "confidence": 76.0,
+    "needs_review": false
+  },
+  "FA_7D": {
+    "character": "方",
+    "confidence": 95.0,
+    "needs_review": false
+  },
+  "FA_7E": {
+    "character": "行",
+    "confidence": 39.0,
+    "needs_review": true
+  },
+  "FA_7F": {
+    "character": "決",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_80": {
+    "character": "定",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_81": {
+    "character": "分",
+    "confidence": 61.0,
+    "needs_review": true
+  },
+  "FA_82": {
+    "character": "邊",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_83": {
+    "character": "前",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FA_84": {
+    "character": "具",
+    "confidence": 34.0,
+    "needs_review": true
+  },
+  "FA_85": {
+    "character": "似",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FA_86": {
+    "character": "光",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_87": {
+    "character": "列",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FA_88": {
+    "character": "後",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "FA_89": {
+    "character": "位",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FA_8A": {
+    "character": "中",
+    "confidence": 73.0,
+    "needs_review": false
+  },
+  "FA_8B": {
+    "character": "防",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_8C": {
+    "character": "御",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "FA_8D": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_8E": {
+    "character": "回",
+    "confidence": 94.0,
+    "needs_review": false
+  },
+  "FA_8F": {
+    "character": "連",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_90": {
+    "character": "続",
+    "confidence": 62.0,
+    "needs_review": true
+  },
+  "FA_91": {
+    "character": "英",
+    "confidence": 51.0,
+    "needs_review": true
+  },
+  "FA_92": {
+    "character": "へ",
+    "confidence": 83.0,
+    "needs_review": false
+  },
+  "FA_93": {
+    "character": "冊",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_94": {
+    "character": "効",
+    "confidence": 18.0,
+    "needs_review": true
+  },
+  "FA_95": {
+    "character": "=",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FA_96": {
+    "character": "尾",
+    "confidence": 76.0,
+    "needs_review": false
+  },
+  "FA_97": {
+    "character": "毒",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FA_98": {
+    "character": "消",
+    "confidence": 53.0,
+    "needs_review": true
+  },
+  "FA_99": {
+    "character": "へ",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "FA_9A": {
+    "character": "ま",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_9B": {
+    "character": "の",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "FA_9C": {
+    "character": "女",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_9D": {
+    "character": "興",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_9E": {
+    "character": "に",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "FA_9F": {
+    "character": "剤",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "FA_A0": {
+    "character": "5",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FA_A1": {
+    "character": "本",
+    "confidence": 23.0,
+    "needs_review": true
+  },
+  "FA_A2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_A3": {
+    "character": "呆",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_A4": {
+    "character": "英",
+    "confidence": 67.0,
+    "needs_review": true
+  },
+  "FA_A5": {
+    "character": "雄",
+    "confidence": 38.0,
+    "needs_review": true
+  },
+  "FA_A6": {
+    "character": "模",
+    "confidence": 22.0,
+    "needs_review": true
+  },
+  "FA_A7": {
+    "character": "旨",
+    "confidence": 25.0,
+    "needs_review": true
+  },
+  "FA_A8": {
+    "character": "石",
+    "confidence": 75.0,
+    "needs_review": false
+  },
+  "FA_A9": {
+    "character": "腕",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FA_AA": {
+    "character": "砂",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_AB": {
+    "character": "時",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FA_AC": {
+    "character": "計",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FA_AD": {
+    "character": "才",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_AE": {
+    "character": "9",
+    "confidence": 66.0,
+    "needs_review": true
+  },
+  "FA_AF": {
+    "character": "惑",
+    "confidence": 25.0,
+    "needs_review": true
+  },
+  "FA_B0": {
+    "character": "卓",
+    "confidence": 34.0,
+    "needs_review": true
+  },
+  "FA_B1": {
+    "character": "オブ",
+    "confidence": 66.0,
+    "needs_review": true
+  },
+  "FA_B2": {
+    "character": "南",
+    "confidence": 79.0,
+    "needs_review": false
+  },
+  "FA_B3": {
+    "character": "杭",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_B4": {
+    "character": "准",
+    "confidence": 15.0,
+    "needs_review": true
+  },
+  "FA_B5": {
+    "character": "%",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_B6": {
+    "character": "日",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FA_B7": {
+    "character": "電",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_B8": {
+    "character": "鳥",
+    "confidence": 56.0,
+    "needs_review": true
+  },
+  "FA_B9": {
+    "character": "角",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FA_BA": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_BB": {
+    "character": "寺",
+    "confidence": 65.0,
+    "needs_review": true
+  },
+  "FA_BC": {
+    "character": "中",
+    "confidence": 48.0,
+    "needs_review": true
+  },
+  "FA_BD": {
+    "character": "爪",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_BE": {
+    "character": "光",
+    "confidence": 56.0,
+    "needs_review": true
+  },
+  "FA_BF": {
+    "character": "月",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FA_C0": {
+    "character": "反",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FA_C1": {
+    "character": "三",
+    "confidence": 47.0,
+    "needs_review": true
+  },
+  "FA_C2": {
+    "character": "目",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FA_C3": {
+    "character": "人",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "FA_C4": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_C5": {
+    "character": "力",
+    "confidence": 86.0,
+    "needs_review": false
+  },
+  "FA_C6": {
+    "character": "球",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FA_C7": {
+    "character": "空",
+    "confidence": 53.0,
+    "needs_review": true
+  },
+  "FA_C8": {
+    "character": "巡",
+    "confidence": 40.0,
+    "needs_review": true
+  },
+  "FA_C9": {
+    "character": "まま?",
+    "confidence": 67.0,
+    "needs_review": true
+  },
+  "FA_CA": {
+    "character": "来",
+    "confidence": 56.0,
+    "needs_review": true
+  },
+  "FA_CB": {
+    "character": "実",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_CC": {
+    "character": "兵",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FA_CD": {
+    "character": "ミミ",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FA_CE": {
+    "character": "毛",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FA_CF": {
+    "character": "2",
+    "confidence": 82.0,
+    "needs_review": false
+  },
+  "FA_D0": {
+    "character": "色",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FA_D1": {
+    "character": "受",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_D2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_D3": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_D4": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_D5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_D6": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_D7": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_D8": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_D9": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_DA": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_DB": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_DC": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_DD": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_DE": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_DF": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_E0": {
+    "character": "[",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FA_E1": {
+    "character": "」",
+    "confidence": 45.0,
+    "needs_review": true
+  },
+  "FA_E2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_E3": {
+    "character": "2",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FA_E4": {
+    "character": "1",
+    "confidence": 56.0,
+    "needs_review": true
+  },
+  "FA_E5": {
+    "character": "ギ",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FA_E6": {
+    "character": "2",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "FA_E7": {
+    "character": "/",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FA_E8": {
+    "character": "の",
+    "confidence": 22.0,
+    "needs_review": true
+  },
+  "FA_E9": {
+    "character": "@",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "FA_EA": {
+    "character": "ーーーーーーー",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FA_EB": {
+    "character": "1",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FA_EC": {
+    "character": "を",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FA_ED": {
+    "character": "\\",
+    "confidence": 53.0,
+    "needs_review": true
+  },
+  "FA_EE": {
+    "character": "渓",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "FA_EF": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_F0": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_F1": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_F2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_F3": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_F4": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_F5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_F6": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_F7": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_F8": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_F9": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_FA": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_FB": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_FC": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_FD": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_FE": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FA_FF": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_00": {
+    "character": "安",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FB_01": {
+    "character": "所",
+    "confidence": 20.0,
+    "needs_review": true
+  },
+  "FB_02": {
+    "character": "花",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_03": {
+    "character": "会",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "FB_04": {
+    "character": "具",
+    "confidence": 78.0,
+    "needs_review": false
+  },
+  "FB_05": {
+    "character": "蜂",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FB_06": {
+    "character": "密",
+    "confidence": 61.0,
+    "needs_review": true
+  },
+  "FB_07": {
+    "character": "館",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "FB_08": {
+    "character": "下",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FB_09": {
+    "character": "三",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FB_0A": {
+    "character": "人",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "FB_0B": {
+    "character": "フク",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_0C": {
+    "character": "不",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_0D": {
+    "character": "子",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FB_0E": {
+    "character": "供",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_0F": {
+    "character": "屋",
+    "confidence": 50.0,
+    "needs_review": true
+  },
+  "FB_10": {
+    "character": "商",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_11": {
+    "character": "ロロ",
+    "confidence": 53.0,
+    "needs_review": true
+  },
+  "FB_12": {
+    "character": "京",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_13": {
+    "character": "交",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FB_14": {
+    "character": "換",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FB_15": {
+    "character": "階",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_16": {
+    "character": "模",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FB_17": {
+    "character": "弄",
+    "confidence": 50.0,
+    "needs_review": true
+  },
+  "FB_18": {
+    "character": "部",
+    "confidence": 61.0,
+    "needs_review": true
+  },
+  "FB_19": {
+    "character": "離",
+    "confidence": 54.0,
+    "needs_review": true
+  },
+  "FB_1A": {
+    "character": "場",
+    "confidence": 22.0,
+    "needs_review": true
+  },
+  "FB_1B": {
+    "character": "所",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FB_1C": {
+    "character": "仲",
+    "confidence": 63.0,
+    "needs_review": true
+  },
+  "FB_1D": {
+    "character": "韻",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_1E": {
+    "character": "11",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_1F": {
+    "character": "抽",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_20": {
+    "character": "陣",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_21": {
+    "character": "殿",
+    "confidence": 66.0,
+    "needs_review": true
+  },
+  "FB_22": {
+    "character": "様",
+    "confidence": 72.0,
+    "needs_review": false
+  },
+  "FB_23": {
+    "character": "秘",
+    "confidence": 76.0,
+    "needs_review": false
+  },
+  "FB_24": {
+    "character": "水",
+    "confidence": 61.0,
+    "needs_review": true
+  },
+  "FB_25": {
+    "character": "河",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_26": {
+    "character": "図",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FB_27": {
+    "character": "何",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_28": {
+    "character": "材",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FB_29": {
+    "character": "符",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_2A": {
+    "character": "雪",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "FB_2B": {
+    "character": "上",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FB_2C": {
+    "character": "進",
+    "confidence": 42.0,
+    "needs_review": true
+  },
+  "FB_2D": {
+    "character": "事",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_2E": {
+    "character": "ご",
+    "confidence": 59.0,
+    "needs_review": true
+  },
+  "FB_2F": {
+    "character": "代",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_30": {
+    "character": "種",
+    "confidence": 44.0,
+    "needs_review": true
+  },
+  "FB_31": {
+    "character": "3",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_32": {
+    "character": "娘",
+    "confidence": 33.0,
+    "needs_review": true
+  },
+  "FB_33": {
+    "character": "紙",
+    "confidence": 60.0,
+    "needs_review": true
+  },
+  "FB_34": {
+    "character": "町",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FB_35": {
+    "character": "住",
+    "confidence": 12.0,
+    "needs_review": true
+  },
+  "FB_36": {
+    "character": "ES",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_37": {
+    "character": "眠",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_38": {
+    "character": "><",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_39": {
+    "character": "最",
+    "confidence": 10.0,
+    "needs_review": true
+  },
+  "FB_3A": {
+    "character": "初",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "FB_3B": {
+    "character": "村",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_3C": {
+    "character": "十",
+    "confidence": 75.0,
+    "needs_review": false
+  },
+  "FB_3D": {
+    "character": "]",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_3E": {
+    "character": "陸",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FB_3F": {
+    "character": "古",
+    "confidence": 61.0,
+    "needs_review": true
+  },
+  "FB_40": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_41": {
+    "character": "議",
+    "confidence": 25.0,
+    "needs_review": true
+  },
+  "FB_42": {
+    "character": "雲",
+    "confidence": 40.0,
+    "needs_review": true
+  },
+  "FB_43": {
+    "character": "車",
+    "confidence": 4.0,
+    "needs_review": true
+  },
+  "FB_44": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_45": {
+    "character": "吊",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_46": {
+    "character": "通",
+    "confidence": 20.0,
+    "needs_review": true
+  },
+  "FB_47": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_48": {
+    "character": "父",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "FB_49": {
+    "character": "蛇",
+    "confidence": 12.0,
+    "needs_review": true
+  },
+  "FB_4A": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_4B": {
+    "character": "表",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_4C": {
+    "character": "優",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FB_4D": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_4E": {
+    "character": "埋",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_4F": {
+    "character": "十",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FB_50": {
+    "character": "字",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FB_51": {
+    "character": "明",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_52": {
+    "character": "車",
+    "confidence": 55.0,
+    "needs_review": true
+  },
+  "FB_53": {
+    "character": "円",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FB_54": {
+    "character": "還",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_55": {
+    "character": "=",
+    "confidence": 28.0,
+    "needs_review": true
+  },
+  "FB_56": {
+    "character": "折",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FB_57": {
+    "character": "鈴",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_58": {
+    "character": "倶",
+    "confidence": 32.0,
+    "needs_review": true
+  },
+  "FB_59": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_5A": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_5B": {
+    "character": "見",
+    "confidence": 40.0,
+    "needs_review": true
+  },
+  "FB_5C": {
+    "character": "ウ",
+    "confidence": 41.0,
+    "needs_review": true
+  },
+  "FB_5D": {
+    "character": "dn4",
+    "confidence": 8.0,
+    "needs_review": true
+  },
+  "FB_5E": {
+    "character": "玉",
+    "confidence": 34.0,
+    "needs_review": true
+  },
+  "FB_5F": {
+    "character": "止",
+    "confidence": 73.0,
+    "needs_review": false
+  },
+  "FB_60": {
+    "character": "示",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_61": {
+    "character": "時",
+    "confidence": 3.0,
+    "needs_review": true
+  },
+  "FB_62": {
+    "character": "皿",
+    "confidence": 82.0,
+    "needs_review": false
+  },
+  "FB_63": {
+    "character": "人",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_64": {
+    "character": "属",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_65": {
+    "character": "性",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FB_66": {
+    "character": "吸",
+    "confidence": 35.0,
+    "needs_review": true
+  },
+  "FB_67": {
+    "character": "収",
+    "confidence": 15.0,
+    "needs_review": true
+  },
+  "FB_68": {
+    "character": "半",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_69": {
+    "character": "洲",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_6A": {
+    "character": "土",
+    "confidence": 30.0,
+    "needs_review": true
+  },
+  "FB_6B": {
+    "character": "合",
+    "confidence": 27.0,
+    "needs_review": true
+  },
+  "FB_6C": {
+    "character": "4",
+    "confidence": 29.0,
+    "needs_review": true
+  },
+  "FB_6D": {
+    "character": "状",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_6E": {
+    "character": "片",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_6F": {
+    "character": "繧",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_70": {
+    "character": "間",
+    "confidence": 75.0,
+    "needs_review": false
+  },
+  "FB_71": {
+    "character": "HH",
+    "confidence": 35.0,
+    "needs_review": true
+  },
+  "FB_72": {
+    "character": "石",
+    "confidence": 66.0,
+    "needs_review": true
+  },
+  "FB_73": {
+    "character": "術",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_74": {
+    "character": "々",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_75": {
+    "character": "的",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FB_76": {
+    "character": "指",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FB_77": {
+    "character": "泥",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "FB_78": {
+    "character": "呪",
+    "confidence": 20.0,
+    "needs_review": true
+  },
+  "FB_79": {
+    "character": "団",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_7A": {
+    "character": "尋",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_7B": {
+    "character": "歩",
+    "confidence": 63.0,
+    "needs_review": true
+  },
+  "FB_7C": {
+    "character": "復",
+    "confidence": 34.0,
+    "needs_review": true
+  },
+  "FB_7D": {
+    "character": "次",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FB_7E": {
+    "character": "小",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FB_7F": {
+    "character": "治",
+    "confidence": 59.0,
+    "needs_review": true
+  },
+  "FB_80": {
+    "character": "理",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FB_81": {
+    "character": "同",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FB_82": {
+    "character": "束",
+    "confidence": 56.0,
+    "needs_review": true
+  },
+  "FB_83": {
+    "character": "遅",
+    "confidence": 12.0,
+    "needs_review": true
+  },
+  "FB_84": {
+    "character": "光",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_85": {
+    "character": "去",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FB_86": {
+    "character": "=",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FB_87": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_88": {
+    "character": "味",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FB_89": {
+    "character": "沈",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FB_8A": {
+    "character": "人",
+    "confidence": 33.0,
+    "needs_review": true
+  },
+  "FB_8B": {
+    "character": "逐",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_8C": {
+    "character": "倍",
+    "confidence": 86.0,
+    "needs_review": false
+  },
+  "FB_8D": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_8E": {
+    "character": "瀬",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_8F": {
+    "character": "HU",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FB_90": {
+    "character": "返",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "FB_91": {
+    "character": "人",
+    "confidence": 95.0,
+    "needs_review": false
+  },
+  "FB_92": {
+    "character": "今",
+    "confidence": 56.0,
+    "needs_review": true
+  },
+  "FB_93": {
+    "character": "差",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_94": {
+    "character": "誰",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "FB_95": {
+    "character": "当",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FB_96": {
+    "character": "払",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "FB_97": {
+    "character": "は",
+    "confidence": 54.0,
+    "needs_review": true
+  },
+  "FB_98": {
+    "character": "飛",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_99": {
+    "character": "以",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FB_9A": {
+    "character": "外",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_9B": {
+    "character": "禁",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "FB_9C": {
+    "character": "台",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_9D": {
+    "character": "振",
+    "confidence": 50.0,
+    "needs_review": true
+  },
+  "FB_9E": {
+    "character": "三",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_9F": {
+    "character": "中",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FB_A0": {
+    "character": "旋",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FB_A1": {
+    "character": "津",
+    "confidence": 53.0,
+    "needs_review": true
+  },
+  "FB_A2": {
+    "character": "波",
+    "confidence": 56.0,
+    "needs_review": true
+  },
+  "FB_A3": {
+    "character": "育",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FB_A4": {
+    "character": "機",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_A5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_A6": {
+    "character": "(|",
+    "confidence": 34.0,
+    "needs_review": true
+  },
+  "FB_A7": {
+    "character": "ル",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_A8": {
+    "character": "新",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FB_A9": {
+    "character": "両",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_AA": {
+    "character": "本",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_AB": {
+    "character": "ど",
+    "confidence": 51.0,
+    "needs_review": true
+  },
+  "FB_AC": {
+    "character": "洞",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "FB_AD": {
+    "character": "内",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FB_AE": {
+    "character": "作",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_AF": {
+    "character": "警",
+    "confidence": 26.0,
+    "needs_review": true
+  },
+  "FB_B0": {
+    "character": "特",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_B1": {
+    "character": "丈",
+    "confidence": 50.0,
+    "needs_review": true
+  },
+  "FB_B2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_B3": {
+    "character": "Ei",
+    "confidence": 35.0,
+    "needs_review": true
+  },
+  "FB_B4": {
+    "character": "バ",
+    "confidence": 78.0,
+    "needs_review": false
+  },
+  "FB_B5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_B6": {
+    "character": "族",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FB_B7": {
+    "character": "記",
+    "confidence": 14.0,
+    "needs_review": true
+  },
+  "FB_B8": {
+    "character": "吉",
+    "confidence": 2.0,
+    "needs_review": true
+  },
+  "FB_B9": {
+    "character": "5",
+    "confidence": 6.0,
+    "needs_review": true
+  },
+  "FB_BA": {
+    "character": "中",
+    "confidence": 36.0,
+    "needs_review": true
+  },
+  "FB_BB": {
+    "character": "旬",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_BC": {
+    "character": "豆",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_BD": {
+    "character": "怪",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FB_BE": {
+    "character": "礎",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_BF": {
+    "character": "中",
+    "confidence": 66.0,
+    "needs_review": true
+  },
+  "FB_C0": {
+    "character": "吹",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_C1": {
+    "character": "侍",
+    "confidence": 64.0,
+    "needs_review": true
+  },
+  "FB_C2": {
+    "character": "左",
+    "confidence": 80.0,
+    "needs_review": false
+  },
+  "FB_C3": {
+    "character": "自",
+    "confidence": 86.0,
+    "needs_review": false
+  },
+  "FB_C4": {
+    "character": "次",
+    "confidence": 30.0,
+    "needs_review": true
+  },
+  "FB_C5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_C6": {
+    "character": "親",
+    "confidence": 43.0,
+    "needs_review": true
+  },
+  "FB_C7": {
+    "character": "衛",
+    "confidence": 58.0,
+    "needs_review": true
+  },
+  "FB_C8": {
+    "character": "夫",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_C9": {
+    "character": "玉",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_CA": {
+    "character": "朱",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_CB": {
+    "character": "像",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_CC": {
+    "character": "人",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_CD": {
+    "character": "ミ",
+    "confidence": 79.0,
+    "needs_review": false
+  },
+  "FB_CE": {
+    "character": "般",
+    "confidence": 39.0,
+    "needs_review": true
+  },
+  "FB_CF": {
+    "character": "見",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_D0": {
+    "character": "幸",
+    "confidence": 54.0,
+    "needs_review": true
+  },
+  "FB_D1": {
+    "character": "充",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_D2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_D3": {
+    "character": "完",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_D4": {
+    "character": "了",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FB_D5": {
+    "character": "590",
+    "confidence": 37.0,
+    "needs_review": true
+  },
+  "FB_D6": {
+    "character": "フエ",
+    "confidence": 9.0,
+    "needs_review": true
+  },
+  "FB_D7": {
+    "character": "経",
+    "confidence": 47.0,
+    "needs_review": true
+  },
+  "FB_D8": {
+    "character": "上",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_D9": {
+    "character": "値",
+    "confidence": 57.0,
+    "needs_review": true
+  },
+  "FB_DA": {
+    "character": "終",
+    "confidence": 56.0,
+    "needs_review": true
+  },
+  "FB_DB": {
+    "character": "獲",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FB_DC": {
+    "character": "待",
+    "confidence": 75.0,
+    "needs_review": false
+  },
+  "FB_DD": {
+    "character": "名",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FB_DE": {
+    "character": "志",
+    "confidence": 38.0,
+    "needs_review": true
+  },
+  "FB_DF": {
+    "character": "時",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_E0": {
+    "character": "探",
+    "confidence": 53.0,
+    "needs_review": true
+  },
+  "FB_E1": {
+    "character": "成",
+    "confidence": 17.0,
+    "needs_review": true
+  },
+  "FB_E2": {
+    "character": "費",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FB_E3": {
+    "character": "育",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_E4": {
+    "character": "切",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_E5": {
+    "character": "替",
+    "confidence": 32.0,
+    "needs_review": true
+  },
+  "FB_E6": {
+    "character": "印",
+    "confidence": 46.0,
+    "needs_review": true
+  },
+  "FB_E7": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FB_E8": {
+    "character": "団",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FB_E9": {
+    "character": "記",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FB_EA": {
+    "character": "憶",
+    "confidence": 67.0,
+    "needs_review": true
+  },
+  "FB_EB": {
+    "character": "選",
+    "confidence": 35.0,
+    "needs_review": true
+  },
+  "FB_EC": {
+    "character": "番",
+    "confidence": 66.0,
+    "needs_review": true
+  },
+  "FB_ED": {
+    "character": "街",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FB_EE": {
+    "character": "底",
+    "confidence": 25.0,
+    "needs_review": true
+  },
+  "FB_EF": {
+    "character": "7",
+    "confidence": 45.0,
+    "needs_review": true
+  },
+  "FB_F0": {
+    "character": "都",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "FB_F1": {
+    "character": "過",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_F2": {
+    "character": "役",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_F3": {
+    "character": "路",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FB_F4": {
+    "character": "連",
+    "confidence": 62.0,
+    "needs_review": true
+  },
+  "FB_F5": {
+    "character": "撤",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_F6": {
+    "character": "船",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_F7": {
+    "character": "大",
+    "confidence": 50.0,
+    "needs_review": true
+  },
+  "FB_F8": {
+    "character": "AN",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_F9": {
+    "character": "港",
+    "confidence": 52.0,
+    "needs_review": true
+  },
+  "FB_FA": {
+    "character": "未",
+    "confidence": 44.0,
+    "needs_review": true
+  },
+  "FB_FB": {
+    "character": "倫",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FB_FC": {
+    "character": "四",
+    "confidence": 26.0,
+    "needs_review": true
+  },
+  "FB_FD": {
+    "character": "追",
+    "confidence": 25.0,
+    "needs_review": true
+  },
+  "FB_FE": {
+    "character": "Mn",
+    "confidence": 32.0,
+    "needs_review": true
+  },
+  "FB_FF": {
+    "character": "家",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FC": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_00": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_01": {
+    "character": "団",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FC_02": {
+    "character": "記",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FC_03": {
+    "character": "憶",
+    "confidence": 67.0,
+    "needs_review": true
+  },
+  "FC_04": {
+    "character": "選",
+    "confidence": 35.0,
+    "needs_review": true
+  },
+  "FC_05": {
+    "character": "番",
+    "confidence": 66.0,
+    "needs_review": true
+  },
+  "FC_06": {
+    "character": "街",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FC_07": {
+    "character": "底",
+    "confidence": 25.0,
+    "needs_review": true
+  },
+  "FC_08": {
+    "character": "7",
+    "confidence": 45.0,
+    "needs_review": true
+  },
+  "FC_09": {
+    "character": "都",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "FC_0A": {
+    "character": "過",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_0B": {
+    "character": "役",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_0C": {
+    "character": "路",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FC_0D": {
+    "character": "連",
+    "confidence": 62.0,
+    "needs_review": true
+  },
+  "FC_0E": {
+    "character": "撤",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_0F": {
+    "character": "船",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_10": {
+    "character": "暴",
+    "confidence": 38.0,
+    "needs_review": true
+  },
+  "FC_11": {
+    "character": "AN",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_12": {
+    "character": "港",
+    "confidence": 52.0,
+    "needs_review": true
+  },
+  "FC_13": {
+    "character": "未",
+    "confidence": 44.0,
+    "needs_review": true
+  },
+  "FC_14": {
+    "character": "倫",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_15": {
+    "character": "四",
+    "confidence": 26.0,
+    "needs_review": true
+  },
+  "FC_16": {
+    "character": "追",
+    "confidence": 25.0,
+    "needs_review": true
+  },
+  "FC_17": {
+    "character": "Mn",
+    "confidence": 32.0,
+    "needs_review": true
+  },
+  "FC_18": {
+    "character": "家",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FC_19": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_1A": {
+    "character": "間",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "FC_1B": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_1C": {
+    "character": "米",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_1D": {
+    "character": "宮",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FC_1E": {
+    "character": "%",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_1F": {
+    "character": "壁",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_20": {
+    "character": "こ",
+    "confidence": 22.0,
+    "needs_review": true
+  },
+  "FC_21": {
+    "character": "社",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FC_22": {
+    "character": "久",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FC_23": {
+    "character": "件",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FC_24": {
+    "character": "想",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FC_25": {
+    "character": "秒",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FC_26": {
+    "character": "予",
+    "confidence": 60.0,
+    "needs_review": true
+  },
+  "FC_27": {
+    "character": "多",
+    "confidence": 82.0,
+    "needs_review": false
+  },
+  "FC_28": {
+    "character": "党",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FC_29": {
+    "character": "受",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FC_2A": {
+    "character": "組",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FC_2B": {
+    "character": "示",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FC_2C": {
+    "character": "糸",
+    "confidence": 46.0,
+    "needs_review": true
+  },
+  "FC_2D": {
+    "character": "標",
+    "confidence": 62.0,
+    "needs_review": true
+  },
+  "FC_2E": {
+    "character": "E",
+    "confidence": 25.0,
+    "needs_review": true
+  },
+  "FC_2F": {
+    "character": "迫",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FC_30": {
+    "character": "=",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FC_31": {
+    "character": "勝",
+    "confidence": 53.0,
+    "needs_review": true
+  },
+  "FC_32": {
+    "character": "形",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FC_33": {
+    "character": "引",
+    "confidence": 26.0,
+    "needs_review": true
+  },
+  "FC_34": {
+    "character": "現",
+    "confidence": 44.0,
+    "needs_review": true
+  },
+  "FC_35": {
+    "character": "解",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_36": {
+    "character": "除",
+    "confidence": 82.0,
+    "needs_review": false
+  },
+  "FC_37": {
+    "character": "I%",
+    "confidence": 46.0,
+    "needs_review": true
+  },
+  "FC_38": {
+    "character": "=",
+    "confidence": 34.0,
+    "needs_review": true
+  },
+  "FC_39": {
+    "character": "画",
+    "confidence": 50.0,
+    "needs_review": true
+  },
+  "FC_3A": {
+    "character": "ロ",
+    "confidence": 65.0,
+    "needs_review": true
+  },
+  "FC_3B": {
+    "character": "ー",
+    "confidence": 72.0,
+    "needs_review": false
+  },
+  "FC_3C": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_3D": {
+    "character": "梁",
+    "confidence": 20.0,
+    "needs_review": true
+  },
+  "FC_3E": {
+    "character": "液",
+    "confidence": 28.0,
+    "needs_review": true
+  },
+  "FC_3F": {
+    "character": "活",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "FC_40": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_41": {
+    "character": "一",
+    "confidence": 47.0,
+    "needs_review": true
+  },
+  "FC_42": {
+    "character": "隠",
+    "confidence": 4.0,
+    "needs_review": true
+  },
+  "FC_43": {
+    "character": "主",
+    "confidence": 51.0,
+    "needs_review": true
+  },
+  "FC_44": {
+    "character": "ー",
+    "confidence": 53.0,
+    "needs_review": true
+  },
+  "FC_45": {
+    "character": "合",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_46": {
+    "character": "温",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_47": {
+    "character": "泉",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FC_48": {
+    "character": "白",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FC_49": {
+    "character": "段",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_4A": {
+    "character": "4",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_4B": {
+    "character": "走",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FC_4C": {
+    "character": "妨",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_4D": {
+    "character": "降",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FC_4E": {
+    "character": "礁",
+    "confidence": 29.0,
+    "needs_review": true
+  },
+  "FC_4F": {
+    "character": "敬",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_50": {
+    "character": "出",
+    "confidence": 19.0,
+    "needs_review": true
+  },
+  "FC_51": {
+    "character": "3",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "FC_52": {
+    "character": "危",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_53": {
+    "character": "記",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_54": {
+    "character": "束",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_55": {
+    "character": "咲",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_56": {
+    "character": "軟",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FC_57": {
+    "character": "骨",
+    "confidence": 80.0,
+    "needs_review": false
+  },
+  "FC_58": {
+    "character": "計",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_59": {
+    "character": "=",
+    "confidence": 46.0,
+    "needs_review": true
+  },
+  "FC_5A": {
+    "character": "岩",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_5B": {
+    "character": "員",
+    "confidence": 6.0,
+    "needs_review": true
+  },
+  "FC_5C": {
+    "character": "吊",
+    "confidence": 13.0,
+    "needs_review": true
+  },
+  "FC_5D": {
+    "character": "所",
+    "confidence": 29.0,
+    "needs_review": true
+  },
+  "FC_5E": {
+    "character": "作",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_5F": {
+    "character": "粉",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_60": {
+    "character": "失",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FC_61": {
+    "character": "敗",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "FC_62": {
+    "character": "眼",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_63": {
+    "character": "激",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "FC_64": {
+    "character": "毅",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_65": {
+    "character": "夢",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_66": {
+    "character": "角",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_67": {
+    "character": "中",
+    "confidence": 31.0,
+    "needs_review": true
+  },
+  "FC_68": {
+    "character": "喰",
+    "confidence": 79.0,
+    "needs_review": false
+  },
+  "FC_69": {
+    "character": "盾",
+    "confidence": 7.0,
+    "needs_review": true
+  },
+  "FC_6A": {
+    "character": "員",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_6B": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_6C": {
+    "character": "章",
+    "confidence": 58.0,
+    "needs_review": true
+  },
+  "FC_6D": {
+    "character": "退",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FC_6E": {
+    "character": "不",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FC_6F": {
+    "character": "叶",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FC_70": {
+    "character": "線",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_71": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_72": {
+    "character": "押",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "FC_73": {
+    "character": "沖",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_74": {
+    "character": "曲",
+    "confidence": 86.0,
+    "needs_review": false
+  },
+  "FC_75": {
+    "character": "異",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_76": {
+    "character": "教",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "FC_77": {
+    "character": "旦",
+    "confidence": 50.0,
+    "needs_review": true
+  },
+  "FC_78": {
+    "character": "太",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FC_79": {
+    "character": "陽",
+    "confidence": 58.0,
+    "needs_review": true
+  },
+  "FC_7A": {
+    "character": "グ",
+    "confidence": 66.0,
+    "needs_review": true
+  },
+  "FC_7B": {
+    "character": "Es",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FC_7C": {
+    "character": "朱",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_7D": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_7E": {
+    "character": "赤",
+    "confidence": 69.0,
+    "needs_review": true
+  },
+  "FC_7F": {
+    "character": "住",
+    "confidence": 30.0,
+    "needs_review": true
+  },
+  "FC_80": {
+    "character": "区",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FC_81": {
+    "character": "忘",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_82": {
+    "character": "東",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FC_83": {
+    "character": "北",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FC_84": {
+    "character": "参",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FC_85": {
+    "character": "和",
+    "confidence": 5.0,
+    "needs_review": true
+  },
+  "FC_86": {
+    "character": "間",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "FC_87": {
+    "character": "来",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "FC_88": {
+    "character": "仕",
+    "confidence": 56.0,
+    "needs_review": true
+  },
+  "FC_89": {
+    "character": "別",
+    "confidence": 79.0,
+    "needs_review": false
+  },
+  "FC_8A": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_8B": {
+    "character": "信",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FC_8C": {
+    "character": "用",
+    "confidence": 95.0,
+    "needs_review": false
+  },
+  "FC_8D": {
+    "character": "選",
+    "confidence": 31.0,
+    "needs_review": true
+  },
+  "FC_8E": {
+    "character": "毎",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FC_8F": {
+    "character": "誤",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_90": {
+    "character": "枯",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "FC_91": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_92": {
+    "character": "伏",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_93": {
+    "character": "5",
+    "confidence": 28.0,
+    "needs_review": true
+  },
+  "FC_94": {
+    "character": "好",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FC_95": {
+    "character": "邊",
+    "confidence": 31.0,
+    "needs_review": true
+  },
+  "FC_96": {
+    "character": "早",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FC_97": {
+    "character": "各",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FC_98": {
+    "character": "外",
+    "confidence": 12.0,
+    "needs_review": true
+  },
+  "FC_99": {
+    "character": "配",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FC_9A": {
+    "character": "腐",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FC_9B": {
+    "character": "話",
+    "confidence": 42.0,
+    "needs_review": true
+  },
+  "FC_9C": {
+    "character": "帰",
+    "confidence": 35.0,
+    "needs_review": true
+  },
+  "FC_9D": {
+    "character": "氷",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FC_9E": {
+    "character": "救",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_9F": {
+    "character": "感",
+    "confidence": 14.0,
+    "needs_review": true
+  },
+  "FC_A0": {
+    "character": "故",
+    "confidence": 80.0,
+    "needs_review": false
+  },
+  "FC_A1": {
+    "character": "守",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_A2": {
+    "character": "浮",
+    "confidence": 36.0,
+    "needs_review": true
+  },
+  "FC_A3": {
+    "character": "市",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FC_A4": {
+    "character": "加",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FC_A5": {
+    "character": "流",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FC_A6": {
+    "character": "約",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FC_A7": {
+    "character": "宇",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FC_A8": {
+    "character": "礼",
+    "confidence": 34.0,
+    "needs_review": true
+  },
+  "FC_A9": {
+    "character": "まま",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "FC_AA": {
+    "character": "母",
+    "confidence": 86.0,
+    "needs_review": false
+  },
+  "FC_AB": {
+    "character": "==",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FC_AC": {
+    "character": "年",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FC_AD": {
+    "character": "待",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FC_AE": {
+    "character": "由",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "FC_AF": {
+    "character": "立",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_B0": {
+    "character": "残",
+    "confidence": 27.0,
+    "needs_review": true
+  },
+  "FC_B1": {
+    "character": "宙",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_B2": {
+    "character": "少",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FC_B3": {
+    "character": "精",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_B4": {
+    "character": "十",
+    "confidence": 67.0,
+    "needs_review": true
+  },
+  "FC_B5": {
+    "character": "私",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FC_B6": {
+    "character": "険",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_B7": {
+    "character": "関",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FC_B8": {
+    "character": "倒",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FC_B9": {
+    "character": "休",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FC_BA": {
+    "character": "匠",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_BB": {
+    "character": "許",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FC_BC": {
+    "character": "郷",
+    "confidence": 5.0,
+    "needs_review": true
+  },
+  "FC_BD": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_BE": {
+    "character": "妥",
+    "confidence": 63.0,
+    "needs_review": true
+  },
+  "FC_BF": {
+    "character": "向",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_C0": {
+    "character": "係",
+    "confidence": 62.0,
+    "needs_review": true
+  },
+  "FC_C1": {
+    "character": "旧",
+    "confidence": 82.0,
+    "needs_review": false
+  },
+  "FC_C2": {
+    "character": "回",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "FC_C3": {
+    "character": "却",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_C4": {
+    "character": "析",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FC_C5": {
+    "character": "三",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FC_C6": {
+    "character": "議",
+    "confidence": 67.0,
+    "needs_review": true
+  },
+  "FC_C7": {
+    "character": "導",
+    "confidence": 80.0,
+    "needs_review": false
+  },
+  "FC_C8": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_C9": {
+    "character": "師",
+    "confidence": 55.0,
+    "needs_review": true
+  },
+  "FC_CA": {
+    "character": "説",
+    "confidence": 29.0,
+    "needs_review": true
+  },
+  "FC_CB": {
+    "character": "声",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FC_CC": {
+    "character": "仁",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "FC_CD": {
+    "character": "柱",
+    "confidence": 59.0,
+    "needs_review": true
+  },
+  "FC_CE": {
+    "character": "滴",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "FC_CF": {
+    "character": "未",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FC_D0": {
+    "character": "衣",
+    "confidence": 9.0,
+    "needs_review": true
+  },
+  "FC_D1": {
+    "character": "旅",
+    "confidence": 51.0,
+    "needs_review": true
+  },
+  "FC_D2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_D3": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_D4": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_D5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_D6": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_D7": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_D8": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_D9": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_DA": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_DB": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_DC": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_DD": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_DE": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_DF": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_E0": {
+    "character": "d",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "FC_E1": {
+    "character": "b",
+    "confidence": 78.0,
+    "needs_review": false
+  },
+  "FC_E2": {
+    "character": "C",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "FC_E3": {
+    "character": "d",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FC_E4": {
+    "character": "選",
+    "confidence": 45.0,
+    "needs_review": true
+  },
+  "FC_E5": {
+    "character": "†",
+    "confidence": 63.0,
+    "needs_review": true
+  },
+  "FC_E6": {
+    "character": "9",
+    "confidence": 83.0,
+    "needs_review": false
+  },
+  "FC_E7": {
+    "character": "h",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FC_E8": {
+    "character": "|",
+    "confidence": 79.0,
+    "needs_review": false
+  },
+  "FC_E9": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_EA": {
+    "character": "k",
+    "confidence": 57.0,
+    "needs_review": true
+  },
+  "FC_EB": {
+    "character": "|",
+    "confidence": 77.0,
+    "needs_review": false
+  },
+  "FC_EC": {
+    "character": "『T1",
+    "confidence": 35.0,
+    "needs_review": true
+  },
+  "FC_ED": {
+    "character": "1",
+    "confidence": 72.0,
+    "needs_review": false
+  },
+  "FC_EE": {
+    "character": "O",
+    "confidence": 73.0,
+    "needs_review": false
+  },
+  "FC_EF": {
+    "character": "D",
+    "confidence": 72.0,
+    "needs_review": false
+  },
+  "FC_F0": {
+    "character": "@",
+    "confidence": 54.0,
+    "needs_review": true
+  },
+  "FC_F1": {
+    "character": "『",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FC_F2": {
+    "character": "に",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FC_F3": {
+    "character": "【",
+    "confidence": 57.0,
+    "needs_review": true
+  },
+  "FC_F4": {
+    "character": "U",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "FC_F5": {
+    "character": "V",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "FC_F6": {
+    "character": "W",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FC_F7": {
+    "character": "X",
+    "confidence": 65.0,
+    "needs_review": true
+  },
+  "FC_F8": {
+    "character": "ヅ",
+    "confidence": 78.0,
+    "needs_review": false
+  },
+  "FC_F9": {
+    "character": "ノ",
+    "confidence": 27.0,
+    "needs_review": true
+  },
+  "FC_FA": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_FB": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_FC": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_FD": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_FE": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FC_FF": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_00": {
+    "character": "友",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FD_01": {
+    "character": "伝",
+    "confidence": 23.0,
+    "needs_review": true
+  },
+  "FD_02": {
+    "character": "夜",
+    "confidence": 72.0,
+    "needs_review": false
+  },
+  "FD_03": {
+    "character": "控",
+    "confidence": 23.0,
+    "needs_review": true
+  },
+  "FD_04": {
+    "character": "対",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_05": {
+    "character": "調",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FD_06": {
+    "character": "民",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_07": {
+    "character": "読",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_08": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_09": {
+    "character": "束",
+    "confidence": 66.0,
+    "needs_review": true
+  },
+  "FD_0A": {
+    "character": "若",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FD_0B": {
+    "character": "学",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FD_0C": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_0D": {
+    "character": "楽",
+    "confidence": 59.0,
+    "needs_review": true
+  },
+  "FD_0E": {
+    "character": "歳",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_0F": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_10": {
+    "character": "古",
+    "confidence": 79.0,
+    "needs_review": false
+  },
+  "FD_11": {
+    "character": "BE",
+    "confidence": 37.0,
+    "needs_review": true
+  },
+  "FD_12": {
+    "character": "困",
+    "confidence": 56.0,
+    "needs_review": true
+  },
+  "FD_13": {
+    "character": "合",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_14": {
+    "character": "準",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_15": {
+    "character": "7",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FD_16": {
+    "character": "認",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_17": {
+    "character": "ーー",
+    "confidence": 21.0,
+    "needs_review": true
+  },
+  "FD_18": {
+    "character": "務",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FD_19": {
+    "character": "に",
+    "confidence": 65.0,
+    "needs_review": true
+  },
+  "FD_1A": {
+    "character": "他",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_1B": {
+    "character": "再",
+    "confidence": 37.0,
+    "needs_review": true
+  },
+  "FD_1C": {
+    "character": "は",
+    "confidence": 11.0,
+    "needs_review": true
+  },
+  "FD_1D": {
+    "character": "役",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_1E": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_1F": {
+    "character": "情",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FD_20": {
+    "character": "豊",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "FD_21": {
+    "character": "夫",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FD_22": {
+    "character": "近",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_23": {
+    "character": "届",
+    "confidence": 39.0,
+    "needs_review": true
+  },
+  "FD_24": {
+    "character": "貢",
+    "confidence": 25.0,
+    "needs_review": true
+  },
+  "FD_25": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_26": {
+    "character": "求",
+    "confidence": 86.0,
+    "needs_review": false
+  },
+  "FD_27": {
+    "character": "錠",
+    "confidence": 42.0,
+    "needs_review": true
+  },
+  "FD_28": {
+    "character": "貸",
+    "confidence": 6.0,
+    "needs_review": true
+  },
+  "FD_29": {
+    "character": "期",
+    "confidence": 69.0,
+    "needs_review": true
+  },
+  "FD_2A": {
+    "character": "虐",
+    "confidence": 46.0,
+    "needs_review": true
+  },
+  "FD_2B": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_2C": {
+    "character": "混",
+    "confidence": 4.0,
+    "needs_review": true
+  },
+  "FD_2D": {
+    "character": "は",
+    "confidence": 11.0,
+    "needs_review": true
+  },
+  "FD_2E": {
+    "character": "保",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FD_2F": {
+    "character": "宙",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_30": {
+    "character": "届",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "FD_31": {
+    "character": "類",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_32": {
+    "character": "舌",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_33": {
+    "character": "向",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_34": {
+    "character": "可",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_35": {
+    "character": "妖",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_36": {
+    "character": "貞",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_37": {
+    "character": "申",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FD_38": {
+    "character": "次",
+    "confidence": 96.0,
+    "needs_review": false
+  },
+  "FD_39": {
+    "character": "国",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FD_3A": {
+    "character": "素",
+    "confidence": 31.0,
+    "needs_review": true
+  },
+  "FD_3B": {
+    "character": "た",
+    "confidence": 60.0,
+    "needs_review": true
+  },
+  "FD_3C": {
+    "character": "普",
+    "confidence": 57.0,
+    "needs_review": true
+  },
+  "FD_3D": {
+    "character": "か",
+    "confidence": 16.0,
+    "needs_review": true
+  },
+  "FD_3E": {
+    "character": "記",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_3F": {
+    "character": "巨",
+    "confidence": 34.0,
+    "needs_review": true
+  },
+  "FD_40": {
+    "character": "泣",
+    "confidence": 67.0,
+    "needs_review": true
+  },
+  "FD_41": {
+    "character": "凡",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_42": {
+    "character": "術",
+    "confidence": 38.0,
+    "needs_review": true
+  },
+  "FD_43": {
+    "character": "演",
+    "confidence": 65.0,
+    "needs_review": true
+  },
+  "FD_44": {
+    "character": "7",
+    "confidence": 42.0,
+    "needs_review": true
+  },
+  "FD_45": {
+    "character": "貞",
+    "confidence": 44.0,
+    "needs_review": true
+  },
+  "FD_46": {
+    "character": "途",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_47": {
+    "character": "浴",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_48": {
+    "character": "老",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_49": {
+    "character": "4",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FD_4A": {
+    "character": "利",
+    "confidence": 80.0,
+    "needs_review": false
+  },
+  "FD_4B": {
+    "character": "軍",
+    "confidence": 6.0,
+    "needs_review": true
+  },
+  "FD_4C": {
+    "character": "格",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_4D": {
+    "character": "原",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "FD_4E": {
+    "character": "官",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_4F": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_50": {
+    "character": "炭",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "FD_51": {
+    "character": "彼",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FD_52": {
+    "character": "房",
+    "confidence": 30.0,
+    "needs_review": true
+  },
+  "FD_53": {
+    "character": "評",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_54": {
+    "character": "と",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FD_55": {
+    "character": "注",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FD_56": {
+    "character": "ま",
+    "confidence": 80.0,
+    "needs_review": false
+  },
+  "FD_57": {
+    "character": "衆",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_58": {
+    "character": "語",
+    "confidence": 68.0,
+    "needs_review": true
+  },
+  "FD_59": {
+    "character": "証",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FD_5A": {
+    "character": "深",
+    "confidence": 55.0,
+    "needs_review": true
+  },
+  "FD_5B": {
+    "character": "層",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FD_5C": {
+    "character": "三",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FD_5D": {
+    "character": "渡",
+    "confidence": 73.0,
+    "needs_review": false
+  },
+  "FD_5E": {
+    "character": "写",
+    "confidence": 67.0,
+    "needs_review": true
+  },
+  "FD_5F": {
+    "character": "科",
+    "confidence": 83.0,
+    "needs_review": false
+  },
+  "FD_60": {
+    "character": "谷",
+    "confidence": 69.0,
+    "needs_review": true
+  },
+  "FD_61": {
+    "character": "店",
+    "confidence": 94.0,
+    "needs_review": false
+  },
+  "FD_62": {
+    "character": "括",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "FD_63": {
+    "character": "所",
+    "confidence": 42.0,
+    "needs_review": true
+  },
+  "FD_64": {
+    "character": "酬",
+    "confidence": 42.0,
+    "needs_review": true
+  },
+  "FD_65": {
+    "character": "呆",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_66": {
+    "character": "研",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_67": {
+    "character": "権",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FD_68": {
+    "character": "書",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_69": {
+    "character": "中",
+    "confidence": 4.0,
+    "needs_review": true
+  },
+  "FD_6A": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_6B": {
+    "character": "派",
+    "confidence": 23.0,
+    "needs_review": true
+  },
+  "FD_6C": {
+    "character": "千",
+    "confidence": 73.0,
+    "needs_review": false
+  },
+  "FD_6D": {
+    "character": "広",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_6E": {
+    "character": "川",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FD_6F": {
+    "character": "貸",
+    "confidence": 44.0,
+    "needs_review": true
+  },
+  "FD_70": {
+    "character": "語",
+    "confidence": 22.0,
+    "needs_review": true
+  },
+  "FD_71": {
+    "character": "給",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_72": {
+    "character": "在",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FD_73": {
+    "character": "党",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_74": {
+    "character": "岩",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "FD_75": {
+    "character": "服",
+    "confidence": 72.0,
+    "needs_review": false
+  },
+  "FD_76": {
+    "character": "授",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_77": {
+    "character": "姉",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "FD_78": {
+    "character": "敷",
+    "confidence": 66.0,
+    "needs_review": true
+  },
+  "FD_79": {
+    "character": "胸",
+    "confidence": 86.0,
+    "needs_review": false
+  },
+  "FD_7A": {
+    "character": "誕",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_7B": {
+    "character": "谷",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FD_7C": {
+    "character": "痛",
+    "confidence": 8.0,
+    "needs_review": true
+  },
+  "FD_7D": {
+    "character": "大",
+    "confidence": 26.0,
+    "needs_review": true
+  },
+  "FD_7E": {
+    "character": "生",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_7F": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_80": {
+    "character": "畑",
+    "confidence": 31.0,
+    "needs_review": true
+  },
+  "FD_81": {
+    "character": "次",
+    "confidence": 77.0,
+    "needs_review": false
+  },
+  "FD_82": {
+    "character": "が",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_83": {
+    "character": "具",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_84": {
+    "character": "抹",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FD_85": {
+    "character": "=:",
+    "confidence": 48.0,
+    "needs_review": true
+  },
+  "FD_86": {
+    "character": "示",
+    "confidence": 30.0,
+    "needs_review": true
+  },
+  "FD_87": {
+    "character": "修",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FD_88": {
+    "character": "酸",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_89": {
+    "character": "ES",
+    "confidence": 3.0,
+    "needs_review": true
+  },
+  "FD_8A": {
+    "character": "歓",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FD_8B": {
+    "character": "接",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FD_8C": {
+    "character": "障",
+    "confidence": 67.0,
+    "needs_review": true
+  },
+  "FD_8D": {
+    "character": "人",
+    "confidence": 22.0,
+    "needs_review": true
+  },
+  "FD_8E": {
+    "character": "室",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FD_8F": {
+    "character": "索",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FD_90": {
+    "character": "扉",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_91": {
+    "character": "傷",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_92": {
+    "character": "の",
+    "confidence": 47.0,
+    "needs_review": true
+  },
+  "FD_93": {
+    "character": "優",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "FD_94": {
+    "character": "大",
+    "confidence": 50.0,
+    "needs_review": true
+  },
+  "FD_95": {
+    "character": "警",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_96": {
+    "character": "ニー",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_97": {
+    "character": "避",
+    "confidence": 41.0,
+    "needs_review": true
+  },
+  "FD_98": {
+    "character": "境",
+    "confidence": 41.0,
+    "needs_review": true
+  },
+  "FD_99": {
+    "character": "評",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_9A": {
+    "character": "医",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FD_9B": {
+    "character": "怖",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FD_9C": {
+    "character": "|",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FD_9D": {
+    "character": "協",
+    "confidence": 28.0,
+    "needs_review": true
+  },
+  "FD_9E": {
+    "character": "2",
+    "confidence": 35.0,
+    "needs_review": true
+  },
+  "FD_9F": {
+    "character": "資",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FD_A0": {
+    "character": "設",
+    "confidence": 38.0,
+    "needs_review": true
+  },
+  "FD_A1": {
+    "character": "雇",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_A2": {
+    "character": "根",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FD_A3": {
+    "character": "信",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_A4": {
+    "character": "ョ",
+    "confidence": 86.0,
+    "needs_review": false
+  },
+  "FD_A5": {
+    "character": "憲",
+    "confidence": 22.0,
+    "needs_review": true
+  },
+  "FD_A6": {
+    "character": "唯",
+    "confidence": 33.0,
+    "needs_review": true
+  },
+  "FD_A7": {
+    "character": "細",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_A8": {
+    "character": "写",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FD_A9": {
+    "character": "病",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_AA": {
+    "character": "依",
+    "confidence": 83.0,
+    "needs_review": false
+  },
+  "FD_AB": {
+    "character": "馴",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_AC": {
+    "character": "妹",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_AD": {
+    "character": "順",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FD_AE": {
+    "character": "園",
+    "confidence": 22.0,
+    "needs_review": true
+  },
+  "FD_AF": {
+    "character": "人",
+    "confidence": 30.0,
+    "needs_review": true
+  },
+  "FD_B0": {
+    "character": "7",
+    "confidence": 57.0,
+    "needs_review": true
+  },
+  "FD_B1": {
+    "character": "維",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FD_B2": {
+    "character": "検",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FD_B3": {
+    "character": "9",
+    "confidence": 61.0,
+    "needs_review": true
+  },
+  "FD_B4": {
+    "character": "詩",
+    "confidence": 28.0,
+    "needs_review": true
+  },
+  "FD_B5": {
+    "character": "補",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FD_B6": {
+    "character": "クミ",
+    "confidence": 28.0,
+    "needs_review": true
+  },
+  "FD_B7": {
+    "character": "働",
+    "confidence": 46.0,
+    "needs_review": true
+  },
+  "FD_B8": {
+    "character": "内",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "FD_B9": {
+    "character": "朝",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FD_BA": {
+    "character": "浪",
+    "confidence": 62.0,
+    "needs_review": true
+  },
+  "FD_BB": {
+    "character": "祝",
+    "confidence": 61.0,
+    "needs_review": true
+  },
+  "FD_BC": {
+    "character": "師",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_BD": {
+    "character": "朗",
+    "confidence": 65.0,
+    "needs_review": true
+  },
+  "FD_BE": {
+    "character": "間",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_BF": {
+    "character": "春",
+    "confidence": 54.0,
+    "needs_review": true
+  },
+  "FD_C0": {
+    "character": "功",
+    "confidence": 83.0,
+    "needs_review": false
+  },
+  "FD_C1": {
+    "character": "耳",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "FD_C2": {
+    "character": "吊",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_C3": {
+    "character": "$",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_C4": {
+    "character": "美",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_C5": {
+    "character": "辺",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_C6": {
+    "character": "昇",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_C7": {
+    "character": "悩",
+    "confidence": 69.0,
+    "needs_review": true
+  },
+  "FD_C8": {
+    "character": "泊",
+    "confidence": 86.0,
+    "needs_review": false
+  },
+  "FD_C9": {
+    "character": "低",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FD_CA": {
+    "character": "油",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FD_CB": {
+    "character": "ジン",
+    "confidence": 15.0,
+    "needs_review": true
+  },
+  "FD_CC": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_CD": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_CE": {
+    "character": "大",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FD_CF": {
+    "character": "瞬",
+    "confidence": 47.0,
+    "needs_review": true
+  },
+  "FD_D0": {
+    "character": "希",
+    "confidence": 11.0,
+    "needs_review": true
+  },
+  "FD_D1": {
+    "character": "記",
+    "confidence": 50.0,
+    "needs_review": true
+  },
+  "FD_D2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_D3": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_D4": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_D5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_D6": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_D7": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_D8": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_D9": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_DA": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_DB": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_DC": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_DD": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_DE": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_DF": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_E0": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_E1": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_E2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_E3": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_E4": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_E5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_E6": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_E7": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_E8": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_E9": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_EA": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_EB": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_EC": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_ED": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_EE": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_EF": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_F0": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_F1": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_F2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_F3": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_F4": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_F5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_F6": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_F7": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_F8": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_F9": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_FA": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_FB": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_FC": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_FD": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_FE": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FD_FF": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_00": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_01": {
+    "character": "ID23",
+    "confidence": 9.0,
+    "needs_review": true
+  },
+  "FE_02": {
+    "character": "団",
+    "confidence": 77.0,
+    "needs_review": false
+  },
+  "FE_03": {
+    "character": "#",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_04": {
+    "character": "折",
+    "confidence": 75.0,
+    "needs_review": false
+  },
+  "FE_05": {
+    "character": "違",
+    "confidence": 3.0,
+    "needs_review": true
+  },
+  "FE_06": {
+    "character": "提",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_07": {
+    "character": "断",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "FE_08": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_09": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_0A": {
+    "character": "油",
+    "confidence": 51.0,
+    "needs_review": true
+  },
+  "FE_0B": {
+    "character": "知",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_0C": {
+    "character": "位",
+    "confidence": 28.0,
+    "needs_review": true
+  },
+  "FE_0D": {
+    "character": "存",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_0E": {
+    "character": "企",
+    "confidence": 62.0,
+    "needs_review": true
+  },
+  "FE_0F": {
+    "character": "LL",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_10": {
+    "character": "浸",
+    "confidence": 51.0,
+    "needs_review": true
+  },
+  "FE_11": {
+    "character": "非",
+    "confidence": 39.0,
+    "needs_review": true
+  },
+  "FE_12": {
+    "character": "応",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_13": {
+    "character": "細",
+    "confidence": 18.0,
+    "needs_review": true
+  },
+  "FE_14": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_15": {
+    "character": "幼",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_16": {
+    "character": "排",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FE_17": {
+    "character": "<",
+    "confidence": 53.0,
+    "needs_review": true
+  },
+  "FE_18": {
+    "character": "%",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_19": {
+    "character": "談",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_1A": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_1B": {
+    "character": "埋",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_1C": {
+    "character": "宮",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_1D": {
+    "character": "\\/",
+    "confidence": 34.0,
+    "needs_review": true
+  },
+  "FE_1E": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_1F": {
+    "character": "個",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FE_20": {
+    "character": "益",
+    "confidence": 27.0,
+    "needs_review": true
+  },
+  "FE_21": {
+    "character": "損",
+    "confidence": 79.0,
+    "needs_review": false
+  },
+  "FE_22": {
+    "character": "名",
+    "confidence": 16.0,
+    "needs_review": true
+  },
+  "FE_23": {
+    "character": "区",
+    "confidence": 95.0,
+    "needs_review": false
+  },
+  "FE_24": {
+    "character": "寒",
+    "confidence": 82.0,
+    "needs_review": false
+  },
+  "FE_25": {
+    "character": "間",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FE_26": {
+    "character": "條",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_27": {
+    "character": "例",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_28": {
+    "character": "肉",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_29": {
+    "character": "博",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_2A": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_2B": {
+    "character": "宣",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_2C": {
+    "character": "理",
+    "confidence": 20.0,
+    "needs_review": true
+  },
+  "FE_2D": {
+    "character": "臓",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_2E": {
+    "character": "負",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FE_2F": {
+    "character": "計",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "FE_30": {
+    "character": "属",
+    "confidence": 14.0,
+    "needs_review": true
+  },
+  "FE_31": {
+    "character": "膨",
+    "confidence": 79.0,
+    "needs_review": false
+  },
+  "FE_32": {
+    "character": "飲",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_33": {
+    "character": "2",
+    "confidence": 40.0,
+    "needs_review": true
+  },
+  "FE_34": {
+    "character": "1",
+    "confidence": 47.0,
+    "needs_review": true
+  },
+  "FE_35": {
+    "character": "憎",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "FE_36": {
+    "character": "増",
+    "confidence": 80.0,
+    "needs_review": false
+  },
+  "FE_37": {
+    "character": "枚",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_38": {
+    "character": "旨",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_39": {
+    "character": "上",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_3A": {
+    "character": "療",
+    "confidence": 73.0,
+    "needs_review": false
+  },
+  "FE_3B": {
+    "character": "庫",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_3C": {
+    "character": "涙",
+    "confidence": 46.0,
+    "needs_review": true
+  },
+  "FE_3D": {
+    "character": "昭",
+    "confidence": 1.0,
+    "needs_review": true
+  },
+  "FE_3E": {
+    "character": "刀",
+    "confidence": 1.0,
+    "needs_review": true
+  },
+  "FE_3F": {
+    "character": "増",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_40": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_41": {
+    "character": "ミ",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_42": {
+    "character": "|",
+    "confidence": 30.0,
+    "needs_review": true
+  },
+  "FE_43": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_44": {
+    "character": "表",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_45": {
+    "character": "二",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_46": {
+    "character": "奴",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "FE_47": {
+    "character": "丈",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FE_48": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_49": {
+    "character": "ト",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_4A": {
+    "character": "概",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FE_4B": {
+    "character": "招",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_4C": {
+    "character": "ピコ",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_4D": {
+    "character": "較",
+    "confidence": 64.0,
+    "needs_review": true
+  },
+  "FE_4E": {
+    "character": "析",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_4F": {
+    "character": "此",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_50": {
+    "character": "殖",
+    "confidence": 18.0,
+    "needs_review": true
+  },
+  "FE_51": {
+    "character": "耐",
+    "confidence": 59.0,
+    "needs_review": true
+  },
+  "FE_52": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_53": {
+    "character": "中",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_54": {
+    "character": "称",
+    "confidence": 70.0,
+    "needs_review": false
+  },
+  "FE_55": {
+    "character": "十",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "FE_56": {
+    "character": "礎",
+    "confidence": 60.0,
+    "needs_review": true
+  },
+  "FE_57": {
+    "character": "史",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_58": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_59": {
+    "character": "容",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FE_5A": {
+    "character": "噂",
+    "confidence": 7.0,
+    "needs_review": true
+  },
+  "FE_5B": {
+    "character": "宮",
+    "confidence": 56.0,
+    "needs_review": true
+  },
+  "FE_5C": {
+    "character": "胞",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "FE_5D": {
+    "character": "只",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_5E": {
+    "character": "表",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_5F": {
+    "character": "人",
+    "confidence": 4.0,
+    "needs_review": true
+  },
+  "FE_60": {
+    "character": "有職",
+    "confidence": 31.0,
+    "needs_review": true
+  },
+  "FE_61": {
+    "character": "妹",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_62": {
+    "character": "氏",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FE_63": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_64": {
+    "character": "停",
+    "confidence": 84.0,
+    "needs_review": false
+  },
+  "FE_65": {
+    "character": "非",
+    "confidence": 62.0,
+    "needs_review": true
+  },
+  "FE_66": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_67": {
+    "character": "健",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FE_68": {
+    "character": "焼",
+    "confidence": 46.0,
+    "needs_review": true
+  },
+  "FE_69": {
+    "character": "払",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FE_6A": {
+    "character": "侵",
+    "confidence": 71.0,
+    "needs_review": false
+  },
+  "FE_6B": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_6C": {
+    "character": "愛",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "FE_6D": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_6E": {
+    "character": "由",
+    "confidence": 52.0,
+    "needs_review": true
+  },
+  "FE_6F": {
+    "character": "舎",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_70": {
+    "character": "川",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_71": {
+    "character": "HCL",
+    "confidence": 19.0,
+    "needs_review": true
+  },
+  "FE_72": {
+    "character": "清",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_73": {
+    "character": "際",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_74": {
+    "character": "で",
+    "confidence": 40.0,
+    "needs_review": true
+  },
+  "FE_75": {
+    "character": "評",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_76": {
+    "character": "課",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FE_77": {
+    "character": "名",
+    "confidence": 35.0,
+    "needs_review": true
+  },
+  "FE_78": {
+    "character": "|",
+    "confidence": 36.0,
+    "needs_review": true
+  },
+  "FE_79": {
+    "character": "才",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_7A": {
+    "character": "偉",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_7B": {
+    "character": "誤",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_7C": {
+    "character": "価",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FE_7D": {
+    "character": "欠",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "FE_7E": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_7F": {
+    "character": "民",
+    "confidence": 17.0,
+    "needs_review": true
+  },
+  "FE_80": {
+    "character": "nd",
+    "confidence": 4.0,
+    "needs_review": true
+  },
+  "FE_81": {
+    "character": "ra1",
+    "confidence": 55.0,
+    "needs_review": true
+  },
+  "FE_82": {
+    "character": "送",
+    "confidence": 79.0,
+    "needs_review": false
+  },
+  "FE_83": {
+    "character": "周",
+    "confidence": 76.0,
+    "needs_review": false
+  },
+  "FE_84": {
+    "character": "順",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_85": {
+    "character": "労",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_86": {
+    "character": "植",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_87": {
+    "character": "施",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_88": {
+    "character": "販",
+    "confidence": 93.0,
+    "needs_review": false
+  },
+  "FE_89": {
+    "character": "台",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_8A": {
+    "character": "度",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_8B": {
+    "character": "嫌",
+    "confidence": 80.0,
+    "needs_review": false
+  },
+  "FE_8C": {
+    "character": "族",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_8D": {
+    "character": "2",
+    "confidence": 29.0,
+    "needs_review": true
+  },
+  "FE_8E": {
+    "character": "縮",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_8F": {
+    "character": "誘",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_90": {
+    "character": "仮",
+    "confidence": 20.0,
+    "needs_review": true
+  },
+  "FE_91": {
+    "character": "借",
+    "confidence": 78.0,
+    "needs_review": false
+  },
+  "FE_92": {
+    "character": "中",
+    "confidence": 32.0,
+    "needs_review": true
+  },
+  "FE_93": {
+    "character": "席",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_94": {
+    "character": "式",
+    "confidence": 31.0,
+    "needs_review": true
+  },
+  "FE_95": {
+    "character": "ニニ",
+    "confidence": 49.0,
+    "needs_review": true
+  },
+  "FE_96": {
+    "character": "珍",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_97": {
+    "character": "酔",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FE_98": {
+    "character": "試",
+    "confidence": 59.0,
+    "needs_review": true
+  },
+  "FE_99": {
+    "character": "同",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_9A": {
+    "character": "上",
+    "confidence": 34.0,
+    "needs_review": true
+  },
+  "FE_9B": {
+    "character": "5",
+    "confidence": 60.0,
+    "needs_review": true
+  },
+  "FE_9C": {
+    "character": "稚",
+    "confidence": 42.0,
+    "needs_review": true
+  },
+  "FE_9D": {
+    "character": "レン",
+    "confidence": 37.0,
+    "needs_review": true
+  },
+  "FE_9E": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_9F": {
+    "character": "ミミ",
+    "confidence": 81.0,
+    "needs_review": false
+  },
+  "FE_A0": {
+    "character": "祖",
+    "confidence": 59.0,
+    "needs_review": true
+  },
+  "FE_A1": {
+    "character": "情",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_A2": {
+    "character": "偶",
+    "confidence": 31.0,
+    "needs_review": true
+  },
+  "FE_A3": {
+    "character": "が",
+    "confidence": 50.0,
+    "needs_review": true
+  },
+  "FE_A4": {
+    "character": "当",
+    "confidence": 42.0,
+    "needs_review": true
+  },
+  "FE_A5": {
+    "character": "矯",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_A6": {
+    "character": "柏",
+    "confidence": 11.0,
+    "needs_review": true
+  },
+  "FE_A7": {
+    "character": "燃",
+    "confidence": 77.0,
+    "needs_review": false
+  },
+  "FE_A8": {
+    "character": "憎",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_A9": {
+    "character": "快",
+    "confidence": 31.0,
+    "needs_review": true
+  },
+  "FE_AA": {
+    "character": "劇",
+    "confidence": 88.0,
+    "needs_review": false
+  },
+  "FE_AB": {
+    "character": "U",
+    "confidence": 11.0,
+    "needs_review": true
+  },
+  "FE_AC": {
+    "character": "選",
+    "confidence": 53.0,
+    "needs_review": true
+  },
+  "FE_AD": {
+    "character": "抵",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_AE": {
+    "character": "山",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_AF": {
+    "character": "程",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_B0": {
+    "character": "#",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_B1": {
+    "character": "腹",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_B2": {
+    "character": "橋",
+    "confidence": 30.0,
+    "needs_review": true
+  },
+  "FE_B3": {
+    "character": "日",
+    "confidence": 79.0,
+    "needs_review": false
+  },
+  "FE_B4": {
+    "character": "処",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_B5": {
+    "character": "史",
+    "confidence": 56.0,
+    "needs_review": true
+  },
+  "FE_B6": {
+    "character": "杯",
+    "confidence": 86.0,
+    "needs_review": false
+  },
+  "FE_B7": {
+    "character": "寺",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_B8": {
+    "character": "坊",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_B9": {
+    "character": "週",
+    "confidence": 37.0,
+    "needs_review": true
+  },
+  "FE_BA": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_BB": {
+    "character": "三",
+    "confidence": 92.0,
+    "needs_review": false
+  },
+  "FE_BC": {
+    "character": "軽",
+    "confidence": 62.0,
+    "needs_review": true
+  },
+  "FE_BD": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_BE": {
+    "character": "和",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_BF": {
+    "character": "*",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_C0": {
+    "character": "土",
+    "confidence": 87.0,
+    "needs_review": false
+  },
+  "FE_C1": {
+    "character": "姫",
+    "confidence": 50.0,
+    "needs_review": true
+  },
+  "FE_C2": {
+    "character": "庭",
+    "confidence": 46.0,
+    "needs_review": true
+  },
+  "FE_C3": {
+    "character": "観",
+    "confidence": 89.0,
+    "needs_review": false
+  },
+  "FE_C4": {
+    "character": "和",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_C5": {
+    "character": "横",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_C6": {
+    "character": "|",
+    "confidence": 91.0,
+    "needs_review": false
+  },
+  "FE_C7": {
+    "character": "丘",
+    "confidence": 85.0,
+    "needs_review": false
+  },
+  "FE_C8": {
+    "character": "享",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_C9": {
+    "character": "財",
+    "confidence": 90.0,
+    "needs_review": false
+  },
+  "FE_CA": {
+    "character": "健",
+    "confidence": 42.0,
+    "needs_review": true
+  },
+  "FE_CB": {
+    "character": "布",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_CC": {
+    "character": "規",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_CD": {
+    "character": "証",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_CE": {
+    "character": "柄",
+    "confidence": 74.0,
+    "needs_review": false
+  },
+  "FE_CF": {
+    "character": "記",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_D0": {
+    "character": "区",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_D1": {
+    "character": "所",
+    "confidence": 0.0,
+    "needs_review": true
+  },
+  "FE_D2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_D3": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_D4": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_D5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_D6": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_D7": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_D8": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_D9": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_DA": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_DB": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_DC": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_DD": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_DE": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_DF": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_E0": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_E1": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_E2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_E3": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_E4": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_E5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_E6": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_E7": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_E8": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_E9": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_EA": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_EB": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_EC": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_ED": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_EE": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_EF": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_F0": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_F1": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_F2": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_F3": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_F4": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_F5": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_F6": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_F7": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_F8": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_F9": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_FA": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_FB": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_FC": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_FD": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_FE": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FE_FF": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  },
+  "FF": {
+    "character": "",
+    "confidence": 0.0,
+    "needs_review": false
+  }
+}

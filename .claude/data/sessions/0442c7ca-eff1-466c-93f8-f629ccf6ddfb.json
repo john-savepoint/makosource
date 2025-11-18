@@ -1,0 +1,18 @@
+{
+  "session_id": "0442c7ca-eff1-466c-93f8-f629ccf6ddfb",
+  "prompts": [
+    {
+      "text": "remove",
+      "timestamp": "2025-11-15T10:18:13.011397+00:00",
+      "tmux_context": {
+        "session": "ghostty",
+        "window": "3",
+        "window_name": "claude-0442c7ca",
+        "pane": "%137",
+        "full_path": "ghostty:3:%137"
+      }
+    }
+  ],
+  "created_at": "2025-11-15T10:18:13.011246+00:00",
+  "last_modified": "2025-11-15T10:18:13.011400+00:00"
+}
