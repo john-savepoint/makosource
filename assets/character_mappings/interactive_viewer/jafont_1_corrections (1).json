@@ -1,0 +1,162 @@
+[
+  {
+    "texture": "jafont_1",
+    "index": 6,
+    "grid_x": 6,
+    "grid_y": 0,
+    "correction": {
+      "type": "manual",
+      "char": "ベ"
+    },
+    "claude": "ベ",
+    "tesseract": "バ",
+    "mangaocr": "べ"
+  },
+  {
+    "texture": "jafont_1",
+    "index": 7,
+    "grid_x": 7,
+    "grid_y": 0,
+    "correction": {
+      "type": "manual",
+      "char": "べ"
+    },
+    "claude": "べ",
+    "tesseract": "だ",
+    "mangaocr": "べ"
+  },
+  {
+    "texture": "jafont_1",
+    "index": 47,
+    "grid_x": 15,
+    "grid_y": 2,
+    "correction": {
+      "type": "manual",
+      "char": "ペ"
+    },
+    "claude": "ペ",
+    "tesseract": "N",
+    "mangaocr": "ペ"
+  },
+  {
+    "texture": "jafont_1",
+    "index": 48,
+    "grid_x": 0,
+    "grid_y": 3,
+    "correction": {
+      "type": "manual",
+      "char": "ぺ"
+    },
+    "claude": "ぺ",
+    "tesseract": "X",
+    "mangaocr": "ペ"
+  },
+  {
+    "texture": "jafont_1",
+    "index": 63,
+    "grid_x": 15,
+    "grid_y": 3,
+    "correction": "tesseract",
+    "claude": "・",
+    "tesseract": "",
+    "mangaocr": ""
+  },
+  {
+    "texture": "jafont_1",
+    "index": 70,
+    "grid_x": 6,
+    "grid_y": 4,
+    "correction": {
+      "type": "manual",
+      "char": "ヘ"
+    },
+    "claude": "ヘ",
+    "tesseract": "N",
+    "mangaocr": "へ"
+  },
+  {
+    "texture": "jafont_1",
+    "index": 71,
+    "grid_x": 7,
+    "grid_y": 4,
+    "correction": {
+      "type": "manual",
+      "char": "へ"
+    },
+    "claude": "へ",
+    "tesseract": "N",
+    "mangaocr": "へ"
+  },
+  {
+    "texture": "jafont_1",
+    "index": 178,
+    "grid_x": 2,
+    "grid_y": 11,
+    "correction": "mangaocr",
+    "claude": "。",
+    "tesseract": "",
+    "mangaocr": "．"
+  },
+  {
+    "texture": "jafont_1",
+    "index": 210,
+    "grid_x": 2,
+    "grid_y": 13,
+    "correction": {
+      "type": "manual",
+      "char": "⋯"
+    },
+    "claude": "…",
+    "tesseract": "の",
+    "mangaocr": "．"
+  },
+  {
+    "texture": "jafont_1",
+    "index": 212,
+    "grid_x": 4,
+    "grid_y": 13,
+    "correction": {
+      "type": "manual",
+      "char": "／"
+    },
+    "claude": "／",
+    "tesseract": "ン",
+    "mangaocr": "／"
+  },
+  {
+    "texture": "jafont_1",
+    "index": 215,
+    "grid_x": 7,
+    "grid_y": 13,
+    "correction": {
+      "type": "manual",
+      "char": "【"
+    },
+    "claude": "【",
+    "tesseract": "【",
+    "mangaocr": "【"
+  },
+  {
+    "texture": "jafont_1",
+    "index": 216,
+    "grid_x": 8,
+    "grid_y": 13,
+    "correction": {
+      "type": "manual",
+      "char": "】"
+    },
+    "claude": "】",
+    "tesseract": "】",
+    "mangaocr": "】"
+  },
+  {
+    "texture": "jafont_1",
+    "index": 230,
+    "grid_x": 6,
+    "grid_y": 14,
+    "correction": "investigate",
+    "claude": "",
+    "tesseract": "4",
+    "mangaocr": "Ｘ"
+  }
+]

@@ -1,0 +1,221 @@
+{
+  "jafont_1": {
+    "6": {
+      "type": "manual",
+      "char": "ベ"
+    },
+    "7": {
+      "type": "manual",
+      "char": "べ"
+    },
+    "47": {
+      "type": "manual",
+      "char": "ペ"
+    },
+    "48": {
+      "type": "manual",
+      "char": "ぺ"
+    },
+    "63": "tesseract",
+    "70": {
+      "type": "manual",
+      "char": "ヘ"
+    },
+    "71": {
+      "type": "manual",
+      "char": "へ"
+    },
+    "178": "mangaocr",
+    "210": {
+      "type": "manual",
+      "char": "⋯"
+    },
+    "212": {
+      "type": "manual",
+      "char": "／"
+    },
+    "215": {
+      "type": "manual",
+      "char": "【"
+    },
+    "216": {
+      "type": "manual",
+      "char": "】"
+    },
+    "230": "investigate"
+  },
+  "jafont_2": {
+    "7": "mangaocr",
+    "15": "claude",
+    "19": "claude",
+    "29": "claude",
+    "102": "claude",
+    "121": "claude",
+    "130": "claude",
+    "138": "claude",
+    "180": "claude",
+    "187": "mangaocr",
+    "188": "mangaocr",
+    "189": "mangaocr",
+    "190": "mangaocr",
+    "191": "mangaocr",
+    "199": "claude",
+    "203": "mangaocr",
+    "224": {
+      "type": "manual",
+      "char": "["
+    },
+    "225": {
+      "type": "manual",
+      "char": "]"
+    },
+    "226": {
+      "type": "manual",
+      "char": ";"
+    },
+    "227": {
+      "type": "manual",
+      "char": "’"
+    },
+    "228": {
+      "type": "manual",
+      "char": "‘"
+    },
+    "229": {
+      "type": "manual",
+      "char": "¥"
+    },
+    "230": {
+      "type": "manual",
+      "char": ","
+    },
+    "231": {
+      "type": "manual",
+      "char": "/"
+    },
+    "232": {
+      "type": "manual",
+      "char": "^"
+    },
+    "233": "tesseract",
+    "234": {
+      "type": "manual",
+      "char": "_"
+    },
+    "235": {
+      "type": "manual",
+      "char": "↑"
+    },
+    "236": {
+      "type": "manual",
+      "char": "←"
+    },
+    "237": {
+      "type": "manual",
+      "char": "↓"
+    },
+    "238": "mangaocr"
+  },
+  "jafont_3": {
+    "35": "tesseract",
+    "61": {
+      "type": "manual",
+      "char": "釘"
+    },
+    "167": "mangaocr",
+    "183": {
+      "type": "manual",
+      "char": "亡"
+    },
+    "187": "mangaocr",
+    "204": "mangaocr",
+    "230": {
+      "type": "manual",
+      "char": "割"
+    },
+    "233": "tesseract",
+    "238": "mangaocr"
+  },
+  "jafont_4": {
+    "7": "claude",
+    "11": "mangaocr",
+    "23": "mangaocr",
+    "44": "mangaocr",
+    "64": "claude",
+    "78": "mangaocr",
+    "83": "mangaocr",
+    "84": "mangaocr",
+    "85": "mangaocr",
+    "87": "mangaocr",
+    "88": "claude",
+    "126": "mangaocr",
+    "127": "mangaocr",
+    "128": "mangaocr",
+    "139": "claude",
+    "166": "claude",
+    "176": "mangaocr",
+    "178": "claude",
+    "182": "mangaocr",
+    "183": "mangaocr",
+    "184": "mangaocr",
+    "186": "mangaocr",
+    "192": "mangaocr",
+    "201": "mangaocr"
+  },
+  "jafont_5": {
+    "5": "claude",
+    "7": "claude",
+    "18": "mangaocr",
+    "35": "mangaocr",
+    "44": "mangaocr",
+    "49": "mangaocr",
+    "62": "mangaocr",
+    "82": "tesseract",
+    "83": "mangaocr",
+    "87": "mangaocr",
+    "88": "claude",
+    "90": "mangaocr",
+    "91": "mangaocr",
+    "111": "mangaocr",
+    "113": "claude",
+    "130": "claude",
+    "136": "claude",
+    "141": "mangaocr",
+    "143": "mangaocr",
+    "144": "mangaocr",
+    "145": "mangaocr",
+    "147": "mangaocr",
+    "149": "mangaocr",
+    "153": "mangaocr",
+    "161": "mangaocr",
+    "163": "mangaocr",
+    "166": "claude",
+    "167": "claude",
+    "168": "mangaocr",
+    "172": "claude",
+    "175": "claude",
+    "176": "claude",
+    "177": "claude",
+    "179": "mangaocr",
+    "201": "claude"
+  },
+  "jafont_6": {
+    "15": "claude",
+    "17": "mangaocr",
+    "21": "mangaocr",
+    "22": "mangaocr",
+    "43": "claude",
+    "60": "mangaocr",
+    "69": "claude",
+    "81": "claude",
+    "116": "mangaocr",
+    "117": "claude",
+    "121": "mangaocr",
+    "123": "mangaocr",
+    "152": "claude",
+    "173": "mangaocr",
+    "176": "mangaocr",
+    "190": "tesseract",
+    "208": "claude"
+  }
+}

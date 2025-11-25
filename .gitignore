@@ -1,0 +1,33 @@
+# External repositories (cloned for reference)
+FFNx/
+
+# Claude Code ephemeral data
+.claude/data/sessions/
+.claude/logs/
+
+# Runtime logs
+logs/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python artifacts
+*.pyc
+__pycache__/
+*.pyo
+.Python
+env/
+venv/
+
+# Editor artifacts
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# OS artifacts
+Thumbs.db
+ehthumbs.db
+.DS_Store
