@@ -9,7 +9,7 @@
 - 8f58819d-f9c4-4f04-8e95-4af04d782606 (Session 12 - Verification)
 
 > **Verification Status (2025-11-25):** External tool links and descriptions have been verified
-> against Qhimm forums and GitHub repositories. See `docs/TOOL_VERIFICATION_LOG.md` for details.
+> against Qhimm forums and GitHub repositories. See `docs/reference/TOOL_VERIFICATION_LOG.md` for details.
 >
 > **Verified Tools:**
 > - ulgp v1.2 - Forum thread active (https://forums.qhimm.com/index.php?topic=12831.0)

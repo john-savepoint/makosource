@@ -1,8 +1,8 @@
 # FFNx Japanese Implementation Master Bible
 
-**Document Version:** 4.1 (PR #737 Integration Update)
+**Document Version:** 4.2 (Edge Cases & Control Codes Update)
 **Created:** 2025-11-24 10:42:14 JST (Monday)
-**Last Major Update:** 2025-11-25 01:30 JST (Tuesday)
+**Last Major Update:** 2025-11-25 14:55 JST (Tuesday)
 **Project Codename:** "One-7 Language Learner Edition"
 **Target Platform:** FFNx Driver for Final Fantasy VII (1998/2013 PC)
 **Target Architecture:** C++ / BGFX (PR #737 baseline, extend for multi-language)
@@ -272,6 +272,40 @@ Per HAL's Blog (Japanese FF7 modding community):
    - Game text must be encoded in FF7's custom FA-FE format
    - Standard Shift-JIS files require conversion
    - Use provided character mapping CSV for encoding
+
+**Text Rendering Contexts (Edge Cases):**
+
+FF7 has multiple distinct text rendering systems. Each requires separate consideration:
+
+| Context | Texture Source | Rendering Path | Japanese Status |
+|---------|---------------|----------------|-----------------|
+| **Field Dialogue** | `menu_ja.lgp` → jafont_*.tex | Field module, dialog windows | ✅ PR #737 works |
+| **Menu Screens** | `menu_ja.lgp` → jafont_*.tex | Menu module | ✅ PR #737 works |
+| **Battle Text** | `battle_ja.lgp` | Battle module, separate queue | ⚠️ Needs verification |
+| **Name Entry** | `menu_ja.lgp` | Grid-based selection UI | ❌ PR #737 broken |
+| **Minigames** | Various | Game-specific code paths | ❓ Not documented |
+| **World Map** | World module assets | World map text handler | ⚠️ Needs verification |
+
+**Dialog Window System (Field Module):**
+- Supports up to **4 simultaneous dialog windows**
+- Window structure: 0x30 bytes per window (position, size, state, text pointer)
+- **State machine:** 15 states (0-E) controlling open/close/scroll/input
+- Window bounds: X ≥ 8, Y ≥ 8, max X+W = 0x138 (312px), max Y+H = 0xE0 (224px)
+- Row height: 16px + 9px padding
+- Opcodes: MESSAGE (0x40), ASK (0x48), WINDOW (0x50), WMODE (0x52), etc.
+
+**Battle Text System:**
+- Uses `battle_display_text_queue` (64 entries max)
+- Separate timing/frame system with `battle_frame_multiplier`
+- Battle-specific encoding: EA-F0 are variable markers, F8 = box color, F9 = LZS compression
+- FFNx hooks: `display_battle_action_text_42782A`, `set_battle_text_active`
+
+**Name Entry Screen (Japanese Version):**
+- **4 input pages:** ひらがな (Hiragana), カタカナ (Katakana), 英数 (EISUU/Alphanumeric), possibly symbols
+- Navigation: スペース (Space), さくじょ (Delete), けってい (Enter), デフォルト (Default)
+- Uses **grid-based character selection** (not stream-based like dialogue)
+- FFNx patches `keyboard_name_input` function for Steam gamepad compatibility
+- **PR #737 Bug:** Grid rendering assumes single-page fonts → shows corruption
 
 **Community Resources:**
 - qhimm.com: Primary modding forum
@@ -638,8 +672,45 @@ FFNx Driver Extensions:
 - **Single-Byte System:** Each character is 1 byte (0x00-0xFF)
 - **Direct Mapping:** Byte value = texture cell index
 - Example: `0x41` = 'A' (cell 65 in USFONT.TEX)
-- **Control codes:** `0x00-0x1F` (line breaks, colors, etc.)
+- **Control codes:** `0xE0-0xEF` (character names, tabs), `0xFE XX` (colors, variables)
 - **Limitation:** Maximum 256 characters (0x00-0xFF)
+
+**Control Code Categories (All Versions):**
+
+| Range | Purpose | Notes |
+|-------|---------|-------|
+| `0x00-0xD3` | Printable characters | Direct texture index |
+| `0xD4-0xDF` | **UNUSED** | Produces graphical errors |
+| `0xE0-0xE6` | Tab/formatting | E0=Choice indent, E1=Tab(4), E7=Newline |
+| `0xE7` | Line break | Advance to next line |
+| `0xE8-0xE9` | Window control | Next window/page |
+| `0xEA-0xF2` | Character names | EA=Cloud, EB=Barret, EC=Tifa, etc. |
+| `0xF3-0xF5` | Party member names | Current party slots 1-3 |
+| `0xF6-0xF9` | Button symbols | PlayStation controller buttons |
+| `0xFA-0xFE` | **Japanese extended** | Page markers (see below) |
+| `0xFF` | End of string | Terminator |
+
+**Text Color Control Codes (via FE opcode):**
+
+| Code | Color | Behavior |
+|------|-------|----------|
+| `FE D2` | Gray | Standard modifier - can be reset |
+| `FE D3` | Blue | Standard modifier - can be reset |
+| `FE D4` | Red | Standard modifier - can be reset |
+| `FE D5` | Purple | Standard modifier - can be reset |
+| `FE D6` | Green | Standard modifier - can be reset |
+| `FE D7` | Cyan | Standard modifier - can be reset |
+| `FE D8` | Yellow | Standard modifier - can be reset |
+| `FE D9` | White | Reset to default color |
+| `FE DA` | **Flash** | ⚠️ **Global** - affects entire window, cannot reset |
+| `FE DB` | **Rainbow** | ⚠️ **Global + Animated** - cycles colors per-frame |
+
+**Color Implementation (How It Works):**
+- Font textures are **grayscale/white base**
+- Colors applied via **RGB multiplication** at render time
+- PR #737's `get_character_color()` returns BGRA values per color code
+- **Bug:** Japanese fonts may have non-white base → multiplication produces wrong colors
+- **Solution:** GPU shader tinting or ensure pure white font base
 
 **FF7 Japanese Encoding (FA-FE System):**
 - **Two-Byte Sequences for Extended Characters:**
@@ -4347,17 +4418,77 @@ See Section 8.2 for detailed instructions.
 
 | Range | Content |
 |-------|---------|
-| `0x00-0x1F` | Control codes (line break, color, etc.) |
-| `0x20-0x7E` | ASCII (Latin alphabet, numbers, punctuation) |
-| `0x7F-0xE6` | Japanese Hiragana, Katakana, special chars |
-| `0xE7-0xF8` | Reserved / Unused |
-| `0xF9` | Furigana marker (Phase 2) |
-| `0xFA` | Page 1 marker |
-| `0xFB` | Page 2 marker |
-| `0xFC` | Page 3 marker |
-| `0xFD` | Page 4 marker |
-| `0xFE` | Page 5 marker |
-| `0xFF` | Reserved |
+| `0x00` | Space character |
+| `0x01-0x5F` | ASCII printable (offset by 0x20 from standard ASCII) |
+| `0x60-0x9F` | Extended Latin (accented chars: Ä, Á, Ç, É, etc.) |
+| `0xA0-0xCF` | Symbols and special characters |
+| `0xD0-0xD3` | Additional special chars |
+| `0xD4-0xDF` | **UNUSED** - produces graphical errors |
+| `0xE0` | {Choice} - menu selection indent |
+| `0xE1` | {Tab} - 4-space indent |
+| `0xE2-0xE6` | Shortcut sequences (comma-space, period-quote, etc.) |
+| `0xE7` | {EOL} - End of line / line break |
+| `0xE8-0xE9` | {New Screen} - advance to next dialog window |
+| `0xEA` | {Cloud} - insert Cloud's current name |
+| `0xEB` | {Barret} - insert Barret's current name |
+| `0xEC` | {Tifa} - insert Tifa's current name |
+| `0xED` | {Aerith} - insert Aerith's current name |
+| `0xEE` | {Red XIII} - insert Red XIII's current name |
+| `0xEF` | {Yuffie} - insert Yuffie's current name |
+| `0xF0` | {Cait Sith} - insert Cait Sith's current name |
+| `0xF1` | {Vincent} - insert Vincent's current name |
+| `0xF2` | {Cid} - insert Cid's current name |
+| `0xF3` | {Party #1} - insert party slot 1 name |
+| `0xF4` | {Party #2} - insert party slot 2 name |
+| `0xF5` | {Party #3} - insert party slot 3 name |
+| `0xF6` | 〇 (Circle button) |
+| `0xF7` | △ (Triangle button) |
+| `0xF8` | ☐ (Square button) |
+| `0xF9` | ✕ (Cross button) |
+| `0xFA` | Page 1 marker (jafont_2) |
+| `0xFB` | Page 2 marker (jafont_3) |
+| `0xFC` | Page 3 marker (jafont_4) |
+| `0xFD` | Page 4 marker (jafont_5) |
+| `0xFE` | {FUNC} opcode - see below |
+| `0xFF` | {END} - string terminator |
+
+**FE Function Opcodes (Two-Byte Sequences):**
+
+| Code | Function | Notes |
+|------|----------|-------|
+| `FE 00`-`FE D1` | **Japanese extended chars** | Maps to jafont_6 (Japanese version only) |
+| `FE D2` | Color: Gray | Subsequent text until next color code |
+| `FE D3` | Color: Blue | Subsequent text until next color code |
+| `FE D4` | Color: Red | Subsequent text until next color code |
+| `FE D5` | Color: Purple | Subsequent text until next color code |
+| `FE D6` | Color: Green | Subsequent text until next color code |
+| `FE D7` | Color: Cyan | Subsequent text until next color code |
+| `FE D8` | Color: Yellow | Subsequent text until next color code |
+| `FE D9` | Color: White | Reset to default |
+| `FE DA` | Color: **Flash** | ⚠️ Global - cycles on/off, cannot reset |
+| `FE DB` | Color: **Rainbow** | ⚠️ Global - animated cycling colors |
+| `FE DC` | Wait for OK button | Pause text until player input |
+| `FE DD XX XX` | Timed pause | Wait XX frames (little-endian) |
+| `FE DE` | Variable (numeric) | Insert numeric variable from memory bank |
+| `FE DF` | Variable (hex) | Insert hex variable from memory bank |
+| `FE E0` | Scroll text | Enable text scrolling mode |
+| `FE E1` | Variable (spaced) | Insert variable with space padding |
+| `FE E2` | Memory string | Copy string from memory address |
+| `FE E9` | Max letter width | Set maximum character width |
+| `FE FF` | Wait for OK | Same as FE DC |
+
+**Battle Text Special Codes:**
+
+| Code | Function | Notes |
+|------|----------|-------|
+| `EA` | Character name | Insert attacker/target name |
+| `EB` | Item name | Insert item name by index |
+| `EC` | Number | Insert numeric value |
+| `ED` | Target name | Insert target's name |
+| `EF` | Attack name | Insert attack/ability name |
+| `F0` | Target letter | For multi-target enemies (A, B, C) |
+| `F8 XX` | Box color | XX=02 for red (Limit Break) box |
+| `F9 XX` | LZS reference | Compressed text backreference |
 
 **Two-Byte Sequences (Pages 1-5):**
 

@@ -1,0 +1,118 @@
+# FFNx Configuration for Japanese Text Support (PR #737)
+# Copy relevant sections to your actual FFNx.toml
+
+###############################################################################
+# CRITICAL: Japanese Text Support
+###############################################################################
+
+# Enable Japanese edition mode (REQUIRED for PR #737)
+# This activates the Japanese text rendering code
+ff7_japanese_edition = true
+
+###############################################################################
+# Texture Settings (Optional but Recommended)
+###############################################################################
+
+# Show warnings for missing texture overrides
+# Useful for debugging if fonts aren't loading
+show_missing_textures = false
+
+# Save all textures to disk (for debugging only)
+# Enable this temporarily if you need to verify texture extraction
+save_textures = false
+
+# Texture dump path (where save_textures outputs files)
+# Default: mods/Textures/
+# No need to change unless you have a custom structure
+# texture_dump_path = "mods/Textures"
+
+###############################################################################
+# Debug Logging (Optional - for troubleshooting)
+###############################################################################
+
+# Full debug trace (WARNING: Creates very large log files)
+# Only enable if you're experiencing issues
+trace_all = false
+
+# Log texture loading operations
+# Useful to verify jafont_*.png files are loading
+trace_loaders = false
+
+# Log all file operations
+# Useful to verify dialogue files are being redirected
+trace_files = false
+
+###############################################################################
+# Other Settings (No changes needed for Japanese text)
+###############################################################################
+
+# These settings don't affect Japanese text rendering
+# But here are some recommended values for best experience:
+
+# Enable advanced rendering
+enable_ffmpeg_videos = true
+use_new_timer = true
+preserve_aspect = true
+
+# FPS limiter (30 FPS for original feel, 60 FPS for smooth)
+ff7_fps_limiter = 2  # 0=Original, 1=30FPS, 2=60FPS
+
+# Field centering (keep character centered on screen)
+ff7_field_center = true
+
+###############################################################################
+# NOTES
+###############################################################################
+
+# 1. Only ff7_japanese_edition = true is REQUIRED
+# 2. All other settings are optional optimizations
+# 3. Japanese assets must be in mods/ directory (see WINDOWS_INSTALLATION_GUIDE.md)
+# 4. FFNx.dll must be built from PR #737 branch
+# 5. Works with ff7_en.exe (English executable)
+
+###############################################################################
+# File Structure Expected by FFNx
+###############################################################################
+
+# FFNx looks for textures in this structure:
+# mods/Textures/menu/jafont_1.png
+# mods/Textures/menu/jafont_2.png
+# mods/Textures/menu/jafont_3.png
+# mods/Textures/menu/jafont_4.png
+# mods/Textures/menu/jafont_5.png
+# mods/Textures/menu/jafont_6.png
+
+# FFNx VFS redirects game file requests:
+# Game requests: data/menu/menu_us.lgp/jafont_1.tex
+# FFNx redirects: mods/Textures/menu/jafont_1.png
+
+# Dialogue files (if you want to load Japanese dialogue):
+# mods/lang-ja/kernel/KERNEL.BIN
+# mods/lang-ja/field/jfleve.lgp
+
+###############################################################################
+# Troubleshooting
+###############################################################################
+
+# If Japanese text doesn't appear:
+# 1. Check FFNx.log for "Japanese edition mode: ENABLED"
+# 2. Check FFNx.log for "Loading texture: menu/jafont_*.png"
+# 3. Verify all 6 PNG files exist in mods/Textures/menu/
+# 4. Verify ff7_japanese_edition = true (no quotes)
+# 5. Restart FF7 after changing FFNx.toml
+
+# If textures fail to load:
+# 1. Enable show_missing_textures = true
+# 2. Check FFNx.log for "Missing texture" warnings
+# 3. Verify PNG files are not corrupted
+# 4. Try save_textures = true to see what FFNx expects
+
+# If dialogue is still English:
+# 1. Verify jfleve.lgp is in mods/lang-ja/field/
+# 2. Verify KERNEL.BIN is in mods/lang-ja/kernel/
+# 3. Check FFNx.log for VFS redirect messages
+# 4. Note: Dialogue redirection may require additional FFNx configuration
+
+###############################################################################
+# End of Configuration
+###############################################################################

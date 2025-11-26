@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModInfo>
+  <ID>a8f3c2d1-5e7b-4a9c-8d6f-1e2a3b4c5d6e</ID>
+  <Name>Japanese Text Support (PR #737)</Name>
+  <Author>CosmosXIII (PR #737) + John Zealand-Doyle</Author>
+  <Version>1.00</Version>
+  <ReleaseDate>2025-11-25</ReleaseDate>
+  <Category>User Interface</Category>
+  <Description>Enables Japanese text rendering in FF7 English executable using FFNx PR #737. Includes all 6 Japanese font texture pages (1,536 glyphs total: Hiragana, Katakana, Kanji) and Japanese dialogue files for field, menu, and battle text. Requires FFNx with PR #737 support and ff7_japanese_edition = true in FFNx.toml.</Description>
+  <ReleaseNotes>v1.0: Initial release with complete Japanese text support. Extracted from FF7 International Edition. Fonts by CosmosXIII (PR #737).</ReleaseNotes>
+  <Link>https://github.com/julianxhokaxhiu/FFNx/pull/737</Link>
+
+  <!-- Always active folders -->
+  <ModFolder Folder="mods" />
+  <ModFolder Folder="lang-ja" />
+</ModInfo>

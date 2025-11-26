@@ -30,4 +30,12 @@ venv/
 # OS artifacts
 Thumbs.db
 ehthumbs.db
-.DS_Store
+PR737/
+
+# Asset directories (contain Square Enix property or large files)
+FF7-Japanese-Mod/lang-ja/
+FF7-Japanese-Mod/mods/
+japanese-assets-extracted/raw-files/
+assets/fonts/
+FFNx/
+PR737/

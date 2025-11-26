@@ -5,14 +5,15 @@
 **Last Modified:** 2025-11-25 12:25:00 JST (Tuesday)
 **Author:** Research compiled by Claude Code
 **Session-IDs:**
+
 - 8f58819d-f9c4-4f04-8e95-4af04d782606 (Initial creation, Session 11)
 - 8f58819d-f9c4-4f04-8e95-4af04d782606 (Verification, Session 12)
-**Purpose:** Comprehensive developer guide for creating, using, and packaging mods with 7th Heaven mod manager
+  **Purpose:** Comprehensive developer guide for creating, using, and packaging mods with 7th Heaven mod manager
 
 **Status:** Verified Against Official Documentation (2025-11-25)
 
 > **Verification Note:** Section 7.3-7.5 has been verified against official 7th Heaven documentation
-> at https://7thheaven.rocks/help/userhelp.html. See `docs/TOOL_VERIFICATION_LOG.md` for details.
+> at https://7thheaven.rocks/help/userhelp.html. See `docs/reference/TOOL_VERIFICATION_LOG.md` for details.
 
 ---
 
@@ -53,6 +54,7 @@
 ### 1.2 For Developers
 
 This guide focuses on:
+
 - Creating production-ready mods
 - IRO file structure and creation
 - Understanding the build order system
@@ -61,6 +63,7 @@ This guide focuses on:
 - Developer tools for asset extraction/creation
 
 **NOT covered in this guide:**
+
 - End-user installation and usage
 - Playing FF7 with mods
 - Basic troubleshooting (see official help docs)
@@ -68,6 +71,7 @@ This guide focuses on:
 ### 1.3 Prerequisites
 
 **Required Knowledge:**
+
 - Basic understanding of FF7 PC file structure
 - File formats (.lgp, .tex, .png, .flevel, etc.)
 - XML/JSON syntax
@@ -75,6 +79,7 @@ This guide focuses on:
 - Archive file concepts (ZIP/TAR)
 
 **Required Software:**
+
 - 7th Heaven 2.0+ installed and working
 - FF7 PC (Steam 2013 or 1998 version)
 - FFNx graphics driver (strongly recommended)
@@ -82,6 +87,7 @@ This guide focuses on:
 - 7-Zip or similar archive tool
 
 **Recommended Tools:**
+
 - LGP/UNLGP (archive management)
 - TexTool or FF7 Tex Image Tool (texture conversion)
 - Makou Reactor (field editing)
@@ -140,6 +146,7 @@ If not found → Return original file from game directory
 **Definition:** When multiple mods replace the same file, **build order** determines which version wins.
 
 **Priority System:**
+
 - **Higher position in list = Higher priority** (wins conflicts)
 - User can reorder mods by dragging in 7th Heaven UI
 - Top-most active mod's file is used if multiple mods conflict
@@ -162,6 +169,7 @@ Result: Mod C's version is used (only mod with this file)
 
 **Auto-Sort Behavior:**
 7th Heaven 2.0's Auto Sort orders mods by:
+
 1. **Category** (in recommended order - see Section 6.3)
 2. **Name** (alphabetically within category)
 3. **OrderConstraints** (After/Before directives in mod.xml)
@@ -219,6 +227,7 @@ MyMod/
 ```
 
 **Valid Categories:**
+
 - Animations
 - Battle Models
 - Battle Textures
@@ -262,6 +271,7 @@ MyMod/
 **CRITICAL: Generating a Unique ID**
 
 Use 7th Heaven's built-in Catalog/Mod Creation Tool:
+
 1. Open 7th Heaven
 2. Go to Workshop tab
 3. Click "Catalog/Mod Creation Tool"
@@ -301,6 +311,7 @@ This makes the subfolder active only when the user has `MySetting` configured to
 ```
 
 **Folder Processing Order:**
+
 - 7th Heaven checks folders in the order they appear in mod.xml
 - First match wins
 - If `HD_Textures` and `SD_Textures` both have `cloud.p`, and `quality = high`, `HD_Textures/cloud.p` is used
@@ -360,6 +371,7 @@ This makes the subfolder active only when the user has `MySetting` configured to
 ```
 
 **PreviewFile and PreviewAudio:**
+
 - `PreviewFile`: Shows image when option is selected (jpg, png, gif)
 - `PreviewAudio`: Shows "Play" button to preview audio (mp3, ogg)
 - Paths are relative to IRO root
@@ -369,6 +381,7 @@ This makes the subfolder active only when the user has `MySetting` configured to
 **Purpose:** Organize many config options into collapsible groups.
 
 **Triggering TreeView Mode:**
+
 - Add `===Header Name===` (3+ equal signs before/after) to any ConfigOption Name
 - **All ConfigOptions** must then use headers (can't mix list and treeview)
 
@@ -431,6 +444,7 @@ This makes the subfolder active only when the user has `MySetting` configured to
 ```
 
 **Variable Types:**
+
 - `Short` - 2-byte integer
 - `Byte` - 1-byte integer
 - `Int` - 4-byte integer
@@ -457,18 +471,21 @@ This makes the subfolder active only when the user has `MySetting` configured to
 ```
 
 **Explanation:**
+
 - `FieldID` is a predefined variable = memory address `0xCC15D0:2`
 - When player enters field with ID `0xD5` or `0x160`, `midgar_slums/` folder activates
 - `PPV` (Progression Variable) at `0xDC08DC` tracks story progress
 - When PPV is between 300-400, `disc2_assets/` folder activates
 
 **Predefined Variables (in 7thHeaven.var):**
+
 - `FieldID` - Current field map ID
 - `PPV` - Story progression variable
 - `BattleID` - Current battle ID
 - `MenuState` - Menu state tracker
 
 **Value Formats:**
+
 - Single: `0xD5`
 - Multiple: `0xD5,0x160,0x200`
 - Range: `300..400`
@@ -594,12 +611,14 @@ Folder activates if **NOT** (`advanced = 1` **AND** `expert = 1`).
 ```
 
 **Auto Sort Processing:**
+
 1. Sort by Category
 2. Sort alphabetically by Name (within category)
 3. Process `<After>` constraints (move mod below specified mods)
 4. Process `<Before>` constraints (move mod above specified mods)
 
 **Example Use Case:**
+
 - Base texture mod should load BEFORE HD texture mod
 - Font mod should load AFTER text encoding mod
 
@@ -681,11 +700,13 @@ Folder activates if **NOT** (`advanced = 1` **AND** `expert = 1`).
 `IRO File = ZIP archive (renamed .iro) + metadata (mod.xml) + assets`
 
 **Purpose:**
+
 - Package all mod assets in single distributable file
 - Include configuration metadata for 7th Heaven
 - Enable easy installation via drag-and-drop or catalog
 
 **Technical Details:**
+
 - File format: Standard ZIP (DEFLATE compression)
 - Extension: `.iro`
 - Can be opened with any ZIP tool (7-Zip, WinRAR, etc.)
@@ -719,6 +740,7 @@ MyMod.iro
 ```
 
 **Asset Folder Rules:**
+
 1. Must mirror FF7's directory structure
 2. Paths in mod.xml match folder structure
 3. Forward slashes `/` or backslashes `\` both work
@@ -883,11 +905,12 @@ cd MyMod_WIP
 
 **Textures (.tex ↔ .png):**
 
-| Original Format | Tool | Process |
-|----------------|------|---------|
-| .tex | TexTool or FF7 Tex Image Tool | Extract: `.tex` → `.png`<br>Modify: Edit PNG in image editor<br>Convert: `.png` → `.tex` |
+| Original Format | Tool                          | Process                                                                                  |
+| --------------- | ----------------------------- | ---------------------------------------------------------------------------------------- |
+| .tex            | TexTool or FF7 Tex Image Tool | Extract: `.tex` → `.png`<br>Modify: Edit PNG in image editor<br>Convert: `.png` → `.tex` |
 
 **Texture Specifications:**
+
 - **Menu fonts:** 256×256 (original), can use higher res with FFNx
 - **Field textures:** Varies, commonly 256×256 to 1024×1024
 - **Battle textures:** Varies
@@ -895,11 +918,11 @@ cd MyMod_WIP
 
 **Models (.p files):**
 
-| Tool | Purpose |
-|------|---------|
+| Tool      | Purpose                    |
+| --------- | -------------------------- |
 | Kimera CS | View/edit character models |
-| Biturn | Export .p to .3ds |
-| pCreater | Import .3ds to .p |
+| Biturn    | Export .p to .3ds          |
+| pCreater  | Import .3ds to .p          |
 
 **Audio (vgmstream):**
 
@@ -924,22 +947,27 @@ ulgp pack extracted_folder new.lgp
 ### 5.3 Common Pitfalls
 
 **Issue: Mod doesn't appear in catalog**
+
 - **Cause:** Missing or invalid mod.xml
 - **Fix:** Validate XML syntax, ensure mod.xml is in IRO root
 
 **Issue: Assets not replaced in-game**
+
 - **Cause:** Folder structure doesn't match FF7 paths
 - **Fix:** Check mod folder structure against game directory
 
 **Issue: Mod works in 7H but not in game**
+
 - **Cause:** Asset file corruption or wrong format
 - **Fix:** Re-export assets, verify file integrity
 
 **Issue: "Duplicate ModID" error**
+
 - **Cause:** Used same GUID as existing mod
 - **Fix:** Generate new unique GUID
 
 **Issue: Preview image doesn't show**
+
 - **Cause:** Wrong path in `<PreviewFile>`
 - **Fix:** Ensure path is relative to IRO root, file exists
 
@@ -1006,6 +1034,7 @@ Solution:
 ```
 
 **Why This Order?**
+
 - Core system mods (Miscellaneous) load first
 - Visual mods load in logical order (models before textures)
 - UI mods load near end (often override other changes)
@@ -1030,6 +1059,7 @@ Solution:
 ```
 
 **Effect:**
+
 - Auto Sort respects these constraints
 - Manual reordering still works (overrides Auto Sort)
 
@@ -1041,80 +1071,80 @@ Solution:
 
 **LGP Archive Management:**
 
-| Tool | Purpose | Source |
-|------|---------|--------|
-| **ulgp** | Extract/pack .lgp archives | http://forums.qhimm.com/index.php?topic=12831.0 |
-| **LGP_edit** | GUI LGP manager | https://drive.google.com/file/d/0B3Kl04es5qkqeVFYSmE5NFZtSlU/view |
+| Tool         | Purpose                    | Source                                                            |
+| ------------ | -------------------------- | ----------------------------------------------------------------- |
+| **ulgp**     | Extract/pack .lgp archives | http://forums.qhimm.com/index.php?topic=12831.0                   |
+| **LGP_edit** | GUI LGP manager            | https://drive.google.com/file/d/0B3Kl04es5qkqeVFYSmE5NFZtSlU/view |
 
 **Texture Conversion:**
 
-| Tool | Purpose | Source |
-|------|---------|--------|
-| **TexTool** | TEX ↔ PNG converter | https://drive.google.com/file/d/0B0FYTN9Fe13HSTVCM3Z3QjhKZWc/view |
-| **FF7 Tex Image Tool** | Alternative TEX converter | http://forums.qhimm.com/index.php?topic=17755.0 |
+| Tool                   | Purpose                   | Source                                                            |
+| ---------------------- | ------------------------- | ----------------------------------------------------------------- |
+| **TexTool**            | TEX ↔ PNG converter       | https://drive.google.com/file/d/0B0FYTN9Fe13HSTVCM3Z3QjhKZWc/view |
+| **FF7 Tex Image Tool** | Alternative TEX converter | http://forums.qhimm.com/index.php?topic=17755.0                   |
 
 **Background Extraction:**
 
-| Tool | Purpose | Source |
-|------|---------|--------|
-| **Palmer** | Aali's driver background exporter | Google Drive (see Steam FF7 Tools guide) |
-| **FacePalmer** | Alternative background tool | http://forums.qhimm.com/index.php?topic=11933.0 |
+| Tool           | Purpose                           | Source                                          |
+| -------------- | --------------------------------- | ----------------------------------------------- |
+| **Palmer**     | Aali's driver background exporter | Google Drive (see Steam FF7 Tools guide)        |
+| **FacePalmer** | Alternative background tool       | http://forums.qhimm.com/index.php?topic=11933.0 |
 
 **Model Editing:**
 
-| Tool | Purpose | Source |
-|------|---------|--------|
-| **Kimera CS** | Character model viewer/editor | https://github.com/LaZar00/KimeraCS |
-| **Biturn** | Export .p to .3ds | Google Drive (see Steam FF7 Tools guide) |
-| **pCreater** | Import .3ds to .p | Google Drive |
-| **FFVII Maya Plugin** | Import/export for Maya | http://forums.qhimm.com/index.php?topic=17754.0 |
-| **HRC Resizer** | Resize .hrc models | http://forums.qhimm.com/index.php?topic=4331.0 |
+| Tool                  | Purpose                       | Source                                          |
+| --------------------- | ----------------------------- | ----------------------------------------------- |
+| **Kimera CS**         | Character model viewer/editor | https://github.com/LaZar00/KimeraCS             |
+| **Biturn**            | Export .p to .3ds             | Google Drive (see Steam FF7 Tools guide)        |
+| **pCreater**          | Import .3ds to .p             | Google Drive                                    |
+| **FFVII Maya Plugin** | Import/export for Maya        | http://forums.qhimm.com/index.php?topic=17754.0 |
+| **HRC Resizer**       | Resize .hrc models            | http://forums.qhimm.com/index.php?topic=4331.0  |
 
 **Field Editing:**
 
-| Tool | Purpose | Source |
-|------|---------|--------|
+| Tool              | Purpose                              | Source                                         |
+| ----------------- | ------------------------------------ | ---------------------------------------------- |
 | **Makou Reactor** | Field script/walkmesh/trigger editor | http://forums.qhimm.com/index.php?topic=9658.0 |
 
 **Text Editing:**
 
-| Tool | Purpose | Source |
-|------|---------|--------|
-| **touphScript** | Dialogue editor | http://forums.qhimm.com/index.php?topic=11944.0 |
-| **BoxFF7** | Dialog box positioning | http://forums.qhimm.com/index.php?topic=14436.0 |
+| Tool            | Purpose                | Source                                          |
+| --------------- | ---------------------- | ----------------------------------------------- |
+| **touphScript** | Dialogue editor        | http://forums.qhimm.com/index.php?topic=11944.0 |
+| **BoxFF7**      | Dialog box positioning | http://forums.qhimm.com/index.php?topic=14436.0 |
 
 **Battle Editing:**
 
-| Tool | Purpose | Source |
-|------|---------|--------|
+| Tool           | Purpose                 | Source                                         |
+| -------------- | ----------------------- | ---------------------------------------------- |
 | **Proud Clod** | Battle script/AI editor | http://forums.qhimm.com/index.php?topic=8481.0 |
 
 **Kernel Editing:**
 
-| Tool | Purpose | Source |
-|------|---------|--------|
-| **WallMarket** | Kernel.bin editor (items, materia, etc.) | http://forums.qhimm.com/index.php?topic=7928.0 |
-| **kernel2 compressor** | Compress kernel2.bin | http://forums.qhimm.com/index.php?topic=17024.0 |
+| Tool                   | Purpose                                  | Source                                          |
+| ---------------------- | ---------------------------------------- | ----------------------------------------------- |
+| **WallMarket**         | Kernel.bin editor (items, materia, etc.) | http://forums.qhimm.com/index.php?topic=7928.0  |
+| **kernel2 compressor** | Compress kernel2.bin                     | http://forums.qhimm.com/index.php?topic=17024.0 |
 
 **Shop Editing:**
 
-| Tool | Purpose | Source |
-|------|---------|--------|
+| Tool              | Purpose               | Source                                  |
+| ----------------- | --------------------- | --------------------------------------- |
 | **White Chocobo** | Shop inventory editor | Google Docs (see Steam FF7 Tools guide) |
 
 **Save Editing (for testing):**
 
-| Tool | Purpose | Source |
-|------|---------|--------|
+| Tool              | Purpose          | Source                                         |
+| ----------------- | ---------------- | ---------------------------------------------- |
 | **Black Chocobo** | Save game editor | http://forums.qhimm.com/index.php?topic=9625.0 |
 
 **Miscellaneous:**
 
-| Tool | Purpose | Source |
-|------|---------|--------|
+| Tool               | Purpose                      | Source                                          |
+| ------------------ | ---------------------------- | ----------------------------------------------- |
 | **HEXT TOOLS 3.0** | Apply hex patches at runtime | http://forums.qhimm.com/index.php?topic=13574.0 |
 | **Game Converter** | Convert between FF7 versions | http://forums.qhimm.com/index.php?topic=14047.0 |
-| **Workers** | people.bin editor | http://forums.qhimm.com/index.php?topic=16431.0 |
+| **Workers**        | people.bin editor            | http://forums.qhimm.com/index.php?topic=16431.0 |
 
 ### 7.2 Asset Extraction Workflow
 
@@ -1149,6 +1179,7 @@ cd .\mod
 **Location:** Workshop → Pack/Unpack IRO
 
 **Pack (Create IRO from folder):**
+
 ```
 1. Select source folder containing mod files
 2. Choose output IRO filename
@@ -1160,6 +1191,7 @@ cd .\mod
 ```
 
 **Unpack (Extract IRO to folder):**
+
 ```
 1. Select IRO file
 2. Choose destination folder
@@ -1168,6 +1200,7 @@ cd .\mod
 ```
 
 **When to Use:**
+
 - Creating new mods from folders
 - Inspecting IRO contents
 - Modifying existing IROs (unpack → edit → repack)
@@ -1177,6 +1210,7 @@ cd .\mod
 **Location:** Workshop → IRO Tools
 
 **Create .irop Patch Files:**
+
 ```
 1. Select "Original" IRO (v1.0)
 2. Select "New" IRO (v2.0)
@@ -1185,10 +1219,12 @@ cd .\mod
 ```
 
 **Merge IRO Files:**
+
 - Combine multiple IROs into one
 - Useful for consolidating mod variants
 
 **Chunk IRO Files:**
+
 - Split large IROs into smaller pieces
 - Useful for file hosts with size limits
 - Automatically reassembles on import
@@ -1198,14 +1234,17 @@ cd .\mod
 **Location:** Workshop → Catalog/Mod Creation Tool
 
 **Generate GUID:**
+
 ```
 1. Click "Generate New"
 2. Copy the displayed GUID
 3. Paste into mod.xml <ID> field
 ```
+
 **Tip:** Every mod MUST have a unique GUID. Never reuse GUIDs.
 
 **Create Catalog Entry:**
+
 ```
 1. Fill in mod details:
    - Name, Author, Version
@@ -1216,6 +1255,7 @@ cd .\mod
 ```
 
 **Edit Existing Catalog:**
+
 - Load catalog XML
 - Add/remove/modify mod entries
 - Validate XML syntax
@@ -1229,6 +1269,7 @@ cd .\mod
 **External Tools for DDS/Texture Conversion:**
 
 1. **SYW Pack Builder** (by Satsuki)
+
    - Forum: https://forums.qhimm.com/index.php?topic=19204.0
    - Converts PNG texture packs to DDS format IROs
    - Creates IRO files with "Make IRO from DDS Files" button
@@ -1240,6 +1281,7 @@ cd .\mod
    - Drag-and-drop interface
 
 **Why DDS?**
+
 - DDS textures load 40-70% faster than PNG in FFNx
 - Recommended for large texture mods (Remako, SYW upscales)
 - PNG is fallback/legacy format
@@ -1256,16 +1298,19 @@ cd .\mod
 **Actual Purpose:** Copy FMV files from **original 1998 physical game discs** to hard drive.
 
 **Official Description (from 7thheaven.rocks):**
+
 > "If you have the original 1998 disc release of Final Fantasy VII, this tool will assist you
 > with copying over the movies from disc onto the hard drive. If all movie files are already
 > found on your computer, this option is disabled."
 
 **What This Tool Does:**
+
 1. Prompts user to insert physical FF7 game discs (Disc 1, 2, 3)
 2. Copies original FMV files from disc to movies folder
 3. Automatically disabled if movies already exist on drive
 
 **What This Tool Does NOT Do:**
+
 - Does NOT convert video formats (AVI, MKV, MP4, etc.)
 - Does NOT encode or re-encode videos
 - Does NOT support modern codecs
@@ -1273,6 +1318,7 @@ cd .\mod
 
 **For Video Replacement Mods:**
 If you want to replace FMVs with upscaled/remastered versions:
+
 1. FFNx supports direct playback of modern video formats
 2. Place video files in appropriate mod folder structure
 3. Package as IRO using standard IRO Tools
@@ -1288,14 +1334,15 @@ If you want to replace FMVs with upscaled/remastered versions:
 
 Access via the dropdown arrow next to the Play button:
 
-| Option | Purpose |
-|--------|---------|
-| **Play With Debug Log** | Verbose logging, detailed file operations |
-| **Play With Variable Dump** | TurBoLog with runtime variable values |
-| **Play With Minimal Validation** | Skip validation checks (faster launch) |
-| **Play Without Mods** | Launch vanilla game |
+| Option                           | Purpose                                   |
+| -------------------------------- | ----------------------------------------- |
+| **Play With Debug Log**          | Verbose logging, detailed file operations |
+| **Play With Variable Dump**      | TurBoLog with runtime variable values     |
+| **Play With Minimal Validation** | Skip validation checks (faster launch)    |
+| **Play Without Mods**            | Launch vanilla game                       |
 
 **Official Description:**
+
 > "The Debug Log and Variable Dump can be useful for troubleshooting 7th Heaven and/or mod files."
 
 **Source:** https://7thheaven.rocks/help/userhelp.html#playbutton
@@ -1314,6 +1361,7 @@ Access via the dropdown arrow next to the Play button:
 ```
 
 **What Gets Logged (unverified):**
+
 - Mod loading order
 - File path resolutions
 - VFS intercept decisions
@@ -1322,6 +1370,7 @@ Access via the dropdown arrow next to the Play button:
 
 **Variable Dump Output:**
 When using "Play With Variable Dump", look for runtime variable entries that can help configure Conditional folders in mod.xml:
+
 - FieldID values (current map)
 - PPV values (story progression)
 - BattleID values (current battle)
@@ -1336,6 +1385,7 @@ When using "Play With Variable Dump", look for runtime variable entries that can
 **Purpose:** Extract portions of `flevel.lgp` into "Chunks" for translation/localization mods.
 
 **Official Description (from 7thheaven.rocks):**
+
 > "This tool is useful for modders. It allows you to extract only a portion of the flevel.lgp
 > file into 'Chunks'. This is great if you need to distribute a portion of a customized
 > flevel.lgp file in your mod without needing to include the entire file."
@@ -1343,6 +1393,7 @@ When using "Play With Variable Dump", look for runtime variable entries that can
 **Use Case:** Translation mods that only modify dialog text, not backgrounds or models.
 
 **Workflow:**
+
 1. Click folder icon to select source `flevel.lgp`
 2. Click folder icon to select output directory
 3. Check boxes for sections to extract:
@@ -1351,6 +1402,7 @@ When using "Play With Variable Dump", look for runtime variable entries that can
 4. Click "Extract"
 
 **Benefits:**
+
 - Smaller mod file size
 - Fewer conflicts with texture/model mods
 - Only distribute what you changed
@@ -1366,11 +1418,13 @@ When using "Play With Variable Dump", look for runtime variable entries that can
 **Purpose:** Split large IRO files into smaller pieces for file hosts with size limits.
 
 **How It Works:**
+
 - Large IRO split into `.chunk.001`, `.chunk.002`, etc.
 - 7th Heaven automatically reassembles on download
 - Supports pause/resume for unreliable connections
 
 **Catalog Integration:**
+
 ```xml
 <!-- In catalog XML, link to chunk files -->
 <LatestVersion>
@@ -1380,6 +1434,7 @@ When using "Play With Variable Dump", look for runtime variable entries that can
 ```
 
 **When to Use:**
+
 - File hosts with 100MB limits
 - Very large mods (1GB+)
 - Users with slow/unreliable connections
@@ -1419,6 +1474,7 @@ trace_all = false
 #### 7th Heaven Debug Options (Verified)
 
 Access via Play button dropdown:
+
 - **Play With Debug Log** - Detailed logging
 - **Play With Variable Dump** - TurBoLog with variables
 - **Play With Minimal Validation** - Skip checks
@@ -1442,12 +1498,14 @@ DumpVarState=true   # Dump all runtime variables
 #### Inspecting Active Mod Configuration
 
 **Profile Files:**
+
 ```
 %APPDATA%\7th Heaven\profiles\
   └── Default.xml    # Current active configuration
 ```
 
 **Profile XML Structure:**
+
 ```xml
 <Profile>
   <ActiveMods>
@@ -1464,6 +1522,7 @@ DumpVarState=true   # Dump all runtime variables
 ```
 
 **Debugging Load Order Issues:**
+
 1. Open Profile XML
 2. Check `<LoadOrder>` values
 3. Lower number = higher priority
@@ -1499,6 +1558,7 @@ REM Delete file from IRO
 ### 8.1 Conditional Loading (Runtime Variables)
 
 **Use Cases:**
+
 - Show different textures based on location
 - Activate special assets during specific story events
 - Change music based on game progression
@@ -1542,6 +1602,7 @@ REM Delete file from IRO
 ```
 
 **Folder Priority:**
+
 - If both conditions are true, folder listed first in mod.xml wins
 - If `midgar` and `junon` both have `cloud.p`, `midgar/cloud.p` is used
 
@@ -1577,6 +1638,7 @@ REM Delete file from IRO
 ```
 
 **User Experience:**
+
 - User has v1.0 installed
 - Catalog shows v2.0 available
 - 7th Heaven downloads small .irop patch (not full mod)
@@ -1605,6 +1667,7 @@ REM Delete file from IRO
 ```
 
 **Behavior:**
+
 - Opens link in user's web browser
 - User downloads manually
 - User imports IRO into 7th Heaven
@@ -1616,6 +1679,7 @@ REM Delete file from IRO
 ```
 
 **Behavior:**
+
 - 7th Heaven downloads directly
 - No browser interaction
 
@@ -1668,6 +1732,7 @@ Result in mod directory:
 ### 9.1 Testing Checklist
 
 **Pre-Packaging:**
+
 - [ ] All assets converted to correct formats (.tex, .p, .ogg, etc.)
 - [ ] Folder structure matches FF7 directory layout
 - [ ] mod.xml validated (XML syntax checker)
@@ -1675,12 +1740,14 @@ Result in mod directory:
 - [ ] Preview image exists and displays correctly
 
 **Post-Packaging:**
+
 - [ ] IRO opens in 7-Zip without errors
 - [ ] mod.xml is in IRO root (not in subfolder)
 - [ ] All paths in mod.xml exist in IRO
 - [ ] File sizes reasonable (not accidentally huge)
 
 **In 7th Heaven:**
+
 - [ ] IRO imports without errors
 - [ ] Mod appears in catalog with correct info
 - [ ] Preview image displays
@@ -1688,6 +1755,7 @@ Result in mod directory:
 - [ ] Config options appear and work
 
 **In-Game:**
+
 - [ ] Game launches without crashes
 - [ ] Modded assets appear correctly
 - [ ] No visual glitches
@@ -1695,6 +1763,7 @@ Result in mod directory:
 - [ ] Disable mod → Game returns to vanilla
 
 **Compatibility:**
+
 - [ ] Test with other popular mods enabled
 - [ ] Verify no unexpected interactions
 - [ ] Check Auto Sort places mod correctly
@@ -1702,30 +1771,36 @@ Result in mod directory:
 ### 9.2 Common Issues and Solutions
 
 **Issue: "Mod failed to load"**
+
 - **Cause:** Corrupted IRO or invalid mod.xml
 - **Debug:** Extract IRO, check mod.xml syntax
 - **Fix:** Rebuild IRO from clean source
 
 **Issue: "Duplicate ModID detected"**
+
 - **Cause:** Used another mod's GUID
 - **Debug:** Check `<ID>` field in mod.xml
 - **Fix:** Generate new unique GUID
 
 **Issue: Assets don't appear in-game**
+
 - **Cause:** Folder structure mismatch
 - **Debug:** Compare mod folder structure to FF7 data directory
 - **Fix:** Reorganize folders to match game structure
 
 **Issue: Config options don't work**
+
 - **Cause:** `<ID>` in ConfigOption doesn't match ModFolder `ActiveWhen`
 - **Debug:** Check variable names match exactly
 - **Fix:** Ensure consistency between ConfigOption `<ID>` and ModFolder conditions
 
 **Issue: Mod appears twice in catalog**
+
 - **Cause:** Old version still in `mods/7th Heaven/` folder
 - **Fix:** Delete duplicate IRO, reimport
 
 **Issue: "Failed to extract archive"**
+
 - **Cause:** IRO is not valid ZIP format
 - **Debug:** Open with 7-Zip, check for errors
 - **Fix:** Repack using 7z command line
@@ -1740,6 +1815,7 @@ Result in mod directory:
 4. Check log file: `<7thHeaven>\logs\7thHeaven.log`
 
 **What to Look For:**
+
 - Mod load events
 - File intercept messages
 - Error messages
@@ -1805,6 +1881,7 @@ Result in mod directory:
 ```
 
 **How to get File ID:**
+
 1. Upload to Google Drive
 2. Right-click → Get shareable link
 3. Extract ID from URL: `https://drive.google.com/file/d/[FILE_ID]/view?usp=sharing`
@@ -1834,32 +1911,38 @@ Result in mod directory:
 ### 10.3 Distribution Platforms
 
 **7th Heaven Official Catalog:**
+
 - **How to submit:** Contact Tsunamods team via Discord or GitHub
 - **Pros:** In-app discovery, automatic updates, trusted source
 - **Cons:** Moderation required, not instant
 
 **Qhimm Forums:**
+
 - **URL:** https://forums.qhimm.com/
 - **Section:** 7th Heaven board
 - **Pros:** Active modding community, feedback, support
 - **Cons:** Manual downloads (unless added to catalog)
 
 **NexusMods:**
+
 - **URL:** https://www.nexusmods.com/finalfantasy7
 - **Pros:** Large audience, mod manager support (can link 7H), popularity tracking
 - **Cons:** Not integrated with 7H (users must import manually)
 
 **GitHub Releases:**
+
 - **Pros:** Version control, release management, free hosting
 - **Cons:** Not discoverable in 7H (unless catalog entry added)
 
 **Personal Website:**
+
 - **Pros:** Full control, custom presentation
 - **Cons:** Bandwidth costs, hosting maintenance
 
 ### 10.4 Release Checklist
 
 **Pre-Release:**
+
 - [ ] Version number updated in mod.xml
 - [ ] Release date current
 - [ ] Complete testing on clean FF7 install
@@ -1868,22 +1951,26 @@ Result in mod directory:
 - [ ] Credits and attribution correct
 
 **Package:**
+
 - [ ] IRO created with correct compression
 - [ ] File size optimized
 - [ ] Filename format: `ModName_v1.00.iro`
 
 **Upload:**
+
 - [ ] Files uploaded to host
 - [ ] Download link tested
 - [ ] Backup links created (Google Drive + MEGA recommended)
 
 **Announce:**
+
 - [ ] Create forum thread (Qhimm)
 - [ ] Submit catalog entry (if applicable)
 - [ ] Share on Discord/social media
 - [ ] Update mod page with screenshots
 
 **Post-Release:**
+
 - [ ] Monitor for bug reports
 - [ ] Respond to user feedback
 - [ ] Plan updates/patches
@@ -1895,6 +1982,7 @@ Result in mod directory:
 ### 11.1 Official Resources
 
 **7th Heaven:**
+
 - **GitHub:** https://github.com/tsunamods-codes/7th-Heaven
 - **Website:** https://7thheaven.rocks/
 - **Help Docs:** https://7thheaven.rocks/help/modhelp.html
@@ -1902,10 +1990,12 @@ Result in mod directory:
 - **Discord:** Check Tsunamods website for invite link
 
 **FFNx (Recommended Graphics Driver):**
+
 - **GitHub:** https://github.com/julianxhokaxhiu/FFNx
 - **Documentation:** https://github.com/julianxhokaxhiu/FFNx/blob/master/README.md
 
 **Qhimm Community:**
+
 - **Forums:** https://forums.qhimm.com/
 - **Wiki:** http://wiki.qhimm.com/view/FF7
 - **Modding Wiki:** https://qhimm-modding.fandom.com/wiki/FF7
@@ -1915,6 +2005,7 @@ Result in mod directory:
 **Complete list in Section 7.1**
 
 **Quick Reference:**
+
 - **LGP:** ulgp, LGP_edit
 - **Textures:** TexTool, FF7 Tex Image Tool
 - **Models:** Kimera CS, Biturn, pCreater
@@ -1927,6 +2018,7 @@ Result in mod directory:
 ### 11.3 File Format Specifications
 
 **FF7 File Formats:**
+
 - **LGP:** https://qhimm-modding.fandom.com/wiki/FF7/LGP_format
 - **TEX:** http://wiki.qhimm.com/view/FF7/TEX_format
 - **.P Models:** http://wiki.qhimm.com/view/FF7/P_file_format
@@ -1942,6 +2034,7 @@ Result in mod directory:
 4. **Echo-S Music Mod** (Audio replacement)
 
 **How to Study:**
+
 1. Download mod IRO
 2. Extract with 7-Zip
 3. Read mod.xml
@@ -1951,11 +2044,13 @@ Result in mod directory:
 ### 11.5 Community Contact
 
 **Get Help:**
+
 - **Qhimm Discord:** Active modding community
 - **Qhimm Forums:** Long-form discussions, tutorials
 - **7th Heaven GitHub Issues:** Bug reports, feature requests
 
 **Contribute:**
+
 - **Test mods:** Provide feedback to authors
 - **Create tutorials:** Share your knowledge
 - **Submit tools:** Improve modding ecosystem
@@ -2024,12 +2119,12 @@ Before packaging your IRO, verify:
 
 **Runtime Variables (from 7thHeaven.var):**
 
-| Variable | Type | Address | Description |
-|----------|------|---------|-------------|
-| FieldID | Short | 0xCC15D0:2 | Current field map ID |
-| PPV | Short | 0xDC08DC:2 | Progression variable (story state) |
-| BattleID | Short | 0x9A8F00:2 | Current battle ID |
-| MenuState | Byte | 0xCFF1F4:1 | Menu open/closed state |
+| Variable  | Type  | Address    | Description                        |
+| --------- | ----- | ---------- | ---------------------------------- |
+| FieldID   | Short | 0xCC15D0:2 | Current field map ID               |
+| PPV       | Short | 0xDC08DC:2 | Progression variable (story state) |
+| BattleID  | Short | 0x9A8F00:2 | Current battle ID                  |
+| MenuState | Byte  | 0xCFF1F4:1 | Menu open/closed state             |
 
 **For complete list:** Check `7th Heaven/7thHeaven.var` file.
 
@@ -2040,6 +2135,7 @@ Before packaging your IRO, verify:
 **Document Status:** Verified Against Official Sources (v2.2)
 
 **Verification Summary (2025-11-25):**
+
 - Section 7.3.1-7.3.3: VERIFIED against official 7thheaven.rocks documentation
 - Section 7.3.4: CORRECTED - External tool, not built-in
 - Section 7.3.5: CORRECTED - Disc copy tool, not video encoder
@@ -2047,9 +2143,10 @@ Before packaging your IRO, verify:
 - Section 7.3.7-7.3.8: VERIFIED and CLARIFIED (two different chunking concepts)
 - Section 7.4: PARTIALLY VERIFIED (FFNx settings verified, wrapper settings unverified)
 
-**See:** `docs/TOOL_VERIFICATION_LOG.md` for complete verification details.
+**See:** `docs/reference/TOOL_VERIFICATION_LOG.md` for complete verification details.
 
 **Sources:**
+
 - Official 7th Heaven Documentation: https://7thheaven.rocks/help/userhelp.html (PRIMARY)
 - Official 7th Heaven Mod Help: https://7thheaven.rocks/help/modhelp.html
 - Tsunamods GitHub Repository: https://github.com/tsunamods-codes/7th-Heaven
@@ -2059,14 +2156,17 @@ Before packaging your IRO, verify:
 - OatBran's 7H Steam Guide: https://github.com/OatBran/7HSteamGuide (community reference)
 
 **Research Sessions:**
+
 - 2025-11-24 21:50-22:15 JST - Initial creation (Session 11)
 - 2025-11-25 12:00-12:30 JST - Verification against official sources (Session 12)
 
 **Session IDs:**
+
 - 8f58819d-f9c4-4f04-8e95-4af04d782606
 
 ---
 
 **For questions, support, or contributions:**
+
 - Qhimm Forums: https://forums.qhimm.com/
 - 7th Heaven Issues: https://github.com/tsunamods-codes/7th-Heaven/issues
