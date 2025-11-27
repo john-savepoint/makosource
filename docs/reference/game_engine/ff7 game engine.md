@@ -137,63 +137,65 @@ Introduction [Write last]
 
 # **History**
 
-On January 31st, 1997, Final Fantasy VII was released to the Japanese public. This single game both revolutionized and raised the bar of Japanese style console role playing games. It success was so staggering, it placed Squaresoft firmly on top the the the genre, displacing the Dragon Quest series created by the rival Enix company.
+## Preface
 
-The story of how this game came to be has a story more expansive than the game itself. It starts, as most stories do, with it's prequel.
+On January 31st, 1997, Final Fantasy VII was released to the Japanese public. This single game both revolutionized and raised the bar of Japanese style console role playing games. Its success was so staggering, it placed Squaresoft firmly on top of the genre, displacing the Dragon Quest series created by the rival Enix company.
+
+The story of how this game came to be has a story more expansive than the game itself. It starts, as most stories do, with its prequel.
 
 #### **Squaresoft and the "Big N"**
 
 In 1994, Squaresoft released Final Fantasy VI in Japan through an exclusive contract with Nintendo. The game was for the Super Famicom, or more internationally known as the Super Nintendo Entertainment System. This game was a massive best-seller, and the powers that be decided to have the game "cross the pond" as it were for the U.S. audiences.
 
-Sadly, as Nintendo had exclusive distribution rights to all games in the United States, the decision was made to alter the game. The traditional Final Fantasy logo was changed to one American audiences were more used to. The sequel number was also dropped from VI to III. Nintendo had only released two Final Fantasy games in the states. Part 1 for the NES, and Part 4 for the SNES. (Part 4 was actually going to be a NES game, but was ported up in the middle of it's development. That, however is another story.) The game was also edited for content. Several silly things like a programmers room and a porno book were removed. All in all the sales were modest, but it was nowhere neat the success that the game enjoyed in Japan.
+Sadly, as Nintendo had exclusive distribution rights to all games in the United States, the decision was made to alter the game. The traditional Final Fantasy logo was changed to one American audiences were more used to. The sequel number was also dropped from VI to III. Nintendo had only released two Final Fantasy games in the states. Part I for the NES, and Part IV for the SNES (Part IV was actually going to be a NES game, but was ported up in the middle of its development. That, however is another story). The game was also edited for content. Several silly things like a programmers room and a porno book were removed. All in all the sales were modest, but it was nowhere near the success that the game enjoyed in Japan.
 
 It was often said that the U.S. Market was not appropriate for Japanese-style RPGs.
 
-After the release of FF6 in the US, Nintendo started work on a new video game system. Codenamed the "Ultra 64" it was boasting a new 3d graphics core and a CD-ROM format for it's games. At the time, Nintendo and Sony were working together to create the "PlayStation Expansion" (PSX) CD-ROM system as an add-on to the Super Nintendo. It was also rumored that this technology was going to be in the Ultra 64 system as well.
+After the release of FF6 in the U.S., Nintendo started work on a new video game system. Codenamed the "Ultra 64" it was boasting a new 3D graphics core and a CD-ROM format for its games. At the time, Nintendo and Sony were working together to create the "PlayStation Expansion" (PSX) CDROM system as an add-on to the Super Nintendo. It was also rumored that this technology was going to be in the Ultra 64 system as well.
 
 Squaresoft decided that movie-like role playing games that took advantage of this new multimedia technology was the future. They invested billions of yen into SGI workstations when it was learned that the Ultra 64 was going to use a 64 bit R4300 MIPS architecture. A new threaded 3D engine was developed for the Final Fantasy series. A demo of the new technology was created on their new development systems. It was a simple battle engine using the characters from FF6. It was assumed that this would be the beginnings of FF7 for the Ultra 64.
 
 Then the rug was pulled out from under Square's feet by Nintendo.
 
-Nintendo and Sony had a falling out. An issue came about when both companies disagreed over who got to license the games for the new CD-ROM systems. Sony wanted control, but Nintendo balked. Nintendo also had problems as Sony was already making the sound chip for the SNES that was difficult to program for. Nintendo wanted more control.
+Nintendo and Sony had a falling out. An issue came about when both companies disagreed over who got to license the games for the new CD-ROM systems. Sony wanted control, but Nintendo balked. Nintendo also had problems as Sony was already making the sound chip for the SNES which was difficult to program for. Nintendo wanted more control.
 
 Nintendo went behind Sony and asked Phillips for assistance, as they also could license CD-ROM technology. When Sony found out that Nintendo was going to someone else, (and a foreign one at that!), it was the last straw and pulled their technology. They also convinced Phillips, Matsushita, NEC, and Pioneer not to license any optical drive technology to Nintendo either.
 
-Going alone, Sony decided to take their popular System 11 arcade boards, tack on a CD-ROM and called it the Playstation. You can read about that story in my PSX technical manual "Everything You Ever Wanted to Know About the PSX but were afraid to ask"
+Going alone, Sony decided to take their popular System 11 arcade boards, tack on a CD-ROM and called it the Playstation. You can read about that story in my PSX technical manual [ [http://www.zophar.net/tech/psx.html](http://www.zophar.net/tech/psx.html) "Everything You Ever Wanted to Know About the PSX But Were Afraid to Ask"].
 
 Nintendo, without a drive system, quietly disclosed to their third parties that the Ultra 64 was going to be cartridge based. The maximum limit that any game could be was 32 megabytes. Squaresoft was now in a bind, they had invested millions of yen into creating a movie-like RPG experience and now had to cut it down to fit on a cartridge. When it was revealed that the PSX would also be using a MIPS CPU, Square abandoned Nintendo and gained an exclusive distribution contract with Sony. The groundwork for Final Fantasy VII was now laid and could continue unobstructed.
 
 #### **The Production**
 
-Halfway through the production of Final Fantasy 7, two very important things happened. First a second team was spun off to start production of Final Fantasy 8. This allowed a staggered development cycle were when one game one done, another would be half done, cutting production time in half. Also half way through production, Hironobu Sakaguchi, the producer, learned that his mother Aki had died. Sakaguchi drew on this death and altered the story in a radical way. It now revolved around life and death and the earth.
+Halfway through the production of Final Fantasy VII, two very important things happened. First a second team was spun off to start production of [Final Fantasy VIII](https://qhimm-modding.fandom.com/wiki/FF8). This allowed a staggered development cycle were when one game one done, another would be half done, cutting production time in half. Also half way through production, Hironobu Sakaguchi, the producer, learned that his mother Aki had died. Sakaguchi drew on this death and altered the story in a radical way. It now revolved around life and death and the earth.
 
 #### **The Release**
 
 The game was shipped to stores in Japan January 31, 1997, but not without a few problems. First, the game was incomplete. A few scenes were not able to run correctly before release. Also the extra bosses were not added in time. These were minor issues that no one missed, and were later fixed in the US version.
 
-In the States, a demo of FF7 was released with the game "Tobal No.1". It was a modified version of the first part of the game using characters not available until later. It was also the first release in the states that called the game by it's proper number. It was also the first time American audiences saw a true Final Fantasy logo. The game was released in the the states September 3rd, 1997. This release included a round of bug fixes, in including of the missing bosses, and the nonworking scenes were added properly.
+In the States, a demo of FF7 was released with the game "Tobal No.1". It was a modified version of the first part of the game using characters not available until later. It was also the first release in the states that called the game by its proper number. It was also the first time American audiences saw a true Final Fantasy logo. The game was released in the states September 3rd, 1997. This release included a round of bug fixes, including of the missing bosses, and the nonworking scenes were added properly.
 
-Later, Japan got a re-release of the expanded US version, along with a scene viewer and other bonus content. This was called "Final Fantasy 7 International"
+Later, Japan got a re-release of the expanded U.S. version, along with a scene viewer and other bonus content. This was called "Final Fantasy VII International"
 
 #### **The PC Port**
 
-With the wild success of FF7, Square's shareholders were beginning to pressure the company to start diversifying their products. At the time, Square was only making games exclusively for Sony, and limiting their market. It also became apparent that their older games were not suitable for more modern systems. Even Final Fantasy 6, the game previous, was fixed to a single platform and could not be adapted easily to other computer systems. Square made the choice to update their old games to modern programming languages and platforms. They also decided to port Final Fantasy 7 to the PC.
+With the wild success of FF7, Square's shareholders were beginning to pressure the company to start diversifying their products. At the time, Square was only making games exclusively for Sony, and limiting their market. It also became apparent that their older games were not suitable for more modern systems. Even Final Fantasy VI, the game previous, was fixed to a single platform and could not be adapted easily to other computer systems. Square made the choice to update their old games to modern programming languages and platforms. They also decided to port Final Fantasy VII to the PC.
 
 Square chose Eidos of the publisher for their PC ports. At the time Eidos has successfully handled the conversion and release of Core's widely popular "Tomb Raider" game from the PSX to PC. Having experience in marketing and distributing PSX to PC conversions, the company seemed to be the right choice.
 
-In the beginning, however, the PC port suffered many problems. When the contract programmers received the FF7 source code from Square, it was a horrible state of atrophy. When work started on the port, it was soon discovered that they had received an earlier, buggy version of the program. Work had to stop while Square accumulated a later version. It was also discovered that the people and equipment used to create the backgrounds for FF7, were now being used for FF8 and FF9. There was no way to re-render the backgrounds and the port team was forced to use the original low color/low resolution PSX dependencies. The movies faired worse. Squaresoft never rendered high resolution versions of the movies. The movie format was incompatible with Microsoft's DirectX system, so it was decided to convert the compressed PSX movies to one more native to a PC platform. This caused disastrous results. The movies were now a copy of a copy of a low resolution render.
+In the beginning, however, the PC port suffered many problems. When the contract programmers received the FF7 source code from Square, it was a horrible state of atrophy. When work started on the port, it was soon discovered that they had received an earlier, buggy version of the program. Work had to stop while Square accumulated a later version. It was also discovered that the people and equipment used to create the backgrounds for FF7, were now being used for FF8 and FF9. There was no way to re-render the backgrounds and the port team was forced to use the original low color/low resolution PSX dependencies. The movies fared worse. Squaresoft never rendered high resolution versions of the movies. The movie format was incompatible with Microsoft's DirectX system, so it was decided to convert the compressed PSX movies to one more native to a PC platform. This caused disastrous results. The movies were now a copy of a copy of a low resolution render.
 
-Square also refused to have anything added. It was to be a straight port of the PSX version with the same exact interface. Concessions were only made to text input. The game could run in a "high resolution" mode of 640x480, which isn't really a lot in terms of PC resolution. It was also limited to 15 bit color.
+Square also refused to have anything added. It was to be a straight port of the PSX version with the same exact interface. Concessions were only made to text input. The game could run in a "high resolution" mode of 640x480, which isn't really a lot in terms of PC resolution. It was also limited to 15-bit color.
 
-More problems arose. The PSX had the ability to use different color depths on the screen at the same time. Many graphical effects depended on this ability. Many PC graphic cards did not have the ability to use color look up tables when placed into high color modes. This caused the game to go into a low resolution software renderer if this functionality wasn't available. FF7 was also designed for 15 bit graphics. This caused noticeable color banding on a PC screen. The sound architecture is also wildly different and suffered as well.
+More problems arose. The PSX had the ability to use different color depths on the screen at the same time. Many graphical effects depended on this ability. Many PC graphic cards did not have the ability to use color look up tables when placed into high color modes. This caused the game to go into a low resolution software renderer if this functionality wasn't available. FF7 was also designed for 15-bit graphics. This caused noticeable color banding on a PC screen. The sound architecture is also wildly different and suffered as well.
 
-The PC port was released June of 1998. It was late, buggy, and not very well ported. The game initially was incompatible with Cyrix and AMD CPUs, to which Eidos technical support simply refused to support at first. Many people with high-end graphic cards found themselves forced into a software renderer due to a lack of a color lookup system. Movies played upside down, or crashed the system all together, as it used a 3rd party renderer. The only solution Eidos came up with was to offer a save game past the crash point, destroying hours of work by the user. Many sound cards were not designed for MIDI playback and the software player used too much in the way of resources, slowing the whole system. The initial keyboard configuration was grossly unintuitive, using only the numeric keypad. Many laptops without one couldn't even use the game as you had to use the number pad to access the configuration menu....... and the box was ugly.
+The PC port was released in June of 1998. It was late, buggy, and not very well ported. The game initially was incompatible with Cyrix and AMD CPUs, to which Eidos technical support simply refused to support at first. Many people with high-end graphic cards found themselves forced into a software renderer due to a lack of a color lookup system. Movies played upside down, or crashed the system all together, as it used a 3rd-party renderer. The only solution Eidos came up with was to offer a save game past the crash point, destroying hours of work by the user. Many sound cards were not designed for MIDI playback and the software player used too much in the way of resources, slowing the whole system. The initial keyboard configuration was grossly unintuitive, using only the numeric keypad. Many laptops without one couldn't even use the game as you had to use the number pad to access the configuration menu....... and the box was ugly.
 
-Eidos was dropped when Final Fantasy 8 for the PC was released.
+Eidos was dropped when Final Fantasy VIII for the PC was released.
 
 #### **Where are they now?**
 
-The PC port is now out of print and does not run on the Windows NT type kernels due to some farflung misallocated pointers. Many now play FF7 via PSX emulation. With this way of playing the game, graphic modes higher than 1024x768 resolution, 32 bit color, and texture filtering, can all be used. The PSX version is also stable and for the most part, bug free. The engine has continued to be built upon. It has also been used in other non-Final Fantasy games such as "Parasite Eve", which was the first to support full body textures before FF8. The PC port is still supported by a small band of users. Unofficial patches have also been released with varying degrees of success. Not bad for a little engine that could.
+The PC port is now out of print and does not run on the Windows NT type kernels due to some farflung misallocated pointers. Many now play FF7 via PSX emulation. With this way of playing the game, graphic modes higher than 1024x768 resolution, 32-bit color, and texture filtering, can all be used. The PSX version is also stable and for the most part, bug free. The engine has continued to be built upon. It has also been used in other non-Final Fantasy games such as "Parasite Eve", which was the first to support full body textures before FF8. The PC port is still supported by a small band of users. Unofficial patches have also been released with varying degrees of success. Not bad for a little engine that could.
 
 # **Engine Basics**
 
@@ -201,7 +203,7 @@ The PC port is now out of print and does not run on the Windows NT type kernels 
 
 The engine used to power Final Fantasy 7 is split into several modules. This allowed the programming team to break apart into very distinct groups. It also created a very diverse game playing environment. It also allowed the artists to only have to work within their own module, keeping the artwork as dynamic as possible.
 
-The module system allowed for a single point of entry into, and exit out ofm each distinct part of the game. The PSX, which the game was originally developed for, had very limited resources. With only 1 megabyte of video ram and 2 megabytes of system ram, data had to be banked in and out efficiently. Modules were a clean way to dump whole parts of the engine to make way for other parts.
+The module system allowed for a single point of entry into, and exit out of, each distinct part of the game. The PSX, which the game was originally developed for, had very limited resources. With only 1 megabyte of video ram and 2 megabytes of system ram, data had to be banked in and out efficiently. Modules were a clean way to dump whole parts of the engine to make way for other parts.
 
 The core system is made up of six modules. They are called the kernel, field, menu, world map, battle, and mini game. They are arranged in the following order
 
@@ -223,7 +225,7 @@ The original FF1 kernel was located in this bottom 16K of memory.
 
 First and foremost the kernel contained the main program loop. It handled all the low level functions for the game. Some of these included controlling interrupts, banking in and out the appropriate part of the game, jumping control to a particular module, playing the music, and other tasks.
 
-As the Final Fantasy franchise grew, so did the size of the games. They all still retained the kernel/module system. During the backporting process, this did cause a few headaches. For example, Final Fantasy 6 was originally developed for the Super Nintendo. When it's menu module was banked in, it was done with electronic bank switching. The later PSX port banked the data from the CD-ROM, which caused an unexpected lag that one wasn't used to. On the PC version for FF7, them menu system was simply integrated into the main executable.
+As the Final Fantasy franchise grew, so did the size of the games. They all still retained the kernel/module system. During the backporting process, this did cause a few headaches. For example, Final Fantasy VI was originally developed for the Super Nintendo. When its menu module was banked in, it was done with electronic bank switching. The later PSX port banked the data from the CD-ROM, which caused an unexpected lag that one wasn't used to. On the PC version for FF7, the menu system was simply integrated into the main executable.
 
 #### **1.2 Kernel Functionality**
 
@@ -271,7 +273,7 @@ The following is a typical state of VRAM during game play.
 
 The two game screens on the left side are the video buffer and the back buffer. The patchwork of graphics on the top right are the field graphics for that scene. The bottom row consists of cached graphics and special effects and on right semi-permanent and permanent textures for the game.
 
-The following is a schematic representation of VRAM and all it's texture boundaries.
+The following is a schematic representation of VRAM and all its texture boundaries.
 
 ![](_page_11_Picture_4.jpeg)
 
@@ -763,7 +765,7 @@ On the PC version there exists a secondary kernel archive called KERNEL2.BIN.Thi
 
 #### **1. PC to PSX comparison**
 
-The files and data formats used in the PSX version of FF7 and it's PC port are conceptually the same thing, and accomplish the same tasks. That being said, they both have wildly different formats. Both of which were derived from a third original format that is also somewhat different that the first two.
+The files and data formats used in the PSX version of FF7 and its PC port are conceptually the same thing, and accomplish the same tasks. That being said, they both have wildly different formats. Both of which were derived from a third original format that is also somewhat different than the first two.
 
 The original PSX FF7 was created in part using Sony's Psy-Q development library. This library uses common formats that are "native" to the PSX. Often times a toolkit was used to convert common development- based formats, such as a TGA bitmap or a palleted GIF file, to something a little more suited to Psy-Q, which would be a TIM file.
 
@@ -878,50 +880,49 @@ The FF7 files use both of these 'tricks', so you can't ignore them!
 
 #### **1.1.3. LGP Archive format for PC by Ficedula**
 
-This section explains how the LGP archives from FF7PC are constructed. There's probably no reason why you'd need to know this (Plug: Use my LGP Editor!) but the file format might be useful to SOMEBODY.
+This section explains how the LGP archives from FF7 PC are constructed. If you're looking for a tool that already manages LGP archives, try [Ficedula](https://qhimm-modding.fandom.com/wiki/User:Ficedula)'s [LGP Editor](http://sylphds.net/f2k3/index.html).
 
-Essentially the LGP file is split up into four (maybe less, depending on how you count it) sections
+Essentially the LGP file is split up into four (maybe less, depending on how you count it) sections.
 
-- 1) File header/Table of contents
-- 2) CRC code
-- 3) Actual data
-- 4) File terminator
+1. File header/Table of contents
+2. CRC code
+3. Actual data
+4. File terminator
 
 #### SECTION 1: FILE HEADER
 
 This contains two parts: A header of fixed size, then the table of contents.
 
-The first item is 12 bytes containing the file creator. This is a standard string, except it is "rightaligned". In other words the blank space comes BEFORE the actual text, not after. Oh: In FF7 it's always "SQUARESOFT" preceded by two nulls to make it 12 bytes. The only other thing you might see is the header "FICEDULA-LGP", which I use to indicate a file is an LGP \*patch\* one of my programs has constructed, not a complete archive.
+The first item is 12 bytes containing the file creator. This is a standard string, except it is "rightaligned". In other words the blank space comes before the actual text, not after. In FF7 it's always "SQUARESOFT" preceded by two nulls to make it 12 bytes. The only other thing you might see is the header "FICEDULA-LGP", which I use to indicate a file is an LGP \*patch\* one of my programs has constructed, not a complete archive.
 
-Next is a four-byte integer saying how many files the archive contains. Following this is the table of contents (TOC): One entry per file.
+Next is a four-byte integer saying how many files the archive contains.
+
+Following this is the table of contents (TOC): One entry per file.
 
 Each entry in the TOC has the following structure:
 
-| Size           | Description                                                                                  |  |
-|----------------|----------------------------------------------------------------------------------------------|--|
-| 20 bytes       | Null terminated string, giving filename                                                      |  |
-| 4 byte integer | Position in this file where data starts for the file                                         |  |
-| 3 bytes        | Some sort of check code. Normally seems to be<br>14,0,0 but it does vary. Unsure about this. |  |
-
-#### Simple!
+| Offset | Length |
+| --- | --- |
+| 20 bytes | Null terminated string, giving filename |
+| 4 byte integer | Position in this file where data starts for the file |
+| 1 byte | Some sort of check code. File attributes? Normally seems to be 14 but it does vary. |
+| 2 byte short | Something to do with duplicate file names. If a name is unique it is 0, otherwise it is assigned a value based on existing duplicates. (Hard to explain) |
 
 ## SECTION 2: CRC CODE
 
-This code is used to validate the LGP archive. The bad news is I have no idea how to make it (I've figured out how to decode it, ie. find out whether the archive is valid ... but I can't create my own). The good news is you don't need to! The ONLY thing this CRC is based on is the number of files in the archive (maybe the filenames too ... haven't checked that). Anyway, the TOC is the only thing this check relates to. So if you're replicating an archive from FF7 for use in the game with the same number of files and filenames (and what ELSE would you use LGP archives for?) you can just copy the CRC section from an existing file. Cheap but effective :)
+This code is used to validate the LGP archive. The bad news is I have no idea how to make it (I've figured out how to decode it, ie. find out whether the archive is valid, but I can't create my own). The good news is you don't need to! The only thing this CRC is based on is the number of files in the archive (maybe the filenames too, haven't checked that). Anyway, the TOC is the only thing this check relates to. So if you're replicating an archive from FF7 for use in the game with the same number of files and filenames you can just copy the CRC section from an existing file.
 
-Normally it's 3602 bytes long. I think one archive was different? Maybe MAGIC.LGP - can't remember. Anyway, one normally-safe way of calculating the CRC size is to find the end of the TOC and the beginning of the first file. Anything in between is probably CRC code. (Not guaranteed to work! It works with "official" archives but editors - such as mine - can screw around with the TOC to achieve extra things).
+Normally it's 3602 bytes long (one archive may be different, possibly MAGIC.LGP). Anyway, one normally-safe way of calculating the CRC size is to find the end of the TOC and the beginning of the first file. Anything in between is probably CRC code (this is not guaranteed to work. It works with "official" archives but editors - such as [LGP Editor](http://www.ficedula.com/) - can alter the TOC to achieve extra things).
 
 ## SECTION 3: ACTUAL DATA
 
-The data from the files. However it's not that simple: the TOC doesn't list how long each file is (somewhat useful!). It's done here. The offset in the TOC is actually the position of yet another file header. Format is:
+The data from the files. However it's not that simple: the TOC doesn't list how long each file is (somewhat useful). It's done here. The offset in the TOC is actually the position of yet another file header. Format is:
 
-| Size                                                | Description          |
-|-----------------------------------------------------|----------------------|
-| 20 bytes<br>Null terminated string, giving filename |                      |
-| 4 bytes                                             | File length          |
-| varies                                              | The file data itself |
-
-#### Simple!
+| Size | Description |
+| :-: | --- |
+| 20 bytes | Null terminated string, giving filename |
+| 4 bytes | File length |
+| Varies | The file data itself |
 
 #### SECTION 4: TERMINATOR
 
@@ -937,17 +938,25 @@ Example 2: You can point two entries in the TOC at the same data and it works.
 
 Example 3: You can have ANY junk in the data section so long as all the TOC entries point to a valid file header. Not every piece of data has to be "accounted" for by the TOC. There can be data not used.
 
-My LGP Editor uses this to its advantage in the Advanced Editor. If you want to replace a file in an LGP archive with your own copy, it just sticks the file on the end of the LGP, writes a new file terminator, and updates the TOC to point at the new file. (Advantage: Fast). It even lets you link two TOC entries to the same data :) or have "inactive" files in the archive that aren't referenced by any TOC entry.
+[LGP Editor](http://www.ficedula.com/) uses this to its advantage in the Advanced Editor. If you want to replace a file in an LGP archive with your own copy, it just puts the file on the end of the LGP, writes a new file terminator, and updates the TOC to point at the new file. It even lets you link two TOC entries to the same data or have "inactive" files in the archive that aren't referenced by any TOC entry.
 
-I don't know whether the file terminator has to be intact, but for safety's sake my editor preserves it. The CRC DEFINTELY has to be present and correct. Also, if you're replacing an archive with you're own custom version make sure it has filenames in the TOC matching the ones in the old one, ne?
+I don't know whether the file terminator has to be intact, but for safety's sake my editor preserves it. The CRC must be present and correct. Also, if you're replacing an archive with your own custom version make sure it has filenames in the TOC matching the ones in the old one.
 
-Oh: The game doesn't check archive sizes so long as all filenames are present. So if you want, you could replace an archive containing 95 files with a 98-file archive, so long as 95 of those 98 names matched those present in the original 95-file archive! (There's no point in doing this - after all, the game won't use any files OTHER than the 95 it's expecting to find).
+The game doesn't check archive sizes as long as all filenames are present. So if you want, you could replace an archive containing 95 files with a 98-file archive, so long as 95 of those 98 names matched those present in the original 95-file archive. (However there's no point in doing this when the game won't use any files other than the 95 it's expecting to find).
 
-Other point: I've heard reports on Qhimm's message board that once you've f\*\*\*ed an archive and the game refuses to read it, it won't EVER read it until you reinstall - even if you fix the problem/restore from a backup. The idea was generally scorned and ignored, but I'll mention it because something like that happened to me. Then again, it COULD have been because I upgraded basically everything in my PC; so no solid conclusion to be drawn here.
+There are reports on [Qhimm's board](http://forums.qhimm.com/) that once you've altered an archive and the game refuses to read it, it won't ever read it until you reinstall - even if you fix the problem/restore from a backup. The idea was generally scorned and ignored, but I'll mention it because something like that happened to me. No solid conclusion can be drawn here.
 
-Further point: (due to changes in my LGP Tools/Cosmo programs) Sometimes, there are data "gaps" in the file that don't appear to be referenced by any file - even by an inactive file. This happens due to the way my programs update archives. If you're only using the TOC method to get at files (the easy way) then you won't notice this anyway. However, if you're stepping through the file header by header, even reading the unused ones, this can cause problems. If you use my program to update a file with one that's smaller than the original (can happen) then it writes it in, but leaves a gap after it (of course). However, to help you out, after the end of the file, it writes a 4 byte integer saying how much more space to skip over to reach the next file header.
+Sometimes, there are data "gaps" in the file that don't appear to be referenced by any file - even by an inactive file. If you're only using the TOC method to get at files (the easy way) then you won't notice this anyway. However, if you're stepping through the file header by header, even reading the unused ones, this can cause problems. If you use my program to update a file with one that's smaller than the original (can happen) then it writes it in, but leaves a gap after it (of course). However, to help you out, after the end of the file, it writes a 4 byte integer saying how much more space to skip over to reach the next file header.
 
 This really doesn't affect many things - only tools (like my Advanced LGP Editor) that bypass the TOC to construct their own file lists. FF7 never notices a thing.
+
+**Useful downloads:**
+
+Below there are links to known programs that are capable to edit LGP archives:
+
+- [LGP Tools](http://www.sylphds.net/f2k3/programs/lgptools/lgptools160.zip) - with an Advanced LGP Editor allowing edit archive thoroughly
+- [Emerald](http://elentor.com/Projetos/FF7-Tools/Extracting/Emerald.zip) - has mass extracting/repacking function
+- [Unmass](http://mirex.mypage.sk/index.php?selected=1#Unmass) - general file extractor with LGP archives support
 
 #### **2. TEXTURES**
 
@@ -957,7 +966,7 @@ A texture is just a picture that's placed into video memory. It is later manipul
 
 The TIM files are found both on raw format and also within several archives, including BIN, LZS, or
 
-even MNU. The format proper has the ability to contain 24 bit bitmaps, but is not used in FF7. The Format was created because the PSX does not have direct access to it's VRAM, and must go through the GPU for any graphic access. A TIM file is a clean way to load a texture and color look up table into VRAM.
+even MNU. The format proper has the ability to contain 24 bit bitmaps, but is not used in FF7. The Format was created because the PSX does not have direct access to its VRAM, and must go through the GPU for any graphic access. A TIM file is a clean way to load a texture and color look up table into VRAM.
 
 #### **2.1.1. Basic Terms**
 
