@@ -107,14 +107,136 @@ ls -lh /Volumes/DevSSD/01_Development/Projects/experiments/ff70G-japanese-mod/do
 
 ---
 
+## CRITICAL: File Existence Verification Protocol
+
+**⚠️ MANDATORY FIRST STEP BEFORE SPAWNING ANY AGENTS ⚠️**
+
+The parent agent (YOU - the one reading this guide) MUST verify files exist BEFORE creating Task tool invocations. **DO NOT delegate this to sub-agents.**
+
+### Step 1: Verify Files Actually Exist
+
+```bash
+# Check what files are actually in the markdown directory
+ls -la /Volumes/DevSSD/01_Development/Projects/experiments/ff70G-japanese-mod/docs/reference/game_engine/markdown/ | grep [Domain]
+```
+
+### Step 2: Cross-Reference Against Batch List
+
+**If a file in the batch list doesn't exist**:
+- ❌ DO NOT create Task invocation for that file
+- ❌ DO NOT assume it's a "new file creation" task
+- ❌ DO NOT let sub-agents create new files
+- ✅ STOP and report: "File [name] from batch list doesn't exist"
+- ✅ Find the ACTUAL file that exists with similar content
+- ✅ Update batch list with correct file names
+
+### Step 3: Only Use Files That Exist
+
+- Cross-reference batch list against actual filesystem
+- Flag any discrepancies immediately
+- Wait for human confirmation before proceeding
+- **Use ONLY files that physically exist in the markdown/ directory**
+
+---
+
+## CRITICAL: File Output Location Protocol
+
+**⚠️ MERGED FILES GO ONLY IN `merged_with_pdf_content/` ⚠️**
+
+Sub-agents have fucked this up repeatedly. You MUST include this in your prompts to them:
+
+```markdown
+**CRITICAL OUTPUT LOCATION RULES**:
+- ❌ NEVER create files in markdown/ directory
+- ❌ NEVER modify original files in markdown/ directory
+- ✅ ONLY create/edit files in markdown/merged_with_pdf_content/
+- ✅ Original files in markdown/ stay COMPLETELY UNTOUCHED
+
+**Process**:
+1. Copy original FROM markdown/[file]
+2. Edit the copy IN merged_with_pdf_content/[file]
+3. Original markdown/[file] remains at exact same line count
+```
+
+---
+
+## CRITICAL: Information Pass-Through Protocol
+
+**⚠️ YOU MUST PASS CRITICAL INFORMATION TO SUB-AGENTS ⚠️**
+
+**The entire fucking point of this guide is for YOU to read it AND THEN GIVE IT TO THE SUB-AGENTS.**
+
+**What NOT to do**:
+- ❌ Read this guide and then make up your own prompt
+- ❌ Summarize or paraphrase these instructions
+- ❌ Assume sub-agents will figure it out
+- ❌ Leave out the file verification or output location protocols
+
+**What TO do**:
+- ✅ Copy the full prompt template below EXACTLY
+- ✅ Include ALL critical protocols in the prompt
+- ✅ Add the file verification checks
+- ✅ Add the output location rules
+- ✅ Pass it verbatim to EVERY sub-agent via Task tool
+
+---
+
+## Example: What NOT To Do vs What TO Do
+
+### ❌ WRONG (what happened in Batch 3 first attempt):
+
+```
+Batch list says: FF7_World_Map_Textures.md
+Parent agent: *spawns Task for FF7_World_Map_Textures.md*
+Sub-agent: File doesn't exist... I'll create it!
+Result: WRONG - created file in markdown/ directory that shouldn't exist
+```
+
+### ✅ RIGHT (what should happen):
+
+```
+Batch list says: FF7_World_Map_Textures.md
+Parent agent: *checks ls -la markdown/ | grep World_Map*
+Parent agent: FF7_World_Map_Textures.md doesn't exist!
+Parent agent: Found FF7_World_Map_TXZ.md instead
+Parent agent: STOP - report to human
+Human: Use TXZ.md, the batch list is wrong
+Parent agent: *spawns Task for FF7_World_Map_TXZ.md*
+Result: CORRECT
+```
+
+---
+
 ## Complete Agent Prompt Template
+
+**YOU MUST USE THIS EXACT TEMPLATE. DO NOT MODIFY OR SUMMARIZE.**
 
 Use this prompt when spawning agents with the Task tool. Replace placeholders in [BRACKETS] with actual values.
 
-### Full Prompt (Copy This)
+### Full Prompt (Copy This EXACTLY)
 
 ```
 You are performing a TWO-PHASE content analysis and merge operation for FF7 game engine documentation.
+
+## CRITICAL PROTOCOLS - READ THIS FIRST
+
+### File Output Location (MANDATORY)
+**⚠️ CRITICAL ⚠️**:
+- ❌ NEVER create files in markdown/ directory
+- ❌ NEVER modify files in markdown/ directory
+- ✅ ONLY create/edit files in merged_with_pdf_content/
+- ✅ Original markdown/ files stay UNTOUCHED
+
+**Process**:
+1. Copy original FROM `/Volumes/DevSSD/01_Development/Projects/experiments/ff70G-japanese-mod/docs/reference/game_engine/markdown/[INDIVIDUAL_FILE]`
+2. Edit copy IN `/Volumes/DevSSD/01_Development/Projects/experiments/ff70G-japanese-mod/docs/reference/game_engine/markdown/merged_with_pdf_content/[INDIVIDUAL_FILE]`
+3. Verify original file line count unchanged
+
+### File Existence Verification (MANDATORY)
+Before starting work:
+1. Verify the individual file exists in markdown/ directory
+2. If file doesn't exist, STOP and report error
+3. DO NOT create new files - this is a MERGE task, not a creation task
 
 ## Context: The Documentation Structure
 
@@ -278,6 +400,12 @@ Report: comparisons/[INDIVIDUAL_FILE]_vs_[SECTION_FILE]_analysis.md
 
 ## Validation Checklist
 
+**BEFORE Starting Work**:
+- [ ] Verified original file EXISTS in markdown/ directory
+- [ ] Verified target directory IS merged_with_pdf_content/ ONLY
+- [ ] Confirmed NOT creating new files in markdown/ directory
+- [ ] Cross-checked file name against actual filesystem
+
 **Analysis Report**:
 - [ ] Read entire major section
 - [ ] Read entire individual file
@@ -295,6 +423,8 @@ Report: comparisons/[INDIVIDUAL_FILE]_vs_[SECTION_FILE]_analysis.md
 - [ ] Extraction markers added
 - [ ] ALL original content preserved
 - [ ] Merge metadata added
+- [ ] File created ONLY in merged_with_pdf_content/ directory
+- [ ] Original file in markdown/ unchanged (verify line count)
 
 ## Critical Warnings
 
