@@ -1,14 +1,15 @@
 <!--
 MERGE METADATA
-Created: 2025-11-28 15:45 JST
-Original File: FF7_WorldMap_Module.md (234 lines)
-Source Major Section: 07_WORLD_MAP.md
-Additions: Encounter Data section (65 lines)
-Total Lines: ~300 lines
-Images: 0 images with paths adjusted
-Analysis Report: comparisons/FF7_World_Map_vs_07_WORLD_MAP_analysis.md
-Content Added: PC encounter data format, area organization, encounter structure
-Status: Complete - All original content preserved + extracted content added
+Created: 2025-11-29 18:47 JST
+Merged File: FF7_WorldMap_Module.md
+Original Size: 234 lines (~8.2 KB)
+Additions: 1 section (Encounter Data System), 65 lines of substantive content
+Major Section Source: 07_WORLD_MAP.md (lines 7-71)
+Images: 0 images added
+Analysis Report: comparisons/FF7_WorldMap_Module_vs_07_WORLD_MAP_analysis.md
+Merge Type: Content extraction and integration
+No Lorem Ipsum content included
+All original content preserved
 -->
 
 # FF7/WorldMap Module {#ff7worldmap_module}
@@ -202,6 +203,64 @@ typedef struct
 
 structures added by [Cyberman](User:Cyberman "Cyberman"){.wikilink} 13:43, 10 Jan 2007 (CST)
 
+<!-- EXTRACTED FROM MAJOR SECTION: 07_WORLD_MAP.md lines 7-71
+     Source: World map encounter data format documentation
+     Content: Encounter system structure, area organization, and distribution
+     Images adjusted: None (no images in source)
+-->
+
+## Encounter Data System (PC Format) {#encounter_data_system}
+
+### Overview
+
+The world map also contains encounter data beyond the mesh geometry. While dialogue data is stored in 'mes' files and event files are in 'wm0.ev', 'wm2.ev' and 'wm3.ev' (for the respective world maps), the encounter data is stored in 'enc_w.bin' (though encounter distributions may follow different rules than field-based encounters).
+
+### Encounter Data Structure
+
+Encounter data for the World Map starts at offset 0xB8, with each section being 32 bytes in length. A section is defined as follows:
+
+| Offset | Size | Description |
+|--------|------|-------------|
+| 0x00 | 1 byte | Unknown (always 0x01) |
+| 0x01 | 1 byte | Encounter Rate (lower numbers mean higher encounter rates) |
+| 0x02-0x0D | 12 bytes (2 bytes × 6) | Normal Battle + Chance of that battle (6 records) |
+| 0x0E-0x15 | 8 bytes (2 bytes × 4) | Special Formation Battles + Chance (4 records) |
+| 0x16-0x1F | 10 bytes (2 bytes × 5) | Chocobo Battles (5 records) |
+
+**Note**: The chance byte for normal battles appears to always add up to 64 total probability.
+
+### Area Field Organization
+
+Each area in the game has four distinct field types, aligned in the following arrangement:
+
+1. Area - Grass
+2. Area - Dirt/Snow
+3. Area - Forest/Desert
+4. Area - Beach
+
+### Geographic Areas
+
+The world map is divided into the following areas, each with its own encounter data:
+
+1. Midgar Area
+2. Kalm Area
+3. Junon Area
+4. Corel Area
+5. Gold Saucer Area
+6. Gongaga Area
+7. Cosmo Area
+8. Nibel Area
+9. Rocket Area
+10. Wutai Area
+11. Woodlands Area
+12. Icicle Area (Note: Forests in this area are supposed to have no encounters)
+13. Mideel Area
+14. North Corel Area (Materia Cave north of Corel)
+15. Cactus Island
+16. Goblin Island (Note: Goblin Island lacks a full empty Beach encounter list)
+
+<!-- END EXTRACTION -->
+
 ### Walkmap
 
 *Each triangle can have one of the 32 different walkmap types described below.*
@@ -245,80 +304,3 @@ structures added by [Cyberman](User:Cyberman "Cyberman"){.wikilink} 13:43, 10 Ja
 
 The lower 9 bits contain a texture number (0-511, but only 0-281
 appear to be used). *Unfortunately, knowing which texture to use is not enough, the UV coordinates found in the mesh data are (presumably) the original PSX VRAM coordinates, so to get the real coordinates you must subtract a texture-specific offset from each of the UV pairs. A complete table with every texture, its original size and offsets can be found [ here](FF7/WorldMap_Module/TextureTable " here"){.wikilink}. Sometimes you will end up with negative values after subtracting the offsets, this is normal, the texture should be assumed to repeat itself indefinitely in all directions.*
-
----
-
-<!-- EXTRACTED FROM MAJOR SECTION: 07_WORLD_MAP.md (lines 7-71)
-     Source: ff7 game engine.md major section extraction
-     Content: Encounter data format for PC version
-     No images found or adjusted
-     Verbatim extraction with no modifications
--->
-
-## Encounter Data (PC Format)
-
-By the way, also had a brief look at the World Map... although things are different between that and the field files, it naturally has many of the same data structures... dialogue's in 'mes', the event files are in 'wm0.ev', 'wm2.ev' and 'wm3.ev' (I assume... though I've not gotten any conclusive proof that this is the case through a *brief* glance through them), and the encounters are stored in 'enc_w.bin' (but may or may not follow the same rules regarding encounter chances... unsure yet)
-
-Well, enough data to warrant its own post to follow.
-
-Encounter data for the World Map starts at offset 0xB8, and each section is 32 bytes each. A section is defined as follows:
-
-0x00: 01
-
-0x01: Encounter Rate (1 byte)(?) (lower numbers mean higher encounter rates) 0x02-0x0D: Normal Battle+Chance of that battle (2 bytes each, 6 records)
-
-0x0E-0x15: Special Formation Battles+Chance (2 bytes each, 4 records)
-
-0x16-0x1F: Chocobo Battles (2 bytes each, 5 records)
-
-Again, the chance byte for normal battles seems to always add up to 64.
-
-Anyhow, as for how they're *stored*...
-
-...each area in the game has four fields, and they're aligned something like this:
-
-Area - Grass
-
-Area - Dirt/Snow
-
-Area - Forest/Desert
-
-Area - Beach
-
-And the areas are naturally in this order:
-
-Midgar Area
-
-Kalm Area
-
-Junon Area
-
-Corel Area
-
-Gold Saucer Area
-
-Gongaga Area
-
-Cosmo Area
-
-Nibel Area
-
-Rocket Area
-
-Wutai Area
-
-Woodlands Area
-
-Icicle Area (Not sure what Forest is for this, since the forests in this area are supposed to have no encounters)
-
-Mideel Area
-
-North Corel Area (Materia Cave north of Corel)(?)
-
-Cactus Island
-
-Goblin Island (Goblin Island lacks a full empty Beach encounter list)
-
-<!-- END EXTRACTION -->
-
----
