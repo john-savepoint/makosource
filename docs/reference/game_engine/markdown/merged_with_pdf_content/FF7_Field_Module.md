@@ -1,0 +1,800 @@
+# FF7/Field Module {#ff7field_module}
+
+- [FF7/Field Module](#ff7field_module){#toc-ff7field_module}
+  - [Important Files](#important_files){#toc-important_files}
+  - [Field Overview](#field_overview){#toc-field_overview}
+  - [Field Format (PC)](#field_format_pc){#toc-field_format_pc}
+
+
+## Important Files {#important_files}
+
+|  PSX Version  |       PC Version       |
+|:-------------:|:----------------------:|
+| /FIELD/\*.DAT | /DATA/FIELD/FLEVEL.LGP |
+| /FIELD/\*.MIM | /DATA/FIELD/FLEVEL.LGP |
+| /FIELD/\*.BSX |                        |
+| /FIELD/\*.BCX |  /DATA/FIELD/CHAR.LGP  |
+
+## Field Overview {#field_overview}
+
+The field module is the core of the game to which everything else is spawned. It is tied very closely with the kernel and contains many low-level calls to it. The field system also contains a self-contained bytecode language called commonly called \"Field Script\". The field module is responsible for the following:
+
+- The loading and parsing of the field files
+- The display of the 2D background ands related special effects
+- The display of 3D elements in the field such as the camera, perspective and and entities
+- The running of the Field Script to display events and to get user input
+- The on-demand loading of other modules when needed
+
+The Field module loads modular \"Field Files\". In the PC version, the Field File is a single file with nine sections. In the PSX version, there are three files with the same name but with different extensions that do the same thing. The three files are MIM (Mutiple Image Maps, or the backgrounds), DAT (Field Script Data), and BSX (3D data).
+
+<div class="thumb tright">
+<div class="thumbinner" style="width: 182px">
+
+![![](180px-Field_BackgroundVRAM.jpg "180px-Field_BackgroundVRAM.jpg")](Field_BackgroundVRAM.jpg "180px-Field_BackgroundVRAM.jpg")
+
+<div class="thumbcaption">
+
+Snapshot of the PSX\'s VRAM demonstrating the background field files in various stages of assembly.
+
+</div>
+</div>
+</div>
+
+The backgrounds are actually 16x16 blocks that are loaded into VRAM and then assembled into the video buffer every frame. The system allows for layers to obscure the 3D entities using a simple painter\'s algorithm.
+
+In this particular field file, there are six cached sections of background data. Also notice the bright green patches that don\'t show up in in the video buffer. This was to show where a lower layer of 2D data was to be covered by a higher layer. The bright green is for debug purposes. During development, if any bright green showed up, it meant that your upper layer had a \"hole\" in it that a 3D entity could be seen through.
+
+When the PSX version of FF7 is ran in higher resolutions via emulation with texture filtering on, often the lower layers will \"bleed\" outside the upper layer and make artifacts. This was also the reason why the field files were not re-rendered for the PC version of the game. It would of required \"re-cutting\" the layers again in the higher resolution.
+
+Another last thing to note is in the middle of the bottom texture cache there are a sea of eyes. These blink at random times and reflect the random blinking of the characters in the game.
+
+\
+
+## Field Format (PC) {#field_format_pc}
+
+### General PC Field File Format {#general_pc_field_file_format}
+
+Field files are always found in FLEVEL.LGP. They are always [LZS](FF7/LZS_format "LZS"){.wikilink} compressed.
+
+The first two bytes of each (decompressed) field file are blank (zero). The next four bytes is an integer indicating how many sections are present in the file. Then a number of 4-byte integers follow, giving the starting offset for each section.
+
+All field files should contain 9 sections; it\'s what FF7 expects.
+
+### PC Field File Header {#pc_field_file_header}
+
+<table>
+<thead>
+<tr>
+<th><p>Offset</p></th>
+<th><p>Size</p></th>
+<th><p>Description</p></th>
+<th><p>Section Data</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>0x00</p></td>
+<td><p>2 bytes</p></td>
+<td><p>Blank</p></td>
+<td><p>Always 0x00</p></td>
+</tr>
+<tr>
+<td><p>0x02</p></td>
+<td><p>4 bytes</p></td>
+<td><p>Number of Sections</p></td>
+<td><p>Always 0x0009</p></td>
+</tr>
+<tr>
+<td><p>0x06</p></td>
+<td><p>4 bytes</p></td>
+<td><p>Pointer to Section 1</p></td>
+<td><p><a href="FF7/Field/Field_Script" class="wikilink" title="Field Script &amp; Dialog">Field Script &amp; Dialog</a></p></td>
+</tr>
+<tr>
+<td><p>0x0A</p></td>
+<td><p>4 bytes</p></td>
+<td><p>Pointer to Section 2</p></td>
+<td><p><a href="FF7/Field/Camera_Matrix" class="wikilink" title="Camera Matrix">Camera Matrix</a></p></td>
+</tr>
+<tr>
+<td><p>0x0E</p></td>
+<td><p>4 bytes</p></td>
+<td><p>Pointer to Section 3</p></td>
+<td><p><a href="FF7/Field/Model_Loader" class="wikilink" title="Model Loader">Model Loader</a></p></td>
+</tr>
+<tr>
+<td><p>0x12</p></td>
+<td><p>4 bytes</p></td>
+<td><p>Pointer to Section 4</p></td>
+<td><p><a href="FF7/Field/Palette" class="wikilink" title="Palette">Palette</a></p></td>
+</tr>
+<tr>
+<td><p>0x16</p></td>
+<td><p>4 bytes</p></td>
+<td><p>Pointer to Section 5</p></td>
+<td><p><a href="FF7/Field/Walkmesh" class="wikilink" title="Walkmesh">Walkmesh</a></p></td>
+</tr>
+<tr>
+<td><p>0x1A</p></td>
+<td><p>4 bytes</p></td>
+<td><p>Pointer to Section 6</p></td>
+<td><p><a href="FF7/Field_Module/DAT/Tile_Map" class="wikilink" title="TileMap">TileMap</a> (Unused)</p></td>
+</tr>
+<tr>
+<td><p>0x1E</p></td>
+<td><p>4 bytes</p></td>
+<td><p>Pointer to Section 7</p></td>
+<td><p><a href="FF7/Field/Encounter" class="wikilink" title="Encounter">Encounter</a></p></td>
+</tr>
+<tr>
+<td><p>0x22</p></td>
+<td><p>4 bytes</p></td>
+<td><p>Pointer to Section 8</p></td>
+<td><p><a href="FF7/Field/Triggers" class="wikilink" title="Triggers">Triggers</a></p></td>
+</tr>
+<tr>
+<td><p>0x26</p></td>
+<td><p>4 bytes</p></td>
+<td><p>Pointer to Section 9</p></td>
+<td><p><a href="FF7/Field/Background" class="wikilink" title="Background">Background</a></p></td>
+</tr>
+<tr>
+<td><p>0x2A</p></td>
+<td><p>4 bytes</p></td>
+<td><p>Where Pointer to Section 1 points to</p></td>
+<td><p>Length of Section 1</p></td>
+</tr>
+<tr>
+<td><p>0x2E</p></td>
+<td><p>Varies</p></td>
+<td><p>Start of Section 1 data. Continues for the<br />
+number of bytes specified in Section Length</p></td>
+<td><p><em>See links above</em></p></td>
+</tr>
+</tbody>
+</table>
+
+Each section generally starts with a four byte integer indicating the length of the section. You could just work this out by comparing offsets (how much space until the next section/end of file, etc) but FF7 stores the length at the start of the section anyway. After that the actual data follows. So the first bit of data for a section is actually 4 bytes after the point given in the section header (since the first four bytes are actually the length marker).
+
+To examine each section, please navigate using the links in the table above. For sections 3 and 8, there is some information on [the forum](http://forums.qhimm.com/index.php?topic=4358.msg58674#msg58674).
+
+## Field Format (PS1) {#field_format_ps1}
+
+### PSX DAT Format {#psx_dat_format}
+
+The PSX script is contained in the DAT file, it is compressed with [LZS compression](FF7/LZS_format "LZS compression"){.wikilink}. The first 4 bytes of the compressed DAT file is the length of the compressed data starting at address 0x4.
+
+The header for the DAT file (after it is decompressed), is 28 bytes in size (they are used in the PSX, it\'s a list of 7 long word values which point to locations in PSX RAM). So for each of these sections are addressable by taking the first memory location subtracting it and adding 28.
+
+There are 7 sections each corresponding to the first 7 memory locations at the beginning of the file.
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center; background: rgb(0,155,0);"><p>Section Name</p></th>
+<th style="text-align: center; background: rgb(0,155,0);"><p>Section Information</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center; background: rgb(100,155,100);"><p><a href="FF7/Field/Script" class="wikilink" title="Script">Script</a></p></td>
+<td style="text-align: center; background: rgb(100,155,100);"><p>Contains conversations, save point interaction etc.</p></td>
+</tr>
+<tr>
+<td style="text-align: center; background: rgb(100,155,100);"><p><a href="FF7/Field/Walkmesh" class="wikilink" title="Walkmesh">Walkmesh</a></p></td>
+<td style="text-align: center; background: rgb(100,155,100);"><p>Contains walkmesh triangles and access info.</p></td>
+</tr>
+<tr>
+<td style="text-align: center; background: rgb(100,155,100);"><p><a href="FF7/Field_Module/DAT/Tile_Map" class="wikilink" title="TileMap">TileMap</a></p></td>
+<td style="text-align: center; background: rgb(100,155,100);"><p>Contains the information for the background, animation,<br />
+and static scene objects.</p></td>
+</tr>
+<tr>
+<td style="text-align: center; background: rgb(100,155,100);"><p><a href="FF7/Field/Camera_Matrix" class="wikilink" title="Camera_Matrix">Camera_Matrix</a></p></td>
+<td style="text-align: center; background: rgb(100,155,100);"><p>Contains camera info.</p></td>
+</tr>
+<tr>
+<td style="text-align: center; background: rgb(100,155,100);"><p><a href="FF7/Field/Triggers" class="wikilink" title="Triggers">Triggers</a></p></td>
+<td style="text-align: center; background: rgb(100,155,100);"><p>Contains triggers, singles, gateways and so on.</p></td>
+</tr>
+<tr>
+<td style="text-align: center; background: rgb(100,155,100);"><p><a href="FF7/Field/Encounter" class="wikilink" title="Encounter">Encounter</a></p></td>
+<td style="text-align: center; background: rgb(100,155,100);"><p>Battle Encounter information for location.</p></td>
+</tr>
+<tr>
+<td style="text-align: center; background: rgb(100,155,100);"><p><a href="FF7/Field/Models" class="wikilink" title="Models">Models</a></p></td>
+<td style="text-align: center; background: rgb(100,155,100);"><p>Some info about field models.</p></td>
+</tr>
+</tbody>
+</table>
+
+### PSX MIM Format {#psx_mim_format}
+
+Part of the PSX background data is contained in the [MIM file](FF7/Field/MIMfile "MIM file"){.wikilink}, it is compressed with [LZS compression](FF7/LZS_format "LZS compression"){.wikilink}. It consists of palettes (256 color ones) and screen blocks. No data for locating the blocks on the screen is in this file. The MIM file is a truncated TIM file and contains the normal clut location height and width information. This information is directly loaded into the PSX video ram to be decoded by the field module.
+
+### PSX BSX Format {#psx_bsx_format}
+
+The Field models are contained in the [BSX file](FF7/Field/BSX "BSX file"){.wikilink}, it is compressed with [LZS compression](FF7/LZS_format "LZS compression"){.wikilink}. [FIELD.TDB](FF7/Field/FIELD.TDB "FIELD.TDB"){.wikilink} contains the textures for these models.
+
+### PSX BCX Format {#psx_bcx_format}
+
+The individual characters\' field models are stored in [BCX files](FF7/Field/BCX "BCX files"){.wikilink}. Their textures are also in [FIELD.TDB](FF7/Field/FIELD.TDB "FIELD.TDB"){.wikilink}; they are compressed with [LZS compression](FF7/LZS_format "LZS compression"){.wikilink}.
+
+## Event Scripting {#event_scripting}
+
+Event scripting is handled via a series of script commands and entities spawned for the event. The exception to this is the battle event scripting. This is actually a little bit different. Please refer to the [Field Script](FF7/Field/Script "Field Script"){.wikilink} for more information.
+
+## Script commands {#script_commands}
+
+The event scripting language for FF7 has 246 commands that have a wide array of functions. For a complete listing of the commands, opcodes, arguments and descriptions, please refer to the [opcodes](FF7/Field/Script/Opcodes "opcodes"){.wikilink} section.
+
+## Movies
+
+Movies in FF7 are actually triggered from the [Field Script](FF7/Field/Script "Field Script"){.wikilink}. The [F8 PMVIE](FF7/Field/Script/Opcodes/F8_PMVIE "F8 PMVIE"){.wikilink} opcode is first used to set the movie for which the [F9 MOVIE](FF7/Field/Script/Opcodes/F9_MOVIE "F9 MOVIE"){.wikilink} opcode is used to play. It is important to remember the MOVIE ID may vary in the PS1 versionn depending on what disc you are on. The PC movies were encoded using the DUCK (goose?) format and are AVI video files.
+
+The PS1 movies were encoded using FMV Motion JPEG video files, for the playstation. These files cannot be decode or read directly from the CD disc media because of the Mode 2 format of the files. The files are encoded using ISO Mode 2 which means the sectors are 2302 bytes in length instead of 2048. The video files have interleaved audio (ADPCM format), between video frames and are 320x224 15fps. Video files that have no audio with it actually has empty sectors of space between video frames to prevent the extremely timing sensitive MDEC decoder in the playstation from locking up.
+
+[Cyberman](User:Cyberman "Cyberman"){.wikilink} 14:18, 30 Dec 2006 (CST)
+
+## The 3D Overlay {#the_3d_overlay}
+
+## Data Organization {#data_organization}
+
+## \"A\" Field Animation Files for PC by [Mirex](User:Mirex "Mirex"){.wikilink} (Edits by [Aali](User:Aali "Aali"){.wikilink}) {#a_field_animation_files_for_pc_by_mirex_edits_by_aali}
+
+Each animation file holds one character animation ( run, walk or some other). Some characters have more animation files. Animation is set of frames, in each frame are stored bone rotations.
+
+\-- animation file contents \--
+
+| Name   | Size in bytes         |
+|--------|-----------------------|
+| header | 36                    |
+| frames | frames_count \* frame |
+
+\-- one frame, size is (bones \* 12 + 12 + 12) \--
+
+| Name             | Size                                  |
+|------------------|---------------------------------------|
+| root rotation    | 12 = 3 floats                         |
+| root translation | 12 = 3 floats                         |
+| rotations        | bones \* 12 bytes = bones \* 3 floats |
+
+header structure, 36 bytes
+
+```c
+struct {
+    unsigned int32 version;
+    unsigned int32 frames_count;
+    unsigned int32 bones_count;
+    unsigned char rotation_order[3];
+    unsigned char unused;
+    unsigned int32 runtime_data[5];
+} anim_head;
+```
+
+I understand only two values from the header, \'frames_count\' which is number of animation frames and \'bones_count\' which is suprisingly number of animated bones.
+
+*version should always be 1 or FF7 will not load the file*
+
+*rotation order determines in which order rotations are applied, 0 means alpha rotation, 1 beta rotation and 2 gamma rotation.*
+
+*runtime data has no meaning in the animation file and is discarded on load*
+
+If you want to load all possible animations for the model (even animations of different models) then check if animation file has same number of bones as current model.
+
+Frame starts with the root rotations and root translations, followed by rotations for each bone. Rotations are stored as 3 floats (float is 4byte floating-point number).
+
+
+---
+
+<!-- MERGE METADATA
+Created: 2025-11-29 15:45 JST
+Original File: FF7_Field_Module.md (293 lines)
+Major Section: 05_FIELD_MODULE.md (2,645 lines)
+Additions: 6 critical sections, ~600 lines
+Images: 1 existing (updated path), 1 referenced but missing
+Report: comparisons/FF7_Field_Module_vs_05_FIELD_MODULE_analysis.md
+-->
+
+## MERGED CONTENT FROM MAJOR SECTION
+
+The following sections have been extracted from 05_FIELD_MODULE.md and added to expand the technical coverage of the Field Module documentation.
+
+---
+
+<!-- EXTRACTED FROM MAJOR SECTION: 05_FIELD_MODULE.md
+     Lines 74-107 (Section 1 Dialog and Event)
+     Status: Content added verbatim from major section
+     Images: None
+-->
+
+#### **Section 1 Dialog and Event (Halkun, Lasyan, and Fice)**
+
+The First section holds the Field Script logic and Dialog data for that particular field file. The first section of the PSX DAT file (excluding the DAT header) and the data in this section are the same. A recap of the PSX DAT file format is later in this document.
+
+The data in this section also has a header with the following format.
+
+#### Section 1 Header
+
+```
+struct FF7SCRIPTHEADER {
+ u16 unknown1;
+ char nEntities; // Number of entities
+ u16 unknown2; // Always less than nEntities; possibly visible entities?
+ u16 wStringOffset; // Offset to strings
+ u16 nExtraOffsets; // An optional number of extra offsets... unknown
+ u16 unknown4[4];
+ char szCreator[8]; // Field creator (never shown)
+ char szName[8]; // Field name (never shown)
+ char szEntities[nEntities][8]; // Field entity names
+ u32 dwExtraOffsets[nExtraOffsets]; // Said extra offsets... unknown
+ u16 vEntityScripts[nEntities][32]; // Entity script entry points, or more
+                                     // explicitly, subroutine offsets
+};
+```
+
+#### Event Script Subsection
+
+Here we have all of the pointers tables, one for each section. Pointers are 2 bytes length. Each table has a length of 64 bytes, which means a section can have 32 scripts max. Each pointer refers to the first command of the current script. The section number N begins at the offset header\_length+N\*64. Note: the only way to retrieve the length of a script is to subtract the position of the next script to the position of the current script.
+
+#### Dialog Subsection
+
+Right after the last script of the last section, we find the pointer's table of the dialogs. The first 2 bytes show the number of dialogs in the file, so you can deduct the length of the table: number\_of\_dialogs\*2. After these 2 bytes we have the pointers for each dialog. Be aware that the pointers are relative to the table, which means you must add the position of the table to each pointer in order to find the right position of the dialog. The dialogs begin right after the table, and the code 255 means the end of the dialog.
+
+Note: some <<hidden>> dialogs are not referenced in the table!
+
+<!-- END EXTRACTION -->
+
+---
+
+<!-- EXTRACTED FROM MAJOR SECTION: 05_FIELD_MODULE.md
+     Lines 109-168 (Section 2 Camera Matrix)
+     Status: Content added verbatim from major section
+     Images: None
+-->
+
+#### **Section 2 Camera Matrix (Kero)**
+
+This is yet to be completely understand, I am pretty sure that this is not exactly trash, since it is based on at least 300 changes of field files. It was pretty nasty, as you can imagine, first divide sections of field file, load section 2 into hexedit, change byte, save section 2, run .bat file that complete new field file with new section 2 and compress it. After that I always had to use ficedula lgp tools, awful, I am definitely going to program command line program for this, in gui i had to alway on original field file, click, replace, click instead of just adding line to .bat file. After that run ff7.exe, go to destinated location and observe what happened.
+
+I am working on program to load walkmesh along with camera matrix. I am pretty sure about vectors, after all, they are all same length and they are orthogonal, but i could misinterpret order of them, position of center is little uncertain and resize factor too. The program should help me to figure out these thing.
+
+#### Description of section 2 (field file) - camera
+
+Goal of this section is to define camera matrix. In fact it seems pretty simple. For camera matrix, you need vector for axis x, vector for axis y, vector for axis z and position of camera in world space. Vectors for axis x,y,z are defined in world space and in camera space are normally united.
+
+Example: You have axis x defined as vector (0.176,-0.512,0.840) but thats in the world space, in camera space it is just (1,0,0)
+
+- \* Every offset is relative here, 00 is at the start of section 2 (after length indicator).
+- \* This will will be in the left handed coordinated system= x axis from left to right, y axis from bottom to top, z axis from near to far.
+- \* In here, I am changing signs so these vectors should be correct for file loaded right from section 5 walkmesh. While in walkmesh you don't change any signs, here I am changing them, so they will fit and if you use this article with unchanged values for walkmesh, you should get right image , same as in ff7. (FIXME: not yet true)
+
+This is an overview the camera data format.
+
+#### Section 2 Format
+
+| Offset | Size    | Description             |
+|--------|---------|-------------------------|
+| 0x00   | 6 bytes | Camera Vector X axis    |
+| 0x06   | 6 bytes | Camera Vector Y axis    |
+| 0x0C   | 6 bytes | Camera Vector Z axis    |
+| 0x12   | 2 bytes | Unknown                 |
+| 0x14   | 4 byes  | Camera Space X position |
+| 0x18   | 4 bytes | Camera Space Y position |
+| 0x1C   | 4 bytes | Camera Space Z position |
+| 0x20   | 4 byes  | Unknown                 |
+| 0x24   | 2 bytes | Zoom                    |
+
+How to get vectors for the axis:
+
+Vectors are stored right at the beginning of section 2.
+
+```
+typedef struct {
+S16 x;
+S16 y;
+S16 z;
+} vector3s;
+```
+
+You will load first vector for axis x (from offset 0 to 5), for axis y(6 to 11) and axis z (12-17). These values are in fixed point with multiply constant 4096. Length of vectors x,y and z is always 4096 (first vecsize is for x, then y and last z), thats make out multiplication constant. These vectors are also always ortognormal, as you can see in ORTO 1-2 (1=x,2-y,3=z) ORTO U-Vis scalar product of U and V. As you can see, very near zero (first value is without division of multi constant). Now you have three vectors, but they are not looking in correct direction, you have to change some signs. For each vector change sign of y and z values. Now these vectors should point in correct direction, same as in ff7.
+
+I am now suppose that you have vectors for axises loaded, each component of each vector was divided by 4096 (don't forget to store it in float) and you changed signs for component y and z. After vectors is one S16 number (from offset 18 to 19), same as z component of vector for z axis.
+
+Now you want to have position of center of the camera matrix. Get three S32 numbers for position of center (x from 20 to 23, y from 24-27 and z from 28-31). These number are not position of center in worlds pace, but they are position of center of camera space, defined in space, where position of center is in 0,0,0 and axis for vectors are the ones you read, but have opposite signs. You get center of camera matrix like this:
+
+```
+// vx,vy,vz are axis you read, divided, y,z signs changed
+// (tx,ty,tz) is position of camera matrix in world space
+// ox,oy,oz are S32 numbers you read from offset 20 to 31
+tx = -(ox*vx.x + oy*vy.x + oz*vz.x);
+ty = -(ox*vx.y + oy*vy.y + oz*vz.y);
+tz = -(ox*vx.z + oy*vy.z + oz*vz.z);
+```
+
+After this is just blank U32 number, seems always zero and last, but not least the zoom (36-37) (don't know whether Signed or Unsigned). The bigger resize number is, the bigger is the model and walkmesh.
+
+<!-- END EXTRACTION -->
+
+---
+
+<!-- EXTRACTED FROM MAJOR SECTION: 05_FIELD_MODULE.md
+     Lines 170-204 (Section 4 Palette)
+     Status: Content added verbatim from major section
+     Images: None
+-->
+
+#### **Section 4 Pallette (Terrence)**
+
+The following is an overview of the palette data
+
+#### Section 4 Palette Format
+
+| Offset | Size    | Description                               |
+|--------|---------|-------------------------------------------|
+| 0x00   | 2 bytes | Length (Repeat of previous length header) |
+| 0x02   | 2 bytes | Unknown                                   |
+| 0x04   | 1 byte  | Unknown (often blank)                     |
+| 0x05   | 4 byes  | Number of colors in palette               |
+| 0x09   | 1 byte  | Unknown (often blank)                     |
+| 0x0A   | varies  | Palette data                              |
+
+After the first length indicator comes another integer, also indicating length. Useless, but it's there.
+
+Then there's one more integer; unknown purpose.
+
+Then one byte; unknown (blank often).
+
+Then a word; number of colors in the palette plus one. No idea why. You can work numcolors out from the section length, but FF7 stores it anyway; why add one? Dunno.
+
+One more byte; unknown (blank often).
+
+Then the actual palette data.
+
+Each palette entry is a 16-bit color. This is unusual - normally palettes store as high quality data as possible, usually 24/32 bit. However since FF7 only ever runs in 16 bit I guess there isn't much point storing any other kind of data. Actually, the data is 15-bit (5-bit Red, 5-bit Green, 5-bit Blue, and 1 mask bit).
+
+|              | Palette Data |   |   |   |   |   |   |      |      |   |   |   |   |   |   |
+|--------------|--------------|---|---|---|---|---|---|------|------|---|---|---|---|---|---|
+| Red<br>Green |              |   |   |   |   |   |   | Blue | Mask |   |   |   |   |   |   |
+| r            | r            | r | r | r | g | g | g | g    | g    | b | b | b | b | b | m |
+
+That's it for the palette! Only other thing you need to know is, palettes generally contain a number of colors that's a multiple of 256. This is because the palette is split up into 256-color 'pages' internally. So the first color is page 0/color 0. Color 256 is page 1/color 0. Color 628 is page 2/color 116. You'll see why in the background section.
+
+<!-- END EXTRACTION -->
+
+---
+
+<!-- EXTRACTED FROM MAJOR SECTION: 05_FIELD_MODULE.md
+     Lines 206-254 (Section 5 Walkmesh)
+     Status: Content added verbatim from major section
+     Images: _page_80_Picture_0.jpeg (NOT FOUND - flagged for sourcing)
+-->
+
+#### **Section 5 Walkmesh (Kero)**
+
+Every every offset is here relative, 00 is at the start of section 5 (after lenght indicator)
+
+Section 5 of field files is stored walkmesh. Walkmesh is mesh of polygons on which is character moving, it is telling engine for example how height it is and thanks to that PC can, for example, cross bridge with real feeling that in the middle he is on higher place than on both sides. It has very simple structure.
+
+#### Header
+
+---------
+
+Startofs 0x00
+
+Lenght 0x04
+
+Walkmesh doesn't have header, it as only one 4 bytes long unsigned int, called NoS (Number of sectors)
+
+## Sector pool
+
+```
+--------------
+Startofs 0x04
+Lenght NoS*24
+typedef struct {
+short x,z,y,res; // short is 2 bytes long integer
+} vertex_3s; // 3 short
+typedef struct {
+vertex_3d v[3];
+} sect_t;
+```
+
+In sector pool are sectors, in fact just triangles and its position. For each sector you have three vertex\_3s. Just store them. It seems that res and z are very often same, but not always, I don't know why. It seems that all polygons are clockwise. I didnt check it, but it is probably in order to know wheather point is in triangle. If you give it in other direction, point will be detected outside if it is inside and vice versa. Nothing difficult
+
+## Access pool
+
+Startofs 0x04 + NoS\*24 Lenght NoS\*6 typedef { short acces1,acces2,acces3; } In access pool you have id of poly, you should go into if you cross line.
+
+acces1 is for line from vertex 0 to 1
+
+acces2 is for line from vertex 1 to 2
+
+acces3 is for line from vertex 2 to 0
+
+If acces1/2/3 is FFFF then you are not allowed to cross this line. Acces pool and sector pool are same size (NoT), so you will just use same index for both pools.
+
+If access don't translate you, it just says, you should be here, if you are not, then there is a problem. If you design polymesh where you cross line and access tells you that you should be in poly 12, but you are god know where then FF7 stops.
+
+**[IMAGE REFERENCE - MISSING FROM CURRENT DIRECTORY]** Walkmesh polygon diagram (originally _page_80_Picture_0.jpeg)
+
+<!-- END EXTRACTION -->
+
+---
+
+<!-- EXTRACTED FROM MAJOR SECTION: 05_FIELD_MODULE.md
+     Lines 256-277 (Section 7 Encounter Data)
+     Status: Content added verbatim from major section
+     Images: None
+-->
+
+#### **Section 7 (Terrence)**
+
+As stated, Section 7 is the Encounter listing, and is generally 48 bytes long (not including the Length dword). I've not even started to decrpyt what the other bytes mean around there... I suspect encounter rates and other things. Each encounter is stored something like: xxxxxxxx yyyyyyxx, where the 'x's are the standard Battle ID we're familiar with, and the 'y's are something connected to that specific encounter. Encounters where you can get ambushed appear to be held seperately from the others, too, starting at... what... 0x14? Unsure.
+
+Anyhow, feel free to play with it. I remain disappointed that this has yielded no trace of Ho-chu in Ancient Forest... was hoping it would at least be some really rare battle or something....
+
+EDIT: Few more notes on the Encounters section.
+
+First, \*EVERY\* Field file's Encounter section is 48 bytes long (52 if you include the size). It's then split into definite partitions:
+
+0x00: Encounter Data 1, possibly enounter rate in 2nd bytes? (2 bytes) 0x02-0x0D: Encounter+Chance(?) bytes, as stated before. The total of the 'Chance(?)' bytes for this part always adds up to 64 if encounters are possible.
+
+0x0E-0x17: Secondary encounters. Sometimes blank, sometimes gaps. No clue on the chance bytes, or how it relates to previous data.
+
+0x18: Encounter Data 2, same setup as Encounter Data 1. Very often blank, no idea what this data is for.
+
+0x1A-0x25: Encounter+Chance(?) bytes for Encounter Data 2. Again, adds up to 64.
+
+0x26-0x2F: Secondary encounters for Encounter Data 2. Again, no idea what it's used for.
+
+To get more information, I'm going to have to go and start changing things, but thought you'd like an update on what I had for now.
+
+<!-- END EXTRACTION -->
+
+---
+
+<!-- EXTRACTED FROM MAJOR SECTION: 05_FIELD_MODULE.md
+     Lines 280-429 (Section 9 Background and Sprite Format)
+     Status: Content added verbatim from major section
+     Images: None
+-->
+
+#### **Section 9 Background (Terrence)**
+
+Firstly, a number of variables.
+
+At offset \$28, a Word = background width (BGWidth)
+
+At offset \$2A, a Word = background height (BGHeight)
+
+At offset \$2C, a Word = number of background sprites (NumBGSprites)
+
+At offset \$32, the background sprite data. See below for format (each sprite is 52 bytes long)
+
+After the background sprite data, another \$7 bytes, unknown purpose.
+
+Then (ie. at offset \$32 + NumBGSprites\*52 + \$7) a Word = number of 2nd layer background sprites (NumBG2Sprites)
+
+Then another \$12 bytes, unknown purpose.
+
+Then (ie. at offset \$32 + NumBGSprites\*52 + \$1B) the background layer 2 sprite data. See below for format.
+
+Then another \$3D bytes, unknown purpose.
+
+Then (ie. at offset \$32 + NumBGSprites\*52 + NumBG2Sprites\*52 + \$58) the raw image data.
+
+#### Background paradigm
+
+-------------------
+
+(It isn't \*really\* a paradigm, but it sounds impressive if you say it is.)
+
+FF7 stores its backgrounds in a rather complex format. Basically, you have the data split up into various sections:
+
+- 1) Palette. List of colours.
+- 2) Background sprites, layers 1 and 2. Just references to other bits of data.
+- 3) Raw image data. Palettized data (ie. "grayscale" if viewed directly).
+
+Each background sprite represents a 16x16 pixel block on the finished background. The sprite essentially contains the following information:
+
+- -"Target" block, ie. where on the background to draw this 16x16 square
+- -"Source" block, ie. where on the raw image data to take the pixels from
+- -Palette "page", ie. which 256-colour palette block to apply to the raw image data
+
+This is a very efficient way to store the image; on the one hand, it's in 16-bit colour, far better than just palettizing the whole image (ie. 256 colours over the \*whole\* background). On the other hand, each 16x16 pixel block takes much less space than if you'd stored it directly in 16-bit colour format. It isn't, however, easy to decode or (especially!) encode.
+
+Format of a background sprite:
+
+```
+Type
+ TFF7BgSprite = packed record
+ ZZ1,X,Y: Smallint;
+ ZZ2: Array[0..1] of Smallint;
+ SrcX,SrcY: Smallint;
+ ZZ3: Array[0..3] of Smallint;
+ Pal: Smallint;
+ Flags: Word;
+ ZZ4: Array[0..2] of Smallint;
+ Page,Sfx: Smallint;
+ NA: Longint;
+ ZZ5: Smallint;
+ OffX,OffY: Longint;
+ ZZ6: Smallint;
+ end;
+```
+
+ZZ1,2,3,4,5,6: Unknown data X,Y: Target position SrcX,SrcY: Source position
+
+Pal: Which palette page to use
+
+Flags: Indicate special effects ... not really understood properly.
+
+Page: Which image source page to use
+
+Sfx: More special effects?
+
+NA: Unknown OffX,OffY: Unknown
+
+The image source data is split up into 256x256 pixel pages; that's why as well as a source X and Y, you also have a source page
+
+(which 256x256 block to take data from). On the other hand, the destination background is stored as one big bitmap with no limits on size, so there, you just have a target X/Y position which can be used directly.
+
+Also, note that each source image data "page" is preceded by 6 bytes of header.
+
+So, say the raw image data starts at offset ImageData. Given a background sprite, the offset where that sprites data starts is:
+
+```
+StartOffset := (Page shl 16) or ((SrcY shl 8) or SrcX) + (Page+1)*6;
+this is equivalent to
+```
+
+StartOffset := (Page \* \$FFFF) + (SrcY \* \$FF) + SrcX + (Page+1)\*6;
+
+(Page shl 16), (Page\*\$FFFF): Each page takes up 256x256 = \$FFFF bytes, so skip that many for each page.
+
+(SrcY shl 8), (SrcY\*\$FF): Each pixel row takes up 256 = \$FF bytes, so skip that many to get to the right row.
+
+SrcX: Taken directly.
+
+(Page+1)\*6: Skip 6 bytes of header per page. (Page+1) since even page 0 has 6 bytes preceding it.
+
+Incidentally, the shifts are used in preference to multiplication since shifting is more efficient. Shifting on a computer is equivalent to multiplying/dividing by 2, 4, 8, .....
+
+For the destination, note that you can use X/Y directly; however 0,0 \*appears\*, I \*think\*, to be at the image \*centre\*, not at the top/bottom left corner like with most programs.
+
+So, now you know:
+
+- -Where the raw image data for that sprite starts
+- -Where you're drawing it to
+- -Which palette page to use
+
+Now, you just copy the pixels across, filtering the palette into it. IE:
+
+Read a pixel from source image (one byte).
+
+Set current colour to that colour in palette.
+
+Draw onto target.
+
+So, if you read a byte = 55 from the source image, you'd draw colour 55 in the selected palette to the target bitmap.
+
+#### Other points
+
+------------
+
+Currently, Qhimms (and therefore mine too) source code doesn't draw a sprite if the Sfx is non-zero; this is because we don't understand what it does.
+
+All variables above (Page, Pal, X, Y) start from ZERO; palette page zero is the first one, page one is the next one, etc.
+
+The image data in FF7 palettes is stored in reverse order; ie. on Windows, data is stored Red first, then Green, then Blue. FF7
+
+stores it the opposite way around, so you need to exchange the red/blue data. Here's how I do it in Cosmo:
+
+```
+ DCol := 0;
+ DCol := DCol or ( (Col^ and $1F) shl 10 );
+ DCol := DCol or (Col^ and $3E0);
+ DCol := DCol or ( (Col^ and $7C00) shr 10);
+```
+
+Converts Col, an FF7 colour, into DCol, a (16-bit) Delphi colour.
+
+The first background sprites are drawn "behind" the layer 2 sprites.
+
+Variable conventions; I'm using Delphi names, which are as follows:
+
+Byte: 8 bit, unsigned, integer Word: 16 bit, unsigned, integer Smallint: 16 bit, signed, integer Integer/Longint:32 bit, signed, integer
+
+(Unsigned = positive values only. Signed can hold positive or negative values).
+
+Also, whenever I use numbers with \$ signs above, it means I'm using hex values (hexadecimal).
+
+----------------------------
+
+<!-- END EXTRACTION -->
+
+---
+
+<!-- EXTRACTED FROM MAJOR SECTION: 05_FIELD_MODULE.md
+     Lines 2514-2580 (Opcode Matrix and Command Definitions)
+     Status: Content added verbatim from major section
+     Images: None
+-->
+
+#### Opcode Matrix
+
+|    | 00       | 01           | 02       | 03           | 04      | 05       | 06      | 07       | 08       | 09        | 0a     | 0b       | 0c       | 0d      | 0e     | 0f       |
+|----|----------|--------------|----------|--------------|---------|----------|---------|----------|----------|-----------|--------|----------|----------|---------|--------|----------|
+| 00 | RET      | REQ          | REQSW    | REQEW        | PREQ    | PRQSW    | PRQEW   | RETTO    | JOIN     | SPLIT     | SPTYE  | GTPYE    | ?0C?     | ?0D?    | DSKCG  | SPECIAL  |
+| 10 | GotoNext | GotoNextLong | GotoPrev | GotoPrevLong | IfUByte | IfUByteL | IfSWord | IfSWordL | IfUSWord | IfUSWordL | ­      | ­        | ?1C?     | ­       | ­      | ­        |
+| 20 | MINIGAME | TUTOR        | BTMD2    | BTRLD        | wait    | NFADE    | BLINK   | BGMOVIE  | KAWAI    | KAWIW     | PMOVA  | SLIP     | BGPDH    | BGSCR   | WCLS   | WSIZW    |
+| 30 | IF­KEY   | IF­KEYON     | IF­KEYOF | UC           | PDIRA   | PTURA    | WSPCL   | WNUMB    | STTIM    | GOLD+     | GOLD­  | CHGLD    | HMPMAX1  | HMPMAX2 | MHMMX  | HMPMAX3  |
+| 40 | message  | MPARA        | MPRA2    | MPNAM        | ­       | MP+      | ­       | MP­      | ASK      | MENU      | MENU2  | BTLTB    | ­        | HP+     | ­      | HP       |
+| 50 | window   | WMOVE        | WMODE    | WREST        | WCLSE   | WROW     | GWCOL   | SWCOL    | ST­ITM   | DL­ITM    | CK­ITM | SM­TRA   | DM­TRA   | CM­TRA  | SHAKE  | NOP      |
+| 60 | MAPJUMP  | SCRLO        | SCRLC    | SCRLA        | SCR2D   | SCRCC    | SCR2DC  | SCRLW    | SCR2DL   | MPDSP     | VWOFT  | FADE     | FADEW    | IDLCK   | LSTMP  | SCRLP    |
+| 70 | battle   | BTLON        | BTLMD    | PGTDR        | GETPC   | PXYZI    | PLUS!   | PLUS2!   | MINUS!   | MINUS2!   | INC!   | INC2!    | DEC!     | DEC2!   | TLKON  | RDMSD    |
+| 80 | set byte | SET­WORD     | BIT­ON   | BIT­OFF      | BIT­XOR | PLUS     | PLUS2   | MINUS    | MINUS2   | MUL       | MUL2   | DIV      | DIV2     | MOD     | MOD2   | AND      |
+| 90 | AND2     | OR           | OR2      | XOR          | XOR2    | INC      | INC2    | DEC      | DEC2     | RANDOM    | LBYTE  | HBYTE    | 2BYTE    | SETX    | GETX   | SEARCHX  |
+| a0 | PC       | CHAR         | DFANM    | ANIME1       | VISI    | XYZI     | XYI     | XYZ      | MOVE     | CMOVE     | MOVA   | TURA     | ANIMW    | FMOVE   | ANIME2 | ANIM!1   |
+| b0 | CANIM1   | CANM!1       | MSPED    | DIR          | TURNGEN | TURN     | DIRA    | GETDIR   | GETAXY   | GETAI     | ANIM!2 | CANIM2   | CANM!2   | ASPED   | ­      | CC       |
+| c0 | JUMP     | AXYZ         | LADER    | OFST         | OFSTW   | TALKR    | SLIDR   | SOLID    | PRTYP    | PRTYM     | PRTYE  | IF­PRTYQ | IF­MEMBQ | MMB+­   | MMBLK  | MMBUK    |
+| d0 | LINE     | LINON        | MPJPO    | SLINE        | SIN     | COS      | TLKR2   | SLDR2    | PMJMP    | PMJMP2    | AKAO2  | FCFIX    | CCANM    | ANIMB   | TURNW  | MPPAL    |
+| e0 | BGON     | BGOFF        | BGROL    | BGROL2       | BGCLR   | STPAL    | LDPAL   | CPPA     | RTPAL    | ADPAL     | MPPAL2 | STPLS    | LDPLS    | CPPAL2  | RTPAL2 | ADPAL2   |
+| f0 | MUSIC    | Sound        | AKAO     | MUSVT        | MUSVM   | MULCK    | BMUSC   | CHMPH    | PMVIE    | MOVIE     | MVIEF  | MVCAM    | FMUSC    | CMUSC   | CHMST  | GAMEOVER |
+
+#### Opcode Definitions
+
+| Opcode | Name |
+|--------|------|
+| 0x00   | RET  |
+
+Arguments: (none)
+
+Description: Returns control back to the standard program loop. Usually you can control the PC again after this point.
+
+| Opcode | Name |
+|--------|------|
+| 0x01   | REQ  |
+
+Arguments: (none)
+
+Description: Returns control back to the standard program loop. Usually you can control the PC again after this point.
+
+| Opcode    | Name       |
+|-----------|------------|
+| 0x30      | WINDOW     |
+
+Arguments:
+- id=byte - Window ID
+
+Additional Parameters:
+- X coordinate for the upper left hand corner
+- X coordinate for the upper left hand corner
+- Width of window in pixels
+- Height of window in pixels
+
+Description: Initializes a windowpane. This does not display a window, but allows for a "container" for the commands ASK and MESSAGE to place text within. It is referenced by it's window ID
+
+| Opcode       | Name                                      |
+|--------------|-------------------------------------------|
+| 0x48         | ASK                                       |
+
+Arguments:
+- unknown=byte - Unknown
+- win=byte - Window ID to place data into
+- mes=byte - Which dialog to display from dialog table
+- 1st=byte - Which line is the first choice
+- nth=byte - Which line is the last choice
+- var=byte - Unknown
+
+Description: The ASK command opens a window with a set of choices to be picked with the "selector finger" (Yubi)
+
+<!-- END EXTRACTION -->
+
+---
+
+## Images
+
+![Field BackgroundVRAM](../images/Field_BackgroundVRAM.jpg)
+
