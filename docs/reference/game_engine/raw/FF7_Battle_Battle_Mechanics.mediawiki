@@ -1,0 +1,561 @@
+= FF7/Battle/Battle Mechanics =
+
+This page will be for Battle memory structures. This is consistent with the memory structure of the PC version. PSX may or may not reflect these structures.
+
+== Command Defaults ==
+
+Each command type has default execution values that can, in some cases, be overridden. These come from a hard-coded structure in the executable.
+
+{| class="wikitable"
+! Offset
+! Default
+|-
+| 0h
+| Animation
+|-
+| 1h
+| Damage Calculation
+|-
+| 2h
+| Command Properties
+|}
+
+== Queued Actions ==
+
+When a command is selected either by a player character or an enemy the action is inserted into a priority queue. Up to 64 actions can be queued. On each update loop, the main Queue function will pop off the next action with the lowest priority and execute it in FIFO order within priority bands. 
+
+Queue entries have the following structure in memory:
+
+{| class="wikitable"
+! Offset
+! Value
+|-
+| 0
+| Action Priority (limits/counters 0, player chosen spells 6)
+|-
+| 1
+| Queue position within priority band
+|-
+| 2
+| Attacker actor ID
+|-
+| 3
+| Action command index (e.g CMD_MAGIC = 0x02)
+|-
+| 4
+| Action attack index (e.g Bolt = 0x21). (This index is absolute, not command relative)
+|-
+| 6
+| Action target mask
+|}
+
+== AI Structure ==
+
+There is a single block of memory that holds AI information on the current running script. Each Actor "owns" this while their scripts are executing.
+
+{| class="wikitable"
+! Offset
+! Function
+|-
+| 0h
+| Actor Index
+|-
+| 4h
+| Script Position
+|-
+| 8h
+| Remaining Stack Space (initially 200h)
+|-
+| 0Ch
+| Current AI OpCode
+|-
+| 10h
+| OpCode Lower Nybble
+|-
+| 14h
+| OpCode Upper Nybble
+|-
+| 18h
+| First Group Type
+|-
+| 1Ch
+| Second Group Type
+|-
+| 20h
+| OpCode Lower Nybble (related to group 1?)
+|-
+| 24h
+| OpCode Lower Nybble (related to group 2?)
+|-
+| 28h
+| Mask of ''non-null'' values in Group 1
+|-
+| 2Ah
+| Mask of ''non-null'' values in Group 2
+|-
+| 2Ch - 50h
+| Group 1 of variables
+|-
+| 54h - 78h
+| Group 2 of variables
+|-
+| 7Ch - 27Ch
+| Stack of values
+|}
+
+== Active Character Data ==
+
+This is an array that each playable character maintains an instance of.
+
+{| class="wikitable"
+! Offset
+! style="background: rgb(104,104,104)" colspan="2" | Value
+|-
+| 000h
+| colspan="2" | Character ID
+|-
+| 001h
+| colspan="2" | Cover Chance
+|-
+| 002h
+| colspan="2" | Strength
+|-
+| 003h
+| colspan="2" | Vitality
+|-
+| 004h
+| colspan="2" | Magic
+|-
+| 005h
+| colspan="2" | Spirit
+|-
+| 006h
+| colspan="2" | Speed
+|-
+| 007h
+| colspan="2" | Luck
+|-
+| 008h
+| colspan="2" | Phys Attack
+|-
+| 00Ah
+| colspan="2" | Phys Def
+|-
+| 00Ch
+| colspan="2" | Mag Attack
+|-
+| 00Eh
+| colspan="2" | Mag Def
+|-
+| 010h
+| colspan="2" | Current HP
+|-
+| 012h
+| colspan="2" | Max HP
+|-
+| 014h
+| colspan="2" | Current MP
+|-
+| 016h
+| colspan="2" | Max MP
+|-
+| 018h
+| colspan="2" | Timer
+|-
+| 01Ch
+| colspan="2" | Counter Attack Action Index
+|-
+| 01Eh
+| colspan="2" | Counter Attack Chance
+|-
+| 021h
+| colspan="2" | Some sort of divisor?
+|-
+| 023h
+| colspan="2" | Character Flags (Underwater, Long Range, HP&lt;-&gt;MP, etc)
+|-
+| 024h
+| colspan="2" | Eight entries of three bytes...
+|-
+| 03Ch
+| colspan="2" | Attacking Elements
+|-
+| 03Eh
+| colspan="2" | Halved Elements
+|-
+| 040h
+| colspan="2" | Nullified Elements
+|-
+| 042h
+| colspan="2" | Absorbed Elements
+|-
+| 044h
+| colspan="2" | Attacking Elements
+|-
+| 048h
+| colspan="2" | Immune Statuses
+|-
+| 04Ch
+| colspan="2" | Enabled Command Menu (16 entries of 6 bytes)
+|-
+| 0ACh
+| colspan="2" | Limit Actions for current Limit Level
+|-
+| 0B4h
+| colspan="2" | Enabled Limit Data (three entries in Attack Data format(0x1C))
+|-
+| 108h
+| colspan="2" | Enabled Magics (54 entries of 8 bytes)
+|-
+| style="background: rgb(104,104,155)" rowspan="7" |
+| 0
+| Magic Index
+|-
+| 1h
+| MP Cost
+|-
+| 2h
+| All Count
+|-
+| 3h
+| Quad Enabled?
+|-
+| 4h
+| Quad Count?
+|-
+| 5h
+| Target Data
+|-
+| 6h
+| Properties
+|-
+| 2C8h
+| colspan="2" | Enabled Summons (format like above)
+|-
+| 348h
+| colspan="2" | Enabled ESkills (format like above)
+|-
+| 408h
+| colspan="2" | First 11 bytes of Weapon Data
+|-
+| 40Dh
+| colspan="2" | Status of weapon added to Attacking Statuses above
+|-
+| 410h
+| colspan="2" | Weapon's Accuracy
+|-
+| 418h
+| colspan="2" | Additional Attack Elements
+|-
+| 41Ch
+| colspan="2" | Four sets of two DWords : (Stat to increase, Increase value)
+|-
+| 43Ch
+| colspan="2" | Gil Bonus granted by this character
+|-
+| 43Dh
+| colspan="2" | Encounter rate ""
+|-
+| 43Eh
+| colspan="2" | Chocobo Chance ""
+|-
+| 43Fh
+| colspan="2" | PreEmptive Chance ""
+|}
+
+== Actor Battle Data ==
+
+Similar to Active Character Data, but more detailed. This data is dependent on who is performing the current action and only one instance of it exists during each action and all stats are relative to the performing actor and current action unless otherwise noted. Addresses 200h and above will change for each target of the action.
+
+{| class="wikitable"
+! Offset
+! style="background: rgb(104,104,104)" colspan="2" | Value
+|-
+| 0h
+| colspan="2" | Index
+|-
+| 4h
+| colspan="2" | Level
+|-
+| 8h
+| colspan="2" | Formation Entry (Enemy A, Enemy B, etc)
+|-
+| 0Ch
+| colspan="2" | Command Index
+|-
+| 10h
+| colspan="2" | Action Index
+|-
+| 14h
+| colspan="2" | Action Animation Base (for relative to absolute animation indexes)
+|-
+| 18h
+| colspan="2" | Allowed Targets (Active and targetable)
+|-
+| 1Ch
+| colspan="2" | Active Allies?
+|-
+| 20h
+| colspan="2" | Command Animation (player characters only)
+|-
+| 24h
+| colspan="2" |
+[[FF7/Battle/Attack_Effect_Id_List|Attack Effect]]
+|-
+| 28h
+| colspan="2" | Command Index (again)
+|-
+| 2Ch
+| colspan="2" | Action Index (again)
+|-
+| 30h
+| colspan="2" | Self Mask
+|-
+| 38h
+| colspan="2" | MP Cost
+|-
+| 3Ch
+| colspan="2" | Action Accuracy
+|-
+| 40h
+| colspan="2" |
+[[FF7/Battle/Damage_Calculation|Damage Calculation]]
+|-
+| 44h
+| colspan="2" |
+[[FF7/Battle/Elemental_Data|Action's Element]]
+|-
+| 48h
+| colspan="2" | Action's Power
+|-
+| 4Ch
+| colspan="2" | Phys/Mag Attack Power
+|-
+| 50h
+| colspan="2" | Action's Target(s) Mask
+|-
+| 54h
+| colspan="2" | Normal Impact Sound
+|-
+| 58h
+| colspan="2" | Critical Impact Sound
+|-
+| 5Ch
+| colspan="2" | Miss Sound
+|-
+| 60h
+| colspan="2" | Single Target Camera
+|-
+| 64h
+| colspan="2" | Multi Target Camera
+|-
+| 68h
+| colspan="2" | Action Reaction Animation Index
+|-
+| 6Ch
+| colspan="2" |
+[[FF7/Battle/Attack_Special_Effects|Attack Special Effects]]
+|-
+| 78h
+| colspan="2" | Non-self target mask?
+|-
+| 80h
+| colspan="2" |
+[[FF7/Battle/Status_Effects|Inflicting Status(es)]]
+|-
+| 84h
+| colspan="2" |
+[[FF7/Battle/Status_Effects|Curing Status(es)]]
+|-
+| 88h
+| colspan="2" |
+[[FF7/Battle/Status_Effects|Toggling Status(es)]]
+|-
+| 8Ch
+| colspan="2" | Chance to inflict Status
+|-
+| 90h
+| colspan="2" | Command Properties (details pending)
+|-
+| 94h
+| colspan="2" | Target Mask
+|-
+| 98h
+| colspan="2" | Attack Index position in scene data (enemy only)
+|-
+| A0h
+| colspan="2" |
+Action Accuracy function (upper nybble of [[FF7/Battle/Damage_Calculation|Damage Calculation]])
+|-
+| A4h
+| colspan="2" |
+Action Damage function (lower nybble of [[FF7/Battle/Damage_Calculation|Damage Calculation]])
+|-
+| ACh
+| colspan="2" | Quad Magic Count?
+|-
+| B0h
+| colspan="2" | Number of attack damage calculations?
+|-
+| B4h
+| colspan="2" | Follow-up action count (Tifa's Limits, Finishing Touch, etc)
+|-
+| B8h
+| colspan="2" | Number of Targets?
+|-
+| BCh
+| colspan="2" |
+[[FF7/Battle/Attack_Special_Effects|Attack Additional Effects]]
+|-
+| C0h
+| colspan="2" | Additional Effect Modifier
+|-
+| C4h
+| colspan="2" | Attack Power
+|-
+| C8h
+| colspan="2" | Actor's current status
+|-
+| D0h - D7h
+| colspan="2" | Follow-up Action(s)
+|-
+| D8h
+| colspan="2" | Actor's Strength
+|-
+| DCh
+| colspan="2" | Used during String display?
+|-
+| E0h
+| colspan="2" | Number of successful hits
+|-
+| F0h
+| colspan="2" | Character-specific action properties (mp absorb, hp absorb, etc)
+|-
+| F8h
+| colspan="2" | Related to enabled magic. Also ACh above.
+|-
+| FCh
+| colspan="2" | Multiple hit count
+|-
+| 100h - 1FFh
+| colspan="2" | large unused gap
+|-
+| 200h
+| colspan="2" | ???
+|-
+| 204h
+| colspan="2" | Character Map (players only)
+|-
+| 208h
+| colspan="2" | Current Target Index
+|-
+| 20Ch
+| colspan="2" | Formation Slot
+|-
+| 210h
+| colspan="2" | Target's Phys/Mag Def (whichever attack type is)
+|-
+| 214h
+| colspan="2" | Damage done to target
+|-
+| 218h
+| colspan="2" | Properties of attack
+|-
+| style="background: rgb(104,104,155)" rowspan="8" |
+| 1
+| missed
+|-
+| 2
+| Physical if set; Magical if unset
+|-
+| 4
+| Attempt Steal
+|-
+| 20
+| Won't Miss
+|-
+| 4000
+| Physical Barrier
+|-
+| 8000
+| Magical Barrier
+|-
+| 40000
+| ???
+|-
+| 800000
+| ???
+|-
+| 220h
+| colspan="2" | More properties (heal, critical, damage MP, etc)
+|-
+| 224h
+| colspan="2" | Target's reaction animation
+|-
+| 228h
+| colspan="2" | Target's status
+|-
+| 22Ch
+| colspan="2" | Target's status immunities
+|-
+| 230h
+| colspan="2" | Damage level to current Action
+|-
+| style="background: rgb(104,104,155)" rowspan="8" |
+| 1
+| Death (if not immune)
+|-
+| 2
+| Always hit?
+|-
+| 4
+| Double (Damage &amp; Accuracy)
+|-
+| 8
+| Normal (Never checked)
+|-
+| 10
+| Half (Damage &amp; Accuracy)
+|-
+| 20
+| Null (won't miss?)
+|-
+| 40
+| Absorb (won't miss?)
+|-
+| 80
+| Full-Heal
+|-
+| 234h
+| colspan="2" | Target condition flags (back exposed, multiple targets, etc)
+|-
+| 238h
+| colspan="2" | Status(es) to add to Target
+|-
+| 23Ch
+| colspan="2" | Status(es) to Cure from Target
+|-
+| 240h
+| colspan="2" | Status(es) to Toggle from Target
+|-
+| 244h
+| colspan="2" | All Target's statuses that will be affected from action
+|-
+| 248h
+| colspan="2" | Sound to play (determined from hit/critical/miss sounds above)
+|-
+| 24Ch
+| colspan="2" | Action Animation to use (varies from single/multiple targets)
+|-
+| 254h
+| colspan="2" | Target's Level
+|-
+| 258h
+| colspan="2" | Target's HP
+|-
+| 25Ch
+| colspan="2" | Target's MP
+|-
+| 260h
+| colspan="2" | Action's final Accuracy
+|}

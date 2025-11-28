@@ -1,0 +1,161 @@
+{
+  "session_id": "b1483492-7356-4e03-95e9-710911d2ed6c",
+  "prompts": [
+    {
+      "text": "Read some of the individual Markdown files. You'll see that tables didn't come through into actual Markdown tables, which was one of the reasons we used this. So can this be easily fixed with Pandoc settings, or is there a better MediaWiki to Markdown converter, particularly with tables? We also want each individual page to have its own table of contents. ",
+      "timestamp": "2025-11-28T04:01:32.743085+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "3",
+        "window_name": "claude-b1483492",
+        "pane": "%311",
+        "full_path": "ff70G-japanese-mod:3:%311"
+      }
+    },
+    {
+      "text": "The following that has been selected and find its corresponding converted markdown and you'll see what's happening. ",
+      "timestamp": "2025-11-28T04:10:02.743602+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "3",
+        "window_name": "claude-b1483492",
+        "pane": "%311",
+        "full_path": "ff70G-japanese-mod:3:%311"
+      }
+    },
+    {
+      "text": "[Image #1] This is what it looks like on the site. ",
+      "timestamp": "2025-11-28T04:12:46.743358+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "3",
+        "window_name": "claude-b1483492",
+        "pane": "%311",
+        "full_path": "ff70G-japanese-mod:3:%311"
+      }
+    },
+    {
+      "text": "If you also look at the `roadmapModule`, you'll see that all of the code blocks are coming through a little strange. It's almost like they just have a stylized background as opposed to being a proper code block. Are we able to update the conversion to handle this better? ",
+      "timestamp": "2025-11-28T04:15:12.917972+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "3",
+        "window_name": "claude-b1483492",
+        "pane": "%311",
+        "full_path": "ff70G-japanese-mod:3:%311"
+      }
+    },
+    {
+      "text": "Need to read the file again. It's looking quite a lot worse now. Some of the code blocks are coming through okay, but now the tables are looking really bad, and certain code blocks are just exiting their block, going back to the old style, and then back into the code block, back to the old style. So definitely not there yet. ",
+      "timestamp": "2025-11-28T04:19:12.068348+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "3",
+        "window_name": "claude-b1483492",
+        "pane": "%311",
+        "full_path": "ff70G-japanese-mod:3:%311"
+      }
+    },
+    {
+      "text": "Can you have a look at all of the original code blocks and where they've used the italics? I've just done a glance over it, and I don't see any rhyme or reason to how they're using their italics. So I would actually not care if we lost the italics in code blocks because if we're using our code blocks correctly and assigning it to the right language type, it should also do all sorts of good syntax highlighting, right? ",
+      "timestamp": "2025-11-28T04:22:34.350956+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "3",
+        "window_name": "claude-b1483492",
+        "pane": "%311",
+        "full_path": "ff70G-japanese-mod:3:%311"
+      }
+    },
+    {
+      "text": "Just to do a quick clear up on something. The italics are actually an addition from a particular user, just making it easier to highlight their additions. So if you can think of a good workaround to tag their additions wherever there was italics, or we just remove the italics. ",
+      "timestamp": "2025-11-28T04:25:13.975055+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "3",
+        "window_name": "claude-b1483492",
+        "pane": "%311",
+        "full_path": "ff70G-japanese-mod:3:%311"
+      }
+    },
+    {
+      "text": "No manual fixing. We need this all to be programmatic, please. We have 32 files to do this across. So, yeah. ",
+      "timestamp": "2025-11-28T04:26:11.860657+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "3",
+        "window_name": "claude-b1483492",
+        "pane": "%311",
+        "full_path": "ff70G-japanese-mod:3:%311"
+      }
+    },
+    {
+      "text": "Next thing I'd like is the table of contents. It should be underneath the heading. I'll let you decide on what looks nice with line breaks, either above or below, or both, or none.\n\nFor that world map module, I would like you to just tidy up those individual offending author annotations that are ruining our formatting.\n\nWe have several other issues as well, but we might not have the context to actually do it. The links in the files aren't linking to each other correctly. Also, none of the images are showing, you might have seen something like [[File:Kernel table.png]] in the '/Volumes/DevSSD/01_Development/Projects/experiments/ff70G-japanese-mod/docs/reference/game_engine/raw/FF7_Kernel_Overview.mediawiki' but this image would have likely just been https://qhimm-modding.fandom.com/wiki/FF7/Kernel/Overview?file=Kernel_table.png Possibly download those and embed them, or reference them, or handle them in a better way. That would be fantastic. ",
+      "timestamp": "2025-11-28T04:37:21.921482+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "3",
+        "window_name": "claude-b1483492",
+        "pane": "%311",
+        "full_path": "ff70G-japanese-mod:3:%311"
+      }
+    },
+    {
+      "text": "so you recreated GameEngine.md with the new additions?",
+      "timestamp": "2025-11-28T05:03:20.564903+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "3",
+        "window_name": "claude-b1483492",
+        "pane": "%311",
+        "full_path": "ff70G-japanese-mod:3:%311"
+      }
+    },
+    {
+      "text": "Let's just attempt to do all of the images now. ",
+      "timestamp": "2025-11-28T05:40:49.504549+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "3",
+        "window_name": "claude-b1483492",
+        "pane": "%311",
+        "full_path": "ff70G-japanese-mod:3:%311"
+      }
+    },
+    {
+      "text": "Can they be externally referenced or can you download them directly so that table in the kernel overview file? That looked like this.  [[File:Kernel table.png]]\n\nIts actual url is here https://qhimm-modding.fandom.com/wiki/FF7/Kernel/Overview?file=Kernel_table.png\n\nScrape those images and then store them locally. We could then reference them as you have done in the markdown. I would like the assets in their own directory though, ideally. ",
+      "timestamp": "2025-11-28T05:45:57.197237+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "3",
+        "window_name": "claude-b1483492",
+        "pane": "%311",
+        "full_path": "ff70G-japanese-mod:3:%311"
+      }
+    },
+    {
+      "text": "im looking at the Kernel overview and its just rendering like this: Images\n![Kernel table](images/Kernel table.png){data-source-line=32}\n\nother md in other projects  are referencing local  images fine so something is goin wrong ",
+      "timestamp": "2025-11-28T05:47:49.047508+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "3",
+        "window_name": "claude-b1483492",
+        "pane": "%311",
+        "full_path": "ff70G-japanese-mod:3:%311"
+      }
+    },
+    {
+      "text": "I'm not displaying any images. ",
+      "timestamp": "2025-11-28T05:50:27.667786+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "3",
+        "window_name": "claude-b1483492",
+        "pane": "%311",
+        "full_path": "ff70G-japanese-mod:3:%311"
+      }
+    }
+  ],
+  "created_at": "2025-11-28T04:01:32.742045+00:00",
+  "last_modified": "2025-11-28T05:50:27.668375+00:00"
+}

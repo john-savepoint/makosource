@@ -1,0 +1,149 @@
+= FF7/Kernel/Kernel.bin =
+
+==  Important Files  ==
+
+{| style="border: 1px solid black; border-collapse: collapse; background: rgb(0,100,0)" border="1" cellspacing="1" cellpadding="3" align="center"
+! align="center" | PSX Version
+! align="center" | PC Version
+|-
+| /INIT/KERNEL.BIN
+| /DATA/KERNEL/KERNEL.BIN
+|-
+|
+| /DATA/KERNEL/KERNEL2.BIN
+|}
+
+==  The KERNEL.BIN Archive  ==
+
+The file KERNEL.BIN archive is in [[FF7/Kernel/Low_level_libraries#BIN-GZIP_Type_Archives|BIN-GZIP format]]. It consists of 27 gziped sections concatenated together with a 6 byte header for each. This file is the same both on the PC and PSX versions. This holds all the static data and menu text for the game, with a look up table at the beginning of the section. The first 9 sections of data (i.e. The non-text related items) are in typical BIN file archive format. Sections 10-27 are [[FF7/FF_Text|FF Text files]]. The text sections have a header of pointers at the beginning of each section and point to a text block below.
+
+The KERNEL.BIN file consists of the following sections.
+
+{| class="wikitable"
+! File
+! Data
+! Offset
+|-
+| align="center" | 1
+|
+[[FF7/Command_data|Command data]]
+| 0x0006
+|-
+| align="center" | 2
+|
+[[FF7/Attack_data|Attack data]]
+| 0x0086
+|-
+| align="center" | 3
+|
+[[FF7/Battle_and_growth_data|Battle and growth data]]
+| 0x063A
+|-
+| align="center" | 4
+|
+[[FF7/Character_starting_stats|Initialization data]]
+| 0x0F7F
+|-
+| align="center" | 5
+|
+[[FF7/Item_data|Item data]]
+| 0x111B
+|-
+| align="center" | 6
+|
+[[FF7/Weapon_data|Weapon data]]
+| 0x137A
+|-
+| align="center" | 7
+|
+[[FF7/Armor_data|Armor data]]
+| 0x1A30
+|-
+| align="center" | 8
+|
+[[FF7/Accessory_data|Accessory data]]
+| 0x1B73
+|-
+| align="center" | 9
+|
+[[FF7/Materia_data|Materia data]]
+| 0x1C11
+|-
+| align="center" | 10
+| Command descriptions
+| 0x1F32
+|-
+| align="center" | 11
+| Magic descriptions
+| 0x2199
+|-
+| align="center" | 12
+| Item descriptions
+| 0x28D4
+|-
+| align="center" | 13
+| Weapon descriptions
+| 0x2EE2
+|-
+| align="center" | 14
+| Armor descriptions
+| 0x307B
+|-
+| align="center" | 15
+| Accessory descriptions
+| 0x315F
+|-
+| align="center" | 16
+| Materia descriptions
+| 0x3384
+|-
+| align="center" | 17
+| Key Item descriptions
+| 0x3838
+|-
+| align="center" | 18
+| Command Names
+| 0x3BE2
+|-
+| align="center" | 19
+| Magic Names
+| 0x3CCA
+|-
+| align="center" | 20
+| Item Names
+| 0x4293
+|-
+| align="center" | 21
+| Weapon Names
+| 0x4651
+|-
+| align="center" | 22
+| Armor Names
+| 0x4B02
+|-
+| align="center" | 23
+| Accessory Names
+| 0x4C4B
+|-
+| align="center" | 24
+| Materia Names
+| 0x4D90
+|-
+| align="center" | 25
+| Key Item Names
+| 0x5040
+|-
+| align="center" | 26
+| Battle and Battle-Screen Text
+| 0x5217
+|-
+| align="center" | 27
+| Summon Attack Names
+| 0x5692
+|}
+
+==  The KERNEL2.BIN Archive  ==
+
+On the PC version there exists a secondary kernel archive called KERNEL2.BIN. This archive contains only sections 10-27 (Text data) of KERNEL.BIN. The data was ungzipped from the original archive, concatenated together, and then LZSed into a single archive with a 4 byte header giving the length of the file.
+
+The maximum allotted storage space on the PC version for all un-LZSed data in the kernel2.bin is 27KB (27648 bytes). This means that the total size of the extracted files (text and pointers) must be less than this.

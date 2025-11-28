@@ -1,0 +1,464 @@
+= FF7/Technical/Customising =
+
+== Essentials ==
+
+The entries in this section are to enable you to play [[FF7|Final Fantasy VII]] should you encounter issues in running the game.
+
+{| border="1" cellspacing="1" cellpadding="3" style="border: 1px grey; border-collapse: collapse;"
+! style="background:rgb(104,104,104)" | Name
+! style="background:rgb(104,104,104)" | Description
+! style="background:rgb(104,104,104)" | Author
+! style="background:rgb(104,104,104)" | Version / Status
+! style="background:rgb(104,104,104)" | Links
+|-
+! align="left" | FF7/FF8 OpenGL Driver
+| Renders the games with OpenGL, allowing increased compatibility with modern graphics cards and superior graphics.
+| [http://forums.qhimm.com/index.php?action=profile;u=2862 Aali]
+| style="background:rgb(155,135,135)" | 0.8.1 beta
+| [http://forums.qhimm.com/index.php?topic=8306.0 Forum] [http://backup.ninjaloot.se/share/ff7_opengl-0.7.11b.zip v0.7.11b] [http://backup.ninjaloot.se/share/ff7_opengl-0.7.3b.zip v0.7.3b]
+|-
+! align="left" | FF7 v1.02 Official Patch
+| Updates the game to version 1.02.
+| Square / Eidos
+| 1.02
+| [http://ffsf.aaron-kelley.net/patch.html Patch]
+|-
+! align="left" | FF7 Spanish v1.03 Unofficial Patch
+| Alternative to Spanish 1.02 patch--doesn't get read as a virus and is compatible with exe mods.
+| [http://forums.qhimm.com/index.php?action=profile;u=6305 Titeguy3]
+| style="background:rgb(155,135,135)" | 1.03 beta
+| [http://forums.qhimm.com/index.php?topic=9603.0 Forum]
+|-3
+|}
+
+== Modifications ==
+
+The following section maintains a list of projects that can be used in conjunction with [[FF7|Final Fantasy VII]] to enhance the game beyond starting and playing the game as normal; these range from patches used to enhance graphics, to viewers and editors for game data. Entries are listed by category, then alphabetically.
+
+
+=== Patches ===
+
+The following are patches that change the overall FFVII experience.
+
+{| border="1" cellspacing="1" cellpadding="3" style="border: 1px grey; border-collapse: collapse;"
+! style="background:rgb(104,104,104)" | Project Name
+! style="background:rgb(104,104,104)" | Description
+! style="background:rgb(104,104,104)" | Author
+! style="background:rgb(104,104,104)" | Version / Status
+! style="background:rgb(104,104,104)" | Links
+|-
+! align="left" | Final Fantasy VII Remix Patch
+| Compilation patch of all of the latest FF7 mods. This installer is grossly out of date and has bugs. It is therefore strongly discouraged.  For an alternative, see the Bootleg installer.
+| [http://forums.qhimm.com/index.php?action=profile;u=6305 titeguy3], [http://forums.qhimm.com/index.php?topic=8915.0 Respective modders credited]
+| 2.5.1
+| [http://forums.qhimm.com/index.php?topic=8915.0 Forum]
+|-
+! align="left" | Team Avalanche's Graphical Overhaul
+| Ongoing project to replace all low-res graphical aspects of the game with high-res textures and models.
+| [http://forums.qhimm.com/index.php?board=15.0 Team Avalanche], led by [http://forums.qhimm.com/index.php?action=profile;u=6423 sl1982] & [http://forums.qhimm.com/index.php?action=profile;u=5034 Timu Sumisu]
+| style="background:rgb(155,135,135)" | Beta 9
+| [http://forums.qhimm.com/index.php?topic=9151.0 Forum]
+|-
+! align="left" | Phoenix Rejuvenation Project
+| Replaces low-poly Non-Playable Characters with higher-poly versions. Newer version of NPC Reconstruction Project.
+| [http://forums.qhimm.com/index.php?action=profile;u=1077 ice_cold513], [http://forums.qhimm.com/index.php?action=profile;u=1176 Borde], [http://forums.qhimm.com/index.php?action=profile;u=2476 stormmedia], et al
+| style="background:rgb(155,135,135)" | 0.1
+| [http://forums.qhimm.com/index.php?topic=7422.0 Forum]
+|-
+! align="left" | YAMP (Multi-Patcher)
+| Apply dziugo's patches to FF7.
+| [http://forums.qhimm.com/index.php?action=profile;u=1660 dziugo]
+| style="background:rgb(135,155,135)" | Final
+| [http://forums.qhimm.com/index.php?topic=5124.0 Forum]
+|-
+! align="left" | FPS SpeedHack
+| Increases in-game frame limit.
+| [http://forums.qhimm.com/index.php?action=profile;u=4909 kranmer]
+| style="background:rgb(155,115,135)" | Alpha
+| [http://forums.qhimm.com/index.php?topic=9636.0 Forum]
+|-
+!align="left" | The Reunion
+| The Reunion is a collection of game mods. It will install Beacause: Retranslation Project (DLPB/Luksy), Menu Enhancement (DLPB/Kranmer), WEAPON (DLPB), Model Overhaul (Various), 60fps Battles (DLPB), and Soldier Quest (DLPB).
+| [http://forums.qhimm.com/index.php?action=profile;u=6439 DLPB], [http://forums.qhimm.com/index.php?action=profile;u=7258 Luksy], [http://forums.qhimm.com/index.php?action=profile;u=4909 Kranmer], PRP, SquallFF8, [http://forums.qhimm.com/index.php?action=profile;u=14276 Kaldarasha], and other modellers
+ | R05c, 26.Nov.2016
+| [http://forums.qhimm.com/index.php?topic=14914 Forum]
+|-
+!align="left" | Anxious Heart
+|Final Fantasy VII's original soundtrack released in looping ogg format. Also comes with various optional arrangements.
+| [http://forums.qhimm.com/index.php?action=profile;u=6439 DLPB] 
+| style="background:rgb(135,155,135)" | A05 Final, 8.Jun.2016
+| [http://forums.qhimm.com/index.php?topic=12787.0 Forum]
+|}
+
+=== Viewers / Extractors ===
+
+{| border="1" cellspacing="1" cellpadding="3" style="border: 1px grey; border-collapse: collapse;"
+! style="background:rgb(104,104,104)" | Project Name
+! style="background:rgb(104,104,104)" | Description
+! style="background:rgb(104,104,104)" | Author
+! style="background:rgb(104,104,104)" | Version / Status
+! style="background:rgb(104,104,104)" | Links
+|-
+! align="left" | Biturn
+| 3D model and texture viewer. Can convert to different formats, but not back to FF7 formats. Models have to be extracted from .LGP archives first.
+| [http://forums.qhimm.com/index.php?action=profile;u=171 Mirex]
+| style="background:rgb(155,135,135)" | [http://mirex.mypage.sk/FILES/bi087b4.rar v0.87b4]
+| [http://mirex.mypage.sk/index.php?selected=1#Biturn Website], [http://forums.qhimm.com/index.php?topic=2819 Forum]
+|-
+! align="left" | Leviathan
+| Battle models (enemy creatures) viewer, also displays creature info.
+| [http://forums.qhimm.com/index.php?action=profile;u=171 Mirex]
+| [http://mirex.mypage.sk/FILES/lev_041.rar v0.41]
+| [http://mirex.mypage.sk/index.php?selected=1#Leviathan Website]
+|-
+! align="left" | LGP/UnLGP (command line)
+| Extracts and packs LGP archives via a command line.
+| [http://forums.qhimm.com/index.php?action=profile;u=2862 Aali]
+| style="background:rgb(155,135,135)" | [http://www.mediafire.com/?zz2adyze5km 0.5b]
+| [http://forums.qhimm.com/index.php?topic=8641.0 Forum]
+|-
+! align="left" | ulgp (command line)
+| Extracts and packs LGP archives via command line or GUI. Expands on Lgp/unlgp by placing both functions into one tool. Tool can add files to archives without the need to extract first.
+|  Original code by [http://forums.qhimm.com/index.php?action=profile;u=2862 Aali], Updated tool by [http://forums.qhimm.com/index.php?action=profile;u=7258 Luksy]
+ | 1.3.2, 22.May.2015
+| [http://forums.qhimm.com/index.php?topic=12831.0 Forum]
+|-
+! align="left" | Omega
+| FF7 & FF8 tool for converting BMP <--> TEX
+| [http://forums.qhimm.com/index.php?action=profile;u=496 M4v3R]
+| [http://www.subfan.pl/mav/Omega.zip  1.3]
+| [http://forums.qhimm.com/index.php?topic=3373.msg47176 Forum]
+|-
+! align="left" | Unmass
+| Archive unpacker, supports FF7 LGP archives and FF8 .FI archives
+| [http://forums.qhimm.com/index.php?action=profile;u=171 Mirex]
+| [http://mirex.mypage.sk/FILES/unm_w082.rar v0.82]
+| [http://mirex.mypage.sk/index.php?selected=1#Unmass Website]
+|-
+! align="left" | jPSXdec
+| This tool is the best quality extractor of PSX video's which currently exists.  It is java based.
+| [http://forums.qhimm.com/index.php?action=profile;u=4015 m-35]
+| v0.99.6 (beta), 03.Jun.2016
+| [http://kenai.com/projects/jpsxdec/pages/Home Website]
+|}
+
+=== Editors ===
+
+{| border="1" cellspacing="1" cellpadding="3" style="border: 1px grey; border-collapse: collapse;"
+! style="background:rgb(104,104,104)" | Project Name
+! style="background:rgb(104,104,104)" | Description
+! style="background:rgb(104,104,104)" | Author
+! style="background:rgb(104,104,104)" | Version / Status
+! style="background:rgb(104,104,104)" | Links
+|-
+! align="left" | Black Chocobo
+| A feature-filled FF7 save editor that edits all formats of PC and PSX FF7 saves. It is cross-platform and open-source.
+| [http://forums.qhimm.com/index.php?action=profile;u=6501 Sithlord48]
+| 1.9.90
+| [http://www.blackchocobo.com Website], [http://forums.qhimm.com/index.php?topic=9625.0 Forum] 
+|-
+! align="left" | BoxFF7
+| Allows real-time editing of dialogue box position, size, and text.  Can edit touphScript files automatically.
+| [http://forums.qhimm.com/index.php?action=profile;u=6439 DLPB]
+| 2.0, 02.Oct.2016
+| [http://forums.qhimm.com/index.php?topic=14436.0 Forum] 
+|-
+! align="left" | DLPB Tools
+| A set of tools for hex editing memory/files. One tool edits text files.
+| [http://forums.qhimm.com/index.php?action=profile;u=6439 DLPB]
+| 3.0, 09.Jan.2017
+| [http://forums.qhimm.com/index.php?topic=13574.0 Forum] 
+|-
+! align="left" | Final Fantasy 7 Enemy Manipulator
+| Edits the stats of all enemies simultaneously (useful for difficulty changes). Does not edit status vulnerabilities (use Hojo for this) or individual enemies (use Proud Clod instead). 
+| [http://forums.qhimm.com/index.php?action=profile;u=3857;u=737 drdimension]
+| 0.9.2
+| [http://forums.qhimm.com/index.php?topic=12555 Forum]
+|-
+! align="left" | Hack7
+| Allows you to edit FF7 dialogs and other field messages.
+| [http://forums.qhimm.com/index.php?action=profile;u=737 lasyan3]
+| v3
+| [http://forums.qhimm.com/index.php?topic=10755.0 Forum]
+|-
+! align="left" | Hojo
+| An enemy stats editor for PSX/PC.
+| [http://forums.qhimm.com/index.php?action=profile;u=2713 Squall78]
+| 1.1
+| [http://forums.qhimm.com/index.php?topic=7186.0 Forum]
+|-
+! align="left" | Kimera
+| A .P file format editor.
+| [http://forums.qhimm.com/index.php?action=profile;u=1176 Borde]
+| style="background:rgb(255,235,235)" | 0.96b
+| [http://forums.qhimm.com/index.php?topic=4194.0 Forum]
+|-
+! align="left" | LiBrE
+| A limit break editor for limit break data not found in the KERNEL.BIN. Works for both PC and PSX releases. Open-source.
+| [http://forums.qhimm.com/index.php?action=profile;u=6298 Bosola]
+| style="background:rgb(155,135,135)" | 0.3
+| [http://forums.qhimm.com/index.php?topic=9548.0 Forum]
+|-
+! align="left" | Makou Reactor
+| Field editor. Cross-Platform
+| [http://forums.qhimm.com/index.php?action=profile;u=4778 myst6re]
+| 1.7.2, 12.Nov.2016
+| [http://forums.qhimm.com/index.php?topic=9658.0 Forum]
+|-
+! align="left" | Meteor
+| Field editor, with dialog, script, walkmesh and encounter editing.
+| [[User:Synergy Blades|Synergy Blades]]
+| style="background:rgb(155,135,135)" | 0.2b
+| [http://www.alaunus.com/wp/?page_id=4 Website], [http://forums.qhimm.com/index.php?topic=6020.0 Forum]
+|-
+! align="left" | Ochu
+| A feature packed trainer and editor for Final Fantasy VII.
+| [http://forums.qhimm.com/index.php?action=profile;u=6439 DLPB]
+| 3.2, 17.Nov.2016
+| [http://forums.qhimm.com/index.php?topic=14194.0 Forum] 
+|-
+! align="left" | Palmer
+| Editor for field files that lets you replace any field backgrounds.
+| [http://forums.qhimm.com/index.php?action=profile;u=2862 Aali]
+| style="background:rgb(155,135,135)" | 0.6b
+| [http://forums.qhimm.com/index.php?topic=8450.0 Forum]
+|-
+! align="left" | PCreator
+| Creates new, textured .P field models from 3D Studio .3DS objects.
+| [http://forums.qhimm.com/index.php?action=profile;u=1412 Reunion]
+| style="background:rgb(155,135,135)" | 0.85b
+| [http://webpages.charter.net/reunionvii/ Website], [http://forums.qhimm.com/index.php?topic=5985.0 Forum]
+|-
+! align="left" | Proud Clod
+| (Formerly Heidegger) More-or-less all-purpose scene.bin editor. Edits stats, AI, attacks, enemy placement, battle scenes and more.
+| [http://forums.qhimm.com/index.php?action=profile;u=4852 NFITC1]
+ | 1.5.0.Î±_4
+| [http://wmprc.blogspot.com Website], [http://forums.qhimm.com/index.php?topic=8481.0 Forum]
+|-
+! align="left" | sfxEdit
+| Easily decode and encode all sound effects in Final Fantasy VII PC.
+| [http://forums.qhimm.com/index.php?action=profile;u=7258 Luksy]
+ | 0.2, 23.Jan.2012
+| [http://forums.qhimm.com/index.php?topic=12755.0 Forum]
+|-
+! align="left" | touphScript
+| A translation tool which can edit ALL FF7 game text and dialogue. It can auto fix dialogue windows and auto resize the boxes.  tS can also fix script bugs.  Works with or without The Reunion mod and can work from the command line.  Ideal for modders who wish to edit game text without having to distribute numerous files.
+| [http://forums.qhimm.com/index.php?action=profile;u=7258 Luksy]
+ | 1.3.1, 05.Apr.2016
+| [http://forums.qhimm.com/index.php?topic=11944.0 Forum]
+|-
+! align="left" | WallMarket
+| KERNEL.BIN/kernel2.bin editor for FFVII PC or PSX
+| [http://forums.qhimm.com/index.php?action=profile;u=4852 NFITC1]
+ | 1.4.5
+| [http://wmprc.blogspot.com Website], [http://forums.qhimm.com/index.php?topic=7928.0 Forum]
+|-
+! align="left" | WhiteChoco
+| ff7.exe/SHOPMENU.MNU editor for FFVII PC or PSX; edits shop stock and prices.
+| [http://forums.qhimm.com/index.php?action=profile;u=6305 titeguy3]
+| style="background:rgb(155,135,135)" | 0.7 beta
+| [http://forums.qhimm.com/index.php?topic=9475.0 Forum]
+|}
+
+===AI Modifications===
+
+{| border="1" cellspacing="1" cellpadding="3" style="border: 1px grey; border-collapse: collapse;"
+! style="background:rgb(104,104,104)" | Name
+! style="background:rgb(104,104,104)" | Description
+! style="background:rgb(104,104,104)" | Author
+! style="background:rgb(104,104,104)" | Version / Status
+! style="background:rgb(104,104,104)" | Links
+|-
+! align="left" | Climhazzard
+| A PSX exclusive AI mod that features new encounters, new drop rates, and two difficulty settings.
+| [http://forums.qhimm.com/index.php?action=profile;u=3977 ff7rules]
+| style="background:rgb(155,0,0)" | Abandoned
+| [http://forums.qhimm.com/index.php?topic=8168.0 Forum]
+|-
+! align="left" | FF7: Rebirth
+| A "comprehensive rebalance" of the AI and battle mechanics. PSX and PC.
+| [http://forums.qhimm.com/index.php?action=profile;u=6298 Bosola]
+| style="background:rgb(155,0,0)" | Abandoned (PSX Demo Released)
+| [http://www.moddb.com/mods/final-fantasy-7-rebirth Website], [http://forums.qhimm.com/index.php?topic=9600.0 Forum]
+|-
+! align="left" | Gjoerulv's Hardcore Mod
+| Adds some encounters and changes AI to make the game extremely difficult.
+| [http://forums.qhimm.com/index.php?action=profile;u=3668 Gjoerulv]
+| 1.0.6s, 27.Jun.2014
+| [http://forums.qhimm.com/index.php?topic=6818.0 Forum]
+|-
+! align="left" | New Threat Mod
+| A complete overhaul of the game's difficulty level.
+| [http://forums.qhimm.com/index.php?action=profile;u=20997 Sega Chief]
+| 1.4, 14.Oct.2016
+| [http://forums.qhimm.com/index.php?topic=14938.0 Forum]
+|-
+! align="left" | Reasonable Difficulty Mod
+| Changes AI and drop rates to make the game reasonably difficult.
+| [http://forums.qhimm.com/index.php?action=profile;u=2028 hay]
+| 1.1
+| [http://forums.qhimm.com/index.php?topic=4759.0  Forum]
+|-
+! align="left" | Shalua Rui: A rebalance
+| A "balanced, yet difficult" modification of the game's AI.
+| [http://forums.qhimm.com/index.php?action=profile;u=4858 Auraplatonic]
+| style="background:rgb(155,0,0)" | Abandoned (Disc 1 released)
+| [http://forums.qhimm.com/index.php?topic=9470.0 Forum]
+|}
+
+===Models/Textures===
+
+The following are Models and textures that can be inserted into the game that are not currently associated with any patches.
+
+{| border="1" cellspacing="1" cellpadding="3" style="border: 1px grey; border-collapse: collapse;"
+! style="background:rgb(104,104,104)" | Name
+! style="background:rgb(104,104,104)" | Description
+! style="background:rgb(104,104,104)" | Author
+! style="background:rgb(104,104,104)" | Version / Status
+! style="background:rgb(104,104,104)" | Links
+|-
+! align="left" | Advent Children Custom Avatars
+| Replace character avatars with images from Advent Children.
+| [http://forums.qhimm.com/index.php?action=profile;u=2526 Wuz]
+| style="background:rgb(135,155,135)" | Final
+| [http://forums.qhimm.com/index.php?topic=5485.msg71035#msg71035 Forum]
+|-
+! align="left" | Hi-res motorbike mod
+| Changes the Cloud motorbike minigame model to a high-resolution version.
+| [http://forums.qhimm.com/index.php?action=profile;u=5124 bloodshot]
+| style="background:rgb(135,155,135)" | v2 Final
+| [http://forums.qhimm.com/index.php?topic=10895.0 Forum]
+|-
+! align="left" | Advent Children style alternate limit textures
+| Alternate colors and styles of the limit break flash.
+| [http://forums.qhimm.com/index.php?action=profile;u=7157 kela51]
+| style="background:rgb(135,155,135)" | Final
+| [http://forums.qhimm.com/index.php?topic=9542.0 Forum]
+|-
+! align="left" | Loveless Weapon Model for Cloud
+| A model intended to replace Cloud's "Nailbat" that mimics the "Loveless" sword from Crisis Core.
+| [http://forums.qhimm.com/index.php?action=profile;u=6471 SwornEnemy]
+| style="background:rgb(135,155,135)" | Final
+| [http://forums.qhimm.com/index.php?topic=9105.0 Forum]
+|-
+! align="left" | Slayersnext's Custom Models
+| Various custom weapon and character models.
+| [http://forums.qhimm.com/index.php?action=profile;u=3397 Slayersnext]
+| style="background:rgb(135,155,135)" | Final
+| [http://forums.qhimm.com/index.php?topic=6617.0 Forum]
+|}
+
+
+==Misc/Outdated (Do not use)==
+
+The following are mods or patches that have been rendered obsolete by other, more modern alternatives.
+
+{| border="1" cellspacing="1" cellpadding="3" style="border: 1px grey; border-collapse: collapse;"
+! style="background:rgb(104,104,104)" | Name
+! style="background:rgb(104,104,104)" | Description
+! style="background:rgb(104,104,104)" | Author
+! style="background:rgb(104,104,104)" | Version / Status
+! style="background:rgb(104,104,104)" | Links
+|-
+! align="left" | 9999 Limit Breaker
+| Allows HP/MP and battle damage to go beyond 9999. Replaced by Aali's OpenGL Driver.
+| [http://forums.qhimm.com/index.php?action=profile;u=1660 dziugo]
+| style="background:rgb(135,155,125)" |Final
+| [http://forums.qhimm.com/index.php?topic=5021.0 Forum]
+|-
+! align="left" | Aeris
+| Opens all LGP files. Currently only displays field backgrounds. Replaced by Palmer and unLGP.
+| [http://forums.qhimm.com/index.php?action=profile;u=1 The SaiNt]
+| 1.0.2580.4896
+| [http://forums.qhimm.com/index.php?topic=6106.0 Forum]
+|-
+! align="left" | Cetra
+| Old patch manager for FF7.exe; replaced by the likes of Bootleg and YAMP
+| [http://forums.qhimm.com/index.php?action=profile;u=68 Ficedula]
+| 0.2
+| [http://www.breck-mckye.com/final-fantasy-modding/Ficedula-Mirror/cetra020.zip Mirror]
+|-
+! align="left" | Chocobo Races Patch
+| Resolves the game crash at the Chocobo Races. Replaced by Aali's OpenGL Driver.
+| [http://forums.qhimm.com/index.php?action=profile;u=2 Qhimm], [http://forums.qhimm.com/index.php?action=profile;u=363 Jedwin]
+| Version 2, Release 4
+| [http://www.qhimm.com/ff7_chocobo_patch.zip Patch]
+|-
+! align="left" | Cosmo
+| Edits dialog and texts from the field archive used by the game. Replaced by quite a few editors (see above).
+| [http://forums.qhimm.com/index.php?action=profile;u=68 Ficedula]
+| style="background:rgb(155,135,135)" | 0.95c
+| [http://ficedula.aaron-kelley.net/ Mirror1] [http://www.breck-mckye.com/final-fantasy-modding/Ficedula-Mirror/cosmo095c.zip Mirror2]
+|-
+! align="left" | FF7Midi
+| Views and edits the MIDI files and sounds used by the game. Replaced by LGP/unLGP.
+| [http://forums.qhimm.com/index.php?action=profile;u=68 Ficedula]
+| 1.01
+| [http://ficedula.aaron-kelley.net/ Mirror]
+|-
+! align="left" | High Resolution Cloud
+| Swaps the Cloud player model with the high-res Cloud battle model. Outdated because it requires LGPTools.
+| [http://forums.qhimm.com/index.php?action=profile;u=869 Dreakon]
+| style="background:rgb(135,155,135)" | Final
+| [http://spinningcone.com/ff/stormmedia/projects/cloud.ffpatch Binary]
+|-
+! align="left" | High Resolution FFVII PC
+| Sets the screen resolution to 1280x960 in-game. Replaced by Aali's OpenGL Driver.
+| [http://forums.qhimm.com/index.php?action=profile;u=1 The SaiNt]
+| 1.00
+| [http://forums.qhimm.com/index.php?topic=6005.0 Forum]
+|-
+! align="left" | Highwind
+| LGP extractor and insertor. Replaced by LGP/unLGP.
+| [http://forums.qhimm.com/index.php?action=profile;u=2209 Christian]
+| 1.20
+| [http://christian59.ch.funpic.de/html/highwind.htm Website], [http://forums.qhimm.com/index.php?topic=6389.0 Forum]
+|-
+! align="left" | Kaddy
+| Archive decompressor / recompressor - supporting LGP archives. Replaced by LGP/unLGP.
+| [http://forums.qhimm.com/index.php?action=profile;u=169 Alhexx]
+| [http://www.alhexx.com/releases/kaddy/kaddy111.rar 1.11]
+| [http://www.alhexx.com/releases/kaddy/kaddy111.rar Binary]
+|-
+! align="left" | LGPTools
+| Extracts and packs LGP archives with a GUI. Replaced by LGP/unLGP.
+| [http://forums.qhimm.com/index.php?action=profile;u=68 Ficedula]
+| 1.60
+| [http://ficedula.aaron-kelley.net/ Mirror1] [http://www.breck-mckye.com/final-fantasy-modding/Ficedula-Mirror/lgptools160.zip Mirror2]
+|-
+! align="left" | Loveless
+| A mass dialog editor with window resizing capabilities. Replaced by Makou Reactor and touphScript.
+| [http://forums.qhimm.com/index.php?action=profile;u=2713 Squall78]
+| 2.4
+| [http://stforever.free.fr/Projets Website], [http://forums.qhimm.com/index.php?topic=6013.0 Forum]
+|-
+! align="left" | NPC Reconstruction Project
+| Replaces low-poly Non-Playable Characters with higher-poly versions. Replaced by Phoenix Rejuvination Project.
+| [http://forums.qhimm.com/index.php?action=profile;u=1077 ice_cold513], [http://forums.qhimm.com/index.php?action=profile;u=1176 Borde], [http://forums.qhimm.com/index.php?action=profile;u=2476 stormmedia], et al
+| style="background:rgb(155,135,135)" | 0.6 beta
+| [http://forums.qhimm.com/index.php?topic=5105.0 Forum]
+|-
+! align="left" | Scenester
+| Edits the scene.bin file containing encounter data. Replaced by Hojo & Proud Clod.
+| [http://forums.qhimm.com/index.php?action=profile;u=387 Lord Ramza]
+| style="background:rgb(155,135,135)" | [http://bin.mypage.sk/FILES/Scenester.zip Beta]
+| [http://forums.qhimm.com/index.php?topic=4444.0 Forum]
+|-
+! align="left" | SceneEdit
+| Edit enemy data, view and dump AI script from encounter files in scene.bin. Replaced by Hojo & Proud Clod.
+| [http://forums.qhimm.com/index.php?action=profile;u=496 M4v3R]
+ | [http://www.subfan.pl/mav/SceneEdit.zip 1.3.0]
+| [http://forums.qhimm.com/index.php?topic=4359.0 Forum]
+|-
+! align="left" | Scene Reader
+| Scene.bin (enemy data) unpacker/repacker. Replaced by Proud Clod's "scene data management" options.
+| [http://forums.qhimm.com/index.php?action=profile;u=496 M4v3R]
+| [http://www.subfan.pl/mav/SceneReader.zip 1.0]
+| [http://forums.qhimm.com/index.php?topic=3378 Forum]
+|-
+! align="left" | TrueMotion 2.0 Codec
+| Codec required to play the movies in the game. Replaced by Aali's OpenGL Driver.
+| [http://en.wikipedia.org/wiki/On2_Technologies Google]
+| 2.0
+| [http://codec.alshow.co.kr/Page/en/true.htm Website]
+|}

@@ -1,0 +1,12 @@
+# FF7/PSX/Sound/INSTRx.ALL
+
+- [FF7/PSX/Sound/INSTRx.ALL](#ff7psxsoundinstrx.all){#toc-ff7psxsoundinstrx.all}
+  - [File Structure](#file_structure){#toc-file_structure}
+
+
+
+There is two files of this structure on FF7 game discs: SOUND/INSTR.ALL - Main game sounds (93 instruments) SOUND/INSTR2.ALL- Voices from ending theme \"One Winged Angel\" (4 instruments) These files contain all sample data for every instrument in game. Every instrument consists of 16-byte PSX ADPCM frames. Frame format is known and there is numerous decompressors for it whether on the net, or in Q-Gears source.
+
+## File Structure {#file_structure}
+
+At file beginning there is two 32-bit numbers. First number isn\'t known yet, but it is somehow related to SPU memory offset. Second number is normal offset of last ADPCM frame of file. Counting from 0x20 file offset there is sample data for all instruments. (using term \"Instrument\" I actually mean serie of ADPCM samples, although in some context I can use term \"Sample\", \"Sound\" or \"Voice\" to describe instrument). All data from INSTR.ALL are loaded by DMA to SPU RAM in one chunk, offset 0x0202. (can\'t say anything about INSTR2.ALL yet).

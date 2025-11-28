@@ -1,0 +1,75 @@
+= FF7 =
+
+<small> This is a Stub article. A Wiki version of Gears should go here. For more information, select the "discussion" tab above so we can best architecture the data. For those who want to start converting, download the [https://wiki.ffrtt.ru/gears.pdf Gears pdf] [[User:Halkun|Halkun]] 20:18, 5 Mar 2005 (CST) </small>
+
+<br />
+
+==  Contents  ==
+
+* [[FF7/History|History]]
+* [[FF7/Engine_basics|Engine Basics]]
+** Parts of the Engine
+** Generic Program Flow
+* [[FF7/Kernel|The Kernel]]
+** [[FF7/Kernel/Overview|Kernel Overview]]
+*** History
+*** Kernel Functionality
+** [[FF7/Kernel/Memory_management|Memory Management]]
+*** RAM Management
+*** VRAM Management
+*** PSX CD-ROM management
+** [[FF7/Kernel/Kernel.bin|Kernel.bin]]
+*** The KERNEL.BIN Archive
+*** The KERNEL2.BIN Archive
+** [[FF7/Kernel/Low_level_libraries|Low Level Libraries]]
+*** PC to PSX comparison
+*** Data Archives
+**** BIN Archive data format
+**** [[FF7/LZSS_format| LZSS Archives]]
+**** [[FF7/LGP_format| LGP Archives]]
+*** Textures
+**** [[PSX/TIM_format| TIM texture data format for PSX]]
+**** [[FF7/TEX_format| TEX texture data format for the PC]]
+*** File formats for 3D models
+**** [[FF7/Kernel/Low_level_libraries#Model_formats_for_PSX|Model Formats for PSX]]
+**** Model Formats for PC
+* [[FF7/Menu_Module|The Menu Module]]
+** Menu Overview
+** Menu Initialization
+** Menu Modules
+** Calling the various menus
+** Menu dependencies
+** [[FF7/Savemap|The Save Game format]]
+* [[FF7/Field_Module| The Field Module]]
+** Field Overview
+** Field Format (PC)
+*** General PC Field File Format
+*** PC Field File Header
+*** File Section Details
+** [[FF7/Field_Module#Field_Format_.28PSX.29|Field Format (PSX)]]
+*** [[FF7/Field_Module#PSX_DAT_Format|PSX DAT Format]]
+*** [[FF7/Field_Module#PSX_MIM_Format|PSX MIM Format]]
+*** [[FF7/Field_Module#PSX_BSX_Format|PSX BSX Format]]
+*** [[FF7/Field_Module#PSX_BCX_Format|PSX BCX Format]]
+* The Battle Module
+** Battle Overview
+** [[FF7/Battle/Battle_Mechanics| Battle Mechanics]]
+** [[FF7/Battle/Battle_Field| Battle Field]]
+** [[FF7/Battle/Battle_Scenes| Battle Scenes (scene.bin)]]
+*** [[FF7/Battle/Battle_Scenes/Battle_Script| Battle Scripts]]
+** [[FF7/Playstation_Battle_Model_Format| Battle Models (PSX)]]
+** [[FF7/Battle/Battle_Animation_(PC)| Battle Animation (PC)]]
+* [[FF7/WorldMap_Module| The World Map Module]]
+** [[FF7/World_Map/BSZ| World Map BSZ model file format (PSX)]]
+** [[FF7/World_Map/TXZ| World Map TXZ file format (PSX)]]
+** [[FF7/WorldMap_Module/Script| World Map Script Engine]]
+* Sound
+** [[FF7/PSX/PSX_Sound|PSX Sound]]
+*** [[FF7/PSX/Sound/Overview|Overview]]
+*** [[FF7/PSX/Sound/INSTRx.DAT|INSTRx.DAT]]
+*** [[FF7/PSX/Sound/INSTRx.ALL|INSTRx.ALL]]
+*** [[FF7/PSX/Sound/AKAO_frames|AKAO frames]]
+** PC Sound
+* [[FF7/Technical| Technical Help]]
+* [[FF7/Technical/Customising|Tools and patches]]
+* [[FF7/Technical/Source|Source Code Forensics]]

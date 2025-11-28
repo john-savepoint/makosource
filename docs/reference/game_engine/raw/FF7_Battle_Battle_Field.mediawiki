@@ -1,0 +1,27 @@
+= FF7/Battle/Battle Field =
+
+Battle fields are simple 3d models drawed in 3d space.
+
+They stored in directories STAGE1 and STAGE2. There are lzs archives that unpacked and loaded in PSX space 0x801590e4. Size of unpacked field must be less than 0x8d04. It consist from few concatenated files. First one is settings for field. Last one is texture. All others are meshes.
+
+=== Settings (first file) ===
+
+{|border="1" cellspacing="1" cellpadding="3" align="center" style="border: 1px grey; border-collapse: collapse;"
+! style="background:rgb(104,104,104)" align="center" | Offset
+! style="background:rgb(104,104,104)" align="center" | Size
+! style="background:rgb(104,104,104)" align="center" | Value
+|-
+| 0
+| 1 byte
+| Type of 3d mesh. There are 6 type of meshes:<br />
+0 - mesh with horisontal scrolling parts (field 47 - Corel Train Battle).<br />
+1 - normal static mesh.<br />
+2 - mesh with vertical scrolling parts (field 12 - Shinra Elevators).<br />
+3 - mesh with lifestream (field 4e - Final Battle - Sephiroth).<br />
+4 - mesh with rotating parts (field 39 - Safer Battle)<br />
+5 - normal static mesh, same as 1. (field 01,44,45 - Bizarro Battles)
+|-
+|style="background:rgb(155,155,104)" | 1
+|style="background:rgb(155,155,104)" | 7 bytes
+|style="background:rgb(155,155,104)" | unknown
+|}
