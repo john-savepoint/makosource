@@ -1,3 +1,31 @@
+<!--
+=== MERGE METADATA ===
+File: FF7_Savemap.md
+Merged: 2025-11-28 15:50 JST (Friday)
+Source: /docs/reference/game_engine/markdown/FF7_Savemap.md (ORIGINAL - NO EXTRACTION FROM 03_KERNEL.md)
+Major Section: 03_KERNEL.md (lines 1-1641)
+Analysis Report: /docs/reference/game_engine/comparisons/FF7_Savemap_vs_03_KERNEL_analysis.md
+
+MERGE STATUS: Complete
+Content Extraction from Major Section: NO EXTRACTION PERFORMED
+Reason: Individual file is significantly more detailed (3,861 lines vs 1,641 lines in major section)
+         and is the authoritative source for savemap documentation.
+
+The 03_KERNEL.md major section includes only a brief reference to savemap (lines 190-192)
+that states: "This is all the initial values and structure for most of the Savemap, excluding
+the header data and the tail of the last bank."
+
+The FF7_Savemap.md individual file contains extensive, comprehensive documentation with:
+- Complete memory bank structures (Banks 1/2, 3/4, B/C, D/E, 7/F)
+- Character record details
+- Chocobo record data
+- Item and materia list structures
+- Detailed field-by-field breakdown with offsets and descriptions
+
+All original content from FF7_Savemap.md has been preserved verbatim.
+===  END MERGE METADATA ===
+-->
+
 # FF7/Savemap
 
 - [FF7/Savemap](#ff7savemap){#toc-ff7savemap}
