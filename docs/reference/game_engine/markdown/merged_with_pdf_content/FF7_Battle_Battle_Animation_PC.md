@@ -12,7 +12,7 @@ Status: COMPLETE - Original file copied as source of truth
 # FF7/Battle/Battle Animation (PC) {#ff7battlebattle_animation_pc}
 
 - [FF7/Battle/Battle Animation (PC)](#ff7battlebattle_animation_pc){#toc-ff7battlebattle_animation_pc}
-  - [Battle Animation File Format](#battle_animation_file_format){#toc-battle_animation_file_format}
+ - [Battle Animation File Format](#battle_animation_file_format){#toc-battle_animation_file_format}
 
 ## Battle Animation File Format {#battle_animation_file_format}
 
@@ -76,7 +76,7 @@ It's also worth mentioning that there is at least one animation (15th from RSAA,
 
 Most of these members are straight-forward, however there is a very special and VERY important member in the "FF7FrameMiniHeader" structure called "bKey".
 This is used for every rotation-decoding scheme (but one). It determines, essentially, the precision of the rotations and the deltas that follow in successive frames.
-The value of "bKey" can only be 0, 2, or 4; the equation "(12 - bKey)" is used to determine the length of each raw (uncompressed) rotation.
+The value of "bKey" can only be 0, 2, or 4; the equation "(12 - bKey)" is used to determine the length of each raw (uncompressed) rotation.
 After decompression, every rotation must be 12 bits, giving it a range from 0 to 4095.
 But if "bKey" is 4, for example, then that means uncompressed rotations are stored as 8 bits, which gives them a range from 0 to 255. How is this fixed? After the 8 bits are read, they are then shifted left (up) by "bKey". This will place them at 12 bits, but with decreased accuracy.
 This loss in accuracy is acceptable since rotations work as deltas and usually only change by a small amount.
@@ -264,7 +264,7 @@ Now that we can read the bits in the buffer we have made, it's time to know what
 
 The animation data begins with one full frame that is uncompressed, but stored in one of 3 ways. Every frame after that is compressed, but compressed in one of three ways; one way can be decoded using the same method as on the first frame, which is why sometimes the second, third, and even fourth frames can be decoded using the same method as was used on the first frame.
 
-`   First Frame:`
+` First Frame:`
 
 Remember that we stored our animation buffer with a 5-byte "FF7FrameMiniHeader" at the beginning of it? We need this header now!
 
