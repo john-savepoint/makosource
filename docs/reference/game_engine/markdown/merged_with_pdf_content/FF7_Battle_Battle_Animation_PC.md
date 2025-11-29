@@ -33,10 +33,10 @@ Battle animation files start with a DWORD which tells us how many animations are
 
 Cloud's battle animation file (rtda) has 94 (0x 5E) animations in it.
 After this number begins each animation.
-Each animation begins with a 12-byte header (3 DWORD's) we will call \"FF7FrameHeader\".
-To get from one animation to the next, start at offset 0x04 in the animation file and begin reading these headers. For each header, skip \"FF7FrameHeader.dwChunkSize\" bytes until you get to the index of the file you want to load. When skipping, remember to skip starting at the end of the \"FF7FrameHeader\" header.
+Each animation begins with a 12-byte header (3 DWORD's) we will call "FF7FrameHeader".
+To get from one animation to the next, start at offset 0x04 in the animation file and begin reading these headers. For each header, skip "FF7FrameHeader.dwChunkSize" bytes until you get to the index of the file you want to load. When skipping, remember to skip starting at the end of the "FF7FrameHeader" header.
 I mentioned a type of special animation data set that is in the header file.
-These data sets, when filled with the \"FF7FrameHeader\" header, will have a \"dwChunkSize\" less than eleven, we skip them by jumping over the next 8 bytes that follow.
+These data sets, when filled with the "FF7FrameHeader" header, will have a "dwChunkSize" less than eleven, we skip them by jumping over the next 8 bytes that follow.
 
 First, the two main headers in the animation file.
 
@@ -74,17 +74,17 @@ It's also worth mentioning that there is at least one animation (15th from RSAA,
 
 #### FF7FrameMiniHeader
 
-Most of these members are straight-forward, however there is a very special and VERY important member in the \"FF7FrameMiniHeader\" structure called \"bKey\".
+Most of these members are straight-forward, however there is a very special and VERY important member in the "FF7FrameMiniHeader" structure called "bKey".
 This is used for every rotation-decoding scheme (but one). It determines, essentially, the precision of the rotations and the deltas that follow in successive frames.
-The value of "bKey" can only be 0, 2, or 4; the equation \"(12 - bKey)\" is used to determine the length of each raw (uncompressed) rotation.
+The value of "bKey" can only be 0, 2, or 4; the equation "(12 - bKey)" is used to determine the length of each raw (uncompressed) rotation.
 After decompression, every rotation must be 12 bits, giving it a range from 0 to 4095.
-But if \"bKey\" is 4, for example, then that means uncompressed rotations are stored as 8 bits, which gives them a range from 0 to 255. How is this fixed? After the 8 bits are read, they are then shifted left (up) by \"bKey\". This will place them at 12 bits, but with decreased accuracy.
+But if "bKey" is 4, for example, then that means uncompressed rotations are stored as 8 bits, which gives them a range from 0 to 255. How is this fixed? After the 8 bits are read, they are then shifted left (up) by "bKey". This will place them at 12 bits, but with decreased accuracy.
 This loss in accuracy is acceptable since rotations work as deltas and usually only change by a small amount.
 Most large rotation deltas are things that are spinning, such as the blades on Aero Combatant. These cases are always a nice round number that can be handled with lower precision (in the case of Aero Combatant, it is 90 degrees even).
 
 #### FF7ShortVec
 
-Now the code to skip to any animation, by index, where \"iTarget\" is the index. This code assumes you have already opened the animation file (hFile) and you have skipped pasted the first 4 bytes.
+Now the code to skip to any animation, by index, where "iTarget" is the index. This code assumes you have already opened the animation file (hFile) and you have skipped pasted the first 4 bytes.
 
 ```c
 
@@ -153,7 +153,9 @@ Now let's look at the other structures we will use.
 ```
 
 Each rotation goes through 3 forms. Firstly, everything is stored as 2-byte SHORT's. These SHORT's are stored from 0 to 4096, where 0 = 0 degrees and 4096 = 360 degrees. This is the equation to convert one of these SHORT's into degrees: (SHORT / 4096 \* 360). Each frame is based off the previous frame, using the SHORT value as its basis.
+
 Each SHORT is converted to an INT, which is the exact same as the SHORT version, except always positive.
+
 Finally, the FLOAT gets filled with the final value, using the INT version as its base.
 So, the sequence is:
 
