@@ -1,24 +1,10 @@
-<!--
-MERGE METADATA
-Created: 2025-11-29 12:00 JST
-Original: FF7_Engine_basics.md (32 lines)
-Major section: 02_ENGINE_BASICS.md (16 lines)
-Merge decision: COMPLETE - Content merged and verified
-Reason: Direct match for engine overview - canonical content from major section integrated
-Status: COMPLETE - All content extracted, images adjusted, markers added
-Session: 552a7ee9-e42e-4439-8243-2eb1a43110da
--->
-
 # FF7/Engine basics {#ff7engine_basics}
 
 - [FF7/Engine basics](#ff7engine_basics){#toc-ff7engine_basics}
   - [Parts of the Engine](#parts_of_the_engine){#toc-parts_of_the_engine}
   - [Generic Program Flow](#generic_program_flow){#toc-generic_program_flow}
 
-<!-- EXTRACTED FROM MAJOR SECTION: 02_ENGINE_BASICS.md lines 1-11
-     Content: Engine Basics introduction and module architecture
-     Image adjusted: _page_8_Picture_5.jpeg → ../../images/Engine_parts.jpg
--->
+
 
 ## Parts of the Engine {#parts_of_the_engine}
 
@@ -26,23 +12,21 @@ The engine used to power Final Fantasy 7 is split into several modules. This all
 
 The module system allowed for a single point of entry into, and exit out of, each distinct part of the game. The PSX, which the game was originally developed for, had very limited resources. With only 1 megabyte of video ram and 2 megabytes of system ram, data had to be banked in and out efficiently. Modules were a clean way to dump whole parts of the engine to make way for other parts.
 
-The core system is made up of six modules. They are called the kernel, field, menu, world map, battle, and mini game. They are arranged in the following order
+The core system is made up of six modules. They are called the kernel, field, menu, world map, battle, and mini game. They are arranged in the following order.![](Engine_parts.jpg "Engine_parts.jpg")\
 
-![Engine architecture diagram](../../images/Engine_parts.jpg)
+<center>
+</center>
 
-<!-- EXTRACTED FROM MAJOR SECTION: 02_ENGINE_BASICS.md lines 13-15
-     Content: Generic Program Flow - module interaction patterns
--->
+\
 
 ## Generic Program Flow {#generic_program_flow}
 
 Not every module is accessible by every other module. There is a distinct flow between them. For example, you can not access the menu from battle, much to the chagrin of the poor user who had forgotten to equip some last minute item. The field module, second only to the kernel, drives the game. It includes a powerful scripting system that can call any module within the game.
 
-<!-- END EXTRACTION -->
 
 ---
 
 ## Images
 
-![Engine parts](../../images/Engine_parts.jpg)
+![Engine parts](../images/Engine_parts.jpg)
 
