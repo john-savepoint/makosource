@@ -14,7 +14,6 @@ Status: COMPLETE - Original file copied as source of truth
 - [FF7/Battle/Battle Animation (PC)](#ff7battlebattle_animation_pc){#toc-ff7battlebattle_animation_pc}
   - [Battle Animation File Format](#battle_animation_file_format){#toc-battle_animation_file_format}
 
-
 ## Battle Animation File Format {#battle_animation_file_format}
 
 File format discovered/decoded by me, L. Spiro.
@@ -42,6 +41,7 @@ These data sets, when filled with the \"FF7FrameHeader\" header, will have a \"d
 First, the two main headers in the animation file.
 
 1\.
+
 ```c
 
     typedef struct FF7FrameHeader {
@@ -52,7 +52,9 @@ First, the two main headers in the animation file.
     } * PFF7FrameHeader;            // Size = 12 bytes.
 
 ```
+
 2.
+
 ```c
 
     typedef struct FF7FrameMiniHeader {
@@ -139,6 +141,7 @@ We now have the animation we want loaded into a BYTE array (remember to delete i
 Now let's look at the other structures we will use.
 
 3\.
+
 ```c
 
     typedef struct FF7ShortVec {
@@ -148,6 +151,7 @@ Now let's look at the other structures we will use.
     } * PFF7ShortRot;           // Size = 30 bytes.
 
 ```
+
 Each rotation goes through 3 forms. Firstly, everything is stored as 2-byte SHORT's. These SHORT's are stored from 0 to 4096, where 0 = 0 degrees and 4096 = 360 degrees. This is the equation to convert one of these SHORT's into degrees: (SHORT / 4096 \* 360). Each frame is based off the previous frame, using the SHORT value as its basis.
 Each SHORT is converted to an INT, which is the exact same as the SHORT version, except always positive.
 Finally, the FLOAT gets filled with the final value, using the INT version as its base.
@@ -168,8 +172,8 @@ Next frame…
 Repeat…
 
 This structure is for one bone rotation.
-To load an entire frame's work of bones, we need this structure:
-4.
+To load an entire frame's work of bones, we need this structure: 4.
+
 ```c
 
     typedef struct FF7FrameBuffer {
@@ -191,7 +195,7 @@ To load an entire frame's work of bones, we need this structure:
             // Delete the old.
             dwBones = 0;
             delete [] psvRots;
-            
+
             // Create the new.
             psvRots = new FF7ShortVec[dwTotal];
             if ( psvRots != NULL ) { dwBones = dwTotal; }
@@ -199,6 +203,7 @@ To load an entire frame's work of bones, we need this structure:
     } * PFF7FrameBuffer;
 
 ```
+
 This structure will allocate enough memory for one frame of rotations. Simply call "FF7FrameBuffer.SetBones" with the number of bones in your animation.
 
 ### Part II: Functions and Format {#part_ii_functions_and_format}
@@ -209,6 +214,7 @@ This is a basic bit-reading function. It reads "dwTotalBits" from "pbBuffer"
 #### GetBitsFixed
 
 1\.
+
 ```c
 
     INT GetBitsFixed( BYTE * pbBuffer, DWORD &dwStartBit,
@@ -256,7 +262,7 @@ Now that we can read the bits in the buffer we have made, it's time to know what
 
 The animation data begins with one full frame that is uncompressed, but stored in one of 3 ways. Every frame after that is compressed, but compressed in one of three ways; one way can be decoded using the same method as on the first frame, which is why sometimes the second, third, and even fourth frames can be decoded using the same method as was used on the first frame.
 
-`   First Frame:`
+`   First Frame:`
 
 Remember that we stored our animation buffer with a 5-byte "FF7FrameMiniHeader" at the beginning of it? We need this header now!
 
@@ -333,6 +339,7 @@ If it is 1, then the next 16 bits are the value of the offset. In total, the off
 Now the code to perform this operation.
 
 2\.
+
 ```c
 
     SHORT GetDynamicFrameOffsetBits( BYTE * pBuffer, DWORD &dwBitStart ) {
@@ -467,6 +474,7 @@ So, we shift left the resulting value by "pfmhMiniHeader-\>bKey".
 This is all shown in the code below.
 
 3\.
+
 ```c
 
     SHORT GetEncryptedRotationBits( BYTE * pBuffer, DWORD &dwBitStart,
@@ -588,7 +596,7 @@ This is all shown in the code below.
 ### Part III: Putting it All Together {#part_iii_putting_it_all_together}
 
 To make life easy, let's use one function to load an entire frame at a time.
-This function will load an entire frame into a "FF7FrameBuffer" structure.
+This function will load an entire frame into a "FF7FrameBuffer" structure.
 The function will return the bit position where the next frame will begin.
 After the function returns, we must translate the rotational INT values to their FLOAT forms (although the function can be modified to do this part itself).
 This function will be called in a loop for every frame in the rotation.
@@ -596,6 +604,7 @@ This function will be called in a loop for every frame in the rotation.
 #### LoadFrames
 
 1\.
+
 ```c
 
     DWORD LoadFrames( PFF7FrameBuffer pfbFrameBuffer,
@@ -609,7 +618,7 @@ This function will be called in a loop for every frame in the rotation.
 
         PFF7FrameMiniHeader pfmhMiniHeader =
             (PFF7FrameMiniHeader)pbAnimBuffer;
-        SHORT   sSize = pfmhMiniHeader->sSize;                      
+        SHORT   sSize = pfmhMiniHeader->sSize;
         BYTE    bKeyBits = pfmhMiniHeader->bKey;
 
         // Skip the first 5 bytes because they are part of the frame header.
@@ -670,7 +679,7 @@ This function will be called in a loop for every frame in the rotation.
                 // When Final Fantasy® VII loads these animations,
                 //  it is possible for the value to sneak up above
                 //  the 4095 boundary through a series of positive
-                //  offsets. 
+                //  offsets.
                 sX = GetEncryptedRotationBits( pbThisBuffer, dwThisBitStart, bKeyBits );
                 sY = GetEncryptedRotationBits( pbThisBuffer, dwThisBitStart, bKeyBits );
                 sZ = GetEncryptedRotationBits( pbThisBuffer, dwThisBitStart, bKeyBits );
@@ -696,6 +705,7 @@ This function will be called in a loop for every frame in the rotation.
     }
 
 ```
+
 2.
 
 #### A Sample Loop {#a_sample_loop}
@@ -724,7 +734,7 @@ This is an example loop that could be used to load a full animation.
         //  will load diretly into it.
         // Every frame after that will actually use it with the
         //  offsets loaded to determine the final result of that
-        //  frame. 
+        //  frame.
             iBits = LoadFrames( &fbFrameBuffer, fhHeader.dwBones, iBits, baData );
             // Reverse the Y offset (required).
             fbFrameBuffer.svPosOffset.fY = 0.0f "“ fbFrameBuffer.svPosOffset.fY;
