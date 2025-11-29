@@ -42,7 +42,7 @@ These data sets, when filled with the \"FF7FrameHeader\" header, will have a \"d
 First, the two main headers in the animation file.
 
 1\.
-`<code>`{=html}
+```c
 
     typedef struct FF7FrameHeader {
         DWORD       dwBones;        // Bones in the model + 1 (unless we're dealing with a weapon animation, in which case it's value is always 1). 0x00
@@ -51,9 +51,9 @@ First, the two main headers in the animation file.
         DWORD       dwChunkSize;    // Size of the animation set.   0x08
     } * PFF7FrameHeader;            // Size = 12 bytes.
 
-`</code>`{=html}
+```
 2.
-`<code>`{=html}
+```c
 
     typedef struct FF7FrameMiniHeader {
         //SHORT     sBones; // Bones in the animation.
@@ -62,7 +62,7 @@ First, the two main headers in the animation file.
         BYTE        bKey;       // A key flag used for decoding.    0x04
     } * PFF7FrameMiniHeader;    // Size = 5 bytes.
 
-`</code>`{=html}
+```
 
 NOTE: sBones should provably be called sFrames since it seems to hold a secondary frames counter. Thus, it should be equal to dwFrames. Unfortunately, it usually isn\'t. In fact, It\'s hard to say which one should actually be trusted. Apparently dwFrames is a more conservative value, meaning there will always be at least that many frames in the animation. But there can be more of them. I can\'t help but wonder if this means the rest of the frames are dummied out information or they serve some sort of purpose. On the other hand, sFrames is sometimes higher than the actual number of frames on the animation chunck.
 
@@ -84,7 +84,7 @@ Most large rotation deltas are things that are spinning, such as the blades on A
 
 Now the code to skip to any animation, by index, where \"iTarget\" is the index. This code assumes you have already opened the animation file (hFile) and you have skipped pasted the first 4 bytes.
 
-`<code>`{=html}
+```c
 
     FF7FrameHeader  fhHeader;
     DWORD           dwBytesRead;
@@ -130,7 +130,7 @@ Now the code to skip to any animation, by index, where \"iTarget\" is the index.
     // Now pbBuffer holds the actual animation data, including the 5-byte
     //  "FF7FrameMiniHeader" header.
 
-`</code>`{=html}
+```
 
 We now have the animation we want loaded into a BYTE array (remember to delete it later).
 
@@ -139,7 +139,7 @@ We now have the animation we want loaded into a BYTE array (remember to delete i
 Now let's look at the other structures we will use.
 
 3\.
-`<code>`{=html}
+```c
 
     typedef struct FF7ShortVec {
         SHORT   sX, sY, sZ;     // Signed short versions.   0x00
@@ -147,7 +147,7 @@ Now let's look at the other structures we will use.
         FLOAT   fX, fY, fZ;     // Float version after math.    0x12
     } * PFF7ShortRot;           // Size = 30 bytes.
 
-`</code>`{=html}
+```
 Each rotation goes through 3 forms. Firstly, everything is stored as 2-byte SHORT's. These SHORT's are stored from 0 to 4096, where 0 = 0 degrees and 4096 = 360 degrees. This is the equation to convert one of these SHORT's into degrees: (SHORT / 4096 \* 360). Each frame is based off the previous frame, using the SHORT value as its basis.
 Each SHORT is converted to an INT, which is the exact same as the SHORT version, except always positive.
 Finally, the FLOAT gets filled with the final value, using the INT version as its base.
@@ -170,7 +170,7 @@ Repeat…
 This structure is for one bone rotation.
 To load an entire frame's work of bones, we need this structure:
 4.
-`<code>`{=html}
+```c
 
     typedef struct FF7FrameBuffer {
         DWORD           dwBones;
@@ -198,7 +198,7 @@ To load an entire frame's work of bones, we need this structure:
         }
     } * PFF7FrameBuffer;
 
-`</code>`{=html}
+```
 This structure will allocate enough memory for one frame of rotations. Simply call "FF7FrameBuffer.SetBones" with the number of bones in your animation.
 
 ### Part II: Functions and Format {#part_ii_functions_and_format}
@@ -209,7 +209,7 @@ This is a basic bit-reading function. It reads "dwTotalBits" from "pbBuffer"
 #### GetBitsFixed
 
 1\.
-`<code>`{=html}
+```c
 
     INT GetBitsFixed( BYTE * pbBuffer, DWORD &dwStartBit,
     DWORD dwTotalBits ) {
@@ -248,7 +248,7 @@ This is a basic bit-reading function. It reads "dwTotalBits" from "pbBuffer"
         return iReturn;
     }
 
-`</code>`{=html}
+```
 
 Now that we can read the bits in the buffer we have made, it's time to know what we're doing!
 
@@ -260,11 +260,11 @@ The animation data begins with one full frame that is uncompressed, but stored i
 
 Remember that we stored our animation buffer with a 5-byte "FF7FrameMiniHeader" at the beginning of it? We need this header now!
 
-`<code>`{=html}
+```c
 
     PFF7FrameMiniHeader pfmhMiniHeader = (PFF7FrameMiniHeader)pbBuffer;
 
-`</code>`{=html}
+```
 
 After this cast, "pfmhMiniHeader-\>bKey" will contain a number, either 0, 2, or 4.
 Each rotation is stored in (12 - "pfmhMiniHeader-\>bKey") bits. This mean either 12, 10, or 8, respectively.
@@ -274,15 +274,15 @@ In the first frame of Cloud's first animation (rtda), these bytes are 00 00 FE 2
 16 bits Ã--- 3 = 48 bits, or 6 bytes.
 To get these bits, we first need to make a pointer point to the correct location. "pbBuffer" points 5 bytes before this data, so let's make a pointer that points to this data directly.
 
-`<code>`{=html}
+```c
 
     BYTE * pbAnimBuffer = &pbBuffer[5];
 
-`</code>`{=html}
+```
 
 When we use "GetBitsFixed()" to get the bits.
 
-`<code>`{=html}
+```c
 
     DWORD dwBitStart = 0;   // The bits at which to begin reading in the
     //  stream.
@@ -290,7 +290,7 @@ When we use "GetBitsFixed()" to get the bits.
     SHORT sY = GetBitsFixed( pbAnimBuffer, dwBitStart, 16 );
     SHORT sZ = GetBitsFixed( pbAnimBuffer, dwBitStart, 16 );
 
-`</code>`{=html}
+```
 
 After doing this, we have each of the three offsets, 0, -466, and 0.
 The Y (-466) is always stored as its inverse, but for now we don't worry about that.
@@ -300,7 +300,7 @@ How do we know? "pfmhMiniHeader-\>bKey"!
 
 For each bone, there are 3 rotations. So, for each bone, we do this:
 
-`<code>`{=html}
+```c
 
     SHORT sRotX = GetBitsFixed( pbAnimBuffer, dwBitStart,
     12 - pfmhMiniHeader->bKey );
@@ -316,7 +316,7 @@ For each bone, there are 3 rotations. So, for each bone, we do this:
     sRotY <<= pfmhMiniHeader->bKey;
     sRotZ <<= pfmhMiniHeader->bKey;
 
-`</code>`{=html}
+```
 
 The first rotation is always 0, 0, 0. This is the root rotation and is not actually counted as part of the bone network of the character.
 
@@ -333,7 +333,7 @@ If it is 1, then the next 16 bits are the value of the offset. In total, the off
 Now the code to perform this operation.
 
 2\.
-`<code>`{=html}
+```c
 
     SHORT GetDynamicFrameOffsetBits( BYTE * pBuffer, DWORD &dwBitStart ) {
     DWORD dwFirstByte, dwConsumedBits, dwBitsRemainingToNextByte, dwTemp;
@@ -417,29 +417,29 @@ Now the code to perform this operation.
         return sReturn;
     }
 
-`</code>`{=html}
+```
 
 After the first frame, we know that the positional offsets immediately follow.
 So to get the positional deltas for the next frame, we would do this:
 
-`<code>`{=html}
+```c
 
     SHORT sDeltaX = GetDynamicFrameOffsetBits( pbAnimBuffer, dwBitStart );
     SHORT sDeltaY = GetDynamicFrameOffsetBits( pbAnimBuffer, dwBitStart );
     SHORT sDeltaZ = GetDynamicFrameOffsetBits( pbAnimBuffer, dwBitStart );
 
-`</code>`{=html}
+```
 
 Now we have the change from the previous frame. In our "FF7ShortVec" structure, these are the SHORT values. To get the position of this frame, we add these offsets to the last frame's position.
 If "I" is this frame and "I-1" is the last frame, we could do something like this:
 
-`<code>`{=html}
+```c
 
     FF7FrameBuffer[I].svPosOffset.sX = FF7FrameBuffer[I-1].svPosOffset.sX + sX;
     FF7FrameBuffer[I].svPosOffset.sY = FF7FrameBuffer[I-1].svPosOffset.sY + sY;
     FF7FrameBuffer[I].svPosOffset.sZ = FF7FrameBuffer[I-1].svPosOffset.sZ + sZ;
 
-`</code>`{=html}
+```
 
 #### GetEncryptedRotationBits
 
@@ -467,7 +467,7 @@ So, we shift left the resulting value by "pfmhMiniHeader-\>bKey".
 This is all shown in the code below.
 
 3\.
-`<code>`{=html}
+```c
 
     SHORT GetEncryptedRotationBits( BYTE * pBuffer, DWORD &dwBitStart,
     INT iKeyBits ) {
@@ -583,7 +583,7 @@ This is all shown in the code below.
         return sReturn;
     }
 
-`</code>`{=html}
+```
 
 ### Part III: Putting it All Together {#part_iii_putting_it_all_together}
 
@@ -596,7 +596,7 @@ This function will be called in a loop for every frame in the rotation.
 #### LoadFrames
 
 1\.
-`<code>`{=html}
+```c
 
     DWORD LoadFrames( PFF7FrameBuffer pfbFrameBuffer,
     INT iBones,
@@ -695,14 +695,14 @@ This function will be called in a loop for every frame in the rotation.
         return 0;
     }
 
-`</code>`{=html}
+```
 2.
 
 #### A Sample Loop {#a_sample_loop}
 
 This is an example loop that could be used to load a full animation.
 
-`<code>`{=html}
+```c
 
     FF7FrameHeader fhHeader;
     ReadFile( hFile, &fhHeader, sizeof( fhHeader ), &ulBytesRead,
@@ -749,7 +749,7 @@ This is an example loop that could be used to load a full animation.
 
         delete [] baData;
 
-`</code>`{=html}
+```
 
 ## Part IV: Qhimm's Input {#part_iv_qhimm's_input}
 
@@ -758,7 +758,7 @@ He has also written a more in-depth look at the logistics behind the rotation co
 
 "GetValueFromStream" is the C/C++ version of my "GetDynamicFrameOffsetBits" and his "GetCompressedDeltaFromStream" is the C++ version of my "GetEncryptedRotationBits".
 
-`<code>`{=html}
+```c
 
     short GetValueFromStream( BYTE *pStreamBytes,
     DWORD *pdwStreamBitOffset )
@@ -920,4 +920,4 @@ He has also written a more in-depth look at the logistics behind the rotation co
 
     */
 
-`</code>`{=html}
+```
