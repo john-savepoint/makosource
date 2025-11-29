@@ -152,7 +152,7 @@ Now let's look at the other structures we will use.
 
 ```
 
-Each rotation goes through 3 forms. Firstly, everything is stored as 2-byte SHORT's. These SHORT's are stored from 0 to 4096, where 0 = 0 degrees and 4096 = 360 degrees. This is the equation to convert one of these SHORT's into degrees: (SHORT / 4096 \* 360). Each frame is based off the previous frame, using the SHORT value as its basis.
+Each rotation goes through 3 forms. Firstly, everything is stored as 2-byte SHORT's. These SHORT's are stored from 0 to 4096, where 0 = 0 degrees and 4096 = 360 degrees. This is the equation to convert one of these SHORT's into degrees: (SHORT / 4096 * 360). Each frame is based off the previous frame, using the SHORT value as its basis.
 
 Each SHORT is converted to an INT, which is the exact same as the SHORT version, except always positive.
 
@@ -163,13 +163,13 @@ First frame…
 
 - Read X bits and store as a signed SHORT.
 - Convert the SHORT to the INT field, adding 0x1000 if negative.
-- Convert to FLOAT using (INT / 4096 \* 360). Apply this FLOAT to your model.
+- Convert to FLOAT using (INT / 4096 * 360). Apply this FLOAT to your model.
 
 Next frame…
 
 - Read X bits, and add them to the SHORT value from last frame.
 - Convert the SHORT to the INT field, adding 0x1000 if negative.
-- Convert to FLOAT using (INT / 4096 \* 360). Apply this FLOAT to your model.
+- Convert to FLOAT using (INT / 4096 * 360). Apply this FLOAT to your model.
 
 Repeat…
 
