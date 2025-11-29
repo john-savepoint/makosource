@@ -153,19 +153,19 @@ Each SHORT is converted to an INT, which is the exact same as the SHORT version,
 Finally, the FLOAT gets filled with the final value, using the INT version as its base.
 So, the sequence is:
 
-First frame"¦
+First frame…
 
 - Read X bits and store as a signed SHORT.
 - Convert the SHORT to the INT field, adding 0x1000 if negative.
 - Convert to FLOAT using (INT / 4096 \* 360). Apply this FLOAT to your model.
 
-Next frame"¦
+Next frame…
 
 - Read X bits, and add them to the SHORT value from last frame.
 - Convert the SHORT to the INT field, adding 0x1000 if negative.
 - Convert to FLOAT using (INT / 4096 \* 360). Apply this FLOAT to your model.
 
-Repeat"¦
+Repeat…
 
 This structure is for one bone rotation.
 To load an entire frame's work of bones, we need this structure:
@@ -524,7 +524,7 @@ This is all shown in the code below.
                 __asm mov eax, iTemp
                 __asm cmp iTemp, 0
                 __asm jl IfLessThanZero
-                // If greater than or equal to 0"¦
+                // If greater than or equal to 0…
                 __asm mov ecx, dwNumBits    // dwNumBits = (iBits &
                                 // 7) from before.
                 __asm sub ecx, 1        // dwNumBits - 1.
@@ -536,7 +536,7 @@ This is all shown in the code below.
                                 // (dwNumBits - 1)).
                 __asm mov iTemp, ecx
                 __asm jmp AfterTests
-                // If less than 0"¦
+                // If less than 0…
     IfLessThanZero :
                 __asm mov ecx, dwNumBits    // dwNumBits = (iBits &
                                 // 7) from before.
