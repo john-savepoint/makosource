@@ -667,7 +667,7 @@ This function will be called in a loop for every frame in the rotation.
                 // The same applies here.  Add the offsets
                 //  and convert to INT form, adding 0x1000
                 //  if it is less than 0.
-                // When Final FantasyÂ® VII loads these animations,
+                // When Final Fantasy® VII loads these animations,
                 //  it is possible for the value to sneak up above
                 //  the 4095 boundary through a series of positive
                 //  offsets. 
@@ -731,7 +731,7 @@ This is an example loop that could be used to load a full animation.
 
     // The first rotation set is skipped.  It is not part of
     //  the skeleton.  Skipping is optional, but
-    //  Final FantasyÂ® VII skips it; it is always 0, 0, 0.
+    //  Final Fantasy® VII skips it; it is always 0, 0, 0.
     // I believe the actual use for the "root" rotation is
     //  to dynamically make the model point at its target
     //  or face different directions during battle.
@@ -751,7 +751,7 @@ This is an example loop that could be used to load a full animation.
 
 `</code>`{=html}
 
-## Part IV: Qhimm's Input {#part_iv_qhimmâs_input}
+## Part IV: Qhimm's Input {#part_iv_qhimm's_input}
 
 Qhimm has taken the time to rewrite two of these functions used in decoding, so it is easier to understand for people who know C++ better than they know assembly (despite my comments being in the assembly code).
 He has also written a more in-depth look at the logistics behind the rotation compression format and explains its limitations

@@ -1202,7 +1202,7 @@ Bit=0(Item in field), Bit=1(Item taken).<br />
 0x02: If you have taken the Glacier Map before he offers you to, man3: "What nerve! You already tore down the map."<br />
 0x04: Screen shake then Random Battle{GAIIN_6/drctr/s0}<br />
 0x08: Shiva Summon in Priscilla's house {PRISILA/sivamt/s1}<br />
-0x10: Black Cape man: "Ughâ¦ Errgaahh</p></td>
+0x10: Black Cape man: "Ugh… Errgaahh</p></td>
 </tr>
 <tr>
 <td style="background: rgb(155,105,54)"><p>0x0C2B<br />
@@ -3019,7 +3019,7 @@ Party leader X position on the world map (X coord). Value from 0 up to 295000<br
 <tr>
 <td style="background: rgb(155,155,104)"><p>0x0F5F</p></td>
 <td style="background: rgb(155,155,104)"><p>1 bytes</p></td>
-<td style="background: rgb(155,155,104)"><p>Party leader viewing direction angle on the world map. Value from 0 up to 255 to cover 0 - 359Â°<br />
+<td style="background: rgb(155,155,104)"><p>Party leader viewing direction angle on the world map. Value from 0 up to 255 to cover 0 - 359°<br />
 </p></td>
 </tr>
 <tr>
@@ -3102,13 +3102,13 @@ Party leader X position on the world map (X coord). Value from 0 up to 295000<br
 <td style="background: rgb(155,105,54)"><p>0x0F9C<br />
 z_38[4]</p></td>
 <td style="background: rgb(155,155,104)"><p>1 bytes</p></td>
-<td style="background: rgb(155,155,104)"><p>Angle of the world. The viewing direction of the camera onto the world map. For top-view (ca. 45Â°) this value should be 0.</p></td>
+<td style="background: rgb(155,155,104)"><p>Angle of the world. The viewing direction of the camera onto the world map. For top-view (ca. 45°) this value should be 0.</p></td>
 </tr>
 <tr>
 <td style="background: rgb(155,105,54)"><p>0x0F9D<br />
 z_38[5]</p></td>
 <td style="background: rgb(155,155,104)"><p>1 bytes</p></td>
-<td style="background: rgb(155,155,104)"><p>Top-view (ca. 45Â°). Determines the camera's position.</p></td>
+<td style="background: rgb(155,155,104)"><p>Top-view (ca. 45°). Determines the camera's position.</p></td>
 </tr>
 <tr>
 <td style="background: rgb(155,105,54)"><p>0x0F9C<br />
