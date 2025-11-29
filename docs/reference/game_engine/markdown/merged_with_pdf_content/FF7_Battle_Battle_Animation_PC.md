@@ -64,11 +64,11 @@ First, the two main headers in the animation file.
 
 ```
 
-NOTE: sBones should provably be called sFrames since it seems to hold a secondary frames counter. Thus, it should be equal to dwFrames. Unfortunately, it usually isn\'t. In fact, It\'s hard to say which one should actually be trusted. Apparently dwFrames is a more conservative value, meaning there will always be at least that many frames in the animation. But there can be more of them. I can\'t help but wonder if this means the rest of the frames are dummied out information or they serve some sort of purpose. On the other hand, sFrames is sometimes higher than the actual number of frames on the animation chunck.
+NOTE: sBones should provably be called sFrames since it seems to hold a secondary frames counter. Thus, it should be equal to dwFrames. Unfortunately, it usually isn't. In fact, It's hard to say which one should actually be trusted. Apparently dwFrames is a more conservative value, meaning there will always be at least that many frames in the animation. But there can be more of them. I can't help but wonder if this means the rest of the frames are dummied out information or they serve some sort of purpose. On the other hand, sFrames is sometimes higher than the actual number of frames on the animation chunck.
 
 Anyway, the actual number of frames can be computed by parsing the whole animation chunck.
 
-It\'s also worth mentioning that there is at least one animation (15th from RSAA, the playable frog) which physically lacks the sFrames field. Instead, sSize is at 0x00 and bKey at 0x02. This animation is more than likely damaged, because FF7 doesn\'t seems to be able to handle it.
+It's also worth mentioning that there is at least one animation (15th from RSAA, the playable frog) which physically lacks the sFrames field. Instead, sSize is at 0x00 and bKey at 0x02. This animation is more than likely damaged, because FF7 doesn't seems to be able to handle it.
 
 #### FF7FrameMiniHeader
 
@@ -271,7 +271,7 @@ Each rotation is stored in (12 - "pfmhMiniHeader-\>bKey") bits. This mean eith
 This is important to know.
 But first, there is offset data. Each offset is 16 bits (a signed SHORT).
 In the first frame of Cloud's first animation (rtda), these bytes are 00 00 FE 2E 00 00.
-16 bits Ã--- 3 = 48 bits, or 6 bytes.
+16 bits × 3 = 48 bits, or 6 bytes.
 To get these bits, we first need to make a pointer point to the correct location. "pbBuffer" points 5 bytes before this data, so let's make a pointer that points to this data directly.
 
 ```c
