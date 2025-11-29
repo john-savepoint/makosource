@@ -1,0 +1,180 @@
+<!--
+MERGE METADATA
+Created: 2025-11-29
+Original: FF7_PSX_Sound_AKAO_frames.md (153 lines)
+Major section: 05_FIELD_MODULE.md (opcode references only)
+Additions: Field Module opcode cross-reference (15 lines)
+Reason: Added architectural context for how AKAO frames are invoked from field scripts
+Status: COMPLETE - Original content preserved + cross-reference added
+-->
+
+# FF7/PSX/Sound/AKAO frames {#ff7psxsoundakao_frames}
+
+- [FF7/PSX/Sound/AKAO frames](#ff7psxsoundakao_frames){#toc-ff7psxsoundakao_frames}
+  - [Introduction](#introduction){#toc-introduction}
+  - [AKAO frame structure](#akao_frame_structure){#toc-akao_frame_structure}
+
+
+## Introduction
+
+AKAO frames are most complicated frames in FF7 sound system. (\"AKAO\" is frame magic, probably developed by Minoru Akao, Square Enix sound programmer :) )
+
+Frame is similar to MIDI sequence - it\'s custom tracker format for playing sequence sound, well tuned specially for PSX.
+
+This frames are in all FF7 game modules: Field, Battle, Worldmap and in minigames.
+
+<!-- EXTRACTED FROM MAJOR SECTION: 05_FIELD_MODULE.md lines 2533
+     Source: Field Module opcode matrix
+     Content: Cross-reference to field script opcodes that trigger AKAO playback
+-->
+
+### Invocation from Field Scripts
+
+AKAO frames are triggered from field scripts using specific opcodes:
+
+- **0xF0 (MUSIC)**: Plays music using AKAO frames
+- **0xF2 (AKAO)**: Executes AKAO sound commands
+- **0xDB (AKAO2)**: Alternative AKAO command interface
+
+These opcodes are part of the Field Module's script system (see FF7_Field_Module.md for complete opcode matrix). When a field script executes one of these opcodes, it triggers the AKAO frame playback system documented in this file.
+
+<!-- END EXTRACTION -->
+
+All files with exension \*.SND are AKAO.
+
+**MINI/ASERI2.SND** - Battle Arena theme
+
+**MINI/SENSUI.SND** - used in Submarine minigame
+
+**ENEMY6/OVER2.SND** - game over sequence
+
+**ENEMY6/FAN2.SND** - battle win \"fanfare\" sequence
+
+**MOVIE/OVER2.SND** - same game over sequence, don\'t know, why to duplicate data
+
+Other AKAO frames are hard-wired in other files.
+
+## AKAO frame structure {#akao_frame_structure}
+
+### Header (size: 16 bytes) {#header_size_16_bytes}
+
+struct AkaoHeader
+
+{
+
+```
+  static const uint8_t magic[4]; // "AKAO" C-string aka frame *MAGIC*
+  uint16_t id;                   // frame ID, used for playing sequence
+  uint16_t length;               // frame length - sizeof(header)
+  uint8_t unknown[8];            // some numbers, can't find their usage
+```
+
+};
+
+### Channel info (size: 4 bytes + 2 bytes \* `<channels count>`{=html}) {#channel_info_size_4_bytes_2_bytes}
+
+First there is 32-bit number (offset 0x10), which represents bitmask of used channels in this frame, after this frame there is `<channels count>`{=html} offsets to channel opcode data counting from current offset.
+
+### Channel Commands \[AKAO Opcodes\] {#channel_commands_akao_opcodes}
+
+Most complicated part.
+
+For every channel in AKAO frame there is set of commands to perform. This is similar to Field opcodes. Here I\'ll call this sound commands \"opcodes\". Every opcode has it\'s own number of arguments (from no-arguments, to 3 arguments).
+
+## Example (home-created AKAO frame): {#example_home_created_akao_frame}
+
+### Header
+
+**41 4b 41 4f** - AKAO string
+
+**34 12** - frame ID: 0x1234
+
+**16 00** - frame length 0x16 in hex or 22 in decimal
+
+**04 00 96 12 18 22 46 28** - unknown data
+
+### Channel info {#channel_info}
+
+**01 00 00 00** - this indicates, that used only one channel
+
+**00 00** - offset to first channel opcodes: in our example 0x00 means that next to this offset is opcodes for first channel
+
+### Channel commands {#channel_commands}
+
+**e8 a8 66** - sets tempo, parameter 0x66a8
+
+**ea 00 50** - sets reverb depth
+
+**a8 55** - load sample 0x55 from INSTR.ALL to channel
+
+**aa 40** - sets channel volume
+
+**c2** - turns on reverb effect
+
+**a1 0c** - sets volume pan
+
+**c8** - sets loop point
+
+**66** - 0x66 % 11 = 3 (3 means to take 3rd number from play length table), 0x66 / 11 = 9 (9 means to take pitch\[9\] from loaded instrument record index)
+
+**ca** - returns to saved loop point with opcode c8
+
+This example plays Chocobo \"Whoo-Hoo\" (instrument number 0x55) repeatedly.
+
+## Sound Opcode list {#sound_opcode_list}
+
+[0xA0 (Finish Channel)](FF7/PSX/Sound/Opcodes/0xa0 "0xA0 (Finish Channel)"){.wikilink}
+
+[0xA1 (Load Instrument)](FF7/PSX/Sound/Opcodes/0xa1 "0xA1 (Load Instrument)"){.wikilink}
+
+[0xA3 (Volume Modifier)](FF7/PSX/Sound/Opcodes/0xa8aa "0xA3 (Volume Modifier)"){.wikilink}
+
+[0xA5 (Pitch Divider)](FF7/PSX/Sound/Opcodes/0xa5 "0xA5 (Pitch Divider)"){.wikilink}
+
+[0xA8 (Channel Volume)](FF7/PSX/Sound/Opcodes/0xa8aa "0xA8 (Channel Volume)"){.wikilink}
+
+[0xAA (Channel Pan)](FF7/PSX/Sound/Opcodes/0xa8aa "0xAA (Channel Pan)"){.wikilink}
+
+[0xC8 (Loop Point)](FF7/PSX/Sound/Opcodes/0xc8 "0xC8 (Loop Point)"){.wikilink}
+
+[0xCA (Return to Loop Point)](FF7/PSX/Sound/Opcodes/0xca "0xCA (Return to Loop Point)"){.wikilink}
+
+[0xE8 (Tempo)](FF7/PSX/Sound/Opcodes/0xe8 "0xE8 (Tempo)"){.wikilink}
+
+[0xEA (Reverb Depth)](FF7/PSX/Sound/Opcodes/0xea "0xEA (Reverb Depth)"){.wikilink}
+
+[0xC2 (Turn On Reverb)](FF7/PSX/Sound/Opcodes/0xc2 "0xC2 (Turn On Reverb)"){.wikilink}
+
+[0xFD (Unknown)](FF7/PSX/Sound/Opcodes/0xfd "0xFD (Unknown)"){.wikilink}
+
+[0xFE (Unknown)](FF7/PSX/Sound/Opcodes/0xfe "0xFE (Unknown)"){.wikilink}
+
+[0xB4 (Unknown)](FF7/PSX/Sound/Opcodes/0xb4 "0xB4 (Unknown)"){.wikilink}
+
+[0xE0 (Unimplemented, code-referenced to 0xA0)](FF7/PSX/Sound/Opcodes/0xa0 "0xE0 (Unimplemented, code-referenced to 0xA0)"){.wikilink}
+
+[0xE1 (Unimplemented, code-referenced to 0xA0)](FF7/PSX/Sound/Opcodes/0xa0 "0xE1 (Unimplemented, code-referenced to 0xA0)"){.wikilink}
+
+[0xE2 (Unimplemented, code-referenced to 0xA0)](FF7/PSX/Sound/Opcodes/0xa0 "0xE2 (Unimplemented, code-referenced to 0xA0)"){.wikilink}
+
+[0xE3 (Unimplemented, code-referenced to 0xA0)](FF7/PSX/Sound/Opcodes/0xa0 "0xE3 (Unimplemented, code-referenced to 0xA0)"){.wikilink}
+
+[0xE4 (Unimplemented, code-referenced to 0xA0)](FF7/PSX/Sound/Opcodes/0xa0 "0xE4 (Unimplemented, code-referenced to 0xA0)"){.wikilink}
+
+[0xE5 (Unimplemented, code-referenced to 0xA0)](FF7/PSX/Sound/Opcodes/0xa0 "0xE5 (Unimplemented, code-referenced to 0xA0)"){.wikilink}
+
+[0xE6 (Unimplemented, code-referenced to 0xA0)](FF7/PSX/Sound/Opcodes/0xa0 "0xE6 (Unimplemented, code-referenced to 0xA0)"){.wikilink}
+
+[0xE7 (Unimplemented, code-referenced to 0xA0)](FF7/PSX/Sound/Opcodes/0xa0 "0xE7 (Unimplemented, code-referenced to 0xA0)"){.wikilink}
+
+[0xFA (Unimplemented, code-referenced to 0xA0)](FF7/PSX/Sound/Opcodes/0xa0 "0xFA (Unimplemented, code-referenced to 0xA0)"){.wikilink}
+
+[0xFB (Unimplemented, code-referenced to 0xA0)](FF7/PSX/Sound/Opcodes/0xa0 "0xFB (Unimplemented, code-referenced to 0xA0)"){.wikilink}
+
+[0xFC (Unimplemented, code-referenced to 0xA0)](FF7/PSX/Sound/Opcodes/0xa0 "0xFC (Unimplemented, code-referenced to 0xA0)"){.wikilink}
+
+[0xFF (Unimplemented, code-referenced to 0xA0)](FF7/PSX/Sound/Opcodes/0xa0 "0xFF (Unimplemented, code-referenced to 0xA0)"){.wikilink}
+
+[0xCD (Unimplemented)](FF7/PSX/Sound/Opcodes/0xcd "0xCD (Unimplemented)"){.wikilink}
+
+[0xD1 (Unimplemented)](FF7/PSX/Sound/Opcodes/0xd1 "0xD1 (Unimplemented)"){.wikilink}
