@@ -26,15 +26,15 @@ This file was written by me, L. Spiro, as can be seen by the proper grammar and 
 ### Part I: Structures {#part_i_structures}
 
 There are 4 basic structures we will use in decoding the file format.
-The header of animation data has been considered to be composed of 3 DWORDâ€™s, 3 WORDâ€™s, and one BYTE, however this is not how the header is really intended to be, despite being aligned correctly.
+The header of animation data has been considered to be composed of 3 DWORD's, 3 WORD's, and one BYTE, however this is not how the header is really intended to be, despite being aligned correctly.
 
 Battle animation files start with a DWORD which tells us how many animations are in the file. This number includes the special animations which are not actually animations at all. Although I have not yet decoded them, I suspect these are sets of keys for actual animation sets; keys that call scripted actions or tell the engine to print the damage numbers.
 
 #### FF7FrameHeader
 
-Cloudâ€™s battle animation file (rtda) has 94 (0x 5E) animations in it.
+Cloud's battle animation file (rtda) has 94 (0x 5E) animations in it.
 After this number begins each animation.
-Each animation begins with a 12-byte header (3 DWORDâ€™s) we will call \"FF7FrameHeader\".
+Each animation begins with a 12-byte header (3 DWORD's) we will call \"FF7FrameHeader\".
 To get from one animation to the next, start at offset 0x04 in the animation file and begin reading these headers. For each header, skip \"FF7FrameHeader.dwChunkSize\" bytes until you get to the index of the file you want to load. When skipping, remember to skip starting at the end of the \"FF7FrameHeader\" header.
 I mentioned a type of special animation data set that is in the header file.
 These data sets, when filled with the \"FF7FrameHeader\" header, will have a \"dwChunkSize\" less than eleven, we skip them by jumping over the next 8 bytes that follow.
@@ -74,7 +74,7 @@ It\'s also worth mentioning that there is at least one animation (15th from RSAA
 
 Most of these members are straight-forward, however there is a very special and VERY important member in the \"FF7FrameMiniHeader\" structure called \"bKey\".
 This is used for every rotation-decoding scheme (but one). It determines, essentially, the precision of the rotations and the deltas that follow in successive frames.
-The value of â€œbKeyâ€ can only be 0, 2, or 4; the equation \"(12 - bKey)\" is used to determine the length of each raw (uncompressed) rotation.
+The value of "bKey" can only be 0, 2, or 4; the equation \"(12 - bKey)\" is used to determine the length of each raw (uncompressed) rotation.
 After decompression, every rotation must be 12 bits, giving it a range from 0 to 4095.
 But if \"bKey\" is 4, for example, then that means uncompressed rotations are stored as 8 bits, which gives them a range from 0 to 255. How is this fixed? After the 8 bits are read, they are then shifted left (up) by \"bKey\". This will place them at 12 bits, but with decreased accuracy.
 This loss in accuracy is acceptable since rotations work as deltas and usually only change by a small amount.
@@ -118,7 +118,7 @@ Now the code to skip to any animation, by index, where \"iTarget\" is the index.
         }
     }
     // Once we come to this point, we are at the very first byte of the
-    //  animation we want to load.  Letâ€™s store it into a BYTE array.
+    //  animation we want to load.  Let's store it into a BYTE array.
     if ( !ReadFile( hFile,
         &fhHeader, sizeof( fhHeader ),
         &dwBytesRead, NULL ) ) {
@@ -128,7 +128,7 @@ Now the code to skip to any animation, by index, where \"iTarget\" is the index.
     }
     BYTE * pbBuffer = new BYTE[fhHeader.dwChunkSize];
     // Now pbBuffer holds the actual animation data, including the 5-byte
-    //  â€œFF7FrameMiniHeaderâ€ header.
+    //  "FF7FrameMiniHeader" header.
 
 `</code>`{=html}
 
@@ -136,7 +136,7 @@ We now have the animation we want loaded into a BYTE array (remember to delete i
 
 #### FF7FrameBuffer
 
-Now letâ€™s look at the other structures we will use.
+Now let's look at the other structures we will use.
 
 3\.
 `<code>`{=html}
@@ -148,27 +148,27 @@ Now letâ€™s look at the other structures we will use.
     } * PFF7ShortRot;           // Size = 30 bytes.
 
 `</code>`{=html}
-Each rotation goes through 3 forms. Firstly, everything is stored as 2-byte SHORTâ€™s. These SHORTâ€™s are stored from 0 to 4096, where 0 = 0 degrees and 4096 = 360 degrees. This is the equation to convert one of these SHORTâ€™s into degrees: (SHORT / 4096 \* 360). Each frame is based off the previous frame, using the SHORT value as its basis.
+Each rotation goes through 3 forms. Firstly, everything is stored as 2-byte SHORT's. These SHORT's are stored from 0 to 4096, where 0 = 0 degrees and 4096 = 360 degrees. This is the equation to convert one of these SHORT's into degrees: (SHORT / 4096 \* 360). Each frame is based off the previous frame, using the SHORT value as its basis.
 Each SHORT is converted to an INT, which is the exact same as the SHORT version, except always positive.
 Finally, the FLOAT gets filled with the final value, using the INT version as its base.
 So, the sequence is:
 
-First frameâ€¦
+First frame"¦
 
 - Read X bits and store as a signed SHORT.
 - Convert the SHORT to the INT field, adding 0x1000 if negative.
 - Convert to FLOAT using (INT / 4096 \* 360). Apply this FLOAT to your model.
 
-Next frameâ€¦
+Next frame"¦
 
 - Read X bits, and add them to the SHORT value from last frame.
 - Convert the SHORT to the INT field, adding 0x1000 if negative.
 - Convert to FLOAT using (INT / 4096 \* 360). Apply this FLOAT to your model.
 
-Repeatâ€¦
+Repeat"¦
 
 This structure is for one bone rotation.
-To load an entire frameâ€™s work of bones, we need this structure:
+To load an entire frame's work of bones, we need this structure:
 4.
 `<code>`{=html}
 
@@ -199,12 +199,12 @@ To load an entire frameâ€™s work of bones, we need this structure:
     } * PFF7FrameBuffer;
 
 `</code>`{=html}
-This structure will allocate enough memory for one frame of rotations. Simply call â€œFF7FrameBuffer.SetBonesâ€ with the number of bones in your animation.
+This structure will allocate enough memory for one frame of rotations. Simply call "FF7FrameBuffer.SetBones" with the number of bones in your animation.
 
 ### Part II: Functions and Format {#part_ii_functions_and_format}
 
 First, we need a way to read bits from the BYTE array we have stored.
-This is a basic bit-reading function. It reads â€œdwTotalBitsâ€ from â€œpbBufferâ€ starting at the â€œdwStartBitâ€â€™th bit.
+This is a basic bit-reading function. It reads "dwTotalBits" from "pbBuffer" starting at the "dwStartBit"'th bit.
 
 #### GetBitsFixed
 
@@ -250,7 +250,7 @@ This is a basic bit-reading function. It reads â€œdwTotalBitsâ€ from â
 
 `</code>`{=html}
 
-Now that we can read the bits in the buffer we have made, itâ€™s time to know what weâ€™re doing!
+Now that we can read the bits in the buffer we have made, it's time to know what we're doing!
 
 ##### A.
 
@@ -258,7 +258,7 @@ The animation data begins with one full frame that is uncompressed, but stored i
 
 `   First Frame:`
 
-Remember that we stored our animation buffer with a 5-byte â€œFF7FrameMiniHeaderâ€ at the beginning of it? We need this header now!
+Remember that we stored our animation buffer with a 5-byte "FF7FrameMiniHeader" at the beginning of it? We need this header now!
 
 `<code>`{=html}
 
@@ -266,13 +266,13 @@ Remember that we stored our animation buffer with a 5-byte â€œFF7FrameMiniHe
 
 `</code>`{=html}
 
-After this cast, â€œpfmhMiniHeader-\>bKeyâ€ will contain a number, either 0, 2, or 4.
-Each rotation is stored in (12 - â€œpfmhMiniHeader-\>bKeyâ€) bits. This mean either 12, 10, or 8, respectively.
+After this cast, "pfmhMiniHeader-\>bKey" will contain a number, either 0, 2, or 4.
+Each rotation is stored in (12 - "pfmhMiniHeader-\>bKey") bits. This mean either 12, 10, or 8, respectively.
 This is important to know.
 But first, there is offset data. Each offset is 16 bits (a signed SHORT).
-In the first frame of Cloudâ€™s first animation (rtda), these bytes are 00 00 FE 2E 00 00.
+In the first frame of Cloud's first animation (rtda), these bytes are 00 00 FE 2E 00 00.
 16 bits Ã--- 3 = 48 bits, or 6 bytes.
-To get these bits, we first need to make a pointer point to the correct location. â€œpbBufferâ€ points 5 bytes before this data, so letâ€™s make a pointer that points to this data directly.
+To get these bits, we first need to make a pointer point to the correct location. "pbBuffer" points 5 bytes before this data, so let's make a pointer that points to this data directly.
 
 `<code>`{=html}
 
@@ -280,7 +280,7 @@ To get these bits, we first need to make a pointer point to the correct location
 
 `</code>`{=html}
 
-When we use â€œGetBitsFixed()â€ to get the bits.
+When we use "GetBitsFixed()" to get the bits.
 
 `<code>`{=html}
 
@@ -293,10 +293,10 @@ When we use â€œGetBitsFixed()â€ to get the bits.
 `</code>`{=html}
 
 After doing this, we have each of the three offsets, 0, -466, and 0.
-The Y (-466) is always stored as its inverse, but for now we donâ€™t worry about that.
+The Y (-466) is always stored as its inverse, but for now we don't worry about that.
 
 The first frame is uncompressed, but it could be 12, 10, or 8 bits per rotation.
-How do we know? â€œpfmhMiniHeader-\>bKeyâ€!
+How do we know? "pfmhMiniHeader-\>bKey"!
 
 For each bone, there are 3 rotations. So, for each bone, we do this:
 
@@ -430,8 +430,8 @@ So to get the positional deltas for the next frame, we would do this:
 
 `</code>`{=html}
 
-Now we have the change from the previous frame. In our â€œFF7ShortVecâ€ structure, these are the SHORT values. To get the position of this frame, we add these offsets to the last frameâ€™s position.
-If â€œIâ€ is this frame and â€œI-1â€ is the last frame, we could do something like this:
+Now we have the change from the previous frame. In our "FF7ShortVec" structure, these are the SHORT values. To get the position of this frame, we add these offsets to the last frame's position.
+If "I" is this frame and "I-1" is the last frame, we could do something like this:
 
 `<code>`{=html}
 
@@ -451,19 +451,19 @@ They are, however, always at least one bit long.
 The first bit is a flag. If 0, the rotational change is 0, and that is the end of that rotation.
 If it is not 0, then we must get the next 3 bits.
 The next 3 bits can tell us to do one of three things.
-If the resulting 3-bit signed value is 0, then the rotation delta is (-1 \<\< pfmhMiniHeader-\>bKey). This is the smallest possible decrement for the given precision (remember that precision is based off â€œpfmhMiniHeader-\>bKeyâ€.
-If the 3-bit value is 7, then we treat the rotation the same way as we do in the first frame, where we read (12-pfmhMiniHeader-\>bKey) bits, then shift left by â€œpfmhMiniHeader-\>bKeyâ€.
+If the resulting 3-bit signed value is 0, then the rotation delta is (-1 \<\< pfmhMiniHeader-\>bKey). This is the smallest possible decrement for the given precision (remember that precision is based off "pfmhMiniHeader-\>bKey".
+If the 3-bit value is 7, then we treat the rotation the same way as we do in the first frame, where we read (12-pfmhMiniHeader-\>bKey) bits, then shift left by "pfmhMiniHeader-\>bKey".
 
 The complicated cases are 1 through 6.
 If the 3-bit value is from 1 to 6, then this indicates the number of bits in the rotation delta.
-For our example, letâ€™s assume the 3-bit value was 4.
+For our example, let's assume the 3-bit value was 4.
 This means we need to read the next 4 bits from the stream. These 4 bits will be the animation delta, but we actually have to handle them before we can call it final.
 The first bit of this new data is a sign bit which determines if the value is below 0.
-If it is below zero, we must subtract from that number (1 \<\< (\[Number of Bits\] â€" 1)).
+If it is below zero, we must subtract from that number (1 \<\< (\[Number of Bits\] "" 1)).
 So, if the 3-bit value was 4, and we read 4 bits from the stream, and the resulting value was negative, we would subtract from that value (1 \<\< 3), or 8.
-If the 4-bit value is positive, we add (1 \<\< (\[Number of Bits\] â€" 1)) to it.
+If the 4-bit value is positive, we add (1 \<\< (\[Number of Bits\] "" 1)) to it.
 After we handle the positive and negative cases, we have to adjust for our precision again.
-So, we shift left the resulting value by â€œpfmhMiniHeader-\>bKeyâ€.
+So, we shift left the resulting value by "pfmhMiniHeader-\>bKey".
 This is all shown in the code below.
 
 3\.
@@ -524,25 +524,25 @@ This is all shown in the code below.
                 __asm mov eax, iTemp
                 __asm cmp iTemp, 0
                 __asm jl IfLessThanZero
-                // If greater than or equal to 0â€¦
+                // If greater than or equal to 0"¦
                 __asm mov ecx, dwNumBits    // dwNumBits = (iBits &
                                 // 7) from before.
                 __asm sub ecx, 1        // dwNumBits - 1.
                 __asm mov eax, 1
-                __asm shl eax, cl       // (1 << (dwNumBits â€“
+                __asm shl eax, cl       // (1 << (dwNumBits "“
                                 // 1)).
                 __asm mov ecx, iTemp
                 __asm add ecx, eax      // iTemp += (1 <<
                                 // (dwNumBits - 1)).
                 __asm mov iTemp, ecx
                 __asm jmp AfterTests
-                // If less than 0â€¦
+                // If less than 0"¦
     IfLessThanZero :
                 __asm mov ecx, dwNumBits    // dwNumBits = (iBits &
                                 // 7) from before.
                 __asm sub ecx, 1        // Decrease it by 1.
                 __asm mov edx, 1
-                __asm shl edx, cl       // Shift â€œ1â€ left by
+                __asm shl edx, cl       // Shift "1" left by
                                 // (dwNumBits - 1).
                 __asm mov eax, iTemp        // iTemp still has the
                                 // bits we read
@@ -587,8 +587,8 @@ This is all shown in the code below.
 
 ### Part III: Putting it All Together {#part_iii_putting_it_all_together}
 
-To make life easy, letâ€™s use one function to load an entire frame at a time.
-This function will load an entire frame into a â€œFF7FrameBufferâ€ structure.
+To make life easy, let's use one function to load an entire frame at a time.
+This function will load an entire frame into a "FF7FrameBuffer" structure.
 The function will return the bit position where the next frame will begin.
 After the function returns, we must translate the rotational INT values to their FLOAT forms (although the function can be modified to do this part itself).
 This function will be called in a loop for every frame in the rotation.
@@ -633,7 +633,7 @@ This function will be called in a loop for every frame in the rotation.
                 // Now get each bone rotation (the first bone is
                 //  actually the root, not part of the skeleton).
                 // During the first frame, the rotations are always
-                //  (12 â€“ bKeyBits).
+                //  (12 "“ bKeyBits).
                 // We shift by bKeyBits to align it to 12 bits.
                 pfbFrameBuffer->psvRots[I].sX = (GetBitsFixed( pbThisBuffer, dwThisBitStart, 12 - bKeyBits ) << bKeyBits);
                 pfbFrameBuffer->psvRots[I].sY = (GetBitsFixed( pbThisBuffer, dwThisBitStart, 12 - bKeyBits ) << bKeyBits);
@@ -727,12 +727,12 @@ This is an example loop that could be used to load a full animation.
         //  frame. 
             iBits = LoadFrames( &fbFrameBuffer, fhHeader.dwBones, iBits, baData );
             // Reverse the Y offset (required).
-            fbFrameBuffer.svPosOffset.fY = 0.0f â€“ fbFrameBuffer.svPosOffset.fY;
+            fbFrameBuffer.svPosOffset.fY = 0.0f "“ fbFrameBuffer.svPosOffset.fY;
 
     // The first rotation set is skipped.  It is not part of
     //  the skeleton.  Skipping is optional, but
     //  Final FantasyÂ® VII skips it; it is always 0, 0, 0.
-    // I believe the actual use for the â€œrootâ€ rotation is
+    // I believe the actual use for the "root" rotation is
     //  to dynamically make the model point at its target
     //  or face different directions during battle.
     // UPDATE: Although the value of this field is 0,0,0 for most animations, some actually store a base rotation here
@@ -751,12 +751,12 @@ This is an example loop that could be used to load a full animation.
 
 `</code>`{=html}
 
-## Part IV: Qhimmâ€™s Input {#part_iv_qhimmâs_input}
+## Part IV: Qhimm's Input {#part_iv_qhimmâs_input}
 
 Qhimm has taken the time to rewrite two of these functions used in decoding, so it is easier to understand for people who know C++ better than they know assembly (despite my comments being in the assembly code).
 He has also written a more in-depth look at the logistics behind the rotation compression format and explains its limitations
 
-â€œGetValueFromStreamâ€ is the C/C++ version of my â€œGetDynamicFrameOffsetBitsâ€ and his â€œGetCompressedDeltaFromStreamâ€ is the C++ version of my â€œGetEncryptedRotationBitsâ€.
+"GetValueFromStream" is the C/C++ version of my "GetDynamicFrameOffsetBits" and his "GetCompressedDeltaFromStream" is the C++ version of my "GetEncryptedRotationBits".
 
 `<code>`{=html}
 
