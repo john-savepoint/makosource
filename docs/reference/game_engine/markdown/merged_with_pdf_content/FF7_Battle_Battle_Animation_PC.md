@@ -451,7 +451,7 @@ They are, however, always at least one bit long.
 The first bit is a flag. If 0, the rotational change is 0, and that is the end of that rotation.
 If it is not 0, then we must get the next 3 bits.
 The next 3 bits can tell us to do one of three things.
-If the resulting 3-bit signed value is 0, then the rotation delta is (-1 \<\< pfmhMiniHeader-\>bKey). This is the smallest possible decrement for the given precision (remember that precision is based off "pfmhMiniHeader-\>bKey".
+If the resulting 3-bit signed value is 0, then the rotation delta is (-1 << pfmhMiniHeader-\>bKey). This is the smallest possible decrement for the given precision (remember that precision is based off "pfmhMiniHeader-\>bKey".
 If the 3-bit value is 7, then we treat the rotation the same way as we do in the first frame, where we read (12-pfmhMiniHeader-\>bKey) bits, then shift left by "pfmhMiniHeader-\>bKey".
 
 The complicated cases are 1 through 6.
@@ -459,9 +459,9 @@ If the 3-bit value is from 1 to 6, then this indicates the number of bits in the
 For our example, let's assume the 3-bit value was 4.
 This means we need to read the next 4 bits from the stream. These 4 bits will be the animation delta, but we actually have to handle them before we can call it final.
 The first bit of this new data is a sign bit which determines if the value is below 0.
-If it is below zero, we must subtract from that number (1 \<\< (\[Number of Bits\] "" 1)).
-So, if the 3-bit value was 4, and we read 4 bits from the stream, and the resulting value was negative, we would subtract from that value (1 \<\< 3), or 8.
-If the 4-bit value is positive, we add (1 \<\< (\[Number of Bits\] "" 1)) to it.
+If it is below zero, we must subtract from that number (1 << ([Number of Bits] - 1)).
+So, if the 3-bit value was 4, and we read 4 bits from the stream, and the resulting value was negative, we would subtract from that value (1 << 3), or 8.
+If the 4-bit value is positive, we add (1 << ([Number of Bits] - 1)) to it.
 After we handle the positive and negative cases, we have to adjust for our precision again.
 So, we shift left the resulting value by "pfmhMiniHeader-\>bKey".
 This is all shown in the code below.
