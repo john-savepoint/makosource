@@ -6,8 +6,17 @@ Source: 04_MENU_MODULE.md (502 lines of substantive content)
 Merge decision: COMPLETE
 Reason: Direct match for menu system - all content integrated
 Status: MERGED - Analysis Report: FF7_Menu_Module_vs_04_MENU_MODULE_analysis.md
-Last Modified: 2025-11-29 02:35 JST
+Last Modified: 2025-11-29 14:38 JST
 Merge Completion: ✅ FULL CONTENT INTEGRATION
+
+VALIDATION NOTES (2025-11-29 14:38 JST):
+⚠️ KNOWN ISSUES REQUIRING VERIFICATION:
+1. Save Icon 7 TIM offset discrepancy (line ~189):
+   - This file shows: 0x108D0
+   - Alternate source shows: 0x108DA
+   - ACTION REQUIRED: Verify against original WINDOW.BIN or source documentation
+2. Typo on line ~124: "Spit into 3 groups" should be "Split into 3 groups"
+3. This file includes complete save format (3 tables) that was missing in older version
 -->
 
 # The Menu Module
