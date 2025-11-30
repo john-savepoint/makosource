@@ -1,8 +1,8 @@
 # FFNx Japanese Implementation - Verification Checklist
 
 **Created**: 2025-11-24 17:32:00 JST (Monday)
-**Last Modified**: 2025-11-30 22:25:00 JST (Sunday)
-**Version**: 2.2.0
+**Last Modified**: 2025-11-30 22:46:00 JST (Sunday)
+**Version**: 2.3.0
 **Author**: John Zealand-Doyle
 **Session-ID**:
 379a17a1-e73f-41b7-86b2-6c83f196e524
@@ -169,10 +169,13 @@ A comprehensive deep-dive analysis of the FFNx source code has been completed. *
   - **Conclusion**: FA-FE system is **PR #737-specific**, not in original FF7.exe or FFNx main
   - **Verified Date**: 2025-11-30
 
-- [ ] ❓ **Q2.1.3**: Is there a lookup table converting Shift-JIS → FA-FE indices?
-  - **How to verify**: Search for arrays/maps in FFNx or game memory
-  - **Expected**: Array of 2808+ entries mapping Unicode/Shift-JIS to texture position
-  - **Files to check**: FFNx config files, embedded data structures
+- [x] ❌ **Q2.1.3**: Is there a lookup table converting Shift-JIS → FA-FE indices? `[PR737]`
+  - **Verified via**: PR #737 diff analysis of `src/ff7/japanese_text.cpp`
+  - **Answer**: **NOT present in PR #737**
+  - **Findings**: The file parses FA-FE byte sequences directly (`case 0xFA:`, `case 0xFB:`), but contains **no conversion table** from Shift-JIS to these codes
+  - **Implication**: Text buffer (`byte* buffer_text`) passed to `field_submit_draw_text...` is assumed to **already contain FA-FE control codes**
+  - **Critical Discovery**: Either game files (kernel.bin) are pre-patched with FA-FE encoding, OR conversion happens in unhooked part of game engine
+  - **Verified Date**: 2025-11-30
 
 ### 2.2 Character Width Table
 
@@ -191,21 +194,27 @@ A comprehensive deep-dive analysis of the FFNx source code has been completed. *
   - **Evidence**: `common_externals.font_info = (char *)0x99DDA8;`
   - **Verified Date**: 2025-11-30
 
-- [ ] ❓ **Q2.2.2**: Does the width table cover all 6 jafont textures (1536 chars) or just one page (256 chars)?
-  - **How to verify**: Check table size in memory
-  - **Expected if 1 page**: 256 bytes
-  - **Expected if 6 pages**: 1536 bytes
-  - **Tool**: Memory inspector
+- [x] ✅ **Q2.2.2**: Does the width table cover all 6 jafont textures (1536 chars) or just one page (256 chars)? `[PR737]`
+  - **Verified via**: PR #737 diff, `src/ff7/japanese_text.cpp` line 309
+  - **Answer**: **Covers 6 pages (1,536 characters total)**
+  - **Structure**: `int charWidthData[6][256]`
+  - **Evidence**: 6 arrays, each containing 256 integer values
+  - **Verified Date**: 2025-11-30
 
-- [ ] ❓ **Q2.2.3**: Is the width table loaded from a file or hardcoded?
-  - **How to verify**: Search FFNx source for width table loading
-  - **Files to check**: `src/ff7/font.cpp`, config parsers
-  - **Expected**: Loaded from `window.bin` or similar
+- [x] ✅ **Q2.2.3**: Is the width table loaded from a file or hardcoded? `[PR737]`
+  - **Verified via**: PR #737 diff, `src/ff7/japanese_text.cpp` lines 309-477
+  - **Answer**: **Hardcoded in C++** (not loaded from file)
+  - **Evidence**: Static definition with pre-populated values (e.g., `30, 30, 28, 31...`)
+  - **Reason**: Simplicity - no file I/O, immediate availability
+  - **Trade-off**: Must recompile to change widths (but works)
+  - **Verified Date**: 2025-11-30
 
-- [ ] ❓ **Q2.2.4**: Do Japanese fonts use proportional or fixed-width spacing?
-  - **How to verify**: Inspect jafont width values in table
-  - **Expected**: All same value (fixed) or varying values (proportional)
-  - **Tool**: Memory dump analysis
+- [x] ✅ **Q2.2.4**: Do Japanese fonts use proportional or fixed-width spacing? `[PR737]`
+  - **Verified via**: PR #737 diff, `charWidthData` array values
+  - **Answer**: **Proportional** (widths vary significantly)
+  - **Evidence**: Values vary (e.g., `30`, `28`, `16`, `0`, `51`)
+  - **Confirmed**: Implementation supports variable-width characters
+  - **Verified Date**: 2025-11-30
 
 ---
 
@@ -1086,21 +1095,41 @@ Many verification questions are now **ANSWERED** by analyzing PR #737's code:
 
 #### Critical for Phase 1.5 (Bug Fixes)
 
-- [ ] ❓ **Q16.3.1**: Why is colored text rendering broken?
-  - **Hypothesis A:** Colored texture variants (jafont_1_red.tim) missing
-  - **Hypothesis B:** Color tinting logic doesn't work with non-white base
-  - **How to verify:** Inspect `get_character_color()` function logic
-  - **Tool:** Debugger attached to Japanese game
+- [x] ⚠️ **Q16.3.1**: Why is colored text rendering broken? `[PR737]`
+  - **Verified via**: PR #737 diff analysis, `src/ff7/japanese_text.cpp` lines 479-507
+  - **Implementation**: Colored text via `get_character_color(int n_shapes)` function
+  - **Color Logic**:
+    - Case 0: Gray `{ 106, 106, 106, 255 }`
+    - Case 1: Orange `{ 189, 98, 7, 255 }`
+    - Default: White `{ 255, 255, 255, 255 }`
+  - **ROOT CAUSE IDENTIFIED**: Function returns solid color for vertex coloring. If Japanese font texture (`jafont_*.tim`) is **not white** (grayscale), multiplying vertex color against texture color produces incorrect rendering (red × red = dark red, red × black = black)
+  - **Standard FF7 Approach**: Uses `n_shapes` to select colored texture pages (window.bin loaded into VRAM), whereas PR #737 forces vertex color tint on single texture set
+  - **Fix Required**: Either ensure `jafont_*.tim` textures use white/grayscale glyphs, OR implement multi-palette texture variant loading
+  - **Verified Date**: 2025-11-30
 
-- [ ] ❓ **Q16.3.2**: Why is character name input screen corrupted?
+- [x] ❌ **Q16.3.2**: Why is character name input screen corrupted? `[PR737]`
+  - **Verified via**: PR #737 diff analysis
   - **Symptom:** Last 2 rows show garbage, missing Katakana/Romaji tabs
-  - **How to verify:** Debug character selection rendering code
-  - **Tool:** Visual Studio debugger + name input screen
+  - **ROOT CAUSE IDENTIFIED**: **Missing Hook** - Naming screen NOT implemented in PR #737
+  - **Evidence**: No hooks or functions in `japanese_text.cpp` corresponding to naming screen (usually `menu_name_input`, `draw_char_matrix`, naming opcodes)
+  - **Current Hooks**: Only `field_submit_draw_text...` (dialogue) and `common_submit_draw_char` (general strings)
+  - **Bug Mechanism**: Naming screen uses specialized rendering loop (hardcoded grid logic) separate from standard dialogue boxes. Without specific handling for grid layout or "Katakana/Hiragana" toggle buttons, layout breaks (memory read overflows → garbage data) when loop counters don't match Japanese font sheet dimensions
+  - **Fix Required**: Implement dedicated naming screen rendering hooks
+  - **Verified Date**: 2025-11-30
 
-- [ ] ❓ **Q16.3.3**: What causes cursor alignment offset?
-  - **Hypothesis:** Cursor code assumes fixed 16px width
-  - **How to verify:** Find cursor position calculation, check if uses `charWidthData`
-  - **Tool:** Code search for cursor rendering
+- [x] ⚠️ **Q16.3.3**: What causes cursor alignment offset? `[PR737]`
+  - **Verified via**: PR #737 diff analysis, `src/ff7/japanese_text.cpp` lines 1988-2138
+  - **Symptom:** Hand cursor doesn't align with menu text (offset to left/right)
+  - **Current Implementation**: `common_submit_draw_char_from_buffer_6F564E_jp` calculates X position correctly:
+    ```cpp
+    return vertex_x + std::ceil(0.5f * charWidth);
+    ```
+  - **ROOT CAUSE IDENTIFIED**: Disconnect between rendering and cursor calculation
+    - **Text Rendering**: Uses `japanese_text.cpp` → `charWidthData` (proportional, 20-32px)
+    - **Cursor Calculation**: Uses **unhooked** game engine logic → Original `0x99DDA8` width table (fixed/English)
+  - **Bug Mechanism**: Original game calculates cursor positions using vanilla width table (main branch `0x99DDA8`), while visual text renders using new `charWidthData`. Cursor points to where text *would be* in English, not where it actually is in Japanese
+  - **Fix Required**: Hook menu cursor calculation function and redirect to use `charWidthData`
+  - **Verified Date**: 2025-11-30
 
 #### Critical for Phase 2 (Multi-Language)
 
