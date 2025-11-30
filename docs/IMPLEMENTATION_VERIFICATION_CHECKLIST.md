@@ -1459,3 +1459,135 @@ This section consolidates all findings verified against the FFNx main branch (v1
 ---
 
 **End of Section 18**
+
+---
+
+## SECTION 19: PR #737 Bug Fix Implementation Details
+
+**Date Added:** 2025-11-30 22:53:00 JST (Sunday)
+**Session:** c2b17842-bb6b-4c40-b57d-0df788e63567
+**Source**: FFNx main + PR #737 combined analysis
+
+### 19.1 Cursor Alignment Bug - Detailed Fix
+
+**Root Cause Confirmed:**
+- Cursor calculation uses vanilla font_info at `0x99DDA8` (US v1.02)
+- Text rendering uses PR #737's `charWidthData` array
+- Unhooked menu routines still read old width table
+
+**Hook Points Identified:**
+
+| Function | Address (US 1.02) | File Location | Status |
+|----------|-------------------|---------------|---------|
+| `sub_6F54A2` (String Width) | `0x6F54A2` | `src/ff7_data.h` line 380 | ✅ Already hooked in PR #737 |
+| `menu_draw_pointer` | `0x60D4F3` | `src/ff7_data.h` line 337 | ❌ Not hooked - NEEDS HOOK |
+| `menu_draw_everything` | `0x6CC9D3` | `src/ff7_data.h` line 1437 | ⚠️ Check if needs hook |
+| `menu_sub_6CDA83` | `0x6CDA83` | `src/ff7_data.h` | ❌ Likely needs hook |
+
+**Fix Strategy:**
+- Option A: Hook `menu_draw_pointer` to use `charWidthData` for positioning
+- Option B: Dynamically update `font_info` (0x99DDA8) to match current `charWidthData`
+- Option C: Hook menu loop `menu_sub_6CDA83` for cursor calculation
+
+### 19.2 Naming Screen Bug - Implementation Required
+
+**Functions to Hook:**
+
+| Function | Address (US 1.02) | Purpose | File Location |
+|----------|-------------------|---------|---------------|
+| `name_menu_sub_6CBD32` | `0x6CBD32` | Entry point | `src/ff7_data.h` |
+| `name_menu_sub_719C08` | `0x719C08` | Rendering loop | `src/ff7_data.h` line 406 |
+| `keyboard_name_input` | N/A | Input handling | `src/ff7_data.h` |
+
+**Missing Implementation:**
+- PR #737 has **NO hooks** for naming screen
+- Must reimplement grid drawing for 16×16 Japanese font layout
+- Add Katakana/Hiragana tab rendering
+- Handle larger character set navigation
+
+**Fix Strategy:**
+- Create `name_menu_sub_719C08_jp` hook in `japanese_text.cpp`
+- Modify grid loop to support 16×16 layout (vs ASCII grid)
+- Add tab button rendering logic
+
+### 19.3 Colored Text Bug - Texture Analysis Required
+
+**Standard FF7 Implementation:**
+- Uses **texture palettes** or separate texture files for colors
+- `n_shapes` parameter (0-7) selects texture palette/UV offset
+- Examples: White, Gray, Red, Green palettes
+
+**PR #737 Implementation:**
+- Function: `get_character_color(int n_shapes)` (lines 479-507)
+- Method: Vertex coloring only (no palette swapping)
+- Returns `bgra_byte` struct applied to vertices
+
+**Confirmed Defect:**
+- If `jafont_*.tim` textures are **not pure white/grayscale**, vertex multiply blending produces incorrect colors
+- Example: Orange vertex × Red glyph = Dark muddy color
+- Standard FF7: Swaps texture source, doesn't tint vertices
+
+**Fix Options:**
+1. **Ensure white glyphs**: Convert `jafont_*.tim` to white/grayscale base
+2. **Implement palette system**: Load colored texture variants (jafont_1_red.tim, etc.)
+3. **Hybrid approach**: Use white base + vertex tinting (like English)
+
+**Verification Needed:**
+- [ ] Inspect `jafont_*.tim` pixel values - are glyphs white or colored?
+- [ ] Check if Japanese game files include colored font variants
+- [ ] Test vertex coloring on white vs colored base textures
+
+### 19.4 FA-FE Encoding Location - Confirmed
+
+**Critical Finding:**
+- FA-FE encoding happens **offline in game files**, NOT at runtime
+- **Makou Reactor** (modding tool) performs Shift-JIS → FA-FE conversion when saving field files
+- PR author quote: "field text only works if jp flevel re-exported using Makou Reactor"
+
+**Evidence:**
+- PR #737 contains **zero** Shift-JIS conversion logic
+- Code only checks `case 0xFA:` directly - assumes pre-encoded
+- No lookup tables or conversion functions exist
+
+**Implication for Implementation:**
+- FFNx does NOT need runtime Shift-JIS → FA-FE converter
+- Game files (`kernel.bin`, `flevel`) already contain FA-FE codes
+- Only need to render FA-FE codes correctly (already done in PR #737)
+
+**Questions Answered:**
+- Q1.1.1: ✅ kernel.bin sections 10-27 contain FA-FE encoding (not Shift-JIS)
+- Q1.1.2: ✅ FA-FE markers exist in files (not runtime-only)
+- Q2.1.1: ✅ No conversion happens - files are pre-encoded by Makou Reactor
+
+### 19.5 Additional Hook Points for Battle System
+
+**Battle Text Rendering:**
+
+| Function | Address (US 1.02) | Purpose | File Location |
+|----------|-------------------|---------|---------------|
+| `display_battle_action_text` | `0x42782A` | Battle text | `src/ff7_data.h` line 858 |
+
+**Status:** Unknown if PR #737 hooks this - requires verification
+
+### 19.6 Summary: Verified vs Unverified
+
+**✅ Verified Root Causes:**
+1. Cursor alignment: Font width table mismatch (0x99DDA8 vs charWidthData)
+2. Naming screen: Missing hooks for name_menu_sub_719C08
+3. Colored text: Vertex tinting on non-white texture base
+
+**❓ Requires Testing:**
+1. Are `jafont_*.tim` textures white/grayscale or colored?
+2. Does battle text work correctly in PR #737?
+3. Which specific menu function calculates cursor position?
+
+**📋 Implementation Checklist:**
+- [ ] Hook `menu_draw_pointer` or update `font_info` dynamically
+- [ ] Implement `name_menu_sub_719C08_jp` for naming screen
+- [ ] Convert `jafont_*.tim` to white base OR implement palette system
+- [ ] Test all three fixes in actual game build
+- [ ] Document findings in PR #737 issue tracker
+
+---
+
+**End of Section 19**
