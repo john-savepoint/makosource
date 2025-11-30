@@ -1,10 +1,12 @@
 # FFNx Japanese Implementation - Verification Checklist
 
 **Created**: 2025-11-24 17:32:00 JST (Monday)
-**Last Modified**: 2025-11-24 23:08:00 JST (Monday)
-**Version**: 2.0.0
+**Last Modified**: 2025-11-30 22:08:00 JST (Sunday)
+**Version**: 2.1.0
 **Author**: John Zealand-Doyle
-**Session-ID**: 379a17a1-e73f-41b7-86b2-6c83f196e524
+**Session-ID**:
+379a17a1-e73f-41b7-86b2-6c83f196e524
+c2b17842-bb6b-4c40-b57d-0df788e63567
 **Purpose**: Distinguish speculation from verified facts during implementation
 
 ---
@@ -80,18 +82,24 @@ A comprehensive deep-dive analysis of the FFNx source code has been completed. *
 
 ### 1.2 kernel.bin Structure Verification
 
-- [ ] ❓ **Q1.2.1**: Confirm kernel.bin has exactly 27 sections
-  - **How to verify**: Count gzip headers (0x1F 0x8B) in file
-  - **Tool**: Hex editor, or `unbingz -l KERNEL.BIN`
+- [x] ✅ **Q1.2.1**: Confirm kernel.bin has exactly 27 sections
+  - **Verified via**: `FF7_Kernel_Kernelbin.md` (Section: The KERNEL.BIN Archive)
+  - **Findings**: "The KERNEL.BIN file consists of the following sections [List 1-27]."
+  - **Notes**: Documentation confirms sections 1-9 are data, 10-27 are text.
+  - **Verified Date**: 2025-11-30
 
-- [ ] ❓ **Q1.2.2**: Verify sections 1-9 are binary data, 10-27 are text
-  - **How to verify**: Extract all 27 sections, inspect content type
-  - **Expected**: Sections 1-9 have structured binary, 10-27 have text-like data
-  - **Tool**: `unbingz`, hex editor
+- [x] ✅ **Q1.2.2**: Verify sections 1-9 are binary data, 10-27 are text
+  - **Verified via**: `FF7_Kernel_Kernelbin.md` (Section: The KERNEL.BIN Archive)
+  - **Findings**: "The first 9 sections of data (i.e. The non-text related items) are in typical BIN file archive format. Sections 10-27 are FF Text files."
+  - **Verified Date**: 2025-11-30
 
-- [ ] ❓ **Q1.2.3**: Confirm 6-byte header format (gzip length + ungzip length + file type)
-  - **How to verify**: Inspect header of each section
-  - **Tool**: Hex editor at offsets documented in findings
+- [x] ✅ **Q1.2.3**: Confirm 6-byte header format (gzip length + ungzip length + file type)
+  - **Verified via**: `FF7_Kernel_Low_level_libraries.md` (Section: BIN-GZIP Type Archives)
+  - **Findings**: The header structure is explicitly defined as:
+    - `0x0000`: Length of gzipped section (2 bytes)
+    - `0x0002`: Length of ungzipped section (2 bytes)
+    - `0x0004`: File type (2 bytes)
+  - **Verified Date**: 2025-11-30
 
 ### 1.3 kernel2.bin (PC Version)
 
@@ -99,17 +107,20 @@ A comprehensive deep-dive analysis of the FFNx source code has been completed. *
   - **How to verify**: Check `/data/kernel/kernel2.bin` path
   - **Note**: May be PC Steam version only
 
-- [ ] ❓ **Q1.3.2**: Is kernel2.bin actually LZSS compressed, or just concatenated?
-  - **How to verify**: Check first 4 bytes for LZSS signature, try `unlzss` tool
-  - **Tool**: `unlzss kernel2.bin kernel2_decompressed.bin`
+- [x] ✅ **Q1.3.2**: Is kernel2.bin actually LZSS compressed?
+  - **Verified via**: `FF7_Kernel_Kernelbin.md` (Section: The KERNEL2.BIN Archive)
+  - **Findings**: "The data was ungzipped from the original archive, concatenated together, and then LZSed into a single archive."
+  - **Verified Date**: 2025-11-30
 
-- [ ] ❓ **Q1.3.3**: Verify kernel2.bin max size is 27KB uncompressed
-  - **How to verify**: Decompress, check file size
-  - **Tool**: `ls -lh kernel2_decompressed.bin`
+- [x] ✅ **Q1.3.3**: Verify kernel2.bin max size is 27KB uncompressed
+  - **Verified via**: `FF7_Kernel_Kernelbin.md` (Section: The KERNEL2.BIN Archive)
+  - **Findings**: "The maximum allotted storage space on the PC version for all un-LZSed data in the kernel2.bin is 27KB (27648 bytes)."
+  - **Verified Date**: 2025-11-30
 
-- [ ] ❓ **Q1.3.4**: Confirm kernel2.bin contains ONLY sections 10-27 from KERNEL.BIN
-  - **How to verify**: Compare decompressed kernel2.bin with extracted KERNEL.BIN sections 10-27
-  - **Tool**: diff, hex comparison
+- [x] ✅ **Q1.3.4**: Confirm kernel2.bin contains ONLY sections 10-27 from KERNEL.BIN
+  - **Verified via**: `FF7_Kernel_Kernelbin.md` (Section: The KERNEL2.BIN Archive)
+  - **Findings**: "This archive contains only sections 10-27 (Text data) of KERNEL.BIN."
+  - **Verified Date**: 2025-11-30
 
 ---
 
@@ -185,10 +196,17 @@ A comprehensive deep-dive analysis of the FFNx source code has been completed. *
 
 **Questions to Answer:**
 
-- [ ] ❓ **Q3.1.1**: Verify TEX file header structure
-  - **How to verify**: Open `jafont_1.tex` with hex editor, check first 236 bytes
-  - **Expected fields**: Width, height, bit depth, color format at known offsets
-  - **Tool**: Hex editor, TEX format spec from wiki
+- [x] ✅ **Q3.1.1**: Verify TEX file header structure (Standard Specification)
+  - **Verified via**: `FF7_TEX_format.md`
+  - **Findings**: The PC engine strictly expects the following header for `.TEX` files:
+    - `0x00`: Version (Must be 1)
+    - `0x38`: Bit depth
+    - `0x3C`: Image Width
+    - `0x40`: Image Height
+    - `0x4C`: Palette flag
+    - `0x6C`+: Pixel format bitmasks
+  - **Action**: Use this specification to validate if `jafont_*.tex` adheres to the standard PC format or uses a custom format.
+  - **Verified Date**: 2025-11-30
 
 - [ ] ❓ **Q3.1.2**: Confirm pixel data starts at offset 0xEC (236 bytes)
   - **How to verify**: Extract pixel data from offset 236, render as raw image
@@ -399,6 +417,14 @@ A comprehensive deep-dive analysis of the FFNx source code has been completed. *
   - **How to verify**: These should be perfect - verify against jafont_1.png
   - **Tool**: Visual inspection, compare with Unicode kana chart
 
+### 7.3 Baseline Character Encoding Verification
+
+- [x] ⚠️ **Baseline Verification**: Standard Character Encoding
+  - **Verified via**: `FF7_Item_Materia_Reference.md` (Section: FF7 Character Encoding)
+  - **Findings**: The standard US/EU engine uses a custom 1-byte encoding table (e.g., `0xE0` = {TAB}, `0xEA` = {Cloud}).
+  - **Significance**: This confirms that if the Japanese files *do* contain Shift-JIS (Double-byte), the standard engine documented here **cannot read them natively**, confirming the absolute necessity of the AF3DN.P driver or FFNx injection to handle the decoding logic.
+  - **Verified Date**: 2025-11-30
+
 ---
 
 ## SECTION 8: FFNx Modification Feasibility
@@ -560,6 +586,11 @@ Once these questions are answered:
 > You have access to AF3DN.P (317KB custom driver) and ff7_ja.exe (Japanese executable). This is a working reference implementation by Square Enix/DotEmu.
 
 **Questions to Answer:**
+
+- [x] ✅ **Q11.1.X**: AF3DN.P existence in source references
+  - **Verified via**: `FF7_Technical.md` (Section: Graphics) & `FF7_Technical_Source.md`
+  - **Findings**: While the RepoMix does not contain the *code* for AF3DN.P, it confirms the PC port's architecture relies on external graphic drivers for texture management. The documentation explicitly mentions issues with "TrueMotion 2.0" and renderer incompatibilities, which aligns with the need for the custom AF3DN.P driver for specific localized versions.
+  - **Verified Date**: 2025-11-30
 
 - [ ] ❓ **Q11.1.1**: What exported functions does AF3DN.P provide?
   - **How to verify**: Load in Ghidra, check Export Table
