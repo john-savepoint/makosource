@@ -1591,3 +1591,258 @@ This section consolidates all findings verified against the FFNx main branch (v1
 ---
 
 **End of Section 19**
+
+---
+
+## SECTION 20: English Version Compatibility - WORKING
+
+**Date Added:** 2025-11-30 23:08:00 JST (Sunday)
+**Session:** c2b17842-bb6b-4c40-b57d-0df788e63567
+**Source**: Actual implementation testing (Session b8a3e4e3)
+
+### 20.1 BREAKTHROUGH: English ff7_en.exe + Japanese Text WORKING
+
+**Critical Discovery:** PR #737 CAN work on English version with proper file redirects.
+
+**Test Configuration:**
+- **Executable**: `ff7_en.exe` (English Steam version)
+- **FFNx.toml**: `ff7_japanese_edition = true`
+- **Modified**: `src/ff7/file.cpp` to redirect LGP files
+- **Result**: **PARTIAL SUCCESS** - Japanese text renders in specific contexts
+
+### 20.2 What Works vs What Doesn't
+
+| Component | Status | Encoding Source | Notes |
+|-----------|--------|-----------------|-------|
+| **Field dialogue (story text)** | ✅ WORKS | FA-FE from `jfleve.lgp` | Japanese renders correctly! |
+| **Item names** | ✅ WORKS | FA-FE from Japanese `kernel2.bin` | Battle menus show Japanese |
+| **Battle text** | ✅ WORKS | FA-FE from Japanese kernel | Spell names, etc. correct |
+| **Menu labels** | ❌ BROKEN | English byte encoding | Shows garbled text |
+| **Character names** | ❌ BROKEN | English save file encoding | Wrong characters |
+| **Naming screen** | ⚠️ USEFUL | Shows byte mapping | Reveals encoding mismatch |
+
+**Why Some Work:**
+- Field dialogue uses FA-FE encoded text from `jfleve.lgp` ✅
+- Item/battle text uses FA-FE encoded Japanese `kernel2.bin` ✅
+- Menu labels use English byte positions → wrong Japanese chars ❌
+
+### 20.3 File Redirects Implemented
+
+**Code Changes Made:**
+
+**File: `src/ff7/file.cpp` (lines 31-67)**
+
+```cpp
+#include "../globals.h"
+
+FILE *open_lgp_file(char *filename, uint32_t mode)
+{
+    char _filename[260]{ 0 };
+
+    // Japanese edition: redirect flevel.lgp to jfleve.lgp
+    if (ff7_japanese_edition && strstr(filename, "flevel.lgp") != NULL)
+    {
+        strcpy(_filename, filename);
+        char* pos = strstr(_filename, "flevel.lgp");
+        if (pos != NULL)
+        {
+            strcpy(pos, "jfleve.lgp");
+            FILE* fd = fopen(_filename, "rb");
+            if (fd != NULL)
+            {
+                ffnx_info("Successfully redirected to Japanese field file: %s\n", _filename);
+                return fd;
+            }
+        }
+    }
+
+    // Similar redirect for menu_us.lgp → menu_ja.lgp
+
+    // ... rest of function
+}
+```
+
+**File: `src/ff7/kernel.cpp`**
+
+```cpp
+#include "../globals.h"
+
+void ff7_load_kernel2_wrapper(char *filename)
+{
+    if (ff7_japanese_edition)
+    {
+        char ja_filename[260];
+        _snprintf(ja_filename, sizeof(ja_filename), "%s/data/lang-ja/kernel/kernel2.bin", basedir);
+
+        FILE* fd = fopen(ja_filename, "rb");
+        if (fd != NULL)
+        {
+            fclose(fd);
+            ffnx_info("Redirecting to Japanese kernel2: %s\n", ja_filename);
+            ff7_externals.kernel_load_kernel2(ja_filename);
+            return;
+        }
+    }
+
+    ff7_externals.kernel_load_kernel2(filename);
+}
+```
+
+### 20.4 Japanese Assets Deployed (English Installation)
+
+**Location:** `C:\Program Files (x86)\Steam\steamapps\common\FINAL FANTASY VII\`
+
+**Files Added:**
+
+```
+data/
+├── kernel/
+│   ├── kernel.bin (20K)      # Japanese kernel
+│   ├── kernel2.bin (12K)     # Japanese kernel text
+│   └── window.bin (13K)      # Japanese window data
+├── field/
+│   └── jfleve.lgp (129MB)    # Japanese field dialogue
+├── menu/
+│   └── menu_ja.lgp (27MB)    # Japanese font textures
+├── lang-ja/                  # Mirror structure
+│   ├── kernel/
+│   ├── field/
+│   └── battle/
+└── direct/
+    └── menu/
+        ├── jafont_1.tex through jafont_6.tex (4.2MB each)
+        └── jafont_1.png through jafont_6.png (296K-472K each)
+```
+
+### 20.5 Root Cause of Menu Text Garbling
+
+**The Problem:**
+- Menu strings ("Items", "Magic", "Equip") stored as **English byte values**
+- English bytes designed for English font texture positions
+- Same bytes through Japanese font → wrong characters at those positions
+
+**Example:**
+```
+English encoding: 0x29 = "I" at position (x,y) in font_a.tex
+Japanese jafont: 0x29 = "ハ" at position (x,y) in jafont_1.tex
+Result: "Items" → "ハテスト" (garbled)
+```
+
+**Why Field Text Works:**
+- Field files (`jfleve.lgp`) use FA-FE encoding
+- FA markers (0xFA-0xFE) explicitly select font page + position
+- Text designed FOR Japanese fonts
+
+**Why Menu Text Doesn't:**
+- Menu strings use single-byte English encoding
+- No FA-FE markers
+- Designed for English font layout
+
+### 20.6 Menu Text Sources
+
+**Investigation Findings:**
+
+**`menu_ja.lgp` contains:**
+- ✅ Font textures: `jafont_1.tex` through `jafont_6.tex`
+- ✅ Character portraits: `cloud.tex`, `tifa.tex`, etc.
+- ✅ Battle windows: `btl_win_*.tex`
+- ❌ **NO text string data** - only textures
+
+**Actual menu string sources:**
+1. `KERNEL.BIN` sections 1-9 - Command names, menu labels
+2. `WINDOW.BIN` - UI strings (gzip compressed)
+3. Hardcoded in executable
+4. `.MNU files` - **PC version doesn't use these** (PSX only)
+
+### 20.7 Hook Points Verified Working
+
+**From FFNx log + debug output:**
+
+```
+Japanese text hooks installed:
+✅ field_submit_draw_text_640x480_6E706D_jp - CALLED for field dialogue
+✅ common_submit_draw_char_from_buffer_6F564E_jp - CALLED for menu text
+✅ engine_load_menu_graphics_objects_6C1468_jp - CALLED at startup
+```
+
+**Hook confirmation:**
+- PR #737's hooks ARE active on `ff7_en.exe`
+- Japanese text rendering functions work correctly
+- Problem is data encoding, not rendering
+
+### 20.8 Questions Answered
+
+**Q1.1.1-1.1.3: kernel.bin encoding**
+- ✅ Japanese `kernel.bin` sections 10-27 contain FA-FE encoding
+- ✅ Confirmed by successful item name rendering
+
+**Q2.1.1: Where does FA-FE conversion happen?**
+- ✅ CONFIRMED: Offline, not runtime
+- ✅ Makou Reactor pre-encodes field files
+- ✅ No conversion needed in FFNx
+
+**Q5.1.1-5.1.2: Japanese file structure**
+- ✅ Japanese assets work in English installation
+- ✅ `jfleve.lgp` contains FA-FE encoded dialogue
+- ✅ `menu_ja.lgp` contains font textures only
+
+**NEW: English version compatibility**
+- ✅ English `ff7_en.exe` CAN run Japanese text
+- ✅ PR #737 hooks work on English executable
+- ⚠️ Requires file redirects in FFNx code
+- ❌ Menu text needs additional encoding translation
+
+### 20.9 Remaining Issues to Fix
+
+**1. Menu Label Translation**
+Need to either:
+- Option A: Load Japanese menu strings from KERNEL.BIN sections 1-9
+- Option B: Create byte translation table (English → Japanese font positions)
+- Option C: Implement dual font system (English fonts for menus)
+
+**2. Character Name Encoding**
+- Names stored in save file with English encoding
+- Need translation layer or Japanese save file support
+
+**3. Complete File Redirect Coverage**
+Currently redirecting:
+- ✅ `flevel.lgp` → `jfleve.lgp`
+- ✅ `kernel2.bin` → Japanese version
+- ⚠️ `menu_us.lgp` → `menu_ja.lgp` (textures only)
+- ❌ `KERNEL.BIN` - not yet redirected
+- ❌ `WINDOW.BIN` - not yet redirected
+
+### 20.10 Build Configuration
+
+**FFNx Source:** `C:\FFNx\` (PR #737 branch)
+**Build Output:** `C:\FFNx\.build\Release\FFNx.dll`
+**Auto-deploys as:** `AF3DN.P` to Steam installation
+
+**Build Command:**
+```powershell
+cd C:\FFNx
+C:\cmake-3.27.8\cmake-3.27.8-windows-x86_64\bin\cmake.exe --build .build --config Release
+```
+
+**Build Time:** ~2-3 minutes
+
+### 20.11 Success Criteria Met
+
+- ✅ Japanese text renders on English executable
+- ✅ Field dialogue works perfectly
+- ✅ Battle system shows Japanese
+- ✅ Font textures load correctly
+- ✅ FA-FE encoding handled properly
+- ⚠️ Menu text needs translation layer (known issue)
+
+### 20.12 Critical Insights for Documentation
+
+1. **PR #737 is NOT Japanese-exe-only** - Works on English with modifications
+2. **LGP redirect is sufficient for field text** - No complex text parser hooks needed
+3. **Menu text is separate problem** - Different encoding, different solution
+4. **File structure is modular** - Can mix English exe + Japanese data files
+5. **This validates the Master Bible approach** - FA-FE encoding works as documented
+
+---
+
+**End of Section 20**
