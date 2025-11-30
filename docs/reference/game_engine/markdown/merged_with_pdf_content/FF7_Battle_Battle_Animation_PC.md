@@ -6,930 +6,971 @@ Major section: 06_BATTLE_MODULE.md
 Merge decision: NO EXTRACTION PERFORMED
 Reason: Individual file contains comprehensive battle animation format documentation
 Analysis: Major section does not contain additional PC animation format details
-Status: COMPLETE - Original file copied as source of truth
+Status: COMPLETE - Restructured for clarity 2025-11-29 16:15 JST
+Restructure: Improved organization, fixed typos, enhanced readability
 -->
 
-# FF7/Battle/Battle Animation (PC) {#ff7battlebattle_animation_pc}
+# FF7 Battle Animation Format (PC)
 
-- [FF7/Battle/Battle Animation (PC)](#ff7battlebattle_animation_pc){#toc-ff7battlebattle_animation_pc}
- - [Battle Animation File Format](#battle_animation_file_format){#toc-battle_animation_file_format}
+- [FF7 Battle Animation Format (PC)](#ff7-battle-animation-format-pc)
+  - [Overview](#overview)
+  - [1. File Structure](#1-file-structure)
+  - [2. Data Structures](#2-data-structures)
+  - [3. Decoding Algorithms](#3-decoding-algorithms)
+  - [4. Implementation Guide](#4-implementation-guide)
+  - [5. Alternative Implementations](#5-alternative-implementations)
+  - [Appendix A: Quick Reference](#appendix-a-quick-reference)
+  - [Appendix B: Known Issues](#appendix-b-known-issues)
 
-## Battle Animation File Format {#battle_animation_file_format}
+## Overview
 
-File format discovered/decoded by me, L. Spiro.
-This file was written by me, L. Spiro, as can be seen by the proper grammar and perfect spelling.
+This document describes the Final Fantasy VII battle animation file format for PC, reverse-engineered by **L. Spiro**. Contributions by **Halkun** (wiki conversion) and **Borde** (additional notes).
 
-(Wiki-fied by Halkun)
-(Small additions by Borde)
+### What This Document Covers
 
-### Part I: Structures {#part_i_structures}
+- Binary file structure for battle animations
+- Data structures for storing skeletal animations
+- Compression algorithms for rotation data
+- Complete C++ implementation with assembly optimizations
+- Theoretical background on the compression scheme
 
-There are 4 basic structures we will use in decoding the file format.
-The header of animation data has been considered to be composed of 3 DWORD's, 3 WORD's, and one BYTE, however this is not how the header is really intended to be, despite being aligned correctly.
+### File Format Basics
 
-Battle animation files start with a DWORD which tells us how many animations are in the file. This number includes the special animations which are not actually animations at all. Although I have not yet decoded them, I suspect these are sets of keys for actual animation sets; keys that call scripted actions or tell the engine to print the damage numbers.
+Battle animation files contain skeletal animation data for character models. Each file stores:
+- Multiple animations for a single character
+- Per-frame bone rotations and positions
+- Compressed delta encoding for subsequent frames
+- Special animation markers for scripted events
 
-#### FF7FrameHeader
+---
 
-Cloud's battle animation file (rtda) has 94 (0x 5E) animations in it.
-After this number begins each animation.
-Each animation begins with a 12-byte header (3 DWORD's) we will call "FF7FrameHeader".
-To get from one animation to the next, start at offset 0x04 in the animation file and begin reading these headers. For each header, skip "FF7FrameHeader.dwChunkSize" bytes until you get to the index of the file you want to load. When skipping, remember to skip starting at the end of the "FF7FrameHeader" header.
-I mentioned a type of special animation data set that is in the header file.
-These data sets, when filled with the "FF7FrameHeader" header, will have a "dwChunkSize" less than eleven, we skip them by jumping over the next 8 bytes that follow.
+## 1. File Structure
 
-First, the two main headers in the animation file.
+### 1.1 Animation File Layout
 
-1\.
+Battle animation files begin with a **DWORD** indicating the total number of animations. This count includes both regular animations and special animation markers (non-animation data such as script keys or damage number triggers).
+
+**Example**: Cloud's battle animation file (`rtda`) contains 94 (0x5E) animations.
+
+To navigate between animations, start reading at offset `0x04` and parse each animation header sequentially.
+
+### 1.2 File Header Format
+
+Each animation begins with a 12-byte header followed by animation data.
+
+---
+
+## 2. Data Structures
+
+### 2.1 FF7FrameHeader
+
+**Purpose**: Main header for each animation in the file.
+
+**Structure** (12 bytes):
 
 ```c
-
-    typedef struct FF7FrameHeader {
-        DWORD       dwBones;        // Bones in the model + 1 (unless we're dealing with a weapon animation, in which case it's value is always 1). 0x00
-                                                    // This field is rather unreliable so better use the number of bones provided by the skeleton file.
-        DWORD       dwFrames;       // Frames in the animation. 0x04
-        DWORD       dwChunkSize;    // Size of the animation set.   0x08
-    } * PFF7FrameHeader;            // Size = 12 bytes.
-
+typedef struct FF7FrameHeader {
+    DWORD       dwBones;        // Bones in model + 1 (weapon animations always 1). Offset: 0x00
+                                // NOTE: Unreliable - use skeleton file bone count instead.
+    DWORD       dwFrames;       // Frame count in this animation. Offset: 0x04
+    DWORD       dwChunkSize;    // Size of animation data in bytes. Offset: 0x08
+} * PFF7FrameHeader;            // Total size: 12 bytes
 ```
 
-2.
+#### Special Animation Chunks
+
+When `dwChunkSize < 11`, this is a special (non-animation) data chunk. Skip it by advancing 8 bytes past the header.
+
+#### Navigation Example
+
+To skip to animation index `iTarget`:
 
 ```c
-
-    typedef struct FF7FrameMiniHeader {
-        //SHORT     sBones; // Bones in the animation.
-        SHORT       sFrames;// Apparently, frames in the animation (but sometimes sFrames > dwFrames)
-        SHORT       sSize;  // Size of the animation data.  0x02
-        BYTE        bKey;       // A key flag used for decoding.    0x04
-    } * PFF7FrameMiniHeader;    // Size = 5 bytes.
-
-```
-
-NOTE: sBones should provably be called sFrames since it seems to hold a secondary frames counter. Thus, it should be equal to dwFrames. Unfortunately, it usually isn't. In fact, It's hard to say which one should actually be trusted. Apparently dwFrames is a more conservative value, meaning there will always be at least that many frames in the animation. But there can be more of them. I can't help but wonder if this means the rest of the frames are dummied out information or they serve some sort of purpose. On the other hand, sFrames is sometimes higher than the actual number of frames on the animation chunck.
-
-Anyway, the actual number of frames can be computed by parsing the whole animation chunck.
-
-It's also worth mentioning that there is at least one animation (15th from RSAA, the playable frog) which physically lacks the sFrames field. Instead, sSize is at 0x00 and bKey at 0x02. This animation is more than likely damaged, because FF7 doesn't seems to be able to handle it.
-
-#### FF7FrameMiniHeader
-
-Most of these members are straight-forward, however there is a very special and VERY important member in the "FF7FrameMiniHeader" structure called "bKey".
-This is used for every rotation-decoding scheme (but one). It determines, essentially, the precision of the rotations and the deltas that follow in successive frames.
-The value of "bKey" can only be 0, 2, or 4; the equation "(12 - bKey)" is used to determine the length of each raw (uncompressed) rotation.
-After decompression, every rotation must be 12 bits, giving it a range from 0 to 4095.
-But if "bKey" is 4, for example, then that means uncompressed rotations are stored as 8 bits, which gives them a range from 0 to 255. How is this fixed? After the 8 bits are read, they are then shifted left (up) by "bKey". This will place them at 12 bits, but with decreased accuracy.
-This loss in accuracy is acceptable since rotations work as deltas and usually only change by a small amount.
-Most large rotation deltas are things that are spinning, such as the blades on Aero Combatant. These cases are always a nice round number that can be handled with lower precision (in the case of Aero Combatant, it is 90 degrees even).
-
-#### FF7ShortVec
-
-Now the code to skip to any animation, by index, where "iTarget" is the index. This code assumes you have already opened the animation file (hFile) and you have skipped pasted the first 4 bytes.
-
-```c
-
-    FF7FrameHeader  fhHeader;
-    DWORD           dwBytesRead;
-    for ( int I = 0; I < iTarget; I++ ) {
-        if ( !ReadFile( hFile,
-            &fhHeader, sizeof( fhHeader ),
-            &dwBytesRead, NULL ) ) {
-
-        CloseHandle( hFile );
-        return false;
-        }
-        if ( fhHeader.dwChunkSize < 11 ) {  // If this is a special
-                            //  chunk, skip it (it
-                            //  is counted as part
-                            //  of the total in the
-                            //  file).
-            if ( SetFilePointer( hFile, 8, NULL, FILE_CURRENT ) ==
-            INVALID_SET_FILE_POINTER ) {
-                CloseHandle( hFile );
-                return false;
-            }
-            continue;           // Go on to the next
-                            //  animation.
-        }
-        // Skip this animation set, whose size is determined by
-        //  fhHeader.dwChunkSize.
-        if ( SetFilePointer( hFile, fhHeader.dwChunkSize, NULL,
-        FILE_CURRENT ) == INVALID_SET_FILE_POINTER ) {
-            CloseHandle( hFile );
-            return false;
-        }
-    }
-    // Once we come to this point, we are at the very first byte of the
-    //  animation we want to load.  Let's store it into a BYTE array.
+FF7FrameHeader  fhHeader;
+DWORD           dwBytesRead;
+for ( int I = 0; I < iTarget; I++ ) {
     if ( !ReadFile( hFile,
         &fhHeader, sizeof( fhHeader ),
         &dwBytesRead, NULL ) ) {
 
+    CloseHandle( hFile );
+    return false;
+    }
+    if ( fhHeader.dwChunkSize < 11 ) {  // Special chunk
+        if ( SetFilePointer( hFile, 8, NULL, FILE_CURRENT ) ==
+        INVALID_SET_FILE_POINTER ) {
+            CloseHandle( hFile );
+            return false;
+        }
+        continue;
+    }
+    // Skip this animation (size = dwChunkSize)
+    if ( SetFilePointer( hFile, fhHeader.dwChunkSize, NULL,
+    FILE_CURRENT ) == INVALID_SET_FILE_POINTER ) {
         CloseHandle( hFile );
         return false;
     }
-    BYTE * pbBuffer = new BYTE[fhHeader.dwChunkSize];
-    // Now pbBuffer holds the actual animation data, including the 5-byte
-    //  "FF7FrameMiniHeader" header.
+}
+// Now at the target animation
+if ( !ReadFile( hFile,
+    &fhHeader, sizeof( fhHeader ),
+    &dwBytesRead, NULL ) ) {
 
+    CloseHandle( hFile );
+    return false;
+}
+BYTE * pbBuffer = new BYTE[fhHeader.dwChunkSize];
+// pbBuffer now holds animation data including FF7FrameMiniHeader
 ```
 
-We now have the animation we want loaded into a BYTE array (remember to delete it later).
+### 2.2 FF7FrameMiniHeader
 
-#### FF7FrameBuffer
+**Purpose**: Per-animation metadata embedded at the start of each animation's data chunk.
 
-Now let's look at the other structures we will use.
-
-3\.
+**Structure** (5 bytes):
 
 ```c
-
-    typedef struct FF7ShortVec {
-        SHORT   sX, sY, sZ;     // Signed short versions.   0x00
-        INT iX, iY, iZ;     // Integer representation.  0x06
-        FLOAT   fX, fY, fZ;     // Float version after math.    0x12
-    } * PFF7ShortRot;           // Size = 30 bytes.
-
+typedef struct FF7FrameMiniHeader {
+    //SHORT     sBones; // Originally thought to be bone count
+    SHORT       sFrames;// Apparent frame count (may exceed dwFrames). Offset: 0x00
+    SHORT       sSize;  // Size of animation data in bytes. Offset: 0x02
+    BYTE        bKey;   // Precision key for rotation encoding (0, 2, or 4). Offset: 0x04
+} * PFF7FrameMiniHeader;    // Total size: 5 bytes
 ```
 
-Each rotation goes through 3 forms. Firstly, everything is stored as 2-byte SHORT's. These SHORT's are stored from 0 to 4096, where 0 = 0 degrees and 4096 = 360 degrees. This is the equation to convert one of these SHORT's into degrees: (SHORT / 4096 * 360). Each frame is based off the previous frame, using the SHORT value as its basis.
+#### Field Discrepancy Notes
 
-Each SHORT is converted to an INT, which is the exact same as the SHORT version, except always positive.
+**Field Naming Issue**: The field named `sBones` should probably be `sFrames`, as it appears to hold a frame counter.
 
-Finally, the FLOAT gets filled with the final value, using the INT version as its base.
-So, the sequence is:
+**Reliability**: `sFrames` and `dwFrames` rarely match.
+- `dwFrames` is conservative—guarantees at least that many frames exist
+- `sFrames` sometimes exceeds actual frame count
+- **Determine actual frame count by parsing the entire chunk**
 
-First frame…
+**Known Corruption**: Animation 15 in RSAA (playable frog) lacks the `sFrames` field entirely:
+- `sSize` appears at offset 0x00
+- `bKey` appears at offset 0x02
+- FF7 cannot handle this animation (likely corrupted)
 
-- Read X bits and store as a signed SHORT.
-- Convert the SHORT to the INT field, adding 0x1000 if negative.
-- Convert to FLOAT using (INT / 4096 * 360). Apply this FLOAT to your model.
+### 2.3 bKey: The Precision Field
 
-Next frame…
+**Purpose**: Controls rotation data bit depth and compression level.
 
-- Read X bits, and add them to the SHORT value from last frame.
-- Convert the SHORT to the INT field, adding 0x1000 if negative.
-- Convert to FLOAT using (INT / 4096 * 360). Apply this FLOAT to your model.
+#### Valid Values
 
-Repeat…
+| bKey Value | Uncompressed Bits | Bit Range | Precision Loss |
+|------------|-------------------|-----------|----------------|
+| 0          | 12                | 0-4095    | None           |
+| 2          | 10                | 0-1023    | Low            |
+| 4          | 8                 | 0-255     | Moderate       |
 
-This structure is for one bone rotation.
-To load an entire frame's work of bones, we need this structure: 4.
+#### How It Works
+
+1. **Storage**: Rotations stored using `(12 - bKey)` bits
+2. **Decoding**: Shift left by `bKey` to restore 12-bit range
+   - Example: 8-bit value `0xFF` (255) becomes `0xFF0` (4080) after `<< 4`
+3. **Trade-off**: Lower precision reduces file size; acceptable for delta-encoded rotations
+
+**Why Lower Precision Works**: Most skeletal animations change by small increments between frames. Large rotations (e.g., spinning blades on Aero Combatant) are round numbers (90°, 180°) that lose no meaningful precision even at 8-bit depth.
+
+### 2.4 FF7ShortVec (Rotation Storage)
+
+**Purpose**: Stores one bone's rotation in three numeric forms.
+
+**Structure** (30 bytes):
 
 ```c
-
-    typedef struct FF7FrameBuffer {
-        DWORD           dwBones;
-        FF7ShortVec     svPosOffset;
-        FF7ShortVec     *psvRots;
-
-        FF7FrameBuffer() {
-            dwBones = 0;
-            psvRots = NULL;
-        }
-        ~FF7FrameBuffer() {
-            dwBones = 0;
-            delete [] psvRots;
-            psvRots = NULL;
-        }
-
-        VOID    SetBones( DWORD dwTotal ) {
-            // Delete the old.
-            dwBones = 0;
-            delete [] psvRots;
-
-            // Create the new.
-            psvRots = new FF7ShortVec[dwTotal];
-            if ( psvRots != NULL ) { dwBones = dwTotal; }
-        }
-    } * PFF7FrameBuffer;
-
+typedef struct FF7ShortVec {
+    SHORT   sX, sY, sZ;     // Signed short versions. Offset: 0x00
+    INT iX, iY, iZ;     // Integer representation (always positive). Offset: 0x06
+    FLOAT   fX, fY, fZ;     // Final float degrees. Offset: 0x12
+} * PFF7ShortRot;           // Total size: 30 bytes
 ```
 
-This structure will allocate enough memory for one frame of rotations. Simply call "FF7FrameBuffer.SetBones" with the number of bones in your animation.
+#### Three-Form Conversion
 
-### Part II: Functions and Format {#part_ii_functions_and_format}
+Rotations are processed through three representations:
 
-First, we need a way to read bits from the BYTE array we have stored.
-This is a basic bit-reading function. It reads "dwTotalBits" from "pbBuffer" starting at the "dwStartBit"'th bit.
+1. **SHORT** (signed 16-bit): Raw value from file, range 0-4095 (0° to 360°)
+2. **INT** (unsigned 32-bit): Absolute value with wrapping
+   - If `SHORT < 0`, add `0x1000` (4096)
+3. **FLOAT**: Final degrees using formula: `(INT / 4096) * 360`
 
-#### GetBitsFixed
+#### Per-Frame Processing Sequence
 
-1\.
+**First Frame**:
+1. Read X bits (determined by `bKey`) and store as signed SHORT
+2. Convert SHORT to INT (add 0x1000 if negative)
+3. Convert INT to FLOAT: `(INT / 4096 * 360)`
+4. Apply FLOAT rotation to model
+
+**Subsequent Frames**:
+1. Read delta value, add to previous frame's SHORT
+2. Convert updated SHORT to INT (add 0x1000 if negative)
+3. Convert INT to FLOAT: `(INT / 4096 * 360)`
+4. Apply FLOAT rotation to model
+
+**Root Rotation**: The first rotation is always `(0, 0, 0)` and is not part of the skeleton network. Some animations store non-zero values here for dynamic targeting during battle.
+
+### 2.5 FF7FrameBuffer (Frame Management)
+
+**Purpose**: Allocates memory for one frame's worth of bone rotations.
+
+**Structure**:
 
 ```c
+typedef struct FF7FrameBuffer {
+    DWORD           dwBones;
+    FF7ShortVec     svPosOffset;
+    FF7ShortVec     *psvRots;
 
-    INT GetBitsFixed( BYTE * pbBuffer, DWORD &dwStartBit,
-    DWORD dwTotalBits ) {
-        INT iReturn = 0;
-
-        for ( DWORD I = 0; I < dwTotalBits; I++ ) {
-            iReturn <<= 1;
-
-            __asm mov eax, dwStartBit
-            __asm mov eax, [eax]
-            __asm cdq
-            __asm and edx, 7
-            __asm add eax, edx
-            __asm sar eax, 3
-            __asm mov ecx, pbBuffer
-            __asm xor edx, edx
-            __asm mov dl, byte ptr ds:[ecx+eax]
-            __asm mov eax, dwStartBit
-            __asm mov ecx, [eax]
-            __asm and ecx, 7
-            __asm mov eax, 7
-            __asm sub eax, ecx
-            __asm mov esi, 1
-            __asm mov ecx, eax
-            __asm shl esi, cl
-            __asm and edx, esi
-            __asm test edx, edx
-            __asm je INCBIT
-            iReturn++;
-    INCBIT: dwStartBit++;
-        }
-
-        // Force the sign bit to extend across the 32-bit boundary.
-        iReturn <<= (0x20 - dwTotalBits);
-        iReturn >>= (0x20 - dwTotalBits);
-        return iReturn;
+    FF7FrameBuffer() {
+        dwBones = 0;
+        psvRots = NULL;
+    }
+    ~FF7FrameBuffer() {
+        dwBones = 0;
+        delete [] psvRots;
+        psvRots = NULL;
     }
 
+    VOID    SetBones( DWORD dwTotal ) {
+        // Delete the old
+        dwBones = 0;
+        delete [] psvRots;
+
+        // Create the new
+        psvRots = new FF7ShortVec[dwTotal];
+        if ( psvRots != NULL ) { dwBones = dwTotal; }
+    }
+} * PFF7FrameBuffer;
 ```
 
-Now that we can read the bits in the buffer we have made, it's time to know what we're doing!
+**Usage**: Call `FF7FrameBuffer.SetBones(boneCount)` with your animation's bone count to allocate rotation storage.
 
-##### A.
+---
 
-The animation data begins with one full frame that is uncompressed, but stored in one of 3 ways. Every frame after that is compressed, but compressed in one of three ways; one way can be decoded using the same method as on the first frame, which is why sometimes the second, third, and even fourth frames can be decoded using the same method as was used on the first frame.
+## 3. Decoding Algorithms
 
-` First Frame:`
+### 3.1 Bit Stream Reading
 
-Remember that we stored our animation buffer with a 5-byte "FF7FrameMiniHeader" at the beginning of it? We need this header now!
+#### GetBitsFixed Function
 
-```c
+**Purpose**: Reads arbitrary bit sequences from a byte buffer.
 
-    PFF7FrameMiniHeader pfmhMiniHeader = (PFF7FrameMiniHeader)pbBuffer;
+**Parameters**:
+- `pbBuffer`: Byte array containing bit stream
+- `dwStartBit`: Bit offset to start reading (modified in place)
+- `dwTotalBits`: Number of bits to read
 
-```
+**Returns**: Signed integer with sign extension.
 
-After this cast, "pfmhMiniHeader-\>bKey" will contain a number, either 0, 2, or 4.
-Each rotation is stored in (12 - "pfmhMiniHeader-\>bKey") bits. This mean either 12, 10, or 8, respectively.
-This is important to know.
-But first, there is offset data. Each offset is 16 bits (a signed SHORT).
-In the first frame of Cloud's first animation (rtda), these bytes are 00 00 FE 2E 00 00.
-16 bits × 3 = 48 bits, or 6 bytes.
-To get these bits, we first need to make a pointer point to the correct location. "pbBuffer" points 5 bytes before this data, so let's make a pointer that points to this data directly.
+**Implementation**:
 
 ```c
+INT GetBitsFixed( BYTE * pbBuffer, DWORD &dwStartBit,
+DWORD dwTotalBits ) {
+    INT iReturn = 0;
 
-    BYTE * pbAnimBuffer = &pbBuffer[5];
+    for ( DWORD I = 0; I < dwTotalBits; I++ ) {
+        iReturn <<= 1;
 
-```
-
-When we use "GetBitsFixed()" to get the bits.
-
-```c
-
-    DWORD dwBitStart = 0;   // The bits at which to begin reading in the
-    //  stream.
-    SHORT sX = GetBitsFixed( pbAnimBuffer, dwBitStart, 16 );
-    SHORT sY = GetBitsFixed( pbAnimBuffer, dwBitStart, 16 );
-    SHORT sZ = GetBitsFixed( pbAnimBuffer, dwBitStart, 16 );
-
-```
-
-After doing this, we have each of the three offsets, 0, -466, and 0.
-The Y (-466) is always stored as its inverse, but for now we don't worry about that.
-
-The first frame is uncompressed, but it could be 12, 10, or 8 bits per rotation.
-How do we know? "pfmhMiniHeader-\>bKey"!
-
-For each bone, there are 3 rotations. So, for each bone, we do this:
-
-```c
-
-    SHORT sRotX = GetBitsFixed( pbAnimBuffer, dwBitStart,
-    12 - pfmhMiniHeader->bKey );
-    SHORT sRotY = GetBitsFixed( pbAnimBuffer, dwBitStart,
-    12 - pfmhMiniHeader->bKey );
-    SHORT sRotZ = GetBitsFixed( pbAnimBuffer, dwBitStart,
-    12 - pfmhMiniHeader->bKey );
-    // We have each rotation, but for the equation to work, the range
-    //  must always be from 0 to 4095.  If we got 8 bytes, for example,
-    //  the range would only be from 0 to 255, so here we need to fix
-    //  this.
-    sRotX <<= pfmhMiniHeader->bKey;
-    sRotY <<= pfmhMiniHeader->bKey;
-    sRotZ <<= pfmhMiniHeader->bKey;
-
-```
-
-The first rotation is always 0, 0, 0. This is the root rotation and is not actually counted as part of the bone network of the character.
-
-#### GetDynamicFrameOffsetBits
-
-The first frame is easy.
-Remember that all frames after are stored as relative offsets from the frame before it.
-The offsets are relative to the SHORT values of the previous frame rather than the FLOAT or INT values.
-
-Each frame begins with the three position offset values, but in the second frame and after, they can be either 7 or 16 bits.
-To determine if which they are, we first get one bit. If that bit is 0, then the following 7 bits are the actual value of the offset (signed).
-If it is 1, then the next 16 bits are the value of the offset. In total, the offsets will be either 8 or 17 bits.
-
-Now the code to perform this operation.
-
-2\.
-
-```c
-
-    SHORT GetDynamicFrameOffsetBits( BYTE * pBuffer, DWORD &dwBitStart ) {
-    DWORD dwFirstByte, dwConsumedBits, dwBitsRemainingToNextByte, dwTemp;
-        SHORT sReturn;
-        __asm {
-            mov eax, dwBitStart
-            mov eax, [eax]
-            cdq
-            and edx, 7
-            add eax, edx
-            sar eax, 3
-            mov dwFirstByte, eax
-            mov ecx, dwBitStart
-            mov edx, [ecx]
-            and edx, 7
-            mov dwConsumedBits, edx
-            mov eax, 7
-            sub eax, dwConsumedBits
-            mov dwBitsRemainingToNextByte, eax
-            mov ecx, pBuffer
-            add ecx, dwFirstByte        // Go to the first byte that
-                            // has the bit where we
-                            // want to begin.
-            xor edx, edx
-            mov dl, byte ptr ds:[ecx]
-            shl edx, 8
-            mov eax, pBuffer
-            add eax, dwFirstByte
-            xor ecx, ecx
-            mov cl, byte ptr ds:[eax+1]
-            or edx, ecx
-            mov dwTemp, edx
-            mov ecx, dwBitsRemainingToNextByte
-            add ecx, 8
-            mov edx, 1
-            shl edx, cl
-            mov eax, dwTemp
-            and eax, edx
-            test eax, eax
-            jnz SeventeenBits
-
-    EightBits :
-            mov ecx, dwConsumedBits
-            add ecx, 1
-            mov edx, dwTemp
-            shl edx, cl
-            movsx eax, dx
-            sar eax, 9
-            mov sReturn, ax
-            mov ecx, dwBitStart //
-            mov edx, [ecx]      //
-            add edx, 8      //
-            mov eax, dwBitStart //
-            mov [eax], edx      // Increase dwBitStart by 0x8 (8).
-            jmp End
-
-    SeventeenBits :
-            mov ecx, dwTemp
-            shl ecx, 8
-            mov edx, pBuffer
-            add edx, dwFirstByte
-            xor eax, eax
-            mov al, byte ptr ds:[edx+2]
-            or ecx, eax
-            mov dwTemp, ecx
-            mov ecx, dwConsumedBits
-            add ecx, 1
-            mov edx, dwTemp
-            shl edx, cl
-            shr edx, 8
-            mov sReturn, dx
-            mov eax, dwBitStart //
-            mov ecx, [eax]      //
-            add ecx, 0x11       //
-            mov edx, dwBitStart //
-            mov [edx], ecx      // Increase dwBitStart by 0x11
-                        //  (17).
-
-    End :
-        }
-        return sReturn;
+        __asm mov eax, dwStartBit
+        __asm mov eax, [eax]
+        __asm cdq
+        __asm and edx, 7
+        __asm add eax, edx
+        __asm sar eax, 3
+        __asm mov ecx, pbBuffer
+        __asm xor edx, edx
+        __asm mov dl, byte ptr ds:[ecx+eax]
+        __asm mov eax, dwStartBit
+        __asm mov ecx, [eax]
+        __asm and ecx, 7
+        __asm mov eax, 7
+        __asm sub eax, ecx
+        __asm mov esi, 1
+        __asm mov ecx, eax
+        __asm shl esi, cl
+        __asm and edx, esi
+        __asm test edx, edx
+        __asm je INCBIT
+        iReturn++;
+INCBIT: dwStartBit++;
     }
 
+    // Force sign bit to extend across 32-bit boundary
+    iReturn <<= (0x20 - dwTotalBits);
+    iReturn >>= (0x20 - dwTotalBits);
+    return iReturn;
+}
 ```
 
-After the first frame, we know that the positional offsets immediately follow.
-So to get the positional deltas for the next frame, we would do this:
+### 3.2 First Frame (Uncompressed)
+
+The first frame stores absolute values with no delta compression.
+
+#### 3.2.1 Position Offsets
+
+**Format**: Always 16 bits per axis (X, Y, Z), stored as signed SHORTs.
+
+**Example** (Cloud's first animation, `rtda`):
+- Bytes: `00 00 FE 2E 00 00`
+- Values: `X=0`, `Y=-466`, `Z=0`
+- Total: 16 bits × 3 = 48 bits = 6 bytes
+
+**Note**: Y-axis is stored inverted but can be ignored during initial parsing.
+
+**Code**:
 
 ```c
+PFF7FrameMiniHeader pfmhMiniHeader = (PFF7FrameMiniHeader)pbBuffer;
+BYTE * pbAnimBuffer = &pbBuffer[5];  // Skip 5-byte miniheader
 
-    SHORT sDeltaX = GetDynamicFrameOffsetBits( pbAnimBuffer, dwBitStart );
-    SHORT sDeltaY = GetDynamicFrameOffsetBits( pbAnimBuffer, dwBitStart );
-    SHORT sDeltaZ = GetDynamicFrameOffsetBits( pbAnimBuffer, dwBitStart );
-
+DWORD dwBitStart = 0;
+SHORT sX = GetBitsFixed( pbAnimBuffer, dwBitStart, 16 );
+SHORT sY = GetBitsFixed( pbAnimBuffer, dwBitStart, 16 );
+SHORT sZ = GetBitsFixed( pbAnimBuffer, dwBitStart, 16 );
+// Result: sX=0, sY=-466, sZ=0
 ```
 
-Now we have the change from the previous frame. In our "FF7ShortVec" structure, these are the SHORT values. To get the position of this frame, we add these offsets to the last frame's position.
-If "I" is this frame and "I-1" is the last frame, we could do something like this:
+#### 3.2.2 Rotation Data
+
+**Bit Count**: Determined by `bKey` using formula `(12 - bKey)`
+- If `bKey = 0`: 12 bits per rotation
+- If `bKey = 2`: 10 bits per rotation
+- If `bKey = 4`: 8 bits per rotation
+
+**Normalization**: Shift left by `bKey` to restore 12-bit range.
+
+**Code** (for each bone's 3 rotations):
 
 ```c
+SHORT sRotX = GetBitsFixed( pbAnimBuffer, dwBitStart,
+12 - pfmhMiniHeader->bKey );
+SHORT sRotY = GetBitsFixed( pbAnimBuffer, dwBitStart,
+12 - pfmhMiniHeader->bKey );
+SHORT sRotZ = GetBitsFixed( pbAnimBuffer, dwBitStart,
+12 - pfmhMiniHeader->bKey );
 
-    FF7FrameBuffer[I].svPosOffset.sX = FF7FrameBuffer[I-1].svPosOffset.sX + sX;
-    FF7FrameBuffer[I].svPosOffset.sY = FF7FrameBuffer[I-1].svPosOffset.sY + sY;
-    FF7FrameBuffer[I].svPosOffset.sZ = FF7FrameBuffer[I-1].svPosOffset.sZ + sZ;
-
+// Normalize to 12-bit range
+sRotX <<= pfmhMiniHeader->bKey;
+sRotY <<= pfmhMiniHeader->bKey;
+sRotZ <<= pfmhMiniHeader->bKey;
 ```
 
-#### GetEncryptedRotationBits
+### 3.3 Subsequent Frames (Compressed Delta Encoding)
 
-Now all that is left is to decode the rotations.
-Rotations change size in multiple ways.
-There is no single simple way to express them.
+Frames after the first store delta values (changes from previous frame).
 
-They are, however, always at least one bit long.
-The first bit is a flag. If 0, the rotational change is 0, and that is the end of that rotation.
-If it is not 0, then we must get the next 3 bits.
-The next 3 bits can tell us to do one of three things.
-If the resulting 3-bit signed value is 0, then the rotation delta is (-1 << pfmhMiniHeader-\>bKey). This is the smallest possible decrement for the given precision (remember that precision is based off "pfmhMiniHeader-\>bKey".
-If the 3-bit value is 7, then we treat the rotation the same way as we do in the first frame, where we read (12-pfmhMiniHeader-\>bKey) bits, then shift left by "pfmhMiniHeader-\>bKey".
+#### 3.3.1 Position Deltas
 
-The complicated cases are 1 through 6.
-If the 3-bit value is from 1 to 6, then this indicates the number of bits in the rotation delta.
-For our example, let's assume the 3-bit value was 4.
-This means we need to read the next 4 bits from the stream. These 4 bits will be the animation delta, but we actually have to handle them before we can call it final.
-The first bit of this new data is a sign bit which determines if the value is below 0.
-If it is below zero, we must subtract from that number (1 << ([Number of Bits] - 1)).
-So, if the 3-bit value was 4, and we read 4 bits from the stream, and the resulting value was negative, we would subtract from that value (1 << 3), or 8.
-If the 4-bit value is positive, we add (1 << ([Number of Bits] - 1)) to it.
-After we handle the positive and negative cases, we have to adjust for our precision again.
-So, we shift left the resulting value by "pfmhMiniHeader-\>bKey".
-This is all shown in the code below.
+**Format**: Variable-length encoding (8 or 17 bits)
 
-3\.
+**Algorithm**:
+1. Read 1 flag bit
+   - If `0`: Next 7 bits are signed delta (total 8 bits)
+   - If `1`: Next 16 bits are signed delta (total 17 bits)
+
+**GetDynamicFrameOffsetBits Function**:
 
 ```c
+SHORT GetDynamicFrameOffsetBits( BYTE * pBuffer, DWORD &dwBitStart ) {
+DWORD dwFirstByte, dwConsumedBits, dwBitsRemainingToNextByte, dwTemp;
+    SHORT sReturn;
+    __asm {
+        mov eax, dwBitStart
+        mov eax, [eax]
+        cdq
+        and edx, 7
+        add eax, edx
+        sar eax, 3
+        mov dwFirstByte, eax
+        mov ecx, dwBitStart
+        mov edx, [ecx]
+        and edx, 7
+        mov dwConsumedBits, edx
+        mov eax, 7
+        sub eax, dwConsumedBits
+        mov dwBitsRemainingToNextByte, eax
+        mov ecx, pBuffer
+        add ecx, dwFirstByte
+        xor edx, edx
+        mov dl, byte ptr ds:[ecx]
+        shl edx, 8
+        mov eax, pBuffer
+        add eax, dwFirstByte
+        xor ecx, ecx
+        mov cl, byte ptr ds:[eax+1]
+        or edx, ecx
+        mov dwTemp, edx
+        mov ecx, dwBitsRemainingToNextByte
+        add ecx, 8
+        mov edx, 1
+        shl edx, cl
+        mov eax, dwTemp
+        and eax, edx
+        test eax, eax
+        jnz SeventeenBits
 
-    SHORT GetEncryptedRotationBits( BYTE * pBuffer, DWORD &dwBitStart,
-    INT iKeyBits ) {
-        DWORD dwNumBits, dwType;
-        INT iTemp;
-        SHORT sReturn;
-        // Check the first bit.
-        INT iBits = GetBitsFixed( pBuffer, dwBitStart, 1 );
-        __asm mov eax, iBits    // If the first bit is 0, return 0
-                    // and continue. It is not necessary
-                    // to mov iBits into EAX, but I do it
-                    // anyway.
-        __asm test eax, eax
-        __asm jnz SecondTest
-        __asm jmp ReturnZero    // Return 0
+EightBits :
+        mov ecx, dwConsumedBits
+        add ecx, 1
+        mov edx, dwTemp
+        shl edx, cl
+        movsx eax, dx
+        sar eax, 9
+        mov sReturn, ax
+        mov ecx, dwBitStart
+        mov edx, [ecx]
+        add edx, 8
+        mov eax, dwBitStart
+        mov [eax], edx      // Increase dwBitStart by 8
+        jmp End
 
-    SecondTest :
-        // Otherwise continue by getting the next 3 bits.
-        iBits = GetBitsFixed( pBuffer, dwBitStart, 3 );
-        __asm mov eax, iBits
-        __asm and eax, 7
-        __asm mov dwNumBits, eax
-        __asm mov ecx, dwNumBits
-        __asm mov dwType, ecx   // dwType = ecx = dwNumBits = eax =
-                    //  (iBits & 7).
-                    //  When we get to the case, all of
-                    //  these values are the same.
-        __asm cmp dwType, 7
-        __asm ja ReturnZero // Is dwType above 7?  If so, return 0.
-                    //  This can never actually happen.
+SeventeenBits :
+        mov ecx, dwTemp
+        shl ecx, 8
+        mov edx, pBuffer
+        add edx, dwFirstByte
+        xor eax, eax
+        mov al, byte ptr ds:[edx+2]
+        or ecx, eax
+        mov dwTemp, ecx
+        mov ecx, dwConsumedBits
+        add ecx, 1
+        mov edx, dwTemp
+        shl edx, cl
+        shr edx, 8
+        mov sReturn, dx
+        mov eax, dwBitStart
+        mov ecx, [eax]
+        add ecx, 0x11
+        mov edx, dwBitStart
+        mov [edx], ecx      // Increase dwBitStart by 17
 
-        // Otherwise, use it in a switch case.
-        switch ( dwType ) {
-            case 0 : {
-                __asm or eax, 0xFFFFFFFF    // After this, EAX will
-                                // always be -1.
-                __asm mov ecx, iKeyBits
-                __asm shl eax, cl       // Shift left by
-                                // precision.
-                                // (-1 << iKeyBits)
-                __asm mov sReturn, ax       // Return that number.
-                __asm jmp End
-            }
-            case 1 : {}
-            case 2 : {}
-            case 3 : {}
-            case 4 : {}
-            case 5 : {}
-            case 6 : {
-                // Get a number of bits equal to the case switch (1,
-                // 2, 3, 4, 5, or 6).
-                iTemp = GetBitsFixed( pBuffer, dwBitStart,
-                    dwNumBits );
-                __asm mov eax, iTemp
-                __asm cmp iTemp, 0
-                __asm jl IfLessThanZero
-                // If greater than or equal to 0…
-                __asm mov ecx, dwNumBits    // dwNumBits = (iBits &
-                                // 7) from before.
-                __asm sub ecx, 1        // dwNumBits - 1.
-                __asm mov eax, 1
-                __asm shl eax, cl       // (1 << (dwNumBits "“
-                                // 1)).
-                __asm mov ecx, iTemp
-                __asm add ecx, eax      // iTemp += (1 <<
-                                // (dwNumBits - 1)).
-                __asm mov iTemp, ecx
-                __asm jmp AfterTests
-                // If less than 0…
-    IfLessThanZero :
-                __asm mov ecx, dwNumBits    // dwNumBits = (iBits &
-                                // 7) from before.
-                __asm sub ecx, 1        // Decrease it by 1.
-                __asm mov edx, 1
-                __asm shl edx, cl       // Shift "1" left by
-                                // (dwNumBits - 1).
-                __asm mov eax, iTemp        // iTemp still has the
-                                // bits we read
-                                // from before.
-                __asm sub eax, edx      // iTemp - (1 <<
-                                // (dwNumBits - 1))
-                __asm mov iTemp, eax
+End :
+    }
+    return sReturn;
+}
+```
 
-                // Now, whatever we set on iTemp, we need to shift it
-                // up by the precision value.
-    AfterTests :
-                __asm mov eax, iTemp
-                __asm mov ecx, iKeyBits
-                __asm shl eax, cl           // iTemp <<= iKeyBits
-                __asm mov sReturn, ax
-                __asm jmp End
-            }
+**Usage**:
 
-            case 7 : {
-                // Uncompressed bits.  Use standard decoding.
-                iTemp = GetBitsFixed( pBuffer, dwBitStart,
-                    12 - iKeyBits );
-                __asm mov ecx, iKeyBits
-                __asm shl eax, cl           // iTemp <<= iKeyBits.
-                __asm mov sReturn, ax
-                __asm jmp End
-            }
+```c
+SHORT sDeltaX = GetDynamicFrameOffsetBits( pbAnimBuffer, dwBitStart );
+SHORT sDeltaY = GetDynamicFrameOffsetBits( pbAnimBuffer, dwBitStart );
+SHORT sDeltaZ = GetDynamicFrameOffsetBits( pbAnimBuffer, dwBitStart );
 
+// Add deltas to previous frame
+FF7FrameBuffer[I].svPosOffset.sX = FF7FrameBuffer[I-1].svPosOffset.sX + sDeltaX;
+FF7FrameBuffer[I].svPosOffset.sY = FF7FrameBuffer[I-1].svPosOffset.sY + sDeltaY;
+FF7FrameBuffer[I].svPosOffset.sZ = FF7FrameBuffer[I-1].svPosOffset.sZ + sDeltaZ;
+```
+
+#### 3.3.2 Rotation Deltas
+
+**Format**: Complex variable-length encoding optimized for small deltas.
+
+**Algorithm Overview**:
+1. Read 1 flag bit:
+   - If `0`: Delta is zero, done
+   - If `1`: Continue to step 2
+2. Read 3-bit type field (values 0-7)
+3. Decode based on type:
+   - **Type 0**: Minimum decrement `(-1 << bKey)`
+   - **Types 1-6**: Read N bits, apply signed magnitude transform
+   - **Type 7**: Uncompressed value `(12 - bKey)` bits
+
+**Signed Magnitude Transform** (Types 1-6):
+
+If the N-bit value is negative:
+- Subtract `(1 << (N - 1))`
+
+If positive:
+- Add `(1 << (N - 1))`
+
+Finally, shift left by `bKey` to adjust for precision.
+
+**Example** (Type 4, meaning 4 bits):
+- Read 4-bit value (e.g., binary `1011` = -5 in signed form)
+- Since negative: subtract `(1 << 3)` = 8 → `-5 - 8 = -13`
+- Shift left by `bKey` (e.g., if `bKey=2`): `-13 << 2 = -52`
+
+**GetEncryptedRotationBits Function**:
+
+```c
+SHORT GetEncryptedRotationBits( BYTE * pBuffer, DWORD &dwBitStart,
+INT iKeyBits ) {
+    DWORD dwNumBits, dwType;
+    INT iTemp;
+    SHORT sReturn;
+    // Check the first bit
+    INT iBits = GetBitsFixed( pBuffer, dwBitStart, 1 );
+    __asm mov eax, iBits
+    __asm test eax, eax
+    __asm jnz SecondTest
+    __asm jmp ReturnZero    // Return 0
+
+SecondTest :
+    // Get next 3 bits
+    iBits = GetBitsFixed( pBuffer, dwBitStart, 3 );
+    __asm mov eax, iBits
+    __asm and eax, 7
+    __asm mov dwNumBits, eax
+    __asm mov ecx, dwNumBits
+    __asm mov dwType, ecx
+    __asm cmp dwType, 7
+    __asm ja ReturnZero
+
+    // Switch on type
+    switch ( dwType ) {
+        case 0 : {
+            __asm or eax, 0xFFFFFFFF    // EAX = -1
+            __asm mov ecx, iKeyBits
+            __asm shl eax, cl           // (-1 << iKeyBits)
+            __asm mov sReturn, ax
+            __asm jmp End
+        }
+        case 1 : {}
+        case 2 : {}
+        case 3 : {}
+        case 4 : {}
+        case 5 : {}
+        case 6 : {
+            // Read N bits
+            iTemp = GetBitsFixed( pBuffer, dwBitStart,
+                dwNumBits );
+            __asm mov eax, iTemp
+            __asm cmp iTemp, 0
+            __asm jl IfLessThanZero
+            // If >= 0: add (1 << (dwNumBits - 1))
+            __asm mov ecx, dwNumBits
+            __asm sub ecx, 1
+            __asm mov eax, 1
+            __asm shl eax, cl
+            __asm mov ecx, iTemp
+            __asm add ecx, eax
+            __asm mov iTemp, ecx
+            __asm jmp AfterTests
+IfLessThanZero :
+            // If < 0: subtract (1 << (dwNumBits - 1))
+            __asm mov ecx, dwNumBits
+            __asm sub ecx, 1
+            __asm mov edx, 1
+            __asm shl edx, cl
+            __asm mov eax, iTemp
+            __asm sub eax, edx
+            __asm mov iTemp, eax
+
+AfterTests :
+            // Shift by precision
+            __asm mov eax, iTemp
+            __asm mov ecx, iKeyBits
+            __asm shl eax, cl
+            __asm mov sReturn, ax
+            __asm jmp End
         }
 
+        case 7 : {
+            // Uncompressed: read (12 - iKeyBits) bits
+            iTemp = GetBitsFixed( pBuffer, dwBitStart,
+                12 - iKeyBits );
+            __asm mov ecx, iKeyBits
+            __asm shl eax, cl
+            __asm mov sReturn, ax
+            __asm jmp End
+        }
 
-    ReturnZero :
-        __asm xor ax, ax
-        __asm mov sReturn, ax
-
-    End :
-
-        return sReturn;
     }
 
+
+ReturnZero :
+    __asm xor ax, ax
+    __asm mov sReturn, ax
+
+End :
+
+    return sReturn;
+}
 ```
 
-### Part III: Putting it All Together {#part_iii_putting_it_all_together}
+---
 
-To make life easy, let's use one function to load an entire frame at a time.
-This function will load an entire frame into a "FF7FrameBuffer" structure.
-The function will return the bit position where the next frame will begin.
-After the function returns, we must translate the rotational INT values to their FLOAT forms (although the function can be modified to do this part itself).
-This function will be called in a loop for every frame in the rotation.
+## 4. Implementation Guide
 
-#### LoadFrames
+### 4.1 LoadFrames Function
 
-1\.
+**Purpose**: Load an entire frame (position + all bone rotations) at once.
+
+**Returns**: Bit offset where next frame begins (or 0 if no more frames).
+
+**Parameters**:
+- `pfbFrameBuffer`: Pointer to frame buffer to fill
+- `iBones`: Number of bones in skeleton
+- `iBitStart`: Bit offset to start reading (0 for first frame)
+- `pbAnimBuffer`: Byte array containing animation data
+
+**Implementation**:
 
 ```c
+DWORD LoadFrames( PFF7FrameBuffer pfbFrameBuffer,
+INT iBones,
+INT iBitStart,
+BYTE * pbAnimBuffer ) {
+    // Get backups of parameters
+DWORD       dwThisBitStart  = iBitStart;
+    INT     iThisBones      = iBones;
+    BYTE *  pbThisBuffer    = pbAnimBuffer;
 
-    DWORD LoadFrames( PFF7FrameBuffer pfbFrameBuffer,
-    INT iBones,
-    INT iBitStart,
-    BYTE * pbAnimBuffer ) {
-        // Get backups of the information we need.
-    DWORD       dwThisBitStart  = iBitStart;
-        INT     iThisBones      = iBones;
-        BYTE *  pbThisBuffer    = pbAnimBuffer;
+    PFF7FrameMiniHeader pfmhMiniHeader =
+        (PFF7FrameMiniHeader)pbAnimBuffer;
+    SHORT   sSize = pfmhMiniHeader->sSize;
+    BYTE    bKeyBits = pfmhMiniHeader->bKey;
 
-        PFF7FrameMiniHeader pfmhMiniHeader =
-            (PFF7FrameMiniHeader)pbAnimBuffer;
-        SHORT   sSize = pfmhMiniHeader->sSize;
-        BYTE    bKeyBits = pfmhMiniHeader->bKey;
+    // Skip 5-byte miniheader
+    pbThisBuffer += sizeof( FF7FrameMiniHeader );
 
-        // Skip the first 5 bytes because they are part of the frame header.
-        pbThisBuffer += sizeof( FF7FrameMiniHeader );
+    if ( iBitStart == 0 ) { // First frame?
+        // Uncompressed position offsets
+        pfbFrameBuffer->svPosOffset.sX = GetBitsFixed( pbThisBuffer, dwThisBitStart, 16 );
+        pfbFrameBuffer->svPosOffset.sY = GetBitsFixed( pbThisBuffer, dwThisBitStart, 16 );
+        pfbFrameBuffer->svPosOffset.sZ = GetBitsFixed( pbThisBuffer, dwThisBitStart, 16 );
 
-        if ( iBitStart == 0 ) { // First frame?
-            // The first frame is uncompressed and each value is the
-            // actual rotation.
-            pfbFrameBuffer->svPosOffset.sX = GetBitsFixed( pbThisBuffer, dwThisBitStart, 16 ); //Always 16 bits
-            pfbFrameBuffer->svPosOffset.sY = GetBitsFixed( pbThisBuffer, dwThisBitStart, 16 );
-            pfbFrameBuffer->svPosOffset.sZ = GetBitsFixed( pbThisBuffer, dwThisBitStart, 16 );
+        // Convert to FLOAT
+        pfbFrameBuffer->svPosOffset.fX = (FLOAT)pfbFrameBuffer->svPosOffset.sX;
+        pfbFrameBuffer->svPosOffset.fY = (FLOAT)pfbFrameBuffer->svPosOffset.sY;
+        pfbFrameBuffer->svPosOffset.fZ = (FLOAT)pfbFrameBuffer->svPosOffset.sZ;
 
-            // This function will set the FLOAT values for the
-            //  positions.
-            // Any scaling that needs to be done would be done here.
-            pfbFrameBuffer->svPosOffset.fX = (FLOAT)pfbFrameBuffer->svPosOffset.sX;
-            pfbFrameBuffer->svPosOffset.fY = (FLOAT)pfbFrameBuffer->svPosOffset.sY;
-            pfbFrameBuffer->svPosOffset.fZ = (FLOAT)pfbFrameBuffer->svPosOffset.sZ;
+        for ( int I = 0; I < iThisBones; I++ ) {
+            // Read rotations (12 - bKeyBits) bits each
+            pfbFrameBuffer->psvRots[I].sX = (GetBitsFixed( pbThisBuffer, dwThisBitStart, 12 - bKeyBits ) << bKeyBits);
+            pfbFrameBuffer->psvRots[I].sY = (GetBitsFixed( pbThisBuffer, dwThisBitStart, 12 - bKeyBits ) << bKeyBits);
+            pfbFrameBuffer->psvRots[I].sZ = (GetBitsFixed( pbThisBuffer, dwThisBitStart, 12 - bKeyBits ) << bKeyBits);
 
-            for ( int I = 0; I < iThisBones; I++ ) {
-                // Now get each bone rotation (the first bone is
-                //  actually the root, not part of the skeleton).
-                // During the first frame, the rotations are always
-                //  (12 "“ bKeyBits).
-                // We shift by bKeyBits to align it to 12 bits.
-                pfbFrameBuffer->psvRots[I].sX = (GetBitsFixed( pbThisBuffer, dwThisBitStart, 12 - bKeyBits ) << bKeyBits);
-                pfbFrameBuffer->psvRots[I].sY = (GetBitsFixed( pbThisBuffer, dwThisBitStart, 12 - bKeyBits ) << bKeyBits);
-                pfbFrameBuffer->psvRots[I].sZ = (GetBitsFixed( pbThisBuffer, dwThisBitStart, 12 - bKeyBits ) << bKeyBits);
-
-                // Store the INT version as the absolute value
-                //  of the SHORT version.
-                pfbFrameBuffer->psvRots[I].iX = (pfbFrameBuffer->psvRots[I].sX < 0) ? pfbFrameBuffer->psvRots[I].sX + 0x1000 : pfbFrameBuffer->psvRots[I].sX;
-                pfbFrameBuffer->psvRots[I].iY = (pfbFrameBuffer->psvRots[I].sY < 0) ? pfbFrameBuffer->psvRots[I].sY + 0x1000 : pfbFrameBuffer->psvRots[I].sY;
-                pfbFrameBuffer->psvRots[I].iZ = (pfbFrameBuffer->psvRots[I].sZ < 0) ? pfbFrameBuffer->psvRots[I].sZ + 0x1000 : pfbFrameBuffer->psvRots[I].sZ;
-            }
+            // Convert SHORT to INT (absolute value)
+            pfbFrameBuffer->psvRots[I].iX = (pfbFrameBuffer->psvRots[I].sX < 0) ? pfbFrameBuffer->psvRots[I].sX + 0x1000 : pfbFrameBuffer->psvRots[I].sX;
+            pfbFrameBuffer->psvRots[I].iY = (pfbFrameBuffer->psvRots[I].sY < 0) ? pfbFrameBuffer->psvRots[I].sY + 0x1000 : pfbFrameBuffer->psvRots[I].sY;
+            pfbFrameBuffer->psvRots[I].iZ = (pfbFrameBuffer->psvRots[I].sZ < 0) ? pfbFrameBuffer->psvRots[I].sZ + 0x1000 : pfbFrameBuffer->psvRots[I].sZ;
         }
-        else {                  // All other frames.
-            SHORT sX, sY, sZ;           // Get the positional
-    //  offsets.
-            sX = GetDynamicFrameOffsetBits( pbThisBuffer, dwThisBitStart );
-            sY = GetDynamicFrameOffsetBits( pbThisBuffer, dwThisBitStart );
-            sZ = GetDynamicFrameOffsetBits( pbThisBuffer, dwThisBitStart );
-
-            // When we come to this area of the function,
-    //  pfbFrameBuffer will have the previous frame
-    //  still stored in it.  Just add the offsets.
-            pfbFrameBuffer->svPosOffset.sX += sX;
-            pfbFrameBuffer->svPosOffset.sY += sY;
-            pfbFrameBuffer->svPosOffset.sZ += sZ;
-
-            pfbFrameBuffer->svPosOffset.fX = (FLOAT)pfbFrameBuffer->svPosOffset.sX;
-            pfbFrameBuffer->svPosOffset.fY = (FLOAT)pfbFrameBuffer->svPosOffset.sY;
-            pfbFrameBuffer->svPosOffset.fZ = (FLOAT)pfbFrameBuffer->svPosOffset.sZ;
-            for ( int I = 0; I < iThisBones; I++ ) {
-                // The same applies here.  Add the offsets
-                //  and convert to INT form, adding 0x1000
-                //  if it is less than 0.
-                // When Final Fantasy® VII loads these animations,
-                //  it is possible for the value to sneak up above
-                //  the 4095 boundary through a series of positive
-                //  offsets.
-                sX = GetEncryptedRotationBits( pbThisBuffer, dwThisBitStart, bKeyBits );
-                sY = GetEncryptedRotationBits( pbThisBuffer, dwThisBitStart, bKeyBits );
-                sZ = GetEncryptedRotationBits( pbThisBuffer, dwThisBitStart, bKeyBits );
-
-                pfbFrameBuffer->psvRots[I].sX += sX;
-                pfbFrameBuffer->psvRots[I].sY += sY;
-                pfbFrameBuffer->psvRots[I].sZ += sZ;
-
-                pfbFrameBuffer->psvRots[I].iX = (pfbFrameBuffer->psvRots[I].sX < 0) ? pfbFrameBuffer->psvRots[I].sX + 0x1000 : pfbFrameBuffer->psvRots[I].sX;
-                pfbFrameBuffer->psvRots[I].iY = (pfbFrameBuffer->psvRots[I].sY < 0) ? pfbFrameBuffer->psvRots[I].sY + 0x1000 : pfbFrameBuffer->psvRots[I].sY;
-                pfbFrameBuffer->psvRots[I].iZ = (pfbFrameBuffer->psvRots[I].sZ < 0) ? pfbFrameBuffer->psvRots[I].sZ + 0x1000 : pfbFrameBuffer->psvRots[I].sZ;
-            }
-        }
-
-        // If we did not read as many bits as there are in the frame,
-        //  return the location where the bits should start for the
-        //  next frame.
-        if ( (SHORT)(dwThisBitStart / 8) < sSize ) {
-    return dwThisBitStart;
     }
-        // Otherwise, return 0.
-        return 0;
+    else {                  // Subsequent frames
+        SHORT sX, sY, sZ;
+
+        // Get position deltas
+        sX = GetDynamicFrameOffsetBits( pbThisBuffer, dwThisBitStart );
+        sY = GetDynamicFrameOffsetBits( pbThisBuffer, dwThisBitStart );
+        sZ = GetDynamicFrameOffsetBits( pbThisBuffer, dwThisBitStart );
+
+        // Add deltas to previous frame
+        pfbFrameBuffer->svPosOffset.sX += sX;
+        pfbFrameBuffer->svPosOffset.sY += sY;
+        pfbFrameBuffer->svPosOffset.sZ += sZ;
+
+        pfbFrameBuffer->svPosOffset.fX = (FLOAT)pfbFrameBuffer->svPosOffset.sX;
+        pfbFrameBuffer->svPosOffset.fY = (FLOAT)pfbFrameBuffer->svPosOffset.sY;
+        pfbFrameBuffer->svPosOffset.fZ = (FLOAT)pfbFrameBuffer->svPosOffset.sZ;
+
+        for ( int I = 0; I < iThisBones; I++ ) {
+            // Get rotation deltas
+            sX = GetEncryptedRotationBits( pbThisBuffer, dwThisBitStart, bKeyBits );
+            sY = GetEncryptedRotationBits( pbThisBuffer, dwThisBitStart, bKeyBits );
+            sZ = GetEncryptedRotationBits( pbThisBuffer, dwThisBitStart, bKeyBits );
+
+            // Add deltas
+            pfbFrameBuffer->psvRots[I].sX += sX;
+            pfbFrameBuffer->psvRots[I].sY += sY;
+            pfbFrameBuffer->psvRots[I].sZ += sZ;
+
+            // Note: Values can exceed 4095 through accumulation of positive deltas
+
+            // Convert to INT
+            pfbFrameBuffer->psvRots[I].iX = (pfbFrameBuffer->psvRots[I].sX < 0) ? pfbFrameBuffer->psvRots[I].sX + 0x1000 : pfbFrameBuffer->psvRots[I].sX;
+            pfbFrameBuffer->psvRots[I].iY = (pfbFrameBuffer->psvRots[I].sY < 0) ? pfbFrameBuffer->psvRots[I].sY + 0x1000 : pfbFrameBuffer->psvRots[I].sY;
+            pfbFrameBuffer->psvRots[I].iZ = (pfbFrameBuffer->psvRots[I].sZ < 0) ? pfbFrameBuffer->psvRots[I].sZ + 0x1000 : pfbFrameBuffer->psvRots[I].sZ;
+        }
     }
 
+    // Return next frame's bit offset (or 0 if done)
+    if ( (SHORT)(dwThisBitStart / 8) < sSize ) {
+return dwThisBitStart;
+}
+    return 0;
+}
 ```
 
-2.
+### 4.2 Complete Animation Loading Loop
 
-#### A Sample Loop {#a_sample_loop}
-
-This is an example loop that could be used to load a full animation.
+**Example**: Load all frames in an animation.
 
 ```c
+FF7FrameHeader fhHeader;
+ReadFile( hFile, &fhHeader, sizeof( fhHeader ), &ulBytesRead,
+NULL );
+BYTE * baData = new BYTE[fhHeader.dwChunkSize];
+ReadFile( hFile, &baData, fhHeader.dwChunkSize, &ulBytesRead,
+NULL );
 
-    FF7FrameHeader fhHeader;
-    ReadFile( hFile, &fhHeader, sizeof( fhHeader ), &ulBytesRead,
-    NULL );
-    BYTE * baData = new BYTE[fhHeader.dwChunkSize];
-    ReadFile( hFile, &baData, fhHeader.dwChunkSize, &ulBytesRead,
-    NULL );
+    // Allocate frame buffer
+FF7FrameBuffer fbFrameBuffer;
+fbFrameBuffer.SetBones( fhHeader.dwBones );
+INT iBits = 0;
 
-        // This will be our buffer to hold one frame.
-        //  We will only buffer one frame at a time, so to
-        //  to fully load the animations, you would need to
-        //  write your own routine to store the data in
-        //  fbFrameBuffer after each loaded frame.
-    FF7FrameBuffer fbFrameBuffer;
-    fbFrameBuffer.SetBones( fhHeader.dwBones );
-    INT iBits = 0;
-    for ( DWORD J = 0; J < fhHeader.dwFrames; J++ ) {
-        // We pass a pointer to fbFrameBuffer.  The first frame
-        //  will load diretly into it.
-        // Every frame after that will actually use it with the
-        //  offsets loaded to determine the final result of that
-        //  frame.
-            iBits = LoadFrames( &fbFrameBuffer, fhHeader.dwBones, iBits, baData );
-            // Reverse the Y offset (required).
-            fbFrameBuffer.svPosOffset.fY = 0.0f "“ fbFrameBuffer.svPosOffset.fY;
+for ( DWORD J = 0; J < fhHeader.dwFrames; J++ ) {
+    // Load frame
+    iBits = LoadFrames( &fbFrameBuffer, fhHeader.dwBones, iBits, baData );
 
-    // The first rotation set is skipped.  It is not part of
-    //  the skeleton.  Skipping is optional, but
-    //  Final Fantasy® VII skips it; it is always 0, 0, 0.
-    // I believe the actual use for the "root" rotation is
-    //  to dynamically make the model point at its target
-    //  or face different directions during battle.
-    // UPDATE: Although the value of this field is 0,0,0 for most animations, some actually store a base rotation here
-    // so it shouldn't be ignored.
-            for ( DWORD I = 0; I < fhHeader.dwBones - 1; I++ ) {
-                fbFrameBuffer.psvRots[I+1].fX = (FLOAT)fbFrameBuffer.psvRots[I+1].iX / 4096.0f * 360.0f;
-                fbFrameBuffer.psvRots[I+1].fY = (FLOAT)fbFrameBuffer.psvRots[I+1].iY / 4096.0f * 360.0f;
-                fbFrameBuffer.psvRots[I+1].fZ = (FLOAT)fbFrameBuffer.psvRots[I+1].iZ / 4096.0f * 360.0f;
-            }
-    // Store the data for this frame here (in your own
-    //  routine).
+    // Reverse Y offset (required)
+    fbFrameBuffer.svPosOffset.fY = 0.0f - fbFrameBuffer.svPosOffset.fY;
 
-        }
+    // Convert INT rotations to FLOAT degrees
+    // Note: First rotation (root) is typically 0,0,0 but some animations
+    // store a base rotation for dynamic targeting
+    for ( DWORD I = 0; I < fhHeader.dwBones - 1; I++ ) {
+        fbFrameBuffer.psvRots[I+1].fX = (FLOAT)fbFrameBuffer.psvRots[I+1].iX / 4096.0f * 360.0f;
+        fbFrameBuffer.psvRots[I+1].fY = (FLOAT)fbFrameBuffer.psvRots[I+1].iY / 4096.0f * 360.0f;
+        fbFrameBuffer.psvRots[I+1].fZ = (FLOAT)fbFrameBuffer.psvRots[I+1].iZ / 4096.0f * 360.0f;
+    }
 
-        delete [] baData;
+    // Store frame data here (application-specific)
+}
 
+delete [] baData;
 ```
 
-## Part IV: Qhimm's Input {#part_iv_qhimm's_input}
+---
 
-Qhimm has taken the time to rewrite two of these functions used in decoding, so it is easier to understand for people who know C++ better than they know assembly (despite my comments being in the assembly code).
-He has also written a more in-depth look at the logistics behind the rotation compression format and explains its limitations
+## 5. Alternative Implementations
 
-"GetValueFromStream" is the C/C++ version of my "GetDynamicFrameOffsetBits" and his "GetCompressedDeltaFromStream" is the C++ version of my "GetEncryptedRotationBits".
+### 5.1 Qhimm's C++ Versions
+
+**Qhimm** rewrote the assembly functions in pure C++ for better readability. He also provided theoretical background on the compression scheme.
+
+#### GetValueFromStream
+
+Replaces `GetDynamicFrameOffsetBits` with clearer C++ implementation.
 
 ```c
+short GetValueFromStream( BYTE *pStreamBytes,
+DWORD *pdwStreamBitOffset )
+{
+    short sValue;
+    DWORD dwStreamByteOffset = *pdwStreamBitOffset / 8;
+    DWORD dwCurrentBitsEaten = *pdwStreamBitOffset % 8;
+    DWORD dwTypeBitShift = 7 - dwCurrentBitsEaten;
+    DWORD dwNextStreamBytes = pStreamBytes[dwStreamByteOffset] << 8 | pStreamBytes[dwStreamByteOffset + 1];
 
-    short GetValueFromStream( BYTE *pStreamBytes,
-    DWORD *pdwStreamBitOffset )
+    // Test first bit to determine value size
+    if (dwNextStreamBytes & (1 << (dwTypeBitShift + 8)))
+    {   // 16-bit value
+        dwNextStreamBytes = dwNextStreamBytes << 8 |
+            pStreamBytes[dwStreamByteOffset + 2];
+        sValue = (dwNextStreamBytes << (dwCurrentBitsEaten + 1)) >> 8;
+        *pdwStreamBitOffset += 17;
+    }
+    else
+    {   // 7-bit value
+        sValue = ((short)(dwNextStreamBytes << (dwCurrentBitsEaten + 1))) >> 9;
+        *pdwStreamBitOffset += 8;
+    }
+
+    return sValue;
+}
+```
+
+#### GetCompressedDeltaFromStream
+
+Replaces `GetEncryptedRotationBits` with clearer C++ implementation.
+
+```c
+short GetCompressedDeltaFromStream( BYTE *pStreamBytes, DWORD *pdwStreamBitOffset,
+int nLoweredPrecisionBits )
+{
+    unsigned int nBits;
+    int iFirstBit = GetBitsFromStream( pStreamBytes, pdwStreamBitOffset, 1 );
+    if (iFirstBit)
     {
-        // The return value;
-        short sValue;
-        // The number of whole bytes already consumed in the stream.
-        DWORD dwStreamByteOffset = *pdwStreamBitOffset / 8;
-        // The number of bits already consumed in the current stream byte.
-        DWORD dwCurrentBitsEaten = *pdwStreamBitOffset % 8;
-        // The distance from dwNextStreamBytes' LSB to the 'type' bit.
-        DWORD dwTypeBitShift = 7 - dwCurrentBitsEaten;
-        // A copy of the next two bytes in the stream (from big-endian).
-        DWORD dwNextStreamBytes = pStreamBytes[dwStreamByteOffset] << 8 | pStreamBytes[dwStreamByteOffset + 1];
-
-        // Test the first bit (the 'type' bit) to determine the size of the value.
-        if (dwNextStreamBytes & (1 << (dwTypeBitShift + 8)))
-        {   // Sixteen-bit value:
-            // Collect one more byte from the stream.
-            dwNextStreamBytes = dwNextStreamBytes << 8 |
-                pStreamBytes[dwStreamByteOffset + 2];
-            // Shift the delta value into place.
-            sValue = (dwNextStreamBytes << (dwCurrentBitsEaten + 1)) >> 8;
-            // Update the stream offset.
-            *pdwStreamBitOffset += 17;
-        }
-        else
-        {   // Seven-bit value
-            // Shift the delta value into place (taking care to preserve the sign).
-            sValue = ((short)(dwNextStreamBytes << (dwCurrentBitsEaten + 1))) >> 9;
-            // Update the stream offset.
-            *pdwStreamBitOffset += 8;
-        }
-
-        // Return the value.
-        return sValue;
-    }
-
-
-    short GetCompressedDeltaFromStream( BYTE *pStreamBytes, DWORD *pdwStreamBitOffset,
-    int nLoweredPrecisionBits )
-    {
-        unsigned int nBits;
-        int iFirstBit = GetBitsFromStream( pStreamBytes, pdwStreamBitOffset, 1 );
-        if (iFirstBit)
+        unsigned int uType = GetBitsFromStream( pStreamBytes,
+            pdwStreamBitOffset, 3 ) & 7;
+        switch (uType)
         {
-            unsigned int uType = GetBitsFromStream( pStreamBytes,
-                pdwStreamBitOffset, 3 ) & 7;
-            switch (uType)
-            {
-            case 0:
-                // Return the smallest possible decrement delta (at given
-                //  precision).
-                return (-1 << nLoweredPrecisionBits);
+        case 0:
+            // Minimum decrement
+            return (-1 << nLoweredPrecisionBits);
 
-            case 1: case 2: case 3: case 4: case 5: case 6:
-                // Read a corresponding number of bits from the stream.
-                int iTemp = GetBitsFromStream( pStreamBytes,
-                    pdwStreamBitOffset, nBits );
-                // Transform the value into the full seven-bit value, using the bit
-                //  length
-                // as part of the encoding scheme (see notes).
-                if (iTemp < 0)  iTemp -= 1 << (nBits - 1);
-                else            iTemp += 1 << (nBits - 1);
-                // Adapt to the requested precision and return.
-                return (iTemp << nLoweredPrecisionBits);
-            case 7:
-                // Read an uncompressed value from the stream (at requested
-                //  precision), and return.
-                iTemp = GetBitsFromStream( pStreamBytes,
-                    pdwStreamBitOffset, 12 - nLoweredPrecisionBits );
-                return (iTemp << nLoweredPrecisionBits);
-            default:
-            }
+        case 1: case 2: case 3: case 4: case 5: case 6:
+            // Read N bits
+            int iTemp = GetBitsFromStream( pStreamBytes,
+                pdwStreamBitOffset, nBits );
+            // Apply signed magnitude transform
+            if (iTemp < 0)  iTemp -= 1 << (nBits - 1);
+            else            iTemp += 1 << (nBits - 1);
+            // Adjust for precision
+            return (iTemp << nLoweredPrecisionBits);
+
+        case 7:
+            // Uncompressed
+            iTemp = GetBitsFromStream( pStreamBytes,
+                pdwStreamBitOffset, 12 - nLoweredPrecisionBits );
+            return (iTemp << nLoweredPrecisionBits);
+        default:
         }
-        // Default/error: return zero.
-        return 0;
     }
-
-
-    /*
-        Notes for rotational delta compression scheme
-        =============================================
-
-        The delta values are stored in compressed form in a bit stream. Consecutive
-        values share no bit correlation or encoding dependencies, rather they are
-        encoded separately using a scheme designed to optimize small-scale rotations.
-
-        Rotations are traditionally given in normalized PSX 4.12 fixed-point compatible
-        values, where a full rotation is the integer value 4096. Values above 4095 simply
-        map down into the [0,4095] range, as expected from rotational arithmetics. When
-        encoded, only the required 12 bits of precision are ever considered.
-
-        In some animations, the author can choose to forcibly lower the precision of
-        rotational delta values below 12 bits. Though these animations are naturally not
-        as precise, they encode far more efficiently, both because of the smaller size of
-        'raw' values, and also because of the increased relative span of the 'close-range'
-        encodings available for small deltas. The smallest 128 [-64,63] sizes of deltas
-        can be stored in compressed form instead of as raw values. This method is
-        efficient
-        since a majority of the rotational deltas involved in skeletal character animation
-        will be small, and thus doubly effective if used with reduced precision. Precision
-        can be reduced by either 2 or 4 bits (down to 10 or 8 bits).
-
-        The encoding scheme is capable of encoding any 12-bit value as follows:
-
-        First, a single bit tells us if the delta is non-zero. If this bit is zero, there
-        is no delta value (0) and the decoding is done. Otherwise, a 3 bit integer
-        follows, detailing how the delta value is encoded. This has 8 different meanings,
-        as follows:
-
-        Type   Meaning
-        ------ -------------------------------------------------------
-        0      The delta is the smallest possible decrement (under the
-            current precision)
-        1-6    The delta is encoded using this many bytes
-        7      The delta is stored in raw form (in the current precision)
-
-        The encoding of small deltas works as follows: The encoded delta can be stored
-        using 1-6 bits, giving us a total of 2+4+8+16+32+64 = 126 possible different
-        values, which during this explanation will be explained as simple integers (the
-        lowest bits of the delta, in current precision). The values 0 (no change) and -1
-        (minimal decrement) are already covered, leaving the other 126 values to neatly
-        fill out the entire 7 bit range. We do this by encoding each value like follows:
-
-        - The magnitude of the delta is defined as the value of its most significant
-          value bit (in two's complement, so the highest bit not equal to the sign bit).
-          For example, the values '1' and '-2' have magnitude 1, while the value '30' will
-          have a magnitude of 32. For simplicity, we also define the 'signed magnitude' as
-          the magnitude multiplied by the sign of the value (so '-2' has a signed
-          magnitude of -1).
-        - When encoding a value, we subtract its signed magnitude; essentially pushing
-          everything down one notch towards zero, setting the most significant value bit
-          to equal the sign bit and thus ensuring that none of the transformed values
-          require more than six bits to accurately represent in two's complement.
-        - The transformed value is then stored starting from its magnitude bit (normally,
-          you would have to start one bit higher to include the sign bit and prevent
-          signed integer overflow). Small values will be stored using fewer bits, while
-          larger values use more bits. The two smallest values, 0 and -1, are not
-          encodeable but are instead handled using the previously mentioned scheme.
-
-        When decoding, you only need to know the number of bits of the encoded value, use
-        the value of its most significant bit (not the most significant value bit!) as
-        the magnitude, multiply it by the sign of the encoded value to get the signed
-        magnitude, and then add that to the encoded value to get the actual delta value.
-
-        Some examples of encodings:
-
-        Delta value *      Encoded            *) in current precision, as integer
-        ------------------ ------------------
-         0                 0
-        -1                 1 000
-        -5                 1 011 111
-        15                 1 100 0111
-        128                1 111 xxxx10000000  (length depends on precision)
-
-
-        (Note: The reduced precision is treated as rounding towards negative infinity)
-
-    */
-
+    return 0;
+}
 ```
+
+### 5.2 Rotation Compression Theory
+
+*Notes by Qhimm*
+
+#### Why This Encoding Is Efficient
+
+Rotational deltas in skeletal animation are typically small. The compression scheme allocates fewer bits to small deltas and more bits to large changes.
+
+**Bit Allocation**:
+- Zero delta: 1 bit (`0`)
+- Minimum decrement: 4 bits (`1 000`)
+- Small deltas (1-6 bits): 126 possible values
+- Large deltas: Uncompressed form
+
+**Total Coverage**: 128 delta values in the range `[-64, 63]` can be stored in compressed form. This is efficient because most rotational changes in character animation are incremental.
+
+#### Signed Magnitude Encoding
+
+For delta types 1-6, the encoding uses signed magnitude to pack values efficiently:
+
+1. **Magnitude**: Value of most significant value bit
+   - Example: Values `1` and `-2` both have magnitude `1`
+   - Value `30` has magnitude `32`
+
+2. **Signed Magnitude**: Magnitude × sign of value
+   - Example: `-2` has signed magnitude `-1`
+
+3. **Encoding**: Subtract signed magnitude before storing
+   - Pushes values toward zero
+   - Ensures all transformed values fit in 6 bits or fewer
+
+4. **Decoding**: Add back the signed magnitude
+   - Magnitude determined by number of bits read
+   - Sign determined by MSB of encoded value
+
+#### Encoding Examples
+
+| Delta Value | Encoded Bits        | Notes                                    |
+|-------------|---------------------|------------------------------------------|
+| 0           | `0`                 | Single zero bit                          |
+| -1          | `1 000`             | Type 0 (minimum decrement)               |
+| -5          | `1 011 111`         | Type 3 (3 bits)                          |
+| 15          | `1 100 0111`        | Type 4 (4 bits)                          |
+| 128         | `1 111 xxxx10000000`| Type 7 (depends on precision)            |
+
+*(Values shown in current precision as integers)*
+
+#### Precision Trade-offs
+
+Precision can be reduced by 2 or 4 bits (from 12 bits down to 10 or 8):
+
+**Advantages**:
+- Smaller raw values
+- Increased relative span of compressed encodings
+- Much smaller file sizes
+
+**Disadvantages**:
+- Quantization error
+- Less precise rotations
+
+**When It Works Well**: Most skeletal animations change gradually. Large rotations (spinning objects) are typically round numbers (90°, 180°, 270°) that lose negligible precision even at 8-bit depth.
+
+**Note**: Reduced precision is treated as rounding toward negative infinity.
+
+---
+
+## Appendix A: Quick Reference
+
+### Structure Sizes
+
+| Structure          | Size (bytes) | Offset Fields                              |
+|--------------------|--------------|--------------------------------------------|
+| FF7FrameHeader     | 12           | dwBones: 0x00, dwFrames: 0x04, dwChunkSize: 0x08 |
+| FF7FrameMiniHeader | 5            | sFrames: 0x00, sSize: 0x02, bKey: 0x04     |
+| FF7ShortVec        | 30           | SHORT: 0x00, INT: 0x06, FLOAT: 0x12        |
+
+### bKey Values
+
+| bKey | Uncompressed Bits | Formula         | Range   |
+|------|-------------------|-----------------|---------|
+| 0    | 12                | `12 - 0 = 12`   | 0-4095  |
+| 2    | 10                | `12 - 2 = 10`   | 0-1023  |
+| 4    | 8                 | `12 - 4 = 8`    | 0-255   |
+
+### Conversion Formulas
+
+**SHORT to Degrees**:
+```
+degrees = (SHORT / 4096) * 360
+```
+
+**SHORT to INT (with wrapping)**:
+```
+INT = (SHORT < 0) ? SHORT + 0x1000 : SHORT
+```
+
+**INT to FLOAT**:
+```
+FLOAT = (INT / 4096.0f) * 360.0f
+```
+
+### Position Delta Encoding
+
+| First Bit | Total Bits | Format     |
+|-----------|------------|------------|
+| 0         | 8          | 7-bit delta|
+| 1         | 17         | 16-bit delta|
+
+### Rotation Delta Type Field
+
+| Type | Bits to Read        | Meaning                        |
+|------|---------------------|--------------------------------|
+| 0    | 0                   | Minimum decrement: `(-1 << bKey)` |
+| 1-6  | N (= type value)    | Signed magnitude encoded delta |
+| 7    | `12 - bKey`         | Uncompressed rotation value    |
+
+---
+
+## Appendix B: Known Issues
+
+### Corrupted Animations
+
+**RSAA Animation 15** (playable frog):
+- Missing `sFrames` field
+- `sSize` appears at offset 0x00 instead of 0x02
+- `bKey` appears at offset 0x02 instead of 0x04
+- FF7 cannot load this animation (likely damaged in original game data)
+
+### Frame Count Discrepancies
+
+**sFrames vs. dwFrames**:
+- Rarely match in practice
+- `dwFrames` is more conservative (guarantees minimum)
+- `sFrames` sometimes exceeds actual frame count
+- **Solution**: Parse entire chunk to determine true frame count
+
+**Possible Causes**:
+- Dummy frames padded for memory alignment
+- Special-purpose data interleaved with frames
+- Animation authoring tool artifacts
+
+### Root Rotation Behavior
+
+**Standard Behavior**: First rotation is always `(0, 0, 0)` and not part of skeleton.
+
+**Exception**: Some animations store non-zero root rotations for dynamic targeting:
+- Model facing toward attack target
+- Model rotating during special moves
+
+**Recommendation**: Do not skip root rotation unconditionally. Check if non-zero before using for targeting logic.
+
+---
+
+**End of Document**
