@@ -30,7 +30,25 @@ SUMMARIES_FILE="$CONTEXT_DIR/agent_summaries.json"
 
 # Wave configuration (5 documents per wave)
 WAVE_SIZE=5
-WAVE_NUMBER="${1:-1}"
+SKIP_CHECKPOINTS=false
+
+# Parse arguments
+WAVE_NUMBER="1"
+while [[ $# -gt 0 ]]; do
+    case $1 in
+        --skip-checkpoints|--auto)
+            SKIP_CHECKPOINTS=true
+            shift
+            ;;
+        [1-8]|all)
+            WAVE_NUMBER="$1"
+            shift
+            ;;
+        *)
+            shift
+            ;;
+    esac
+done
 
 # Colors for output
 RED='\033[0;31m'
@@ -602,6 +620,18 @@ process_wave() {
     echo ""
 
     # Checkpoint prompt - return 0 to continue, 1 to stop
+    if [ "$SKIP_CHECKPOINTS" = true ]; then
+        # Auto-continue mode - no prompts
+        if [ $fail_count -gt 0 ]; then
+            log_warning "Failures detected, but auto-continuing (--skip-checkpoints mode)"
+        else
+            log_success "Wave $wave completed successfully! Auto-continuing to next wave..."
+        fi
+        sleep 1
+        return 0
+    fi
+
+    # Manual checkpoint mode
     if [ $fail_count -gt 0 ]; then
         log_warning "Failures detected. Review outputs before continuing."
         read -p "Continue to next wave? (y/n) " -n 1 -r
