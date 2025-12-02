@@ -12,7 +12,7 @@ llm_tags: ["data-archives", "lzs-compression", "lgp-format", "tim-texture", "tex
 llm_primary_topics: ["BIN archive format", "LZS/LZSS compression algorithm", "LGP archive structure", "TIM texture format", "TEX PC texture format", "PSX to PC model conversion"]
 llm_related_docs: ["FF7_Kernel_Kernelbin.md", "FF7_Kernel_Memory_management.md", "FF7_LGP_format.md", "FF7_LZSS_format.md", "FF7_TEX_format.md", "PSX_TIM_format.md", "FF7_Playstation_Battle_Model_Format.md"]
 
-referenced_by: []
+referenced_by: ["FF7_Field_Module.md", "FF7_Kernel.md", "FF7_Kernel_Kernelbin.md", "FF7_Kernel_Memory_management.md", "FF7_Kernel_Overview.md", "FF7_LGP_format.md", "FF7_LZSS_format.md", "FF7_TEX_format.md", "PSX_TIM_format.md"]
 ---
 
 <!--

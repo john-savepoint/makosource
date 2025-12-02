@@ -14,7 +14,7 @@ llm_primary_topics: ["enc_w.bin binary structure", "Encounter rate mechanics", "
 llm_related_docs: ["FF7_WorldMap_Module.md", "FF7_WorldMap_Module_Script.md", "FF7_World_Map_BSZ.md", "FF7_World_Map_TXZ.md", "FF7_Battle_Battle_Scenes.md"]
 
 # Backlinks (populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_WorldMap_Module.md", "FF7_WorldMap_Module_Script.md", "FF7_World_Map_BSZ.md"]
 ---
 
 <!--

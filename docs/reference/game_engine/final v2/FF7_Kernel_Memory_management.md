@@ -14,7 +14,7 @@ llm_primary_topics: ["Savemap memory structure", "Field script memory banks", "V
 llm_related_docs: ["FF7_Savemap.md", "FF7_Field_Module.md", "FF7_Kernel_Overview.md", "FF7_Kernel_Low_level_libraries.md", "PSX_TIM_format.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_Kernel.md", "FF7_Kernel_Low_level_libraries.md", "FF7_Kernel_Overview.md"]
 ---
 
 <!--

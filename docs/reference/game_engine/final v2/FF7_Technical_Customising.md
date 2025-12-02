@@ -14,7 +14,7 @@ llm_primary_topics: ["Modding tool catalog", "Game patches", "Save editors", "Fi
 llm_related_docs: ["FF7_Kernel.md", "FF7_Field_Module.md", "FF7_Battle_Battle_Scenes.md", "FF7_LGP_format.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_History.md", "FF7_Technical.md"]
 ---
 
 <!--

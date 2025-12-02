@@ -14,7 +14,7 @@ llm_primary_topics: ["Battle damage formulas", "Status effect mechanics", "AI me
 llm_related_docs: ["FF7_Battle_Battle_Animation_PC.md", "FF7_Battle_Battle_Field.md", "FF7_Battle_Battle_Scenes.md", "FF7_Battle_Damage_Formulas.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7.md", "FF7_Battle_Battle_Animation_PC.md", "FF7_Battle_Battle_Field.md", "FF7_Battle_Battle_Scenes.md", "FF7_Battle_Battle_Scenes_Battle_Script.md", "FF7_Battle_Damage_Formulas.md", "FF7_Engine_basics.md", "FF7_Technical_Source.md"]
 ---
 
 <!--

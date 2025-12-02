@@ -14,7 +14,7 @@ llm_primary_topics: ["FF7 source file paths", "PC port development structure", "
 llm_related_docs: ["FF7_Engine_basics.md", "FF7_Field_Module.md", "FF7_Battle_Battle_Mechanics.md", "FF7_WorldMap_Module.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_Technical.md"]
 ---
 
 <!--

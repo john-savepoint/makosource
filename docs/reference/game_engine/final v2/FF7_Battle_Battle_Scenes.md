@@ -14,7 +14,7 @@ llm_primary_topics: ["Scene.bin file structure", "Enemy data format", "Battle AI
 llm_related_docs: ["FF7_Battle_Battle_Mechanics.md", "FF7_Battle_Battle_Scenes_Battle_Script.md", "FF7_Kernel_Kernelbin.md", "FF7_Battle_Damage_Formulas.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_Battle_Battle_Animation_PC.md", "FF7_Battle_Battle_Field.md", "FF7_Battle_Battle_Mechanics.md", "FF7_Battle_Battle_Scenes_Battle_Script.md", "FF7_Battle_Damage_Formulas.md", "FF7_Playstation_Battle_Model_Format.md", "FF7_Technical_Customising.md", "FF7_World_Map_Encounters.md"]
 ---
 
 <!--

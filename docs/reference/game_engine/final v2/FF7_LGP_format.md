@@ -14,7 +14,7 @@ llm_primary_topics: ["LGP file header", "Table of Contents structure", "CRC vali
 llm_related_docs: ["FF7_Kernel_Low_level_libraries.md", "FF7_Field_Module.md", "FF7_LZSS_format.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_Field_Module.md", "FF7_Kernel_Low_level_libraries.md", "FF7_LZSS_format.md", "FF7_Technical_Customising.md"]
 ---
 
 <!--

@@ -14,7 +14,7 @@ llm_primary_topics: ["LZS battle model format", "HRC bone hierarchy structure", 
 llm_related_docs: ["FF7_LZSS_format.md", "PSX_TIM_format.md", "FF7_Battle_Battle_Animation_PC.md", "FF7_Battle_Battle_Scenes.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_Battle_Battle_Animation_PC.md", "FF7_Battle_Battle_Field.md", "FF7_Battle_Damage_Formulas.md", "FF7_Kernel_Low_level_libraries.md", "FF7_World_Map_BSZ.md"]
 ---
 
 <!--

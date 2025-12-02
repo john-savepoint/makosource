@@ -14,7 +14,7 @@ llm_primary_topics: ["Battle field mesh types", "LZS archive structure", "Vertex
 llm_related_docs: ["FF7_Battle_Battle_Scenes.md", "FF7_Battle_Battle_Mechanics.md", "FF7_Playstation_Battle_Model_Format.md", "FF7_LZSS_format.md", "PSX_TIM_format.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_Battle_Battle_Mechanics.md"]
 ---
 
 <!--

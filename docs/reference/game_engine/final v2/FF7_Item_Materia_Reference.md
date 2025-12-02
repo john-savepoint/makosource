@@ -14,7 +14,7 @@ llm_primary_topics: ["Item ID dual-encoding scheme", "Materia AP storage format"
 llm_related_docs: ["FF7_Savemap.md", "FF7_Kernel_Kernelbin.md", "FF7_Menu_Module.md", "FF7_Field_Module.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_Savemap.md"]
 ---
 
 <!--

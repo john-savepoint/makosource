@@ -14,7 +14,7 @@ llm_primary_topics: ["Installation errors", "Runtime crashes", "Hardware renderi
 llm_related_docs: ["FF7_Technical_Customising.md", "FF7_Engine_basics.md", "FF7_Technical_Source.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_History.md"]
 ---
 
 <!--

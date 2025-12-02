@@ -14,7 +14,7 @@ llm_primary_topics: ["TXZ archive structure", "VRAM block format", "PSX texture 
 llm_related_docs: ["FF7_WorldMap_Module.md", "FF7_World_Map_BSZ.md", "FF7_WorldMap_Module_Script.md", "FF7_LZSS_format.md", "PSX_TIM_format.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_WorldMap_Module.md", "FF7_WorldMap_Module_Script.md", "FF7_World_Map_BSZ.md", "FF7_World_Map_Encounters.md"]
 ---
 
 <!--

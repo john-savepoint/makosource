@@ -14,7 +14,7 @@ llm_primary_topics: ["Kernel history from NES MMC1", "Threaded multitasking syst
 llm_related_docs: ["FF7_Kernel_Memory_management.md", "FF7_Kernel_Kernelbin.md", "FF7_Kernel_Low_level_libraries.md", "FF7_Engine_basics.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_Engine_basics.md", "FF7_Kernel.md", "FF7_Kernel_Kernelbin.md", "FF7_Kernel_Memory_management.md"]
 ---
 
 <!--

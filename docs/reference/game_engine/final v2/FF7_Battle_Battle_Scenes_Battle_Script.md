@@ -14,7 +14,7 @@ llm_primary_topics: ["AI Script Opcodes", "Stack Operations", "Battle Commands",
 llm_related_docs: ["FF7_Battle_Battle_Scenes.md", "FF7_Battle_Battle_Mechanics.md", "FF7_Savemap.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_Battle_Battle_Scenes.md"]
 ---
 
 <!--

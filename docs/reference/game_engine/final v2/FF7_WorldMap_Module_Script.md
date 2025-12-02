@@ -14,7 +14,7 @@ llm_primary_topics: ["Stack-based instruction format", "Cooperative multitasking
 llm_related_docs: ["FF7_WorldMap_Module.md", "FF7_World_Map_Encounters.md", "FF7_World_Map_BSZ.md", "FF7_World_Map_TXZ.md", "FF7_Field_Module.md"]
 
 # Backlinks (populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_WorldMap_Module.md", "FF7_World_Map_BSZ.md", "FF7_World_Map_Encounters.md", "FF7_World_Map_TXZ.md"]
 ---
 
 <!--

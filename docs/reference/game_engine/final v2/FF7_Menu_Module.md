@@ -14,7 +14,7 @@ llm_primary_topics: ["Menu module initialization", "Save game format", "Characte
 llm_related_docs: ["FF7_Kernel.md", "FF7_Kernel_Kernelbin.md", "FF7_Field_Module.md", "FF7_Savemap.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7.md", "FF7_Chocobo_Breeding.md", "FF7_Engine_basics.md", "FF7_Item_Materia_Reference.md", "FF7_Kernel_Kernelbin.md", "FF7_Savemap.md"]
 ---
 
 <!--

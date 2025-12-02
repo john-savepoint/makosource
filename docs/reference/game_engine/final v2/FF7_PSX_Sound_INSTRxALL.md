@@ -14,7 +14,7 @@ llm_primary_topics: ["INSTR.ALL file structure", "PSX ADPCM frame format", "SPU 
 llm_related_docs: ["FF7_PSX_Sound_INSTRxDAT.md", "FF7_PSX_Sound_AKAO_frames.md", "FF7_PSX_Sound_Overview.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_PSX_Sound.md", "FF7_PSX_Sound_AKAO_frames.md", "FF7_PSX_Sound_INSTRxDAT.md", "FF7_PSX_Sound_Overview.md"]
 ---
 
 <!--

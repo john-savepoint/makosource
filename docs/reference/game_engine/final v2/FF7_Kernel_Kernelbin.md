@@ -14,7 +14,7 @@ llm_primary_topics: ["KERNEL.BIN archive structure", "Equipment binary formats",
 llm_related_docs: ["FF7_Kernel.md", "FF7_Kernel_Low_level_libraries.md", "FF7_Kernel_Overview.md", "FF7_Savemap.md", "FF7_Menu_Module.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_Battle_Battle_Scenes.md", "FF7_Item_Materia_Reference.md", "FF7_Kernel.md", "FF7_Kernel_Low_level_libraries.md", "FF7_Kernel_Overview.md", "FF7_Menu_Module.md"]
 ---
 
 <!--

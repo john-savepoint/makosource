@@ -14,7 +14,7 @@ llm_primary_topics: ["KERNEL.BIN section formats", "Equipment data structures", 
 llm_related_docs: ["FF7_Kernel_Overview.md", "FF7_Kernel_Memory_management.md", "FF7_Kernel_Kernelbin.md", "FF7_Kernel_Low_level_libraries.md", "FF7_Savemap.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7.md", "FF7_Battle_Damage_Formulas.md", "FF7_Kernel_Kernelbin.md", "FF7_Menu_Module.md", "FF7_Savemap.md", "FF7_Technical_Customising.md"]
 ---
 
 <!--

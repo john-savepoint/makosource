@@ -12,7 +12,7 @@ llm_tags: ["battle-animation", "skeletal-animation", "delta-compression", "bit-s
 llm_primary_topics: ["Animation file structure", "FF7FrameHeader format", "Bit stream decoding", "Rotation delta compression", "Position offset encoding"]
 llm_related_docs: ["FF7_Battle_Battle_Mechanics.md", "FF7_Battle_Battle_Scenes.md", "FF7_Playstation_Battle_Model_Format.md"]
 
-referenced_by: []
+referenced_by: ["FF7_Battle_Battle_Mechanics.md", "FF7_Playstation_Battle_Model_Format.md"]
 ---
 
 <!--

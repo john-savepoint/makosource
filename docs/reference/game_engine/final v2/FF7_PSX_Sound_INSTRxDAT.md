@@ -14,7 +14,7 @@ llm_primary_topics: ["InstrumentIndex struct format", "ADSR envelope parameters"
 llm_related_docs: ["FF7_PSX_Sound_INSTRxALL.md", "FF7_PSX_Sound_AKAO_frames.md", "FF7_PSX_Sound_Overview.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_PSX_Sound.md", "FF7_PSX_Sound_AKAO_frames.md", "FF7_PSX_Sound_INSTRxALL.md", "FF7_PSX_Sound_Overview.md"]
 ---
 
 <!--

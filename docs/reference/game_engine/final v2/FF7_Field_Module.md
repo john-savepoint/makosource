@@ -14,7 +14,7 @@ llm_primary_topics: ["Field File Format", "Event Script System", "Camera Matrix"
 llm_related_docs: ["FF7_Kernel_Low_level_libraries.md", "FF7_LZSS_format.md", "FF7_LGP_format.md", "PSX_TIM_format.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7.md", "FF7_Chocobo_Breeding.md", "FF7_Engine_basics.md", "FF7_Item_Materia_Reference.md", "FF7_Kernel_Memory_management.md", "FF7_LGP_format.md", "FF7_LZSS_format.md", "FF7_Menu_Module.md", "FF7_PSX_Sound_AKAO_frames.md", "FF7_Savemap.md", "FF7_TEX_format.md", "FF7_Technical_Customising.md", "FF7_Technical_Source.md", "FF7_WorldMap_Module_Script.md", "PSX_TIM_format.md"]
 ---
 
 <!--

@@ -14,7 +14,7 @@ llm_primary_topics: ["MAP file structure", "Mesh triangle/vertex format", "Walkm
 llm_related_docs: ["FF7_WorldMap_Module_Script.md", "FF7_World_Map_TXZ.md", "FF7_World_Map_BSZ.md", "FF7_World_Map_Encounters.md", "FF7_LZSS_format.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7.md", "FF7_Engine_basics.md", "FF7_Technical_Source.md", "FF7_WorldMap_Module_Script.md", "FF7_World_Map_BSZ.md", "FF7_World_Map_Encounters.md", "FF7_World_Map_TXZ.md"]
 ---
 
 <!--

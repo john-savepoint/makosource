@@ -14,7 +14,7 @@ llm_primary_topics: ["Save file structure", "Character record format", "Field sc
 llm_related_docs: ["FF7_Kernel.md", "FF7_Menu_Module.md", "FF7_Field_Module.md", "FF7_Item_Materia_Reference.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7_Battle_Battle_Scenes_Battle_Script.md", "FF7_Chocobo_Breeding.md", "FF7_Item_Materia_Reference.md", "FF7_Kernel.md", "FF7_Kernel_Kernelbin.md", "FF7_Kernel_Memory_management.md", "FF7_Menu_Module.md"]
 ---
 
 <!--

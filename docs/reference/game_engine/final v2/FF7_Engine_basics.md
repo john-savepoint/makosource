@@ -14,7 +14,7 @@ llm_primary_topics: ["Engine module system", "PSX resource constraints", "Module
 llm_related_docs: ["FF7_Kernel_Overview.md", "FF7_Field_Module.md", "FF7_Battle_Battle_Mechanics.md", "FF7_Menu_Module.md", "FF7_WorldMap_Module.md"]
 
 # Backlinks (leave empty - populated in pass 2)
-referenced_by: []
+referenced_by: ["FF7.md", "FF7_History.md", "FF7_Kernel_Overview.md", "FF7_Technical.md", "FF7_Technical_Source.md"]
 ---
 
 <!--
