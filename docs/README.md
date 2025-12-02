@@ -1,7 +1,7 @@
 # Documentation Directory Guide
 
 **Purpose:** Navigate the complete FFNx Japanese Implementation documentation
-**Updated:** 2025-11-24 22:15:00 JST (Monday)
+**Updated:** 2025-12-02 15:50:00 JST (Tuesday)
 **For:** Humans and LLMs working on this project
 
 ---
@@ -13,6 +13,76 @@
 2. **Read:** `../DOCUMENTATION_MAP.md` - Complete navigation guide
 3. **Read:** `reference/BEGINNER_GUIDE.md` - Understand the basics
 4. **Then:** Continue below based on your role
+
+---
+
+## ⚡ Recent Work (December 2025) - READ THIS FIRST
+
+**Status**: Implementation 85.7% complete (24/28 systems verified working)
+
+### What's Been Done
+
+**English Version Breakthrough** (Session b8a3e4e3 + c2b17842):
+- ✅ English `ff7_en.exe` + Japanese text = **WORKS** with PR #737
+- ✅ Field dialogue renders perfectly
+- ✅ Battle text works
+- ⚠️ Menu labels broken (fix identified: extract Japanese kernel2.bin)
+
+**Documentation Restructured** (2025-12-02):
+- Created `IMPLEMENTATION_STATUS.md` (200 lines, replaces 2,022-line checklist)
+- Archived old verification checklist (historical value preserved)
+- Focused on actionable status vs hypothetical questions
+
+### 📖 Quick Guide: Which Document to Read
+
+**For current implementation status:**
+→ **`IMPLEMENTATION_STATUS.md`** (200 lines, ⭐ START HERE)
+  - What's working (8 systems)
+  - Known issues (3 bugs with fixes)
+  - Next steps (kernel2.bin extraction)
+  - Critical discovery: Two text pipelines
+
+**For bug analysis and fixes:**
+→ **`PR737_ANALYSIS.md`** (existing document)
+  - 3 bug root causes
+  - Hook points with memory addresses
+  - Fix strategies
+
+**For English version compatibility:**
+→ **`ENGLISH_VERSION_FINDINGS.md`** (if exists) or see IMPLEMENTATION_STATUS.md Section "English Version Compatibility"
+  - Two text pipeline architecture
+  - File redirect implementation
+  - Why field text works but menus don't
+
+**For complete technical specification:**
+→ **`FFNX_JAPANESE_IMPLEMENTATION_MASTER_BIBLE.md`** (155k tokens, comprehensive)
+  - Use this for deep implementation details
+  - Use sharded version if too large: `sharded/bible_sections/`
+
+**For historical research (archived):**
+→ **`archive/verification_checklists/IMPLEMENTATION_VERIFICATION_CHECKLIST_v2.4.0.md`**
+  - 21 sections of verification questions
+  - Historical value only (superseded by IMPLEMENTATION_STATUS.md)
+
+### 🎯 For LLMs: Context Window Guidelines
+
+**Always include** (~2.5k tokens):
+- `IMPLEMENTATION_STATUS.md` - Current status, clear next steps
+
+**Include if working on bugs** (~15k tokens):
+- `PR737_ANALYSIS.md` - Bug fixes with hook points
+
+**Include if unsure** (~5k tokens):
+- `reference/BEGINNER_GUIDE.md` - Encoding basics
+
+**Don't include** (27k tokens, archived):
+- ~~IMPLEMENTATION_VERIFICATION_CHECKLIST.md~~ - Archived, use IMPLEMENTATION_STATUS.md instead
+
+### Next Steps (From IMPLEMENTATION_STATUS.md)
+
+1. **Immediate**: Extract Japanese kernel2.bin → fix menu labels
+2. **Short-term**: Implement naming screen hooks, fix cursor alignment
+3. **Long-term**: Multi-language switching, crowdsourced translation
 
 ---
 
