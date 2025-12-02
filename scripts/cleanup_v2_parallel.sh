@@ -57,6 +57,17 @@ cleanup_document() {
     local output_file="$OUTPUT_DIR/$filename"
     local temp_log="/tmp/cleanup_${filename%.md}.log"
 
+    # RESUME SAFETY: Skip if already processed
+    if [ -f "$output_file" ]; then
+        local line_count=$(wc -l < "$output_file" | tr -d ' ')
+        if [ "$line_count" -gt 10 ]; then
+            log_info "$filename - already cleaned (skipping)"
+            return 0
+        else
+            log_info "$filename - incomplete output detected, re-processing..."
+        fi
+    fi
+
     log_info "Cleaning $filename..."
 
     # Verify source file exists

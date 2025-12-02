@@ -1,0 +1,40 @@
+{
+  "session_id": "887a1b3f-e34c-44f4-8434-e7e55610b603",
+  "prompts": [
+    {
+      "text": "check in on it please",
+      "timestamp": "2025-12-02T00:52:43.653663+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "8",
+        "window_name": "claude-ffb12006",
+        "pane": "%58",
+        "full_path": "ff70G-japanese-mod:8:%58"
+      }
+    },
+    {
+      "text": "update me",
+      "timestamp": "2025-12-02T01:41:39.120104+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "8",
+        "window_name": "claude-ea20b37e",
+        "pane": "%58",
+        "full_path": "ff70G-japanese-mod:8:%58"
+      }
+    },
+    {
+      "text": "     \u2610 Run parallel cleanup on all 37 documents (5-6 at a time)\n     \u2610 Verify v2 documents have no corrupted characters\n     \u2610 Commit final v2 cleaned documents\n\ni think we have already done the cleanup tho in the final v2 directory",
+      "timestamp": "2025-12-02T05:55:27.523888+00:00",
+      "tmux_context": {
+        "session": "ff70G-japanese-mod",
+        "window": "4",
+        "window_name": "claude-887a1b3f",
+        "pane": "%66",
+        "full_path": "ff70G-japanese-mod:4:%66"
+      }
+    }
+  ],
+  "created_at": "2025-12-02T00:52:43.652384+00:00",
+  "last_modified": "2025-12-02T05:55:27.524003+00:00"
+}

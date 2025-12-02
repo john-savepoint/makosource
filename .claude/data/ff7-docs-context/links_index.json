@@ -1,0 +1,2390 @@
+{
+  "FF7.md": [
+    {
+      "type": "wiki",
+      "target": "FF7_History 'History'.md",
+      "anchor": null,
+      "text": "History",
+      "line_number": 18,
+      "original_path": "FF7/History 'History'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Engine_basics 'Engine Basics'.md",
+      "anchor": null,
+      "text": "Engine Basics",
+      "line_number": 19,
+      "original_path": "FF7/Engine_basics 'Engine Basics'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel 'The Kernel'.md",
+      "anchor": null,
+      "text": "The Kernel",
+      "line_number": 22,
+      "original_path": "FF7/Kernel 'The Kernel'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel_Overview 'Kernel Overview'.md",
+      "anchor": null,
+      "text": "Kernel Overview",
+      "line_number": 23,
+      "original_path": "FF7/Kernel/Overview 'Kernel Overview'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel_Memory_management 'Memory Management'.md",
+      "anchor": null,
+      "text": "Memory Management",
+      "line_number": 26,
+      "original_path": "FF7/Kernel/Memory_management 'Memory Management'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel_Kernel.bin 'Kernel.bin'.md",
+      "anchor": null,
+      "text": "Kernel.bin",
+      "line_number": 30,
+      "original_path": "FF7/Kernel/Kernel.bin 'Kernel.bin'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel_Low_level_libraries 'Low Level Libraries'.md",
+      "anchor": null,
+      "text": "Low Level Libraries",
+      "line_number": 33,
+      "original_path": "FF7/Kernel/Low_level_libraries 'Low Level Libraries'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_LZSS_format ' LZSS Archives'.md",
+      "anchor": null,
+      "text": " LZSS Archives",
+      "line_number": 37,
+      "original_path": "FF7/LZSS_format ' LZSS Archives'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_LGP_format ' LGP Archives'.md",
+      "anchor": null,
+      "text": " LGP Archives",
+      "line_number": 38,
+      "original_path": "FF7/LGP_format ' LGP Archives'"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_TIM_format ' TIM texture data format for PSX'.md",
+      "anchor": null,
+      "text": " TIM texture data format for PSX",
+      "line_number": 40,
+      "original_path": "PSX/TIM_format ' TIM texture data format for PSX'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_TEX_format ' TEX texture data format for the PC'.md",
+      "anchor": null,
+      "text": " TEX texture data format for the PC",
+      "line_number": 41,
+      "original_path": "FF7/TEX_format ' TEX texture data format for the PC'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel_Low_level_libraries.md",
+      "anchor": "Model_formats_for_PSX 'Model Formats for PSX'",
+      "text": "Model Formats for PSX",
+      "line_number": 43,
+      "original_path": "FF7/Kernel/Low_level_libraries#Model_formats_for_PSX 'Model Formats for PSX'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Menu_Module 'The Menu Module'.md",
+      "anchor": null,
+      "text": "The Menu Module",
+      "line_number": 45,
+      "original_path": "FF7/Menu_Module 'The Menu Module'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Savemap 'The Save Game format'.md",
+      "anchor": null,
+      "text": "The Save Game format",
+      "line_number": 51,
+      "original_path": "FF7/Savemap 'The Save Game format'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_Module ' The Field Module'.md",
+      "anchor": null,
+      "text": " The Field Module",
+      "line_number": 52,
+      "original_path": "FF7/Field_Module ' The Field Module'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_Module.md",
+      "anchor": "PSX_DAT_Format 'PSX DAT Format'",
+      "text": "PSX DAT Format",
+      "line_number": 59,
+      "original_path": "FF7/Field_Module#PSX_DAT_Format 'PSX DAT Format'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_Module.md",
+      "anchor": "PSX_MIM_Format 'PSX MIM Format'",
+      "text": "PSX MIM Format",
+      "line_number": 60,
+      "original_path": "FF7/Field_Module#PSX_MIM_Format 'PSX MIM Format'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_Module.md",
+      "anchor": "PSX_BSX_Format 'PSX BSX Format'",
+      "text": "PSX BSX Format",
+      "line_number": 61,
+      "original_path": "FF7/Field_Module#PSX_BSX_Format 'PSX BSX Format'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_Module.md",
+      "anchor": "PSX_BCX_Format 'PSX BCX Format'",
+      "text": "PSX BCX Format",
+      "line_number": 62,
+      "original_path": "FF7/Field_Module#PSX_BCX_Format 'PSX BCX Format'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Battle_Battle_Mechanics ' Battle Mechanics'.md",
+      "anchor": null,
+      "text": " Battle Mechanics",
+      "line_number": 65,
+      "original_path": "FF7/Battle/Battle_Mechanics ' Battle Mechanics'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Battle_Damage_Formulas ' Battle Damage Formulas'.md",
+      "anchor": null,
+      "text": " Battle Damage Formulas",
+      "line_number": 66,
+      "original_path": "FF7/Battle/Damage_Formulas ' Battle Damage Formulas'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Battle_Battle_Field ' Battle Field'.md",
+      "anchor": null,
+      "text": " Battle Field",
+      "line_number": 71,
+      "original_path": "FF7/Battle/Battle_Field ' Battle Field'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Battle_Battle_Scenes_Battle_Script ' Battle Scripts'.md",
+      "anchor": null,
+      "text": " Battle Scripts",
+      "line_number": 73,
+      "original_path": "FF7/Battle/Battle_Scenes/Battle_Script ' Battle Scripts'"
+    },
+    {
+      "type": "standard",
+      "target": "<FF7/Battle/Battle_Animation_(PC",
+      "anchor": null,
+      "text": " Battle Animation (PC)",
+      "line_number": 75
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_WorldMap_Module ' The World Map Module'.md",
+      "anchor": null,
+      "text": " The World Map Module",
+      "line_number": 76,
+      "original_path": "FF7/WorldMap_Module ' The World Map Module'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_WorldMap_Module_Script ' World Map Script Engine'.md",
+      "anchor": null,
+      "text": " World Map Script Engine",
+      "line_number": 79,
+      "original_path": "FF7/WorldMap_Module/Script ' World Map Script Engine'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_World_Map_Encounters ' World Map Encounters'.md",
+      "anchor": null,
+      "text": " World Map Encounters",
+      "line_number": 80,
+      "original_path": "FF7/World_Map/Encounters ' World Map Encounters'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Chocobo_Breeding ' Chocobo Breeding'.md",
+      "anchor": null,
+      "text": " Chocobo Breeding",
+      "line_number": 82,
+      "original_path": "FF7/Chocobo_Breeding ' Chocobo Breeding'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_PSX_Sound 'PSX Sound'.md",
+      "anchor": null,
+      "text": "PSX Sound",
+      "line_number": 88,
+      "original_path": "FF7/PSX/PSX_Sound 'PSX Sound'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Overview 'Overview'.md",
+      "anchor": null,
+      "text": "Overview",
+      "line_number": 89,
+      "original_path": "FF7/PSX/Sound/Overview 'Overview'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_INSTRx.DAT 'INSTRx.DAT'.md",
+      "anchor": null,
+      "text": "INSTRx.DAT",
+      "line_number": 90,
+      "original_path": "FF7/PSX/Sound/INSTRx.DAT 'INSTRx.DAT'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_INSTRx.ALL 'INSTRx.ALL'.md",
+      "anchor": null,
+      "text": "INSTRx.ALL",
+      "line_number": 91,
+      "original_path": "FF7/PSX/Sound/INSTRx.ALL 'INSTRx.ALL'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_AKAO_frames 'AKAO frames'.md",
+      "anchor": null,
+      "text": "AKAO frames",
+      "line_number": 92,
+      "original_path": "FF7/PSX/Sound/AKAO_frames 'AKAO frames'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Item_Materia_Reference ' Item and Materia Reference'.md",
+      "anchor": null,
+      "text": " Item and Materia Reference",
+      "line_number": 95,
+      "original_path": "FF7/Item_Materia_Reference ' Item and Materia Reference'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical ' Technical Help'.md",
+      "anchor": null,
+      "text": " Technical Help",
+      "line_number": 99,
+      "original_path": "FF7/Technical ' Technical Help'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_Customising 'Tools and patches'.md",
+      "anchor": null,
+      "text": "Tools and patches",
+      "line_number": 100,
+      "original_path": "FF7/Technical/Customising 'Tools and patches'"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_Source 'Source Code Forensics'.md",
+      "anchor": null,
+      "text": "Source Code Forensics",
+      "line_number": 101,
+      "original_path": "FF7/Technical/Source 'Source Code Forensics'"
+    }
+  ],
+  "FF7_Battle_Battle_Animation_PC.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7-battle-animation-format-pc",
+      "text": "FF7 Battle Animation Format (PC)",
+      "line_number": 15
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "overview",
+      "text": "Overview",
+      "line_number": 16
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "1-file-structure",
+      "text": "1. File Structure",
+      "line_number": 17
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "2-data-structures",
+      "text": "2. Data Structures",
+      "line_number": 18
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "3-decoding-algorithms",
+      "text": "3. Decoding Algorithms",
+      "line_number": 19
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "4-implementation-guide",
+      "text": "4. Implementation Guide",
+      "line_number": 20
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "5-alternative-implementations",
+      "text": "5. Alternative Implementations",
+      "line_number": 21
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "appendix-a-quick-reference",
+      "text": "Appendix A: Quick Reference",
+      "line_number": 22
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "appendix-b-known-issues",
+      "text": "Appendix B: Known Issues",
+      "line_number": 23
+    }
+  ],
+  "FF7_Battle_Battle_Field.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7battlebattle_field",
+      "text": "FF7/Battle/Battle Field",
+      "line_number": 13
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "settings_first_file",
+      "text": "Settings (first file)",
+      "line_number": 14
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "psx_3d_battle_scenes_architecture",
+      "text": "PSX 3D Battle Scenes Architecture",
+      "line_number": 15
+    }
+  ],
+  "FF7_Battle_Battle_Mechanics.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7battlebattle_mechanics",
+      "text": "FF7/Battle/Battle Mechanics",
+      "line_number": 25
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "command_defaults",
+      "text": "Command Defaults",
+      "line_number": 26
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "queued_actions",
+      "text": "Queued Actions",
+      "line_number": 27
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ai_structure",
+      "text": "AI Structure",
+      "line_number": 28
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "active_character_data",
+      "text": "Active Character Data",
+      "line_number": 29
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "actor_battle_data",
+      "text": "Actor Battle Data",
+      "line_number": 30
+    }
+  ],
+  "FF7_Battle_Battle_Scenes.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7battlebattle_scenes",
+      "text": "FF7/Battle/Battle Scenes",
+      "line_number": 18
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "introduction",
+      "text": "Introduction",
+      "line_number": 19
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "scene.bin_file_format",
+      "text": "Scene.Bin file format",
+      "line_number": 20
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel_Kernel.bin.md",
+      "anchor": null,
+      "text": "kernel.bin",
+      "line_number": 39,
+      "original_path": "FF7/Kernel/Kernel.bin"
+    },
+    {
+      "type": "wiki",
+      "target": ".md",
+      "anchor": "Battle_Setup_1_format",
+      "text": "format explanation",
+      "line_number": 112,
+      "original_path": "#Battle_Setup_1_format"
+    },
+    {
+      "type": "wiki",
+      "target": ".md",
+      "anchor": "Camera_Placement_Data_format",
+      "text": "format explanation",
+      "line_number": 113,
+      "original_path": "#Camera_Placement_Data_format"
+    },
+    {
+      "type": "wiki",
+      "target": ".md",
+      "anchor": "Battle_Formation_Data",
+      "text": "format explanation",
+      "line_number": 114,
+      "original_path": "#Battle_Formation_Data"
+    },
+    {
+      "type": "wiki",
+      "target": ".md",
+      "anchor": "Enemy_data_format",
+      "text": "format explanation",
+      "line_number": 118,
+      "original_path": "#Enemy_data_format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Attack_data.md",
+      "anchor": null,
+      "text": "format explanation",
+      "line_number": 121,
+      "original_path": "FF7/Attack_data"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_FF_Text.md",
+      "anchor": null,
+      "text": "in FF Text format",
+      "line_number": 123,
+      "original_path": "FF7/FF_Text"
+    },
+    {
+      "type": "wiki",
+      "target": ".md",
+      "anchor": "AI_Data",
+      "text": "format explanation",
+      "line_number": 128,
+      "original_path": "#AI_Data"
+    },
+    {
+      "type": "wiki",
+      "target": ".md",
+      "anchor": "AI_Data",
+      "text": "format explanation",
+      "line_number": 132,
+      "original_path": "#AI_Data"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Battle_Battle_Scenes_Battle_Script.md",
+      "anchor": null,
+      "text": "here",
+      "line_number": 673,
+      "original_path": "FF7/Battle/Battle_Scenes/Battle_Script"
+    }
+  ],
+  "FF7_Battle_Battle_Scenes_Battle_Script.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7battlebattle_scenesbattle_script",
+      "text": "FF7/Battle/Battle Scenes/Battle Script",
+      "line_number": 13
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Battle_Battle_Scenes_Battle_AI_Addresses.md",
+      "anchor": null,
+      "text": "Address",
+      "line_number": 31,
+      "original_path": "FF7/Battle/Battle_Scenes/Battle_AI_Addresses"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Command_data.md",
+      "anchor": null,
+      "text": "Command index",
+      "line_number": 428,
+      "original_path": "FF7/Command_data"
+    }
+  ],
+  "FF7_Battle_Damage_Formulas.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7battledamage_formulas",
+      "text": "FF7/Battle/Damage Formulas",
+      "line_number": 13
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "version_history",
+      "text": "Version History",
+      "line_number": 14
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "foreword",
+      "text": "Foreword",
+      "line_number": 15
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "component_guides",
+      "text": "Component Guides",
+      "line_number": 16
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "contents",
+      "text": "Contents",
+      "line_number": 17
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "1_definitions",
+      "text": "1. Definitions",
+      "line_number": 18
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "2_basic_damage_formulae",
+      "text": "2. Basic Damage Formulae",
+      "line_number": 19
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "3_battle_damage",
+      "text": "3. Battle Damage",
+      "line_number": 20
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "4_statuses",
+      "text": "4. Statuses",
+      "line_number": 21
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "5_game_over",
+      "text": "5. Game Over",
+      "line_number": 22
+    }
+  ],
+  "FF7_Chocobo_Breeding.md": [],
+  "FF7_Engine_basics.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7engine_basics",
+      "text": "FF7/Engine basics",
+      "line_number": 14
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "parts_of_the_engine",
+      "text": "Parts of the Engine",
+      "line_number": 15
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "generic_program_flow",
+      "text": "Generic Program Flow",
+      "line_number": 16
+    },
+    {
+      "type": "standard",
+      "target": "../../images/Engine_parts.jpg",
+      "anchor": null,
+      "text": "Engine architecture diagram",
+      "line_number": 31
+    },
+    {
+      "type": "standard",
+      "target": "../../images/Engine_parts.jpg",
+      "anchor": null,
+      "text": "Engine parts",
+      "line_number": 47
+    }
+  ],
+  "FF7_Field_Module.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7field_module",
+      "text": "FF7/Field Module",
+      "line_number": 3
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "important_files",
+      "text": "Important Files",
+      "line_number": 4
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "field_overview",
+      "text": "Field Overview",
+      "line_number": 5
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "field_format_pc",
+      "text": "Field Format (PC)",
+      "line_number": 6
+    },
+    {
+      "type": "standard",
+      "target": "180px-Field_BackgroundVRAM.jpg \"180px-Field_BackgroundVRAM.jpg\"",
+      "anchor": null,
+      "text": "![",
+      "line_number": 33
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_LZS_format.md",
+      "anchor": null,
+      "text": "LZS",
+      "line_number": 57,
+      "original_path": "FF7/LZS_format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_LZS_format.md",
+      "anchor": null,
+      "text": "LZS compression",
+      "line_number": 165,
+      "original_path": "FF7/LZS_format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_MIMfile.md",
+      "anchor": null,
+      "text": "MIM file",
+      "line_number": 213,
+      "original_path": "FF7/Field/MIMfile"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_LZS_format.md",
+      "anchor": null,
+      "text": "LZS compression",
+      "line_number": 213,
+      "original_path": "FF7/LZS_format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_BSX.md",
+      "anchor": null,
+      "text": "BSX file",
+      "line_number": 217,
+      "original_path": "FF7/Field/BSX"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_LZS_format.md",
+      "anchor": null,
+      "text": "LZS compression",
+      "line_number": 217,
+      "original_path": "FF7/LZS_format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_FIELD.TDB.md",
+      "anchor": null,
+      "text": "FIELD.TDB",
+      "line_number": 217,
+      "original_path": "FF7/Field/FIELD.TDB"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_BCX.md",
+      "anchor": null,
+      "text": "BCX files",
+      "line_number": 221,
+      "original_path": "FF7/Field/BCX"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_FIELD.TDB.md",
+      "anchor": null,
+      "text": "FIELD.TDB",
+      "line_number": 221,
+      "original_path": "FF7/Field/FIELD.TDB"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_LZS_format.md",
+      "anchor": null,
+      "text": "LZS compression",
+      "line_number": 221,
+      "original_path": "FF7/LZS_format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_Script.md",
+      "anchor": null,
+      "text": "Field Script",
+      "line_number": 225,
+      "original_path": "FF7/Field/Script"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_Script_Opcodes.md",
+      "anchor": null,
+      "text": "opcodes",
+      "line_number": 229,
+      "original_path": "FF7/Field/Script/Opcodes"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_Script.md",
+      "anchor": null,
+      "text": "Field Script",
+      "line_number": 233,
+      "original_path": "FF7/Field/Script"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_Script_Opcodes_F8_PMVIE.md",
+      "anchor": null,
+      "text": "F8 PMVIE",
+      "line_number": 233,
+      "original_path": "FF7/Field/Script/Opcodes/F8_PMVIE"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_Script_Opcodes_F9_MOVIE.md",
+      "anchor": null,
+      "text": "F9 MOVIE",
+      "line_number": 233,
+      "original_path": "FF7/Field/Script/Opcodes/F9_MOVIE"
+    },
+    {
+      "type": "wiki",
+      "target": "User:Cyberman.md",
+      "anchor": null,
+      "text": "Cyberman",
+      "line_number": 237,
+      "original_path": "User:Cyberman"
+    },
+    {
+      "type": "wiki",
+      "target": "User:Mirex.md",
+      "anchor": null,
+      "text": "Mirex",
+      "line_number": 243,
+      "original_path": "User:Mirex"
+    },
+    {
+      "type": "wiki",
+      "target": "User:Aali.md",
+      "anchor": null,
+      "text": "Aali",
+      "line_number": 243,
+      "original_path": "User:Aali"
+    },
+    {
+      "type": "standard",
+      "target": "../images/Field_BackgroundVRAM.jpg",
+      "anchor": null,
+      "text": "Field BackgroundVRAM",
+      "line_number": 799
+    }
+  ],
+  "FF7_History.md": [],
+  "FF7_Item_Materia_Reference.md": [],
+  "FF7_Kernel.md": [
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel_Overview.md",
+      "anchor": null,
+      "text": "Kernel Overview",
+      "line_number": 13,
+      "original_path": "FF7/Kernel/Overview"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel_Memory_management.md",
+      "anchor": null,
+      "text": "Memory Management",
+      "line_number": 14,
+      "original_path": "FF7/Kernel/Memory_management"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel_Kernel.bin.md",
+      "anchor": null,
+      "text": "Kernel.bin",
+      "line_number": 15,
+      "original_path": "FF7/Kernel/Kernel.bin"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel_Low_level_libraries.md",
+      "anchor": null,
+      "text": "Low Level Libraries",
+      "line_number": 16,
+      "original_path": "FF7/Kernel/Low_level_libraries"
+    }
+  ],
+  "FF7_Kernel_Kernelbin.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7kernelkernel.bin",
+      "text": "FF7/Kernel/Kernel.bin",
+      "line_number": 3
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "important_files",
+      "text": "Important Files",
+      "line_number": 4
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "the_kernel.bin_archive",
+      "text": "The KERNEL.BIN Archive",
+      "line_number": 5
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "the_kernel2.bin_archive",
+      "text": "The KERNEL2.BIN Archive",
+      "line_number": 6
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel_Low_level_libraries.md",
+      "anchor": "BIN-GZIP_Type_Archives",
+      "text": "BIN-GZIP format",
+      "line_number": 19,
+      "original_path": "FF7/Kernel/Low_level_libraries#BIN-GZIP_Type_Archives"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_FF_Text.md",
+      "anchor": null,
+      "text": "FF Text files",
+      "line_number": 19,
+      "original_path": "FF7/FF_Text"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Command_data.md",
+      "anchor": null,
+      "text": "Command data",
+      "line_number": 25,
+      "original_path": "FF7/Command_data"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Attack_data.md",
+      "anchor": null,
+      "text": "Attack data",
+      "line_number": 26,
+      "original_path": "FF7/Attack_data"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Battle_and_growth_data.md",
+      "anchor": null,
+      "text": "Battle and growth data",
+      "line_number": 27,
+      "original_path": "FF7/Battle_and_growth_data"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Character_starting_stats.md",
+      "anchor": null,
+      "text": "Initialization data",
+      "line_number": 28,
+      "original_path": "FF7/Character_starting_stats"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Item_data.md",
+      "anchor": null,
+      "text": "Item data",
+      "line_number": 29,
+      "original_path": "FF7/Item_data"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Weapon_data.md",
+      "anchor": null,
+      "text": "Weapon data",
+      "line_number": 30,
+      "original_path": "FF7/Weapon_data"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Armor_data.md",
+      "anchor": null,
+      "text": "Armor data",
+      "line_number": 31,
+      "original_path": "FF7/Armor_data"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Accessory_data.md",
+      "anchor": null,
+      "text": "Accessory data",
+      "line_number": 32,
+      "original_path": "FF7/Accessory_data"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Materia_data.md",
+      "anchor": null,
+      "text": "Materia data",
+      "line_number": 33,
+      "original_path": "FF7/Materia_data"
+    }
+  ],
+  "FF7_Kernel_Low_level_libraries.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7kernellow_level_libraries",
+      "text": "FF7/Kernel/Low level libraries",
+      "line_number": 3
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "pc_to_psx_comparison",
+      "text": "PC to PSX comparison",
+      "line_number": 4
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "data_archives",
+      "text": "Data Archives",
+      "line_number": 5
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_TIM_format.md",
+      "anchor": null,
+      "text": "TIM file",
+      "line_number": 12,
+      "original_path": "PSX/TIM_format"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_TIM_format.md",
+      "anchor": null,
+      "text": "TIM file",
+      "line_number": 14,
+      "original_path": "PSX/TIM_format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel_Kernel.bin.md",
+      "anchor": null,
+      "text": "KERNEL.BIN",
+      "line_number": 92,
+      "original_path": "FF7/Kernel/Kernel.bin"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_LZS_format.md",
+      "anchor": null,
+      "text": "LZS format",
+      "line_number": 97,
+      "original_path": "FF7/LZS_format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_LGP_format.md",
+      "anchor": null,
+      "text": "here",
+      "line_number": 175,
+      "original_path": "FF7/LGP_format"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_TIM_format.md",
+      "anchor": null,
+      "text": "TIM",
+      "line_number": 179,
+      "original_path": "PSX/TIM_format"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_TIM_format.md",
+      "anchor": null,
+      "text": "TIM files",
+      "line_number": 183,
+      "original_path": "PSX/TIM_format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel_Low_level_libraries.md",
+      "anchor": "BIN_archive_data_format",
+      "text": "BIN",
+      "line_number": 183,
+      "original_path": "FF7/Kernel/Low_level_libraries#BIN_archive_data_format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Kernel_Low_level_libraries.md",
+      "anchor": "LZS_Archives",
+      "text": "LZS",
+      "line_number": 183,
+      "original_path": "FF7/Kernel/Low_level_libraries#LZS_Archives"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_GPU.md",
+      "anchor": null,
+      "text": "GPU",
+      "line_number": 183,
+      "original_path": "PSX/GPU"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_TIM_format.md",
+      "anchor": null,
+      "text": "A TIM file",
+      "line_number": 183,
+      "original_path": "PSX/TIM_format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_TEX_format.md",
+      "anchor": null,
+      "text": "here",
+      "line_number": 187,
+      "original_path": "FF7/TEX_format"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_RSD.md",
+      "anchor": null,
+      "text": "resource data (.RSD)",
+      "line_number": 191,
+      "original_path": "PSX/RSD"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_TIM_file.md",
+      "anchor": null,
+      "text": "textures (.TIM)",
+      "line_number": 191,
+      "original_path": "PSX/TIM_file"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_HRC.md",
+      "anchor": null,
+      "text": "skeletal hierarchy (.HRC)",
+      "line_number": 191,
+      "original_path": "PSX/HRC"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Playstation_Battle_Model_Format.md",
+      "anchor": null,
+      "text": "Playstation battle model format",
+      "line_number": 197,
+      "original_path": "FF7/Playstation_Battle_Model_Format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_BSX.md",
+      "anchor": null,
+      "text": "Playstation field model format",
+      "line_number": 197,
+      "original_path": "FF7/Field/BSX"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Playstation_battle_scene_format.md",
+      "anchor": null,
+      "text": "FF7/Playstation battle scene format",
+      "line_number": 197,
+      "original_path": "FF7/Playstation_battle_scene_format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Playstation_Battle_Model_Format.md",
+      "anchor": null,
+      "text": "Playstation battle model format",
+      "line_number": 197,
+      "original_path": "FF7/Playstation_Battle_Model_Format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Playstation_magic_model.md",
+      "anchor": null,
+      "text": "Playstation magic model",
+      "line_number": 197,
+      "original_path": "FF7/Playstation_magic_model"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_HRC.md",
+      "anchor": null,
+      "text": "Hierarchy files (.HRC)",
+      "line_number": 201,
+      "original_path": "PSX/HRC"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_RSD.md",
+      "anchor": null,
+      "text": "Resource data files (.RSD)",
+      "line_number": 201,
+      "original_path": "PSX/RSD"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_P.md",
+      "anchor": null,
+      "text": "Polygon files (.P)",
+      "line_number": 201,
+      "original_path": "FF7/P"
+    }
+  ],
+  "FF7_Kernel_Memory_management.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7kernelmemory_management",
+      "text": "FF7/Kernel/Memory management",
+      "line_number": 25
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ram_management",
+      "text": "RAM management",
+      "line_number": 26
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "vram_management",
+      "text": "VRAM management",
+      "line_number": 27
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "psx_cd_rom_management",
+      "text": "PSX CD-ROM management",
+      "line_number": 28
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Savemap.md",
+      "anchor": null,
+      "text": "Savemap",
+      "line_number": 34,
+      "original_path": "FF7/Savemap"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Savemap.md",
+      "anchor": null,
+      "text": "Savemap",
+      "line_number": 36,
+      "original_path": "FF7/Savemap"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Field_script.md",
+      "anchor": null,
+      "text": "field scripting language",
+      "line_number": 36,
+      "original_path": "FF7/Field_script"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Savemap.md",
+      "anchor": null,
+      "text": "Savemap",
+      "line_number": 36,
+      "original_path": "FF7/Savemap"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Savemap.md",
+      "anchor": null,
+      "text": "Savemap",
+      "line_number": 40,
+      "original_path": "FF7/Savemap"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Savemap.md",
+      "anchor": null,
+      "text": "Savemap",
+      "line_number": 46,
+      "original_path": "FF7/Savemap"
+    },
+    {
+      "type": "standard",
+      "target": "../images/Gears_img_3.jpg",
+      "anchor": null,
+      "text": "Gears img 3",
+      "line_number": 93
+    },
+    {
+      "type": "standard",
+      "target": "../images/Gears_img_4.jpg",
+      "anchor": null,
+      "text": "Gears img 4",
+      "line_number": 95
+    }
+  ],
+  "FF7_Kernel_Overview.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7kerneloverview",
+      "text": "FF7/Kernel/Overview",
+      "line_number": 21
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "history",
+      "text": "History",
+      "line_number": 22
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "kernel_functionality",
+      "text": "Kernel Functionality",
+      "line_number": 23
+    },
+    {
+      "type": "standard",
+      "target": "../images/Kernel_table.png",
+      "anchor": null,
+      "text": "Kernel table",
+      "line_number": 87
+    }
+  ],
+  "FF7_LGP_format.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7lgp_format",
+      "text": "FF7/LGP format",
+      "line_number": 14
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "lgp_archive_format_for_pc_by_ficedula",
+      "text": "LGP Archive format for PC by Ficedula",
+      "line_number": 15
+    },
+    {
+      "type": "wiki",
+      "target": "User:Ficedula.md",
+      "anchor": null,
+      "text": "Ficedula",
+      "line_number": 18,
+      "original_path": "User:Ficedula"
+    },
+    {
+      "type": "wiki",
+      "target": "User:Ficedula.md",
+      "anchor": null,
+      "text": "Ficedula",
+      "line_number": 20,
+      "original_path": "User:Ficedula"
+    }
+  ],
+  "FF7_LZSS_format.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7lzss_format",
+      "text": "FF7/LZSS format",
+      "line_number": 27
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "format",
+      "text": "Format",
+      "line_number": 28
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "lzss_compression",
+      "text": "LZSS compression",
+      "line_number": 29
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "reference_format",
+      "text": "Reference format",
+      "line_number": 30
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "example",
+      "text": "Example",
+      "line_number": 31
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "complications",
+      "text": "Complications",
+      "line_number": 32
+    }
+  ],
+  "FF7_Menu_Module.md": [],
+  "FF7_PSX_Sound.md": [
+    {
+      "type": "standard",
+      "target": "FF7/PSX/Sound/Overview",
+      "anchor": null,
+      "text": "Overview",
+      "line_number": 16
+    },
+    {
+      "type": "standard",
+      "target": "FF7/PSX/Sound/INSTRx.DAT",
+      "anchor": null,
+      "text": "INSTRx.DAT",
+      "line_number": 17
+    },
+    {
+      "type": "standard",
+      "target": "FF7/PSX/Sound/INSTRx.ALL",
+      "anchor": null,
+      "text": "INSTRx.ALL",
+      "line_number": 18
+    },
+    {
+      "type": "standard",
+      "target": "FF7/PSX/Sound/AKAO_frames",
+      "anchor": null,
+      "text": "AKAO frames",
+      "line_number": 19
+    }
+  ],
+  "FF7_PSX_Sound_AKAO_frames.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7psxsoundakao_frames",
+      "text": "FF7/PSX/Sound/AKAO frames",
+      "line_number": 13
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "introduction",
+      "text": "Introduction",
+      "line_number": 14
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "akao_frame_structure",
+      "text": "AKAO frame structure",
+      "line_number": 15
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa0.md",
+      "anchor": null,
+      "text": "0xA0 (Finish Channel)",
+      "line_number": 126,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa0"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa1.md",
+      "anchor": null,
+      "text": "0xA1 (Load Instrument)",
+      "line_number": 128,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa1"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa8aa.md",
+      "anchor": null,
+      "text": "0xA3 (Volume Modifier)",
+      "line_number": 130,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa8aa"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa5.md",
+      "anchor": null,
+      "text": "0xA5 (Pitch Divider)",
+      "line_number": 132,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa5"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa8aa.md",
+      "anchor": null,
+      "text": "0xA8 (Channel Volume)",
+      "line_number": 134,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa8aa"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa8aa.md",
+      "anchor": null,
+      "text": "0xAA (Channel Pan)",
+      "line_number": 136,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa8aa"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xc8.md",
+      "anchor": null,
+      "text": "0xC8 (Loop Point)",
+      "line_number": 138,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xc8"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xca.md",
+      "anchor": null,
+      "text": "0xCA (Return to Loop Point)",
+      "line_number": 140,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xca"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xe8.md",
+      "anchor": null,
+      "text": "0xE8 (Tempo)",
+      "line_number": 142,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xe8"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xea.md",
+      "anchor": null,
+      "text": "0xEA (Reverb Depth)",
+      "line_number": 144,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xea"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xc2.md",
+      "anchor": null,
+      "text": "0xC2 (Turn On Reverb)",
+      "line_number": 146,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xc2"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xfd.md",
+      "anchor": null,
+      "text": "0xFD (Unknown)",
+      "line_number": 148,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xfd"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xfe.md",
+      "anchor": null,
+      "text": "0xFE (Unknown)",
+      "line_number": 150,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xfe"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xb4.md",
+      "anchor": null,
+      "text": "0xB4 (Unknown)",
+      "line_number": 152,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xb4"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa0.md",
+      "anchor": null,
+      "text": "0xE0 (Unimplemented, code-referenced to 0xA0)",
+      "line_number": 154,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa0"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa0.md",
+      "anchor": null,
+      "text": "0xE1 (Unimplemented, code-referenced to 0xA0)",
+      "line_number": 156,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa0"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa0.md",
+      "anchor": null,
+      "text": "0xE2 (Unimplemented, code-referenced to 0xA0)",
+      "line_number": 158,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa0"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa0.md",
+      "anchor": null,
+      "text": "0xE3 (Unimplemented, code-referenced to 0xA0)",
+      "line_number": 160,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa0"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa0.md",
+      "anchor": null,
+      "text": "0xE4 (Unimplemented, code-referenced to 0xA0)",
+      "line_number": 162,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa0"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa0.md",
+      "anchor": null,
+      "text": "0xE5 (Unimplemented, code-referenced to 0xA0)",
+      "line_number": 164,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa0"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa0.md",
+      "anchor": null,
+      "text": "0xE6 (Unimplemented, code-referenced to 0xA0)",
+      "line_number": 166,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa0"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa0.md",
+      "anchor": null,
+      "text": "0xE7 (Unimplemented, code-referenced to 0xA0)",
+      "line_number": 168,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa0"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa0.md",
+      "anchor": null,
+      "text": "0xFA (Unimplemented, code-referenced to 0xA0)",
+      "line_number": 170,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa0"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa0.md",
+      "anchor": null,
+      "text": "0xFB (Unimplemented, code-referenced to 0xA0)",
+      "line_number": 172,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa0"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa0.md",
+      "anchor": null,
+      "text": "0xFC (Unimplemented, code-referenced to 0xA0)",
+      "line_number": 174,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa0"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xa0.md",
+      "anchor": null,
+      "text": "0xFF (Unimplemented, code-referenced to 0xA0)",
+      "line_number": 176,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xa0"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xcd.md",
+      "anchor": null,
+      "text": "0xCD (Unimplemented)",
+      "line_number": 178,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xcd"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_PSX_Sound_Opcodes_0xd1.md",
+      "anchor": null,
+      "text": "0xD1 (Unimplemented)",
+      "line_number": 180,
+      "original_path": "FF7/PSX/Sound/Opcodes/0xd1"
+    }
+  ],
+  "FF7_PSX_Sound_INSTRxALL.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7psxsoundinstrx.all",
+      "text": "FF7/PSX/Sound/INSTRx.ALL",
+      "line_number": 13
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "file_structure",
+      "text": "File Structure",
+      "line_number": 14
+    }
+  ],
+  "FF7_PSX_Sound_INSTRxDAT.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7psxsoundinstrx.dat",
+      "text": "FF7/PSX/Sound/INSTRx.DAT",
+      "line_number": 13
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "record_format",
+      "text": "Record format",
+      "line_number": 14
+    }
+  ],
+  "FF7_PSX_Sound_Overview.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7psxsoundoverview",
+      "text": "FF7/PSX/Sound/Overview",
+      "line_number": 13
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "overview",
+      "text": "Overview",
+      "line_number": 14
+    }
+  ],
+  "FF7_Playstation_Battle_Model_Format.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7playstation_battle_model_format",
+      "text": "FF7/Playstation Battle Model Format",
+      "line_number": 14
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "playstation_battle_model_format",
+      "text": "Playstation battle model format",
+      "line_number": 15
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_LZS_format.md",
+      "anchor": null,
+      "text": "LZS format",
+      "line_number": 46,
+      "original_path": "FF7/LZS_format"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_TIM_format.md",
+      "anchor": null,
+      "text": "TIM format",
+      "line_number": 46,
+      "original_path": "PSX/TIM_format"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_animation_format.md",
+      "anchor": null,
+      "text": "animation data",
+      "line_number": 46,
+      "original_path": "FF7/animation_format"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_HRC.md",
+      "anchor": null,
+      "text": "Hierarchy files (.HRC)",
+      "line_number": 121,
+      "original_path": "PSX/HRC"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_TIM_format.md",
+      "anchor": null,
+      "text": "TIM",
+      "line_number": 296,
+      "original_path": "PSX/TIM_format"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_TIM_format.md",
+      "anchor": null,
+      "text": "TIM",
+      "line_number": 296,
+      "original_path": "PSX/TIM_format"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_TIM_format.md",
+      "anchor": null,
+      "text": "TIM format",
+      "line_number": 430,
+      "original_path": "PSX/TIM_format"
+    }
+  ],
+  "FF7_Savemap.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7savemap",
+      "text": "FF7/Savemap",
+      "line_number": 31
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "the_savemap",
+      "text": "The Savemap",
+      "line_number": 32
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "save_memory_bank_12",
+      "text": "Save Memory Bank 1/2",
+      "line_number": 33
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "save_memory_bank_34",
+      "text": "Save Memory Bank 3/4",
+      "line_number": 34
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "save_memory_bank_bc",
+      "text": "Save Memory Bank B/C",
+      "line_number": 35
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "save_memory_bank_de",
+      "text": "Save Memory Bank D/E",
+      "line_number": 36
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "save_memory_bank_7f",
+      "text": "Save Memory Bank 7/F",
+      "line_number": 37
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "character_record",
+      "text": "Character Record",
+      "line_number": 38
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "chocobo_record",
+      "text": "Chocobo Record",
+      "line_number": 39
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "save_item_list",
+      "text": "Save Item List",
+      "line_number": 40
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "save_materia_list",
+      "text": "Save Materia List",
+      "line_number": 41
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "kernel.bin_section_4_entry",
+      "text": "KERNEL.BIN Section 4 Entry",
+      "line_number": 42
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "documentation_notes_format",
+      "text": "Documentation Notes & Format",
+      "line_number": 43
+    },
+    {
+      "type": "wiki",
+      "target": "Bit_numbering.md",
+      "anchor": null,
+      "text": "LBS 0",
+      "line_number": 3883,
+      "original_path": "Bit_numbering"
+    }
+  ],
+  "FF7_TEX_format.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7tex_format",
+      "text": "FF7/TEX format",
+      "line_number": 14
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "tex_texture_data_format_for_pc_by_mirex_edits_by_aali",
+      "text": "TEX Texture Data Format for PC by Mirex (Edits by Aali)",
+      "line_number": 15
+    },
+    {
+      "type": "wiki",
+      "target": "User:Mirex.md",
+      "anchor": null,
+      "text": "Mirex",
+      "line_number": 19,
+      "original_path": "User:Mirex"
+    },
+    {
+      "type": "wiki",
+      "target": "User:Aali.md",
+      "anchor": null,
+      "text": "Aali",
+      "line_number": 19,
+      "original_path": "User:Aali"
+    }
+  ],
+  "FF7_Technical.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7technical",
+      "text": "FF7/Technical",
+      "line_number": 14
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "before_actual_game",
+      "text": "Before actual game",
+      "line_number": 15
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "during_the_game",
+      "text": "During the game",
+      "line_number": 16
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_Error_112.md",
+      "anchor": null,
+      "text": "\\'Error 112\\' during installation",
+      "line_number": 24,
+      "original_path": "FF7/Technical/Error_112"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_Autoexec.nt.md",
+      "anchor": null,
+      "text": "I get some weird error about C:\\\\WINDOWS\\\\SYSTEM32\\\\AUTOEXEC.NT when launching the installer",
+      "line_number": 25,
+      "original_path": "FF7/Technical/Autoexec.nt"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_Hardware_rendering.md",
+      "anchor": null,
+      "text": "I can\\'t select Hardware rendering in game configuration",
+      "line_number": 26,
+      "original_path": "FF7/Technical/Hardware_rendering"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_Game_won't_run.md",
+      "anchor": null,
+      "text": "I get some error while starting game executable or game won\\'t run at all",
+      "line_number": 27,
+      "original_path": "FF7/Technical/Game_won't_run"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_New_game.md",
+      "anchor": null,
+      "text": "After pressing \\'New game\\' I get only black screen or game crashes",
+      "line_number": 28,
+      "original_path": "FF7/Technical/New_game"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_Chocobo_races.md",
+      "anchor": null,
+      "text": "Game crashes when I try to enter Chocobo races",
+      "line_number": 32,
+      "original_path": "FF7/Technical/Chocobo_races"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_Movies.md",
+      "anchor": null,
+      "text": "Movies are played upside down",
+      "line_number": 33,
+      "original_path": "FF7/Technical/Movies"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_Sound_blaster.md",
+      "anchor": null,
+      "text": "I have Sound Blaster Live/Audigy card and problems with sound",
+      "line_number": 34,
+      "original_path": "FF7/Technical/Sound_blaster"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_Graphic_problems.md",
+      "anchor": null,
+      "text": "Game backgrounds or text looks crappy",
+      "line_number": 35,
+      "original_path": "FF7/Technical/Graphic_problems"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_1st_fight.md",
+      "anchor": null,
+      "text": "Game crashes after first fight in new game",
+      "line_number": 36,
+      "original_path": "FF7/Technical/1st_fight"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_Bike_minigame.md",
+      "anchor": null,
+      "text": "Bike minigame speed is way too fast",
+      "line_number": 37,
+      "original_path": "FF7/Technical/Bike_minigame"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_Random_crashes.md",
+      "anchor": null,
+      "text": "Game crashes in some places",
+      "line_number": 38,
+      "original_path": "FF7/Technical/Random_crashes"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_Swirl.md",
+      "anchor": null,
+      "text": "Game crashes when entering a battle",
+      "line_number": 39,
+      "original_path": "FF7/Technical/Swirl"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_Technical_NoMovies.md",
+      "anchor": null,
+      "text": "No movies are played at all",
+      "line_number": 40,
+      "original_path": "FF7/Technical/NoMovies"
+    }
+  ],
+  "FF7_Technical_Customising.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7technicalcustomising",
+      "text": "FF7/Technical/Customising",
+      "line_number": 14
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "essentials",
+      "text": "Essentials",
+      "line_number": 15
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "modifications",
+      "text": "Modifications",
+      "line_number": 16
+    },
+    {
+      "type": "wiki",
+      "target": "FF7.md",
+      "anchor": null,
+      "text": "Final Fantasy VII",
+      "line_number": 21,
+      "original_path": "FF7"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7.md",
+      "anchor": null,
+      "text": "Final Fantasy VII",
+      "line_number": 32,
+      "original_path": "FF7"
+    },
+    {
+      "type": "wiki",
+      "target": "User:Synergy_Blades.md",
+      "anchor": null,
+      "text": "Synergy Blades",
+      "line_number": 73,
+      "original_path": "User:Synergy_Blades"
+    }
+  ],
+  "FF7_Technical_Source.md": [],
+  "FF7_WorldMap_Module.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7worldmap_module",
+      "text": "FF7/WorldMap Module",
+      "line_number": 17
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "preamble",
+      "text": "Preamble",
+      "line_number": 18
+    },
+    {
+      "type": "wiki",
+      "target": "User:Cyberman.md",
+      "anchor": null,
+      "text": "Cyberman",
+      "line_number": 204,
+      "original_path": "User:Cyberman"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_WorldMap_Module_TextureTable.md",
+      "anchor": null,
+      "text": " here",
+      "line_number": 306,
+      "original_path": "FF7/WorldMap_Module/TextureTable"
+    }
+  ],
+  "FF7_WorldMap_Module_Script.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7worldmap_modulescript",
+      "text": "FF7/WorldMap Module/Script",
+      "line_number": 15
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "script_engine",
+      "text": "Script Engine",
+      "line_number": 16
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "encounter_data",
+      "text": "Encounter Data Format (PC)",
+      "line_number": 17
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_WorldMap_Module_Script_Opcodes.md",
+      "anchor": null,
+      "text": "opcode list",
+      "line_number": 24,
+      "original_path": "FF7/WorldMap_Module/Script/Opcodes"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_WorldMap_Module_Script_Opcodes_330.md",
+      "anchor": null,
+      "text": "330",
+      "line_number": 68,
+      "original_path": "FF7/WorldMap_Module/Script/Opcodes/330"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_WorldMap_Module_Script_Opcodes_204.md",
+      "anchor": null,
+      "text": "204",
+      "line_number": 70,
+      "original_path": "FF7/WorldMap_Module/Script/Opcodes/204"
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_WorldMap_Module_Script_Opcodes_203.md",
+      "anchor": null,
+      "text": "return",
+      "line_number": 140,
+      "original_path": "FF7/WorldMap_Module/Script/Opcodes/203"
+    }
+  ],
+  "FF7_World_Map_BSZ.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7world_mapbsz",
+      "text": "FF7/World Map/BSZ",
+      "line_number": 15
+    }
+  ],
+  "FF7_World_Map_Encounters.md": [],
+  "FF7_World_Map_TXZ.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "ff7world_maptxz",
+      "text": "FF7/World Map/TXZ",
+      "line_number": 15
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "wm0.txz",
+      "text": "WM0.TXZ",
+      "line_number": 16
+    },
+    {
+      "type": "wiki",
+      "target": "FF7_WorldMap_Module_TextureTable.md",
+      "anchor": null,
+      "text": "FF7/WorldMap_Module/TextureTable",
+      "line_number": 60,
+      "original_path": "FF7/WorldMap_Module/TextureTable"
+    }
+  ],
+  "PSX_TIM_format.md": [
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "psxtim_format",
+      "text": "PSX/TIM format",
+      "line_number": 15
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "introduction",
+      "text": "Introduction",
+      "line_number": 16
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "file_layout",
+      "text": "File layout",
+      "line_number": 17
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "header",
+      "text": "Header",
+      "line_number": 18
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "clut_color_lookup_table",
+      "text": "CLUT (color lookup table)",
+      "line_number": 19
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "image_data",
+      "text": "Image data",
+      "line_number": 20
+    },
+    {
+      "type": "standard",
+      "target": "",
+      "anchor": "related_formats",
+      "text": "Related Formats",
+      "line_number": 21
+    },
+    {
+      "type": "wiki",
+      "target": "PSX.md",
+      "anchor": null,
+      "text": "Sony PlayStation",
+      "line_number": 27,
+      "original_path": "PSX"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_frame_buffer.md",
+      "anchor": null,
+      "text": "frame buffer",
+      "line_number": 27,
+      "original_path": "PSX/frame_buffer"
+    },
+    {
+      "type": "wiki",
+      "target": "PSX_GPU.md",
+      "anchor": null,
+      "text": "GPU",
+      "line_number": 27,
+      "original_path": "PSX/GPU"
+    },
+    {
+      "type": "wiki",
+      "target": "Little_endian.md",
+      "anchor": null,
+      "text": "little endian",
+      "line_number": 27,
+      "original_path": "Little_endian"
+    },
+    {
+      "type": "standard",
+      "target": "../images/PSX_TIM_file_layout.png",
+      "anchor": null,
+      "text": "PSX TIM file layout",
+      "line_number": 145
+    },
+    {
+      "type": "standard",
+      "target": "../images/PSX_TIM_file_clut.png",
+      "anchor": null,
+      "text": "PSX TIM file clut",
+      "line_number": 147
+    },
+    {
+      "type": "standard",
+      "target": "../images/PSX_color_formats_16.png",
+      "anchor": null,
+      "text": "PSX color formats 16",
+      "line_number": 149
+    },
+    {
+      "type": "standard",
+      "target": "../images/PSX_TIM_file_image.png",
+      "anchor": null,
+      "text": "PSX TIM file image",
+      "line_number": 151
+    },
+    {
+      "type": "standard",
+      "target": "../images/PSX_color_formats_16.png",
+      "anchor": null,
+      "text": "PSX color formats 16",
+      "line_number": 153
+    },
+    {
+      "type": "standard",
+      "target": "../images/PSX_color_formats_24.png",
+      "anchor": null,
+      "text": "PSX color formats 24",
+      "line_number": 155
+    },
+    {
+      "type": "standard",
+      "target": "../images/PSX_color_formats_8.png",
+      "anchor": null,
+      "text": "PSX color formats 8",
+      "line_number": 157
+    },
+    {
+      "type": "standard",
+      "target": "../images/PSX_color_formats_4.png",
+      "anchor": null,
+      "text": "PSX color formats 4",
+      "line_number": 159
+    }
+  ]
+}

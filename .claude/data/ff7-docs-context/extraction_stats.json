@@ -1,0 +1,20 @@
+{
+  "documents_processed": 37,
+  "total_headings": 664,
+  "total_links": 306,
+  "total_unique_images": 23,
+  "images_missing": 11,
+  "category_distribution": {
+    "Container": 1,
+    "Battle": 7,
+    "Reference": 6,
+    "Overview": 1,
+    "Field": 1,
+    "Historical": 1,
+    "Kernel": 5,
+    "Format Spec": 4,
+    "Menu": 1,
+    "Sound": 5,
+    "World Map": 5
+  }
+}
