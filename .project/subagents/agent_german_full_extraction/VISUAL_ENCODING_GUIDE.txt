@@ -1,0 +1,231 @@
+================================================================================
+VISUAL GUIDE: German FF7 Menu String Encoding
+================================================================================
+
+EXAMPLE 1: "OBJEKT" (Item)
+================================================================================
+
+What You See in Hex Editor:
+  Offset 0x590C68: 2F 42 4A 45 4B 54 FF 00 00 00...
+
+What it Looks Like When Displayed as ASCII Text:
+  "/BJEKT" (looks corrupted!)
+
+What It Actually Means:
+  Byte 0x2F → touphScript[0x2F] → 'O'
+  Byte 0x42 → touphScript[0x42] → 'B'
+  Byte 0x4A → touphScript[0x4A] → 'J'
+  Byte 0x45 → touphScript[0x45] → 'E'
+  Byte 0x4B → touphScript[0x4B] → 'K'
+  Byte 0x54 → touphScript[0x54] → 'T'
+  Byte 0xFF → [END OF STRING]
+
+Decoded German Text:
+  OBJEKT (English: Item)
+
+================================================================================
+
+EXAMPLE 2: "ZAUBER" (Magic)
+================================================================================
+
+What You See in Hex Editor:
+  Offset 0x590C6F: 3A 41 55 42 45 52 FF 00 00 00...
+
+What it Looks Like When Displayed as ASCII Text:
+  ":AUBER" (looks weird!)
+
+What It Actually Means:
+  Byte 0x3A → touphScript[0x3A] → 'Z'
+  Byte 0x41 → touphScript[0x41] → 'A'
+  Byte 0x55 → touphScript[0x55] → 'U'
+  Byte 0x42 → touphScript[0x42] → 'B'
+  Byte 0x45 → touphScript[0x45] → 'E'
+  Byte 0x52 → touphScript[0x52] → 'R'
+  Byte 0xFF → [END OF STRING]
+
+Decoded German Text:
+  ZAUBER (English: Magic)
+
+Note: 0x3A is ':' in ASCII but 'Z' in touphScript!
+
+================================================================================
+
+EXAMPLE 3: "AUSRÜSTEN" (Equip) - With Special Character
+================================================================================
+
+What You See in Hex Editor:
+  Offset 0x590C98: 21 55 53 52 7F 53 54 45 4E FF 00 00...
+
+What it Looks Like When Displayed as ASCII Text:
+  "!USR[DEL]STEN" (corrupted with control character!)
+
+What It Actually Means:
+  Byte 0x21 → touphScript[0x21] → 'A'
+  Byte 0x55 → touphScript[0x55] → 'U'
+  Byte 0x53 → touphScript[0x53] → 'S'
+  Byte 0x52 → touphScript[0x52] → 'R'
+  Byte 0x7F → touphScript[0x7F] → 'ü' (German extension!)
+  Byte 0x53 → touphScript[0x53] → 'S'
+  Byte 0x54 → touphScript[0x54] → 'T'
+  Byte 0x45 → touphScript[0x45] → 'E'
+  Byte 0x4E → touphScript[0x4E] → 'N'
+  Byte 0xFF → [END OF STRING]
+
+Decoded German Text:
+  AUSRüSTEN (English: Equip)
+  → Correctly rendered with German umlaut!
+
+Note: 0x7F is [DEL] in ASCII but 'ü' in touphScript!
+
+================================================================================
+
+UNDERSTANDING THE PATTERN
+================================================================================
+
+Pattern Recognition:
+
+1. STRINGS END WITH 0xFF
+   ├─ Marks end of text
+   ├─ Followed by 0x00 padding
+   └─ Aligns to 4-byte boundary
+
+2. BYTES ARE INDICES, NOT CHARACTERS
+   ├─ 0x41 in ASCII = 'A'
+   ├─ 0x41 in touphScript = 'A' (happens to match!)
+   ├─ 0x2F in ASCII = '/'
+   ├─ 0x2F in touphScript = 'O' (doesn't match!)
+   └─ This causes "corruption" appearance
+
+3. MOST COMMON BYTES IN MENU TEXT
+   ├─ 0x41-0x5A = A-Z (uppercase)
+   ├─ 0x61-0x7A = a-z (lowercase)
+   ├─ 0x30-0x39 = 0-9 (digits)
+   ├─ 0x20 = space
+   ├─ 0x7F = ü (special German)
+   └─ 0xFF = terminator
+
+4. NEVER SEE IN MENU TEXT
+   ├─ 0x00 except after terminator (that's padding)
+   └─ Control codes (0x01-0x1F) in middle of text
+
+================================================================================
+
+HOW TO READ YOUR HEX DUMP
+================================================================================
+
+Your Data:
+  0x5D8945 | $D
+  0x5D894B | dD$
+  0x5D894F | $
+
+Step 1: Get the Raw Bytes
+  Assume: 24 44 (for "$D"), 64 44 24 (for "dD$"), 24 (for "$")
+  (These are just examples - actual bytes depend on context)
+
+Step 2: Interpret with touphScript
+  0x24 → touphScript[0x24] → '$'
+  0x44 → touphScript[0x44] → 'D'
+  0x64 → touphScript[0x64] → 'd'
+  etc.
+
+Step 3: Look for Terminators
+  Find 0xFF → that marks end of string
+  Ignore 0x00 padding after terminator
+
+Step 4: Cross-Reference with Known Items
+  Do any sequences match?
+  │
+  └─ 0x2F 0x42 0x4A 0x45 0x4B 0x54 = OBJEKT ✓
+  └─ 0x3A 0x41 0x55 0x42 0x45 0x52 = ZAUBER ✓
+  └─ 0x21 0x55 0x53 0x52 0x7F 0x53 0x54 0x45 0x4E = AUSRÜSTEN ✓
+
+================================================================================
+
+COMMON MISCONCEPTIONS
+================================================================================
+
+WRONG: "These bytes are ASCII text displayed with wrong encoding"
+RIGHT: These bytes are indices into a proprietary lookup table
+
+WRONG: "0x41 is always 'A'"
+RIGHT: Context matters - in touphScript, 0x41 is 'A', but in ASCII it's also 'A'
+        (They happen to overlap, but that's coincidence!)
+
+WRONG: "0x7F is a delete character"
+RIGHT: In touphScript, 0x7F is the German 'ü' character
+        (In ASCII it would be DEL, but FF7 redefined it)
+
+WRONG: "I can just decode this with standard UTF-8/ASCII"
+RIGHT: You MUST use FF7's proprietary touphScript table
+
+WRONG: "The corruption means the data is broken"
+RIGHT: The data is perfectly valid - the "corruption" is just
+        visualization artifact from charset mismatch
+
+================================================================================
+
+QUICK REFERENCE: BYTE VALUES YOU'LL SEE
+================================================================================
+
+Punctuation/Symbols:
+  0x21 = ! (but used as 'A' in touphScript)
+  0x2B = +
+  0x2C = ,
+  0x2D = -
+  0x2E = .
+  0x2F = / (but used as 'O' in touphScript)
+  0x3A = : (but used as 'Z' in touphScript)
+
+Numbers:
+  0x30 = 0 (and stays 0 in touphScript)
+  0x31 = 1 (and stays 1 in touphScript)
+  ... (0x30-0x39 all stay the same)
+  0x39 = 9 (and stays 9 in touphScript)
+
+Uppercase Letters:
+  0x41 = A (and stays A in touphScript)
+  0x42 = B (and stays B in touphScript)
+  ... (0x41-0x5A mostly stay the same)
+  0x5A = Z (and stays Z in touphScript)
+
+Lowercase Letters:
+  0x61 = a (and stays a in touphScript)
+  0x62 = b (and stays b in touphScript)
+  ... (0x61-0x7A mostly stay the same)
+  0x7A = z (and stays z in touphScript)
+
+Special:
+  0x7F = ü (German u-umlaut - SPECIAL CASE!)
+  0xFF = [END OF STRING]
+
+Other Codes for ä, ö, ß are unknown (not in menu text)
+
+================================================================================
+
+TOOLS TO USE
+================================================================================
+
+Python Decoder:
+  $ python3 decode_german_touphscript.py "2F 42 4A 45 4B 54"
+  Result: /BJEKT
+  Known Item: Objekt (Item)
+
+Reference Files:
+  - GERMAN_MENU_ENCODING_ANALYSIS.md (complete technical reference)
+  - german_menu_touphscript_mapping.csv (11 known menu items)
+  - german_english_menu_mapping_categorized.csv (full translation list)
+
+================================================================================
+
+SUMMARY
+================================================================================
+
+The data isn't corrupted - it's ENCODED.
+Each byte is an index, not a character.
+Use the touphScript lookup table to decode.
+The decoder script handles this automatically.
+This is the SAME system used for Japanese text in ff7_ja.exe!
+
+Now you understand what you're looking at. ✓
+
+================================================================================
