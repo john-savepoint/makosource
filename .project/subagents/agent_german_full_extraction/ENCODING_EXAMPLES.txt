@@ -1,0 +1,271 @@
+================================================================================
+GERMAN FF7 MENU STRING ENCODING EXAMPLES
+================================================================================
+
+Created: 2026-01-03
+Purpose: Show real examples of how German text is encoded in the FF7 executable
+
+================================================================================
+SECTION 1: Simple ASCII Words (No Special Characters)
+================================================================================
+
+These strings use only standard ASCII characters:
+
+1. "Zauber" (Magic)
+   Hex:     5A 41 55 42 45 52
+   Decimal: 90 65 85 66 69 82
+   Offset:  0x00590C6F
+   Status:  ✓ Pure ASCII (single-byte per character)
+
+2. "Limit" (Limit)
+   Hex:     4C 49 4D 49 54
+   Decimal: 76 73 77 73 84
+   Offset:  0x00590CD2
+   Status:  ✓ Pure ASCII
+
+3. "PHS" (PHS)
+   Hex:     50 48 53
+   Decimal: 80 72 83
+   Offset:  0x00590CFB
+   Status:  ✓ Pure ASCII
+
+================================================================================
+SECTION 2: Words with German Umlauts (ü, ä, ö)
+================================================================================
+
+These strings use Windows-1252 extended characters:
+
+1. "Ausrüsten" (Equip) - Contains ü
+   Character: A  u  s  r  ü  s  t  e  n
+   Hex:      41 75 73 72 FC 73 74 65 6E
+   Decimal:  65 117 115 114 252 115 116 101 110
+   Offset:   0x00590C98
+
+   Key Detail: The byte FC (hex) = 252 (decimal) represents ü in Windows-1252
+   This is the umlaut indicator - when you see FC, you know ü is present
+   Status:   ✓ Windows-1252 encoded (1 special character)
+
+2. "Auswählen" (Select) - Contains ä
+   Character: A  u  s  w  ä  h  l  e  n
+   Hex:      41 75 73 77 E4 68 6C 65 6E
+   Decimal:  65 117 115 119 228 104 108 101 110
+   Offset:   0x005902E0
+
+   Key Detail: The byte E4 (hex) = 228 (decimal) represents ä in Windows-1252
+   Status:   ✓ Windows-1252 encoded (1 special character)
+
+3. "Menü" (Menu) - Contains ü
+   Character: M  e  n  ü
+   Hex:      4D 65 6E FC
+   Decimal:  77 101 110 252
+   Offset:   0x00590333
+
+   Key Detail: Short word, ends with ü (FC)
+   Status:   ✓ Windows-1252 encoded (1 special character)
+
+================================================================================
+SECTION 3: Windows-1252 Special Character Reference
+================================================================================
+
+These are the German umlauts and how they appear in hex:
+
+Character | Name     | Windows-1252 Hex | Decimal | Example Word
+----------|----------|------------------|---------|--------------------
+ä         | a-umlaut | E4               | 228     | "Auswählen" (Select)
+ö         | o-umlaut | F6               | 246     | (not used in current menu)
+ü         | u-umlaut | FC               | 252     | "Ausrüsten" (Equip)
+ß         | sharp s  | DF               | 223     | (not used in current menu)
+
+================================================================================
+SECTION 4: How to Recognize Encoded German Strings
+================================================================================
+
+When looking at hex dumps or binary data, German FF7 strings are recognizable by:
+
+1. Pure ASCII text (readable characters): Zauber, Limit, Sound, Konfig
+   → These don't need decoding, already human-readable
+
+2. Mixed ASCII + Special Bytes (ä, ö, ü, ß):
+   → Look for bytes: E4, F6, FC, DF
+   → When you see FC: it's the letter ü
+   → When you see E4: it's the letter ä
+   → When you see F6: it's the letter ö
+   → When you see DF: it's the letter ß
+
+3. String Pattern:
+   → Starts at known offset (e.g., 0x00590C68)
+   → Contains printable ASCII + possible special bytes
+   → Ends with 0x00 (null terminator)
+
+================================================================================
+SECTION 5: Side-by-Side Comparison
+================================================================================
+
+English vs German encoding at same menu index:
+
+Menu Item: Item/Objekt
+─────────────────────────────────────────
+English:
+  Text:    "Item"
+  Hex:     49 74 65 6D
+  Decimal: 73 116 101 109
+  Length:  4 bytes
+
+German (at index 38):
+  Text:    "Objekt"
+  Hex:     4F 42 4A 45 4B 54
+  Decimal: 79 66 74 69 75 84
+  Length:  6 bytes
+  Offset:  0x00590C68
+  Status:  ✓ All ASCII (no special characters)
+
+Observation: German word is 50% longer than English version
+
+─────────────────────────────────────────
+
+Menu Item: Equip/Ausrüsten
+─────────────────────────────────────────
+English:
+  Text:    "Equip"
+  Hex:     45 71 75 69 70
+  Decimal: 69 113 117 105 112
+  Length:  5 bytes
+
+German (at index 41):
+  Text:    "Ausrüsten"
+  Hex:     41 75 73 72 FC 73 74 65 6E
+  Decimal: 65 117 115 114 252 115 116 101 110
+  Length:  9 bytes
+  Offset:  0x00590C98
+  Status:  ✓ 1 special character (ü = FC)
+
+Key Point: The FC byte stands out - it's the umlaut indicator
+
+─────────────────────────────────────────
+
+Menu Item: Save/Speichern
+─────────────────────────────────────────
+English:
+  Text:    "Save"
+  Hex:     53 61 76 65
+  Decimal: 83 97 118 101
+  Length:  4 bytes
+
+German (at index 47):
+  Text:    "Speichern"
+  Hex:     53 50 45 49 43 48 45 52 4E
+  Decimal: 83 80 69 73 67 72 69 82 78
+  Length:  9 bytes
+  Offset:  0x00590D0C
+  Status:  ✓ All ASCII (no special characters)
+
+Key Point: German word is 2.25x longer - important for buffer overflow checks
+
+================================================================================
+SECTION 6: String Table Layout in Binary
+================================================================================
+
+How the German strings are stored in ff7_de.exe:
+
+Memory Address    Hex Bytes                          Text            Null Term
+──────────────────────────────────────────────────────────────────────────────
+0x00590C68       4F 42 4A 45 4B 54                 "Objekt"        00
+0x00590C6E       (5F 90 0C 00 ...) [padding/next]
+0x00590C6F       5A 41 55 42 45 52                 "Zauber"        00
+0x00590C75       (... next string ...)
+0x00590C83       4D 41 54 45 52 49 41              "Materia"       00
+0x00590C8A       (... next string ...)
+0x00590C98       41 75 73 72 FC 73 74 65 6E        "Ausrüsten"     00
+                                    ^^
+                                    FC = ü umlaut
+
+Note: Each string is null-terminated (0x00) but may have padding between them.
+The offsets in the mapping file point directly to the start of each string.
+
+================================================================================
+SECTION 7: How Decoding Works (For Reference)
+================================================================================
+
+When you read the hex dump:
+
+Step 1: Read byte sequence
+  Input: 41 75 73 72 FC 73 74 65 6E 00
+
+Step 2: Convert each byte to character
+  41 → 'A' (ASCII)
+  75 → 'u' (ASCII)
+  73 → 's' (ASCII)
+  72 → 'r' (ASCII)
+  FC → 'ü' (Windows-1252 special character)
+  73 → 's' (ASCII)
+  74 → 't' (ASCII)
+  65 → 'e' (ASCII)
+  6E → 'n' (ASCII)
+  00 → [string terminator - not displayed]
+
+Step 3: Combine characters
+  Output: "Ausrüsten"
+
+Result: Human-readable German text ready for use
+
+================================================================================
+SECTION 8: Why Chunk 86 Looks Corrupted
+================================================================================
+
+The strange strings you see in chunk 86 (offset range 0x5D7901-0x5D7E36):
+
+Example: "lD4", "dD,", "$rÖ", "Sõ"/", "ãD,"
+
+These are NOT corrupted data. They are COMPILED CODE.
+
+When you force binary machine instructions to display as text:
+  - 0x6C 0x44 0x38 0x28 (CPU instruction) → displays as "lD8("
+  - 0x64 0x44 0x2C (CPU instruction)       → displays as "dD,"
+  - 0x24 0x72 0xD6 (CPU instruction)       → displays as "$rÖ"
+
+These are x86-64 assembly instructions, not text data.
+
+Status: Ignore these completely - they are not menu strings.
+
+================================================================================
+SECTION 9: How to Use This Information
+================================================================================
+
+When creating tools or scripts:
+
+1. Reading German strings from executable:
+   → Look for byte sequences ending in 0x00 (null terminator)
+   → Decode bytes 0x00-0x7F as ASCII
+   → Decode bytes 0x80-0xFF using Windows-1252 mapping
+   → Stop at 0x00 (end of string)
+
+2. Writing German strings to executable:
+   → Convert German text to Windows-1252 bytes
+   → Special characters: ä→E4, ö→F6, ü→FC, ß→DF
+   → Add 0x00 null terminator
+   → Write to correct offset in binary
+
+3. Identifying German text in binary:
+   → Readable ASCII characters (normal)
+   → Contains bytes: E4, F6, FC, or DF (German umlauts)
+   → Ends with 0x00 (null terminator)
+   → All present = likely German text
+
+================================================================================
+SECTION 10: Quick Reference Table
+================================================================================
+
+German Word     Encoding           Special Bytes    Offset        Notes
+────────────────────────────────────────────────────────────────────────────
+Zauber         Pure ASCII         None             0x00590C6F    Magic menu
+Objekt         Pure ASCII         None             0x00590C68    Item menu
+Ausrüsten      ASCII + ü          FC               0x00590C98    Equip menu
+Auswählen      ASCII + ä          E4               0x005902E0    Select button
+Menü           ASCII + ü          FC               0x00590333    Menu button
+Speichern      Pure ASCII         None             0x00590D0C    Save menu
+Verlassen      Pure ASCII         None             0x00590D26    Quit menu
+Konfig         Pure ASCII         None             0x00590CE6    Config menu
+Sound          Pure ASCII         None             0x0059012C    Sound setting
+Kampftempo     Pure ASCII         None             0x00590209    Battle speed setting
+
+════════════════════════════════════════════════════════════════════════════════
