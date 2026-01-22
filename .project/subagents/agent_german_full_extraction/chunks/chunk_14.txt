@@ -1,0 +1,203 @@
+# Chunk 14: Strings 2800 to 2999
+# Offset range: 0x59B319 to 0x59C89B
+
+0x59B319 |            " *     
+0x59B375 |    # & !   #   !   W   !       !   ^   !   [   !   7                                   ! '     
+0x59B405 |                            & (     )!      
+0x59B461 |                    " (     
+0x59B4B5 |                    ! &     
+0x59B4F1 |        V                                   # & !   Q   !   R   !   T   !   S   !   ]   !   \                                   " '             !       '       #       -       .       f                           ! )     V       &!      +!      @!      A!      B!      C!      Q!      W!          " *     !       '       #       f   !   ^   !   [   !   a   !   G   !   I   !   J   " )     '!      *!              !       '       #       -       .       f           " %             !       '       #       f                                           " %             !       '       #       f                                           " %             !       '       #       f                                           " %             !       '       #       f                                           " %             !       '       #       f                                           " %             !       '       #       f                                           " %             !       '       #       f                                           " %             !       '       #       f                                           " %             !       '       #       f                                           " %             !       '       #       f                                           " %             !       '       #       f                                           " %             !       '       #       f                                           " %             !       '       #       f                                           " %             !       '       #                                                   R   L!  "   
+0x59BB65 | %  "   "   "   L!  p   
+0x59BB95 | #  L!  
+0x59BB9D | #  "   "   p   "   "   "   "   "   "   "   "   "   "   @#  "   "   "   @#  "   "   "   "   "   "   "   "   "   "   "   "   "   "   
+0x59BC21 | !  
+0x59BC25 | !  R   
+0x59BC2D | !  
+0x59BC31 | #  "   "   "   "   "   "   "   
+0x59BC51 | 3  
+0x59BC55 | +  
+0x59BC59 | %  
+0x59BC5D | #  @#  
+0x59BC65 | !  
+0x59BC71 | !  
+0x59BC75 | !  
+0x59BC79 | !  
+0x59BC7D | !  
+0x59BC81 | !  
+0x59BC85 | !  
+0x59BC89 | !  "   "   
+0x59BC95 | '  
+0x59BC99 | %  x"  
+0x59BCA1 | !  
+0x59BCA9 |    *   "   
+0x59BCB5 | !  
+0x59BCB9 | !  
+0x59BCBD | !  
+0x59BCC1 | !  
+0x59BCC5 | !  
+0x59BCC9 | !  
+0x59BCCD | !  
+0x59BCD1 | !  R   R   R   
+0x59BCE1 | !  R   R   R   "   "   "                                                                                               
+0x59BD5D | #  
+0x59BD61 | %  
+0x59BD65 | *  
+0x59BD69 | N  
+0x59BD6D | N  pf  
+0x59BD75 | (  
+0x59BD79 | .  
+0x59BD7D | 9  
+0x59BD81 | *  
+0x59BD85 | 0  "   "   "   "   
+0x59BD99 |    `!  
+0x59BDA1 | "  
+0x59BDA5 | $  
+0x59BDA9 | )  
+0x59BDAD | 6  0G  
+0x59BDB5 | ^  ('  
+0x59BDBD | *  
+0x59BDC1 | Z  
+0x59BDC5 | (  
+0x59BDC9 | 0  "   "   "   
+0x59BDD9 |    ~!  
+0x59BDE1 | #  
+0x59BDE5 | %  
+0x59BDE9 | *  
+0x59BDED | 8  
+0x59BDF1 | N  pf  
+0x59BDF9 | '  
+0x59BDFD | ,  
+0x59BE01 | ^  
+0x59BE05 | ,  
+0x59BE09 | ,  "   "   "   @#  4%  
+0x59BE21 | )  
+0x59BE25 | 7  
+0x59BE29 | J  
+0x59BE2D | b  
+0x59BE31 | '  
+0x59BE35 | -  
+0x59BE39 | V  
+0x59BE3D | 7  `?  "   "   "   
+0x59BE55 | !  @#  4%  H*  
+0x59BE65 | 6  ('  
+0x59BE6D | ,  
+0x59BE71 | )  
+0x59BE75 | .  l=  
+0x59BE7D | $  
+0x59BE81 | 9  l=  
+0x59BE89 | R  XÄ  x;  l=  
+0x59BE99 | ^  
+0x59BE9D | ,  X8  "   
+0x59BEA9 | Z  "   "   x"  
+0x59BEB9 | %  H*  
+0x59BEC1 | 7  
+0x59BEC5 | N  pf  
+0x59BECD | '  
+0x59BED1 | ,  
+0x59BED5 | V  
+0x59BED9 | +  
+0x59BEDD | 7  "   "   "   
+0x59BEED | !  
+0x59BEF1 | )  
+0x59BEF5 | 5  
+0x59BEF9 | J  pf  
+0x59BF01 | (  
+0x59BF05 | *  
+0x59BF09 | ,  
+0x59BF0D | +  
+0x59BF11 | Z  "   "   "   
+0x59BF21 | #  <,   9  
+0x59BF2D | N  pf  
+0x59BF35 | -  
+0x59BF39 | :  
+0x59BF3D | R  
+0x59BF41 | +  
+0x59BF45 | ,  "   "   "   _b/ 
+0x59BF5D |    8!  ~!  @#  4%  
+0x59BF71 | '  
+0x59BF75 | ,  
+0x59BF79 | 2  ('  
+0x59BF81 | .  `?  
+0x59BF89 | N  x"  @#  "   "   "   
+0x59BFA1 | #  
+0x59BFA5 | #  
+0x59BFA9 | %  4%  
+0x59BFB1 | 2  
+0x59BFB5 | 2  
+0x59BFB9 | 2  
+0x59BFBD | .  "   "   "   "   "   "   l=  
+0x59BFDD | -  l=  
+0x59BFE5 | /  0G  0G  "   @n  "   "   
+0x59C001 | /  
+0x59C005 | +  
+0x59C009 | +  x;  l=  
+0x59C015 | 3  
+0x59C019 | !  l=  "   `?  `?  `?  "   l=  
+0x59C039 | 3  "   HC  "   
+0x59C049 | N  0G  "   "   
+0x59C158 | `?  `?  @n  @n  
+0x59C169 | Z  !   !   !   !   !   !   !   !   !   !   !   
+0x59C199 | #  !   !   !   !   !       @n  !   !   !   !   !   !   !   !   !   !   !   !   
+0x59C1E9 | $  
+0x59C1ED | #  0G  0G  !   0G  0G  !   !   
+0x59C218 | !   x"  x"  
+0x59C225 | %  x"  
+0x59C22D | "  
+0x59C231 | %  
+0x59C235 | +  
+0x59C239 | +  
+0x59C23D | 7  
+0x59C241 | 3  0G  
+0x59C249 | %  `?  0G      @n  
+0x59C25D | 7          HC  !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   
+0x59C365 | !S   S 
+0x59C36D | "S   ~ 
+0x59C377 |    M!
+0x59C38D | "S 
+0x59C391 | !~ 
+0x59C399 |  O ü 
+0x59C39F |    S 
+0x59C3AD |  t g!} 
+0x59C3B5 |  v   S 
+0x59C3BD | "~   
+0x59C3C5 | "S   
+0x59C3CD | !C!
+0x59C3D3 |  $!C!    
+0x59C3DD |  :   : `!:   O 
+0x59C3F3 |  `!y           T `!: 
+0x59C409 |  O 
+0x59C411 |  8 ` \   9 `!
+0x59C425 |  J 
+0x59C429 |  O p K   : `!O   i `!:   ~ 
+0x59C449 |  ~ 
+0x59C451 | !  
+0x59C455 |  S 
+0x59C45D |  : Laden
+0x59C466 |                                   Wählen Sie eine Speicherdatei aus.
+0x59C4AB |      Wählen Sie einen Speicherblock aus.
+0x59C4D4 |     STECKPLATZ 1
+0x59C4E5 |                            STECKPLATZ 2
+0x59C50D |                            Wirklich?
+0x59C532 |                               Bin am Laden. Bitte warten
+0x59C56C |             Bin am Sichern. Bitte warten
+0x59C596 |           LEER
+0x59C5A5 |                                    BLOCK
+0x59C5CE |                                   Weiter?
+0x59C5F8 |                                 /15
+0x59C641 | berprüfe Spielstandsdatei
+0x59C65C |             01
+0x59C66B |                                      02
+0x59C693 |                                      03
+0x59C6BB |                                      04
+0x59C6E3 |                                      05
+0x59C70B |                                      06
+0x59C733 |                                      07
+0x59C75B |                                      08
+0x59C783 |                                      09
+0x59C7AB |                                      10
+0x59C7D3 |                                      11
+0x59C7FB |                                      12
+0x59C823 |                                      13
+0x59C84B |                                      14
+0x59C873 |                                      15
+0x59C89B |                                      Gespeichert.

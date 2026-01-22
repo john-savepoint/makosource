@@ -1,0 +1,398 @@
+# FF7 German Strings from Known Clean Regions
+# Source: /mnt/d/Games/Stand-alone/FINAL FANTASY VII/ff7_de.exe
+# Total strings: 392
+# Format: [INDEX] OFFSET [REGION] | TEXT
+================================================================================
+
+[   0] 0x58FBB0 [Quit Dialog         ] | Möchten Sie Final
+[   1] 0x58FBC3 [Quit Dialog         ] | Fantasy VII verlassen und
+[   2] 0x58FBE8 [Quit Dialog         ] | zu Windows zurückkehren?
+[   3] 0x58FC05 [Quit Dialog         ] | Ja
+[   4] 0x58FC13 [Quit Dialog         ] | Nein
+[   5] 0x5900F0 [Config Menu         ] | Fensterfarbe
+[   6] 0x5900FD [Config Menu         ] | Sound
+[   7] 0x59012C [Config Menu         ] | Kontroller
+[   8] 0x590167 [Config Menu         ] | Cursor
+[   9] 0x590199 [Config Menu         ] | ATB
+[  10] 0x5901CC [Config Menu         ] | Kampftempo
+[  11] 0x590209 [Config Menu         ] | Kampfmeldung
+[  12] 0x590241 [Config Menu         ] | Feldmeldung
+[  13] 0x590276 [Config Menu         ] | Kamerawinkel
+[  14] 0x5902AD [Config Menu         ] | Auswählen
+[  15] 0x5902E0 [Config Menu         ] | Abbrechen
+[  16] 0x590316 [Config Menu         ] | Menü
+[  17] 0x590347 [Config Menu         ] | Fenster AUS
+[  18] 0x590384 [Config Menu         ] | Pause
+[  19] 0x5903B4 [Config Menu         ] | Schlachthilfe
+[  20] 0x5903F2 [Config Menu         ] | Mono
+[  21] 0x59041F [Config Menu         ] | Stereo
+[  22] 0x590457 [Config Menu         ] | Breit
+[  23] 0x59048C [Config Menu         ] | Normal
+[  24] 0x5904C3 [Config Menu         ] | Benutzerdefiniert
+[  25] 0x590504 [Config Menu         ] | Anfang
+[  26] 0x59052F [Config Menu         ] | Speicher
+[  27] 0x590567 [Config Menu         ] | Aktiv
+[  28] 0x59059A [Config Menu         ] | Empfohlen
+[  29] 0x5905D4 [Config Menu         ] | Warten
+[  30] 0x590607 [Config Menu         ] | Auto
+[  31] 0x59063B [Config Menu         ] | Fest
+[  32] 0x5906A3 [Config Menu         ] | Langs.
+[  33] 0x5906DF [Config Menu         ] | Schn.
+[  34] 0x590714 [Config Menu         ] | ROT
+[  35] 0x590748 [Config Menu         ] | GRÜN
+[  36] 0x59077F [Config Menu         ] | BLAU
+[  37] 0x5907B5 [Config Menu         ] | Zauberfolge
+[  38] 0x5907F2 [Config Menu         ] | Heilung
+[  39] 0x590824 [Config Menu         ] | Angriff
+[  40] 0x59085A [Config Menu         ] | Indirekt
+[  41] 0x590891 [Config Menu         ] | Verboten
+[  42] 0x5908C7 [Config Menu         ] | Typ
+[  43] 0x5908F8 [Config Menu         ] | links2
+[  44] 0x590931 [Config Menu         ] | rechts2
+[  45] 0x590968 [Config Menu         ] | links1
+[  46] 0x59099D [Config Menu         ] | rechts1
+[  47] 0x5909D4 [Config Menu         ] | Menü
+[  48] 0x590A07 [Config Menu         ] | Auswählen
+[  49] 0x590A42 [Config Menu         ] | Abbrechen
+[  50] 0x590A78 [Config Menu         ] | EXT
+[  51] 0x590AA8 [Config Menu         ] | Hilfe
+[  52] 0x590AE0 [Config Menu         ] | Zum Einrichten START drücken.
+[  53] 0x590B30 [Config Menu         ] | Zum Beenden Richtungstaste Links oder Rechts drücken.
+[  54] 0x590B7C [Config Menu         ] | Pause
+[  55] 0x590BC9 [Config Menu         ] | Ton- und Musikeinstellung
+[  56] 0x590C68 [Main Menu           ] | Objekt
+[  57] 0x590C6F [Main Menu           ] | Zauber
+[  58] 0x590C83 [Main Menu           ] | Materia
+[  59] 0x590C98 [Main Menu           ] | Ausrüsten
+[  60] 0x590CAE [Main Menu           ] | Werte
+[  61] 0x590CBE [Main Menu           ] | Reihe
+[  62] 0x590CD2 [Main Menu           ] | Limit
+[  63] 0x590CE6 [Main Menu           ] | Konfig
+[  64] 0x590CFB [Main Menu           ] | PHS
+[  65] 0x590D0C [Main Menu           ] | Speichern
+[  66] 0x590D26 [Main Menu           ] | Verlassen
+[  67] 0x590D3A [Main Menu           ] | Anfänger
+[  68] 0x590D4D [Main Menu           ] | Verwendung
+[  69] 0x590D63 [Main Menu           ] | Verwendung
+[  70] 0x590D77 [Main Menu           ] | Zeit
+[  71] 0x590D85 [Main Menu           ] | Gil
+[  72] 0x590D98 [Main Menu           ] | Nächst. Lv
+[  73] 0x590DB3 [Main Menu           ] | Limit-Stufe
+[  74] 0x590DC8 [Main Menu           ] | Anleitung
+[  75] 0x590DDA [Main Menu           ] | Unter
+[  76] 0x590DEA [Main Menu           ] | LV+1
+[  77] 0x590DFD [Main Menu           ] | Zorn
+[  78] 0x590E11 [Main Menu           ] | Traurigk.
+[  79] 0x590E2A [Main Menu           ] | !         n`=>ABCeKD@FGHtJfg<$_uva)?snPRSVXY[\]p/0%U^MZoh!"#y*+2,-.345671:8(W9&';`klmxEILNOQTbcdijqrwz{     !"#$%&'()*+ 0         `  `   !        ñp ñ ñ@ ñ<m b!ö  o - p£  £ £ õ £ £ £ £ £ b!ö - b!ö b!ö b!ö b!ö b!ö     n u#ö j o - £ Ü£ :£ õ £ £ £ £ u#ö u#ö - u#ö u#ö u#ö u#ö u#ö     )%($*     "" !"""##$$     0.  x"  \   *   !   "      é
+[  80] 0x590FEB [Main Menu           ] | !  cy         !   "   $   %   &   '   (   t   start@of@menu@systemAAA*    end@of@menu@systemAAA*  Mit [ABBRECHEN] beenden.
+[  81] 0x591071 [Main Menu           ] | Drücken Sie auf [O.K.] um die
+[  82] 0x5910B2 [Main Menu           ] | Tastenbelegung zu konfigurieren.
+[  83] 0x5910F1 [Main Menu           ] | Bitte neue Taste drücken
+[  84] 0x591126 [Main Menu           ] | [O.K.]
+[  85] 0x59114F [Main Menu           ] | [ABBRECHEN]
+[  86] 0x591190 [Main Menu           ] | [MENÜ]
+[  87] 0x5911C7 [Main Menu           ] | [UMSCHALTEN]
+[  88] 0x591209 [Main Menu           ] | [BILD HOCH]
+[  89] 0x591244 [Main Menu           ] | [BILD HERUNTER]
+[  90] 0x591284 [Main Menu           ] | [KAMERA]
+[  91] 0x5912B9 [Main Menu           ] | [ZIEL]
+[  92] 0x5912F3 [Main Menu           ] | [HILFE]
+[  93] 0x591330 [Main Menu           ] | [START]
+[  94] 0x59136C [Main Menu           ] | [HERAUF]
+[  95] 0x5913A9 [Main Menu           ] | [UNTEN]
+[  96] 0x5913E4 [Main Menu           ] | [LINKS]
+[  97] 0x591420 [Main Menu           ] | [RECHT]
+[  98] 0x59145C [Main Menu           ] | TASTATUR
+[  99] 0x591499 [Main Menu           ] | JOYSTICK
+[ 100] 0x591058 [Keyboard Labels     ] | Mit [ABBRECHEN] beenden.
+[ 101] 0x591071 [Keyboard Labels     ] | Drücken Sie auf [O.K.] um die
+[ 102] 0x5910B2 [Keyboard Labels     ] | Tastenbelegung zu konfigurieren.
+[ 103] 0x5910F1 [Keyboard Labels     ] | Bitte neue Taste drücken
+[ 104] 0x591126 [Keyboard Labels     ] | [O.K.]
+[ 105] 0x59114F [Keyboard Labels     ] | [ABBRECHEN]
+[ 106] 0x591190 [Keyboard Labels     ] | [MENÜ]
+[ 107] 0x5911C7 [Keyboard Labels     ] | [UMSCHALTEN]
+[ 108] 0x591209 [Keyboard Labels     ] | [BILD HOCH]
+[ 109] 0x591244 [Keyboard Labels     ] | [BILD HERUNTER]
+[ 110] 0x591284 [Keyboard Labels     ] | [KAMERA]
+[ 111] 0x5912B9 [Keyboard Labels     ] | [ZIEL]
+[ 112] 0x5912F3 [Keyboard Labels     ] | [HILFE]
+[ 113] 0x591330 [Keyboard Labels     ] | [START]
+[ 114] 0x59136C [Keyboard Labels     ] | [HERAUF]
+[ 115] 0x5913A9 [Keyboard Labels     ] | [UNTEN]
+[ 116] 0x5913E4 [Keyboard Labels     ] | [LINKS]
+[ 117] 0x591420 [Keyboard Labels     ] | [RECHT]
+[ 118] 0x59145C [Keyboard Labels     ] | TASTATUR
+[ 119] 0x594C00 [Battle/Status       ] | âs° TX° åu° Üt° <w° TX° TX° TX°
+[ 120] 0x594C24 [Battle/Status       ] | 0G#ã * !        !"#%
+[ 121] 0x594C41 [Battle/Status       ] | Pause
+[ 122] 0x594C4E [Battle/Status       ] | ß  Z!!\ ì   Xx£ <L\ x"  \   *   !     _    ã
+[ 123] 0x594C92 [Battle/Status       ] | ã
+[ 124] 0x594CA0 [Battle/Status       ] | Schlaf
+[ 125] 0x594CB3 [Battle/Status       ] | Gift
+[ 126] 0x594CBF [Battle/Status       ] | Traurigkeit
+[ 127] 0x594CD4 [Battle/Status       ] | Zorn
+[ 128] 0x594CDB [Battle/Status       ] | Verwirrung
+[ 129] 0x594CEF [Battle/Status       ] | Stummheit
+[ 130] 0x594CFC [Battle/Status       ] | Schnell
+[ 131] 0x594D08 [Battle/Status       ] | Langsam
+[ 132] 0x594D16 [Battle/Status       ] | Stop
+[ 133] 0x594D21 [Battle/Status       ] | ã
+[ 134] 0x594D2C [Battle/Status       ] | ã
+[ 135] 0x594D3A [Battle/Status       ] | ã
+[ 136] 0x594D48 [Battle/Status       ] | Versteinerung
+[ 137] 0x594D62 [Battle/Status       ] | regen
+[ 138] 0x594D68 [Battle/Status       ] | ã
+[ 139] 0x594D72 [Battle/Status       ] | ã
+[ 140] 0x594D80 [Battle/Status       ] | Reflektieren
+[ 141] 0x594D99 [Battle/Status       ] | Doppel
+[ 142] 0x594DA1 [Battle/Status       ] | Schild
+[ 143] 0x594DAF [Battle/Status       ] | ã
+[ 144] 0x594DB8 [Battle/Status       ] | ã
+[ 145] 0x594DC6 [Battle/Status       ] | Toll
+[ 146] 0x594DD7 [Battle/Status       ] | Einzigartig
+[ 147] 0x594DEC [Battle/Status       ] | Lähmung
+[ 148] 0x594DF6 [Battle/Status       ] | Dunkelheit
+[ 149] 0x594E07 [Battle/Status       ] | ã
+[ 150] 0x594E0C [Battle/Status       ] | ã
+[ 151] 0x594E1A [Battle/Status       ] | ã
+[ 152] 0x594E28 [Battle/Status       ] | ã
+[ 153] 0x594E36 [Battle/Status       ] | ã
+[ 154] 0x594E44 [Battle/Status       ] | $             `  `   Rrò `hpx9IY     Wieviel willst du ausgeben?
+[ 155] 0x594EA4 [Battle/Status       ] | Gil
+[ 156] 0x594EA8 [Battle/Status       ] | Nach
+[ 157] 0x594EAD [Battle/Status       ] | Gil auf der Hand
+[ 158] 0x594EC1 [Battle/Status       ] | "%$#!"$ !#%"$ %!!"$ "!#%$ "!%$"#"$#"!$ %"!#"$!"%  `   ñ @ ñ ` ñ    @  `      @ `   ñ @ ñ ` ñ    @  `      ` `   ñ @ ñ ` ñ    @  `             `       `        `      `       `              `       `        "$(0    !""""!!!!!!!!!!!! """ !!!!!!!!!!                !! "" !!!!!!!!!!!!! ""  !!!!!!!!                !!!  " " !!!!!!!!!!!  " "  !!!!!                !!!!   "    !!!!"#$%&')())( -*+)      !,Weiter?
+[ 159] 0x595080 [Battle/Status       ] | Ja     Nein
+[ 160] 0x59508C [Battle/Status       ] | Vorhandene Schlachtpunkte
+[ 161] 0x5950AA [Battle/Status       ] | Schlitzstart!
+[ 162] 0x5950B8 [Battle/Status       ] | TOLL!!
+[ 163] 0x5950CB [Battle/Status       ] | Gewonnene Schlachtpunkte
+[ 164] 0x5950F7 [Battle/Status       ] | Ok, dann los!
+[ 165] 0x595106 [Battle/Status       ] | Zaubersubstanz kaputt.
+[ 166] 0x595130 [Battle/Status       ] | Aufrufsubstanz kaputt.
+[ 167] 0x59514F [Battle/Status       ] | Support-Substanz kaputt.
+[ 168] 0x595170 [Battle/Status       ] | Unabhängige Substanz kaputt.
+[ 169] 0x595193 [Battle/Status       ] | Befehlssubstanz kaputt.
+[ 170] 0x5951AD [Battle/Status       ] | Alle Substanz kaputt.
+[ 171] 0x5951CA [Battle/Status       ] | Zubehör kaputt.
+[ 172] 0x5951E3 [Battle/Status       ] | Objektbefehl ist versiegelt.
+[ 173] 0x59520F [Battle/Status       ] | Rüstzeug kaputt.
+[ 174] 0x595222 [Battle/Status       ] | Waffe kaputt.
+[ 175] 0x59523E [Battle/Status       ] | 1/2 Geschwindigkeit.
+[ 176] 0x595264 [Battle/Status       ] | 1/2 Genauigkeit.
+[ 177] 0x59527F [Battle/Status       ] | Minimum
+[ 178] 0x595295 [Battle/Status       ] | Gift
+[ 179] 0x5952B1 [Battle/Status       ] | Kröte
+[ 180] 0x5952D1 [Battle/Status       ] | Zeit x30 Schaden.
+[ 181] 0x5952FC [Battle/Status       ] | 5 Ebenen zurück.
+[ 182] 0x59531A [Battle/Status       ] | 10 Ebenen zurück.
+[ 183] 0x59533A [Battle/Status       ] | 1/2 HP.
+[ 184] 0x59534F [Battle/Status       ] | 1/2 MP.
+[ 185] 0x59536E [Battle/Status       ] | 1/2 HP&MP.
+[ 186] 0x595390 [Battle/Status       ] | Null MP.
+[ 187] 0x5953AD [Battle/Status       ] | Jaa! Keine Behinderung!!
+[ 188] 0x5953DC [Battle/Status       ] | HP wiederhergestellt.
+[ 189] 0x5953F8 [Battle/Status       ] | Besorgt um die anderen Mitglieder?
+[ 190] 0x595423 [Battle/Status       ] | Ja, ein bichen
+[ 191] 0x595433 [Battle/Status       ] | Eigentlich nicht
+[ 192] 0x59547A [Battle/Status       ] | 4      £   "   !   &   &   !   !       x   p  @   x    p  @    GWXWsiW:zWx"  \   *   !    `b/ ! 0G  #  ã   *   !   '   `
+[ 193] 0x595514 [Battle/Status       ] | /
+[ 194] 0x59551C [Battle/Status       ] | "S   S "!sè7áè
+[ 195] 0x595537 [Battle/Status       ] | $   #   "   !
+[ 196] 0x595558 [Battle/Status       ] | QRSTUVWXYZ[\]^`adefgh   jklmnopqrstuvwxyDEGHIJK qu      +! ë c   [!  ç V B v r  l   o!å l   S Speichern
+[ 197] 0x5955CA [Battle/Status       ] | !)  m t!v L!S     "  % j G  K  :     `!e !   S    j : Eôôá°åOôá°åEPRãNÜÜW     Reformieren
+[ 198] 0x59563C [Battle/Status       ] | Mitglieden in zwei Gruppen aufteilen
+[ 199] 0x59567B [Battle/Status       ] | Mitglieder in drei Gruppen aufteilen
+[ 200] 0x5956A1 [Battle/Status       ] | Gruppe aus zwei Personen bilden
+[ 201] 0x5956C2 [Battle/Status       ] | Gruppe aus drei Personen bilden
+[ 202] 0x5956E8 [Battle/Status       ] | Auswählen mit [START]-Taste
+[ 203] 0x59570A [Battle/Status       ] | Element
+[ 204] 0x595720 [Battle/Status       ] | Effekt
+[ 205] 0x595735 [Battle/Status       ] | Angreifen
+[ 206] 0x59574E [Battle/Status       ] | Verteidigen
+[ 207] 0x595766 [Battle/Status       ] | Halbieren
+[ 208] 0x59577A [Battle/Status       ] | Ungültig
+[ 209] 0x59578F [Battle/Status       ] | Absorbieren
+[ 210] 0x5957DF [Battle/Status       ] | Stärke
+[ 211] 0x5957FB [Battle/Status       ] | Geschick
+[ 212] 0x595813 [Battle/Status       ] | Vitalität
+[ 213] 0x59582A [Battle/Status       ] | Zauber
+[ 214] 0x59583D [Battle/Status       ] | Moral
+[ 215] 0x595852 [Battle/Status       ] | Glück
+[ 216] 0x595868 [Battle/Status       ] | Angreifen
+[ 217] 0x595882 [Battle/Status       ] | Angreifen %
+[ 218] 0x59589A [Battle/Status       ] | Verteidigen
+[ 219] 0x5958B0 [Battle/Status       ] | Verteidigen %
+[ 220] 0x5958C8 [Battle/Status       ] | Zbrangrf
+[ 221] 0x5958D9 [Battle/Status       ] | Zbrvertdg
+[ 222] 0x5958F0 [Battle/Status       ] | Zbrvertdg %
+[ 223] 0x595908 [Battle/Status       ] | Waf.
+[ 224] 0x595917 [Battle/Status       ] | Rüs.
+[ 225] 0x59592D [Battle/Status       ] | Acc.
+[ 226] 0x595943 [Battle/Status       ] | Limit-Ebene
+[ 227] 0x595974 [Battle/Status       ] | !   S    j :     "S   S S!!S!S m!£ S! m!]!    `!:   :    :  \  r   STUFE 1
+[ 228] 0x5959D0 [Battle/Status       ] | STUFE 2
+[ 229] 0x5959F0 [Battle/Status       ] | STUFE 3
+[ 230] 0x595A10 [Battle/Status       ] | STUFE 4
+[ 231] 0x595A30 [Battle/Status       ] | LIMIT-STUFE einrichten.
+[ 232] 0x595A60 [Battle/Status       ] | Einrichten
+[ 233] 0x595A73 [Battle/Status       ] | Prüfen
+[ 234] 0x595A8F [Battle/Status       ] | Bei nderung der STUFE
+[ 235] 0x595ABF [Battle/Status       ] | Beginn bei Limit-Punkt 0.
+[ 236] 0x595AE2 [Battle/Status       ] | STUFE ändern?
+[ 237] 0x595AF6 [Battle/Status       ] | Ja
+[ 238] 0x595B0B [Battle/Status       ] | Nein
+[ 239] 0x595B2D [Battle/Status       ] | Limit gewählt!
+[ 240] 0x595B57 [Battle/Status       ] | STUFE wählen
+[ 241] 0x595B94 [Battle/Status       ] | R R 3 1P
+[ 242] 0x595BB0 [Battle/Status       ] | T T 3!1T
+[ 243] 0x595BB9 [Battle/Status       ] | _
+[ 244] 0x595BBC [Battle/Status       ] | "
+[ 245] 0x595BCC [Battle/Status       ] | S S 3"1X
+[ 246] 0x595BD6 [Battle/Status       ] | :ö
+[ 247] 0x595BE8 [Battle/Status       ] | U U 3#1f
+[ 248] 0x595C04 [Battle/Status       ] | V V $1:
+[ 249] 0x595C0E [Battle/Status       ] | &
+[ 250] 0x595C20 [Battle/Status       ] | Y Y 7%1
+[ 251] 0x595C29 [Battle/Status       ] | _8£!
+[ 252] 0x595C3C [Battle/Status       ] | [ \ &1,
+[ 253] 0x595C46 [Battle/Status       ] | /
+[ 254] 0x595C58 [Battle/Status       ] | f f 3'1T
+[ 255] 0x595C74 [Battle/Status       ] | h h 7(1V
+[ 256] 0x595C90 [Battle/Status       ] | i i 3)C@
+[ 257] 0x595CA0 [Battle/Status       ] | @
+[ 258] 0x595CAC [Battle/Status       ] | k k 3*1
+[ 259] 0x595CB5 [Battle/Status       ] | _
+[ 260] 0x595CB8 [Battle/Status       ] | !
+[ 261] 0x595CC8 [Battle/Status       ] | m m 7+1C
+[ 262] 0x595CE4 [Battle/Status       ] | n n ,1(
+[ 263] 0x595CEE [Battle/Status       ] | 2
+[ 264] 0x595D00 [Battle/Status       ] | o o -14
+[ 265] 0x595D0A [Battle/Status       ] | *
+[ 266] 0x595D1C [Battle/Status       ] | z z 5.D0
+[ 267] 0x595D2C [Battle/Status       ] | "
+[ 268] 0x595D38 [Battle/Status       ] | { { 7/B
+[ 269] 0x595D41 [Battle/Status       ] | _
+[ 270] 0x595D44 [Battle/Status       ] | $
+[ 271] 0x595D54 [Battle/Status       ] | ~ ~ 50B
+[ 272] 0x595D5D [Battle/Status       ] | ü
+[ 273] 0x595D60 [Battle/Status       ] | ßV
+[ 274] 0x595D70 [Battle/Status       ] | à à 51
+[ 275] 0x595D7A [Battle/Status       ] | 4
+[ 276] 0x595D8C [Battle/Status       ] | 52B
+[ 277] 0x595D95 [Battle/Status       ] | _
+[ 278] 0x595D98 [Battle/Status       ] | !
+[ 279] 0x595DA8 [Battle/Status       ] | á á 53(@
+[ 280] 0x595DB1 [Battle/Status       ] | ü
+[ 281] 0x595DB4 [Battle/Status       ] | !    "
+[ 282] 0x595DC4 [Battle/Status       ] | â â 54(@
+[ 283] 0x595DCD [Battle/Status       ] | _
+[ 284] 0x595DD0 [Battle/Status       ] | ! "
+[ 285] 0x595DE0 [Battle/Status       ] | ^ ^ 54
+[ 286] 0x595DEA [Battle/Status       ] | 3
+[ 287] 0x595DFC [Battle/Status       ] | b b 56
+[ 288] 0x595E06 [Battle/Status       ] | 3
+[ 289] 0x595E18 [Battle/Status       ] | ` ` 58
+[ 290] 0x595E22 [Battle/Status       ] | 3
+[ 291] 0x595E34 [Battle/Status       ] | a a 5:
+[ 292] 0x595E3E [Battle/Status       ] | 3
+[ 293] 0x595E50 [Battle/Status       ] | c c 5<
+[ 294] 0x595E5A [Battle/Status       ] | 3
+[ 295] 0x595E6C [Battle/Status       ] | d d 5>
+[ 296] 0x595E76 [Battle/Status       ] | 3
+[ 297] 0x595E88 [Battle/Status       ] | e e 5J
+[ 298] 0x595E92 [Battle/Status       ] | 3
+[ 299] 0x595EA4 [Battle/Status       ] | ã ã 3<1T
+[ 300] 0x595EC0 [Battle/Status       ] | å å 3=14
+[ 301] 0x595EDC [Battle/Status       ] | ç ç 7>1X
+[ 302] 0x595EE5 [Battle/Status       ] | %
+[ 303] 0x595EE8 [Battle/Status       ] | !
+[ 304] 0x595EF8 [Battle/Status       ] | é é 7?1D
+[ 305] 0x595F14 [Battle/Status       ] | ä ä @17
+[ 306] 0x595F1D [Battle/Status       ] | ' &!
+[ 307] 0x595F30 [Battle/Status       ] | í í A12
+[ 308] 0x595F3A [Battle/Status       ] | (
+[ 309] 0x595F4C [Battle/Status       ] | ì ì B1+
+[ 310] 0x595F56 [Battle/Status       ] | 2
+[ 311] 0x595F61 [Battle/Status       ] | G
+[ 312] 0x595F64 [Battle/Status       ] | C p p 3C1P
+[ 313] 0x595F84 [Battle/Status       ] | q q  DB
+[ 314] 0x595F8D [Battle/Status       ] | _7 !
+[ 315] 0x595FA0 [Battle/Status       ] | s s 3E14
+[ 316] 0x595FBC [Battle/Status       ] | u u F1*
+[ 317] 0x595FC6 [Battle/Status       ] | *
+[ 318] 0x595FD8 [Battle/Status       ] | v v 5GB
+[ 319] 0x595FE1 [Battle/Status       ] | _6 !
+[ 320] 0x595FF4 [Battle/Status       ] | x x H1>
+[ 321] 0x595FFE [Battle/Status       ] | %
+[ 322] 0x596010 [Battle/Status       ] | y y 7I1
+[ 323] 0x59602C [Battle/Status       ] | £ £ 3Jé
+[ 324] 0x596048 [Battle/Status       ] | 3f1
+[ 325] 0x596052 [Battle/Status       ] | (
+[ 326] 0x596064 [Battle/Status       ] | ö ö 7L
+[ 327] 0x59606E [Battle/Status       ] | /
+[ 328] 0x596080 [Battle/Status       ] | M
+[ 329] 0x59608A [Battle/Status       ] | #
+[ 330] 0x59609C [Battle/Status       ] | N
+[ 331] 0x5960A6 [Battle/Status       ] | #!
+[ 332] 0x5960B8 [Battle/Status       ] | O
+[ 333] 0x5960C2 [Battle/Status       ] | #"
+[ 334] 0x5960D4 [Battle/Status       ] | P
+[ 335] 0x5960DE [Battle/Status       ] | ##
+[ 336] 0x5960F0 [Battle/Status       ] | î î 3Q1R
+[ 337] 0x59610C [Battle/Status       ] | ô ô 5RD0
+[ 338] 0x59611C [Battle/Status       ] | "
+[ 339] 0x596128 [Battle/Status       ] | ó ó 7S1P
+[ 340] 0x596138 [Battle/Status       ] | (
+[ 341] 0x596144 [Battle/Status       ] | ò ò T1*
+[ 342] 0x59614E [Battle/Status       ] | *
+[ 343] 0x596160 [Battle/Status       ] | õ õ 7U1<
+[ 344] 0x59617C [Battle/Status       ] | ° ° V1*
+[ 345] 0x596186 [Battle/Status       ] | /
+[ 346] 0x596198 [Battle/Status       ] | • • 7W1
+[ 347] 0x5961B4 [Battle/Status       ] | ß ß 5XB
+[ 348] 0x5961BE [Battle/Status       ] | 0
+[ 349] 0x5961D0 [Battle/Status       ] | 5Y(@
+[ 350] 0x5961E0 [Battle/Status       ] | "
+[ 351] 0x5961EC [Battle/Status       ] | 7Z1p
+[ 352] 0x596208 [Battle/Status       ] | 5[B
+[ 353] 0x596211 [Battle/Status       ] | _
+[ 354] 0x596214 [Battle/Status       ] | `
+[ 355] 0x596224 [Battle/Status       ] | 5\B
+[ 356] 0x59622D [Battle/Status       ] | _
+[ 357] 0x596230 [Battle/Status       ] | !     ü
+[ 358] 0x596240 [Battle/Status       ] | 7]B
+[ 359] 0x596249 [Battle/Status       ] | _
+[ 360] 0x59624C [Battle/Status       ] | !     ü
+[ 361] 0x596254 [Battle/Status       ] | £E
+[ 362] 0x596258 [Battle/Status       ] | C ü ü 3
+[ 363] 0x596262 [Battle/Status       ] | 18
+[ 364] 0x596270 [Battle/Status       ] | ã
+[ 365] 0x596278 [Battle/Status       ] | 7_B\
+[ 366] 0x596288 [Battle/Status       ] | !
+[ 367] 0x59628C [Battle/Status       ] | £L
+[ 368] 0x596290 [Battle/Status       ] | 4   3
+[ 369] 0x59629A [Battle/Status       ] | 1J
+[ 370] 0x5962A8 [Battle/Status       ] | ã
+[ 371] 0x5962B0 [Battle/Status       ] | 7aBf
+[ 372] 0x5962C0 [Battle/Status       ] | $
+[ 373] 0x5962C4 [Battle/Status       ] | £C
+[ 374] 0x5962C8 [Battle/Status       ] | 3
+[ 375] 0x5962D2 [Battle/Status       ] | 1(
+[ 376] 0x5962D6 [Battle/Status       ] | %
+[ 377] 0x5962E0 [Battle/Status       ] | ã
+[ 378] 0x5962E8 [Battle/Status       ] | 3cB
+[ 379] 0x5962F1 [Battle/Status       ] | _
+[ 380] 0x5962F4 [Battle/Status       ] | 8
+[ 381] 0x5962FC [Battle/Status       ] | £9
+[ 382] 0x596300 [Battle/Status       ] | !  7
+[ 383] 0x59630A [Battle/Status       ] | 1H
+[ 384] 0x596318 [Battle/Status       ] | ã
+[ 385] 0x596320 [Battle/Status       ] | 7eB
+[ 386] 0x596329 [Battle/Status       ] | '8!
+[ 387] 0x596340 [Battle/Status       ] | 7m1R
+[ 388] 0x596350 [Battle/Status       ] | ã
+[ 389] 0x59635C [Battle/Status       ] | 7nBz
+[ 390] 0x596378 [Battle/Status       ] | 6o10
+[ 391] 0x596384 [Battle/Status       ] | `

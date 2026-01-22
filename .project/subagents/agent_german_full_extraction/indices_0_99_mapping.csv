@@ -1,0 +1,101 @@
+index,de_offset,de_text,en_text
+0,0x0058FBB0,Möchten Sie Final,Do you want to quit
+1,0x0058FBCE,Fantasy VII verlassen und,playing Final Fantasy VII
+2,0x0058FBEC,zu Windows zurückkehren?,and return to Windows?
+3,0x0058FC10,Ja,Yes
+4,0x0058FC14,Nein,No
+5,0x005900E8,Fensterfarbe,Window color
+6,0x00590118,Sound,Sound
+7,0x00590148,Kontroller,Controller
+8,0x00590178,Cursor,Cursor
+9,0x005901A8,ATB,ATB
+10,0x005901D8,Kampftempo,Battle speed
+11,0x00590208,Kampfmeldung,Battle message
+12,0x00590238,Feldmeldung,Field message
+13,0x00590268,Kamerawinkel,Camera angle
+14,0x00590298,Auswählen,Select
+15,0x005902C8,Abbrechen,Cancel
+16,0x005902F8,Menü,Menu
+17,0x00590448,Stereo,Normal
+18,0x00590478,Breit,Customize
+19,0x005904A8,Normal,Initial
+20,0x005904D8,Benutzerdefiniert,Memory
+21,0x00590508,Anfang,Active
+22,0x00590538,Speicher,Recommended
+23,0x00590568,Aktiv,Wait
+24,0x00590598,Empfohlen,Auto
+25,0x005905C8,Warten,Fixed
+26,0x00590628,Auto,Slow
+27,0x00590658,Fest,Fast
+28,0x00590718,Zauberfolge,Magic order
+29,0x00590748,Heilung,restore
+30,0x00590778,Angriff,attack
+31,0x005907A8,Indirekt,indirect
+32,0x00590808,Nein,No
+33,0x00590A78,,[C5][B8][B7]
+34,0x00590A7E,,[BA][C5][B8][B8][C1]
+35,0x00590A84,,[B5][BF][C8][B8]
+36,0x00590AC8,Hilfe,Set Sound & Music Volume
+37,0x00590AE1,Nicht unterstützt,Not supported
+38,0x00590B00,Objekt,Item
+39,0x00590B14,Zauber,Magic
+40,0x00590B28,Materia,Materia
+41,0x00590B3C,Ausrüsten,Equip
+42,0x00590B50,Status,Status
+43,0x00590B64,Reihenfolge,Order
+44,0x00590B78,Limit,Limit
+45,0x00590B8C,Konfig,Config
+46,0x00590BA0,PHS,PHS
+47,0x00590BB4,Speichern,Save
+48,0x00590BC8,Verlassen,Quit
+49,0x00590BDC,Anfänger,Beginner
+50,0x00590C18,Zeit,Time
+51,0x00590C2C,Gil,Gil
+52,0x00590C40,nächstes Level,next level
+53,0x00590C54,Limit-Level,Limit level
+54,0x00590C68,Übung,Tutorial
+55,0x00590C90,LEVEL-ANSTIEG,LEVEL UP
+56,0x00590CA4,Wut,Fury
+57,0x00590CB8,Trauer,Sadness
+58,0x00590EF0,Mit [ABBRECHEN] beenden.,Press [CANCEL] to end.
+59,0x00590F22,[O.K.] um die Tastenbelegung zu konfigurieren.,Press [OK] to configure a key.
+60,0x00590F54,Bitte neue Taste drücken,Now press the new key.
+61,0x00590F86,[O.K.],[OK]
+62,0x00590FB8,[ABBRECHEN],[CANCEL]
+63,0x00590FEA,[MENÜ],[MENU]
+64,0x0059101C,[UMSCHALTEN],[SWITCH]
+65,0x0059104E,[BILD HOCH],[PAGEUP]
+66,0x00591080,[BILD HERUNTER],[PAGEDOWN]
+67,0x005910B2,[KAMERA],[CAMERA]
+68,0x005910E4,[ZIEL],[TARGET]
+69,0x00591116,[HILFE],[ASSIST]
+70,0x00591148,[START],[START]
+71,0x0059117A,[HERAUF],[UP]
+72,0x005911AC,[UNTEN],[DOWN]
+73,0x005911DE,[LINKS],[LEFT]
+74,0x00591210,[RECHT],[RIGHT]
+75,0x00591242,TASTATUR,KEYBOARD
+76,0x00591274,JOYSTICK,JOYSTICK
+77,0x00591820,ESCAPE,ESCAPE
+78,0x00591828,1,1
+79,0x0059182C,2,2
+80,0x00591830,3,3
+81,0x00591834,4,4
+82,0x00591838,5,5
+83,0x0059183C,6,6
+84,0x00591840,7,7
+85,0x00591844,8,8
+86,0x00591848,9,9
+87,0x0059184C,0,0
+88,0x00591850,MINUS,MINUS
+89,0x00591858,GLEICH,EQUALS
+90,0x00591860,RÜCKTASTE,BACK SPACE
+91,0x0059186C,TAB,TAB
+92,0x00591870,Q,Q
+93,0x00591874,W,W
+94,0x00591878,E,E
+95,0x0059187C,R,R
+96,0x00591880,T,T
+97,0x00591884,Y,Y
+98,0x00591888,U,U
+99,0x0059188C,I,I

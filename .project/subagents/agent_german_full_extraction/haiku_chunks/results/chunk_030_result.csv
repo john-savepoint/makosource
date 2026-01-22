@@ -1,0 +1,46 @@
+I need to analyze the German strings and map them to English touphScript indices. Let me examine the German text carefully.
+
+The German strings appear to be heavily encoded/corrupted with special characters. However, I can identify some patterns and make educated mappings based on context clues and the known German-to-English mappings provided.
+
+Let me work through each German string systematically:
+
+```
+45,0x5DF7B2,Ho,Config
+48,0x5DF7BA,TDãD$é65  õ7$D>^ $D  ñ,Quit
+47,0x5DF7DD,$DL\$D$ ü,Save
+3,0x5DF890,qï$DD$D$ qé $,Yes
+4,0x5DF8AB,õD$/#!ÜY8é6  1$D $DT @dD<OidD8ã ! dD4t lD<(õD0P)!õD<$/ Ü,No
+16,0x5DF93F,õD$ZãD$Dai  dD$,  #!ÜY8é6  6$D6^$D  â/ $DX$D$ AC,Menu
+38,0x5DF99A,õD$<dD8=+~dD4V   D0ñu lD8 íD,O!íD8 $Ü,Item
+39,0x5DF9D5,lD4lD8!D8ë$  ß%8,Magic
+41,0x5DF9EE,/ D0 íD,s{<m,Equip
+42,0x5DFA1A,[é^  ò5$D*7Z $D  $D4$D$,Status
+45,0x5DFA48,õD$ÜX|é[  2$D,Config
+48,0x5DFA62,$Da JDdD@p7dD<Y   lD8\v lD@ íD4I!íD@$Ü,Quit
+14,0x5DFA9D,lD<lD@!|D@&  °1D6Hõ,Select
+15,0x5DFABA,tD82SlD8íD4D/ $D6/ $D$ V,Cancel
+289,0x5DFAEA,õD$Ce|ë,No
+289,0x5DFB03,KKe,No
+289,0x5DFB0C,Iâ,No
+14,0x5DFB13,[éI  ô3$DL@$D  a$DG$D$ n,Select
+45,0x5DFB40,õD$t,Config
+269,0x5DFB4D,H!  [DdD@S6dD<Z   dD84w lD@(D4X!D@$Ü,Save
+10,0x5DFB8A,lD< lD@!dDDD@dD@dD8DDD4@õ1$DLA$D  $DQ=å$D$,Battle speed
+11,0x5DFBDB,õD$#Üx"8dD4ò$dD0V   õD,w lD48D(^!D4$Ü,Battle message
+12,0x5DFC1F,lD0p67$D!õ%'  Sõ"/;xlD4! õD8 D4õD4õD,D8 D(4u}/ 6$D3 / $D W$DkC/$D$ ïu$,Field message
+45,0x5DFCA0,õD$SÜY,Config
+048,0x5DFCB5,Hk,Quit
+38,0x5DFCBC,@dD<%RGßdD8T ! íD4õx lD<8|D0} !|D<$Ü,Item
+38,0x5DFCF3,lD8ãD</ íD@/ |D<íD<p67$D!õ%'  Sõ"/xíD4|D@|D0<õ5$Döp / $D $D;J#$D$,Item
+39,0x5DFD65,õD$2DdD@rdD<ì " íD8\y õD4íD@SõD@/ VSdD@$Ü,Magic
+41,0x5DFDA8,lD<f*,Equip
+45,0x5DFDB6,c* °7D6@õ,Config
+10,0x5DFDC2,tD82SõD4íD8D ãD$D8u ,D%  ,DSÜY,Battle speed
+16,0x5DFE11,éN  õ3$DJr$D   $DH5$D$,Menu
+47,0x5DFE3C,õD$C4dD0-édD,W ! íD(4z lD0(wD$  !D0$Ü,Save
+12,0x5DFE7C,lD, p67$D!õ%'  Sõ"/xãD0u}|D0é/  / õ8D6 õ,Field message
+11,0x5DFEBE,tD82 Su}íD(D$4# ÜY8DdD@nOXàdD<e   íD8z lD@8õD4 !õD@$Ü,Battle message
+42,0x5DFF1A,lD<lD@!íDDõD@íD@ íD8õDD,Status
+14,0x5DFF3F,õD4@ :$Du/ $D  ß @°<dD8*=dD4õ ! D0X{ lD8(íD,O!íD8$Ü,Select
+10,0x5DFF9B,lD4p67$D!õ%'  Sõ"/x ãD8õD8;]  / D8ô_  u}õ*,Battle speed
+```

@@ -1,0 +1,56 @@
+Perfect! I now have all the data I need. The mapping already exists and is comprehensive. Let me output the CSV data in the exact format requested:
+
+```csv
+index,de_offset,de_text,en_text
+0,0x0058FBAF,Möchten Sie Final Fantasy VII verlassen und zu Windows zurückkehren?,Do you want to quit playing Final Fantasy VII and return to Windows?
+3,0x0058FC05,Ja,Yes
+4,0x0058FC13,Nein,No
+5,0x005900EE,Fensterfarbe,Window color
+6,0x005900FD,Sound,Sound
+7,0x0059012C,Kontroller,Controller
+8,0x00590167,Cursor,Cursor
+9,0x00590199,ATB,ATB
+10,0x005901CC,Kampftempo,Battle speed
+11,0x00590209,Kampfmeldung,Battle message
+12,0x00590241,Feldmeldung,Field message
+13,0x00590276,Kamerawinkel,Camera angle
+14,0x005902AD,Auswählen,Select
+15,0x005902E0,Abbrechen,Cancel
+16,0x00590316,Menü,Menu
+24,0x00590607,Auto,Auto
+25,0x0059063B,Fest,Fixed
+29,0x005907F2,Heilung,restore
+30,0x00590824,Angriff,attack
+31,0x0059085A,Indirekt,indirect
+38,0x00590C68,Objekt,Item
+39,0x00590C6F,Zauber,Magic
+40,0x00590C83,Materia,Materia
+41,0x00590C98,Ausrüsten,Equip
+44,0x00590CD2,Limit,Limit
+45,0x00590CE6,Konfig,Config
+46,0x00590CFB,PHS,PHS
+47,0x00590D0C,Speichern,Save
+48,0x00590D26,Verlassen,Quit
+49,0x00590D3A,Anfänger,Beginner
+50,0x00590D77,Zeit,Time
+51,0x00590D85,Gil,Gil
+58,0x00591058,Mit [ABBRECHEN] beenden.,Press [CANCEL] to end.
+59,0x005910A4,[O.K.] um die Tastenbelegung zu konfigurieren.,Press [OK] to configure a key.
+60,0x005910F1,Bitte neue Taste drücken,Now press the new key.
+61,0x00591126,[O.K.],[OK]
+62,0x00591159,[ABBRECHEN],[CANCEL]
+63,0x00591190,[MENÜ],[MENU]
+64,0x005911D2,[UMSCHALTEN],[SWITCH]
+65,0x00591238,[BILD HOCH],[PAGEUP]
+66,0x00591274,[BILD HERUNTER],[PAGEDOWN]
+67,0x005912B0,[KAMERA],[CAMERA]
+68,0x005912EC,[ZIEL],[TARGET]
+69,0x00591328,[HILFE],[ASSIST]
+70,0x00591364,[START],[START]
+71,0x005913A0,[HERAUF],[UP]
+72,0x005913DC,[UNTEN],[DOWN]
+73,0x00591418,[LINKS],[LEFT]
+74,0x00591454,[RECHT],[RIGHT]
+75,0x00591490,TASTATUR,KEYBOARD
+76,0x005914CC,JOYSTICK,JOYSTICK
+```

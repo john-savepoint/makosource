@@ -1,0 +1,142 @@
+================================================================================
+DELTA PATTERN ANALYSIS: EN vs DE OFFSETS
+================================================================================
+
+Loading German exe...
+Loading English offset table...
+  Loaded 767 English entries
+
+================================================================================
+SEARCHING FOR KNOWN GERMAN STRINGS
+================================================================================
+
+[000] EN: 0x518370 -> DE: 0x58FBB0  Delta:  +489536 (0x+77840)
+       EN: 'Do you want to quit' -> DE: 'Möchten Sie Final'
+
+[003] NOT FOUND: 'Ja'
+
+[004] EN: 0x5183D4 -> DE: 0x58FC15  Delta:  +489537 (0x+77841)
+       EN: 'No' -> DE: 'Nein'
+       (5 matches found)
+
+[005] EN: 0x5188A8 -> DE: 0x5900F0  Delta:  +489544 (0x+77848)
+       EN: 'Window color' -> DE: 'Fensterfarbe'
+
+[006] EN: 0x5188D8 -> DE: 0x590126  Delta:  +489550 (0x+7784E)
+       EN: 'Sound' -> DE: 'Sound'
+
+[007] EN: 0x518908 -> DE: 0x59015C  Delta:  +489556 (0x+77854)
+       EN: 'Controller' -> DE: 'Kontroller'
+
+[008] EN: 0x518938 -> DE: 0x590192  Delta:  +489562 (0x+7785A)
+       EN: 'Cursor' -> DE: 'Cursor'
+
+[009] EN: 0x518968 -> DE: 0x5901C8  Delta:  +489568 (0x+77860)
+       EN: 'ATB' -> DE: 'ATB'
+
+[010] EN: 0x518998 -> DE: 0x5901FE  Delta:  +489574 (0x+77866)
+       EN: 'Battle speed' -> DE: 'Kampftempo'
+
+[011] EN: 0x5189C8 -> DE: 0x590234  Delta:  +489580 (0x+7786C)
+       EN: 'Battle message' -> DE: 'Kampfmeldung'
+
+[012] EN: 0x5189F8 -> DE: 0x59026A  Delta:  +489586 (0x+77872)
+       EN: 'Field message' -> DE: 'Feldmeldung'
+
+[013] EN: 0x518A28 -> DE: 0x5902A0  Delta:  +489592 (0x+77878)
+       EN: 'Camera angle' -> DE: 'Kamerawinkel'
+
+[014] EN: 0x518A58 -> DE: 0x5902D6  Delta:  +489598 (0x+7787E)
+       EN: 'Select' -> DE: 'Auswählen'
+       (4 matches found)
+
+[015] EN: 0x518A88 -> DE: 0x59030C  Delta:  +489604 (0x+77884)
+       EN: 'Cancel' -> DE: 'Abbrechen'
+       (3 matches found)
+
+[016] EN: 0x518AB8 -> DE: 0x590342  Delta:  +489610 (0x+7788A)
+       EN: 'Menu' -> DE: 'Menü'
+       (2 matches found)
+
+[029] EN: 0x518F08 -> DE: 0x59081C  Delta:  +489748 (0x+77914)
+       EN: 'restore' -> DE: 'Heilung'
+       (2 matches found)
+
+[030] EN: 0x518F38 -> DE: 0x590852  Delta:  +489754 (0x+7791A)
+       EN: 'attack' -> DE: 'Angriff'
+       (8 matches found)
+
+[031] EN: 0x518F68 -> DE: 0x590888  Delta:  +489760 (0x+77920)
+       EN: 'indirect' -> DE: 'Indirekt'
+
+[038] EN: 0x5192C0 -> DE: 0x590C68  Delta:  +489896 (0x+779A8)
+       EN: 'Item' -> DE: 'Objekt'
+       (6 matches found)
+
+[039] EN: 0x5192D4 -> DE: 0x5907E6  Delta:  +488722 (0x+77512)
+       EN: 'Magic' -> DE: 'Zauber'
+       (18 matches found)
+
+[040] EN: 0x5192E8 -> DE: 0x590C90  Delta:  +489896 (0x+779A8)
+       EN: 'Materia' -> DE: 'Materia'
+       (6 matches found)
+
+[041] EN: 0x5192FC -> DE: 0x590CA4  Delta:  +489896 (0x+779A8)
+       EN: 'Equip' -> DE: 'Ausrüsten'
+
+[042] NOT FOUND: 'Status'
+
+[043] NOT FOUND: 'Anordnung'
+
+[044] EN: 0x519338 -> DE: 0x590CE0  Delta:  +489896 (0x+779A8)
+       EN: 'Limit' -> DE: 'Limit'
+       (6 matches found)
+
+[045] EN: 0x51934C -> DE: 0x590CF4  Delta:  +489896 (0x+779A8)
+       EN: 'Config' -> DE: 'Konfig'
+
+[047] EN: 0x519374 -> DE: 0x590D1C  Delta:  +489896 (0x+779A8)
+       EN: 'Save' -> DE: 'Speichern'
+       (3 matches found)
+
+[048] EN: 0x519388 -> DE: 0x590D30  Delta:  +489896 (0x+779A8)
+       EN: 'Quit' -> DE: 'Verlassen'
+
+[075] EN: 0x519A02 -> DE: 0x591490  Delta:  +490126 (0x+77A8E)
+       EN: 'KEYBOARD' -> DE: 'TASTATUR'
+
+[076] EN: 0x519A34 -> DE: 0x5914CC  Delta:  +490136 (0x+77A98)
+       EN: 'JOYSTICK' -> DE: 'JOYSTICK'
+
+================================================================================
+DELTA PATTERN ANALYSIS
+================================================================================
+
+Total matches found: 79
+Unique delta values: 70
+
+Delta value frequency:
+  Delta  +489896 (0x000779A8): 8 occurrences
+  Delta  +526760 (0x000809A8): 2 occurrences
+  Delta  +515034 (0x0007DBDA): 2 occurrences
+  Delta  +489536 (0x00077840): 1 occurrences
+  Delta  +489537 (0x00077841): 1 occurrences
+  Delta  +511155 (0x0007CCB3): 1 occurrences
+  Delta  +513876 (0x0007D754): 1 occurrences
+  Delta  +522420 (0x0007F8B4): 1 occurrences
+  Delta  +542212 (0x00084604): 1 occurrences
+  Delta  +489544 (0x00077848): 1 occurrences
+
+Regional analysis:
+  Region 0x518000: 35 strings, delta range [+489536 to +542212], variance: 52676
+  Region 0x519000: 44 strings, delta range [+488722 to +537972], variance: 49250
+
+Results saved to: /home/johnzealanddoyle/projects/ff7OG_japanese/.project/subagents/agent_german_full_extraction/delta_analysis_results.json
+
+================================================================================
+CONCLUSION
+================================================================================
+
+VARIABLE DELTAS: 70 unique values
+Deltas vary significantly - LLM extraction is the correct approach.
+The delta drift issue identified in previous sessions is confirmed.

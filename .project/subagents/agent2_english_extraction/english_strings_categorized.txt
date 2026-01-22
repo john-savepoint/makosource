@@ -1,0 +1,929 @@
+# FF7 English Strings - Categorized by Function
+# Generated: 2026-01-05 19:17 JST
+# Session: ff862825-4ec7-4a49-a932-e9e5dcc0ea9f
+# Source: english_strings_by_index.txt
+# Total strings: 767
+
+================================================================================
+EXIT DIALOG
+================================================================================
+[000] Do you want to quit
+[001] playing Final Fantasy VII
+[002] and return to Windows?
+[003] Yes
+[004] No
+
+================================================================================
+CONFIG MENU
+================================================================================
+[005] Window color
+[006] Sound
+[007] Controller
+[008] Cursor
+[009] ATB
+[010] Battle speed
+[011] Battle message
+[012] Field message
+[013] Camera angle
+[014] Select
+[015] Cancel
+[016] Menu
+[017] Normal
+[018] Customize
+[019] Initial
+[020] Memory
+[021] Active
+[022] Recommended
+[023] Wait
+[024] Auto
+[025] Fixed
+[026] Slow
+[027] Fast
+[028] Magic order
+[029] restore
+[030] attack
+[031] indirect
+[032] No.
+[036] Set Sound & Music Volume
+[037] Not supported.
+
+================================================================================
+MAIN MENU
+================================================================================
+[038] Item
+[039] Magic
+[040] Materia
+[041] Equip
+[042] Status
+[043] Order
+[044] Limit
+[045] Config
+[046] PHS
+[047] Save
+[048] Quit
+[054] Tutorial
+
+================================================================================
+STATUS SCREEN LABELS
+================================================================================
+[049] Beginner
+[050] Time
+[051] Gil
+[052] next level
+[053] Limit level
+[055] LEVEL UP
+[056] Fury
+[057] Sadness
+
+================================================================================
+KEYBOARD CONFIGURATION
+================================================================================
+[058] Press [CANCEL] to end.
+[059] Press [OK] to configure a key.
+[060] Now press the new key.
+[061] [OK]
+[062] [CANCEL]
+[063] [MENU]
+[064] [SWITCH]
+[065] [PAGEUP]
+[066] [PAGEDOWN]
+[067] [CAMERA]
+[068] [TARGET]
+[069] [ASSIST]
+[070] [START]
+[071] [UP]
+[072] [DOWN]
+[073] [LEFT]
+[074] [RIGHT]
+[075] KEYBOARD
+[076] JOYSTICK
+
+================================================================================
+KEYBOARD KEYS
+================================================================================
+[077] ESCAPE
+[078] 1
+[079] 2
+[080] 3
+[081] 4
+[082] 5
+[083] 6
+[084] 7
+[085] 8
+[086] 9
+[087] 0
+[088] MINUS
+[089] EQUALS
+[090] BACK SPACE
+[091] TAB
+[092] Q
+[093] W
+[094] E
+[095] R
+[096] T
+[097] Y
+[098] U
+[099] I
+[100] O
+[101] P
+[102] LEFT BRACKET
+[103] RIGHT BRACKET
+[104] RETURN
+[105] LEFT CONTROL
+[106] A
+[107] S
+[108] D
+[109] F
+[110] G
+[111] H
+[112] J
+[113] K
+[114] L
+[115] SEMICOLON
+[116] APOSTROPHE
+[117] GRAVE
+[118] LEFT SHIFT
+[119] BACK SLASH
+[120] Z
+[121] X
+[122] C
+[123] V
+[124] B
+[125] N
+[126] M
+[127] COMMA
+[128] PERIOD
+[129] SLASH
+[130] RIGHT SHIFT
+[131] MULTIPLY
+[132] LEFT ALT
+[133] SPACE
+[134] CAPS LOCK
+[135] F1
+[136] F2
+[137] F3
+[138] F4
+[139] F5
+[140] F6
+[141] F7
+[142] F8
+[143] F9
+[144] F10
+[145] NUMLOCK
+[146] SCROLL
+[147] NUMPAD7
+[148] NUMPAD8
+[149] NUMPAD9
+[150] SUBTRACT
+[151] NUMPAD4
+[152] NUMPAD5
+[153] NUMPAD6
+[154] ADD
+[155] NUMPAD1
+[156] NUMPAD2
+[157] NUMPAD3
+[158] NUMPAD0
+[159] DECIMAL
+[160] F11
+[161] F12
+[162] F13
+[163] F14
+[164] F15
+[165] KANA
+[166] CONVERT
+[167] NOCONVERT
+[168] YEN
+[169] NUMPADEQUALS
+[170] CIRCUMFLEX
+[171] AT
+[172] COLON
+[173] UNDERLINE
+[174] KANJI
+[175] STOP
+[176] AX
+[177] UNLABELED
+[178] NUMPADENTER
+[179] RIGHT CONTROL
+[180] NUMPADCOMMA
+[181] DIVIDE
+[182] SYSRQ
+[183] RIGHT ALT
+[184] HOME
+[185] UP
+[186] PAGE UP
+[187] LEFT
+[188] RIGHT
+[189] END
+[190] DOWN
+[191] PAGE DOWN
+[192] INSERT
+[193] DELETE
+[194] LEFT WIN
+[195] RIGHT WIN
+[196] APPS
+[197] MOUSE_B1
+[198] MOUSE_B2
+[199] MOUSE_B3
+
+================================================================================
+JOYSTICK BUTTONS
+================================================================================
+[200] UP
+[201] DOWN
+[202] LEFT
+[203] RIGHT
+[204] BUTTON 1
+[205] BUTTON 2
+[206] BUTTON 3
+[207] BUTTON 4
+[208] BUTTON 5
+[209] BUTTON 6
+[210] BUTTON 7
+[211] BUTTON 8
+[212] BUTTON 9
+[213] BUTTON 10
+
+================================================================================
+BATTLE STATUSES
+================================================================================
+[214] Pause
+[215] Sleep
+[216] Poison
+[217] Sadness
+[218] Fury
+[219] Confusion
+[220] Silence
+[221] Haste
+[222] Slow
+[223] Stop
+[224] Petrify
+[225] Regen
+[226] Reflect
+[227] Shield
+[228] Berserk
+[229] Peerless
+[230] Paralyze
+[231] Darkness
+[304] Sleep
+[305] Poison
+[306] Sadness
+[307] Fury
+[308] Confusion
+[309] Silence
+[310] Haste
+[311] Slow
+[312] Stop
+[313] Frog
+[314] Small
+[315] Slow-numb
+[316] Petrify
+[317] Regen
+[318] Barrier
+[319] MBarrier
+[320] Reflect
+[321] Shield
+[322] Death-sentence
+[323] Manipulate
+[324] Berserk
+[325] Peerless
+[326] Paralyzed
+[327] Darkness
+[328] Element
+
+================================================================================
+BATTLE ARENA MESSAGES
+================================================================================
+[232] How much will you raise?
+[233] Gil
+[234] After
+[235] Gil on hand
+[236] Keep goin'?
+[237] Of course!     No way!
+[238] Current Battle Points
+[239] Slot start!
+[240] GREAT!!
+[241] Then, go for it!
+[264] Yesss! No handicapp!
+[265] HP restored.
+[266] Worried about the other members?
+[267] Yeah, a little
+[268] Not really
+
+================================================================================
+BATTLE HANDICAPS
+================================================================================
+[242] Magic Materia is broken.
+[243] Summon Materia is broken.
+[244] Support Materia is broken.
+[245] Independent Materia is broken.
+[246] Command Materia is broken.
+[247] All Materia is broken.
+[248] Accessory is broken.
+[249] Item command is sealed.
+[250] Armor is broken.
+[251] Weapon is broken.
+[252] 1/2 speed.
+[253] 1/2 accuracy.
+[254] Minimum
+[255] Poison
+[256] Toad
+[257] Time x30 damage.
+[258] Down 5 levels.
+[259] Down 10 levels.
+[260] 1/2 HP.
+[261] 1/2 MP.
+[262] 1/2 HP&MP.
+[263] Zero MP.
+
+================================================================================
+PARTY MANAGEMENT
+================================================================================
+[269] Save
+[270] Reform
+[271] Split your allies into two groups.
+[272] Split your allies into three groups.
+[273] Please make a party of two.
+[274] Please make a party of three.
+[275] Select with START button.
+
+================================================================================
+EQUIPMENT LABELS
+================================================================================
+[276] Wpn.
+[277] Arm.
+[278] Acc.
+[349] Arm:
+[350] Acc:
+[351] Limit level:
+[352] Wpn.
+[353] Arm.
+[354] Acc.
+[355] Attack
+[372] Wpn.
+[373] Arm.
+
+================================================================================
+LIMIT BREAK MENU
+================================================================================
+[279] LEVEL 1
+[280] LEVEL 2
+[281] LEVEL 3
+[282] LEVEL 4
+[283] Set BREAK LEVEL.
+[284] Set
+[285] Check
+[286] To change BREAK LEVEL,
+[287] it will begin from Limit Point 0.
+[288] Change BREAK LEVEL?
+[289] Yes
+[290] No
+[291] Limit set!
+[292] Select LEVEL.
+
+================================================================================
+ELEMENTS
+================================================================================
+[293] Fire
+[294] Ice
+[295] Lightning
+[296] Earth
+[297] Poison
+[298] Gravity
+[299] Water
+[300] Wind
+[301] Holy
+[302] Death
+[303] Near-death
+
+================================================================================
+ELEMENT/STATUS EFFECTS
+================================================================================
+[329] Effect
+[330] Attack
+[331] Defend
+[332] Halve
+[333] Invalid
+[334] Absorb
+[335] Strength
+
+================================================================================
+CHARACTER ATTRIBUTES
+================================================================================
+[336] Dexterity
+[337] Vitality
+[338] Magic
+[339] Spirit
+[340] Luck
+[341] Attack
+[342] Attack%
+[343] Defense
+[344] Defense%
+[345] Magic atk
+[346] Magic def
+[347] Magic def%
+[348] Wpn:
+[356] Attack %
+[357] Defense
+[358] Defense %
+[359] Magic atk
+[360] Magic def
+[361] Magic def%
+[362] Slot
+[386] Cover
+[387] Magic
+[388] Luck
+[389] MASTER
+[391] Vitality
+[392] Magic
+[393] Magic def
+[394] Dexterity
+[395] Luck
+[396] MaxHP
+[397] MaxMP
+[398] MaxHPUP
+[399] MaxMPUP
+[400] EXP.UP
+[401] Gil UP
+[402] Encount Down
+[403] Encount Up
+[404] Meet Chocobos
+[405] Pre-emptive
+[406] Long range attack
+[407] Attack all
+[408] Counter attack
+[409] Magic
+[547] Cover
+[548] Magic
+[549] Luck
+[550] MASTER
+[552] Vitality
+[553] Magic
+[554] Magic def
+[555] Dexterity
+[556] Luck
+[557] MaxHP
+[558] MaxMP
+[559] MaxHPUP
+[560] MaxMPUP
+[561] EXP.UP
+[562] Gil UP
+[563] Encount Down
+[564] Encount Up
+[565] Meet Chocobos
+[566] Pre-emptive
+[567] Long range attack
+[568] Attack all
+[569] Counter attack
+[570] A
+
+================================================================================
+MATERIA SLOTS
+================================================================================
+[363] Growth
+[364] Nothing
+[365] Normal
+[366] Double
+[367] Triple
+[368] Do you really want to remove this?
+[583] Normal
+[584] Double
+[585] Triple
+[586] Weapon Shop
+
+================================================================================
+MATERIA MANAGEMENT
+================================================================================
+[369] I sure do!
+[370] Wait a sec
+[371] Sephiroth[B2][A9][A9][B3]
+[374] Ability list
+[375] Equip effect
+[376] Check
+[377] Arrange
+[378] AP
+[379] To next level
+[380] MASTER
+[381] Arrange
+[382] Exchange
+[383] Remove all
+[384] Trash
+[390] Strength
+[410] Summon
+[411] Enemy-Skill
+[412] Added-Ability
+[413] All
+[414] 4x-M
+[415] Absorb MP
+[416] Absorb HP
+[417] Steal as well
+[418] Extra cut
+[419] Turbo MP
+[420] Nothing.
+[542] Equip effect
+[543] AP
+[544] To next level
+[545] MASTER
+[546] Dexterity
+[551] Strength
+
+================================================================================
+ITEM MENU
+================================================================================
+[421] Not enough MP.
+[422] Use
+[423] Arrange
+[424] Key Items
+[425] Customize
+[426] Field
+[427] Battle
+[428] Throw
+[429] Type
+[430] Name
+[431] Most
+[432] Least
+[433] OK! Got it!
+
+================================================================================
+DIALOG RESPONSES (CLOUD)
+================================================================================
+[434] I'm not sure but[A9]
+[435] Don't really care.
+[436] Heh! No sweat!
+
+================================================================================
+DIALOG RESPONSES (BARRET)
+================================================================================
+[437] D-d-d-damn! My head hurts!
+[438] Got nuthin' to do with me!
+[439] Hmm, so that's it.
+
+================================================================================
+DIALOG RESPONSES (TIFA)
+================================================================================
+[440] I'm not too sure but[A9]
+[441] I've got the wrong person.
+[442] This should be okay.
+
+================================================================================
+DIALOG RESPONSES (AERIS)
+================================================================================
+[443] Not quite ready yet.
+[444] It isn't me.
+[445] Right, I've got it!
+
+================================================================================
+DIALOG RESPONSES (RED XIII)
+================================================================================
+[446] I don't get it.
+[447] It has nothing to do with me.
+[448] Cool! This should do it!
+
+================================================================================
+DIALOG RESPONSES (YUFFIE)
+================================================================================
+[449] Nope! I don't get it!
+[450] Oh wow, I'm totally clueless!
+[451] I'm getting less human[A9]
+
+================================================================================
+DIALOG RESPONSES (CAIT SITH)
+================================================================================
+[452] I'm still not ready.
+[453] It has nothing to do with me.
+[454] Hey I like this! Lemme use it!
+
+================================================================================
+DIALOG RESPONSES (VINCENT)
+================================================================================
+[455] Hmph. Don't quite get it but[A9]
+[456] Not me! Give it to someone else!
+[457] It's got nothing to do with me.
+[458] Cloud
+
+================================================================================
+CHARACTER NAMES
+================================================================================
+[459] Barret
+[460] Tifa
+[461] Aeris
+[462] Red XIII
+[463] Yuffie
+[464] Cait Sith
+[371] Sephiroth[B2][A9][A9][B3]
+
+================================================================================
+CORRUPTED/GARBLED TEXT
+================================================================================
+[033] [BINARY_DATA:C5B8B7]
+[034] [BINARY_DATA:BAC5B8B8C1]
+[035] [BINARY_DATA:B5BFC8B8]
+[465] Vincent
+[466] Cid
+[467] Choco
+[468] Space
+[469] Delete
+[470] Select
+[471] Default
+[472] Cancel
+[473] A
+
+================================================================================
+UNICODE PLACEHOLDERS
+================================================================================
+[474] B
+[475] C
+[476] D
+[477] E
+[478] F
+[479] G
+[480] H
+[481] I
+[482] J
+[483] K
+[484] L
+[485] M
+[486] N
+[487] O
+[488] P
+[489] Q
+[490] R
+[491] S
+[492] T
+[493] U
+[494] V
+[495] W
+[496] X
+[497] Y
+[498] Z
+[499] [CTRL:0C]
+[500] [CTRL:0E]
+[501] [CTRL:0B]
+[502] [CTRL:0D]
+[503] a
+[504] b
+[505] c
+[506] d
+[507] e
+[508] f
+[509] g
+[510] h
+[511] i
+[512] j
+[513] k
+[514] l
+[515] m
+[516] n
+[517] o
+[518] p
+[519] q
+[520] r
+[521] s
+[522] t
+[523] u
+[524] v
+[525] w
+[526] x
+[527] y
+[528] z
+[529] [CTRL:1A]
+[530] [CTRL:1B]
+[531] [CTRL:10]
+[532] 1
+
+================================================================================
+NUMBERS
+================================================================================
+[533] 2
+[534] 3
+[535] 4
+[536] 5
+[537] 6
+[538] 7
+[539] 8
+[540] 9
+[541] Ability list
+
+================================================================================
+SHOP TYPES
+================================================================================
+[587] Item Shop
+[588] Materia Shop
+[589] General Store
+[590] Vegetable Store
+[591] Accessory Shop
+[592] Tool Shop
+[593] Hotel Shop
+[594] Welcome!
+
+================================================================================
+SHOP MENU
+================================================================================
+[571] D
+[572] Buy   Sell     Exit
+[573] Gil
+[574] Owned
+[575] Equipped
+[576] Total
+[577] How many
+[578] Item      Materia
+[579] Gil remaining
+[580] Price for Master
+[581] Price through AP
+[582] Nothing
+[595] What would you like to buy?
+[596] How many would you like?!
+[597] What would you like to sell?!
+[598] How many would you like to sell?!
+[599] Load
+
+================================================================================
+SAVE/LOAD MENU
+================================================================================
+[600] Select a save data file.
+[601] Select a save game.
+[602] Loading. Please wait.
+[603] Saving. Please wait.
+[604] EMPTY
+[605] GAME
+[606] Continue?
+[607] Checking Save Data File.
+[608] 01
+[623] Saved.
+[624] Could not save.
+[625] Could not load.
+[626] Data is ruined.
+[627] NEW GAME
+[628] Are you sure you want to save?
+[629] Yes
+[630] No
+[631] Completed.
+[632] Formatted.
+[633] Could not format.
+[634] Not formatted.
+[635] Want to format it now?
+[636] No save data file.
+[637] No save data file.
+[638] This Memory card is damaged and cannot be used.
+[639] Please insert another Memory card.
+[640] Not enough space left on save data file.
+[641] Use another save data file,
+[642] or erase 1 block of saved data.
+[643] Couldn't read it.
+[644] Still want to begin the game?
+[645] Can not allocate save file memory buffer!
+[646] Invalid save file!
+
+================================================================================
+SAVE SLOTS
+================================================================================
+[609] 02
+[610] 03
+[611] 04
+[612] 05
+[613] 06
+[614] 07
+[615] 08
+[616] 09
+[617] 10
+[618] 11
+[619] 12
+[620] 13
+[621] 14
+[622] 15
+[623] Saved.
+[647] Save 1
+[648] Save 2
+[649] Save 3
+[650] Save 4
+[651] Save 5
+[652] Save 6
+[653] Save 7
+[654] Save 8
+[655] Save 9
+[656] Save 10
+
+================================================================================
+SNOWBOARDING MINIGAME
+================================================================================
+[657] Level
+[658] 00'00"000
+[659] --'--"---
+[660] COURSE A RECORD
+[661] 00'00"000
+[662] --'--"---
+[663] BEST
+[664] CONTINUE
+[665] RETRY
+[666] EXIT
+[667] OPTION
+[668] CONTINUE
+[669] RETRY
+[670] EXIT
+[671] GHOST
+[672] SURFACE
+[673] OFF
+[674] BOARD
+[675] SLEIGH
+[676] ? ? ?
+[677] SNOW
+[678] CHECKED
+[679] TRY AGAIN
+[680] EXIT
+
+================================================================================
+CHOCOBO RACING MINIGAME
+================================================================================
+[681] TECHNIQUE
+[682] TIME
+[683] BALLOON
+[684] TOTAL
+[685] BEST
+[686] /30 PTS.
+[687] /30 PTS.
+[688] /40 PTS.
+[689] /# PTS.
+[690] /# PTS.
+[691] 1ST.
+[692] 2ND.
+[693] 3RD.
+[694] 4TH.
+[695] 5TH.
+[696] TEIOH
+
+================================================================================
+ITEMS (BATTLE REWARDS/PRIZES)
+================================================================================
+[697] Sprint Shoes
+[698] Counter
+[699] Magic Counter
+[700] Precious Watch
+[701] Ether
+[702] Hero Drink
+[703] Bolt Plume
+[704] Elixir
+[705] Fire Fang
+[706] Antarctic Wind
+[707] Potion
+[708] Phoenix Down
+[709] Hyper
+[710] Tranquilizer
+[711] Cat's Bell
+[712] Enemy
+[713] Sneak
+[714] Chocobracelet
+[715] Swift
+[716] Fire
+[717] Megalixir
+[718] Turbo
+[719] Hi-Potion
+[720] Ice
+
+================================================================================
+CHOCOBO NAMES
+================================================================================
+[721] SAM
+[722] ELEN
+[723] BLUES
+[724] TOM
+[725] JOHN
+[726] GARY
+[727] MIKE
+[728] SANDY
+[729] JU
+[730] LY
+[731] JOEL
+[732] GREY
+[733] EDWARD
+[734] JAMES
+[735] HARVEY
+[736] DAN
+[737] RUDY
+[738] GRAHAM
+[739] FOX
+[740] CLIVE
+[741] SEAN
+[742] YOUNG
+[743] ROBIN
+[744] DARIO
+[745] K
+[746] ARL
+[747] SARA
+[748] MARIE
+[749] SAMMY
+[750] LIA
+[751] KNIGHT
+[752] PAULA
+[753] PAU
+[754] LE
+[755] PETER
+[756] AIMEE
+[757] TERRY
+[758] ANDY
+[759] NANCY
+[760] TIM
+[761] ROBER
+[762] T
+[763] GEORGE
+[764] JENNY
+[765] RICA
+[766] JULIA

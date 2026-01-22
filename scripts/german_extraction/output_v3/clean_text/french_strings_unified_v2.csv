@@ -1,0 +1,819 @@
+index,offset,text,length,confidence,encoding,reason
+0,0x54A2A0,MEILLEUR,8,95,ASCII,snowboarding minigame
+1,0x54A2B4,CONTINUER,9,95,ASCII,snowboarding minigame
+2,0x54A2C0,RE(ESSAYER,10,95,ASCII,snowboarding minigame
+3,0x54A2CC,QUITTER,7,95,ASCII,snowboarding minigame
+4,0x54A2D4,OPTION,6,95,ASCII,snowboarding minigame
+5,0x54A2DC,CONTINUER,9,95,ASCII,snowboarding minigame
+6,0x54A2E8,RE(ESSAYER,10,95,ASCII,snowboarding minigame
+7,0x54A2F4,QUITTER,7,95,ASCII,snowboarding minigame
+8,0x54A2FC,FANTO*ME,8,95,ASCII,snowboarding minigame
+9,0x54A308,SURFACE,7,95,ASCII,snowboarding minigame
+10,0x54A310,DE(SACTIVE(,11,95,ASCII,snowboarding minigame
+11,0x54A31C,SURF,4,95,ASCII,snowboarding minigame
+12,0x54A324,TRAI*NEAU,9,95,ASCII,snowboarding minigame
+13,0x54A338,NEIGE,5,95,ASCII,snowboarding minigame
+14,0x54A340,ACTIVE(,7,95,ASCII,snowboarding minigame
+15,0x54A348,RE(ESSAYER,10,95,ASCII,snowboarding minigame
+16,0x54A354,QUITTER,7,95,ASCII,snowboarding minigame
+17,0x54A364,TECHNIQUE,9,95,ASCII,snowboarding minigame
+18,0x54A370,TEMPS,5,95,ASCII,snowboarding minigame
+19,0x54A378,BALLON,6,95,ASCII,snowboarding minigame
+20,0x54A380,TOTAL,5,95,ASCII,snowboarding minigame
+21,0x54A388,MEILLEUR,8,95,ASCII,snowboarding minigame
+22,0x54A3CC,1ER.,4,95,ASCII,snowboarding minigame
+23,0x54A3D4,2E)M.,5,95,ASCII,snowboarding minigame
+24,0x54A3DC,3E)M.,5,95,ASCII,snowboarding minigame
+25,0x54A3E4,4E)M.,5,95,ASCII,snowboarding minigame
+26,0x54A3EC,5E)M.,5,95,ASCII,snowboarding minigame
+27,0x56FDD8,TEIOH,5,95,FF7,battle items
+28,0x56FF12,Contre-attaque,14,95,FF7,battle items
+29,0x56FF24,Opposition Magie,16,95,FF7,battle items
+30,0x56FF36,Montre prâcieuse,16,95,FF7,battle items
+31,0x56FF48,Clochette de chat,17,95,FF7,battle items
+32,0x56FF5A,Repousse-ennemi,15,95,FF7,battle items
+33,0x56FF6C,Attaque Furtive,15,95,FF7,battle items
+34,0x56FF7E,Chocobracelet,13,95,FF7,battle items
+35,0x56FF90,Ether,5,95,FF7,battle items
+36,0x56FFA2,Elixir,6,95,FF7,battle items
+37,0x56FFB4,Boisson de hâros,16,95,FF7,battle items
+38,0x56FFC6,Plume d'âclair,14,95,FF7,battle items
+39,0x56FFD8,Dent de feu,11,95,FF7,battle items
+40,0x56FFEA,Vent antarctique,16,95,FF7,battle items
+41,0x56FFFC,Eclair furtif,13,95,FF7,battle items
+42,0x57000E,Voile de feu,12,95,FF7,battle items
+43,0x570020,Cristal de glace,16,95,FF7,battle items
+44,0x570032,Mâgalixir,9,95,FF7,battle items
+45,0x570044,Ether turbo,11,95,FF7,battle items
+46,0x570056,Potion,6,95,FF7,battle items
+47,0x570068,Queue de Phânix,15,95,FF7,battle items
+48,0x57007A,Hyper,5,95,FF7,battle items
+49,0x57008C,Calmant,7,95,FF7,battle items
+50,0x57009E,Super potion,12,95,FF7,battle items
+51,0x5701C2,BLUES,5,95,FF7,battle items
+52,0x5701CC,TOM,3,95,FF7,battle items
+53,0x5701D6,JEAN,4,95,FF7,battle items
+54,0x5701E0,GÈRARD,6,95,FF7,battle items
+55,0x5701EA,MICHEL,6,95,FF7,battle items
+56,0x5701F4,SANDRA,6,95,FF7,battle items
+57,0x570200,LIE,3,95,FF7,chocobo names
+58,0x570208,JO,2,95,FF7,chocobo names
+59,0x570212,ROBERT,6,95,FF7,chocobo names
+60,0x57021C,EDWARD,6,95,FF7,chocobo names
+61,0x570226,JACQUES,7,95,FF7,chocobo names
+62,0x570230,ANDRÈ,5,95,FF7,chocobo names
+63,0x57023A,FLORE,5,95,FF7,chocobo names
+64,0x570244,PHILIPPE,8,95,FF7,chocobo names
+65,0x57024E,DOMINIQUE,9,95,FF7,chocobo names
+66,0x570258,JONATHAN,8,95,FF7,chocobo names
+67,0x570262,MARGOT,6,95,FF7,chocobo names
+68,0x57026C,LAURE,5,95,FF7,chocobo names
+69,0x570276,MATTHIAS,8,95,FF7,chocobo names
+70,0x570280,JUNIOR,6,95,FF7,chocobo names
+71,0x57028A,DAMIEN,6,95,FF7,chocobo names
+72,0x570294,CARL,4,95,FF7,chocobo names
+73,0x57029E,SARAH,5,95,FF7,chocobo names
+74,0x5702A8,MARIE,5,95,FF7,chocobo names
+75,0x5702B2,FLORENCE,8,95,FF7,chocobo names
+76,0x5702BC,LÈA,3,95,FF7,chocobo names
+77,0x5702C6,BONAPARTE,9,95,FF7,chocobo names
+78,0x5702D0,PAUL,4,95,FF7,chocobo names
+79,0x5702DA,PAULINE,7,95,FF7,chocobo names
+80,0x5702E4,SOPHIE,6,95,FF7,chocobo names
+81,0x5702EE,AIMÈE,5,95,FF7,chocobo names
+82,0x5702F8,ANNE,4,95,FF7,chocobo names
+83,0x570302,KEVIN,5,95,FF7,chocobo names
+84,0x57030C,BARBARA,7,95,FF7,chocobo names
+85,0x570316,MIMI,4,95,FF7,chocobo names
+86,0x570320,BOB,3,95,FF7,chocobo names
+87,0x57032A,GEORGES,7,95,FF7,chocobo names
+88,0x570334,CLAIRE,6,95,FF7,chocobo names
+89,0x57033E,FRANÇOIS,8,95,FF7,chocobo names
+90,0x590046,Final Fantasy VII et,20,95,FF7,menu strings
+91,0x590064,retourner sous Windows ?,24,95,FF7,menu strings
+92,0x590088,Oui,3,95,FF7,menu strings
+93,0x59008C,Non,3,95,FF7,menu strings
+94,0x5905A4,Son,3,95,FF7,menu strings
+95,0x5905E8,AUTRE,5,95,FF7,menu strings
+96,0x59062C,Curseur,7,95,FF7,menu strings
+97,0x590670,CTA,3,95,FF7,menu strings
+98,0x5906B4,Vitesse de combat,17,95,FF7,menu strings
+99,0x5906F8,Message de combat,17,95,FF7,menu strings
+100,0x59073C,Message de terrain,18,95,FF7,menu strings
+101,0x590780,Angle de vue,12,95,FF7,menu strings
+102,0x5907C4,Select,6,95,FF7,menu strings
+103,0x590808,Annuler,7,95,FF7,menu strings
+104,0x59084C,Menu,4,95,FF7,menu strings
+105,0x590890,Fenètre dâsactivâe,18,95,FF7,menu strings
+106,0x5908D4,Pause,5,95,FF7,menu strings
+107,0x590918,Aide au combat,14,95,FF7,menu strings
+108,0x59095C,Mono,4,95,FF7,menu strings
+109,0x5909E4,Etendu,6,95,FF7,menu strings
+110,0x590A28,Normal,6,95,FF7,menu strings
+111,0x590A6C,Personnaliser,13,95,FF7,menu strings
+112,0x590AB0,Origine,7,95,FF7,menu strings
+113,0x590AF4,Mâmoire,7,95,FF7,menu strings
+114,0x590B38,Actif,5,95,FF7,menu strings
+115,0x590B7C,Recommandâ,10,95,FF7,menu strings
+116,0x590BC0,Attente,7,95,FF7,menu strings
+117,0x590C04,Auto,4,95,FF7,menu strings
+118,0x590C48,Fixe,4,95,FF7,menu strings
+119,0x590CD0,Lent,4,95,FF7,menu strings
+120,0x590D14,Vite,4,95,FF7,menu strings
+121,0x590D58,ROUGE,5,95,FF7,menu strings
+122,0x590D9C,VERT,4,95,FF7,menu strings
+123,0x590DE0,BLEU,4,95,FF7,menu strings
+124,0x590E24,Ordre de magie,14,95,FF7,menu strings
+125,0x590E68,Restaur,7,95,FF7,menu strings
+126,0x590EAC,Attaque,7,95,FF7,menu strings
+127,0x590EF0,Indir.,6,95,FF7,menu strings
+128,0x590F34,Interdit,8,95,FF7,menu strings
+129,0x590F78,No.,3,95,FF7,menu strings
+130,0x590FBC,Gauche2,7,95,FF7,menu strings
+131,0x591000,Droite2,7,95,FF7,menu strings
+132,0x591044,Gauche1,7,95,FF7,menu strings
+133,0x591088,Droite1,7,95,FF7,menu strings
+134,0x5910CC,Menu,4,95,FF7,menu strings
+135,0x591110,OK,2,95,FF7,menu strings
+136,0x591154,Annuler,7,95,FF7,menu strings
+137,0x591198,AUTRE,5,95,FF7,menu strings
+138,0x5911DC,Aide,4,95,FF7,menu strings
+139,0x591220,Appuie sur  START pour personnaliser.,37,95,FF7,menu strings
+140,0x5912A8,Pause,5,95,FF7,menu strings
+141,0x591308,Configurer Volume sonore et musical,35,95,FF7,menu strings
+142,0x591335,Non supportâ.,13,95,FF7,menu strings
+143,0x5913A0,Elâment,7,95,FF7,menu strings
+144,0x5913B4,Magie,5,95,FF7,menu strings
+145,0x5913C8,Materia,7,95,FF7,menu strings
+146,0x5913DC,Equiper,7,95,FF7,menu strings
+147,0x5913F0,Etat,4,95,FF7,menu strings
+148,0x591404,Placer,6,95,FF7,menu strings
+149,0x591418,Limite,6,95,FF7,menu strings
+150,0x59142C,Config,6,95,FF7,menu strings
+151,0x591440,PHS,3,95,FF7,menu strings
+152,0x591454,Enregistrer,11,95,FF7,menu strings
+153,0x591468,Quitter,7,95,FF7,menu strings
+154,0x59147C,Dâbutant,8,95,FF7,menu strings
+155,0x591490,Uso,3,95,FF7,menu strings
+156,0x5914A4,Uso,3,95,FF7,menu strings
+157,0x5914B8,Tps,3,95,FF7,menu strings
+158,0x5914CC,Gils,4,95,FF7,menu strings
+159,0x5914E0,NV suiv.,8,95,FF7,menu strings
+160,0x5914F4,Limites,7,95,FF7,menu strings
+161,0x591508,Comment jouer,13,95,FF7,menu strings
+162,0x59151C,Sous,4,95,FF7,menu strings
+163,0x591544,Fureur,6,95,FF7,menu strings
+164,0x591558,Triste,6,95,FF7,menu strings
+165,0x5921B0,AUCUN,5,95,ASCII,keyboard keys
+166,0x5921B8,ECHAPPE,7,95,ASCII,keyboard keys
+167,0x5921F0,RETOUR ARRIERE,14,95,ASCII,keyboard keys
+168,0x592200,TAB,3,95,ASCII,keyboard keys
+169,0x592234,ENTREE,6,95,ASCII,keyboard keys
+170,0x59223C,CTRL GAUCHE,11,95,ASCII,keyboard keys
+171,0x592274,TOUCHE CARRE,12,95,ASCII,keyboard keys
+172,0x592284,MAJ. GAUCHE,11,95,ASCII,keyboard keys
+173,0x5922BC,MAJ. DROITE,11,95,ASCII,keyboard keys
+174,0x5922C8,MULTIPLIER,10,95,ASCII,keyboard keys
+175,0x5922D4,ALT GAUCHE,10,95,ASCII,keyboard keys
+176,0x5922E0,ESPACE,6,95,ASCII,keyboard keys
+177,0x5922E8,VERR. MAJ,9,95,ASCII,keyboard keys
+178,0x5922F4,F1,2,95,ASCII,keyboard keys
+179,0x5922F8,F2,2,95,ASCII,keyboard keys
+180,0x5922FC,F3,2,95,ASCII,keyboard keys
+181,0x592300,F4,2,95,ASCII,keyboard keys
+182,0x592304,F5,2,95,ASCII,keyboard keys
+183,0x592308,F6,2,95,ASCII,keyboard keys
+184,0x59230C,F7,2,95,ASCII,keyboard keys
+185,0x592310,F8,2,95,ASCII,keyboard keys
+186,0x592314,F9,2,95,ASCII,keyboard keys
+187,0x59231C,VERR. NUM,9,95,ASCII,keyboard keys
+188,0x592328,DEFIL.,6,95,ASCII,keyboard keys
+189,0x592330,7 PAVE NUM.,11,95,ASCII,keyboard keys
+190,0x59233C,8 PAVE NUM.,11,95,ASCII,keyboard keys
+191,0x592348,9 PAVE NUM.,11,95,ASCII,keyboard keys
+192,0x592354,MOINS PAVE NUM.,15,95,ASCII,keyboard keys
+193,0x592364,4 PAVE NUM.,11,95,ASCII,keyboard keys
+194,0x592370,5 PAVE NUM.,11,95,ASCII,keyboard keys
+195,0x59237C,6 PAVE NUM.,11,95,ASCII,keyboard keys
+196,0x592388,PLUS PAVE NUM.,14,95,ASCII,keyboard keys
+197,0x592398,1 PAVE NUM.,11,95,ASCII,keyboard keys
+198,0x5923A4,2 PAVE NUM.,11,95,ASCII,keyboard keys
+199,0x5923B0,3 PAVE NUM.,11,95,ASCII,keyboard keys
+200,0x5923BC,0 PAVE NUM.,11,95,ASCII,keyboard keys
+201,0x5923C8,POINT PAVE NUM.,15,95,ASCII,keyboard keys
+202,0x5923D8,AUCUN,5,95,ASCII,keyboard keys
+203,0x5923E0,AUCUN,5,95,ASCII,keyboard keys
+204,0x5923E8,AUCUN,5,95,ASCII,keyboard keys
+205,0x5923F8,AUCUN,5,95,ASCII,keyboard keys
+206,0x592400,AUCUN,5,95,ASCII,keyboard keys
+207,0x592408,AUCUN,5,95,ASCII,keyboard keys
+208,0x592410,AUCUN,5,95,ASCII,keyboard keys
+209,0x592418,AUCUN,5,95,ASCII,keyboard keys
+210,0x592420,AUCUN,5,95,ASCII,keyboard keys
+211,0x592428,AUCUN,5,95,ASCII,keyboard keys
+212,0x592430,AUCUN,5,95,ASCII,keyboard keys
+213,0x592438,AUCUN,5,95,ASCII,keyboard keys
+214,0x592440,AUCUN,5,95,ASCII,keyboard keys
+215,0x592448,AUCUN,5,95,ASCII,keyboard keys
+216,0x59245C,AUCUN,5,95,ASCII,keyboard keys
+217,0x592464,AUCUN,5,95,ASCII,keyboard keys
+218,0x59246C,AUCUN,5,95,ASCII,keyboard keys
+219,0x592474,AUCUN,5,95,ASCII,keyboard keys
+220,0x59247C,AUCUN,5,95,ASCII,keyboard keys
+221,0x592484,AUCUN,5,95,ASCII,keyboard keys
+222,0x59248C,AUCUN,5,95,ASCII,keyboard keys
+223,0x592494,AUCUN,5,95,ASCII,keyboard keys
+224,0x59249C,AUCUN,5,95,ASCII,keyboard keys
+225,0x5924A4,KANA,4,95,ASCII,keyboard keys
+226,0x5924AC,AUCUN,5,95,ASCII,keyboard keys
+227,0x5924B4,AUCUN,5,95,ASCII,keyboard keys
+228,0x5924BC,AUCUN,5,95,ASCII,keyboard keys
+229,0x5924C4,AUCUN,5,95,ASCII,keyboard keys
+230,0x5924CC,AUCUN,5,95,ASCII,keyboard keys
+231,0x5924D4,AUCUN,5,95,ASCII,keyboard keys
+232,0x5924DC,AUCUN,5,95,ASCII,keyboard keys
+233,0x5924E4,AUCUN,5,95,ASCII,keyboard keys
+234,0x5924EC,CONVERT,7,95,ASCII,keyboard keys
+235,0x5924F4,AUCUN,5,95,ASCII,keyboard keys
+236,0x5924FC,NOCONVERT,9,95,ASCII,keyboard keys
+237,0x592508,AUCUN,5,95,ASCII,keyboard keys
+238,0x592510,YEN,3,95,ASCII,keyboard keys
+239,0x592514,AUCUN,5,95,ASCII,keyboard keys
+240,0x59251C,AUCUN,5,95,ASCII,keyboard keys
+241,0x592524,AUCUN,5,95,ASCII,keyboard keys
+242,0x59252C,AUCUN,5,95,ASCII,keyboard keys
+243,0x592534,AUCUN,5,95,ASCII,keyboard keys
+244,0x59253C,AUCUN,5,95,ASCII,keyboard keys
+245,0x592544,AUCUN,5,95,ASCII,keyboard keys
+246,0x59254C,AUCUN,5,95,ASCII,keyboard keys
+247,0x592554,AUCUN,5,95,ASCII,keyboard keys
+248,0x59255C,AUCUN,5,95,ASCII,keyboard keys
+249,0x592564,AUCUN,5,95,ASCII,keyboard keys
+250,0x59256C,AUCUN,5,95,ASCII,keyboard keys
+251,0x592574,AUCUN,5,95,ASCII,keyboard keys
+252,0x59257C,AUCUN,5,95,ASCII,keyboard keys
+253,0x592584,AUCUN,5,95,ASCII,keyboard keys
+254,0x59258C,EGAL PAVE NUM.,14,95,ASCII,keyboard keys
+255,0x59259C,AUCUN,5,95,ASCII,keyboard keys
+256,0x5925A4,AUCUN,5,95,ASCII,keyboard keys
+257,0x5925AC,CIRCUMFLEX,10,95,ASCII,keyboard keys
+258,0x5925B8,AT,2,95,ASCII,keyboard keys
+259,0x5925BC,COLON,5,95,ASCII,keyboard keys
+260,0x5925C4,UNDERLINE,9,95,ASCII,keyboard keys
+261,0x5925D0,KANJI,5,95,ASCII,keyboard keys
+262,0x5925D8,STOP,4,95,ASCII,keyboard keys
+263,0x5925E0,AX,2,95,ASCII,keyboard keys
+264,0x5925E4,UNLABELED,9,95,ASCII,keyboard keys
+265,0x5925F0,AUCUN,5,95,ASCII,keyboard keys
+266,0x5925F8,AUCUN,5,95,ASCII,keyboard keys
+267,0x592600,AUCUN,5,95,ASCII,keyboard keys
+268,0x592608,AUCUN,5,95,ASCII,keyboard keys
+269,0x592610,ENTREE PAVE NUM.,16,95,ASCII,keyboard keys
+270,0x592624,CTRL DROITE,11,95,ASCII,keyboard keys
+271,0x592630,AUCUN,5,95,ASCII,keyboard keys
+272,0x592638,AUCUN,5,95,ASCII,keyboard keys
+273,0x592640,AUCUN,5,95,ASCII,keyboard keys
+274,0x592648,AUCUN,5,95,ASCII,keyboard keys
+275,0x592650,AUCUN,5,95,ASCII,keyboard keys
+276,0x592658,AUCUN,5,95,ASCII,keyboard keys
+277,0x592660,AUCUN,5,95,ASCII,keyboard keys
+278,0x592668,AUCUN,5,95,ASCII,keyboard keys
+279,0x592670,AUCUN,5,95,ASCII,keyboard keys
+280,0x592678,AUCUN,5,95,ASCII,keyboard keys
+281,0x592680,AUCUN,5,95,ASCII,keyboard keys
+282,0x592688,AUCUN,5,95,ASCII,keyboard keys
+283,0x592690,AUCUN,5,95,ASCII,keyboard keys
+284,0x592698,AUCUN,5,95,ASCII,keyboard keys
+285,0x5926A0,AUCUN,5,95,ASCII,keyboard keys
+286,0x5926A8,AUCUN,5,95,ASCII,keyboard keys
+287,0x5926B0,AUCUN,5,95,ASCII,keyboard keys
+288,0x5926B8,AUCUN,5,95,ASCII,keyboard keys
+289,0x5926C0,AUCUN,5,95,ASCII,keyboard keys
+290,0x5926C8,AUCUN,5,95,ASCII,keyboard keys
+291,0x5926D0,AUCUN,5,95,ASCII,keyboard keys
+292,0x5926D8,VIRGULE PAVE NUM.,17,95,ASCII,keyboard keys
+293,0x5926EC,AUCUN,5,95,ASCII,keyboard keys
+294,0x5926F4,DIVISER PAVE NUM.,17,95,ASCII,keyboard keys
+295,0x592708,AUCUN,5,95,ASCII,keyboard keys
+296,0x592710,IMP. ECRAN,10,95,ASCII,keyboard keys
+297,0x59271C,ALT DROITE,10,95,ASCII,keyboard keys
+298,0x592728,AUCUN,5,95,ASCII,keyboard keys
+299,0x592730,AUCUN,5,95,ASCII,keyboard keys
+300,0x592738,AUCUN,5,95,ASCII,keyboard keys
+301,0x592740,AUCUN,5,95,ASCII,keyboard keys
+302,0x592748,AUCUN,5,95,ASCII,keyboard keys
+303,0x592750,AUCUN,5,95,ASCII,keyboard keys
+304,0x592758,AUCUN,5,95,ASCII,keyboard keys
+305,0x592760,AUCUN,5,95,ASCII,keyboard keys
+306,0x592768,AUCUN,5,95,ASCII,keyboard keys
+307,0x592770,AUCUN,5,95,ASCII,keyboard keys
+308,0x592778,AUCUN,5,95,ASCII,keyboard keys
+309,0x592780,AUCUN,5,95,ASCII,keyboard keys
+310,0x592788,AUCUN,5,95,ASCII,keyboard keys
+311,0x592790,AUCUN,5,95,ASCII,keyboard keys
+312,0x592798,ORIGINE,7,95,ASCII,keyboard keys
+313,0x5927A0,HAUT,4,95,ASCII,keyboard keys
+314,0x5927A8,PAGE HAUT,9,95,ASCII,keyboard keys
+315,0x5927B4,AUCUN,5,95,ASCII,keyboard keys
+316,0x5927BC,GAUCHE,6,95,ASCII,keyboard keys
+317,0x5927C4,AUCUN,5,95,ASCII,keyboard keys
+318,0x5927CC,DROITE,6,95,ASCII,keyboard keys
+319,0x5927D4,AUCUN,5,95,ASCII,keyboard keys
+320,0x5927DC,FIN,3,95,ASCII,keyboard keys
+321,0x5927E0,BAS,3,95,ASCII,keyboard keys
+322,0x5927E4,PAGE BAS,8,95,ASCII,keyboard keys
+323,0x5927F0,INSER.,6,95,ASCII,keyboard keys
+324,0x5927F8,SUPP.,5,95,ASCII,keyboard keys
+325,0x592800,AUCUN,5,95,ASCII,keyboard keys
+326,0x592808,AUCUN,5,95,ASCII,keyboard keys
+327,0x592810,AUCUN,5,95,ASCII,keyboard keys
+328,0x592818,AUCUN,5,95,ASCII,keyboard keys
+329,0x592820,AUCUN,5,95,ASCII,keyboard keys
+330,0x592828,AUCUN,5,95,ASCII,keyboard keys
+331,0x592830,AUCUN,5,95,ASCII,keyboard keys
+332,0x592838,WIN GAUCHE,10,95,ASCII,keyboard keys
+333,0x592844,WIN DROITE,10,95,ASCII,keyboard keys
+334,0x592850,APPS,4,95,ASCII,keyboard keys
+335,0x592858,AUCUN,5,95,ASCII,keyboard keys
+336,0x592860,SOURIS_B1,9,95,ASCII,keyboard keys
+337,0x59286C,SOURIS_B2,9,95,ASCII,keyboard keys
+338,0x592878,SOURIS_B3,9,95,ASCII,keyboard keys
+339,0x592884,AUCUN,5,95,ASCII,keyboard keys
+340,0x59288C,HAUT,4,95,ASCII,keyboard keys
+341,0x592894,BAS,3,95,ASCII,keyboard keys
+342,0x592898,GAUCHE,6,95,ASCII,keyboard keys
+343,0x5928A0,DROITE,6,95,ASCII,keyboard keys
+344,0x5928A8,AUCUN,5,95,ASCII,keyboard keys
+345,0x5928B0,AUCUN,5,95,ASCII,keyboard keys
+346,0x5928B8,AUCUN,5,95,ASCII,keyboard keys
+347,0x5928C0,AUCUN,5,95,ASCII,keyboard keys
+348,0x5928C8,BOUTON 1,8,95,ASCII,keyboard keys
+349,0x5928D4,BOUTON 2,8,95,ASCII,keyboard keys
+350,0x5928E0,BOUTON 3,8,95,ASCII,keyboard keys
+351,0x5928EC,BOUTON 4,8,95,ASCII,keyboard keys
+352,0x5928F8,BOUTON 5,8,95,ASCII,keyboard keys
+353,0x592934,BOUTON 10,9,95,ASCII,joystick buttons
+354,0x592940,AUCUN,5,95,ASCII,joystick buttons
+355,0x592948,%sff7input.cfg,14,95,ASCII,joystick buttons
+356,0x592958,%sff7input.cfg,14,95,ASCII,joystick buttons
+357,0x5929AC,colo,4,95,ASCII,joystick buttons
+358,0x5953D8,Pause,5,95,FF7,menu strings
+359,0x595448,Sommeil,7,95,FF7,menu strings
+360,0x59545C,Poison,6,95,FF7,menu strings
+361,0x595470,Tristesse,9,95,FF7,menu strings
+362,0x595484,Fureur,6,95,FF7,menu strings
+363,0x595498,Confusion,9,95,FF7,menu strings
+364,0x5954AC,Silence,7,95,FF7,menu strings
+365,0x5954C0,HÔte,4,95,FF7,menu strings
+366,0x5954D4,Ralentir,8,95,FF7,menu strings
+367,0x5954E8,Arrèter,7,95,FF7,menu strings
+368,0x595538,Pâtrifier,9,95,FF7,menu strings
+369,0x59554C,regen,5,95,FF7,menu strings
+370,0x595588,reflet,6,95,FF7,menu strings
+371,0x59559C,Double,6,95,FF7,menu strings
+372,0x5955B0,Bouclier,8,95,FF7,menu strings
+373,0x5955EC,Folie,5,95,FF7,menu strings
+374,0x595600,Sans pareil,11,95,FF7,menu strings
+375,0x595614,Paralyser,9,95,FF7,menu strings
+376,0x595628,Obscuritâ,9,95,FF7,menu strings
+377,0x5956B5,`  `   Rrê `hpx9IY     Combien vas-tu faire ?,45,95,FF7,menu strings
+378,0x5956F0,Gil,3,95,FF7,menu strings
+379,0x5956F8,Aprçs,5,95,FF7,menu strings
+380,0x595700,Gils en main,12,95,FF7,menu strings
+381,0x5958D0,Bien sr !    Srement pas !,26,95,FF7,menu strings
+382,0x5958F0,Nombre actuel de points de combat,33,95,FF7,menu strings
+383,0x595914,Dâmarrage de la roulette !,26,95,FF7,menu strings
+384,0x595938,SUPER !!,8,95,FF7,menu strings
+385,0x59595C,Gagnâ : points de combat,24,95,FF7,menu strings
+386,0x595980,"Alors, vas-y !",14,95,FF7,menu strings
+387,0x5959A1,Materia magique cassâe.,23,95,FF7,menu strings
+388,0x5959C1,Materia d'invocation cassâe.,28,95,FF7,menu strings
+389,0x5959E1,Materia de soutien cassâe.,26,95,FF7,menu strings
+390,0x595A01,Materia indâpendante cassâe.,28,95,FF7,menu strings
+391,0x595A21,Materia de commande cassâe.,27,95,FF7,menu strings
+392,0x595A41,Toute la materia est cassâe.,28,95,FF7,menu strings
+393,0x595A61,Accessoire cassâ.,17,95,FF7,menu strings
+394,0x595A81,Commande âlâment scellâe.,25,95,FF7,menu strings
+395,0x595AA1,Armure cassâe.,14,95,FF7,menu strings
+396,0x595AC1,Arme cassâe.,12,95,FF7,menu strings
+397,0x595AE1,1/2 vitesse.,12,95,FF7,menu strings
+398,0x595B01,1/2 prâcision.,14,95,FF7,menu strings
+399,0x595B21,Minimum,7,95,FF7,menu strings
+400,0x595B41,Poison,6,95,FF7,menu strings
+401,0x595B61,Crapaud,7,95,FF7,menu strings
+402,0x595B81,Perte de temps x30.,19,95,FF7,menu strings
+403,0x595BA1,Baisse de 5 niveaux.,20,95,FF7,menu strings
+404,0x595BC1,Baisse de 10 niveaux.,21,95,FF7,menu strings
+405,0x595C41,Zâro MP.,8,95,FF7,menu strings
+406,0x595C61,Oui ! Aucune !!,15,95,FF7,menu strings
+407,0x595C81,HP restaurâs.,13,95,FF7,menu strings
+408,0x595CA0,Inquiet pour les autres membres ?,33,95,FF7,menu strings
+409,0x595CC2,"Ouais, un peu",13,95,FF7,menu strings
+410,0x595CE4,Pas vraiment,12,95,FF7,menu strings
+411,0x595EEE,Sâpare tes alliâs en deux groupes.,34,95,FF7,menu strings
+412,0x595F14,Sâpare tes alliâs en trois groupes.,35,95,FF7,menu strings
+413,0x595F3A,Forme un groupe de deux membres.,32,95,FF7,menu strings
+414,0x595F60,Forme un groupe de trois membres.,33,95,FF7,menu strings
+415,0x595F86,Appuie sur la touche [DEMARRER].,32,95,FF7,menu strings
+416,0x595FB0,Elâment,7,95,FF7,menu strings
+417,0x595FC6,Effet,5,95,FF7,menu strings
+418,0x595FDC,Attaquer,8,95,FF7,menu strings
+419,0x595FF2,Dâfendre,8,95,FF7,menu strings
+420,0x596008,Moitiâ,6,95,FF7,menu strings
+421,0x59601E,Non-valide,10,95,FF7,menu strings
+422,0x596034,Absorption,10,95,FF7,menu strings
+423,0x59608C,Force,5,95,FF7,menu strings
+424,0x5960A2,Dextâritâ,9,95,FF7,menu strings
+425,0x5960B8,Vitalitâ,8,95,FF7,menu strings
+426,0x5960CE,Magie,5,95,FF7,menu strings
+427,0x5960E4,Esprit,6,95,FF7,menu strings
+428,0x5960FA,Chance,6,95,FF7,menu strings
+429,0x596110,Attaque,7,95,FF7,menu strings
+430,0x596126,% Attaque,9,95,FF7,menu strings
+431,0x59613C,Dâfense,7,95,FF7,menu strings
+432,0x596152,% Dâfense,9,95,FF7,menu strings
+433,0x596168,Atqe mag,8,95,FF7,menu strings
+434,0x59617E,Dâf mag,7,95,FF7,menu strings
+435,0x596194,% Dâf mag,9,95,FF7,menu strings
+436,0x5961AA,Arm.,4,95,FF7,menu strings
+437,0x5961C0,Amr.,4,95,FF7,menu strings
+438,0x5961D6,Acc.,4,95,FF7,menu strings
+439,0x5961EC,Niveau des limites :,20,95,FF7,menu strings
+440,0x596288,NIVEAU 2,8,95,FF7,menu strings
+441,0x5962B0,NIVEAU 3,8,95,FF7,menu strings
+442,0x5962D8,NIVEAU 4,8,95,FF7,menu strings
+443,0x596300,Dâfinir MAX.LIMITES,19,95,FF7,menu strings
+444,0x596328,Configurer,10,95,FF7,menu strings
+445,0x596350,Vârifier,8,95,FF7,menu strings
+446,0x596378,"Pour modifier le MAX.LIMITES, il",32,95,FF7,menu strings
+447,0x5963A0,doit commencer au Point Limite 0.,33,95,FF7,menu strings
+448,0x5963C8,Modifier le MAX.LIMITES ?,25,95,FF7,menu strings
+449,0x5963F0,Oui,3,95,FF7,menu strings
+450,0x596418,Non,3,95,FF7,menu strings
+451,0x596440,Limite dâfinie !,16,95,FF7,menu strings
+452,0x596468,Sâlectionne un NIVEAU.,22,95,FF7,menu strings
+453,0x596790,e e 5J,6,95,FF7,menu strings
+454,0x596934,û û 3JÏ,7,95,FF7,menu strings
+455,0x59696C,œ œ 7L,6,95,FF7,menu strings
+456,0x5969F8,â â 3Q1R,8,95,FF7,menu strings
+457,0x596A14,ë ë 5RD0,8,95,FF7,menu strings
+458,0x596A30,é é 7S1P,8,95,FF7,menu strings
+459,0x596ABC,5XB,3,95,FF7,menu strings
+460,0x596B5C,ûE,2,95,FF7,menu strings
+461,0x596B94,ûL,2,95,FF7,menu strings
+462,0x596BBC,7aBf,4,95,FF7,menu strings
+463,0x596BCC,ûC,2,95,FF7,menu strings
+464,0x596BF4,3cB,3,95,FF7,menu strings
+465,0x596C2C,7eB,3,95,FF7,menu strings
+466,0x597300,Feu,3,95,FF7,menu strings
+467,0x59730A,Glace,5,95,FF7,menu strings
+468,0x597314,Foudre,6,95,FF7,menu strings
+469,0x59731E,Terre,5,95,FF7,menu strings
+470,0x597328,Poison,6,95,FF7,menu strings
+471,0x597332,Gravitâ,7,95,FF7,menu strings
+472,0x59733C,Eau,3,95,FF7,menu strings
+473,0x597346,Vent,4,95,FF7,menu strings
+474,0x597350,Sacre,5,95,FF7,menu strings
+475,0x597360,Mort,4,95,FF7,menu strings
+476,0x597374,Quasi-mort,10,95,FF7,menu strings
+477,0x597388,Sommeil,7,95,FF7,menu strings
+478,0x59739C,Poison,6,95,FF7,menu strings
+479,0x5973B0,Triste,6,95,FF7,menu strings
+480,0x5973C4,Furie,5,95,FF7,menu strings
+481,0x5973D8,Confusion,9,95,FF7,menu strings
+482,0x5973EC,Silence,7,95,FF7,menu strings
+483,0x597400,HÔte,4,95,FF7,menu strings
+484,0x597414,Lent,4,95,FF7,menu strings
+485,0x597428,Stop,4,95,FF7,menu strings
+486,0x59743C,Grenouille,10,95,FF7,menu strings
+487,0x597450,Mini,4,95,FF7,menu strings
+488,0x597464,Lente apathie,13,95,FF7,menu strings
+489,0x597478,Pâtrifier,9,95,FF7,menu strings
+490,0x59748C,Regen,5,95,FF7,menu strings
+491,0x5974A0,Barriçre,8,95,FF7,menu strings
+492,0x5974B4,BarrM,5,95,FF7,menu strings
+493,0x5974C8,Reflet,6,95,FF7,menu strings
+494,0x5974F0,Bouclier,8,95,FF7,menu strings
+495,0x597504,Peine de mort,13,95,FF7,menu strings
+496,0x597518,Manipuler,9,95,FF7,menu strings
+497,0x59752C,Folie,5,95,FF7,menu strings
+498,0x597540,Sans pareil,11,95,FF7,menu strings
+499,0x597554,Paralysie,9,95,FF7,menu strings
+500,0x597568,Obscuritâ,9,95,FF7,menu strings
+501,0x597580,El. Base,8,95,FF7,menu strings
+502,0x59759A,Effet,5,95,FF7,menu strings
+503,0x5975B4,Attaque,7,95,FF7,menu strings
+504,0x5975CE,Dâfense,7,95,FF7,menu strings
+505,0x5975E8,Moitiâ,6,95,FF7,menu strings
+506,0x597602,Sans effet,10,95,FF7,menu strings
+507,0x59761C,Absorption,10,95,FF7,menu strings
+508,0x597684,Force,5,95,FF7,menu strings
+509,0x59769E,Dextâritâ,9,95,FF7,menu strings
+510,0x5976B8,Vitalitâ,8,95,FF7,menu strings
+511,0x5976D2,Magie,5,95,FF7,menu strings
+512,0x5976EC,Esprit,6,95,FF7,menu strings
+513,0x597706,Chance,6,95,FF7,menu strings
+514,0x597720,Attaque,7,95,FF7,menu strings
+515,0x59773A,% Attaque,9,95,FF7,menu strings
+516,0x597754,Dâfense,7,95,FF7,menu strings
+517,0x59776E,% Dâfense,9,95,FF7,menu strings
+518,0x597788,Atqe mag,8,95,FF7,menu strings
+519,0x5977A2,Dâf mag,7,95,FF7,menu strings
+520,0x5977BC,% Dâf mag,9,95,FF7,menu strings
+521,0x5977D6,Arm.,4,95,FF7,menu strings
+522,0x5977F0,Amr.,4,95,FF7,menu strings
+523,0x59780A,Acc.,4,95,FF7,menu strings
+524,0x597824,Limites :,9,95,FF7,menu strings
+525,0x59790C,Amr.,4,95,FF7,menu strings
+526,0x597920,Acc.,4,95,FF7,menu strings
+527,0x597934,Acc.,4,95,FF7,menu strings
+528,0x597948,Force,5,95,FF7,menu strings
+529,0x59795C,Dextâritâ,9,95,FF7,menu strings
+530,0x597970,Vitalitâ,8,95,FF7,menu strings
+531,0x597984,Magie,5,95,FF7,menu strings
+532,0x597998,Esprit,6,95,FF7,menu strings
+533,0x5979AC,Chance,6,95,FF7,menu strings
+534,0x5979C0,Attaque,7,95,FF7,menu strings
+535,0x5979D4,% Attaque,9,95,FF7,menu strings
+536,0x5979E8,Dâfense,7,95,FF7,menu strings
+537,0x5979FC,% Dâfense,9,95,FF7,menu strings
+538,0x597A10,Atqe mag,8,95,FF7,menu strings
+539,0x597A24,Dâf mag,7,95,FF7,menu strings
+540,0x597A38,% Dâf mag,9,95,FF7,menu strings
+541,0x597A4C,Orifice :,9,95,FF7,menu strings
+542,0x597A60,Augmentation :,14,95,FF7,menu strings
+543,0x597A74,Aucune,6,95,FF7,menu strings
+544,0x597A88,Normale,7,95,FF7,menu strings
+545,0x597A9C,Double,6,95,FF7,menu strings
+546,0x597AB0,Triple,6,95,FF7,menu strings
+547,0x597B32,Glace,5,95,FF7,menu strings
+548,0x597B3C,Foudre,6,95,FF7,menu strings
+549,0x597B46,Terre,5,95,FF7,menu strings
+550,0x597B50,Poison,6,95,FF7,menu strings
+551,0x597B5A,Gravitâ,7,95,FF7,menu strings
+552,0x597B64,Eau,3,95,FF7,menu strings
+553,0x597B6E,Vent,4,95,FF7,menu strings
+554,0x597B78,Sacre,5,95,FF7,menu strings
+555,0x597B88,Veux-tu vraiment retirer ceci ?,31,95,FF7,menu strings
+556,0x597BAA,"Oui, vraiment !",15,95,FF7,menu strings
+557,0x597BCC,Un instant,10,95,FF7,menu strings
+558,0x597BEE,Sephiroth,9,95,FF7,menu strings
+559,0x597C10,Arm.,4,95,FF7,menu strings
+560,0x597C2A,Amr.,4,95,FF7,menu strings
+561,0x597C44,Liste de pouvoirs,17,95,FF7,menu strings
+562,0x597C5E,Effet âquipement,16,95,FF7,menu strings
+563,0x597C78,Vârifier,8,95,FF7,menu strings
+564,0x597C92,Arranger,8,95,FF7,menu strings
+565,0x597CAC,Nombre en mâmoire   /24,23,95,FF7,menu strings
+566,0x597CC6,AP,2,95,FF7,menu strings
+567,0x597CE0,Niveau suivant,14,95,FF7,menu strings
+568,0x597CFA,Maître,6,95,FF7,menu strings
+569,0x597D14,Arranger,8,95,FF7,menu strings
+570,0x597D2E,Echanger,8,95,FF7,menu strings
+571,0x597D48,Retirer tout,12,95,FF7,menu strings
+572,0x597D62,Poubelle,8,95,FF7,menu strings
+573,0x597D96,Vitesse,7,95,FF7,menu strings
+574,0x597DB0,Protçge,7,95,FF7,menu strings
+575,0x597DCA,Pouvoir mag.,12,95,FF7,menu strings
+576,0x597DE4,Chance,6,95,FF7,menu strings
+577,0x597DFE,Maître,6,95,FF7,menu strings
+578,0x597E18,Force,5,95,FF7,menu strings
+579,0x597E32,Vitalitâ,8,95,FF7,menu strings
+580,0x597E4C,Magie,5,95,FF7,menu strings
+581,0x597E66,Dâf mag,7,95,FF7,menu strings
+582,0x597E80,Dextâritâ,9,95,FF7,menu strings
+583,0x597E9A,Chance,6,95,FF7,menu strings
+584,0x597EB4,HPMAX,5,95,FF7,menu strings
+585,0x597ECE,MPMAX,5,95,FF7,menu strings
+586,0x597EE8,HPMAX,5,95,FF7,menu strings
+587,0x597F02,MPMAX,5,95,FF7,menu strings
+588,0x597F1C,EXP.PLUS,8,95,FF7,menu strings
+589,0x597F36,Gil PLUS,8,95,FF7,menu strings
+590,0x597F50,Rencontre -,11,95,FF7,menu strings
+591,0x597F6A,Rencontre +,11,95,FF7,menu strings
+592,0x597F84,Attirer Chocobos,16,95,FF7,menu strings
+593,0x597F9E,Prâvention +,12,95,FF7,menu strings
+594,0x597FB8,Attaque de longue portâe,24,95,FF7,menu strings
+595,0x597FD2,Attaquer tous,13,95,FF7,menu strings
+596,0x597FEC,Contre-attaquer,15,95,FF7,menu strings
+597,0x598006,Attaquer tous,13,95,FF7,menu strings
+598,0x598020,Attaque continue,16,95,FF7,menu strings
+599,0x59803A,Changer HP MP,13,95,FF7,menu strings
+600,0x59816A,Invoquer,8,95,FF7,menu strings
+601,0x598184,TalentE,7,95,FF7,menu strings
+602,0x59819E,Puissance suppl.,16,95,FF7,menu strings
+603,0x5981B8,Tout,4,95,FF7,menu strings
+604,0x5981EC,Absorp.MP,9,95,FF7,menu strings
+605,0x598206,Absorp.HP,9,95,FF7,menu strings
+606,0x59823A,Voler aussi,11,95,FF7,menu strings
+607,0x598254,Coupure+,8,95,FF7,menu strings
+608,0x59826E,Turbo MP,8,95,FF7,menu strings
+609,0x598288,Rien.,5,95,FF7,menu strings
+610,0x5982A2,MP insuffisant.,15,95,FF7,menu strings
+611,0x59832E,Arranger,8,95,FF7,menu strings
+612,0x59833C,Elâments-clâ,12,95,FF7,menu strings
+613,0x59834A,Toi-mème,8,95,FF7,menu strings
+614,0x598358,Terrain,7,95,FF7,menu strings
+615,0x598366,Combat,6,95,FF7,menu strings
+616,0x598374,Lancer,6,95,FF7,menu strings
+617,0x598382,Type,4,95,FF7,menu strings
+618,0x598390,Nom,3,95,FF7,menu strings
+619,0x59839E,Plus,4,95,FF7,menu strings
+620,0x5983AC,Moins,5,95,FF7,menu strings
+621,0x5983D8,Ça y est !,10,95,FF7,menu strings
+622,0x598414,J'hâsite encore,15,95,FF7,menu strings
+623,0x598450,Ça m'est âgal.,14,95,FF7,menu strings
+624,0x59848C,"Hâ, pas de panique !",20,95,FF7,menu strings
+625,0x5984C8,Bon sang ! Ça me donne mal au crÔne !,37,95,FF7,menu strings
+626,0x598504,Ça m'est âgal.,14,95,FF7,menu strings
+627,0x598540,"Hmm, c'est donc àa.",19,95,FF7,menu strings
+628,0x59857C,J'hâsite encore,15,95,FF7,menu strings
+629,0x5985B8,Il y a erreur de personne.,26,95,FF7,menu strings
+630,0x5985F4,Ça devrait ètre bon.,20,95,FF7,menu strings
+631,0x598630,Ce n'est pas prèt.,18,95,FF7,menu strings
+632,0x59866C,Ce n'est pas moi.,17,95,FF7,menu strings
+633,0x5986A8,Ça y est !,10,95,FF7,menu strings
+634,0x5986E4,Je n'y arrive pas.,18,95,FF7,menu strings
+635,0x598720,Ça m'est âgal.,14,95,FF7,menu strings
+636,0x59875C,Super ! Ça devrait faire l'affaire !,36,95,FF7,menu strings
+637,0x598798,Non ! Je n'y arrive pas !,25,95,FF7,menu strings
+638,0x5987D4,"Pff, je n'ai pas la moindre idâe !",34,95,FF7,menu strings
+639,0x598810,Je suis l'ombre de moi-mème,27,95,FF7,menu strings
+640,0x59884C,Je n'y suis toujours pas.,25,95,FF7,menu strings
+641,0x598888,Ça m'est âgal.,14,95,FF7,menu strings
+642,0x5988C4,"Donne-moi àa, àa m'a l'air bien !",33,95,FF7,menu strings
+643,0x598900,Pff. J'hâsite encore,20,95,FF7,menu strings
+644,0x59893C,Pas moi ! Choisis quelqu'un d'autre !,37,95,FF7,menu strings
+645,0x598978,Ça m'est complçtement âgal.,27,95,FF7,menu strings
+646,0x598D4B,ÈvËËËËS\,8,95,FF7,menu strings
+647,0x598D6A,VÈËÙËÏudÈ,9,95,FF7,menu strings
+648,0x598D7C,Ù|È,3,95,FF7,menu strings
+649,0x598D8A,ÙÈËVÈe,6,95,FF7,menu strings
+650,0x598D9C,vSËÈ,4,95,FF7,menu strings
+651,0x598DAC,ÏVÛËÈS,6,95,FF7,menu strings
+652,0x598DBB,ÙÈXË,4,95,FF7,menu strings
+653,0x598DCB,ÙËÛÈX,5,95,FF7,menu strings
+654,0x598DDB,VxË,3,95,FF7,menu strings
+655,0x598DED,VËVS,4,95,FF7,menu strings
+656,0x598DFA,ÙËËXÙÜ,6,95,FF7,menu strings
+657,0x598E1A,VÏÈË,4,95,FF7,menu strings
+658,0x598E3A,VÙÈXÏf,6,95,FF7,menu strings
+659,0x598E58,çxËe,4,95,FF7,menu strings
+660,0x598EB9,ÙÙ,2,95,FF7,menu strings
+661,0x598F3B,ÈvËËËËS\,8,95,FF7,menu strings
+662,0x598F5A,VÈËÙËÏudÈ,9,95,FF7,menu strings
+663,0x598F7A,ÙÈËVÈe,6,95,FF7,menu strings
+664,0x598F8C,Ù|È,3,95,FF7,menu strings
+665,0x598F9C,ÏVÛËÈS,6,95,FF7,menu strings
+666,0x598FAC,vSËÈ,4,95,FF7,menu strings
+667,0x598FBB,ÙËÛÈX,5,95,FF7,menu strings
+668,0x598FCB,ÙÈXË,4,95,FF7,menu strings
+669,0x598FDD,VËVS,4,95,FF7,menu strings
+670,0x598FEB,VxË,3,95,FF7,menu strings
+671,0x59900A,ÙËËXÙÜ,6,95,FF7,menu and character names
+672,0x59902A,VÏÈË,4,95,FF7,menu and character names
+673,0x59904A,VÙÈXÏf,6,95,FF7,menu and character names
+674,0x599068,çxËe,4,95,FF7,menu and character names
+675,0x5990C9,ÙÙ,2,95,FF7,menu and character names
+676,0x599134,Barret,6,95,FF7,menu and character names
+677,0x599140,Tifa,4,95,FF7,menu and character names
+678,0x59914C,Aeris,5,95,FF7,menu and character names
+679,0x599158,Red 13,6,95,FF7,menu and character names
+680,0x599164,Youfie,6,95,FF7,menu and character names
+681,0x599170,Cait Sith,9,95,FF7,menu and character names
+682,0x59917C,Vincent,7,95,FF7,menu and character names
+683,0x599188,Cid,3,95,FF7,menu and character names
+684,0x599194,Choco,5,95,FF7,menu and character names
+685,0x5991C4,Espace,6,95,FF7,menu and character names
+686,0x5991D0,Effacer,7,95,FF7,menu and character names
+687,0x5991DC,Choisir,7,95,FF7,menu and character names
+688,0x5991E8,Dâfaut,6,95,FF7,menu and character names
+689,0x5991F4,Annuler,7,95,FF7,menu and character names
+690,0x599258,Freshmake,9,95,FF7,menu and character names
+691,0x599268,Square,6,95,FF7,menu and character names
+692,0x599288,Local,5,95,FF7,menu and character names
+693,0x599298,Gold,4,95,FF7,menu and character names
+694,0x59931E,"xz|468:<~ÀÇÉË>@BDFêîôûœ`bdfh ""$&(IKMOQH",39,95,FF7,menu and character names
+695,0x59965C,GL!,3,95,FF7,menu and character names
+696,0x5998AC,î   *RuhdfaN      ! Sephiroth,29,95,FF7,menu and character names
+697,0x599D5C,Magic Materia!,14,95,FF7,menu and character names
+698,0x599D70,Summon Materia!,15,95,FF7,menu and character names
+699,0x599D84,Command,7,95,FF7,menu and character names
+700,0x599D98,Zero - AW YEAH!,15,95,FF7,menu and character names
+701,0x599DB0,Feu,3,95,FF7,menu and character names
+702,0x599DBA,Glace,5,95,FF7,menu and character names
+703,0x599DC4,Foudre,6,95,FF7,menu and character names
+704,0x599DCE,Terre,5,95,FF7,menu and character names
+705,0x599DD8,Poison,6,95,FF7,menu and character names
+706,0x599DE2,Gravitâ,7,95,FF7,menu and character names
+707,0x599DEC,Eau,3,95,FF7,menu and character names
+708,0x599DF6,Vent,4,95,FF7,menu and character names
+709,0x599E00,Sacre,5,95,FF7,menu and character names
+710,0x599E10,Veux-tu vraiment retirer ceci ?,31,95,FF7,menu and character names
+711,0x599E32,"Oui, vraiment !",15,95,FF7,menu and character names
+712,0x599E54,Un instant,10,95,FF7,menu and character names
+713,0x599E76,Sephiroth,9,95,FF7,menu and character names
+714,0x599E98,Arm.,4,95,FF7,menu and character names
+715,0x599EB2,Amr.,4,95,FF7,menu and character names
+716,0x599ECC,Liste de pouvoirs,17,95,FF7,menu and character names
+717,0x599EE6,Effet âquipement,16,95,FF7,menu and character names
+718,0x599F00,Vârifier,8,95,FF7,menu and character names
+719,0x599F1A,Arranger,8,95,FF7,menu and character names
+720,0x599F34,Nombre en mâmoire   /24,23,95,FF7,menu and character names
+721,0x599F4E,AP,2,95,FF7,menu and character names
+722,0x599F68,Niveau suivant,14,95,FF7,menu and character names
+723,0x599F82,Maître,6,95,FF7,menu and character names
+724,0x599F9C,Arranger,8,95,FF7,menu and character names
+725,0x599FB6,Echanger,8,95,FF7,menu and character names
+726,0x599FD0,Retirer tout,12,95,FF7,menu and character names
+727,0x599FEA,Poubelle,8,95,FF7,menu and character names
+728,0x59A01E,Vitesse,7,95,FF7,menu and character names
+729,0x59A038,Protçge,7,95,FF7,menu and character names
+730,0x59A052,Pouvoir mag.,12,95,FF7,menu and character names
+731,0x59A06C,Chance,6,95,FF7,menu and character names
+732,0x59A086,Maître,6,95,FF7,menu and character names
+733,0x59A0A0,Force,5,95,FF7,menu and character names
+734,0x59A0BA,Vitalitâ,8,95,FF7,menu and character names
+735,0x59A0D4,Magie,5,95,FF7,menu and character names
+736,0x59A0EE,Dâf mag,7,95,FF7,menu and character names
+737,0x59A108,Dextâritâ,9,95,FF7,menu and character names
+738,0x59A122,Chance,6,95,FF7,menu and character names
+739,0x59A13C,HPMAX,5,95,FF7,menu and character names
+740,0x59A156,MPMAX,5,95,FF7,menu and character names
+741,0x59A170,HPMAX,5,95,FF7,menu and character names
+742,0x59A18A,MPMAX,5,95,FF7,menu and character names
+743,0x59A1A4,EXP.PLUS,8,95,FF7,menu and character names
+744,0x59A1BE,Gil PLUS,8,95,FF7,menu and character names
+745,0x59A1D8,Rencontre -,11,95,FF7,menu and character names
+746,0x59A1F2,Rencontre +,11,95,FF7,menu and character names
+747,0x59A20C,Attirer Chocobos,16,95,FF7,menu and character names
+748,0x59A226,Prâvention +,12,95,FF7,menu and character names
+749,0x59A240,Attaque de longue portâe,24,95,FF7,menu and character names
+750,0x59A25A,Attaquer tous,13,95,FF7,menu and character names
+751,0x59A274,Contre-attaquer,15,95,FF7,menu and character names
+752,0x59A28E,Attaquer tous,13,95,FF7,menu and character names
+753,0x59A2A8,Attaque continue,16,95,FF7,menu and character names
+754,0x59A2C2,Changer HP MP,13,95,FF7,menu and character names
+755,0x59A2E0,Acheter,7,95,FF7,menu and character names
+756,0x59A2FE,Vendre,6,95,FF7,menu and character names
+757,0x59A31C,Quitter,7,95,FF7,menu and character names
+758,0x59A33A,Elâment,7,95,FF7,menu and character names
+759,0x59A358,Materia,7,95,FF7,menu and character names
+760,0x59A378,Acheitter,9,95,FF7,menu and character names
+761,0x59A390,Gils,4,95,FF7,menu and character names
+762,0x59A3A8,En possession,13,95,FF7,menu and character names
+763,0x59A3C0,Equipâ,6,95,FF7,menu and character names
+764,0x59A3D8,Total,5,95,FF7,menu and character names
+765,0x59A3F0,Quantitâ,8,95,FF7,menu and character names
+766,0x59A408,Elâment    Materia,18,95,FF7,menu and character names
+767,0x59A420,Gils restants,13,95,FF7,menu and character names
+768,0x59A438,Prix maître,11,95,FF7,menu and character names
+769,0x59A450,Prix en fonction de AP,22,95,FF7,menu and character names
+770,0x59A468,Arm.,4,95,FF7,menu and character names
+771,0x59A47E,Amr.,4,95,FF7,menu and character names
+772,0x59A494,Acc.,4,95,FF7,menu and character names
+773,0x59A4AA,Acc.,4,95,FF7,menu and character names
+774,0x59A4C0,Force,5,95,FF7,menu and character names
+775,0x59A4D6,Dextâritâ,9,95,FF7,menu and character names
+776,0x59A4EC,Vitalitâ,8,95,FF7,menu and character names
+777,0x59A502,Magie,5,95,FF7,menu and character names
+778,0x59A518,Esprit,6,95,FF7,menu and character names
+779,0x59A52E,Chance,6,95,FF7,menu and character names
+780,0x59A544,Attaque,7,95,FF7,menu and character names
+781,0x59A55A,% Attaque,9,95,FF7,menu and character names
+782,0x59A570,Dâfense,7,95,FF7,menu and character names
+783,0x59A586,% Dâfense,9,95,FF7,menu and character names
+784,0x59A59C,Atqe mag,8,95,FF7,menu and character names
+785,0x59A5B2,Dâf mag,7,95,FF7,menu and character names
+786,0x59A5C8,% Dâf mag,9,95,FF7,menu and character names
+787,0x59A5DE,Orifice :,9,95,FF7,menu and character names
+788,0x59A5F4,Augmentation :,14,95,FF7,menu and character names
+789,0x59A60A,Aucune,6,95,FF7,menu and character names
+790,0x59A620,Normale,7,95,FF7,menu and character names
+791,0x59A636,Double,6,95,FF7,menu and character names
+792,0x59A64C,Triple,6,95,FF7,menu and character names
+793,0x59A680,Magasin d'âlâments,18,95,FF7,menu and character names
+794,0x59A694,Magasin d'armes,15,95,FF7,menu and character names
+795,0x59A6A8,Magasin d'âlâments,18,95,FF7,menu and character names
+796,0x59A6BC,Magasin de Materia,18,95,FF7,menu and character names
+797,0x59A6D0,Grand magasin,13,95,FF7,menu and character names
+798,0x59A6E4,Magasin de lâgumes,18,95,FF7,menu and character names
+799,0x59A6F8,Mag. d'accessoires,18,95,FF7,menu and character names
+800,0x59A70C,Magasin d'outillage,19,95,FF7,menu and character names
+801,0x59A720,Magasin hütelier,16,95,FF7,menu and character names
+802,0x59A738,Bienvenue !,11,95,FF7,menu and character names
+803,0x59A766,Que veux-tu acheter ?,21,95,FF7,menu and character names
+804,0x59A794,Combien en veux-tu ?,20,95,FF7,menu and character names
+805,0x59A7C2,Que veux-tu vendre ?,20,95,FF7,menu and character names
+806,0x59A7F0,Combien veux-tu en vendre ?,27,95,FF7,menu and character names
+807,0x59A81E,Merci !,7,95,FF7,menu and character names
+808,0x59A84C,Merci !,7,95,FF7,menu and character names
+809,0x59A87A,Tu n'as pas assez d'argent !,28,95,FF7,menu and character names
+810,0x59ADB0,Salut !,7,95,FF7,menu and character names
+811,0x59ADDE,Qu'est-ce que je peux faire pour toi ?,38,95,FF7,menu and character names
+812,0x59AE0C,Combien en veux-tu ?,20,95,FF7,menu and character names
+813,0x59AE3A,As-tu quelque chose Ï vendre ?,30,95,FF7,menu and character names
+814,0x59AE68,Combien en veux-tu ?,20,95,FF7,menu and character names
+815,0x59AE96,Je t'en prie !,14,95,FF7,menu and character names
+816,0x59AEC4,"T'as intârèt de revenir, d'accord ?",35,95,FF7,menu and character names
+817,0x59AEF2,"C'est une blague, ou quoi ?",27,95,FF7,menu and character names

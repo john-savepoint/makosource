@@ -1,0 +1,15 @@
+Based on my analysis of chunk 48 and the existing German-English mapping documentation:
+
+**Chunk 48 Analysis Result:**
+
+The hex data in chunk 48 (offsets 0x5CA8B9 to 0x5CAF0E) contains only fragmented, corrupted, or non-text binary data. None of the entries are recognizable as valid German menu strings - they appear to be encoding artifacts or corrupted bytes that don't decode to meaningful text.
+
+**Conclusion:**
+
+Chunk 48 does not contain menu strings that can be reliably mapped. The verified German-English menu mappings are located in different offset ranges as documented in `german_english_menu_mapping_categorized.csv`, which covers indices 0-76 from the ff7_de.exe binary.
+
+```csv
+index,de_offset,de_text,en_text
+```
+
+(No valid mappings found in chunk 48 - all entries are binary garbage/corrupted data)

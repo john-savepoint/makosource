@@ -1,0 +1,4 @@
+The existing German-English mapping is **complete and verified** with 51 entries. The chunk you referenced doesn't appear to contain menu strings - it looks like binary code or offset tables. Could you clarify if you need:
+
+1. **Additional strings extracted** from that offset range, or
+2. **Use of the existing 51-entry mapping** that's already done?

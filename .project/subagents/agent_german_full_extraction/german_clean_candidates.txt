@@ -1,0 +1,263 @@
+# FF7 German Clean String Candidates
+# Source: /mnt/d/Games/Stand-alone/FINAL FANTASY VII/ff7_de.exe
+# Region: 0x58FB00 - 0x5A0000
+# Total candidates: 256
+# Format: [INDEX] OFFSET | TEXT
+================================================================================
+
+[   0] 0x58FBE8 | zu Windows zurückkehren?
+[   1] 0x58FC13 | Nein
+[   2] 0x590B7C | Pause
+[   3] 0x590BC9 | Ton- und Musikeinstellung
+[   4] 0x590C68 | Objekt
+[   5] 0x590D63 | Verwendung
+[   6] 0x590D77 | Zeit
+[   7] 0x590DB3 | Limit-Stufe
+[   8] 0x590DC8 | Anleitung
+[   9] 0x590FEB | !  cy         !   "   $   %   &   '   (   t   start@of@menu@systemAAA*    end@of@menu@systemAAA*  Mit [ABBRECHEN] beenden.
+[  10] 0x594ACD | Z° ^X° OX° OX° p° OX° OX° OX° nV°
+[  11] 0x594AF1 | Z° ^X° OX° OX° p° OX° ët° és° äu° OX° OX° OX° rX° ]° i° j° o° d° g° ol° YX° w° YX° D[° cX° YX° YX° {r° YX° YX° YX° V° D[° cX° YX° YX° {r° YX° t° òs° u° YX° YX° YX° Z° $d° j° k° p° f° i° 4n° TX° TX° TX° \° hX° TX° TX° âs° TX° TX° TX° JX° \° hX° TX° TX° âs° TX° åu° Üt° <w° TX° TX° TX°
+[  12] 0x594C41 | Pause
+[  13] 0x594CB3 | Gift
+[  14] 0x594CBF | Traurigkeit
+[  15] 0x594CD4 | Zorn
+[  16] 0x594CDB | Verwirrung
+[  17] 0x594CEF | Stummheit
+[  18] 0x594CFC | Schnell
+[  19] 0x594D08 | Langsam
+[  20] 0x594D16 | Stop
+[  21] 0x594D62 | regen
+[  22] 0x594D99 | Doppel
+[  23] 0x594DA1 | Schild
+[  24] 0x594DD7 | Einzigartig
+[  25] 0x594DEC | Lähmung
+[  26] 0x594DF6 | Dunkelheit
+[  27] 0x594EA4 | Gil
+[  28] 0x594EA8 | Nach
+[  29] 0x594EAD | Gil auf der Hand
+[  30] 0x595080 | Ja     Nein
+[  31] 0x59508C | Vorhandene Schlachtpunkte
+[  32] 0x5950AA | Schlitzstart!
+[  33] 0x5950F7 | Ok, dann los!
+[  34] 0x595130 | Aufrufsubstanz kaputt.
+[  35] 0x59514F | Support-Substanz kaputt.
+[  36] 0x595170 | Unabhängige Substanz kaputt.
+[  37] 0x595193 | Befehlssubstanz kaputt.
+[  38] 0x5951AD | Alle Substanz kaputt.
+[  39] 0x5951CA | Zubehör kaputt.
+[  40] 0x59520F | Rüstzeug kaputt.
+[  41] 0x595264 | 1/2 Genauigkeit.
+[  42] 0x5953DC | HP wiederhergestellt.
+[  43] 0x5953F8 | Besorgt um die anderen Mitglieder?
+[  44] 0x595423 | Ja, ein bichen
+[  45] 0x59551C | "S   S "!sè7áè
+[  46] 0x59567B | Mitglieder in drei Gruppen aufteilen
+[  47] 0x5956A1 | Gruppe aus zwei Personen bilden
+[  48] 0x5956C2 | Gruppe aus drei Personen bilden
+[  49] 0x5956E8 | Auswählen mit [START]-Taste
+[  50] 0x5958C8 | Zbrangrf
+[  51] 0x595A60 | Einrichten
+[  52] 0x595ABF | Beginn bei Limit-Punkt 0.
+[  53] 0x595AE2 | STUFE ändern?
+[  54] 0x595B94 | R R 3 1P
+[  55] 0x595BB0 | T T 3!1T
+[  56] 0x595BCC | S S 3"1X
+[  57] 0x595BD6 | :ö
+[  58] 0x595BE8 | U U 3#1f
+[  59] 0x595C58 | f f 3'1T
+[  60] 0x595C74 | h h 7(1V
+[  61] 0x595C90 | i i 3)C@
+[  62] 0x595CC8 | m m 7+1C
+[  63] 0x595D1C | z z 5.D0
+[  64] 0x595D60 | ßV
+[  65] 0x595D70 | à à 51
+[  66] 0x595D8C | 52B
+[  67] 0x595DFC | b b 56
+[  68] 0x595E34 | a a 5:
+[  69] 0x595E50 | c c 5<
+[  70] 0x595E6C | d d 5>
+[  71] 0x595E88 | e e 5J
+[  72] 0x595EA4 | ã ã 3<1T
+[  73] 0x595EDC | ç ç 7>1X
+[  74] 0x595EF8 | é é 7?1D
+[  75] 0x595F30 | í í A12
+[  76] 0x595F4C | ì ì B1+
+[  77] 0x595F64 | C p p 3C1P
+[  78] 0x595F84 | q q  DB
+[  79] 0x595FA0 | s s 3E14
+[  80] 0x595FBC | u u F1*
+[  81] 0x595FD8 | v v 5GB
+[  82] 0x595FF4 | x x H1>
+[  83] 0x596010 | y y 7I1
+[  84] 0x596048 | 3f1
+[  85] 0x596064 | ö ö 7L
+[  86] 0x5960F0 | î î 3Q1R
+[  87] 0x59610C | ô ô 5RD0
+[  88] 0x596128 | ó ó 7S1P
+[  89] 0x596144 | ò ò T1*
+[  90] 0x596160 | õ õ 7U1<
+[  91] 0x5961B4 | ß ß 5XB
+[  92] 0x5961EC | 7Z1p
+[  93] 0x596208 | 5[B
+[  94] 0x596224 | 5\B
+[  95] 0x596240 | 7]B
+[  96] 0x596254 | £E
+[  97] 0x596258 | C ü ü 3
+[  98] 0x59628C | £L
+[  99] 0x59629A | 1J
+[ 100] 0x5962B0 | 7aBf
+[ 101] 0x5962C4 | £C
+[ 102] 0x5962E8 | 3cB
+[ 103] 0x59630A | 1H
+[ 104] 0x596320 | 7eB
+[ 105] 0x596340 | 7m1R
+[ 106] 0x59635C | 7nBz
+[ 107] 0x5969DC | "S   S "!sè7áè
+[ 108] 0x5969F7 | Hitze
+[ 109] 0x5969FE | Kälte
+[ 110] 0x596A0A | Gewitter
+[ 111] 0x596A19 | Erde
+[ 112] 0x596A21 | Gift
+[ 113] 0x596A2D | Schwerkraft
+[ 114] 0x596A40 | Wasser
+[ 115] 0x596A47 | Wind
+[ 116] 0x596A51 | Heilig
+[ 117] 0x596A5F | Tod
+[ 118] 0x596B7B | Verstein.
+[ 119] 0x596C18 | Manipul.
+[ 120] 0x596C55 | Lähmung
+[ 121] 0x596C9D | Zusatzwirkung
+[ 122] 0x597095 | Verteidigung %
+[ 123] 0x5970AD | Zauber
+[ 124] 0x5970D7 | Zauberabw. %
+[ 125] 0x5970ED | Fassung:
+[ 126] 0x5971E6 | Kälte
+[ 127] 0x5971F2 | Blitz
+[ 128] 0x5971FE | Erde
+[ 129] 0x597209 | Gift
+[ 130] 0x597215 | Schwerkraft
+[ 131] 0x597228 | Wasser
+[ 132] 0x59722F | Wind
+[ 133] 0x597239 | Heilig
+[ 134] 0x597247 | Soll das wirklich entfernt werden?
+[ 135] 0x597273 | Ja!
+[ 136] 0x5973A0 | AP
+[ 137] 0x59749D | Schutz   %HåHER
+[ 138] 0x5974D1 | Glück   %HåHER
+[ 139] 0x5978A9 | Zusätzliche Fähigkeit
+[ 140] 0x5978C8 | Alle
+[ 141] 0x597A12 | Ordnen
+[ 142] 0x597A3D | Allein
+[ 143] 0x597A6B | Werfen
+[ 144] 0x597C35 | Das sollte ok sein.
+[ 145] 0x597D99 | Ich verlier immer mehr Menschliches
+[ 146] 0x597DC5 | Ich bin noch nicht bereit.
+[ 147] 0x597E68 | Nicht ich! Gib es jemand anders!
+[ 148] 0x597E89 | Es hat nichts mit mir zu tun.
+[ 149] 0x5981E8 | Zí
+[ 150] 0x598228 | ëí
+[ 151] 0x598248 | âvÜÜÜÜS\
+[ 152] 0x59825B | äí
+[ 153] 0x598268 | VâÜäÜéudâ
+[ 154] 0x59827A | ä|â
+[ 155] 0x598289 | äâÜVâe
+[ 156] 0x59829A | vSÜâ
+[ 157] 0x5982A9 | éVëÜâS
+[ 158] 0x5982B9 | äâXÜ
+[ 159] 0x5982C9 | äÜëâX
+[ 160] 0x5982D9 | VxÜ
+[ 161] 0x5982EA | VÜVS
+[ 162] 0x5982F9 | äÜÜXäí
+[ 163] 0x59830A | äÜí
+[ 164] 0x598319 | VéâÜ
+[ 165] 0x598338 | VäâXéf
+[ 166] 0x598358 | ïxÜe
+[ 167] 0x598378 | íÜ
+[ 168] 0x5983B8 | ää
+[ 169] 0x5983D8 | Zí
+[ 170] 0x598418 | ëí
+[ 171] 0x598438 | âvÜÜÜÜS\
+[ 172] 0x598458 | VâÜäÜéudâ
+[ 173] 0x59846B | äí
+[ 174] 0x598479 | äâÜVâe
+[ 175] 0x59848A | ä|â
+[ 176] 0x598499 | éVëÜâS
+[ 177] 0x5984AA | vSÜâ
+[ 178] 0x5984B9 | äÜëâX
+[ 179] 0x5984C9 | äâXÜ
+[ 180] 0x5984DA | VÜVS
+[ 181] 0x5984E9 | VxÜ
+[ 182] 0x5984FA | äÜí
+[ 183] 0x598509 | äÜÜXäí
+[ 184] 0x598529 | VéâÜ
+[ 185] 0x598548 | VäâXéf
+[ 186] 0x598568 | ïxÜe
+[ 187] 0x598588 | íÜ
+[ 188] 0x5985C8 | ää
+[ 189] 0x59862E | Barret
+[ 190] 0x59863B | Tifa
+[ 191] 0x598645 | Aeris
+[ 192] 0x598652 | Red XIII
+[ 193] 0x598661 | Yuffie
+[ 194] 0x59866B | Cait Sith
+[ 195] 0x59867A | Vincent
+[ 196] 0x598684 | Cid
+[ 197] 0x59868C | Choco
+[ 198] 0x5986B5 | Leer
+[ 199] 0x5986C3 | Löschen
+[ 200] 0x5986D0 | Auswählen
+[ 201] 0x5986DC | Standard
+[ 202] 0x5986E5 | Abbrechen
+[ 203] 0x59874A | Freshmake
+[ 204] 0x59875A | Square
+[ 205] 0x598767 | 3Dfx
+[ 206] 0x5988BC | à"  T   R
+[ 207] 0x598900 | C   !!/-+)%-      !öBarret
+[ 208] 0x598AAC | P#
+[ 209] 0x598B30 | w$
+[ 210] 0x598B50 | GL!
+[ 211] 0x598B94 | &!*+-+%/      ! Cait Seith
+[ 212] 0x598BB4 | å%
+[ 213] 0x598C18 | '!)*++%.      !WVincent
+[ 214] 0x598C38 | ò%
+[ 215] 0x598CBC | i&
+[ 216] 0x598DA4 | õ   *RuhdfaN      ! Sephiroth
+[ 217] 0x598DE4 | $ W
+[ 218] 0x59924F | Magic Materia!
+[ 219] 0x599263 | Summon Materia!
+[ 220] 0x599278 | Command
+[ 221] 0x5992A0 | Feuer
+[ 222] 0x5992AE | Kälte
+[ 223] 0x5992BA | Blitz
+[ 224] 0x5992C6 | Erde
+[ 225] 0x5992D1 | Gift
+[ 226] 0x5992DD | Schwerkraft
+[ 227] 0x5992F0 | Wasser
+[ 228] 0x5992F7 | Wind
+[ 229] 0x599301 | Heilig
+[ 230] 0x59930F | Soll das wirklich entfernt werden?
+[ 231] 0x59933B | Ja!
+[ 232] 0x599468 | AP
+[ 233] 0x599565 | Schutz   %HåHER
+[ 234] 0x599599 | Glück   %HåHER
+[ 235] 0x5998F1 | Gil
+[ 236] 0x599B44 | Zbrangrf
+[ 237] 0x599BB1 | Keine
+[ 238] 0x599C18 | Objektladen
+[ 239] 0x59C4AB | Wählen Sie einen Speicherblock aus.
+[ 240] 0x59CC94 | Andere Memory Card einlegen.
+[ 241] 0x59CFE9 | Ungültige Spielstandsdatei!
+[ 242] 0x59D038 | Spielstand 2
+[ 243] 0x59D04C | Spielstand 3
+[ 244] 0x59D060 | Spielstand 4
+[ 245] 0x59D074 | Spielstand 5
+[ 246] 0x59D088 | Spielstand 6
+[ 247] 0x59D09C | Spielstand 7
+[ 248] 0x59D0B0 | Spielstand 8
+[ 249] 0x59D0C4 | Spielstand 9
+[ 250] 0x59D0D8 | Spielstand 10
+[ 251] 0x59D150 | Level
+[ 252] 0x59D156 | p  @  cZ|ffW|ôòâ|ìåî|gåòìáî|íïáãìåîNâññ cZ|ffW|ôòâ|ìåî|gåòìáî|íïáãìåîNâññ Eôôá°å  Eôôá°åOôá°åEPRãNÜÜW Eôôá°åOôá°åEPRãNÜÜW
+[ 253] 0x59D26A | UéA/
+[ 254] 0x59D2A4 | Üó-`
+[ 255] 0x59D39C | ü^ ^ ^ ^ ^ ^ ^ ^ ^ ._ 3_ I_ N_ j_ z_ î_ ß_ _ _ _ _ _ _ .` B` b` g` á` Ü` ` ` ` ` ` ` %a *a Ja ^a va äa a a a a a a a .b Nb Sb mb rb òb b b b b b b b 6c Jc bc         ü

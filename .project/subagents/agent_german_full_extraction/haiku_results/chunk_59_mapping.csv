@@ -1,0 +1,18 @@
+Based on the analysis, here's the CSV mapping of German FF7 menu strings to English equivalents:
+
+```csv
+index,de_offset,de_text,en_text
+38,0x590C68,Objekt,Item
+39,0x590C6F,Zauber,Magic
+40,0x590C83,Materia,Materia
+41,0x590C98,Ausrüsten,Equip
+42,0x590CAE,Werte,Status
+43,0x590CBE,Reihe,Order
+44,0x590CD2,Limit,Limit
+45,0x590CE6,Konfig,Config
+46,0x590CFB,PHS,PHS
+47,0x590D0C,Speichern,Save
+48,0x590D26,Verlassen,Quit
+```
+
+**Important Note:** The chunk 59 range you provided (0x5CEBC6-0x5CF0BC) contains binary/corrupted data. The actual German menu strings are located at 0x590C68-0x590D26, approximately 0x5C75000 bytes earlier in the German exe file. This offset difference indicates the German ff7_de.exe has a significantly different memory layout than the English version.

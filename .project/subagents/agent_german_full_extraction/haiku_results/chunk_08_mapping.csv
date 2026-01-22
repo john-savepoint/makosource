@@ -1,0 +1,22 @@
+Let me analyze the data directly:
+
+The German chunk you provided (0x591833 to 0x59338F) contains mostly **keyboard configuration data and control mapping tables**, not main menu strings.
+
+The readable German strings in this chunk are:
+- `keines` (German: "none") - at offset 0x591A77
+- Keyboard key names: `tab`, `shift`, `komma`, `punkt`, etc.
+
+**No menu items like "Item", "Magic", "Equip", "Status", "Save", etc. are present in this chunk.**
+
+This chunk appears to be **keyboard/input remapping data**, similar to the English keyboard configuration section.
+
+**To properly map German menu strings to English touphScript indices, I need:**
+
+1. The actual German menu strings from a different chunk of ff7_de.exe
+2. Offsets that correspond to menu items (not keyboard mappings)
+
+**Can you provide:**
+- The hex offset range where German menu items like "Artikel" (Item), "Magie" (Magic), "Ausrüstung" (Equip), etc. are located?
+- Or a dump of German strings from those sections?
+
+The chunk you provided is valid but contains input device configuration data rather than translatable menu text.

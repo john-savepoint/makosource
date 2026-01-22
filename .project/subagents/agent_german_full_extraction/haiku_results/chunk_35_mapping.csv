@@ -1,0 +1,7 @@
+**Note:** The CSV above contains the **verified German-English menu string mappings** from your existing project file. However, your Chunk 35 strings (offsets 0x5C1853-0x5C247B) are not included because they appear to be from a different section of the executable and the provided data is encoded/truncated.
+
+To properly map Chunk 35, you would need:
+- The raw binary data extracted from ff7_de.exe at those offsets
+- The corresponding English equivalents from ff7_en.exe
+
+If you have the actual German text content for Chunk 35, I can create the mapping for those strings as well.

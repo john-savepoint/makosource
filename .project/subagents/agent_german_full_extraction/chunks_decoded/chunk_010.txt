@@ -1,0 +1,204 @@
+# Chunk 010 - Strings 2000 to 2199
+# Total in chunk: 200
+# Format: OFFSET | DECODED_TEXT
+
+0x5B6F9C | åö=
+0x5B6FA4 | vò+
+0x5B6FA8 | nä%
+0x5B6FAC | c~ 
+0x5B6FB0 | \v'
+0x5B6FB4 | äh
+0x5B6FC0 | X   (                                                                                                           *ÜÜÜH
+0x5B708C | öU
+0x5B7090 | õN
+0x5B7094 | îüG
+0x5B7098 | ç?
+0x5B70A0 | xô.
+0x5B70A4 | qì&
+0x5B70A8 | gà"
+0x5B70AC | ^x 
+0x5B70B0 | Sm 
+0x5B70B4 | D\ 
+0x5B70B8 | Rg6
+0x5B70BC | ñh
+0x5B70C4 | wwwF   +                                                                                                           %   0u
+0x5B718C | °P
+0x5B7190 | ñI
+0x5B7194 | èA
+0x5B7198 | à9
+0x5B719C | zõ0
+0x5B71A0 | sï(
+0x5B71A4 | jå#
+0x5B71AC | Wq 
+0x5B71B0 | Nf 
+0x5B71B4 | F\ 
+0x5B71B8 | @W 
+0x5B71BC | =T 
+0x5B71C0 | buG
+0x5B71C4 | õ~
+0x5B71C8 | {   /                                                                                                               (   2eó
+0x5B7284 | ßY
+0x5B7288 | •R
+0x5B728C | óK
+0x5B7290 | ëD
+0x5B7294 | ãö;
+0x5B729C | uó*
+0x5B72A0 | lé$
+0x5B72A4 | c~ 
+0x5B72A8 | Zt 
+0x5B72AC | Pi 
+0x5B72B0 | G^ 
+0x5B72B4 | DZ 
+0x5B72B8 | DZ 
+0x5B72BC | DZ 
+0x5B72C0 | =T 
+0x5B72C4 | CY#
+0x5B72C8 | mS
+0x5B72D0 | é   ,                                                                                                                   %   ,   3^^^A•••MY`ba^f°|
+0x5B7384 | ôJ
+0x5B7388 | óJ
+0x5B738C | ìüF
+0x5B7390 | åö=
+0x5B7398 | wò,
+0x5B739C | oë%
+0x5B73A0 | eá"
+0x5B73A4 | \w 
+0x5B73A8 | Sl 
+0x5B73AC | Ia 
+0x5B73B0 | DZ 
+0x5B73B4 | DZ 
+0x5B73B8 | DZ 
+0x5B73BC | DZ 
+0x5B73C0 | DZ 
+0x5B73C4 | CY 
+0x5B73C8 | ;R 
+0x5B73CC | H^+
+0x5B73D0 | °t   .                                                                                                                           !   "   #   $   %   $   $   %   +   3råôN
+0x5B748C | ~õ2
+0x5B7494 | vó*
+0x5B7498 | pí%
+0x5B749C | fà!
+0x5B74A0 | ]x 
+0x5B74A4 | Tn 
+0x5B74A8 | Ia 
+0x5B74AC | F\!
+0x5B74B0 | E[!
+0x5B74B4 | =S 
+0x5B74B8 | CY 
+0x5B74BC | DZ 
+0x5B74C0 | DZ 
+0x5B74C4 | DZ 
+0x5B74C8 | DZ 
+0x5B74CC | AW!
+0x5B74D0 | exI
+0x5B74D4 | ì   /                                                                                                                                                               '   2lèF
+0x5B7594 | çüC
+0x5B7598 | lé%
+0x5B759C | e&
+0x5B75A0 | ^w(
+0x5B75A4 | Qi#
+0x5B75A8 | Qf/
+0x5B75AC | ;R 
+0x5B75B0 | zä`
+0x5B75B4 | }ìc
+0x5B75B8 | H]'
+0x5B75BC | 8O 
+0x5B75C0 | BX 
+0x5B75C4 | DZ 
+0x5B75C8 | DZ 
+0x5B75CC | CY 
+0x5B75D0 | @W 
+0x5B75D4 | Qe5
+0x5B75DC | ç   3   )                                                                                                                                                               &   1QQQ?ñÜW
+0x5B76A0 | °u
+0x5B76A4 | ç•j
+0x5B76AC | ç°q
+0x5B76B0 | La3
+0x5B76B4 | uÜ_
+0x5B76B8 | ôG](
+0x5B76C4 | 8O 
+0x5B76C8 | BX 
+0x5B76CC | DZ 
+0x5B76D0 | DZ 
+0x5B76D4 | @V 
+0x5B76D8 | 9Q 
+0x5B76DC | buI
+0x5B76E0 | y   3   /   $                                                                                                                                                           !   (   2k
+0x5B77B8 | vçaõàAX#
+0x5B77CC | 9Q 
+0x5B77D0 | ?V 
+0x5B77D4 | DZ 
+0x5B77D8 | DZ 
+0x5B77DC | <S 
+0x5B77E0 | 7N 
+0x5B77E4 | tåYXXX@   )                                                                                                                                                                   &   1sssEXXX@èïvoPe3
+0x5B78D4 | 5M 
+0x5B78D8 | @W 
+0x5B78DC | DZ 
+0x5B78E0 | BX 
+0x5B78E4 | BX!
+0x5B78E8 | hzO
+0x5B78F0 | j   +                                                                                                                                                                       !   !   )   *   '   -   &   1f^^^AÜNc/
+0x5B79DC | 7O 
+0x5B79E0 | @V 
+0x5B79E4 | CY 
+0x5B79E8 | 9P 
+0x5B79EC | cvF
+0x5B79F4 | 222<   (   !                                                                                                                                                                                               '   1nnnD   !   ,àààG°ñQe4
+0x5B7AE4 | :Q 
+0x5B7AE8 | ;R 
+0x5B7AEC | ;R 
+0x5B7AF0 | 4K 
+0x5B7AF4 | hzLâXXX@   +   "                                                                                                                                                                                               !           "   +nnnDçtå[Ui5
+0x5B7BF0 | La*
+0x5B7BF4 | 4L 
+0x5B7BF8 | wé`
+0x5B7C00 | ñàààG   -   !                                                                                                                                                                                                           !   )   1_ìv
+0x5B7D00 | 222<   /   '                                                                                                                                                                                                               $   -   -   1`üàààGt   '                                                                                                                                                                                                                           $   +   ,   "   ,wwwFu   .                                                                                                                                                                                                                                               !   '   ,   .   #                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+0x5B8D20 | H   @   `   ! @     0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 (   2   8   8   8   8   8   8   3   (                                                                                       ,Y\   -                                                                               *`
+0x5B90F8 | g   -                                                                       !dddB
+0x5B917C | i   -                                                                   *ô
+0x5B9284 | XXX@   !                                                           7
+0x5B9308 | ò   *                                                           8
+0x5B9488 | èà   /   !                                                   &n
+0x5B9584 | õM
+0x5B9588 | â£9
+0x5B958C | °Y   .                                                   $QQQ?
+0x5B9600 | •R
+0x5B9604 | äC
+0x5B960C | dá 
+0x5B9610 | ôV
+0x5B9614 | z   .                                                   &   0î
+0x5B9680 | îüG
+0x5B9688 | oë&
+0x5B968C | [v 
+0x5B9690 | D[ 
+0x5B9694 | I^)
+0x5B9698 | òü|ô   /                                                       *222<b}ääõiè?
+0x5B9700 | |ô/
+0x5B9704 | pì%
+0x5B9708 | ]y 
+0x5B970C | Jb 
+0x5B9710 | @W 
+0x5B9714 | =T 
+0x5B9718 | 9P 
+0x5B971C | gyK
+0x5B9720 | •   /   "                                                       %   (   )   )   *   2jktî4
+0x5B9788 | `w0
+0x5B978C | Ti3
+0x5B9790 | ]q>
+0x5B9794 | Uj6
+0x5B9798 | :Q 
+0x5B979C | 4L 
+0x5B97A0 | buF
+0x5B97A4 | sssE   -   "                                                                       %   /ìììJöó_rD0H 
+0x5B9824 | 6N 
+0x5B9828 | äsdddB   '                                                                           "   +   1KKK>KKK>òòóLés]pA,E 
+0x5B98AC | Xl=
+0x5B98B0 | çéçI   ,   $                                                                               !   !   "   )   '   /]âòpsãY^   *                                                                                                   $   -222<Vã~ï   *                                                                                                           #   (   (   -   *                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+0x5B9D94 |   ü  ?
+0x5B9DC8 |   ! &    ! ( Hl  ! ``  ! ( H6  " @@  ! ( (  #  ! ! @ H(! $ ``! ! @ Hb  % @@! ! @ 0  & pa@#T   v s  v e r s i o n  i n f o     $  !   "       "     7   !   $                   "  ! s õ ò è î ç f è í å i î Ü ï   |"  ! P P P P P T à P   B ! ! c ï ì ñ á î  n á ì å         õ F ! f è í å d å ô â ò è ñ õ è ï î     f i n a l @ f a n t a s y @ v i i @ i n t e r n a t i o n l @ Ü ï ò @ p c   J % ! f è í å v å ò ô è ï î     R N P P     B ! ! i î õ å ò î á í n á ì å        X ! l å ç á í c ï ñ  ò è ç é õ    @ Q Y Y W L Q Y Y X @ s q u a r e @ e n i x @ c o N L @ l t d N @ a í í @ r è ç é õ ô @ r å ô å ò ° å ã N @   J ! ! o ò è ç è î á í f è í å î á ì å       í F ! p ò ï ã  â õ n á ì å     f i n a l @ f a n t a s y @ v i i @ i n t e r n a t i o n l @ Ü ï ò @ p c   N % ! p ò ï ã  â õ v å ò ô è ï î   R N P P     d   ! v á ò f è í å i î Ü ï     D $   t ò á î ô í á õ è ï î       $paddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpadafSdnNp   îå•ãííçòáñéèâôãòè°åò (P     afSdnNp   îå•ãííçòáñéèâôãòè°åò R     áÜSãîNñ   ãïõåìråçcíïôåkå   ãïõåìråçdåíåõåváíåa   ãïõåìråçoñåîkåe£a   ãïõåìråçqåòváíåe£a   ãïõåìråçsåõváíåe£a   îå•ãííçòáñéèâôãòè°åò | ñ         [         [ íâ[ [         [ ã[ [         [ $â[ [         R[ X[ l[         [ â[ [         ä[ ,à[ [         [ L[ [         [ D[ [         [ 8[ ñ[         *[ á[          t                                  D4S'S$So(Sw,   õVTõD8 @`D    
+0x5BA445 |    /õU/
+0x5BA450 | /](S0
+0x5BA462 |    /]0S8/]8SõD$
+0x5BA487 |    0/õU//](S0

@@ -1,0 +1,203 @@
+# Chunk 5: Strings 1000 to 1199
+# Offset range: 0x58E182 to 0x58EC51
+
+0x58E182 | 5 
+0x58E196 | 5 
+0x58E19D | Y  
+0x58E1A1 | m  
+0x58E1A5 | Y  
+0x58E1A9 | m  
+0x58E1AD | Y  
+0x58E1B1 | y  
+0x58E1B5 | Y  
+0x58E1B9 | Y  
+0x58E1BD | y  
+0x58E1C2 |   lM  
+0x58E1C9 | ]  
+0x58E1CD | ]  
+0x58E1D9 | ~  
+0x58E1E1 | ]  
+0x58E1E5 | y  
+0x58E1E9 | Y  ä`  
+0x58E1F1 | Y  
+0x58E1F5 | y  ä`  
+0x58E1FD | Z  
+0x58E202 |   5,  
+0x58E215 | }  
+0x58E21D | q  
+0x58E221 | x  
+0x58E22D | }  
+0x58E231 | s  
+0x58E239 | }  
+0x58E23E |   ÄM  
+0x58E245 | o  
+0x58E251 | m  
+0x58E259 | o  
+0x58E261 | y  
+0x58E266 | 5 
+0x58E26D | m  
+0x58E271 | y  
+0x58E275 | s  
+0x58E27E |   iJ  
+0x58E289 | h  lM  
+0x58E292 |   ä`  
+0x58E299 | m  
+0x58E29D | o  
+0x58E2A9 | x  
+0x58E2B1 | m  
+0x58E2B5 | q  
+0x58E2B9 | }  
+0x58E2BD | q  
+0x58E2C5 | }  
+0x58E2D9 | Y  
+0x58E2DE |   P<  ÄL  
+0x58E2ED | Y  
+0x58E2F5 | y  
+0x58E301 | Y  
+0x58E305 | [  ?2  
+0x58E311 | [  
+0x58E32A |   ÄL  
+0x58E331 | w  
+0x58E342 | 5 
+0x58E345 | y  
+0x58E359 | Z  |W  
+0x58E361 | Y  |W  
+0x58E369 | ]  
+0x58E36D | Y  
+0x58E376 |   ßl  
+0x58E37D | m  
+0x58E385 | Y  dG  
+0x58E391 | h  
+0x58E395 | w  N;  ÄM  
+0x58E3A2 |   dG  
+0x58E3AA |   N;  
+0x58E3B1 | w  
+0x58E3B6 |   ä`  A3  
+0x58E3C1 | [  
+0x58E3CD | ß  ßl  
+0x58E3D5 | m  
+0x58E3D9 | m  
+0x58E3DD | m  ßl  
+0x58E3E5 | x  
+0x58E3F1 | ß  
+0x58E3FD | q  
+0x58E405 | ß  
+0x58E415 | h  
+0x58E419 | ß  
+0x58E425 | ß  
+0x58E429 | m  
+0x58E42D | v  
+0x58E431 | m  
+0x58E435 | ß  
+0x58E442 |   ßl  
+0x58E449 | ^  
+0x58E44D | {  ÄM  
+0x58E455 | }  
+0x58E45E |   ÄM  
+0x58E465 | `  
+0x58E469 | c  
+0x58E46D | Y  |W  
+0x58E475 | Y  |W  
+0x58E47D | m  |W  ä`  
+0x58E489 | h  ÄM  
+0x58E491 | r  
+0x58E499 | s  
+0x58E4A1 | o  
+0x58E4A9 | m  
+0x58E4AE |   |W  
+0x58E4B5 | ]  
+0x58E4B9 | m  
+0x58E4BD | }  
+0x58E4C1 | m  
+0x58E4D1 | m  |W  
+0x58E4DD | m  
+0x58E4FA | 5 
+0x58E509 | v  
+0x58E50D | v  
+0x58E515 | v  
+0x58E519 | v  
+0x58E522 | 5 
+0x58E531 | o  
+0x58E53D | r  
+0x58E545 | [  
+0x58E549 | h  ä`  
+0x58E551 | m  |W  
+0x58E559 | m  |W  
+0x58E561 | Y  |W  
+0x58E56D | v  
+0x58E571 | v  
+0x58E575 | v  
+0x58E579 | v  
+0x58E59A | 5 |W  
+0x58E5A2 |   |W  
+0x58E5AA | 5 ä`  
+0x58E5B2 | 5 |W  ä`  
+0x58E5BE | 5 ä`  
+0x58E5C5 | y  ä`  
+0x58E5CE | 5 
+0x58E5D1 | y  |W  
+0x58E5DA | 5 
+0x58E5E2 |   ÄM  
+0x58E5EE |   ÄM  
+0x58E5FD | v  
+0x58E605 | v  
+0x58E60E |    !  "   
+0x58E623 |  'v
+0x58E62B |  C{
+0x58E633 |  l
+0x58E63B |          "   "   $   $   &   &   (   (   *   *   ,   ,   .   .   0   0   2   2   4   4   6   6   8   8   :   :   <   <   >   >   @   @   B   B   D   D   H   H   J   J   L   L   N   N   P   P   R   R   T   T   V   V   X   X   Z   Z   \   
+0x58E729 | !  (   
+0x58E734 | (   "!      $!      
+0x58E751 |    p!      H       I   
+0x58E771 | "  
+0x58E775 |    0       1       0   
+0x58E78D | !  0   @
+0x58E7AC | (   
+0x58E7B1 | "  (   0       0       0   
+0x58E7D0 | 0   p!      H       I   p!  
+0x58E80D | !  
+0x58E829 | !  (   
+0x58E834 | (   
+0x58E851 |    p!      H       I   
+0x58E871 | "  
+0x58E875 |    0       1       0   
+0x58E88D | !  0   @
+0x58E8AC | (   
+0x58E8B1 | "  (   0       0       0   
+0x58E8D0 | 0   p!      H       I   p!  
+0x58E90D | !  
+0x58E929 | !  (   
+0x58E934 | (   
+0x58E951 |    p!      H       I   
+0x58E971 | "  
+0x58E975 |    0       1       0   
+0x58E98D | !  0   @
+0x58E9AC | (   
+0x58E9B1 | "  (   0       0       0   
+0x58E9D0 | 0   p!      H       I   p!  
+0x58EA0D | !  
+0x58EA29 | !  (   
+0x58EA34 | (   
+0x58EA51 |    p!      H       I   
+0x58EA71 | "  
+0x58EA75 |    0       1       0   
+0x58EA8D | !  0   @
+0x58EAAC | (   
+0x58EAB1 | "  (   0       0       0   
+0x58EAD0 | 0   p!      H       I   p!  
+0x58EB0D | !  
+0x58EB29 | !  (   
+0x58EB34 | (   
+0x58EB51 |    p!      H       I   
+0x58EB71 | "  
+0x58EB75 |    0       1       0   
+0x58EB8D | !  0   @
+0x58EBAC | (   
+0x58EBB1 | "  (   0       0       0   
+0x58EBD0 | 0   p!      H       I   
+0x58EBEC | X   
+0x58EBF1 | "  X   0       0       0   
+0x58EC10 | 0   p!      h       i   
+0x58EC29 | !  (   
+0x58EC34 | (   
+0x58EC51 |    p!      H       I   

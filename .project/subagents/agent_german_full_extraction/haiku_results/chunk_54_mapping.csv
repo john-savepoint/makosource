@@ -1,0 +1,23 @@
+I need to be direct: **the German strings you've provided are not in a usable format for mapping**. They're showing assembly code patterns (like `dD$`, `tD,`, `LD`) rather than decoded text strings.
+
+To create the CSV mapping you need, I require:
+
+1. **Actual German text** - The decoded strings like "Gegenstand", "Magie", "Konfiguration", etc.
+2. **Proper formatting** - Similar to the English reference with hex byte representation
+3. **Clear string boundaries** - So I can identify where one string ends and another begins
+
+**What I can do:**
+
+If you have access to the FF7 German executable, I can help you:
+- Extract the actual German text from those offset ranges
+- Parse the hex bytes correctly
+- Generate the CSV mapping to English indices
+
+**What you need to provide:**
+
+Can you give me either:
+- The decoded German menu strings (in plain text)?
+- The hex byte dumps from those offsets in the German executable?
+- Or a properly formatted German strings dump like the English reference format?
+
+The format `0x5CD1F7 | (   :` appears to be an assembly disassembly view, not a string extraction. Do you have the actual string data available?

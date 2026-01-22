@@ -1,0 +1,38 @@
+38,0x5892A5,Gegenstand,Item
+39,0x5892C5,Magie,Magic
+40,0x5892E1,Material,Materia
+41,0x589305,Rüstung,Equip
+42,0x589321,Status,Status
+43,0x589341,Reihenfolge,Order
+44,0x589365,Limit,Limit
+45,0x589385,Einstellung,Config
+46,0x5893A5,PHS,PHS
+47,0x5893C5,Speichern,Save
+48,0x5893E5,Beenden,Quit
+5,0x589201,Fensterfarbe,Window color
+6,0x589221,Sound,Sound
+7,0x589241,Steuerung,Controller
+8,0x589254,Cursor,Cursor
+9,0x589265,ATB,ATB
+10,0x589274,Kampfgeschwindigkeit,Battle speed
+11,0x589285,Kampfmitteilung,Battle message
+12,0x5892A5,Feldmitteilung,Field message
+13,0x5892C5,Kamerawinkel,Camera angle
+14,0x5892E1,Auswählen,Select
+15,0x589305,Abbrechen,Cancel
+16,0x589321,Menü,Menu
+17,0x589341,Normal,Normal
+18,0x589365,Anpassen,Customize
+19,0x589385,Anfang,Initial
+20,0x5893A5,Speicher,Memory
+21,0x5893C5,Aktiv,Active
+22,0x5893E5,Empfohlen,Recommended
+23,0x5893F4,Warten,Wait
+24,0x589405,Auto,Auto
+25,0x589414,Fest,Fixed
+26,0x589425,Langsam,Slow
+27,0x589434,Schnell,Fast
+28,0x589441,Zauberfolge,Magic order
+29,0x589465,Wiederherstellen,restore
+30,0x589485,Angriff,attack
+31,0x5894A5,Indirekt,indirect

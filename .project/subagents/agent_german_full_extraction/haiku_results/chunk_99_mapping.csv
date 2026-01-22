@@ -1,0 +1,29 @@
+**Analysis Complete**
+
+The chunk 99 data you provided (0x5DBD07 to 0x5DC23C) contains **x86 assembly prologue opcodes**, not menu strings. These are machine code patterns like:
+- `|D4` = register/stack reference
+- `dD$` = stack frame setup
+- `tD,` = argument access
+
+This is code section data, not the data section where menu strings are stored.
+
+**Your existing German-to-English menu mapping already exists:**
+
+```csv
+index,en_text,de_text,de_file_offset,en_file_offset,touphscript_index
+38,Item,Objekt,0x00590C68,0x005192C0,38
+39,Magic,Zauber,0x00590C6F,0x005192D4,39
+40,Materia,Materia,0x00590C83,0x005192E8,40
+41,Equip,Ausrüsten,0x00590C98,0x005192FC,41
+42,Status,Werte,0x00590CAE,0x00519310,42
+43,Order,Reihe,0x00590CBE,0x00519324,43
+44,Limit,Limit,0x00590CD2,0x00519338,44
+45,Config,Konfig,0x00590CE6,0x0051934C,45
+46,PHS,PHS,0x00590CFB,0x00519360,46
+47,Save,Speichern,0x00590D0C,0x00519374,47
+48,Quit,Verlassen,0x00590D26,0x00519388,48
+```
+
+**For chunk 99 specifically:** This range contains no readable German menu strings - only assembly opcodes. To extract actual menu strings from this range, you would need to know the actual data section offsets in the German executable where touphScript menu strings are stored, rather than the code section range you provided.
+
+Do you have specific menu items from chunk 99 that should be mapped, or would you like me to verify the existing chunk 59 mappings?

@@ -1,0 +1,203 @@
+# Chunk 4: Strings 800 to 999
+# Offset range: 0x58D1C2 to 0x58E15D
+
+0x58D1C2 |   KK  99  
+0x58D1D2 |   RR  
+0x58D1DE |   99  KK  
+0x58D1EA |   99  I   
+0x58D1F5 |    P   M   C   P   
+0x58D20D |    P   
+0x58D219 |    P   
+0x58D221 |    I   P   C   M   P   P   I   
+0x58D241 |    I   P   M   
+0x58D252 |   KK  
+0x58D25A |   KK  
+0x58D266 |   uu  
+0x58D26E |   RR  
+0x58D276 |   uu  RR  YY  uu  
+0x58D28A |   uu  YY  
+0x58D29A |   RR  
+0x58D2A2 |   G   ß   C   YY  
+0x58D2BA |   ß   t   Ä   
+0x58D2CE |   uu  RR  
+0x58D2DA |   uu  
+0x58D2E2 |   RR  uu  KK  
+0x58D2F2 |   uu  t   ß   Ä   
+0x58D306 |   uu  
+0x58D30E |   ß   G   C   RR  
+0x58D326 |   uu  uu  
+0x58D332 |   uu  uu  
+0x58D33E |   uu  
+0x58D346 |   RR  
+0x58D34E |   uu  RR  
+0x58D35A |   gg  
+0x58D362 |   gg  
+0x58D36E |   P   I   M   I   P   
+0x58D385 |    M   C   P   I   
+0x58D399 |    P   
+0x58D3A5 |    P   
+0x58D3B1 |    P   C   M   P   
+0x58D3C5 |    I   P   
+0x58D3D2 |   gg  MM  
+0x58D3E2 |   KK  
+0x58D3EE |   RR  gg  
+0x58D3FA |   MM  
+0x58D402 |   RR  RR  G   ß   
+0x58D415 |    uu  
+0x58D41E |   gg  ß   t   
+0x58D43C | *     
+0x58D446 |     # 
+0x58D456 |     , 
+0x58D45E |     # 
+0x58D46A | & '   
+0x58D474 | &   
+0x58D47C | .     # .   
+0x58D492 | " 
+0x58D49A |   "   
+0x58D4BA | & 
+0x58D4EA | % 
+0x58D4F2 | # 
+0x58D4F6 |   % # 
+0x58D4FE |   % % 
+0x58D506 |   ' 
+0x58D50E |   %   
+0x58D516 |   " 
+0x58D51E |   $ 
+0x58D526 |     # 
+0x58D52E |   % 
+0x58D536 |   " 
+0x58D53E |   " & 
+0x58D546 |   & 
+0x58D54E |   " 
+0x58D556 |   % 
+0x58D55C | &   ' 
+0x58D566 |   (   "   ' " 
+0x58D576 |   * 
+0x58D57E |   " 
+0x58D584 | .   $ & '   
+0x58D592 | $ 
+0x58D596 |   & $ 
+0x58D5A2 | ) 
+0x58D5A6 |   2 ) 
+0x58D5C6 |   ! 
+0x58D5CE |   KLM ?<# <?> &43 #<4 ED" (/. /(" EFD LK' KMG L'- HO9 N,8 L,N GMH L-, ?#% 5<= @=A A=< @>= @<> JE! KEJ EGF EKG ><; :<> OHM KJ* @A< BA@ A$@ $ C )'* 734 '(- )(' &%# &#4 54< 436 $0  .-( !() N8L 9OM 452 K*' 763 ;:> 674 :;< ?%& 54P 2B1 B2A $2P 2$A 5P2 453 P0$ P1+ 1P2 P42 +0P @$C @CI L9M 8B9 ?3> 3=> *J) BC9 IB@ 10+ 018 CBI 0/  /0.  DC D S  /R FCD )J! =35 &3? B81 9L8 Q/" "DQ "!E !"( F9C 9FH .8, .,- HFG 8.0 S R RQS QDS /QR Z   _   _   I   }   
+0x58D785 |    }   I   L   I   
+0x58D799 |    L   
+0x58D7A1 |    }   
+0x58D7AD |    f   f   `   f   u   f   
+0x58D7C9 |    f   `   u   f   _   Z   Z   Z   _   H   _   Z   H   d   A   \   A   d   \   _   d   A   H   _   d   _   H   d   I   
+0x58D841 |    ,   
+0x58D849 |    }   
+0x58D851 |    `   
+0x58D859 |    U   U   
+0x58D865 |    }   `   L   
+0x58D875 |    `   }   L   n   
+0x58D889 |    ß   Z   
+0x58D895 |    n   `   H   u   `   Z   H   L   }   w   ;   }   L   A   d   _   Z   n   K   `   U   }   F   U   `   U   ö   `   ö   f   p   m   Z   K   ;   L   
+0x58D929 |    Z   `   H   m   
+0x58D93D |    Z   I   ,   
+0x58D94D |    I   
+0x58D961 |    }   
+0x58D969 |    L   w   ö   p   f   u   H   `   ß   
+0x58D991 |    m   A   \   _   \   A   _   
+0x58D9B5 |    U   Z   K   Z   ;   w   L   w   ;   L   w   ;   
+0x58D9E9 |    ;   w   }   I   ,   I   
+0x58DA09 |    `   U   F   F   F   U   U   ö   U   `   U   ö   U   
+0x58DA41 |    `   U   
+0x58DA51 |    L   `   p   ö   `   F   ]   F   `   U   `   
+0x58DA81 |    U   
+0x58DA92 |   `   ö   p   
+0x58DAAA |   _   \   _   \   F   \   I   L   L   L   
+0x58DAD5 |    L   K   n   m   F   p   \   ]   F   `   F   p   ]   p   F   \   p   F   ]   p   f   f   f   p   u   f   f   p   >   >   
+0x58DB51 |    >   >   
+0x58DB5D |    u   p   f   m   n   ß   
+0x58DB79 |    L   
+0x58DB81 |    I   L   I   F   \   F   \   _   \   
+0x58DBA9 |    >   >   >   >   
+0x58DBBD |    f   ß   
+0x58DBC9 |    ß   f   
+0x58DBD5 |    u   \   p   \   u   d   u   \   d   u   d   H   d   u   H   \   u   p   
+0x58DC39 |    >   
+0x58DC41 |    >   
+0x58DC5B |    `   
+0x58DC6B |    `   ^   
+0x58DC7B |    n   
+0x58DC8F |    Ö   Ö   
+0x58DC9B |    Ö   
+0x58DCA3 |    Ö   
+0x58DCAB |    Ö   
+0x58DCB7 |    Ö   
+0x58DCCF |    N   
+0x58DCDB |    \   }   e   \   e   
+0x58DCFF |    e   N   
+0x58DD13 |    \   
+0x58DD1B |    `   
+0x58DD23 |    -   
+0x58DD3B |    x   
+0x58DD5F |    ^   
+0x58DD6F |    q   
+0x58DD7F |    N   
+0x58DD8B |    q   N   
+0x58DD9F |    I   
+0x58DDA7 |    d   e   }   
+0x58DDBF |    {   
+0x58DDCF |    y   x   
+0x58DDDB |    x   
+0x58DDEB |    Ö   
+0x58DDFB |    l   ?   [   
+0x58DE0B |    w   
+0x58DE13 |    \   
+0x58DE1F |    w   
+0x58DE27 |    2   
+0x58DE4B |    [   
+0x58DE5B |    Ö   
+0x58DE63 |    \   
+0x58DE77 |    l   
+0x58DE87 |    x   
+0x58DE9F |    {   
+0x58DEA7 |    X   
+0x58DEAF |    n   
+0x58DEB7 |    C   ^   
+0x58DEC3 |    X   
+0x58DECB |    C   
+0x58DED7 |    _   4   
+0x58DEF3 |    y   
+0x58DEFB |    y   
+0x58DF0B |    |   
+0x58DF13 |    |   
+0x58DF1B |    x   
+0x58DF27 |    |   
+0x58DF33 |    n   
+0x58DF57 |    |   
+0x58DF9B |    y   
+0x58DFA3 |    _   n   ^   u   
+0x58DFBB |    {   
+0x58DFC7 |    y   
+0x58DFCF |    \   
+0x58DFD7 |    y   
+0x58DFDF |    }   
+0x58DFFB |    y   
+0x58E007 |    Ö   Ö   Ö   
+0x58E01B |    Ö   Ö   
+0x58E027 |    `   `   
+0x58E033 |    `   `   
+0x58E047 |    Ö   
+0x58E05B |    u   
+0x58E067 |    n   _   y   
+0x58E08B |    `   `   `   `   
+0x58E09F |    Ö   
+0x58E0AF |    Ö   
+0x58E0BB |    \   
+0x58E0C3 |    \   
+0x58E0CB |    }   
+0x58E0E3 |    \   }   
+0x58E0EF |    N   
+0x58E11B |    `   
+0x58E123 |    `   
+0x58E131 | m  
+0x58E135 | Y  
+0x58E139 | Y  
+0x58E13D | Z  
+0x58E14D | Z  ÄM  
+0x58E155 | [  
+0x58E15D | h  

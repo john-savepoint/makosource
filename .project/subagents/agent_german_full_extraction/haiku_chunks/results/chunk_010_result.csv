@@ -1,0 +1,31 @@
+I need to analyze these German strings and map them to English touphScript indices. However, I notice that the German strings provided are heavily corrupted/encoded (showing characters like "éA", "zõ1", "wò,", etc.), which makes direct matching impossible.
+
+Looking at the structure:
+- The German offsets are in hexadecimal (0x5AE7D4, etc.)
+- The "decoded" German text is corrupted/garbled
+- I need to find meaningful German words to match against English strings
+
+The issue is that these German strings appear to be:
+1. Either incorrectly decoded from the binary
+2. Or still in some encoded format (possibly shift-jis or another encoding)
+
+From the common mappings you provided, I can see patterns like:
+- Ja = Yes (003)
+- Nein = No (004)
+- Speichern = Save (047)
+- Beenden = Quit (048)
+- Objekt/Gegenstand = Item (038)
+- Zauber/Magie = Magic (039)
+- Ausrüsten = Equip (041)
+- Status = Status (042)
+- Konfig = Config (045)
+- Menü = Menu (016)
+
+However, without properly decoded German text, I cannot reliably map these strings. The current data shows corrupted characters that don't represent actual German words.
+
+**Cannot proceed with mapping.** The German strings need to be properly decoded first. The current output shows encoding artifacts rather than readable German text.
+
+Would you like me to:
+1. Investigate how to properly decode these strings?
+2. Work with a different chunk that has cleaner German text?
+3. Use the hex offsets to attempt recovery of the actual German strings?

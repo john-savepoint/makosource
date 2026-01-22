@@ -1,0 +1,235 @@
+#!/usr/bin/env python3
+"""
+Analyze German chunk 32 strings for menu text patterns
+"""
+
+german_data = """
+0x5BFB45 | |D4
+0x5BFB4A | D8
+0x5BFB4E | D<
+0x5BFB52 | D@S
+0x5BFB62 | 7K
+0x5BFB66 |     3
+0x5BFB74 | n$
+0x5BFB77 | w$K
+0x5BFB7C |     3
+0x5BFB88 | k$
+0x5BFB8B | n(
+0x5BFB8E | w(K
+0x5BFB93 |     3
+0x5BFB9F | k(
+0x5BFBA2 | n,
+0x5BFBA5 | w,K
+0x5BFBAA |     3
+0x5BFBB6 | k,
+0x5BFBB9 | n0
+0x5BFBBC | w0K
+0x5BFBC1 |     3
+0x5BFBCD | k0
+0x5BFBD0 | n4
+0x5BFBD3 | w4K
+0x5BFBD8 |     3
+0x5BFBE4 | k4
+0x5BFBE7 | n8
+0x5BFBEA | w8K
+0x5BFBEF |     3
+0x5BFBFB | k8
+0x5BFBFE | n<
+0x5BFC01 | w<K
+0x5BFC06 |     3
+0x5BFC12 | k<
+0x5BFC1F | (/
+0x5BFC28 | D@
+0x5BFC2C | '/
+0x5BFC36 | 7K
+0x5BFC3A |     3
+0x5BFC44 |  m
+0x5BFC47 | +/
+0x5BFC4F | n$
+0x5BFC52 | w$K
+0x5BFC57 |     3
+0x5BFC61 |  m
+0x5BFC64 | k$
+0x5BFC69 | n(
+0x5BFC6C | w(K
+0x5BFC71 |     3
+0x5BFC7B |  m
+0x5BFC7E | k(
+0x5BFC83 | n,
+0x5BFC86 | w,K
+0x5BFC8B |     3
+0x5BFC95 |  m
+0x5BFC98 | k,
+0x5BFC9D | n0
+0x5BFCA0 | w0K
+0x5BFCA5 |     3
+0x5BFCAF |  m
+0x5BFCB2 | k0
+0x5BFCB7 | n4
+0x5BFCBA | w4K
+0x5BFCBF |     3
+0x5BFCC9 |  m
+0x5BFCCC | k4
+0x5BFCD1 | n8
+0x5BFCD4 | w8K
+0x5BFCD9 |     3
+0x5BFCE5 | k8Ü~{}
+0x5BFCEE | D usvw
+0x5BFCF5 | |D4
+0x5BFCFA | D8
+0x5BFCFE | D<
+0x5BFD02 | D@S
+0x5BFD12 | 7K
+0x5BFD16 |     3
+0x5BFD24 | n$
+0x5BFD27 | w$K
+0x5BFD2C |     3
+0x5BFD38 | k$
+0x5BFD3B | n(
+0x5BFD3E | w(K
+0x5BFD43 |     3
+0x5BFD4F | k(
+0x5BFD52 | n,
+0x5BFD55 | w,K
+0x5BFD5A |     3
+0x5BFD66 | k,
+0x5BFD69 | n0
+0x5BFD6C | w0K
+0x5BFD71 |     3
+0x5BFD7D | k0
+0x5BFD80 | n4
+0x5BFD83 | w4K
+0x5BFD88 |     3
+0x5BFD94 | k4
+0x5BFD97 | n8
+0x5BFD9A | w8K
+0x5BFD9F |     3
+0x5BFDAB | k8
+0x5BFDAE | n<
+0x5BFDB1 | w<K
+0x5BFDB6 |     3
+0x5BFDC2 | k<
+0x5BFDCF | (/
+0x5BFDD8 | D@
+0x5BFDDC | '/
+0x5BFDE6 | 7K
+0x5BFDEA |     3
+0x5BFDFF | $m/
+0x5BFE0A | 7K
+0x5BFE0E |     3
+0x5BFE23 | $m/
+0x5BFE2E | 7K
+0x5BFE32 |     3
+0x5BFE47 | $m
+0x5BFE4E | 7K
+0x5BFE52 |     3
+0x5BFE67 | $m
+0x5BFE6E | 7K
+0x5BFE72 |     3
+0x5BFE87 | $m
+0x5BFE8E | 7K
+0x5BFE92 |     3
+0x5BFEA7 | $m
+0x5BFEAE | 7K
+0x5BFEB2 |     3
+0x5BFECA | DD /
+0x5BFED0 | #  
+0x5BFED5 | DD
+0x5BFED9 |  /
+0x5BFEDD | #  /
+0x5BFEE3 | !  
+0x5BFEE7 |     K
+0x5BFEFE | 7K
+0x5BFF02 |     3
+0x5BFF15 | w$K
+0x5BFF1A |     3
+0x5BFF26 | k$
+0x5BFF2E | w(K
+0x5BFF33 |     3
+0x5BFF3F | k(
+0x5BFF47 | w,K
+0x5BFF4C |     3
+0x5BFF58 | k,
+0x5BFF60 | w0K
+0x5BFF65 |     3
+0x5BFF71 | k0
+0x5BFF79 | w4K
+0x5BFF7E |     3
+0x5BFF8A | k4
+0x5BFF92 | w8K
+0x5BFF97 |     3
+0x5BFFA3 | k8
+0x5BFFAB | w<K
+0x5BFFB0 |     3
+0x5BFFBC | k<
+0x5BFFC6 | (/
+0x5BFFCE | tDD
+0x5BFFD2 |     K
+0x5BFFDA | '/
+0x5BFFDE | "  
+0x5BFFE7 | 7K
+0x5BFFEB |     3
+0x5BFFF5 |  m
+0x5BFFF8 | +/
+0x5BFFFB | ~"  
+0x5C0005 | w$K
+0x5C000A |     3
+0x5C0014 |  m
+0x5C0017 | k$/
+0x5C001B | ^"  
+0x5C0025 | w(K
+0x5C002A |     3
+0x5C0034 |  m
+0x5C0037 | k(/
+0x5C003B | >"  
+0x5C0045 | w,K
+0x5C004A |     3
+0x5C0054 |  m
+0x5C0057 | k,/
+0x5C005C | !  
+0x5C0065 | w0K
+0x5C006A |     3
+0x5C0074 |  m
+0x5C0077 | k0/
+0x5C007C | !  
+0x5C0085 | w4K
+0x5C008A |     3
+0x5C0094 |  m
+0x5C0097 | k4/
+0x5C009C | !  
+0x5C00A5 | w8K
+0x5C00AA |     3
+0x5C00B6 | k8
+0x5C00BA | !  
+0x5C00C3 | .K
+0x5C00C7 | +/
+0x5C00CA | 2!  
+"""
+
+# Parse the data
+lines = [l.strip() for l in german_data.strip().split('\n') if l.strip()]
+
+print("German Chunk 32 Analysis")
+print("=" * 60)
+print(f"Total entries: {len(lines)}")
+print()
+
+# Extract unique text patterns
+texts = {}
+for line in lines:
+    parts = line.split('|')
+    if len(parts) >= 3:
+        offset = parts[0].strip()
+        text = parts[2].strip()
+        if text:
+            texts[offset] = text
+
+print("Unique text entries:")
+for offset, text in sorted(texts.items()):
+    print(f"  {offset}: '{text}'")
+
+print()
+print("Analysis:")
+print(f"  Total offsets: {len(texts)}")
+print(f"  Most entries are single/double characters or encoded data")
+print(f"  No recognizable German menu terms detected")

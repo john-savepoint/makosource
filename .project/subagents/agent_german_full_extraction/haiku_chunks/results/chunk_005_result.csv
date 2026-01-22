@@ -1,0 +1,50 @@
+```csv
+014,0x5986D0,Auswählen,Select
+015,0x5986E5,Abbrechen,Cancel
+016,0x599278,Command,Command
+293,0x5992A0,Feuer,Fire
+294,0x5992AE,Kälte,Ice
+295,0x5992BA,Blitz,Lightning
+296,0x5992C6,Erde,Earth
+297,0x5992D1,Gift,Poison
+298,0x5992DD,Schwerkraft,Gravity
+299,0x5992F0,Wasser,Water
+300,0x5992F7,Wind,Wind
+301,0x599301,Heilig,Holy
+368,0x59930F,Soll das wirklich entfernt werden?,Do you really want to remove this?
+369,0x59933B,Ja!,I sure do!
+371,0x59936D,Sephiroth,Sephiroth[B2][A9][A9][B3]
+372,0x599392,Waf.,Wpn.
+373,0x5993AD,Rüs.,Arm.
+374,0x5993C9,Fähigkeitsliste,Ability list
+375,0x5993F0,Rüstungseffekt,Equip effect
+376,0x59940B,Prüfen,Check
+377,0x59941F,Ordnen,Arrange
+378,0x599468,AP,AP
+379,0x59946F,Auf nächste Ebene,To next level
+380,0x59949A,MASTER,MASTER
+381,0x5994AB,Ordnen,Arrange
+382,0x5994C7,Tauschen,Exchange
+383,0x5994E5,Alles entfernen,Remove all
+384,0x599508,Wegwerfen,Trash
+335,0x5995C3,Stärke,Strength
+337,0x5995DF,Vitalität,Vitality
+338,0x5995FE,Zauber,Magic
+336,0x599636,Geschick,Dexterity
+340,0x599651,Glück,Luck
+396,0x59966A,MAXHP,MaxHP
+397,0x599686,MAXMP,MaxMP
+400,0x5996DA,EXP.UP,EXP.UP
+401,0x5996F7,Gil UP,Gil UP
+405,0x599770,Präventivm. + %,Pre-emptive
+406,0x59978C,Fernangriff,Long range attack
+407,0x5997A4,Alle angreifen,Attack all
+408,0x5997C3,Gegenangriff,Counter attack
+422,0x599833,Kaufen,Use
+423,0x599847,Verkaufen,Arrange
+048,0x599868,Beenden,Quit
+038,0x599884,Objekt,Item
+040,0x5998A1,Materia,Materia
+233,0x5998F1,Gil,Gil
+575,0x5998FC,Besitz,Owned
+```

@@ -1,0 +1,769 @@
+en_index,en_offset,en_text,de_offset,de_text,confidence,match_method
+0,0x00518370,Do you want to quit,0x58FBB0,Möchten Sie Final,high,manual_group
+1,0x0051838E,playing Final Fantasy VII,0x58FBCE,Fantasy VII verlassen und,high,manual_group
+2,0x005183AC,and return to Windows?,0x58FBEC,zu Windows zurückkehren?,high,manual_group
+3,0x005183D0,Yes,0x58FC10,Ja,high,manual_group
+4,0x005183D4,No,0x58FC15,Nein,high,manual_group
+5,0x005188A8,Window color,0x58FC22,@c  ^c              `      `  `a      `a  `a                     0  @a      0a  @a          _  `        `      _  0a            `        0a      _  0a          `        `  _                  `  _        _                     `      `         `  `          `        ``         `  `          _        _  _      ``            _  _      ``  _      ``            _  _        ``      ``  _            ``      _  ``      ``  _            ``        `      _  ``            `      _  `      _  ``        $ $ $ $ $ $ $% 0% <% H% T% `% l% x% ã% ñ% % % % % % % % % âíïãNõèì   àáòòåNõèì   õèÜáNõèì    åáòèõéNõèì  òåãNõèì ÜèNõèì    ëåõâNõèì    àèîôNõèì    âèãïNõèì    ñâíïãNõèì  ñâåÜèNõèì   âéïâïNõèì   âíïãíNõèì àáòòåíNõèì õèÜáíNõèì  åáòèõéíNõèì    òåãíNõèì   ÜèíNõèì  ëåõâíNõèì  àèîôíNõèì  âèãïíNõèì  ñâíïãíNõèì    ñâåÜèíNõèì âéïâïíNõèì ôÜïîõáéNõèì  ôÜïîõáíNõèì  ôÜïîõàéNõèì  ôÜïîõàíNõèì  àõí•èîáéNõèì àõí•èîáíNõèì àõí•èîàéNõèì àõí•èîàíNõèì àõí•èîâéNõèì àõí•èîâíNõèì àõí•èîãéNõèì àõí•èîãíNõèì ôÜïîõéNõèì    ôÜïîõíNõèì    àõí•èîéNõèì   àõí•èîíNõèì   àôõåòNõèì  Fensterfarbe,medium,context
+6,0x005188D8,Sound,0x590126,Sound,exact,exact
+7,0x00518908,Controller,0x59015C,Kontroller,high,translation
+8,0x00518938,Cursor,0x590192,Cursor,exact,exact
+9,0x00518968,ATB,0x5901C8,ATB,exact,exact
+10,0x00518998,Battle speed,0x5901FE,Kampftempo,high,translation
+11,0x005189C8,Battle message,0x590234,Kampfmeldung,high,translation
+12,0x005189F8,Field message,0x59026A,Feldmeldung,high,translation
+13,0x00518A28,Camera angle,0x5902A0,Kamerawinkel,high,translation
+14,0x00518A58,Select,0x5902D6,Auswählen,high,translation
+15,0x00518A88,Cancel,0x59030C,Abbrechen,high,translation
+16,0x00518AB8,Menu,0x590342,Menü,high,translation
+17,0x00518C08,Normal,0x5904BC,Normal,exact,exact
+18,0x00518C38,Customize,0x5904F2,Benutzerdefiniert,high,translation
+19,0x00518C68,Initial,0x590528,Anfang,high,translation
+20,0x00518C98,Memory,0x59055E,Speicher,high,translation
+21,0x00518CC8,Active,0x590594,Aktiv,high,translation
+22,0x00518CF8,Recommended,0x5905CA,Empfohlen,high,translation
+23,0x00518D28,Wait,0x590600,Warten,high,translation
+24,0x00518D58,Auto,0x590636,Auto,exact,exact
+25,0x00518D88,Fixed,0x59066C,Fest,high,translation
+26,0x00518DE8,Slow,0x594D0E,Langsam,high,translation
+27,0x00518E18,Fast,0x59070E,Schn.,high,translation
+28,0x00518ED8,Magic order,0x5907E6,Zauberfolge,high,translation
+29,0x00518F08,restore,0x59081C,Heilung,high,translation
+30,0x00518F38,attack,0x590852,Angriff,high,translation
+31,0x00518F68,indirect,0x590888,Indirekt,high,translation
+32,0x00518FC8,No.,0x5908F4,Typ,medium,context
+33,0x00519238,[C5][B8][B7],0x590960,rechts2,medium,context
+34,0x0051923E,[BA][C5][B8][B8][C1],0x590A38,Auswählen,medium,context
+35,0x00519244,[B5][BF][C8][B8],0x590A6E,Abbrechen,medium,context
+36,0x00519288,Set Sound & Music Volume,0x590B10,Zum Einrichten START drücken.,medium,context
+37,0x005192A1,Not supported.,0x590BFD,Nicht unterstützt,medium,context
+38,0x005192C0,Item,0x590C68,Objekt,high,translation
+39,0x005192D4,Magic,0x590C7C,Zauber,high,translation
+40,0x005192E8,Materia,0x590C90,Materia,exact,exact
+41,0x005192FC,Equip,0x590CA4,Ausrüsten,high,translation
+42,0x00519310,Status,0x590CB8,Werte,high,translation
+43,0x00519324,Order,0x590CCC,Reihe,high,translation
+44,0x00519338,Limit,0x590CE0,Limit,exact,exact
+45,0x0051934C,Config,0x590CF4,Konfig,high,translation
+46,0x00519360,PHS,0x590D08,PHS,exact,exact
+47,0x00519374,Save,0x590D1C,Speichern,high,translation
+48,0x00519388,Quit,0x590D30,Verlassen,high,translation
+49,0x0051939C,Beginner,0x590D44,Anfänger,high,translation
+50,0x005193D8,Time,0x590D80,Zeit,high,translation
+51,0x005193EC,Gil,0x590D94,Gil,exact,exact
+52,0x00519400,next level,0x590DA8,Nächst. Lv,high,translation
+53,0x00519414,Limit level,0x590DBC,Limit-Stufe,high,translation
+54,0x00519428,Tutorial,0x590DD0,Anleitung,high,translation
+55,0x00519450,LEVEL UP,0x590DE4,Unter,medium,context
+56,0x00519464,Fury,0x590E0C,Zorn,high,translation
+57,0x00519478,Sadness,0x590E20,Traurigk.,high,translation
+58,0x005196B0,Press [CANCEL] to end.,0x590FF0,"!  cy         !   ""   $   %   &   '   (   t   start@of@menu@systemAAA*    end@of@menu@systemAAA*  Mit [ABBRECHEN] beenden.",high,manual_group
+59,0x005196E2,Press [OK] to configure a key.,0x591094,Drücken Sie auf [O.K.] um die,high,manual_group
+60,0x00519714,Now press the new key.,0x59110C,Bitte neue Taste drücken,high,manual_group
+61,0x00519746,[OK],0x591148,[O.K.],high,manual_group
+62,0x00519778,[CANCEL],0x591184,[ABBRECHEN],high,manual_group
+63,0x005197AA,[MENU],0x5911C0,[MENÜ],high,manual_group
+64,0x005197DC,[SWITCH],0x5911FC,[UMSCHALTEN],high,manual_group
+65,0x0051980E,[PAGEUP],0x591238,[BILD HOCH],high,manual_group
+66,0x00519840,[PAGEDOWN],0x591274,[BILD HERUNTER],high,manual_group
+67,0x00519872,[CAMERA],0x5912B0,[KAMERA],high,manual_group
+68,0x005198A4,[TARGET],0x5912EC,[ZIEL],high,manual_group
+69,0x005198D6,[ASSIST],0x591328,[HILFE],high,manual_group
+70,0x00519908,[START],0x591364,[START],high,manual_group
+71,0x0051993A,[UP],0x5913A0,[HERAUF],high,manual_group
+72,0x0051996C,[DOWN],0x5913DC,[UNTEN],high,manual_group
+73,0x0051999E,[LEFT],0x591418,[LINKS],high,manual_group
+74,0x005199D0,[RIGHT],0x591454,[RECHT],high,manual_group
+75,0x00519A02,KEYBOARD,0x591490,TASTATUR,high,manual_group
+76,0x00519A34,JOYSTICK,0x5914CC,JOYSTICK,high,manual_group
+77,0x00519FE0,ESCAPE,0x591508,[KEYBOARD_DATA_BLOCK: ESCAPE],medium,keyboard_block
+78,0x00519FE8,1,0x591508,[KEYBOARD_DATA_BLOCK: 1],medium,keyboard_block
+79,0x00519FEC,2,0x591508,[KEYBOARD_DATA_BLOCK: 2],medium,keyboard_block
+80,0x00519FF0,3,0x591508,[KEYBOARD_DATA_BLOCK: 3],medium,keyboard_block
+81,0x00519FF4,4,0x591508,[KEYBOARD_DATA_BLOCK: 4],medium,keyboard_block
+82,0x00519FF8,5,0x591508,[KEYBOARD_DATA_BLOCK: 5],medium,keyboard_block
+83,0x00519FFC,6,0x591508,[KEYBOARD_DATA_BLOCK: 6],medium,keyboard_block
+84,0x0051A000,7,0x591508,[KEYBOARD_DATA_BLOCK: 7],medium,keyboard_block
+85,0x0051A004,8,0x591508,[KEYBOARD_DATA_BLOCK: 8],medium,keyboard_block
+86,0x0051A008,9,0x591508,[KEYBOARD_DATA_BLOCK: 9],medium,keyboard_block
+87,0x0051A00C,0,0x591508,[KEYBOARD_DATA_BLOCK: 0],medium,keyboard_block
+88,0x0051A010,MINUS,0x591508,[KEYBOARD_DATA_BLOCK: MINUS],medium,keyboard_block
+89,0x0051A018,EQUALS,0x591508,[KEYBOARD_DATA_BLOCK: EQUALS],medium,keyboard_block
+90,0x0051A020,BACK SPACE,0x591508,[KEYBOARD_DATA_BLOCK: BACK SPACE],medium,keyboard_block
+91,0x0051A02C,TAB,0x591508,[KEYBOARD_DATA_BLOCK: TAB],medium,keyboard_block
+92,0x0051A030,Q,0x591508,[KEYBOARD_DATA_BLOCK: Q],medium,keyboard_block
+93,0x0051A034,W,0x591508,[KEYBOARD_DATA_BLOCK: W],medium,keyboard_block
+94,0x0051A038,E,0x591508,[KEYBOARD_DATA_BLOCK: E],medium,keyboard_block
+95,0x0051A03C,R,0x591508,[KEYBOARD_DATA_BLOCK: R],medium,keyboard_block
+96,0x0051A040,T,0x591508,[KEYBOARD_DATA_BLOCK: T],medium,keyboard_block
+97,0x0051A044,Y,0x591508,[KEYBOARD_DATA_BLOCK: Y],medium,keyboard_block
+98,0x0051A048,U,0x591508,[KEYBOARD_DATA_BLOCK: U],medium,keyboard_block
+99,0x0051A04C,I,0x591508,[KEYBOARD_DATA_BLOCK: I],medium,keyboard_block
+100,0x0051A050,O,0x591508,[KEYBOARD_DATA_BLOCK: O],medium,keyboard_block
+101,0x0051A054,P,0x591508,[KEYBOARD_DATA_BLOCK: P],medium,keyboard_block
+102,0x0051A058,LEFT BRACKET,0x591508,[KEYBOARD_DATA_BLOCK: LEFT BRACKET],medium,keyboard_block
+103,0x0051A068,RIGHT BRACKET,0x591508,[KEYBOARD_DATA_BLOCK: RIGHT BRACKET],medium,keyboard_block
+104,0x0051A078,RETURN,0x591508,[KEYBOARD_DATA_BLOCK: RETURN],medium,keyboard_block
+105,0x0051A080,LEFT CONTROL,0x591508,[KEYBOARD_DATA_BLOCK: LEFT CONTROL],medium,keyboard_block
+106,0x0051A090,A,0x591508,[KEYBOARD_DATA_BLOCK: A],medium,keyboard_block
+107,0x0051A094,S,0x591508,[KEYBOARD_DATA_BLOCK: S],medium,keyboard_block
+108,0x0051A098,D,0x591508,[KEYBOARD_DATA_BLOCK: D],medium,keyboard_block
+109,0x0051A09C,F,0x591508,[KEYBOARD_DATA_BLOCK: F],medium,keyboard_block
+110,0x0051A0A0,G,0x591508,[KEYBOARD_DATA_BLOCK: G],medium,keyboard_block
+111,0x0051A0A4,H,0x591508,[KEYBOARD_DATA_BLOCK: H],medium,keyboard_block
+112,0x0051A0A8,J,0x591508,[KEYBOARD_DATA_BLOCK: J],medium,keyboard_block
+113,0x0051A0AC,K,0x591508,[KEYBOARD_DATA_BLOCK: K],medium,keyboard_block
+114,0x0051A0B0,L,0x591508,[KEYBOARD_DATA_BLOCK: L],medium,keyboard_block
+115,0x0051A0B4,SEMICOLON,0x591508,[KEYBOARD_DATA_BLOCK: SEMICOLON],medium,keyboard_block
+116,0x0051A0C0,APOSTROPHE,0x591508,[KEYBOARD_DATA_BLOCK: APOSTROPHE],medium,keyboard_block
+117,0x0051A0CC,GRAVE,0x591508,[KEYBOARD_DATA_BLOCK: GRAVE],medium,keyboard_block
+118,0x0051A0D4,LEFT SHIFT,0x591508,[KEYBOARD_DATA_BLOCK: LEFT SHIFT],medium,keyboard_block
+119,0x0051A0E0,BACK SLASH,0x591508,[KEYBOARD_DATA_BLOCK: BACK SLASH],medium,keyboard_block
+120,0x0051A0EC,Z,0x591508,[KEYBOARD_DATA_BLOCK: Z],medium,keyboard_block
+121,0x0051A0F0,X,0x591508,[KEYBOARD_DATA_BLOCK: X],medium,keyboard_block
+122,0x0051A0F4,C,0x591508,[KEYBOARD_DATA_BLOCK: C],medium,keyboard_block
+123,0x0051A0F8,V,0x591508,[KEYBOARD_DATA_BLOCK: V],medium,keyboard_block
+124,0x0051A0FC,B,0x591508,[KEYBOARD_DATA_BLOCK: B],medium,keyboard_block
+125,0x0051A100,N,0x591508,[KEYBOARD_DATA_BLOCK: N],medium,keyboard_block
+126,0x0051A104,M,0x591508,[KEYBOARD_DATA_BLOCK: M],medium,keyboard_block
+127,0x0051A108,COMMA,0x591508,[KEYBOARD_DATA_BLOCK: COMMA],medium,keyboard_block
+128,0x0051A110,PERIOD,0x591508,[KEYBOARD_DATA_BLOCK: PERIOD],medium,keyboard_block
+129,0x0051A118,SLASH,0x591508,[KEYBOARD_DATA_BLOCK: SLASH],medium,keyboard_block
+130,0x0051A120,RIGHT SHIFT,0x591508,[KEYBOARD_DATA_BLOCK: RIGHT SHIFT],medium,keyboard_block
+131,0x0051A12C,MULTIPLY,0x591508,[KEYBOARD_DATA_BLOCK: MULTIPLY],medium,keyboard_block
+132,0x0051A138,LEFT ALT,0x591508,[KEYBOARD_DATA_BLOCK: LEFT ALT],medium,keyboard_block
+133,0x0051A144,SPACE,0x591508,[KEYBOARD_DATA_BLOCK: SPACE],medium,keyboard_block
+134,0x0051A14C,CAPS LOCK,0x591508,[KEYBOARD_DATA_BLOCK: CAPS LOCK],medium,keyboard_block
+135,0x0051A158,F1,0x591508,[KEYBOARD_DATA_BLOCK: F1],medium,keyboard_block
+136,0x0051A15C,F2,0x591508,[KEYBOARD_DATA_BLOCK: F2],medium,keyboard_block
+137,0x0051A160,F3,0x591508,[KEYBOARD_DATA_BLOCK: F3],medium,keyboard_block
+138,0x0051A164,F4,0x591508,[KEYBOARD_DATA_BLOCK: F4],medium,keyboard_block
+139,0x0051A168,F5,0x591508,[KEYBOARD_DATA_BLOCK: F5],medium,keyboard_block
+140,0x0051A16C,F6,0x591508,[KEYBOARD_DATA_BLOCK: F6],medium,keyboard_block
+141,0x0051A170,F7,0x591508,[KEYBOARD_DATA_BLOCK: F7],medium,keyboard_block
+142,0x0051A174,F8,0x591508,[KEYBOARD_DATA_BLOCK: F8],medium,keyboard_block
+143,0x0051A178,F9,0x591508,[KEYBOARD_DATA_BLOCK: F9],medium,keyboard_block
+144,0x0051A17C,F10,0x591508,[KEYBOARD_DATA_BLOCK: F10],medium,keyboard_block
+145,0x0051A180,NUMLOCK,0x591508,[KEYBOARD_DATA_BLOCK: NUMLOCK],medium,keyboard_block
+146,0x0051A188,SCROLL,0x591508,[KEYBOARD_DATA_BLOCK: SCROLL],medium,keyboard_block
+147,0x0051A190,NUMPAD7,0x591508,[KEYBOARD_DATA_BLOCK: NUMPAD7],medium,keyboard_block
+148,0x0051A198,NUMPAD8,0x591508,[KEYBOARD_DATA_BLOCK: NUMPAD8],medium,keyboard_block
+149,0x0051A1A0,NUMPAD9,0x591508,[KEYBOARD_DATA_BLOCK: NUMPAD9],medium,keyboard_block
+150,0x0051A1A8,SUBTRACT,0x591508,[KEYBOARD_DATA_BLOCK: SUBTRACT],medium,keyboard_block
+151,0x0051A1B4,NUMPAD4,0x591508,[KEYBOARD_DATA_BLOCK: NUMPAD4],medium,keyboard_block
+152,0x0051A1BC,NUMPAD5,0x591508,[KEYBOARD_DATA_BLOCK: NUMPAD5],medium,keyboard_block
+153,0x0051A1C4,NUMPAD6,0x591508,[KEYBOARD_DATA_BLOCK: NUMPAD6],medium,keyboard_block
+154,0x0051A1CC,ADD,0x591508,[KEYBOARD_DATA_BLOCK: ADD],medium,keyboard_block
+155,0x0051A1D0,NUMPAD1,0x591508,[KEYBOARD_DATA_BLOCK: NUMPAD1],medium,keyboard_block
+156,0x0051A1D8,NUMPAD2,0x591508,[KEYBOARD_DATA_BLOCK: NUMPAD2],medium,keyboard_block
+157,0x0051A1E0,NUMPAD3,0x591508,[KEYBOARD_DATA_BLOCK: NUMPAD3],medium,keyboard_block
+158,0x0051A1E8,NUMPAD0,0x591508,[KEYBOARD_DATA_BLOCK: NUMPAD0],medium,keyboard_block
+159,0x0051A1F0,DECIMAL,0x591508,[KEYBOARD_DATA_BLOCK: DECIMAL],medium,keyboard_block
+160,0x0051A210,F11,0x591508,[KEYBOARD_DATA_BLOCK: F11],medium,keyboard_block
+161,0x0051A214,F12,0x591508,[KEYBOARD_DATA_BLOCK: F12],medium,keyboard_block
+162,0x0051A270,F13,0x591508,[KEYBOARD_DATA_BLOCK: F13],medium,keyboard_block
+163,0x0051A274,F14,0x591508,[KEYBOARD_DATA_BLOCK: F14],medium,keyboard_block
+164,0x0051A278,F15,0x591508,[KEYBOARD_DATA_BLOCK: F15],medium,keyboard_block
+165,0x0051A2C4,KANA,0x591508,[KEYBOARD_DATA_BLOCK: KANA],medium,keyboard_block
+166,0x0051A30C,CONVERT,0x591508,[KEYBOARD_DATA_BLOCK: CONVERT],medium,keyboard_block
+167,0x0051A31C,NOCONVERT,0x591508,[KEYBOARD_DATA_BLOCK: NOCONVERT],medium,keyboard_block
+168,0x0051A330,YEN,0x591508,[KEYBOARD_DATA_BLOCK: YEN],medium,keyboard_block
+169,0x0051A3AC,NUMPADEQUALS,0x591508,[KEYBOARD_DATA_BLOCK: NUMPADEQUALS],medium,keyboard_block
+170,0x0051A3CC,CIRCUMFLEX,0x591508,[KEYBOARD_DATA_BLOCK: CIRCUMFLEX],medium,keyboard_block
+171,0x0051A3D8,AT,0x591508,[KEYBOARD_DATA_BLOCK: AT],medium,keyboard_block
+172,0x0051A3DC,COLON,0x591508,[KEYBOARD_DATA_BLOCK: COLON],medium,keyboard_block
+173,0x0051A3E4,UNDERLINE,0x591508,[KEYBOARD_DATA_BLOCK: UNDERLINE],medium,keyboard_block
+174,0x0051A3F0,KANJI,0x591508,[KEYBOARD_DATA_BLOCK: KANJI],medium,keyboard_block
+175,0x0051A3F8,STOP,0x591508,[KEYBOARD_DATA_BLOCK: STOP],medium,keyboard_block
+176,0x0051A400,AX,0x591508,[KEYBOARD_DATA_BLOCK: AX],medium,keyboard_block
+177,0x0051A404,UNLABELED,0x591508,[KEYBOARD_DATA_BLOCK: UNLABELED],medium,keyboard_block
+178,0x0051A430,NUMPADENTER,0x591508,[KEYBOARD_DATA_BLOCK: NUMPADENTER],medium,keyboard_block
+179,0x0051A43C,RIGHT CONTROL,0x591508,[KEYBOARD_DATA_BLOCK: RIGHT CONTROL],medium,keyboard_block
+180,0x0051A4F4,NUMPADCOMMA,0x591508,[KEYBOARD_DATA_BLOCK: NUMPADCOMMA],medium,keyboard_block
+181,0x0051A508,DIVIDE,0x591508,[KEYBOARD_DATA_BLOCK: DIVIDE],medium,keyboard_block
+182,0x0051A518,SYSRQ,0x591508,[KEYBOARD_DATA_BLOCK: SYSRQ],medium,keyboard_block
+183,0x0051A520,RIGHT ALT,0x591508,[KEYBOARD_DATA_BLOCK: RIGHT ALT],medium,keyboard_block
+184,0x0051A59C,HOME,0x591508,[KEYBOARD_DATA_BLOCK: HOME],medium,keyboard_block
+185,0x0051A5A4,UP,0x591508,[KEYBOARD_DATA_BLOCK: UP],medium,keyboard_block
+186,0x0051A5A8,PAGE UP,0x591508,[KEYBOARD_DATA_BLOCK: PAGE UP],medium,keyboard_block
+187,0x0051A5B8,LEFT,0x591508,[KEYBOARD_DATA_BLOCK: LEFT],medium,keyboard_block
+188,0x0051A5C8,RIGHT,0x591508,[KEYBOARD_DATA_BLOCK: RIGHT],medium,keyboard_block
+189,0x0051A5D8,END,0x591508,[KEYBOARD_DATA_BLOCK: END],medium,keyboard_block
+190,0x0051A5DC,DOWN,0x591508,[KEYBOARD_DATA_BLOCK: DOWN],medium,keyboard_block
+191,0x0051A5E4,PAGE DOWN,0x591508,[KEYBOARD_DATA_BLOCK: PAGE DOWN],medium,keyboard_block
+192,0x0051A5F0,INSERT,0x591508,[KEYBOARD_DATA_BLOCK: INSERT],medium,keyboard_block
+193,0x0051A5F8,DELETE,0x591508,[KEYBOARD_DATA_BLOCK: DELETE],medium,keyboard_block
+194,0x0051A638,LEFT WIN,0x591508,[KEYBOARD_DATA_BLOCK: LEFT WIN],medium,keyboard_block
+195,0x0051A644,RIGHT WIN,0x591508,[KEYBOARD_DATA_BLOCK: RIGHT WIN],medium,keyboard_block
+196,0x0051A650,APPS,0x591508,[KEYBOARD_DATA_BLOCK: APPS],medium,keyboard_block
+197,0x0051A660,MOUSE_B1,0x591508,[KEYBOARD_DATA_BLOCK: MOUSE_B1],medium,keyboard_block
+198,0x0051A66C,MOUSE_B2,0x591508,[KEYBOARD_DATA_BLOCK: MOUSE_B2],medium,keyboard_block
+199,0x0051A678,MOUSE_B3,0x591508,[KEYBOARD_DATA_BLOCK: MOUSE_B3],medium,keyboard_block
+200,0x0051A68C,UP,0x591508,[KEYBOARD_DATA_BLOCK: UP],medium,keyboard_block
+201,0x0051A690,DOWN,0x591508,[KEYBOARD_DATA_BLOCK: DOWN],medium,keyboard_block
+202,0x0051A698,LEFT,0x591508,[KEYBOARD_DATA_BLOCK: LEFT],medium,keyboard_block
+203,0x0051A6A0,RIGHT,0x591508,[KEYBOARD_DATA_BLOCK: RIGHT],medium,keyboard_block
+204,0x0051A6C8,BUTTON 1,0x591508,[KEYBOARD_DATA_BLOCK: BUTTON 1],medium,keyboard_block
+205,0x0051A6D4,BUTTON 2,0x591508,[KEYBOARD_DATA_BLOCK: BUTTON 2],medium,keyboard_block
+206,0x0051A6E0,BUTTON 3,0x591508,[KEYBOARD_DATA_BLOCK: BUTTON 3],medium,keyboard_block
+207,0x0051A6EC,BUTTON 4,0x591508,[KEYBOARD_DATA_BLOCK: BUTTON 4],medium,keyboard_block
+208,0x0051A6F8,BUTTON 5,0x591508,[KEYBOARD_DATA_BLOCK: BUTTON 5],medium,keyboard_block
+209,0x0051A704,BUTTON 6,0x591508,[KEYBOARD_DATA_BLOCK: BUTTON 6],medium,keyboard_block
+210,0x0051A710,BUTTON 7,0x591508,[KEYBOARD_DATA_BLOCK: BUTTON 7],medium,keyboard_block
+211,0x0051A71C,BUTTON 8,0x591508,[KEYBOARD_DATA_BLOCK: BUTTON 8],medium,keyboard_block
+212,0x0051A728,button@Y,0x591508,[KEYBOARD_DATA_BLOCK: button@Y],medium,keyboard_block
+213,0x0051A734,button@QP,0x591508,[KEYBOARD_DATA_BLOCK: button@QP],medium,keyboard_block
+214,0x0051D1E0,Pause,0x591508,[KEYBOARD_DATA_BLOCK: Pause],medium,keyboard_block
+215,0x0051D23C,Sleep,0x591508,[KEYBOARD_DATA_BLOCK: Sleep],medium,keyboard_block
+216,0x0051D246,Poison,0x594CBA,Gift,high,translation
+217,0x0051D250,Sadness,0x594CC8,Traurigkeit,medium,context
+218,0x0051D25A,Fury,0x594CD6,Zorn,high,translation
+219,0x0051D264,Confusion,0x594CE4,Verwirrung,high,translation
+220,0x0051D26E,Silence,0x594CF2,Stummheit,high,translation
+221,0x0051D278,Haste,0x594D00,Schnell,high,translation
+222,0x0051D282,Slow,0x594D2A,ã,medium,context
+223,0x0051D28C,Stop,0x594D1C,Stop,exact,exact
+224,0x0051D2B4,Petrify,0x594D54,Versteinerung,high,translation
+225,0x0051D2BE,Regen,0x594D62,regen,exact,exact
+226,0x0051D2DC,Reflect,0x594D8C,Reflektieren,high,translation
+227,0x0051D2F0,Shield,0x594DA8,Schild,high,translation
+228,0x0051D30E,Berserk,0x594DD2,Toll,high,translation
+229,0x0051D318,Peerless,0x594DEE,Lähmung,medium,context
+230,0x0051D322,Paralyze,0x594E0A,ã,medium,context
+231,0x0051D32C,Darkness,0x594DFC,Dunkelheit,high,translation
+232,0x0051D3A0,How much will you raise?,0x594E18,ã,medium,context
+233,0x0051D3BC,Gil,0x594EA4,Gil,exact,exact
+234,0x0051D3C0,After,0x594EA8,Nach,medium,context
+235,0x0051D3C8,Gil on hand,0x595080,Ja     Nein,medium,context
+236,0x0051D588,Keep goin'?,0x5950AA,Schlitzstart!,medium,context
+237,0x0051D598,Of course!     No way!,0x595117,Zaubersubstanz kaputt.,medium,context
+238,0x0051D5B0,Current Battle Points,0x5951B2,Alle Substanz kaputt.,medium,context
+239,0x0051D5C6,Slot start!,0x59522E,Waffe kaputt.,medium,context
+240,0x0051D5DC,GREAT!!,0x59526C,1/2 Genauigkeit.,medium,context
+241,0x0051D608,"Then, go for it!",0x595307,5 Ebenen zurück.,medium,context
+242,0x0051D628,Magic Materia is broken.,0x595326,10 Ebenen zurück.,medium,context
+243,0x0051D648,Summon Materia is broken.,0x5953C1,Jaa! Keine Behinderung!!,medium,context
+244,0x0051D668,Support Materia is broken.,0x5953E0,HP wiederhergestellt.,medium,context
+245,0x0051D688,Independent Materia is broken.,0x595400,Besorgt um die anderen Mitglieder?,medium,context
+246,0x0051D6A8,Command Materia is broken.,0x595446,Eigentlich nicht,medium,context
+247,0x0051D6C8,All Materia is broken.,0x595524,"""S   S ""!sè7áè",medium,context
+248,0x0051D6E8,Accessory is broken.,0x595538,"$   #   ""   !",medium,context
+249,0x0051D708,Item command is sealed.,0x5956A2,Gruppe aus zwei Personen bilden,medium,context
+250,0x0051D728,Armor is broken.,0x5956EE,Auswählen mit [START]-Taste,medium,context
+251,0x0051D748,Weapon is broken.,,,none,none
+252,0x0051D768,1/2 speed.,,,none,none
+253,0x0051D788,1/2 accuracy.,,,none,none
+254,0x0051D7A8,Minimum,0x59528B,Minimum,exact,exact
+255,0x0051D7C8,Poison,0x5952AA,Gift,high,translation
+256,0x0051D7E8,Toad,0x5952C9,Kröte,high,translation
+257,0x0051D808,Time x30 damage.,0x5952E8,Zeit x30 Schaden.,medium,context
+258,0x0051D828,Down 5 levels.,,,none,none
+259,0x0051D848,Down 10 levels.,,,none,none
+260,0x0051D868,1/2 HP.,0x595345,1/2 HP.,exact,exact
+261,0x0051D888,1/2 MP.,0x595364,1/2 MP.,exact,exact
+262,0x0051D8A8,1/2 HP&MP.,0x595383,1/2 HP&MP.,exact,exact
+263,0x0051D8C8,Zero MP.,0x5953A2,Null MP.,medium,context
+264,0x0051D8E8,Yesss! No handicapp!,0x595423,"Ja, ein bichen",medium,context
+265,0x0051D908,HP restored.,0x595514,/,medium,context
+266,0x0051D928,Worried about the other members?,0x595656,Mitglieden in zwei Gruppen aufteilen,medium,context
+267,0x0051D94A,"Yeah, a little",0x5956C8,Gruppe aus drei Personen bilden,medium,context
+268,0x0051D96C,Not really,,,none,none
+269,0x0051DAE0,Save,,,none,none
+270,0x0051DB40,Reform,,,none,none
+271,0x0051DB66,Split your allies into two groups.,,,none,none
+272,0x0051DB8C,Split your allies into three groups.,,,none,none
+273,0x0051DBB2,Please make a party of two.,,,none,none
+274,0x0051DBD8,Please make a party of three.,,,none,none
+275,0x0051DBFE,Select with START button.,,,none,none
+276,0x0051DE22,Wpn.,,,none,none
+277,0x0051DE38,Arm.,,,none,none
+278,0x0051DE4E,Acc.,0x59593E,Acc.,exact,exact
+279,0x0051DED8,LEVEL 1,0x5959E8,STUFE 2,medium,context
+280,0x0051DEFC,LEVEL 2,0x595A08,STUFE 3,medium,context
+281,0x0051DF20,LEVEL 3,0x595A28,STUFE 4,medium,context
+282,0x0051DF44,LEVEL 4,0x595A88,Prüfen,medium,context
+283,0x0051DF68,Set BREAK LEVEL.,0x595AE8,STUFE ändern?,medium,context
+284,0x0051DF8C,Set,0x595B94,R R 3 1P,medium,context
+285,0x0051DFB0,Check,0x595BB0,T T 3!1T,medium,context
+286,0x0051DFD4,"To change BREAK LEVEL,",0x595BCC,"S S 3""1X",medium,context
+287,0x0051DFF8,it will begin from Limit Point 0.,0x595BE8,U U 3#1f,medium,context
+288,0x0051E01C,Change BREAK LEVEL?,0x595C04,V V $1:,medium,context
+289,0x0051E040,Yes,0x595B08,Ja,high,translation
+290,0x0051E064,No,0x595B28,Nein,high,translation
+291,0x0051E088,Limit set!,0x595B68,STUFE wählen,medium,context
+292,0x0051E0AC,Select LEVEL.,0x595BB9,_,medium,context
+293,0x0051EF40,Fire,0x595BD6,:ö,medium,context
+294,0x0051EF4A,Ice,0x595C29,_8£!,medium,context
+295,0x0051EF54,Lightning,0x595C58,f f 3'1T,medium,context
+296,0x0051EF5E,Earth,0x595CAC,k k 3*1,medium,context
+297,0x0051EF68,Poison,0x596A28,Gift,high,translation
+298,0x0051EF72,Gravity,0x596A40,Wasser,medium,context
+299,0x0051EF7C,Water,0x596A58,Heilig,medium,context
+300,0x0051EF86,Wind,0x596A4C,Wind,exact,exact
+301,0x0051EF90,Holy,0x596A68,Tod,medium,context
+302,0x0051EFA0,Death,0x596A7C,Gefahr,medium,context
+303,0x0051EFB4,Near-death,0x596A90,Schlaf,medium,context
+304,0x0051EFC8,Sleep,0x594CAC,Schlaf,high,translation
+305,0x0051EFDC,Poison,0x596AA4,Gift,high,translation
+306,0x0051EFF0,Sadness,0x596AB8,Trauer,medium,context
+307,0x0051F004,Fury,0x596ACC,Zorn,high,translation
+308,0x0051F018,Confusion,0x596AF4,Schweigen,medium,context
+309,0x0051F02C,Silence,0x596B1C,Gemach,medium,context
+310,0x0051F040,Haste,0x596B58,Zwerg,medium,context
+311,0x0051F054,Slow,0x596BBC,ZBarr.,medium,context
+312,0x0051F068,Stop,0x596B30,Stop,exact,exact
+313,0x0051F07C,Frog,0x596B44,Frosch,medium,context
+314,0x0051F090,Small,0x596B94,Heilung,medium,context
+315,0x0051F0A4,Slow-numb,0x596BA8,Barriere,medium,context
+316,0x0051F0B8,Petrify,0x596BD0,Wasser,medium,context
+317,0x0051F0CC,Regen,0x596C20,Manipul.,medium,context
+318,0x0051F0E0,Barrier,0x596C5C,Lähmung,medium,context
+319,0x0051F0F4,MBarrier,0x596CBA,Angriff,medium,context
+320,0x0051F108,Reflect,0x596CEC,Halbieren,medium,context
+321,0x0051F130,Shield,0x596BF8,Schild,high,translation
+322,0x0051F144,Death-sentence,0x596C48,Unverwundbar,medium,context
+323,0x0051F158,Manipulate,0x594DE0,Einzigartig,high,translation
+324,0x0051F16C,Berserk,0x594E26,ã,medium,context
+325,0x0051F180,Peerless,0x594E34,ã,medium,context
+326,0x0051F194,Paralyzed,0x594EB0,Gil auf der Hand,medium,context
+327,0x0051F1A8,Darkness,0x5950C4,TOLL!!,medium,context
+328,0x0051F1C0,Element,0x595718,Element,exact,exact
+329,0x0051F1CF,Effect,0x59572E,Effekt,high,translation
+330,0x0051F1DE,Attack,0x595744,Angreifen,high,translation
+331,0x0051F1ED,Defend,0x59575A,Verteidigen,high,translation
+332,0x0051F1FC,Halve,0x595770,Halbieren,high,translation
+333,0x0051F20B,Invalid,0x595786,Ungültig,high,translation
+334,0x0051F21A,Absorb,0x59579C,Absorbieren,high,translation
+335,0x0051F256,Strength,0x5957F4,Stärke,high,translation
+336,0x0051F265,Dexterity,0x59580A,Geschick,high,translation
+337,0x0051F274,Vitality,0x595820,Vitalität,high,translation
+338,0x0051F283,Magic,0x595836,Zauber,high,translation
+339,0x0051F292,Spirit,0x59584C,Moral,medium,context
+340,0x0051F2A1,Luck,0x595862,Glück,medium,context
+341,0x0051F2B0,Attack,0x595878,Angreifen,high,translation
+342,0x0051F2BF,Attack%,0x5958D0,Zbrangrf,medium,context
+343,0x0051F2CE,Defense,0x5958E6,Zbrvertdg,medium,context
+344,0x0051F2DD,Defense%,0x5958FC,Zbrvertdg %,medium,context
+345,0x0051F2EC,Magic atk,0x595954,Limit-Ebene,medium,context
+346,0x0051F2FB,Magic def,0x595A48,LIMIT-STUFE einrichten.,medium,context
+347,0x0051F30A,Magic def%,0x595A68,Einrichten,medium,context
+348,0x0051F319,Wpn:,0x595AA8,Bei nderung der STUFE,medium,context
+349,0x0051F328,Arm:,0x595B48,Limit gewählt!,medium,context
+350,0x0051F337,Acc:,0x595BBF,"""",medium,context
+351,0x0051F346,Limit level:,0x595C0F,&,medium,context
+352,0x0051F3A8,Wpn.,0x595C20,Y Y 7%1,medium,context
+353,0x0051F3B4,Arm.,0x595C3C,"[ \ &1,",medium,context
+354,0x0051F3C0,Acc.,0x596EF9,Acc.,exact,exact
+355,0x0051F420,Attack,0x599AF4,Angreifen,high,translation
+356,0x0051F42C,Attack %,0x599B4C,Zbrangrf,medium,context
+357,0x0051F438,Defense,0x599B8E,Schlitz:,medium,context
+358,0x0051F444,Defense %,0x599BFC,Dreifach,medium,context
+359,0x0051F450,Magic atk,0x599C18,Objektladen,medium,context
+360,0x0051F45C,Magic def,0x599C68,Objektladen,medium,context
+361,0x0051F468,Magic def%,0x599CE0,Gemüseladen,medium,context
+362,0x0051F474,Slot,0x599D80,Willkommen!,medium,context
+363,0x0051F480,Growth,0x599E66,Danke!,medium,context
+364,0x0051F48C,Nothing,0x599E94,Danke!,medium,context
+365,0x0051F498,Normal,0x597138,Normal,exact,exact
+366,0x0051F4A4,Double,0x59714E,Doppelt,medium,context
+367,0x0051F4B0,Triple,0x5971EC,Kälte,medium,context
+368,0x0051F518,Do you really want to remove this?,0x59721C,Schwerkraft,medium,context
+369,0x0051F53C,I sure do!,0x597228,Wasser,medium,context
+370,0x0051F560,Wait a sec,0x597298,Einen Moment,medium,context
+371,0x0051F584,Sephiroth[B2][A9][A9][B3],0x597318,Fähigkeitsliste,medium,context
+372,0x0051F5A8,Wpn.,0x597350,Prüfen,medium,context
+373,0x0051F5BC,Arm.,0x59736C,Ordnen,medium,context
+374,0x0051F5D0,Ability list,0x5973C0,Auf nächste Ebene,medium,context
+375,0x0051F5E4,Equip effect,0x597430,Alles entfernen,medium,context
+376,0x0051F5F8,Check,0x59744C,Wegwerfen,medium,context
+377,0x0051F60C,Arrange,0x5974D8,Glück   %HåHER,medium,context
+378,0x0051F634,AP,0x5973A4,AP,exact,exact
+379,0x0051F648,To next level,0x597414,Tauschen,medium,context
+380,0x0051F65C,MASTER,0x5973DC,MASTER,exact,exact
+381,0x0051F670,Arrange,0x5973F8,Ordnen,medium,context
+382,0x0051F684,Exchange,0x5974A0,Schutz   %HåHER,medium,context
+383,0x0051F698,Remove all,0x597510,Stärke,medium,context
+384,0x0051F6AC,Trash,0x59759C,Glück,medium,context
+385,0x0051F6D4,Dexterity,0x596D9B,Geschick,high,translation
+386,0x0051F6E8,Cover,0x596DE6,Gemüt,medium,context
+387,0x0051F6FC,Magic,0x596DCD,Zauber,high,translation
+388,0x0051F710,Luck,0x596DFF,Glück,medium,context
+389,0x0051F724,MASTER,0x5974F4,MASTER,exact,exact
+390,0x0051F738,Strength,0x596D82,Stärke,high,translation
+391,0x0051F74C,Vitality,0x596DB4,Vitalität,high,translation
+392,0x0051F760,Magic,0x596E7C,Zauber,high,translation
+393,0x0051F774,Magic def,0x596E95,Zauberabwehr,medium,context
+394,0x0051F788,Dexterity,0x596FEE,Geschick,high,translation
+395,0x0051F79C,Luck,0x597030,Moral,medium,context
+396,0x0051F7B0,MaxHP,0x5975B8,MAXHP,exact,exact
+397,0x0051F7C4,MaxMP,0x5975D4,MAXMP,exact,exact
+398,0x0051F7D8,MaxHPUP,0x597660,Treffen - %,medium,context
+399,0x0051F7EC,MaxMPUP,0x59767C,Treffen + %,medium,context
+400,0x0051F800,EXP.UP,0x597628,EXP.UP,exact,exact
+401,0x0051F814,Gil UP,0x597644,Gil UP,exact,exact
+402,0x0051F828,Encount Down,0x5976D0,Fernangriff,medium,context
+403,0x0051F83C,Encount Up,0x597708,Gegenangriff,medium,context
+404,0x0051F850,Meet Chocobos,0x59775C,HP/MP-nderung,medium,context
+405,0x0051F864,Pre-emptive,0x597886,Beschwören,medium,context
+406,0x0051F878,Long range attack,0x5978B2,Zusätzliche Fähigkeit,medium,context
+407,0x0051F88C,Attack all,0x5978F4,MP absorb.,medium,context
+408,0x0051F8A0,Counter attack,0x597936,Auch stehl.,medium,context
+409,0x0051F9E8,Magic,0x59701A,Zauber,high,translation
+410,0x0051F9FC,Summon,0x597046,Glück,medium,context
+411,0x0051FA10,Enemy-Skill,0x597088,Verteidigung,medium,context
+412,0x0051FA24,Added-Ability,0x59709E,Verteidigung %,medium,context
+413,0x0051FA38,All,0x5970F6,Fassung:,medium,context
+414,0x0051FA4C,4x-M,0x597122,Keine,medium,context
+415,0x0051FA60,Absorb MP,0x597164,Dreifach,medium,context
+416,0x0051FA74,Absorb HP,0x5971F8,Blitz,medium,context
+417,0x0051FA9C,Steal as well,0x597204,Erde,medium,context
+418,0x0051FAB0,Extra cut,0x597240,Heilig,medium,context
+419,0x0051FAC4,Turbo MP,0x5972BC,Sephiroth,medium,context
+420,0x0051FAD8,Nothing.,0x5972E0,Waf.,medium,context
+421,0x0051FAEC,Not enough MP.,0x597334,Rüstungseffekt,medium,context
+422,0x0051FB68,Use,0x597388,Gespeicherte Zahl   /24,medium,context
+423,0x0051FB74,Arrange,,,none,none
+424,0x0051FB80,Key Items,,,none,none
+425,0x0051FB8C,Customize,,,none,none
+426,0x0051FB98,Field,,,none,none
+427,0x0051FBA4,Battle,,,none,none
+428,0x0051FBB0,Throw,,,none,none
+429,0x0051FBBC,Type,,,none,none
+430,0x0051FBC8,Name,0x597A98,Name,exact,exact
+431,0x0051FBD4,Most,0x597AAA,Max.,medium,context
+432,0x0051FBE0,Least,0x597ABC,Min.,medium,context
+433,0x0051FBF0,OK! Got it!,0x597AD0,OK! Klar!,medium,context
+434,0x0051FC12,I'm not sure but[A9],0x597B70,V-v-verdammt! Mein Kopf!,medium,context
+435,0x0051FC34,Don't really care.,0x597C38,Das sollte ok sein.,medium,context
+436,0x0051FC56,Heh! No sweat!,0x597CD8,Kapier ich nicht.,medium,context
+437,0x0051FC78,D-d-d-damn! My head hurts!,0x597D00,Hat nichts mit mir zu tun.,medium,context
+438,0x0051FC9A,Got nuthin' to do with me!,0x597DC8,Ich bin noch nicht bereit.,medium,context
+439,0x0051FCBC,"Hmm, so that's it.",0x597E18,Das gefällt mir! Her damit!,medium,context
+440,0x0051FCDE,I'm not too sure but[A9],0x597E90,Es hat nichts mit mir zu tun.,medium,context
+441,0x0051FD00,I've got the wrong person.,0x5981E8,Zí,medium,context
+442,0x0051FD22,This should be okay.,0x598228,ëí,medium,context
+443,0x0051FD44,Not quite ready yet.,0x598268,VâÜäÜéudâ,medium,context
+444,0x0051FD66,It isn't me.,0x598289,äâÜVâe,medium,context
+445,0x0051FD88,"Right, I've got it!",0x5982A9,éVëÜâS,medium,context
+446,0x0051FDAA,I don't get it.,0x5982F9,äÜÜXäí,medium,context
+447,0x0051FDCC,It has nothing to do with me.,0x598338,VäâXéf,medium,context
+448,0x0051FDEE,Cool! This should do it!,0x598358,ïxÜe,medium,context
+449,0x0051FE10,Nope! I don't get it!,0x598378,íÜ,medium,context
+450,0x0051FE32,"Oh wow, I'm totally clueless!",0x5983B8,ää,medium,context
+451,0x0051FE54,I'm getting less human[A9],0x5983D8,Zí,medium,context
+452,0x0051FE76,I'm still not ready.,0x598418,ëí,medium,context
+453,0x0051FE98,It has nothing to do with me.,0x598458,VâÜäÜéudâ,medium,context
+454,0x0051FEBA,Hey I like this! Lemme use it!,0x598479,äâÜVâe,medium,context
+455,0x0051FEDC,Hmph. Don't quite get it but[A9],0x598499,éVëÜâS,medium,context
+456,0x0051FEFE,Not me! Give it to someone else!,0x5984B9,äÜëâX,medium,context
+457,0x0051FF20,It's got nothing to do with me.,0x598509,äÜÜXäí,medium,context
+458,0x005206B8,Cloud,0x598529,VéâÜ,medium,context
+459,0x005206C4,Barret,0x598634,Barret,exact,exact
+460,0x005206D0,Tifa,0x598640,Tifa,exact,exact
+461,0x005206DC,Aeris,0x59864C,Aeris,exact,exact
+462,0x005206E8,Red XIII,0x598658,Red XIII,exact,exact
+463,0x005206F4,Yuffie,0x598664,Yuffie,exact,exact
+464,0x00520700,䄣呉㌀呉ｈ,0x598694,Choco,medium,context
+465,0x0052070C,䤶䍎久ｔ,0x5986BE,Leer,medium,context
+466,0x00520718,䤣ｄ,0x5986C8,Löschen,medium,context
+467,0x00520724,䠣䍏ｏ,0x5986DC,Standard,medium,context
+468,0x00520748,倳䍁ｅ,0x598770,3Dfx,medium,context
+469,0x00520750,䔤䕌䕔ÿ,0x598790,Gold,medium,context
+470,0x00520758,䔳䕌呃ÿ,0x5988BC,"à""  T   R",medium,context
+471,0x00520760,䔤䅆䱕ｔ,0x598920,@,medium,context
+472,0x00520768,䄣䍎䱅ÿ,0x598940,*,medium,context
+473,0x00520770,[UNICODE:21],0x5989AA,!           0 0,medium,context
+474,0x00520771,[UNICODE:22],0x598A2C,!           7 7,medium,context
+475,0x00520772,[UNICODE:23],0x598AB2,!           1 1,medium,context
+476,0x00520773,[UNICODE:24],0x598ACC,",   Q# 7#",medium,context
+477,0x00520774,[UNICODE:25],0x598B36,!         ã ã % %,medium,context
+478,0x00520775,[UNICODE:26],0x598BD4,.   J   Zx;,medium,context
+479,0x00520776,[UNICODE:27],0x598C3E,!           2 2,medium,context
+480,0x00520777,[UNICODE:28],0x598CC2,!           / /,medium,context
+481,0x00520778,[UNICODE:29],0x598D24,")!,,+*&%      !",medium,context
+482,0x00520779,[UNICODE:2a],0x598DCA,!          / /!!,medium,context
+483,0x0052077A,[UNICODE:2b],0x598DE4,$ W,medium,context
+484,0x0052077B,[UNICODE:2c],0x598DEC,U,medium,context
+485,0x0052077C,[UNICODE:2d],0x598DF0,S,medium,context
+486,0x0052077D,[UNICODE:2e],0x598DF8,Q,medium,context
+487,0x0052077E,[UNICODE:2f],0x598E08,R,medium,context
+488,0x0052077F,[UNICODE:30],0x599254,Magic Materia!,medium,context
+489,0x00520780,[UNICODE:31],0x599268,Summon Materia!,medium,context
+490,0x00520781,[UNICODE:32],0x599290,Zero - AW YEAH!,medium,context
+491,0x00520782,[UNICODE:33],0x5992A8,Feuer,medium,context
+492,0x00520783,[UNICODE:34],0x5992E4,Schwerkraft,medium,context
+493,0x00520784,[UNICODE:35],0x5992F0,Wasser,medium,context
+494,0x00520785,[UNICODE:36],0x599360,Einen Moment,medium,context
+495,0x00520786,[UNICODE:37],0x5993FC,Rüstungseffekt,medium,context
+496,0x00520787,[UNICODE:38],0x599488,Auf nächste Ebene,medium,context
+497,0x00520788,[UNICODE:39],0x5994F8,Alles entfernen,medium,context
+498,0x00520789,[UNICODE:3a],0x5995A0,Glück   %HåHER,medium,context
+499,0x0052078A,[UNICODE:0c],0x5995F4,Vitalität,medium,context
+500,0x0052078B,[UNICODE:0e],0x59962C,Zbrvertdg,medium,context
+501,0x0052078C,[UNICODE:0b],0x599664,Glück,medium,context
+502,0x0052078D,[UNICODE:0d],0x599680,MAXHP,medium,context
+503,0x0052078E,[UNICODE:41],0x59969C,MAXMP,medium,context
+504,0x0052078F,[UNICODE:42],0x599728,Treffen - %,medium,context
+505,0x00520790,[UNICODE:43],0x599744,Treffen + %,medium,context
+506,0x00520791,[UNICODE:44],0x5997D0,Gegenangriff,medium,context
+507,0x00520792,[UNICODE:45],0x599824,HP/MP-nderung,medium,context
+508,0x00520793,[UNICODE:46],0x59985E,Verkaufen,medium,context
+509,0x00520794,[UNICODE:47],0x59987C,Beenden,medium,context
+510,0x00520795,[UNICODE:48],0x5998B8,Materia,medium,context
+511,0x00520796,[UNICODE:49],0x599938,Ausstattung,medium,context
+512,0x00520797,[UNICODE:4a],0x5999B8,Übrige Gil,medium,context
+513,0x00520798,[UNICODE:4b],0x5999F8,Preis durch AP,medium,context
+514,0x00520799,[UNICODE:4c],0x599A70,Stärke,medium,context
+515,0x0052079A,[UNICODE:4d],0x599A86,Geschick,medium,context
+516,0x0052079B,[UNICODE:4e],0x599A9C,Vitalitä,medium,context
+517,0x0052079C,[UNICODE:4f],0x599B0A,Angreifen %,medium,context
+518,0x0052079D,[UNICODE:50],0x599B20,Verteidigen,medium,context
+519,0x0052079E,[UNICODE:51],0x599B36,Verteidigen %,medium,context
+520,0x0052079F,[UNICODE:52],0x599BA4,Verstärkung:,medium,context
+521,0x005207A0,[UNICODE:53],0x599BE6,Doppelt,medium,context
+522,0x005207A1,[UNICODE:54],0x599C40,Waffengeschäft,medium,context
+523,0x005207A2,[UNICODE:55],0x599D08,Zubehörladen,medium,context
+524,0x005207A3,[UNICODE:56],0x599D30,Werkzeugladen,medium,context
+525,0x005207A4,[UNICODE:57],0x599D58,Souvenierladen,medium,context
+526,0x005207A5,[UNICODE:58],0x599DAE,Was möchtest du kaufen?,medium,context
+527,0x005207A6,[UNICODE:59],0x599DDC,Wie viele willst du davon?,medium,context
+528,0x005207A7,[UNICODE:5a],0x599EC2,Du hast nicht genug Geld!,medium,context
+529,0x005207A8,[UNICODE:1a],0x599F4C,Guten Tag!,medium,context
+530,0x005207A9,[UNICODE:1b],0x59A032,Vielen Dank!,medium,context
+531,0x005207AC,[UNICODE:10],0x59A060,Ihr werdet doch alle zurückkommen!,medium,context
+532,0x005207AD,1,0x59A08E,Soll das ein Witz sein? Das ist nicht genug!,medium,context
+533,0x005207AE,2,0x595CEF,2,exact,exact
+534,0x005207AF,3,0x595DEA,3,exact,exact
+535,0x005207B0,4,0x595D7A,4,exact,exact
+536,0x005207B1,5,0x595D95,_,medium,context
+537,0x005207B2,6,0x595D9B,!,medium,context
+538,0x005207B3,7,0x598DF4,7,exact,exact
+539,0x005207B4,8,0x5962F4,8,exact,exact
+540,0x005207B5,9,0x596318,ã,medium,context
+541,0x005213D8,Ability list,0x596340,7m1R,medium,context
+542,0x005213EC,Equip effect,0x59635C,7nBz,medium,context
+543,0x0052143C,AP,0x59946C,AP,exact,exact
+544,0x00521450,To next level,0x5994DC,Tauschen,medium,context
+545,0x00521464,MASTER,0x5994A4,MASTER,exact,exact
+546,0x005214DC,Dexterity,0x597580,Geschick,high,translation
+547,0x005214F0,Cover,,,none,none
+548,0x00521504,Magic,0x5970B4,Zauber,high,translation
+549,0x00521518,Luck,0x59710C,Wachstum:,medium,context
+550,0x0052152C,MASTER,0x5995BC,MASTER,exact,exact
+551,0x00521540,Strength,0x596FD8,Stärke,high,translation
+552,0x00521554,Vitality,0x59752C,Vitalität,high,translation
+553,0x00521568,Magic,0x597548,Zauber,high,translation
+554,0x0052157C,Magic def,0x597564,Zbrvertdg,medium,context
+555,0x00521590,Dexterity,0x599648,Geschick,high,translation
+556,0x005215A4,Luck,0x5996B8,MAXHP,medium,context
+557,0x005215B8,MaxHP,0x5975F0,MAXHP,exact,exact
+558,0x005215CC,MaxMP,0x59760C,MAXMP,exact,exact
+559,0x005215E0,MaxHPUP,0x597698,Chocobo treffen,medium,context
+560,0x005215F4,MaxMPUP,0x5976EC,Alle angreifen,medium,context
+561,0x00521608,EXP.UP,0x5996F0,EXP.UP,exact,exact
+562,0x0052161C,Gil UP,0x59970C,Gil UP,exact,exact
+563,0x00521630,Encount Down,0x599798,Fernangriff,medium,context
+564,0x00521644,Encount Up,0x5997B4,Alle angreifen,medium,context
+565,0x00521658,Meet Chocobos,0x5997EC,Alle angreifen,medium,context
+566,0x0052166C,Pre-emptive,0x599840,Kaufen,medium,context
+567,0x00521680,Long range attack,0x5998D8,Kaufen Verkaufen Beenden,medium,context
+568,0x00521694,Attack all,0x599978,Wieviel,medium,context
+569,0x005216A8,Counter attack,0x5999D8,Preis für Master,medium,context
+570,0x005216F8,A,0x599C14,A,exact,exact
+571,0x005216FA,D,0x599C16,V,medium,context
+572,0x00521700,Buy   Sell     Exit,0x599C90,Materia-Laden,medium,context
+573,0x00521714,Gil,0x5998F8,Gil,exact,exact
+574,0x00521728,Owned,0x599918,Besitz,medium,context
+575,0x0052173C,Equipped,0x599958,Gesamt,medium,context
+576,0x00521750,Total,0x599998,Objekt    Materia,medium,context
+577,0x00521764,How many,0x599A18,Waf.,medium,context
+578,0x00521778,Item      Materia,0x599A2E,Rüs.,medium,context
+579,0x0052178C,Gil remaining,0x599A44,Zub.,medium,context
+580,0x005217A0,Price for Master,0x599AB2,Zauber,medium,context
+581,0x005217B4,Price through AP,0x599AC8,Moral,medium,context
+582,0x0052196A,Nothing,0x599ADE,Glück,medium,context
+583,0x00521980,Normal,0x599BD0,Normal,exact,exact
+584,0x00521996,Double,,,none,none
+585,0x005219AC,Triple,,,none,none
+586,0x005219DC,Weapon Shop,,,none,none
+587,0x005219F0,Item Shop,,,none,none
+588,0x00521A04,Materia Shop,,,none,none
+589,0x00521A18,General Store,,,none,none
+590,0x00521A2C,Vegetable Store,,,none,none
+591,0x00521A40,Accessory Shop,,,none,none
+592,0x00521A54,Tool Shop,,,none,none
+593,0x00521A68,Hotel Shop,,,none,none
+594,0x00521A80,Welcome!,,,none,none
+595,0x00521AAE,What would you like to buy?,,,none,none
+596,0x00521ADC,How many would you like?!,,,none,none
+597,0x00521B0A,What would you like to sell?!,,,none,none
+598,0x00521B38,How many would you like to sell?!,,,none,none
+599,0x00524160,Load,,,none,none
+600,0x00524184,Select a save data file.,,,none,none
+601,0x005241A8,Select a save game.,,,none,none
+602,0x00524238,Loading. Please wait.,,,none,none
+603,0x0052425C,Saving. Please wait.,,,none,none
+604,0x00524280,EMPTY,,,none,none
+605,0x005242A4,GAME,,,none,none
+606,0x005242C8,Continue?,,,none,none
+607,0x00524310,Checking Save Data File.,,,none,none
+608,0x00524334,01,0x59C668,01,exact,exact
+609,0x00524358,02,0x59C690,02,exact,exact
+610,0x0052437C,03,0x59C6B8,03,exact,exact
+611,0x005243A0,04,0x59C6E0,04,exact,exact
+612,0x005243C4,05,0x59C708,05,exact,exact
+613,0x005243E8,06,0x59C730,06,exact,exact
+614,0x0052440C,07,0x59C758,07,exact,exact
+615,0x00524430,08,0x59C780,08,exact,exact
+616,0x00524454,09,0x59C7A8,09,exact,exact
+617,0x00524478,10,0x59C7D0,10,exact,exact
+618,0x0052449C,11,0x59C7F8,11,exact,exact
+619,0x005244C0,12,0x59C820,12,exact,exact
+620,0x005244E4,13,0x59C848,13,exact,exact
+621,0x00524508,14,0x59C870,14,exact,exact
+622,0x0052452C,15,0x59C898,15,exact,exact
+623,0x00524550,Saved.,0x59C960,NEUES SPIEL,medium,context
+624,0x00524574,Could not save.,0x59C988,Wirklich speichern?,medium,context
+625,0x00524598,Could not load.,0x59CAC6,Formatiert,medium,context
+626,0x005245BC,Data is ruined.,0x59CB4A,Nicht formatiert,medium,context
+627,0x005245E0,NEW GAME,0x59CB8C,Jetzt formatieren?,medium,context
+628,0x00524604,Are you sure you want to save?,0x59CC94,Andere Memory Card einlegen.,medium,context
+629,0x00524628,Yes,0x59C9B0,Ja,high,translation
+630,0x0052464C,No,0x59C9D8,Nein,high,translation
+631,0x00524698,Completed.,0x59CA00,Beendet.,medium,context
+632,0x00524728,Formatted.,0x59CBCE,Memory Card wird geprüft.,medium,context
+633,0x00524758,Could not format.,0x59CC10,Keine Spielstandsdatei.,medium,context
+634,0x00524788,Not formatted.,0x59CD5A,oder löschen Sie 1 Block gesicherter Daten.,medium,context
+635,0x005247B8,Want to format it now?,0x59CE20,Lesen nicht möglich.,medium,context
+636,0x005247E8,No save data file.,0x59CE62,Spiel beginnen?,medium,context
+637,0x00524818,No save data file.,0x59D028,Spielstand 1,medium,context
+638,0x00524848,This Memory card is damaged and cannot be used.,0x59D03C,Spielstand 2,medium,context
+639,0x00524878,Please insert another Memory card.,0x59D050,Spielstand 3,medium,context
+640,0x005248A8,Not enough space left on save data file.,0x59D064,Spielstand 4,medium,context
+641,0x005248D8,"Use another save data file,",0x59D078,Spielstand 5,medium,context
+642,0x00524908,or erase 1 block of saved data.,0x59D0DC,Spielstand 10,medium,context
+643,0x00524998,Couldn't read it.,0x59D150,Level,medium,context
+644,0x005249C8,Still want to begin the game?,0x59D273,"_      _($((($(( $,( $,(",medium,context
+645,0x00524AB8,Can not allocate save file memory buffer!,0x59D2A4,Üó-`,medium,context
+646,0x00524AE8,Invalid save file!,0x59D39C,ü^ ^ ^ ^ ^ ^ ^ ^ ^ ._ 3_ I_ N_ j_ z_ î_ ß_ _ _ _ _ _ _ .` B` b` g` á` Ü` ` ` ` ` ` ` %a *a Ja ^a va äa a a a a a a a .b Nb Sb mb rb òb b b b b b b b 6c Jc bc         ü,medium,context
+647,0x00524B18,Save 1,0x59D4B6,"ü      0        4    =    :    ;    ?    3    A    .    -    /    0    %   £ >   õ 2   ñ @   í ,   ã +   | 5   t <   l 9   d 1   \ 8   T 6   L 7   D B   @ C   < D   8 F             0d      !       P                                                                      $     # #   H  .   é  0             $     & !     ""     #     $     %     &   0!         $     ! å   H!         $     ! !   `!         $     ! )$  x!          $     ! )$  é!          $     ! )$  £!          $     ! )$  !          $     ! )$  !          $     ! )$  !          $     ! )$  !          $     !     !  A Hl  $       î H6  $      H (  $       H(! $       Hb  $      @ 0  $       z   $      D @#  $      H       !  ! (      `           !   !      .F  6M  ;R  CZ  J_6 Lc"" Rk  Zu  La0 Ui7 \p= \oB ]qD a}"" c{; eá! jå# mè$ pì& sï( uó* xô. wó6 {2 wñ: °6 £6 ã; dxG i{P wìI nR rã[ äB {ëf âôk ëöw ñß} îG îH ñG òL ïR í] °P S T U Y îf ñf b ô| Ü \ ` a b e l i l n m u u z z x q u z y w y { | ï  â ñ ° £ â â é è í ó £ à å è è ë í ï ï õ õ ô • £  •    ß",medium,context
+648,0x00524B24,Save 2,,,none,none
+649,0x00524B30,3AVE [13],,,none,none
+650,0x00524B3C,3AVE [14],,,none,none
+651,0x00524B48,3AVE [15],,,none,none
+652,0x00524B54,3AVE [16],,,none,none
+653,0x00524B60,3AVE [17],,,none,none
+654,0x00524B6C,3AVE [18],,,none,none
+655,0x00524B78,3AVE [19],,,none,none
+656,0x00524B84,3AVE [11][10],,,none,none
+657,0x00524BF0,",EVEL",,,none,none
+658,0x005552C0,"00'00""000",,,none,none
+659,0x005552D0,"--'--""---",,,none,none
+660,0x00555410,COURSE A RECORD,,,none,none
+661,0x00555420,"00'00""000",,,none,none
+662,0x00555430,"--'--""---",,,none,none
+663,0x005557A0,BEST,,,none,none
+664,0x005557B0,CONTINUE,,,none,none
+665,0x005557BC,RETRY,,,none,none
+666,0x005557C4,EXIT,,,none,none
+667,0x005557CC,OPTION,,,none,none
+668,0x005557D4,CONTINUE,,,none,none
+669,0x005557E0,RETRY,,,none,none
+670,0x005557E8,EXIT,,,none,none
+671,0x005557F0,GHOST,,,none,none
+672,0x005557F8,SURFACE,,,none,none
+673,0x00555800,OFF,,,none,none
+674,0x00555804,BOARD,,,none,none
+675,0x0055580C,SLEIGH,,,none,none
+676,0x00555814,? ? ?,,,none,none
+677,0x0055581C,SNOW,,,none,none
+678,0x00555824,CHECKED,,,none,none
+679,0x0055582C,TRY AGAIN,,,none,none
+680,0x00555838,EXIT,,,none,none
+681,0x00555848,TECHNIQUE,,,none,none
+682,0x00555854,TIME,,,none,none
+683,0x0055585C,BALLOON,,,none,none
+684,0x00555864,TOTAL,,,none,none
+685,0x0055586C,BEST,,,none,none
+686,0x00555874,/30 PTS.,,,none,none
+687,0x00555880,OSP@ptsN,,,none,none
+688,0x0055588C,OTP@ptsN,,,none,none
+689,0x00555898,OC@ptsN,,,none,none
+690,0x005558A0,OC@ptsN,,,none,none
+691,0x005558AC,QstN,,,none,none
+692,0x005558B4,RndN,,,none,none
+693,0x005558BC,SrdN,,,none,none
+694,0x005558C4,TthN,,,none,none
+695,0x005558CC,UthN,,,none,none
+696,0x0057B2A8,TEIOH,,,none,none
+697,0x0057B3D0,Sprint Shoes,,,none,none
+698,0x0057B3E0,Counter,,,none,none
+699,0x0057B3F0,Magic Counter,,,none,none
+700,0x0057B400,Precious Watch,,,none,none
+701,0x0057B410,Ether,,,none,none
+702,0x0057B420,Hero Drink,,,none,none
+703,0x0057B430,Bolt Plume,,,none,none
+704,0x0057B440,Elixir,,,none,none
+705,0x0057B450,Fire Fang,,,none,none
+706,0x0057B460,Antarctic Wind,,,none,none
+707,0x0057B470,Potion,,,none,none
+708,0x0057B480,Phoenix Down,,,none,none
+709,0x0057B490,Hyper,,,none,none
+710,0x0057B4A0,Tranquilizer,,,none,none
+711,0x0057B4B0,Cat's Bell,,,none,none
+712,0x0057B4C0,Enemy,,,none,none
+713,0x0057B4D0,Sneak,,,none,none
+714,0x0057B4E0,Chocobracelet[FF][FF][FF],,,none,none
+715,0x0057B4F0,Swift,,,none,none
+716,0x0057B500,Fire,,,none,none
+717,0x0057B510,Megalixir[FF][FF][FF][FF][FF][FF][FF],,,none,none
+718,0x0057B520,Turbo,,,none,none
+719,0x0057B530,Hi-Potion[FF][FF][FF][FF][FF][FF][FF],,,none,none
+720,0x0057B540,Ice,,,none,none
+721,0x0057B658,SAM,,,none,none
+722,0x0057B65F,ELEN,,,none,none
+723,0x0057B666,BLUES,,,none,none
+724,0x0057B66D,TOM,,,none,none
+725,0x0057B674,JOHN,,,none,none
+726,0x0057B67B,GARY,,,none,none
+727,0x0057B682,MIKE,,,none,none
+728,0x0057B689,SANDY,,,none,none
+729,0x0057B690,JU,,,none,none
+730,0x0057B697,LY,,,none,none
+731,0x0057B69E,JOEL,,,none,none
+732,0x0057B6A5,GREY,,,none,none
+733,0x0057B6AC,EDWARD,,,none,none
+734,0x0057B6B3,JAMES,,,none,none
+735,0x0057B6BA,HARVEY,,,none,none
+736,0x0057B6C1,DAN,,,none,none
+737,0x0057B6C8,RUDY,,,none,none
+738,0x0057B6CF,GRAHAM,,,none,none
+739,0x0057B6D6,FOX,,,none,none
+740,0x0057B6DD,CLIVE,,,none,none
+741,0x0057B6E4,SEAN,,,none,none
+742,0x0057B6EB,YOUNG,,,none,none
+743,0x0057B6F2,ROBIN,,,none,none
+744,0x0057B6F9,DARIO,,,none,none
+745,0x0057B700,K,,,none,none
+746,0x0057B707,ARL,,,none,none
+747,0x0057B70E,SARA,,,none,none
+748,0x0057B715,MARIE,,,none,none
+749,0x0057B71C,SAMMY,,,none,none
+750,0x0057B723,LIA,,,none,none
+751,0x0057B72A,KNIGHT,,,none,none
+752,0x0057B731,PAULA,,,none,none
+753,0x0057B738,PAU,,,none,none
+754,0x0057B73F,LE,,,none,none
+755,0x0057B746,PETER,,,none,none
+756,0x0057B74D,AIMEE,,,none,none
+757,0x0057B754,TERRY,,,none,none
+758,0x0057B75B,ANDY,,,none,none
+759,0x0057B762,NANCY,,,none,none
+760,0x0057B769,TIM,,,none,none
+761,0x0057B770,ROBER,,,none,none
+762,0x0057B777,T,0x598E10,T,exact,exact
+763,0x0057B77E,GEORGE,0x59927C,Command,medium,context
+764,0x0057B785,JENNY,0x5992B4,Kälte,medium,context
+765,0x0057B78C,RICA,0x5992CC,Erde,medium,context
+766,0x0057B793,JULIA,0x5992D8,Gift,medium,context
+N/A,N/A,Choco,0x59868C,Choco,exact,manual_naming_screen,Default Chocobo name - found at naming screen after character names

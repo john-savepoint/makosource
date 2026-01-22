@@ -1,0 +1,203 @@
+# Chunk 11: Strings 2200 to 2399
+# Offset range: 0x596163 to 0x59778D
+
+0x596163 |  7U1<
+0x596181 | V1*
+0x596186 |  /
+0x59619B |  7W1
+0x5961B4 | ß ß 5XB 
+0x5961D3 |  5Y(@
+0x5961E0 |  "
+0x5961EF |  7Z1p
+0x59620B |  5[B 
+0x596214 |    `  
+0x596227 |  5\B 
+0x596230 | !     ü
+0x596243 |  7]B 
+0x59624C | !     ü
+0x596255 | E 
+0x596258 |   C ü ü 3
+0x596262 | 18
+0x59627B |  7_B\
+0x596288 | ! 
+0x59628D | L 
+0x596290 |   4 
+0x596297 |  3
+0x59629A | 1J
+0x5962B3 |  7aBf
+0x5962C0 | $ 
+0x5962C5 | C 
+0x5962CF |  3
+0x5962D2 | 1(
+0x5962D6 |  %
+0x5962EB |  3cB 
+0x5962F5 | 8    
+0x5962FD | 9 
+0x596307 |  7
+0x59630A | 1H
+0x596323 |  7eB 
+0x596329 | '8
+0x59632C | !     
+0x596340 | 7m1R
+0x59635C | 7nBÖ
+0x596378 | 6o10
+0x596384 |  `
+0x5969A5 | "S   
+0x5969AD | "]!
+0x5969B1 |  ^ [!
+0x5969B7 |      `!\   \ `!:   q `!
+0x5969CF |  q ? 
+0x5969D5 |  y 
+0x5969E5 | "S   S 
+0x5969EF | !s
+0x5969F7 |  HitÖe
+0x5969FE |       Kälte
+0x596A0A |       Gewitter
+0x596A19 |    Erde
+0x596A21 |        Gift
+0x596A2D |        Schwerkraft
+0x596A40 | Wasser
+0x596A47 |      Wind
+0x596A51 |        Heilig
+0x596A5F |          Tod
+0x596A6C |                 Gefahr
+0x596A83 |              Schlaf
+0x596A97 |              Gift
+0x596AA9 |                Trauer
+0x596ABF |              Zorn
+0x596AD1 |                Psycho
+0x596AE7 |              Schweigen
+0x596AFE |           Hast
+0x596B0D |                Gemach
+0x596B23 |              Stop
+0x596B35 |                Frosch
+0x596B4B |              Zwerg
+0x596B5E |               Allm.Verstein.
+0x596B7B |      Verstein.
+0x596B8A |           Heilung
+0x596B9C |             Barriere
+0x596BB1 |            ZBarr.
+0x596BC3 |              Wasser
+0x596BE5 |                    Schild
+0x596BFF |              Todesurteil
+0x596C18 |         Manipul.
+0x596C29 |            Tobsucht
+0x596C3D |            Unverwundbar
+0x596C55 |        Lähmung
+0x596C64 |             Blind
+0x596C76 |                   Element/Nebenwirkung
+0x596C9D |     ZusatÖwirkung
+0x596CAF |            Angriff
+0x596CC2 |                  Verteidigung
+0x596CE0 |             Halbieren
+0x596CF6 |                Unwirksam
+0x596D0F |                Absorbieren
+0x596D6A |                         Stärke
+0x596D89 |                   Geschick
+0x596DA4 |                 Vitalität
+0x596DBE |                Zauber
+0x596DD4 |                   Gemüt
+0x596DEC |                    Glück
+0x596E05 |                    Angriff
+0x596E20 |                  Angriff %
+0x596E3B |                Verteidigung
+0x596E57 |             Verteidigung %
+0x596E72 |           Zauber
+0x596E83 |                   Zauberabwehr
+0x596EA2 |             Zauberabw. %
+0x596EBB |             Waf.
+0x596ECC |                     Rüs.
+0x596EE5 |                     Acc.
+0x596EFE |                     Limit-Stufe
+0x596F37 | !    `!
+0x596F45 |  `!R w ü 
+0x596F67 |        \     
+0x596F77 |      W \ Waf.
+0x596F85 |                  Rüs.
+0x596F9B |                  Acc.
+0x596FB1 |                  Zub.
+0x596FC7 |                  Stärke
+0x596FDF |                Geschick
+0x596FF7 |              Vitalitä
+0x59700D |              Zauber
+0x597021 |                Moral
+0x597036 |                 Glück
+0x59704C |                 Angriff
+0x597064 |               Angriff %
+0x59707C |             Verteidigung
+0x597095 |          Verteidigung %
+0x5970AD |        Zauber
+0x5970BB |                Zauberabwehr
+0x5970D7 |          Zauberabw. %
+0x5970ED |          Fassung:
+0x5970FF |              Wachstum:
+0x597116 |             Keine
+0x597128 |                 Normal
+0x59713F |                Doppelt
+0x597156 |               Dreifach
+0x59719D | "S   
+0x5971A7 |    !!
+0x5971B5 |  ]!    `!\   \ `!:   r 
+0x5971CD |  X   
+0x5971D9 |  q 
+0x5971DF |  Feuer
+0x5971E6 |       Kälte
+0x5971F2 |       BlitÖ
+0x5971FE |       Erde
+0x597209 |        Gift
+0x597215 |        Schwerkraft
+0x597228 | Wasser
+0x59722F |      Wind
+0x597239 |        Heilig
+0x597247 |          Soll das wirklich entfernt werden?
+0x597273 |  Ja!
+0x597278 |                                 Einen Moment
+0x5972A5 |                        Sephiroth
+0x5972CA |                       Waf.
+0x5972E5 |                        Rüs.
+0x597301 |                        Fähigkeitsliste
+0x597328 |             Rüstungseffekt
+0x597343 |              Prüfen
+0x597357 |                      Ordnen
+0x597373 |                      Gespeicherte Zahl   /24
+0x5973A0 |     AP
+0x5973A7 |                          Auf nächste Ebene
+0x5973D2 |           MASTER
+0x5973E3 |                      Ordnen
+0x5973FF |                      Tauschen
+0x59741D |                    Alles entfernen
+0x597440 |             Wegwerfen
+0x597469 |                            Geschwindigkeit   %H
+0x597499 | HER
+0x59749D |    SchutÖ   %H
+0x5974AC | HER
+0x5974B0 |             Zauberkraft   %H
+0x5974CD | HER
+0x5974D1 |        Glück   %H
+0x5974E3 | HER
+0x5974E7 |              MASTER
+0x5974FB |                      Stärke
+0x597517 |                      Vitalität
+0x597536 |                   Zauber
+0x59754F |                      Zbrvertdg
+0x59756E |                   Geschick
+0x597589 |                    Glück
+0x5975A2 |                       MAXHP
+0x5975BE |                       MAXMP
+0x5975DA |                       MAXHP
+0x5975F6 |                       MAXMP
+0x597612 |                       EXP.UP
+0x59762F |                      Gil UP
+0x59764B |                      Treffen - %
+0x59766C |                 Treffen + %
+0x597688 |                 Chocobo treffen
+0x5976A8 |             Präventivm. + %
+0x5976C4 |             Fernangriff
+0x5976DC |                 Alle angreifen
+0x5976FB |              Gegenangriff
+0x597715 |                Alle angreifen
+0x597733 |              Ständiger Angriff
+0x597752 |           HP/MP-
+0x597763 | nderung
+0x597785 | "S   
+0x59778D | !C!

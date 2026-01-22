@@ -1,0 +1,203 @@
+# Chunk 7: Strings 1400 to 1599
+# Offset range: 0x58FDF7 to 0x59182F
+
+0x58FDF7 | _  ``      ``  
+0x58FE07 | _          
+0x58FE14 |   ``      
+0x58FE23 | `      
+0x58FE2B | _  ``          
+0x58FE3F | `      
+0x58FE47 | _  
+0x58FE4B | `      
+0x58FE53 | _  ``        
+0x58FE77 |  $%
+0x58FE7B |  0%
+0x58FE7F |  <%
+0x58FE83 |  H%
+0x58FE87 |  T%
+0x58FE8B |  `%
+0x58FE8F |  l%
+0x58FE93 |  x%
+0x5900EE |   Fensterfarbe
+0x5900FD |                                          Sound
+0x59012C |                                                 Kontroller
+0x590167 |                                            Cursor
+0x590199 |                                                ATB
+0x5901CC |                                                   Kampftempo
+0x590209 |                                            Kampfmeldung
+0x590241 |                                          Feldmeldung
+0x590276 |                                           Kamerawinkel
+0x5902AD |                                          Auswählen
+0x5902E0 |                                             Abbrechen
+0x590316 |                                             Menü
+0x590347 |                                                  Fenster AUS
+0x590384 |                                           Pause
+0x5903B4 |                                                 Schlachthilfe
+0x5903F2 |                                         Mono
+0x59041F |                                                  Stereo
+0x590457 |                                                Breit
+0x59048C |                                                 Normal
+0x5904C3 |                                                BenutÖerdefiniert
+0x590504 |                                     Anfang
+0x59052F |                                                Speicher
+0x590567 |                                              Aktiv
+0x59059A |                                                 Empfohlen
+0x5905D4 |                                             Warten
+0x590607 |                                                Auto
+0x59063B |                                                  Fest
+0x5906A3 |                                                      Langs.
+0x5906DF |                                                Schn.
+0x590714 |                                                 ROT
+0x590748 |                                                   GR
+0x59077F |                                                  BLAU
+0x5907B5 |                                                  Zauberfolge
+0x5907F2 |                                           Heilung
+0x590824 |                                               Angriff
+0x59085A |                                               Indirekt
+0x590891 |                                              Verboten
+0x5908C7 |                                              Typ
+0x5908F8 |                                                   links2
+0x590931 |                                                rechts2
+0x590968 |                                               links1
+0x59099D |                                                rechts1
+0x5909D4 |                                               Menü
+0x590A07 |                                                  Auswählen
+0x590A42 |                                             Abbrechen
+0x590A78 |                                             EXT
+0x590AA8 |                                                   Hilfe
+0x590AE0 |                                                 Zum Einrichten 
+0x590B20 | START
+0x590B26 |  drücken.
+0x590B30 |                       Zum Beenden Richtungstaste Links oder Rechts drücken.
+0x590B7C | Pause
+0x590BC9 |        Ton- und Musikeinstellung
+0x590BEA |                    Nicht unterstütÖt
+0x590C35 | "S   S 
+0x590C3F | !    `!:   : `!
+0x590C4F |   !" "!!" ! "" !"!   
+0x590C68 | ObÄekt
+0x590C6F |              Zauber
+0x590C83 |              Materia
+0x590C98 |             Ausrüsten
+0x590CAE |           Werte
+0x590CBE |               Reihe
+0x590CD2 |               Limit
+0x590CE6 |               Konfig
+0x590CFB |              PHS
+0x590D0C |                 Speichern
+0x590D26 |           Verlassen
+0x590D3A |           Anfänger
+0x590D4D |            Verwendung
+0x590D63 |          Verwendung
+0x590D77 |          Zeit
+0x590D85 |                Gil
+0x590D98 |                 Nächst. Lv
+0x590DB3 |          Limit-Stufe
+0x590DC8 |         Anleitung
+0x590DDA |           Unter
+0x590DEA |               LV+1
+0x590DFD |                Zorn
+0x590E11 |                Traurigk.
+0x590E2A |           !         n`=>ABCeKD@FGHtJfg<$_uva)?snPRSVXY[\]p/0%U^MZoh!"#y*+2,-.345671:8(W9&';`klmxEILNOQTbcdiÄqrwÖ{     !"#$%&'()*+ 0   
+0x590EBC |  `
+0x590ED0 | !       
+0x590EDC | p 
+0x590EE4 | @ 
+0x590EE8 | <m
+0x590EEB |  b!ö 
+0x590EFB |  p
+0x590F1F |  b!ö 
+0x590F27 |  b!ö b!ö b!ö b!ö b!ö     
+0x590F43 |  u#ö Ä
+0x590F4B |  o
+0x590F5B |  :
+0x590F73 |  u#ö u#ö 
+0x590F7F |  u#ö u#ö u#ö u#ö u#ö     )%($*     "" !"""##$$   
+0x590FB2 |   0.  x"  \   *   !   "   
+0x590FF5 | !  cy
+0x590FFB |          !   "   $   %   &   '   (   t   start@of@menu@systemAAA*    end@of@menu@systemAAA*  Mit [ABBRECHEN] beenden.
+0x591071 |                                    Drücken Sie auf [O.K.] um die
+0x5910B2 |                               Tastenbelegung Öu konfigurieren.
+0x5910F1 |                            Bitte neue Taste drücken
+0x591126 |                                   [O.K.]
+0x59114F |                                                      [ABBRECHEN]
+0x591190 |                                                 [MEN
+0x5911C7 |                                                      [UMSCHALTEN]
+0x591209 |                                                [BILD HOCH]
+0x591244 |                                                 [BILD HERUNTER]
+0x591284 |                                             [KAMERA]
+0x5912B9 |                                                    [ZIEL]
+0x5912F3 |                                                      [HILFE]
+0x591330 |                                                     [START]
+0x59136C |                                                     [HERAUF]
+0x5913A9 |                                                    [UNTEN]
+0x5913E4 |                                                     [LINKS]
+0x591420 |                                                     [RECHT]
+0x59145C |                                                     TASTATUR
+0x591499 |                                                    JOYSTICK
+0x59157B |  $A
+0x59157F |  0A
+0x591583 |  4A
+0x591587 |  8A
+0x59158B |  <A
+0x59158F |  @A
+0x591593 |  DA
+0x591597 |  HA
+0x59159B |  LA
+0x59159F |  PA
+0x5915A3 |  TA
+0x5915A7 |  XA
+0x5915AB |  \A
+0x5915AF |  `A
+0x5915B3 |  pA
+0x5915B7 |  tA
+0x5915BB |  xA
+0x5915BF |  |A
+0x59162F |  $B
+0x591633 |  ,B
+0x591637 |  4B
+0x59163B |  <B
+0x59163F |  DB
+0x591643 |  LB
+0x591647 |  TB
+0x59164B |  \B
+0x59164F |  dB
+0x591653 |  lB
+0x591657 |  xB
+0x5916B7 |  $C
+0x5916BB |  ,C
+0x5916BF |  4C
+0x5916C3 |  <C
+0x5916C7 |  DC
+0x5916CB |  LC
+0x5916CF |  TC
+0x5916D3 |  \C
+0x5916D7 |  dC
+0x5916DB |  lC
+0x5916DF |  tC
+0x5916E3 |  |C
+0x591737 |  $D
+0x59173B |  ,D
+0x59173F |  <D
+0x591743 |  DD
+0x591747 |  LD
+0x59174B |  XD
+0x59174F |  \D
+0x591753 |  dD
+0x591757 |  pD
+0x59175B |  xD
+0x5917AB |   E
+0x5917AF |  (E
+0x5917B3 |  0E
+0x5917B7 |  8E
+0x5917BB |  @E
+0x5917BF |  HE
+0x5917C3 |  PE
+0x5917C7 |  XE
+0x5917CB |  `E
+0x5917CF |  hE
+0x5917D3 |  pE
+0x5917D7 |  |E
+0x591827 |   F
+0x59182B |  (F
+0x59182F |  0F

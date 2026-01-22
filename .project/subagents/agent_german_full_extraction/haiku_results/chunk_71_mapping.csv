@@ -1,0 +1,11 @@
+```
+index,de_offset,de_text,en_text
+```
+
+**Result**: The chunk 71 data contains no readable German menu text. All entries consist of binary/corrupted encoding patterns that cannot be mapped to English menu items. This chunk appears to be either:
+
+1. Improperly extracted binary data
+2. Encoded in a format different from the extraction script's expectations
+3. Non-menu content (code/data sections rather than strings)
+
+No valid mappings can be generated for chunk 71 based on the provided data.

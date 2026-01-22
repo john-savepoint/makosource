@@ -1,0 +1,20 @@
+The German strings in chunk 017 appear to use an encoding that makes them unreadable. Without access to the full German string database with proper decoding, I cannot reliably map these corrupted strings. However, I can see from chunk 017 that the actual offsets and pattern structure exist.
+
+Let me analyze what we have:
+- The English reference contains 767 strings (indices 0-766)
+- Chunk 017 contains German strings with addresses starting at 0x5CAE87
+- The strings are encoded/corrupted
+
+The fundamental issue is that the German strings in the chunk file are not in readable form - they contain special characters and encoding artifacts that prevent me from performing accurate mappings.
+
+Without access to:
+1. A decoded version of the German strings that match these offsets, OR
+2. The decoding algorithm/character map used to encode them, OR  
+3. A pre-computed mapping file
+
+I cannot produce accurate CSV output for chunk 017.
+
+Would you like me to:
+1. Check if there's a decoding function or mapping file elsewhere in the project
+2. Analyze the pattern in the existing results files to understand the expected output format
+3. Focus on chunks that have successfully completed results files

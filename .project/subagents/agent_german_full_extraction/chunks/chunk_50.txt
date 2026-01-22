@@ -1,0 +1,203 @@
+# Chunk 50: Strings 10000 to 10199
+# Offset range: 0x5CB6B4 to 0x5CC20A
+
+0x5CB6B4 | dD4
+0x5CB6B8 | |D8
+0x5CB6C0 | ~$
+0x5CB6C3 | dD,
+0x5CB6C7 | |D0
+0x5CB6D0 | dD,
+0x5CB6D4 | |D0
+0x5CB6D8 | lD4
+0x5CB6DC | tD8S
+0x5CB6E6 | ~$
+0x5CB6EB | w$
+0x5CB6EE | dD4
+0x5CB6F2 | |D8
+0x5CB702 | DX
+0x5CB70C | ~$
+0x5CB70F | dD,
+0x5CB713 | |D0
+0x5CB71C | dD,
+0x5CB720 | |D0
+0x5CB724 | lD4
+0x5CB728 | tD8S
+0x5CB732 | ~$
+0x5CB738 | w&
+0x5CB741 | w$
+0x5CB74B | o"
+0x5CB758 | lD`
+0x5CB761 | y$Ü~{}
+0x5CB76A | D    
+0x5CB771 | D    
+0x5CB778 | D    
+0x5CB77E | i     K   H   B   >   ;   8   2   
+0x5CB7A2 | D    
+0x5CB7A9 | D    
+0x5CB7B0 | D    
+0x5CB7B7 | D    
+0x5CB7BE | D usvw
+0x5CB7C6 | D<
+0x5CB7C9 | |DL
+0x5CB7D0 | $wvwv
+0x5CB7D9 | DD
+0x5CB7DD | DH
+0x5CB7E0 | lD`
+0x5CB7E4 | dDXp
+0x5CB7E9 | dDXp
+0x5CB7EE | dDXps
+0x5CB7F5 |  /
+0x5CB800 | dD0
+0x5CB804 | |D4
+0x5CB80C | v$S
+0x5CB813 | dD0
+0x5CB817 | |D4
+0x5CB820 | dD0
+0x5CB824 | |D4
+0x5CB82A | Ü$
+0x5CB839 | D\
+0x5CB83D | '/
+0x5CB845 |     Ö
+0x5CB84C | W!  
+0x5CB865 | v$
+0x5CB875 | .S
+0x5CB87B | dD0
+0x5CB87F | |D4
+0x5CB888 | dD0
+0x5CB88C | |D4
+0x5CB892 | Ü$
+0x5CB89D | dD8
+0x5CB8A1 | |D<
+0x5CB8A9 | ~$
+0x5CB8AC | dD0
+0x5CB8B0 | |D4
+0x5CB8B9 | dD0
+0x5CB8BD | |D4
+0x5CB8C1 | lD8
+0x5CB8C5 | tD<S
+0x5CB8CF | ~$
+0x5CB8D4 | w$
+0x5CB8D7 | dD8
+0x5CB8DB | |D<
+0x5CB8EB | D\
+0x5CB8F5 | ~$
+0x5CB8F8 | dD0
+0x5CB8FC | |D4
+0x5CB905 | dD0
+0x5CB909 | |D4
+0x5CB90D | lD8
+0x5CB911 | tD<S
+0x5CB91B | ~$
+0x5CB921 | w&
+0x5CB92A | w$
+0x5CB934 | o"
+0x5CB941 | lDl
+0x5CB94A | y$Ü~{}
+0x5CB953 | D    
+0x5CB95A | D    
+0x5CB961 | D    
+0x5CB968 | D    
+0x5CB96F | D    
+0x5CB976 | D    %        K   H   B   >   ;   8   2   
+0x5CB9A2 | D    
+0x5CB9A9 | D    
+0x5CB9B0 | D    
+0x5CB9B7 | D    
+0x5CB9BE | D  (("  ( "  ""(("   ""(( " ( "  ""((  (("  (""(  "( "   "    " (   ( "    ( " (( "(("  (""(   ( ""    (   (( " (" (  "( "" ("        "((" ( "" (  (("  ( "(   ( "" (" (   (( "  ""(( "   "  "  (""((" ((   (""( "   ""(  " (       (    ""( " ((""   " (" (  "(( 0
+0x5CBAC2 | 0`     
+0x5CBACA | 0   0`0  `0
+0x5CBADA |  ` 
+0x5CBADE | 0  
+0x5CBAE2 |   0 0`0    
+0x5CBAEE |  `0 0  
+0x5CBAF6 | 0`  0`0     0 0
+0x5CBB06 |  `0 0` 
+0x5CBB0E |   0
+0x5CBB12 | 0    `    0 0 0
+0x5CBB22 |  `0
+0x5CBB26 | 0  
+0x5CBB2A | 0`0  `   `  0 0
+0x5CBB3A |   0
+0x5CBB3E | 0`0 0  
+0x5CBB46 | 0` 
+0x5CBB4A |  `0
+0x5CBB4E | 0 0
+0x5CBB52 | 0`0 0 0  `       `0
+0x5CBB66 |     0 0 0` 
+0x5CBB72 |      `0
+0x5CBB7A | 0 0
+0x5CBB7E |  ` 
+0x5CBB82 | 0` 
+0x5CBB86 |       0  `0   0
+0x5CBB96 | 0` 
+0x5CBB9A | 0   0`0 0`  0 0
+0x5CBBAE |  `0
+0x5CBBB2 |  `0     0` 
+0x5CBBBE | 0 !  $ !$$ !  !! $! $    $!! $ !$  ! $  $   $$!   !!$$!!  !   ! $$    ! $  !$$ !  !!  !!$$  $ !  $! $$ ! $!!$   $$ !$        $!!$  !$$ !  !     $ !!  ! $   $$!! $     !$$ !$ ! $$! $    $!!$$!   !!$ !  $   $!!$$  $  ! $!! $ !$  ! $    ! $$!!  !  $!!$  !    $$(0`  0 0(   (0`0      `0(0 0( `  0`0(  0   0(0  (  0(0`   `    0( `0 0`  0  (    0` (0 0  `0 0  (0      ( `  0`0 0 0( `0(0`0  ` ( `0(0    ` (  0 0`  0 0(     `0(0 0     0  ( `     ( `0 0`0 0     0(0`0(0`   ` (0`0(    0 0(0` ( `  0`   `0(0 0(0     0(  0 0`0   (  !  $  @$!(@ !( $ (@$!   !(  ! @   @  ( $! @$ (@ !( $!(     $!    (@ ! @$   $ (@$!     @  (@   @$ (@$!(@ !   !( $  @$   $!( $!(@$ (@ !   !(  ! @   @  ( $ (   ( $! @$!(    @$!    ( $  @ ! @$ ( $      @$!(@ !( $!(@$    !  $! @ !( $ (@$  @   @$!   !(@  (`  
+0x5CBEC4 | ` @      @@
+0x5CBED0 | ` @  @  `@ 
+0x5CBEDC |   @ `@  `@@
+0x5CBEE8 |  @@    
+0x5CBEF0 |  @ 
+0x5CBEF4 | `  
+0x5CBEF8 |   @
+0x5CBEFC | `@@   @ `@ 
+0x5CBF08 | ` @
+0x5CBF0C |      @  `    @@
+0x5CBF1C | ` @
+0x5CBF20 | `@@
+0x5CBF24 |   @
+0x5CBF2C | `@  `    @@ `@@  @ 
+0x5CBF40 | `@     
+0x5CBF48 |  @ 
+0x5CBF4C | `@@  @@
+0x5CBF54 | ` @      @ 
+0x5CBF64 |  @  ` @
+0x5CBF6C |   @ ` @ `@@
+0x5CBF78 |  @@ `   `@@
+0x5CBF84 |  @@   @ `@ 
+0x5CBF90 | `  
+0x5CBF94 |   @
+0x5CBF98 | `@@      @  `  
+0x5CBFA8 | `@ 
+0x5CBFAC |  @@
+0x5CBFB0 |   @
+0x5CBFB4 | `@  `   ` @
+0x5CBFC0 |  `   "   " !$  !$b !$`   b         !$" !$"   ` !$    b ! ` !$"  $" ! `  $`  $b !     " !$  ! b  $` !$b   b !$   $b  $` ! "     !$b   ` !$` !$"   `   "     !$` !$" !$b   b       "  $  !$    " !    $" ! " ! b  $"   `  $b !   ! b !$   $`  $b !$  ! b ! ` !$`  
+0x5CC0C3 | @  
+0x5CC0C9 |  "       "@
+0x5CC0E1 |       @  
+0x5CC0ED |  " 
+0x5CC0F5 |  "@
+0x5CC0F9 |   @  
+0x5CC0FF | @  " 
+0x5CC10B |    "@
+0x5CC115 |   @      
+0x5CC11F |     @  
+0x5CC129 |  "@
+0x5CC12F | @  
+0x5CC133 |    "   
+0x5CC143 |    " 
+0x5CC149 |   @
+0x5CC151 |  "    @      
+0x5CC165 |  "@  "@
+0x5CC17B |    "@
+0x5CC183 | @  
+0x5CC18D |   @  
+0x5CC195 |  " 
+0x5CC199 |  "@  
+0x5CC1AB |         @
+0x5CC1B7 | @  " 
+0x5CC1C6 | )   
+0x5CC1CB | &Z
+0x5CC1D4 | $Dh   
+0x5CC1DB | TDv
+0x5CC1E0 | D$
+0x5CC1E3 | LDf   
+0x5CC1EA | TDv
+0x5CC1EF | D$
+0x5CC1F2 | LD
+0x5CC1FB | LD
+0x5CC200 | dD$
+0x5CC204 | $ 
+0x5CC20A | < 

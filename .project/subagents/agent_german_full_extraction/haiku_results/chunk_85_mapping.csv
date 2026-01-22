@@ -1,0 +1,31 @@
+**Problem Summary:**
+
+The German strings provided (0x5D7378-0x5D78F8) are **not readable menu text**. They appear to be:
+- Assembly instruction patterns (like `dD$`, `lD4`, `|D,`)
+- Binary/code section data (not string data)
+- Possibly from the wrong memory region
+
+**What's needed to create the mapping:**
+
+1. Extract German menu text using FF7 decoding (byte + 0x20, with special umlauts)
+2. Match decoded German text to English touphScript indices (0-99 appear to be the core menu items)
+
+**Key English indices from your reference:**
+- [038] Item
+- [039] Magic
+- [040] Materia
+- [041] Equip
+- [042] Status
+- [043] Order
+- [044] Limit
+- [045] Config
+- [046] PHS
+- [047] Save
+- [048] Quit
+
+Can you provide either:
+- **The actual decoded German menu text** (as readable strings)
+- **Confirmation of the correct memory region** where German strings are stored in ff7_de.exe
+- **Output from the extraction script** that shows actual German menu text
+
+Without properly decoded German strings, I cannot create an accurate CSV mapping.

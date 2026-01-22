@@ -1,0 +1,203 @@
+# Chunk 45: Strings 9000 to 9199
+# Offset range: 0x5C77AC to 0x5C84DB
+
+0x5C77AC | K KK ???
+0x5C77C0 |  ^^^
+0x5C77C8 |  PPP
+0x5C77D4 | T TT ÜÜÜ
+0x5C77E0 |  ~~~
+0x5C77F0 |  +++
+0x5C77F8 |  :::$ $$ 
+0x5C7804 | 4 44 
+0x5C780C | Z ZZ YYY
+0x5C781C | 1 11 
+0x5C7824 | R RR ggg
+0x5C7830 |  }}}s ss ]]]
+0x5C7848 |  !!!
+0x5C7850 |  ÖÖÖ
+0x5C785C | ö öö qqqD DD vvv
+0x5C7878 |  mmm
+0x5C7888 |  ---
+0x5C78A4 | t tt 
+0x5C78AC | > >> 
+0x5C78B8 |  MMM
+0x5C78C4 | 0 00 222     KKK
+0x5C78D8 |  @@@
+0x5C78F4 | ) )) 
+0x5C7908 |  lll
+0x5C7920 |  TTT
+0x5C7928 |  ßßß
+0x5C7938 |  %%%
+0x5C7944 | r rr 
+0x5C7958 |  QQQ
+0x5C7968 |  777
+0x5C7970 |  $$$3 33 
+0x5C7980 |  444
+0x5C7988 |  xxx
+0x5C7990 |  ZZZ
+0x5C79A4 | I II ;;;
+0x5C79B0 |  111O OO <<<
+0x5C79C0 |  RRR
+0x5C79C8 |  ///& && 
+0x5C79D8 |  666
+0x5C79E0 |  sss
+0x5C79E8 |  888
+0x5C79F8 |  BBB
+0x5C7A08 |  ddd
+0x5C7A24 | V VV 
+0x5C7A2C | J JJ ööö\ \\ 
+0x5C7A40 |  DDD` `` (((
+0x5C7A5C | c cc 
+0x5C7A64 | 5 55 
+0x5C7A78 |  ppp
+0x5C7A94 | G GG 
+0x5C7AAC | U UU 
+0x5C7AB4 | , ,, 
+0x5C7ABC | a aa ttt
+0x5C7AC8 |  {{{
+0x5C7AD0 |  >>>9 99 
+0x5C7ADC | A AA 
+0x5C7AE4 | . .. 
+0x5C7AEC | n nn 
+0x5C7B00 |  000
+0x5C7B18 |  hhh
+0x5C7B24 | P PP 
+0x5C7B2C | Ü ÜÜ 
+0x5C7B3C | : :: 
+0x5C7B48 |  ###
+0x5C7B54 | g gg 
+0x5C7B5C | ] ]] )))! !! ___
+0x5C7B74 | v vv 
+0x5C7B7C | m mm 
+0x5C7B84 | - -- |||
+0x5C7B98 |  """M MM 
+0x5C7BA4 | 2 22 ÄÄÄ@ @@ 
+0x5C7BB8 |  SSS
+0x5C7BC4 | l ll 
+0x5C7BD4 | ß ßß 
+0x5C7BDC | % %% 
+0x5C7BE8 |  üüüQ QQ 
+0x5C7BF4 | 7 77 
+0x5C7C00 |  rrrx xx 
+0x5C7C14 | ; ;; FFF< << 
+0x5C7C24 | / // WWW6 66 
+0x5C7C34 | 8 88 [[[B BB 
+0x5C7C44 | d dd 
+0x5C7C58 |  kkk
+0x5C7C60 |  333( (( 
+0x5C7C78 |  NNNp pp 
+0x5C7CA4 | { {{ 
+0x5C7CC0 |  III
+0x5C7CCC | h hh 
+0x5C7CE0 |  OOO# ## 
+0x5C7CF4 | _ __ yyy
+0x5C7D04 | | || 
+0x5C7D0C | " "" &&&Ä ÄÄ äääS SS 
+0x5C7D28 |  fff
+0x5C7D34 | ü üü 
+0x5C7D48 |  EEEF FF 
+0x5C7D54 | W WW bbb[ [[ 
+0x5C7D6C | k kk 
+0x5C7D7C | N NN 
+0x5C7D88 |  '''
+0x5C7D98 |  uuu
+0x5C7DB8 |  ***y yy VVV
+0x5C7DC8 |  iiiä ää JJJf ff 
+0x5C7DE0 |  \\\E EE XXXb bb 
+0x5C7E00 |  ```' '' HHHu uu 
+0x5C7E1C | * ** 
+0x5C7E24 | i ii 
+0x5C7E30 |  cccX XX 
+0x5C7E40 |  555H HH 
+0x5C7E83 |  XX X%%% aa axxx 66 6
+0x5C7EA8 | nnn 
+0x5C7EC8 | +++ 
+0x5C7ED8 | äää 
+0x5C7EE8 | 888 && &}}} ww w
+0x5C7F00 | fff 
+0x5C7F18 | GGG 
+0x5C7F28 | RRR 
+0x5C7F30 | kkk 
+0x5C7F38 | bbb 
+0x5C7F48 | <<< '' '
+0x5C7F5B |  GG GZZZ 
+0x5C7F70 | EEE ii i
+0x5C7F80 | --- cc c
+0x5C7F8B |  || |ÜÜÜ 
+0x5C7F98 | ??? 
+0x5C7FA3 |  ^^ ^
+0x5C7FB0 | ^^^ 
+0x5C7FC3 |  ?? ?
+0x5C7FCB |  88 8
+0x5C7FE3 |  OO O
+0x5C7FF0 | 666 
+0x5C7FF8 | TTT -- -mmm ss s
+0x5C8038 | ööö 
+0x5C8048 | """ 
+0x5C8053 |  MM M
+0x5C806B |  KK K
+0x5C8073 |  VV V
+0x5C8080 | 777 
+0x5C8088 | ::: 
+0x5C8090 | UUU mm m
+0x5C809B |  SS S
+0x5C80B3 |  xx xÖÖÖ 
+0x5C80C3 |  ZZ ZDDD )) )vvv 
+0x5C80D8 | ``` 00 0
+0x5C80F0 | ))) bb bSSS 
+0x5C810B |  FF F
+0x5C8123 |  :: :
+0x5C812B |  __ _
+0x5C8133 |  [[ [*** 
+0x5C8150 | sss 
+0x5C8168 | NNN 
+0x5C8170 | ((( "" "
+0x5C8180 | HHH ** *
+0x5C818B |  LL L
+0x5C8193 |  == =
+0x5C81A8 | VVV 
+0x5C81B0 | BBB 
+0x5C81B8 | XXX .. .
+0x5C81C3 |  99 9>>> 
+0x5C81D0 | YYY nn nLLL ++ +
+0x5C81E8 | PPP ,, ,
+0x5C81F8 | ddd 11 1
+0x5C8203 |  üü ü
+0x5C820B |  BB B
+0x5C821B |  yy y
+0x5C8233 |  ]] ]CCC 
+0x5C8240 | hhh 22 2000 $$ $
+0x5C8258 | qqq tt t
+0x5C8263 |  PP P
+0x5C826B |  ßß ß
+0x5C827B |  HH Huuu uu u
+0x5C8290 | aaa pp p
+0x5C82A0 | ccc 
+0x5C82A8 | 333 
+0x5C82B3 |  QQ QOOO 
+0x5C82C3 |  JJ J
+0x5C82D0 | \\\ // /KKK 
+0x5C82F3 |  RR R
+0x5C8300 | @@@ (( (
+0x5C831B |  DD Dggg 
+0x5C8340 | 555 ee e&&& 
+0x5C8360 | 222 
+0x5C8368 | ßßß 
+0x5C8378 | III ÄÄ Ä/// 
+0x5C838B |  NN N''' 
+0x5C8398 | $$$ !! !
+0x5C83AB |  EE EAAA hh h
+0x5C83E0 | [[[ 
+0x5C83F0 | üüü 
+0x5C8403 |  II IWWW 
+0x5C8418 | lll 33 3
+0x5C8440 | ### 
+0x5C8448 | MMM kk k
+0x5C8460 | FFF 
+0x5C846B |  ÜÜ Ü
+0x5C8478 | ||| 77 7
+0x5C8490 | ooo 
+0x5C8498 | 999 ff f___ 
+0x5C84AB |  WW W
+0x5C84B3 |  ~~ ~=== gg grrr 
+0x5C84DB |  {{ {~~~ 

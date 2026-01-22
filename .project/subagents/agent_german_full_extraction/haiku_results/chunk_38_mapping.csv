@@ -1,0 +1,15 @@
+```csv
+# Unable to generate mapping - German strings are corrupted or improperly encoded
+# The provided German hex data does not decode to readable text
+# Required: Properly decoded German menu strings from ff7_de.exe
+# Suggestion: Re-extract German strings using correct encoding (likely Shift-JIS or CP1252)
+```
+
+**Issue:** The German strings in the provided data don't decode to readable text. They appear as fragments like "DHS", "STDS", "D4" which are not menu items. 
+
+To complete this task, I need:
+1. Properly decoded German strings from ff7_de.exe
+2. Confirmation of the correct text encoding used in the German executable
+3. A clear mapping between the hex offsets and the actual German menu text
+
+Can you provide the German strings with proper decoding, or confirm the encoding method used for extraction?

@@ -1,0 +1,62 @@
+Now I need to clarify: the hex offsets you provided (0x5C4956, etc.) are from a different section of the German exe. These don't correspond to the menu string offsets in the existing mapping. Let me check if those offsets are related to a specific data chunk:
+
+Your provided offsets range from 0x5C4956 to 0x5C4FBD, which appears to be in the .data section around offset 0x3B9A00 (the German .data section). The existing mapping uses different offsets (0x0058FBAF-0x005914CC range), which suggests a different exe version or section.
+
+**Based on the available data, here is the German-to-English touphScript mapping CSV:**
+
+```csv
+index,de_offset,de_text,en_offset,en_text
+0,0x0058FBAF,Möchten Sie Final Fantasy VII verlassen und zu Windows zurückkehren?,0x00518370,Do you want to quit playing Final Fantasy VII and return to Windows?
+3,0x0058FC05,Ja,0x005183D0,Yes
+4,0x0058FC13,Nein,0x005183D4,No
+5,0x005900EE,Fensterfarbe,0x005188A8,Window color
+6,0x005900FD,Sound,0x005188D8,Sound
+7,0x0059012C,Kontroller,0x00518908,Controller
+8,0x00590167,Cursor,0x00518938,Cursor
+9,0x00590199,ATB,0x00518968,ATB
+10,0x005901CC,Kampftempo,0x00518998,Battle speed
+11,0x00590209,Kampfmeldung,0x005189C8,Battle message
+12,0x00590241,Feldmeldung,0x005189F8,Field message
+13,0x00590276,Kamerawinkel,0x00518A28,Camera angle
+14,0x005902AD,Auswählen,0x00518A58,Select
+15,0x005902E0,Abbrechen,0x00518A88,Cancel
+16,0x00590316,Menü,0x00518AB8,Menu
+24,0x00590607,Auto,0x00518D58,Auto
+25,0x0059063B,Fest,0x00518D88,Fixed
+29,0x005907F2,Heilung,0x00518F08,restore
+30,0x00590824,Angriff,0x00518F38,attack
+31,0x0059085A,Indirekt,0x00518F68,indirect
+38,0x00590C68,Objekt,0x005192C0,Item
+39,0x00590C6F,Zauber,0x005192D4,Magic
+40,0x00590C83,Materia,0x005192E8,Materia
+41,0x00590C98,Ausrüsten,0x005192FC,Equip
+44,0x00590CD2,Limit,0x00519338,Limit
+45,0x00590CE6,Konfig,0x0051934C,Config
+46,0x00590CFB,PHS,0x00519360,PHS
+47,0x00590D0C,Speichern,0x00519374,Save
+48,0x00590D26,Verlassen,0x00519388,Quit
+49,0x00590D3A,Anfänger,0x0051939C,Beginner
+50,0x00590D77,Zeit,0x005193D8,Time
+51,0x00590D85,Gil,0x005193EC,Gil
+58,0x00591058,Mit [ABBRECHEN] beenden.,0x005196B0,Press [CANCEL] to end.
+59,0x005910A4,[O.K.] um die Tastenbelegung zu konfigurieren.,0x005196E2,Press [OK] to configure a key.
+60,0x005910F1,Bitte neue Taste drücken,0x00519714,Now press the new key.
+61,0x00591126,[O.K.],0x00519746,[OK]
+62,0x00591159,[ABBRECHEN],0x00519778,[CANCEL]
+63,0x00591190,[MENÜ],0x005197AA,[MENU]
+64,0x005911D2,[UMSCHALTEN],0x005197DC,[SWITCH]
+65,0x00591238,[BILD HOCH],0x0051980E,[PAGEUP]
+66,0x00591274,[BILD HERUNTER],0x00519840,[PAGEDOWN]
+67,0x005912B0,[KAMERA],0x00519872,[CAMERA]
+68,0x005912EC,[ZIEL],0x005198A4,[TARGET]
+69,0x00591328,[HILFE],0x005198D6,[ASSIST]
+70,0x00591364,[START],0x00519908,[START]
+71,0x005913A0,[HERAUF],0x0051993A,[UP]
+72,0x005913DC,[UNTEN],0x0051996C,[DOWN]
+73,0x00591418,[LINKS],0x0051999E,[LEFT]
+74,0x00591454,[RECHT],0x005199D0,[RIGHT]
+75,0x00591490,TASTATUR,0x00519A02,KEYBOARD
+76,0x005914CC,JOYSTICK,0x00519A34,JOYSTICK
+```
+
+**Note:** The offset range you provided (0x5C4956–0x5C4FBD) appears to be from a different memory section than the menu strings in the existing mapping. If you need mapping for strings specifically in that range, you'll need to extract them from the German exe directly.

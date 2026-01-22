@@ -1,0 +1,16 @@
+**The data you provided cannot be properly mapped.** Here's why:
+
+The hex offsets you gave (0x5CB6B4, 0x5CB6B8, etc.) point to what appears to be **assembly instructions or memory sections, not text strings**. The "decoded" values like "dD4", "|D8", "~$" are not German words - they're corrupted characters.
+
+**To proceed, you need to provide either:**
+
+1. **Actual German menu text** - e.g., "Gegenstand" (Item), "Magie" (Magic), "Rüstung" (Equip)
+2. **A properly extracted German string dump** with readable text
+3. **The offset of actual strings** (the ones you gave point to binary/assembly, not strings)
+
+Would you like me to:
+- Help you extract German strings properly from an exe file you have?
+- Work with QHIMM forum data that might have German translations?
+- Use a different approach to find German→English mappings?
+
+Please clarify what data source you're actually working with.

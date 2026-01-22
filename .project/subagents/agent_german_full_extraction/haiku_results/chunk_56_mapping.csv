@@ -1,0 +1,25 @@
+Without proper hex data for the German strings, I cannot reliably create the mapping. The current German data shows corrupted or partial representations.
+
+However, I can provide you with a **template CSV** for the known menu strings that would typically appear in both English and German versions:
+
+```csv
+index,de_offset,de_text,en_text
+38,0x5CDC61,Gegenstand,Item
+39,0x5CDC69,Magie,Magic
+40,0x5CDC6D,Materia,Materia
+41,0x5CDC71,Ausrüstung,Equip
+42,0x5CDC75,Status,Status
+43,0x5CDC7A,Reihenfolge,Order
+44,0x5CDC7E,Limit,Limit
+45,0x5CDC86,Konfiguration,Config
+46,0x5CDC8E,PHS,PHS
+47,0x5CDC92,Speichern,Save
+48,0x5CDC9B,Beenden,Quit
+```
+
+To proceed accurately, I need either:
+1. The actual hex bytes from ff7_de.exe at those offsets
+2. A properly decoded German string dump file
+3. The complete German string table in readable format
+
+Would you like to provide the German strings in a clearer format, or would you like me to create a script to extract them directly from the ff7_de.exe file?

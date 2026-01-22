@@ -2,6 +2,29 @@
 # Copy relevant sections to your actual FFNx.toml
 
 ###############################################################################
+# DISPLAY SETTINGS
+###############################################################################
+
+# Fullscreen mode (false = windowed)
+fullscreen = false
+
+# Borderless window mode
+borderless = false
+
+# Window resolution (1920x1080)
+window_size_x = 1920
+window_size_y = 1080
+
+# Internal rendering scale (0 = auto-detect best fit)
+internal_resolution_scale = 0
+
+# Aspect ratio (0 = preserve 4:3 with black bars, 2 = 16:9 widescreen)
+aspect_ratio = 0
+
+# VSync
+enable_vsync = true
+
+###############################################################################
 # CRITICAL: Japanese Text Support
 ###############################################################################
 

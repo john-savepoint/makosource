@@ -1,0 +1,1008 @@
+# Japanese Menu Text Patch for FF7 English
+# Replaces English menu text with Japanese equivalents
+# Created: 2025-12-04
+# Uses actual text from Japanese FF7 executable
+#
+# Virtual addresses calculated from file offsets:
+# VA = (FileOffset - 0x3B8A00) + 0x3BA000 + 0x400000
+
+# ============================================================
+# MAIN MENU (Triangle menu)
+# ============================================================
+
+# ITEM (アイテム) - 5 bytes
+# File offset 0x5192c0 -> VA 0x91A8C0
+91A8C0 = 6A 6C 64 80 FF
+
+# MAGIC (まほう) - 4 bytes, original 6
+# File offset 0x5192d4 -> VA 0x91A8D4
+91A8D4 = 7D 49 69 FF 00 00
+
+# MATERIA (マテリア) - 5 bytes, original 8
+# File offset 0x5192e8 -> VA 0x91A8E8
+91A8E8 = 7C 64 88 6A FF 00 00 00
+
+# EQUIP (そうび) - 4 bytes, original 6
+# File offset 0x5192fc -> VA 0x91A8FC
+91A8FC = 5D 69 03 FF 00 00
+
+# STATUS (ステータス) - 6 bytes, original 7
+# File offset 0x519310 -> VA 0x91A910
+91A910 = 58 64 D0 5E 58 FF 00
+
+# ORDER (たいれつ) - 5 bytes, original 6 - CORRECTED from actual Japanese
+# File offset 0x519324 -> VA 0x91A924
+91A924 = 5F 6D 8D 63 FF 00
+
+# LIMIT (リミット) - 5 bytes, original 6
+# File offset 0x519338 -> VA 0x91A938
+91A938 = 88 7E 9C 66 FF 00
+
+# CONFIG (コンフィグ) - 6 bytes, original 7
+# File offset 0x51934c -> VA 0x91A94C
+91A94C = 52 98 44 A6 0E FF 00
+
+# PHS (ＰＨＳ) - 4 bytes
+# File offset 0x519360 -> VA 0x91A960
+91A960 = C3 BB C6 FF
+
+# SAVE (セーブ) - 4 bytes, original 5
+# File offset 0x519374 -> VA 0x91A974
+91A974 = 5A D0 04 FF 00
+
+# QUIT (しゅうりょう) - 7 bytes, original 5 - CORRECTED from actual Japanese
+# File offset 0x519388 -> VA 0x91A988
+91A988 = 57 A1 69 89 A3 69 FF
+
+# ============================================================
+# MAIN MENU - Additional Labels
+# Added: 2025-12-05
+# ============================================================
+
+# TIME (じかん) - 4 bytes, original 5
+# From JA exe 0x519FD8: 17 4B 99 FF
+# File offset 0x5193D8 -> VA 0x91A9D8 (CORRECTED from 0x91A9D0)
+91A9D8 = 17 4B 99 FF 00
+
+# GIL (ギル) - 3 bytes, original 4
+# From JA exe 0x519FEC: 0C 8A FF
+# File offset 0x5193EC -> VA 0x91A9EC (CORRECTED from 0x91A9E0)
+91A9EC = 0C 8A FF 00
+
+# NEXT LEVEL (つぎのレベルまであと) - 11 bytes, original 11
+# From JA exe 0x51A000: 63 0D 7B 8C 06 8A 7D 25 6B 67 FF
+# File offset 0x519400 -> VA 0x91AA00
+91AA00 = 63 0D 7B 8C 06 8A 7D 25 6B 67 FF
+
+# LIMIT LEVEL (リミットレベル) - 8 bytes, original 12
+# From JA exe 0x51A014: 88 7E 9C 66 8C 06 8A FF
+# File offset 0x519414 -> VA 0x91AA14 (CORRECTED from 0x91AA10)
+91AA14 = 88 7E 9C 66 8C 06 8A FF 00 00 00 00
+
+# TUTORIAL (チュートリアル) - 8 bytes, original 9
+# From JA exe 0x51A020: 60 A0 D0 66 88 6A 8A FF
+# File offset 0x519420 -> VA 0x91AA20
+91AA20 = 60 A0 D0 66 88 6A 8A FF 00
+
+# FURY (いかり) - 4 bytes, original 5
+# From JA exe 0x51A060: 6D 4B 89 FF
+# File offset 0x519460 -> VA 0x91AA60
+91AA60 = 6D 4B 89 FF 00
+
+# SADNESS (かなしみ) - 5 bytes, original 8
+# From JA exe 0x51A070: 4B 73 57 6D FF
+# File offset 0x519470 -> VA 0x91AA70
+91AA70 = 4B 73 57 6D FF 00 00 00
+
+# ============================================================
+# TITLE SCREEN
+# ============================================================
+
+# CONTINUE (つづきから) - 6 bytes, original 10
+# File offset 0x5242c8 -> VA 0x9258C8
+9258C8 = 63 23 4D 4B 87 FF 00 00 00 00
+
+# NEW GAME (ＮＥＷ　ＧＡＭＥ) - 9 bytes - CORRECTED: uses fullwidth English
+# File offset 0x5245e0 -> VA 0x925BE0
+925BE0 = C1 B8 CA 3F BA B4 C0 B8 FF
+
+# ============================================================
+# SAVE/LOAD SCREEN
+# ============================================================
+
+# LOAD (ロード) - 4 bytes, original 5
+# File offset 0x524160 -> VA 0x925760
+925760 = 8E D0 26 FF 00
+
+# LOADING. PLEASE WAIT. (ロードちゅう。しばらくお待ちください。) - 22 bytes, original 21
+# From JA exe 0x524E38: 8E D0 26 FB 9F 25 59 3E 57 01 87 4F 71 FC AD 61 4F 1F 55 6D 3E FF
+# File offset 0x524238 -> VA 0x925838
+925838 = 8E D0 26 FB 9F 25 59 3E 57 01 87 4F 71 FC AD 61 4F 1F 55 6D 3E FF
+
+# SAVING. PLEASE WAIT. (セーブちゅう。しばらくお待ちください。) - 22 bytes, original 21
+# From JA exe 0x524E58: 5A D0 04 FB 9F 25 59 3E 57 01 87 4F 71 FC AD 61 4F 1F 55 6D 3E FF
+# File offset 0x52425C -> VA 0x92585C
+92585C = 5A D0 04 FB 9F 25 59 3E 57 01 87 4F 71 FC AD 61 4F 1F 55 6D 3E FF
+
+# SELECT A SAVE DATA FILE. (セーブデータファイルをえらんでください。) - 21 bytes, original 25
+# From JA exe 0x524D84: 5A D0 04 24 D0 5E 44 A4 6C 8A 9B 6F 87 99 25 4F 1F 55 6D 3E FF
+# File offset 0x524184 -> VA 0x925784
+925784 = 5A D0 04 24 D0 5E 44 A4 6C 8A 9B 6F 87 99 25 4F 1F 55 6D 3E FF 00 00 00 00
+
+# SELECT A SAVE GAME. (セーブゲームをえらんでください。) - 17 bytes, original 19
+# From JA exe 0x524DA8: 5A D0 04 10 D0 80 9B 6F 87 99 25 4F 1F 55 6D 3E FF
+# File offset 0x5241a8 -> VA 0x9257A8
+9257A8 = 5A D0 04 10 D0 80 9B 6F 87 99 25 4F 1F 55 6D 3E FF 00 00
+
+# EMPTY (ＥＭＰＴＹ) - 6 bytes - Uses fullwidth English (same visual as EN)
+# From JA exe 0x524E80: B8 C0 C3 C7 CC FF
+# File offset 0x524280 -> VA 0x925880
+925880 = B8 C0 C3 C7 CC FF
+
+# GAME (ゲーム) - 4 bytes, original 5
+# From JA exe 0x524EA4: 10 D0 80 FF
+# File offset 0x5242A4 -> VA 0x9258A4
+9258A4 = 10 D0 80 FF 00
+
+# CHECKING SAVE DATA FILE. (セーブデータファイルをチェック中です。) - 21 bytes, original 25
+# From JA exe 0x524F10: 5A D0 04 24 D0 5E 44 A4 6C 8A 9B 60 AA 9C 4E FB 9F 25 59 3E FF
+# File offset 0x524310 -> VA 0x925910
+925910 = 5A D0 04 24 D0 5E 44 A4 6C 8A 9B 60 AA 9C 4E FB 9F 25 59 3E FF 00 00 00 00
+
+# ============================================================
+# GAME SLOT NUMBERS (01-10)
+# EN uses 10 1X format, JA uses 33 3X format (standard numerals)
+# ============================================================
+
+# Slot 01 - File 0x524334 -> VA 0x925934
+925934 = 33 34 FF
+
+# Slot 02 - File 0x524358 -> VA 0x925958
+925958 = 33 35 FF
+
+# Slot 03 - File 0x52437C -> VA 0x92597C
+92597C = 33 36 FF
+
+# Slot 04 - File 0x5243A0 -> VA 0x9259A0
+9259A0 = 33 37 FF
+
+# Slot 05 - File 0x5243C4 -> VA 0x9259C4
+9259C4 = 33 38 FF
+
+# Slot 06 - File 0x5243E8 -> VA 0x9259E8
+9259E8 = 33 39 FF
+
+# Slot 07 - File 0x52440C -> VA 0x925A0C
+925A0C = 33 3A FF
+
+# Slot 08 - File 0x524430 -> VA 0x925A30
+925A30 = 33 3B FF
+
+# Slot 09 - File 0x524454 -> VA 0x925A54
+925A54 = 33 3C FF
+
+# Slot 10 - File 0x524478 -> VA 0x925A78
+# Note: "10" in FF7 = 34 33 (1 then 0)
+925A78 = 34 33 FF
+
+# Slot 11 - File 0x52449C -> VA 0x925A9C
+925A9C = 34 34 FF
+
+# Slot 12 - File 0x5244C0 -> VA 0x925AC0
+925AC0 = 34 35 FF
+
+# Slot 13 - File 0x5244E4 -> VA 0x925AE4
+925AE4 = 34 36 FF
+
+# Slot 14 - File 0x524508 -> VA 0x925B08
+925B08 = 34 37 FF
+
+# Slot 15 - File 0x52452C -> VA 0x925B2C
+925B2C = 34 38 FF
+
+# SAVED. (セーブしました。) - 9 bytes, original 8
+# From JA exe 0x525150: 5A D0 04 57 7D 57 5F 3E FF
+# File offset 0x524550 -> VA 0x925B50
+925B50 = 5A D0 04 57 7D 57 5F 3E FF
+
+# ARE YOU SURE YOU WANT TO SAVE? (ほんとうにセーブしますか？) - 14 bytes, original 27
+# From JA exe 0x525204: 49 99 67 69 75 5A D0 04 57 7D 59 4B AF FF
+# File offset 0x524604 -> VA 0x925C04
+925C04 = 49 99 67 69 75 5A D0 04 57 7D 59 4B AF FF 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# YES (save confirm - はい) - 3 bytes, original 4
+# From JA exe 0x525228: 41 6D FF
+# File offset 0x524628 -> VA 0x925C28
+925C28 = 41 6D FF 00
+
+# NO (save confirm - いいえ) - 4 bytes, original 3
+# From JA exe 0x52524C: 6D 6D 6F FF
+# File offset 0x52464C -> VA 0x925C4C
+925C4C = 6D 6D 6F FF
+
+# LEVEL (save screen - レベル) - 4 bytes, original 6
+# From JA exe 0x5257F0: 8C 06 8A FF
+# File offset 0x524BF0 -> VA 0x9261F0
+9261F0 = 8C 06 8A FF 00 00
+
+# SAVE 1-10 (セーブ１-１０)
+926118 = 5A D0 04 34 FF 00 00 00 00 00
+926124 = 5A D0 04 35 FF 00 00 00 00 00
+926130 = 5A D0 04 36 FF 00 00 00 00 00
+92613C = 5A D0 04 37 FF 00 00 00 00 00
+926148 = 5A D0 04 38 FF 00 00 00 00 00
+926154 = 5A D0 04 39 FF 00 00 00 00 00
+926160 = 5A D0 04 3A FF 00 00 00 00 00
+92616C = 5A D0 04 3B FF 00 00 00 00 00
+926178 = 5A D0 04 3C FF 00 00 00 00 00
+926184 = 5A D0 04 34 33 FF 00 00 00 00
+
+# ============================================================
+# ITEM SCREEN
+# ============================================================
+
+# Use (つかう) - 4 bytes
+# File offset 0x51fb68 -> VA 0x921168
+921168 = 63 4B 69 FF
+
+# Arrange (ならべかえ) - 6 bytes, original 8
+# File offset 0x51fb74 -> VA 0x921174
+921174 = 73 87 07 4B 6F FF 00 00
+
+# Key Items (たいせつなもの) - 8 bytes, original 12
+# File offset 0x51fb80 -> VA 0x921180
+921180 = 5F 6D 5B 63 73 85 7B FF 00 00 00 00
+
+# Customize (カスタム) - 5 bytes, original 10
+# File offset 0x51fb8c -> VA 0x92118C
+92118C = 4A 58 5E 80 FF 00 00 00 00 00
+
+# Field (フィールド) - 6 bytes
+# File offset 0x51fb98 -> VA 0x921198
+921198 = 44 A6 D0 8A 26 FF
+
+# Battle (バトル) - 4 bytes, original 7
+# File offset 0x51fba4 -> VA 0x9211A4
+9211A4 = 00 66 8A FF 00 00 00
+
+# Throw (なげる) - 4 bytes, original 6
+# File offset 0x51fbb0 -> VA 0x9211B0
+9211B0 = 73 11 8B FF 00 00
+
+# Type (しゅるい) - 5 bytes
+# File offset 0x51fbbc -> VA 0x9211BC
+9211BC = 57 A1 8B 6D FF
+
+# Name (なまえ) - 4 bytes, original 5
+# File offset 0x51fbc8 -> VA 0x9211C8
+9211C8 = 73 7D 6F FF 00
+
+# Most (おおい) - 4 bytes, original 5
+# File offset 0x51fbd4 -> VA 0x9211D4
+9211D4 = 71 71 6D FF 00
+
+# Least (すくない) - 5 bytes, original 6
+# File offset 0x51fbe0 -> VA 0x9211E0
+9211E0 = 59 4F 73 6D FF 00
+
+# ============================================================
+# EQUIP SCREEN
+# ============================================================
+
+# Wpn. (ぶき) - 3 bytes, original 5
+# File offset 0x51f3a8 -> VA 0x9209A8
+9209A8 = 05 4D FF 00 00
+
+# Arm. (ぼうぐ) - 4 bytes, original 5
+# File offset 0x51f3b4 -> VA 0x9209B4
+9209B4 = 09 69 0F FF 00
+
+# Acc. (アクセサリ) - 6 bytes, original 5
+# File offset 0x51f3c0 -> VA 0x9209C0
+9209C0 = 6A 4E 5A 54 88 FF
+
+# Attack (こうげきりょく) - 8 bytes, original 7 - CORRECTED
+# File offset 0x51f420 -> VA 0x920A20
+920A20 = 53 69 11 4D 89 A3 4F FF
+
+# Attack% (めいちゅうりつ) - 8 bytes, original 9 - CORRECTED
+# File offset 0x51f42c -> VA 0x920A2C
+920A2C = 83 6D 61 A1 69 89 63 FF 00
+
+# Defense (ぼうぎょりょく) - 8 bytes - CORRECTED
+# File offset 0x51f438 -> VA 0x920A38
+920A38 = 09 69 0D A3 89 A3 4F FF
+
+# Defense% (かいひりつ) - 6 bytes, original 10 - CORRECTED
+# File offset 0x51f444 -> VA 0x920A44
+920A44 = 4B 6D 43 89 63 FF 00 00 00 00
+
+# Magic atk (まほうこうげき) - 8 bytes, original 11
+# File offset 0x51f450 -> VA 0x920A50
+920A50 = 7D 49 69 53 69 11 4D FF 00 00 00
+
+# Magic def (まほうぼうぎょ) - 8 bytes, original 11
+# File offset 0x51f45c -> VA 0x920A5C
+920A5C = 7D 49 69 09 69 0D A3 FF 00 00 00
+
+# Magic def% (まほうかいひりつ) - 9 bytes, original 12 - CORRECTED
+# File offset 0x51f468 -> VA 0x920A68
+920A68 = 7D 49 69 4B 6D 43 89 63 FF 00 00 00
+
+# Slot (スロット) - 5 bytes
+# File offset 0x51f474 -> VA 0x920A74
+920A74 = 58 8E 9C 66 FF
+
+# Growth (せいちょう) - 6 bytes, original 7
+# File offset 0x51f480 -> VA 0x920A80
+920A80 = 5B 6D 61 A3 69 FF 00
+
+# Nothing (なし) - 3 bytes, original 8
+# File offset 0x51f48c -> VA 0x920A8C
+920A8C = 73 57 FF 00 00 00 00 00
+
+# Normal (ノーマル) - 5 bytes, original 7
+# File offset 0x51f498 -> VA 0x920A98
+920A98 = 7A D0 7C 8A FF 00 00
+
+# Double (ダブル) - 4 bytes, original 7
+# File offset 0x51f4a4 -> VA 0x920AA4
+920AA4 = 1E 04 8A FF 00 00 00
+
+# Triple (トリプル) - 5 bytes, original 7
+# File offset 0x51f4b0 -> VA 0x920AB0
+920AB0 = 66 88 2D 8A FF 00 00
+
+# ============================================================
+# STATUS SCREEN
+# ============================================================
+
+# Strength (ちから) - 4 bytes, original 9
+# File offset 0x51f256 -> VA 0x920856
+920856 = 61 4B 87 FF 00 00 00 00 00
+
+# Dexterity (すばやさ) - 5 bytes, original 10
+# File offset 0x51F265 -> VA 0x920865 (CORRECTED from 0x920864)
+920865 = 59 01 91 55 FF 00 00 00 00 00
+
+# Vitality (たいりょく) - 6 bytes, original 9
+# File offset 0x51f274 -> VA 0x920874
+920874 = 5F 6D 89 A3 4F FF 00 00 00
+
+# Magic (まりょく) - 5 bytes, original 6
+# File offset 0x51f283 -> VA 0x920883
+920883 = 7D 89 A3 4F FF 00
+
+# Spirit (せいしん) - 5 bytes, original 7
+# File offset 0x51f292 -> VA 0x920892
+920892 = 5B 6D 57 99 FF 00 00
+
+# Luck (うん) - 3 bytes, original 5
+# File offset 0x51f2a1 -> VA 0x9208A1
+9208A1 = 69 99 FF 00 00
+
+# ============================================================
+# STATUS SCREEN - Lower Stats Section
+# Added: 2025-12-05
+# These are DIFFERENT addresses from Equip Screen stats
+# ============================================================
+
+# Attack (こうげきりょく) - 8 bytes, original 7
+# From JA exe 0x51FEB0: 53 69 11 4D 89 A3 4F FF
+# File offset 0x51F2B0 -> VA 0x9208B0
+9208B0 = 53 69 11 4D 89 A3 4F FF
+
+# Attack% (めいちゅうりつ) - 8 bytes, original 8
+# From JA exe 0x51FEBF: 83 6D 61 A1 69 89 63 FF
+# File offset 0x51F2BF -> VA 0x9208BF (CORRECTED from 0x9208BE)
+9208BF = 83 6D 61 A1 69 89 63 FF
+
+# Defense (ぼうぎょりょく) - 8 bytes, original 8
+# From JA exe 0x51FECE: 09 69 0D A3 89 A3 4F FF
+# File offset 0x51F2CE -> VA 0x9208CE (CORRECTED from 0x9208CC)
+9208CE = 09 69 0D A3 89 A3 4F FF
+
+# Defense% (かいひりつ) - 6 bytes, original 9
+# From JA exe 0x51FEDD: 4B 6D 43 89 63 FF
+# File offset 0x51F2DD -> VA 0x9208DD (CORRECTED from 0x9208DA)
+9208DD = 4B 6D 43 89 63 FF 00 00 00
+
+# Magic Attack (まほうこうげき) - 8 bytes, original 10
+# From JA exe 0x51FEEC: 7D 49 69 53 69 11 4D FF
+# File offset 0x51F2EC -> VA 0x9208EC (CORRECTED from 0x9208E8)
+9208EC = 7D 49 69 53 69 11 4D FF 00 00
+
+# Magic Defense (まほうぼうぎょ) - 8 bytes, original 10
+# From JA exe 0x51FEFB: 7D 49 69 09 69 0D A3 FF
+# File offset 0x51F2FB -> VA 0x9208FB (CORRECTED from 0x9208F8)
+9208FB = 7D 49 69 09 69 0D A3 FF 00 00
+
+# Magic Defense% (まほうかいひりつ) - 9 bytes, original 11
+# From JA exe 0x51FF0A: 7D 49 69 4B 6D 43 89 63 FF
+# File offset 0x51F30A -> VA 0x92090A (CORRECTED from 0x920908)
+92090A = 7D 49 69 4B 6D 43 89 63 FF 00 00
+
+# ============================================================
+# STATUS SCREEN - Equipment Labels (with colon)
+# These are DIFFERENT from Equip Screen labels
+# ============================================================
+
+# Wpn. (ぶき:) - 4 bytes, original 5
+# From JA exe 0x51FF19: 05 4D D5 FF
+# File offset 0x51F319 -> VA 0x920919 (CORRECTED from 0x920918)
+920919 = 05 4D D5 FF 00
+
+# Arm. (ぼうぐ:) - 5 bytes, original 5
+# From JA exe 0x51FF28: 09 69 0F D5 FF
+# File offset 0x51F328 -> VA 0x920928
+920928 = 09 69 0F D5 FF
+
+# Acc. (アクセサリ:) - 7 bytes, original 5
+# From JA exe 0x51FF37: 6A 4E 5A 54 88 D5 FF
+# File offset 0x51F337 -> VA 0x920937 (CORRECTED from 0x920938)
+920937 = 6A 4E 5A 54 88 D5 FF
+
+# Limit level (リミットレベル) - 8 bytes, original 13
+# File offset 0x51f346 -> VA 0x920946
+920946 = 88 7E 9C 66 8C 06 8A FF 00 00 00 00 00
+
+# ============================================================
+# MATERIA SCREEN
+# Added: 2025-12-05
+# ============================================================
+
+# Wpn. (ぶき:) - 4 bytes, original 5
+# From JA exe 0x5201A8: 05 4D D5 FF
+# File offset 0x51F5A8 -> VA 0x920BA8
+920BA8 = 05 4D D5 FF 00
+
+# Arm. (ぼうぐ:) - 5 bytes, original 5
+# From JA exe 0x5201B8: 09 69 0F D5 FF
+# File offset 0x51F5B8 -> VA 0x920BB8
+920BB8 = 09 69 0F D5 FF
+
+# Ability List (アビリティリスト) - 9 bytes, original 13
+# From JA exe 0x5201D0: 6A 02 88 64 A6 88 58 66 FF
+# File offset 0x51F5D0 -> VA 0x920BD0
+920BD0 = 6A 02 88 64 A6 88 58 66 FF 00 00 00 00
+
+# Equip Effect (そうびこうか) - 7 bytes, original 13
+# From JA exe 0x5201E0: 5D 69 03 53 69 4B FF
+# File offset 0x51F5E4 -> VA 0x920BE4
+920BE4 = 5D 69 03 53 69 4B FF 00 00 00 00 00 00
+
+# Check (チェック) - 5 bytes, original 6
+# From JA exe 0x5201F8: 60 AA 9C 4E FF
+# File offset 0x51F5F8 -> VA 0x920BF8
+920BF8 = 60 AA 9C 4E FF 00
+
+# Arrange (せいとん) - 5 bytes, original 8
+# From JA exe 0x520208: 5B 6D 67 99 FF
+# File offset 0x51F60C -> VA 0x920C0C (CORRECTED from 0x920C08)
+920C0C = 5B 6D 67 99 FF 00 00 00
+
+# AP (ＡＰ) - 3 bytes, original 3 - Uses fullwidth
+# From JA exe 0x520234: B4 C3 FF
+# File offset 0x51F634 -> VA 0x920C34
+920C34 = B4 C3 FF
+
+# To Next Level (つぎのレベルまであと) - 11 bytes, original 14
+# From JA exe 0x520248: 63 0D 7B 8C 06 8A 7D 25 6B 67 FF
+# File offset 0x51F648 -> VA 0x920C48
+920C48 = 63 0D 7B 8C 06 8A 7D 25 6B 67 FF 00 00 00
+
+# Master (ＭＡＳＴＥＲ) - 7 bytes, original 7 - Uses fullwidth
+# From JA exe 0x52025C: C0 B4 C6 C7 B8 C5 FF
+# File offset 0x51F65C -> VA 0x920C5C
+920C5C = C0 B4 C6 C7 B8 C5 FF
+
+# Arrange 2 (せいとん) - 5 bytes, original 8
+# From JA exe 0x520270: 5B 6D 67 99 FF
+# File offset 0x51F670 -> VA 0x920C70
+920C70 = 5B 6D 67 99 FF 00 00 00
+
+# ============================================================
+# MATERIA SCREEN - Stat Labels
+# ============================================================
+
+# Strength (ちから) - 4 bytes, original 9
+# From JA exe 0x520338: 61 4B 87 FF
+# File offset 0x51F738 -> VA 0x920D38
+920D38 = 61 4B 87 FF 00 00 00 00 00
+
+# Vitality (たいりょく) - 6 bytes, original 9
+# From JA exe 0x52034C: 5F 6D 89 A3 4F FF
+# File offset 0x51F748 -> VA 0x920D48
+920D48 = 5F 6D 89 A3 4F FF 00 00 00
+
+# Magic (まりょく) - 5 bytes, original 6
+# From JA exe 0x520360: 7D 89 A3 4F FF
+# File offset 0x51F760 -> VA 0x920D60
+920D60 = 7D 89 A3 4F FF 00
+
+# Magic Def (まほうぼうぎょ) - 8 bytes, original 10
+# From JA exe 0x520374: 7D 49 69 09 69 0D A3 FF
+# File offset 0x51F774 -> VA 0x920D74
+920D74 = 7D 49 69 09 69 0D A3 FF 00 00
+
+# Dexterity (すばやさ) - 5 bytes, original 10
+# From JA exe 0x520388: 59 01 91 55 FF
+# File offset 0x51F788 -> VA 0x920D88
+920D88 = 59 01 91 55 FF 00 00 00 00 00
+
+# Luck (うん) - 3 bytes, original 5
+# From JA exe 0x52039C: 69 99 FF
+# File offset 0x51F798 -> VA 0x920D98
+920D98 = 69 99 FF 00 00
+
+# MAXHP (ＭＡＸＨＰ) - 6 bytes, original 6 - Fullwidth
+# From JA exe 0x5203B0: C0 B4 CB BB C3 FF
+# File offset 0x51F7B0 -> VA 0x920DB0
+920DB0 = C0 B4 CB BB C3 FF
+
+# MAXMP (ＭＡＸＭＰ) - 6 bytes, original 6 - Fullwidth
+# From JA exe 0x5203C4: C0 B4 CB C0 C3 FF
+# File offset 0x51F7C4 -> VA 0x920DC4
+920DC4 = C0 B4 CB C0 C3 FF
+
+# ============================================================
+# MATERIA SCREEN - Confirmation Dialog
+# Added: 2025-12-05
+# ============================================================
+
+# DO YOU REALLY WANT TO REMOVE THIS? (ほんとうにすてていいですか？) - 16 bytes, original 27
+# From JA exe 0x520118: 49 99 67 69 75 3D 59 65 65 6D 6D 25 59 4B AF FF
+# File offset 0x51F518 -> VA 0x920B18
+920B18 = 49 99 67 69 75 3D 59 65 65 6D 6D 25 59 4B AF FF 00 00 00 00 00 00 00 00 00 00 00
+
+# SURE DO! (はい) - 3 bytes, original 11
+# From JA exe 0x52013C: 41 6D FF
+# File offset 0x51F53C -> VA 0x920B3C (CORRECTED from 0x920B38)
+920B3C = 41 6D FF 00 00 00 00 00 00 00 00
+
+# WAIT A SEC (いいえ) - 4 bytes, original 11
+# From JA exe 0x520160: 6D 6D 6F FF
+# File offset 0x51F560 -> VA 0x920B60
+920B60 = 6D 6D 6F FF 00 00 00 00 00 00 00
+
+# ============================================================
+# MATERIA SCREEN - Menu Commands
+# Added: 2025-12-05
+# ============================================================
+
+# EXCHANGE (いれかえ) - 5 bytes, original 9
+# From JA exe 0x520284: 4E 6C 9C 4E FF
+# File offset 0x51F684 -> VA 0x920C84
+920C84 = 4E 6C 9C 4E FF 00 00 00 00
+
+# REMOVE ALL (すべてはずす) - 7 bytes, original 11
+# From JA exe 0x520298: 59 07 65 41 19 59 FF
+# File offset 0x51F698 -> VA 0x920C98
+920C98 = 59 07 65 41 19 59 FF 00 00 00 00
+
+# TRASH (すてる) - 4 bytes, original 6
+# From JA exe 0x5202AC: 59 65 8B FF
+# File offset 0x51F6AC -> VA 0x920CAC
+920CAC = 59 65 8B FF 00 00
+
+# ============================================================
+# MATERIA SCREEN - Additional Stat/Ability Labels
+# Added: 2025-12-05
+# ============================================================
+
+# DEXTERITY ability label (すばやさ) - 5 bytes, original 10
+# From JA exe 0x5202D4: 59 01 91 55 FF
+# File offset 0x51F6D4 -> VA 0x920CD4
+920CD4 = 59 01 91 55 FF 00 00 00 00 00
+
+# COVER (かばう) - 4 bytes, original 6
+# From JA exe 0x5202E8: 4B 01 69 FF
+# File offset 0x51F6E8 -> VA 0x920CE8
+920CE8 = 4B 01 69 FF 00 00
+
+# MAGIC ability label (まりょく) - 5 bytes, original 6
+# From JA exe 0x5202FC: 7D 89 A3 4F FF
+# File offset 0x51F6FC -> VA 0x920CFC
+920CFC = 7D 89 A3 4F FF 00
+
+# LUCK ability label (うん) - 3 bytes, original 5
+# From JA exe 0x520310: 69 99 FF
+# File offset 0x51F714 -> VA 0x920D14
+920D14 = 69 99 FF 00 00
+
+# MASTER copy 2 (ＭＡＳＴＥＲ) - 7 bytes, original 7 - Fullwidth
+# From JA exe 0x520320: C0 B4 C6 C7 B8 C5 FF
+# File offset 0x51F720 -> VA 0x920D20
+920D20 = C0 B4 C6 C7 B8 C5 FF
+
+# ============================================================
+# MATERIA SCREEN - Independent Materia Effect Labels
+# Added: 2025-12-05
+# ============================================================
+
+# EXP +50 (けいけんち＋) - 8 bytes, original 7
+# From JA exe 0x520400: 51 6D 51 99 61 C8 C3 FF
+# File offset 0x51F800 -> VA 0x920E00
+920E00 = 51 6D 51 99 61 C8 C3 FF
+
+# GIL +50 (ギル＋) - 5 bytes, original 7
+# From JA exe 0x520414: 0C 8A C8 C3 FF
+# File offset 0x51F814 -> VA 0x920E14
+920E14 = 0C 8A C8 C3 FF 00 00
+
+# ENCOUNTER DOWN (エンカウントりつＤＯＷＮ) - 13 bytes, original 15
+# From JA exe 0x520428: 6E 98 4A 68 98 66 89 63 B7 C2 CA C1 FF
+# File offset 0x51F828 -> VA 0x920E28
+920E28 = 6E 98 4A 68 98 66 89 63 B7 C2 CA C1 FF 00 00
+
+# ENCOUNTER UP (エンカウントりつ＋) - 11 bytes, original 13
+# From JA exe 0x52043C: 6E 98 4A 68 98 66 89 63 C8 C3 FF
+# File offset 0x51F838 -> VA 0x920E38
+920E38 = 6E 98 4A 68 98 66 89 63 C8 C3 FF 00 00
+
+# MEET CHOCOBOS (チョコボよけ) - 9 bytes, original 14
+# From JA exe 0x520450: 60 A2 52 08 75 6B 6F 8B FF
+# File offset 0x51F850 -> VA 0x920E50
+920E50 = 60 A2 52 08 75 6B 6F 8B FF 00 00 00 00 00
+
+# PRE EMPTIVE (せんせいりつ＋) - 9 bytes, original 12
+# From JA exe 0x520464: 5B 99 5B 6D 89 63 C8 C3 FF
+# File offset 0x51F864 -> VA 0x920E64
+920E64 = 5B 99 5B 6D 89 63 C8 C3 FF 00 00 00
+
+# LONG RANGE ATTACK (えんきょりこうげき) - 10 bytes, original 18
+# From JA exe 0x520478: 6F 99 4D A3 89 53 69 11 4D FF
+# File offset 0x51F878 -> VA 0x920E78
+920E78 = 6F 99 4D A3 89 53 69 11 4D FF 00 00 00 00 00 00 00 00
+
+# ATTACK ALL (ぜんたいこうげき) - 9 bytes, original 11
+# From JA exe 0x52048C: 1B 99 5F 6D 53 69 11 4D FF
+# File offset 0x51F888 -> VA 0x920E88
+920E88 = 1B 99 5F 6D 53 69 11 4D FF 00 00
+
+# ============================================================
+# CONFIG SCREEN
+# Added: 2025-12-05 - CORRECTED with bytes from JA exe
+# ============================================================
+
+# Window color (ウィンドウカラー) - 9 bytes, original 13
+# From JA exe: 68 A6 98 26 68 4A 86 D0 FF
+# File offset 0x5188A8 -> VA 0x919EA8
+919EA8 = 68 A6 98 26 68 4A 86 D0 FF 00 00 00 00
+
+# Sound (サウンド) - 5 bytes, original 6
+# From JA exe: 54 68 98 26 FF (note: 68 not 69)
+# File offset 0x5188D8 -> VA 0x919ED8
+919ED8 = 54 68 98 26 FF 00
+
+# Controller (コントローラー) - 8 bytes, original 11
+# Note: Using katakana "Controller" instead of JP's "Keyboard"
+# File offset 0x518908 -> VA 0x919F08
+919F08 = 52 98 66 8E D0 86 D0 FF 00 00 00
+
+# Cursor (カーソル) - 5 bytes, original 7
+# From JA exe: 4A D0 5C 8A FF (0x5C for ソ, not 0x56)
+# File offset 0x518938 -> VA 0x919F38
+919F38 = 4A D0 5C 8A FF 00 00
+
+# ATB (ＡＴＢ) - 4 bytes - Fullwidth English
+# File offset 0x518968 -> VA 0x919F68
+919F68 = B4 C7 B5 FF
+
+# Battle speed (バトルスピード) - 8 bytes, original 13
+# From JA exe: 00 66 8A 58 2B D0 26 FF (0x2B for ピ, not 0x2D)
+# File offset 0x518998 -> VA 0x919F98
+919F98 = 00 66 8A 58 2B D0 26 FF 00 00 00 00 00
+
+# Battle message (バトルメッセージ) - 10 bytes, original 15
+# From JA exe: 00 66 8A 82 9C 5A D0 16 FF (0x16 for ジ, not 0x22)
+# File offset 0x5189C8 -> VA 0x919FC8
+919FC8 = 00 66 8A 82 9C 5A D0 16 FF 00 00 00 00 00 00
+
+# Field message (フィールドメッセージ) - 12 bytes, original 14
+# From JA exe: 44 A6 D0 8A 26 82 9C 5A D0 16 FF (0x16 for ジ)
+# File offset 0x5189F8 -> VA 0x919FF8
+919FF8 = 44 A6 D0 8A 26 82 9C 5A D0 16 FF 00 00 00
+
+# Camera angle (カメラアングル) - 8 bytes, original 13
+# From JA exe: 4A 82 86 6A 98 0E 8A FF (0x86 for ラ, not 0x87)
+# File offset 0x518A28 -> VA 0x91A028
+91A028 = 4A 82 86 6A 98 0E 8A FF 00 00 00 00 00
+
+# Magic order (まほうのならびかた) - 10 bytes, original 12
+# File offset 0x518ED8 -> VA 0x91A4D8
+91A4D8 = 7D 49 69 7B 73 87 03 4B 5F FF 00 00
+
+# Normal (ノーマル) - 5 bytes, original 7
+# File offset 0x518C08 -> VA 0x91A208
+91A208 = 7A D0 7C 8A FF 00 00
+
+# Customize (カスタム) - 5 bytes, original 10
+# File offset 0x518C38 -> VA 0x91A238
+91A238 = 4A 58 5E 80 FF 00 00 00 00 00
+
+# Initial (しょき) - 4 bytes, original 8
+# File offset 0x518C68 -> VA 0x91A268
+91A268 = 57 A3 4D FF 00 00 00 00
+
+# Memory (きおく) - 4 bytes, original 7
+# File offset 0x518C98 -> VA 0x91A298
+91A298 = 4D 71 4F FF 00 00 00
+
+# Active (アクティブ) - 6 bytes, original 7
+# File offset 0x518CC8 -> VA 0x91A2C8
+91A2C8 = 6A 4E 64 A6 04 FF 00
+
+# Recommended (おすすめ) - 5 bytes, original 12
+# File offset 0x518CF8 -> VA 0x91A2F8
+91A2F8 = 71 59 59 83 FF 00 00 00 00 00 00 00
+
+# Wait (ウェイト) - 5 bytes
+# From JA exe: 68 AA 6C 66 FF (0x68 for ウ, 0xAA for ェ)
+# File offset 0x518D28 -> VA 0x91A328
+91A328 = 68 AA 6C 66 FF
+
+# Auto (オート) - 4 bytes, original 5
+# File offset 0x518D58 -> VA 0x91A358
+91A358 = 70 D0 66 FF 00
+
+# Fixed (こてい) - 4 bytes, original 6
+# From JA exe: 53 65 6D FF (0x65 for て, not 0x64)
+# File offset 0x518D88 -> VA 0x91A388
+91A388 = 53 65 6D FF 00 00
+
+# Slow (おそい) - 4 bytes, original 5
+# File offset 0x518DE8 -> VA 0x91A3E8
+91A3E8 = 71 5D 6D FF 00
+
+# Fast (はやい) - 4 bytes, original 5
+# File offset 0x518E18 -> VA 0x91A418
+91A418 = 41 91 6D FF 00
+
+# restore (かいふく) - 5 bytes, original 8
+# File offset 0x518F08 -> VA 0x91A508
+91A508 = 4B 6D 45 4F FF 00 00 00
+
+# attack (こうげき) - 5 bytes, original 7
+# File offset 0x518F38 -> VA 0x91A538
+91A538 = 53 69 11 4D FF 00 00
+
+# indirect (かんせつ) - 5 bytes, original 9
+# File offset 0x518F68 -> VA 0x91A568
+91A568 = 4B 99 5B 63 FF 00 00 00 00
+
+# No. (ＮＯ．) - 4 bytes - Fullwidth English
+# File offset 0x518FC8 -> VA 0x91A5C8
+91A5C8 = C1 C2 B2 FF
+
+# Sound description (ボリュームせってい) - 10 bytes, original 25
+# File offset 0x519288 -> VA 0x91A888
+91A888 = 08 88 A0 D0 80 5B 9D 65 6D FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# LIMIT SCREEN
+# Added: 2025-12-05
+# ============================================================
+
+# Set (セット) - 4 bytes
+# File offset 0x51DF8C -> VA 0x91F58C
+91F58C = 5A 9C 66 FF
+
+# Check (チェック) - 5 bytes, original 6
+# File offset 0x51DFB0 -> VA 0x91F5B0
+91F5B0 = 60 AA 9C 4E FF 00
+
+# ============================================================
+# EXIT SCREEN
+# Added: 2025-12-05 - QUIT MESSAGE ADDED
+# ============================================================
+
+# Quit message line 1 (ファイナルファンタジー7の) - 14 bytes, original 20
+# From JA exe 0x518F70: 44 A4 6C 72 8A 44 A4 98 5E 16 D0 3A 7B FF
+# File offset 0x518370 -> VA 0x919970
+919970 = 44 A4 6C 72 8A 44 A4 98 5E 16 D0 3A 7B FF 00 00 00 00 00 00
+
+# Quit message line 2 (プレイをしゅうりょうします。) - 13 bytes, original 26
+# From JA exe 0x518F8E: 2D 8C 6C 9B FB DA FB D4 57 7D 59 3E FF
+# File offset 0x51838E -> VA 0x91998E (CORRECTED from 0x919990)
+91998E = 2D 8C 6C 9B FB DA FB D4 57 7D 59 3E FF 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# Quit message line 3 (よろしいですか？) - 9 bytes, original 23
+# From JA exe 0x518FAC: 95 8F 57 6D 25 59 4B AF FF
+# File offset 0x5183AC -> VA 0x9199AC (CORRECTED from 0x9199B0)
+9199AC = 95 8F 57 6D 25 59 4B AF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# Yes (はい) - 3 bytes, original 4
+# File offset 0x5183D0 -> VA 0x9199D0
+9199D0 = 41 6D FF 00
+
+# No (いいえ) - 4 bytes, original 3
+# File offset 0x5183D4 -> VA 0x9199D4
+9199D4 = 6D 6D 6F FF
+
+# ============================================================
+# STATUS SCREEN PAGE 2 - Elemental Properties
+# Added: 2025-12-05 - RE-CORRECTED with exact byte positions
+# ============================================================
+
+# Element header (ぞくせい) - 5 bytes, original 8
+# File offset 0x51F1C0 -> VA 0x9207C0
+9207C0 = 1D 4F 5B 6D FF 00 00 00
+
+# Effect/Added (ついか) - 4 bytes, original 7
+# File offset 0x51F1CF -> VA 0x9207CF
+9207CF = 63 6D 4B FF 00 00 00
+
+# Attack (こうげき) - 5 bytes, original 7
+# File offset 0x51F1DE -> VA 0x9207DE
+9207DE = 53 69 11 4D FF 00 00
+
+# Defend (ぼうぎょ) - 5 bytes, original 7
+# File offset 0x51F1ED -> VA 0x9207ED
+9207ED = 09 69 0D A3 FF 00 00
+
+# Halve (はんげん) - 5 bytes, original 6
+# File offset 0x51F1FC -> VA 0x9207FC
+9207FC = 41 99 11 99 FF 00
+
+# Invalid->Nullify (むこう) - 4 bytes, original 8
+# File offset 0x51F20B -> VA 0x92080B
+92080B = 81 53 69 FF 00 00 00 00
+
+# Absorb (きゅうしゅう) - 7 bytes, original 7
+# File offset 0x51F21A -> VA 0x92081A
+92081A = 4D A1 69 57 A1 69 FF
+
+# ============================================================
+# STATUS SCREEN - ELEMENT NAMES (Single Kanji)
+# Added: 2025-12-05
+# Japanese uses single kanji for compact display
+# ============================================================
+
+# Fire (炎) - 3 bytes, original 5
+# File offset 0x51EF40 -> VA 0x920540
+920540 = FA 06 FF 00 00
+
+# Ice (冷) - 3 bytes, original 4
+# File offset 0x51EF4A -> VA 0x92054A
+92054A = FA B4 FF 00
+
+# Lightning (雷) - 3 bytes, original 10
+# File offset 0x51EF54 -> VA 0x920554
+920554 = FA 08 FF 00 00 00 00 00 00 00
+
+# Earth (土) - 3 bytes, original 6
+# File offset 0x51EF5E -> VA 0x92055E
+92055E = FB 6A FF 00 00 00
+
+# Poison (毒) - 3 bytes, original 7
+# File offset 0x51EF68 -> VA 0x920568
+920568 = FA 97 FF 00 00 00 00
+
+# Gravity (重) - 3 bytes, original 8
+# File offset 0x51EF72 -> VA 0x920572
+920572 = FA C4 FF 00 00 00 00 00
+
+# Water (水) - 3 bytes, original 6
+# File offset 0x51EF7C -> VA 0x92057C
+92057C = FA 49 FF 00 00 00
+
+# Wind (風) - 3 bytes, original 5
+# File offset 0x51EF86 -> VA 0x920586
+920586 = FA 38 FF 00 00
+
+# Holy (聖) - 3 bytes, original 5
+# File offset 0x51EF90 -> VA 0x920590
+920590 = FA 11 FF 00 00
+
+# ============================================================
+# STATUS SCREEN - STATUS EFFECT NAMES (Single Kanji)
+# Added: 2025-12-05
+# Japanese uses single kanji for compact status display
+# Bytes extracted from character map CSV
+# ============================================================
+
+# Death (死) - jafont_2,38 = FA 26 FF - 3 bytes, original 6
+# File offset 0x51EFA0 -> VA 0x9205A0
+9205A0 = FA 26 FF 00 00 00
+
+# Near-death (瀕) - jafont_3,142 = FB 8E FF - 3 bytes, original 11
+# File offset 0x51EFB4 -> VA 0x9205B4
+9205B4 = FB 8E FF 00 00 00 00 00 00 00 00
+
+# Sleep (眠) - jafont_3,55 = FB 37 FF - 3 bytes, original 6
+# File offset 0x51EFC8 -> VA 0x9205C8
+9205C8 = FB 37 FF 00 00 00
+
+# Poison (毒) - jafont_2,151 = FA 97 FF - 3 bytes, original 7
+# File offset 0x51EFDC -> VA 0x9205DC
+9205DC = FA 97 FF 00 00 00 00
+
+# Sadness (悲) - jafont_3,222 = FB DE FF - 3 bytes, original 8
+# File offset 0x51EFF0 -> VA 0x9205F0
+9205F0 = FB DE FF 00 00 00 00 00
+
+# Fury (怒) - jafont_2,10 = FA 0A FF - 3 bytes, original 5
+# File offset 0x51F004 -> VA 0x920604
+920604 = FA 0A FF 00 00
+
+# Confusion (乱) - jafont_2,76 = FA 4C FF - 3 bytes, original 10
+# File offset 0x51F018 -> VA 0x920618
+920618 = FA 4C FF 00 00 00 00 00 00 00
+
+# Silence (黙) - jafont_3,138 = FB 8A FF - 3 bytes, original 8
+# File offset 0x51F02C -> VA 0x92062C
+92062C = FB 8A FF 00 00 00 00 00
+
+# Haste (速) - jafont_3,130 = FB 82 FF - 3 bytes, original 6
+# File offset 0x51F040 -> VA 0x920640
+920640 = FB 82 FF 00 00 00
+
+# Slow (遅) - jafont_3,131 = FB 83 FF - 3 bytes, original 5
+# File offset 0x51F054 -> VA 0x920654
+920654 = FB 83 FF 00 00
+
+# Stop (止) - jafont_2,84 = FA 54 FF - 3 bytes, original 5
+# File offset 0x51F068 -> VA 0x920668
+920668 = FA 54 FF 00 00
+
+# Frog (蛙) - jafont_3,223 = FB DF FF - 3 bytes, original 5
+# File offset 0x51F07C -> VA 0x92067C
+92067C = FB DF FF 00 00
+
+# Small (小) - jafont_3,126 = FB 7E FF - 3 bytes, original 6
+# File offset 0x51F090 -> VA 0x920690
+920690 = FB 7E FF 00 00 00
+
+# Slow-numb (徐) - jafont_3,115 = FB 73 FF - 3 bytes, original 10
+# File offset 0x51F0A4 -> VA 0x9206A4
+9206A4 = FB 73 FF 00 00 00 00 00 00 00
+
+# Petrify (石) - jafont_3,114 = FB 72 FF - 3 bytes, original 8
+# File offset 0x51F0B8 -> VA 0x9206B8
+9206B8 = FB 72 FF 00 00 00 00 00
+
+# Regen (回) - jafont_2,142 = FA 8E FF - 3 bytes, original 6
+# File offset 0x51F0CC -> VA 0x9206CC
+9206CC = FA 8E FF 00 00 00
+
+# Barrier (物) - jafont_2,115 = FA 73 FF - 3 bytes, original 8
+# File offset 0x51F0E0 -> VA 0x9206E0
+9206E0 = FA 73 FF 00 00 00 00 00
+
+# MBarrier (魔) - jafont_2,105 = FA 69 FF - 3 bytes, original 9
+# File offset 0x51F0F4 -> VA 0x9206F4
+9206F4 = FA 69 FF 00 00 00 00 00 00
+
+# Reflect (反) - jafont_2,192 = FA C0 FF - 3 bytes, original 8
+# File offset 0x51F108 -> VA 0x920708
+920708 = FA C0 FF 00 00 00 00 00
+
+# Shield (防) - jafont_2,139 = FA 8B FF - 3 bytes, original 7
+# File offset 0x51F130 -> VA 0x920730
+920730 = FA 8B FF 00 00 00 00
+
+# Death-sentence (宣) - jafont_2,39 = FA 27 FF - 3 bytes, original 15
+# File offset 0x51F144 -> VA 0x920744
+920744 = FA 27 FF 00 00 00 00 00 00 00 00 00 00 00 00
+
+# Manipulate (操) - jafont_3,224 = FB E0 FF - 3 bytes, original 11
+# File offset 0x51F158 -> VA 0x920758
+920758 = FB E0 FF 00 00 00 00 00 00 00 00
+
+# Berserk (闘) - jafont_2,77 = FA 4D FF - 3 bytes, original 8
+# File offset 0x51F16C -> VA 0x92076C
+92076C = FA 4D FF 00 00 00 00 00
+
+# Peerless (無) - jafont_3,30 = FB 1E FF - 3 bytes, original 9
+# File offset 0x51F180 -> VA 0x920780
+920780 = FB 1E FF 00 00 00 00 00 00
+
+# Paralyzed (マ) - jafont_1,124 = 7C FF - 2 bytes, original 10
+# Note: JP version uses katakana マ for this status
+# File offset 0x51F194 -> VA 0x920794
+920794 = 7C FF 00 00 00 00 00 00 00 00
+
+# Darkness (暗) - jafont_2,23 = FA 17 FF - 3 bytes, original 9
+# File offset 0x51F1A8 -> VA 0x9207A8
+9207A8 = FA 17 FF 00 00 00 00 00 00

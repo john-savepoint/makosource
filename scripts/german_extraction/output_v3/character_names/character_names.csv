@@ -1,0 +1,24 @@
+index,struct_offset,raw_text,extracted_name,struct_size
+681,0x5972A5,Sephiroth,UNKNOWN,36
+716,0x597688,Chocobo treffen,UNKNOWN,31
+847,0x5985D1,"ä        !""#$%'(    ""S   S ""S   ~ ""! :       `!:  ",UNKNOWN,92
+848,0x59862E,Barret,UNKNOWN,12
+849,0x59863B,Tifa,UNKNOWN,9
+850,0x598645,Aeris,UNKNOWN,12
+851,0x598652,Red XIII,UNKNOWN,14
+852,0x598661,Yuffie,UNKNOWN,9
+853,0x59866B,Cait Sith,UNKNOWN,14
+854,0x59867A,Vincent,UNKNOWN,9
+855,0x598684,Cid,UNKNOWN,7
+856,0x59868C,Choco,UNKNOWN,13
+877,0x598900,C   !!/-+)%-      !öBarret,UNKNOWN,26
+882,0x598984,"""!+++*'.      !9Tifa",UNKNOWN,24
+887,0x598A08,#!*+-.%.      !4Aerith,UNKNOWN,26
+891,0x598A8C,"$!*,+**.      !äRed",UNKNOWN,23
+897,0x598B10,%!            !KYuffie,UNKNOWN,26
+902,0x598B94,&!*+-+%/      ! Cait Seith,UNKNOWN,30
+907,0x598C18,'!)*++%.      !WVincent,UNKNOWN,27
+912,0x598C9C,"(!,,+*&.      !_Cid",UNKNOWN,23
+920,0x598DA4,õ   *RuhdfaN      ! Sephiroth,UNKNOWN,29
+950,0x59936D,Sephiroth,UNKNOWN,36
+985,0x599750,Chocobo treffen,UNKNOWN,31

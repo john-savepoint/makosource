@@ -1,0 +1,1020 @@
+# FF7 English-German String Mapping (Semantic Matching)
+# Generated: 2026-01-05 19:53 JST
+# Session: ff862825-4ec7-4a49-a932-e9e5dcc0ea9f
+#
+# Format: [EN_IDX] English | [DE_IDX] German (Confidence: X.XX)
+# Total mappings: 552
+# Unmapped English: 216
+# Unmapped German: 55
+
+
+====================================================================================================
+EXIT DIALOG
+====================================================================================================
+[000] Do you want to quit                                     | [  1] Fantasy VII verlassen und                (0.77)
+[001] playing Final Fantasy VII                               | [  0] Möchten Sie Final                        (0.53)
+[002] and return to Windows?                                  | [  2] zu Windows zurückkehren?                 (0.93)
+[003] Yes                                                     | [ 31] Fest                                     (0.57)
+[004] No                                                      | [  4] Nein                                     (0.83)
+
+====================================================================================================
+CONFIG MENU
+====================================================================================================
+[005] Window color                                            | [387] Wind                                     (0.80)
+[006] Sound                                                   | [  6] Sound                                    (1.50)
+[007] Controller                                              | [  7] Kontroller                               (1.10)
+[008] Cursor                                                  | [  8] Cursor                                   (1.50)
+[009] ATB                                                     | [  9] ATB                                      (1.50)
+[010] Battle speed                                            | [ 26] Speicher                                 (0.60)
+[011] Battle message                                          | [ 13] Kamerawinkel                             (0.58)
+[012] Field message                                           | [ 12] Feldmeldung                              (0.78)
+[013] Camera angle                                            | [ 25] Anfang                                   (0.64)
+[014] Select                                                  | [ 21] Stereo                                   (0.70)
+[015] Cancel                                                  | [ 15] Abbrechen                                (0.77)
+[016] Menu                                                    | [ 16] Menü                                     (1.25)
+[017] Normal                                                  | [ 23] Normal                                   (1.50)
+[018] Customize                                               | [ 30] Auto                                     (0.66)
+[019] Initial                                                 | [ 40] Indirekt                                 (0.73)
+[020] Memory                                                  | [ 10] Kampftempo                               (0.70)
+[021] Active                                                  | [ 27] Aktiv                                    (0.93)
+[022] Recommended                                             | [ 49] Abbrechen                                (0.70)
+[023] Wait                                                    | [ 29] Warten                                   (0.80)
+[024] Auto                                                    | [ 36] BLAU                                     (0.70)
+[025] Fixed                                                   | [534] Feld                                     (0.67)
+[026] Slow                                                    | [ 32] Langs.                                   (0.70)
+[027] Fast                                                    | [397] Hast                                     (0.75)
+[028] Magic order                                             | [ 37] Zauberfolge                              (0.77)
+[029] restore                                                 | [  5] Fensterfarbe                             (0.73)
+[030] attack                                                  | [ 52] Zum Einrichten START drücken.            (0.49)
+[031] indirect                                                | [ 44] rechts2                                  (0.73)
+[032] No.                                                     | [ 20] Mono                                     (0.77)
+[036] Set Sound & Music Volume                                | [ 55] Ton- und Musikeinstellung                (0.69)
+[037] Not supported.                                          | [ 56] Nicht unterstützt                        (0.59)
+
+====================================================================================================
+MAIN MENU
+====================================================================================================
+[038] Item                                                    | [ 58] Objekt                                   (0.70)
+[039] Magic                                                   | [ 60] Materia                                  (0.70)
+[040] Materia                                                 | [758] Materia                                  (1.30)
+[041] Equip                                                   | [ 61] Ausrüsten                                (0.64)
+[042] Status                                                  | [100] TASTATUR                                 (0.71)
+[043] Order                                                   | [480] Ordnen                                   (0.73)
+[044] Limit                                                   | [ 64] Limit                                    (1.50)
+[045] Config                                                  | [ 65] Konfig                                   (1.33)
+[046] PHS                                                     | [ 66] PHS                                      (1.50)
+[047] Save                                                    | [ 67] Speichern                                (0.81)
+[048] Quit                                                    | [ 76] Anleitung                                (0.51)
+[054] Tutorial                                                | [200] Moral                                    (0.62)
+
+====================================================================================================
+STATUS SCREEN LABELS
+====================================================================================================
+[049] Beginner                                                | [ 77] Unter                                    (0.66)
+[050] Time                                                    | [ 72] Zeit                                     (0.75)
+[051] Gil                                                     | [ 73] Gil                                      (1.50)
+[052] next level                                              | [ 74] Nächst. Lv                               (0.70)
+[053] Limit level                                             | [ 75] Limit-Stufe                              (1.05)
+[055] LEVEL UP                                                | [885] Level                                    (0.77)
+[056] Fury                                                    | [ 79] Zorn                                     (0.75)
+[057] Sadness                                                 | [ 80] Traurigk.                                (0.62)
+
+====================================================================================================
+KEYBOARD CONFIGURATION
+====================================================================================================
+[058] Press [CANCEL] to end.                                  | [ 82] Mit [ABBRECHEN] beenden.                 (0.93)
+[059] Press [OK] to configure a key.                          | [ 84] Tastenbelegung zu konfigurieren.         (0.92)
+[060] Now press the new key.                                  | [552] Nein, ich bin es nicht.                  (0.61)
+[061] [OK]                                                    | [ 86] [O.K.]                                   (1.00)
+[062] [CANCEL]                                                | [ 87] [ABBRECHEN]                              (0.92)
+[063] [MENU]                                                  | [ 88] [MENÜ]                                   (1.33)
+[064] [SWITCH]                                                | [ 95] [START]                                  (0.73)
+[065] [PAGEUP]                                                | [ 92] [KAMERA]                                 (0.70)
+[066] [PAGEDOWN]                                              | [ 97] [UNTEN]                                  (0.67)
+[067] [CAMERA]                                                | [ 96] [HERAUF]                                 (0.82)
+[068] [TARGET]                                                | [ 99] [RECHT]                                  (0.87)
+[069] [ASSIST]                                                | [ 93] [ZIEL]                                   (0.63)
+[070] [START]                                                 | [ 98] [LINKS]                                  (0.63)
+[071] [UP]                                                    | [ 89] [UMSCHALTEN]                             (0.57)
+[072] [DOWN]                                                  | [ 90] [BILD HOCH]                              (0.67)
+[073] [LEFT]                                                  | [ 94] [HILFE]                                  (0.82)
+[074] [RIGHT]                                                 | [ 91] [BILD HERUNTER]                          (0.56)
+[075] KEYBOARD                                                | [383] Erde                                     (0.50)
+[076] JOYSTICK                                                | [101] JOYSTICK                                 (1.20)
+
+====================================================================================================
+KEYBOARD KEYS
+====================================================================================================
+[077] ESCAPE                                                  | [639] Freshmake                                (0.53)
+[078] 1                                                       | [835] 01                                       (0.67)
+[079] 2                                                       | [836] 02                                       (0.67)
+[080] 3                                                       | [837] 03                                       (0.67)
+[081] 4                                                       | [838] 04                                       (0.67)
+[082] 5                                                       | [839] 05                                       (0.67)
+[083] 6                                                       | [840] 06                                       (0.67)
+[084] 7                                                       | [841] 07                                       (0.67)
+[085] 8                                                       | [842] 08                                       (0.67)
+[086] 9                                                       | [843] 09                                       (0.67)
+[087] 0                                                       | [844] 10                                       (0.67)
+[088] MINUS                                                   | [163] Minimum                                  (0.67)
+[089] EQUALS                                                  | [640] Square                                   (0.50)
+[090] BACK SPACE                                              | [525] Auch stehl.                              (0.48)
+[091] TAB                                                     | [625] Tifa                                     (0.57)
+[092] Q                                                       | [---] NO MATCH
+[093] W                                                       | [---] NO MATCH
+[094] E                                                       | [ 50] EXT                                      (0.50)
+[095] R                                                       | [ 34] ROT                                      (0.50)
+[096] T                                                       | [ 42] Typ                                      (0.50)
+[097] Y                                                       | [537] Typ                                      (0.50)
+[098] U                                                       | [---] NO MATCH
+[099] I                                                       | [141] Gil                                      (0.50)
+[100] O                                                       | [389] Tod                                      (0.50)
+[101] P                                                       | [482] AP                                       (0.67)
+[102] LEFT BRACKET                                            | [112] Traurigkeit                              (0.52)
+[103] RIGHT BRACKET                                           | [861] Nicht formatiert                         (0.55)
+[104] RETURN                                                  | [126] Reflektieren                             (0.56)
+[105] LEFT CONTROL                                            | [487] Alles entfernen                          (0.44)
+[106] A                                                       | [792] A                                        (1.00)
+[107] S                                                       | [---] NO MATCH
+[108] D                                                       | [631] Cid                                      (0.50)
+[109] F                                                       | [---] NO MATCH
+[110] G                                                       | [760] Gil                                      (0.50)
+[111] H                                                       | [---] NO MATCH
+[112] J                                                       | [  3] Ja                                       (0.67)
+[113] K                                                       | [---] NO MATCH
+[114] L                                                       | [---] NO MATCH
+[115] SEMICOLON                                               | [ 28] Empfohlen                                (0.56)
+[116] APOSTROPHE                                              | [118] Stop                                     (0.57)
+[117] GRAVE                                                   | [393] Trauer                                   (0.55)
+[118] LEFT SHIFT                                              | [411] Tobsucht                                 (0.44)
+[119] BACK SLASH                                              | [142] Nach                                     (0.43)
+[120] Z                                                       | [---] NO MATCH
+[121] X                                                       | [---] NO MATCH
+[122] C                                                       | [676] Cid                                      (0.50)
+[123] V                                                       | [793] V                                        (1.00)
+[124] B                                                       | [---] NO MATCH
+[125] N                                                       | [---] NO MATCH
+[126] M                                                       | [---] NO MATCH
+[127] COMMA                                                   | [698] Command                                  (0.83)
+[128] PERIOD                                                  | [465] Erde                                     (0.60)
+[129] SLASH                                                   | [535] Schlacht                                 (0.62)
+[130] RIGHT SHIFT                                             | [111] Gift                                     (0.53)
+[131] MULTIPLY                                                | [194] Ungültig                                 (0.50)
+[132] LEFT ALT                                                | [445] Vitalitä                                 (0.50)
+[133] SPACE                                                   | [ 18] Pause                                    (0.60)
+[134] CAPS LOCK                                               | [831] BLOCK                                    (0.57)
+[135] F1                                                      | [845] 11                                       (0.50)
+[136] F2                                                      | [846] 12                                       (0.50)
+[137] F3                                                      | [847] 13                                       (0.50)
+[138] F4                                                      | [848] 14                                       (0.50)
+[139] F5                                                      | [849] 15                                       (0.50)
+[140] F6                                                      | [---] NO MATCH
+[141] F7                                                      | [---] NO MATCH
+[142] F8                                                      | [---] NO MATCH
+[143] F9                                                      | [---] NO MATCH
+[144] F10                                                     | [---] NO MATCH
+[145] NUMLOCK                                                 | [201] Glück                                    (0.50)
+[146] SCROLL                                                  | [116] Schnell                                  (0.62)
+[147] NUMPAD7                                                 | [172] Null MP.                                 (0.53)
+[148] NUMPAD8                                                 | [459] Normal                                   (0.46)
+[149] NUMPAD9                                                 | [789] Normal                                   (0.46)
+[150] SUBTRACT                                                | [697] Summon Materia!                          (0.43)
+[151] NUMPAD4                                                 | [---] NO MATCH
+[152] NUMPAD5                                                 | [---] NO MATCH
+[153] NUMPAD6                                                 | [---] NO MATCH
+[154] ADD                                                     | [636] Standard                                 (0.55)
+[155] NUMPAD1                                                 | [---] NO MATCH
+[156] NUMPAD2                                                 | [---] NO MATCH
+[157] NUMPAD3                                                 | [---] NO MATCH
+[158] NUMPAD0                                                 | [---] NO MATCH
+[159] DECIMAL                                                 | [447] Moral                                    (0.50)
+[160] F11                                                     | [---] NO MATCH
+[161] F12                                                     | [---] NO MATCH
+[162] F13                                                     | [---] NO MATCH
+[163] F14                                                     | [---] NO MATCH
+[164] F15                                                     | [833] /15                                      (0.67)
+[165] KANA                                                    | [754] Kaufen                                   (0.60)
+[166] CONVERT                                                 | [ 41] Verboten                                 (0.53)
+[167] NOCONVERT                                               | [224] Nein                                     (0.61)
+[168] YEN                                                     | [ 47] Menü                                     (0.57)
+[169] NUMPADEQUALS                                            | [854] NEUES SPIEL                              (0.43)
+[170] CIRCUMFLEX                                              | [755] Verkaufen                                (0.42)
+[171] AT                                                      | [223] Ja                                       (0.50)
+[172] COLON                                                   | [623] Cloud                                    (0.60)
+[173] UNDERLINE                                               | [857] Nein                                     (0.62)
+[174] KANJI                                                   | [ 39] Angriff                                  (0.50)
+[175] STOP                                                    | [399] Stop                                     (1.30)
+[176] AX                                                      | [539] Max.                                     (0.67)
+[177] UNLABELED                                               | [134] Dunkelheit                               (0.53)
+[178] NUMPADENTER                                             | [484] MASTER                                   (0.59)
+[179] RIGHT CONTROL                                           | [218] Einrichten                               (0.43)
+[180] NUMPADCOMMA                                             | [---] NO MATCH
+[181] DIVIDE                                                  | [764] Wieviel                                  (0.62)
+[182] SYSRQ                                                   | [407] Wasser                                   (0.55)
+[183] RIGHT ALT                                               | [775] Vitalitä                                 (0.59)
+[184] HOME                                                    | [538] Name                                     (0.50)
+[185] UP                                                      | [504] EXP.UP                                   (0.50)
+[186] PAGE UP                                                 | [505] Gil UP                                   (0.62)
+[187] LEFT                                                    | [190] Effekt                                   (0.60)
+[188] RIGHT                                                   | [ 22] Breit                                    (0.60)
+[189] END                                                     | [659] Red                                      (0.67)
+[190] DOWN                                                    | [113] Zorn                                     (0.50)
+[191] PAGE DOWN                                               | [191] Angreifen                                (0.44)
+[192] INSERT                                                  | [630] Vincent                                  (0.62)
+[193] DELETE                                                  | [189] Element                                  (0.62)
+[194] LEFT WIN                                                | [533] Allein                                   (0.57)
+[195] RIGHT WIN                                               | [766] Übrige Gil                               (0.53)
+[196] APPS                                                    | [720] AP                                       (0.67)
+[197] MOUSE_B1                                                | [ 54] Pause                                    (0.46)
+[198] MOUSE_B2                                                | [107] Pause                                    (0.46)
+[199] MOUSE_B3                                                | [493] MASTER                                   (0.43)
+
+====================================================================================================
+JOYSTICK BUTTONS
+====================================================================================================
+[200] UP                                                      | [742] EXP.UP                                   (0.50)
+[201] DOWN                                                    | [394] Zorn                                     (0.50)
+[202] LEFT                                                    | [392] Gift                                     (0.50)
+[203] RIGHT                                                   | [ 63] Reihe                                    (0.60)
+[204] BUTTON 1                                                | [811] Guten Tag!                               (0.44)
+[205] BUTTON 2                                                | [762] Ausstattung                              (0.42)
+[206] BUTTON 3                                                | [---] NO MATCH
+[207] BUTTON 4                                                | [---] NO MATCH
+[208] BUTTON 5                                                | [---] NO MATCH
+[209] BUTTON 6                                                | [---] NO MATCH
+[210] BUTTON 7                                                | [---] NO MATCH
+[211] BUTTON 8                                                | [---] NO MATCH
+[212] button@Y                                                | [---] NO MATCH
+[213] button@QP                                               | [---] NO MATCH
+
+====================================================================================================
+BATTLE STATUSES
+====================================================================================================
+[214] Pause                                                   | [486] Tauschen                                 (0.62)
+[215] Sleep                                                   | [110] Schlaf                                   (0.86)
+[216] Poison                                                  | [414] Blind                                    (0.56)
+[217] Sadness                                                 | [409] Todesurteil                              (0.53)
+[218] Fury                                                    | [462] Feuer                                    (0.67)
+[219] Confusion                                               | [412] Unverwundbar                             (0.49)
+[220] Silence                                                 | [396] Schweigen                                (0.70)
+[221] Haste                                                   | [722] MASTER                                   (0.73)
+[222] Slow                                                    | [117] Langsam                                  (0.68)
+[223] Stop                                                    | [131] Toll                                     (0.70)
+[224] Petrify                                                 | [403] Verstein.                                (0.57)
+[225] Regen                                                   | [123] regen                                    (1.20)
+[226] Reflect                                                 | [ 46] rechts1                                  (0.57)
+[227] Shield                                                  | [128] Schild                                   (1.03)
+[228] Berserk                                                 | [405] Barriere                                 (0.73)
+[229] Peerless                                                | [127] Doppel                                   (0.63)
+[230] Paralyze                                                | [521] Alle                                     (0.50)
+[231] Darkness                                                | [808] Danke!                                   (0.57)
+[304] Near-death                                              | [132] Einzigartig                              (0.58)
+[305] Sleep                                                   | [391] Schlaf                                   (0.86)
+[306] Poison                                                  | [395] Psycho                                   (0.53)
+[307] Sadness                                                 | [408] Schild                                   (0.51)
+[308] Fury                                                    | [700] Feuer                                    (0.67)
+[309] Confusion                                               | [122] Versteinerung                            (0.47)
+[310] Silence                                                 | [404] Heilung                                  (0.63)
+[311] Haste                                                   | [731] MASTER                                   (0.73)
+[312] Slow                                                    | [642] Local                                    (0.44)
+[313] Stop                                                    | [115] Stummheit                                (0.51)
+[314] Frog                                                    | [400] Frosch                                   (0.80)
+[315] Small                                                   | [410] Manipul.                                 (0.66)
+[316] Slow-numb                                               | [133] Lähmung                                  (0.45)
+[317] Petrify                                                 | [114] Verwirrung                               (0.55)
+[318] Regen                                                   | [192] Verteidigen                              (0.62)
+[319] Barrier                                                 | [406] ZBarr.                                   (0.82)
+[320] MBarrier                                                | [624] Barret                                   (0.71)
+[321] Reflect                                                 | [461] Dreifach                                 (0.53)
+[322] Shield                                                  | [874] Spielstand 1                             (0.56)
+[323] Death-sentence                                          | [402] Allm.Verstein.                           (0.56)
+[324] Manipulate                                              | [696] Magic Materia!                           (0.50)
+[325] Berserk                                                 | [703] Erde                                     (0.55)
+[326] Peerless                                                | [ 68] Verlassen                                (0.59)
+[327] Paralyzed                                               | [390] Gefahr                                   (0.47)
+[328] Darkness                                                | [809] Danke!                                   (0.57)
+
+====================================================================================================
+BATTLE ARENA MESSAGES
+====================================================================================================
+[232] How much will you raise?                                | [140] Wieviel willst du ausgeben?              (0.71)
+[233] Gil                                                     | [743] Gil UP                                   (0.97)
+[234] After                                                   | [144] Weiter?                                  (0.70)
+[235] Gil on hand                                             | [143] Gil auf der Hand                         (1.17)
+[236] Keep goin'?                                             | [458] Keine                                    (0.50)
+[237] Of course!     No way!                                  | [145] Ja     Nein                              (0.86)
+[238] Current Battle Points                                   | [146] Vorhandene Schlachtpunkte                (0.55)
+[239] Slot start!                                             | [147] Schlitzstart!                            (0.95)
+[240] GREAT!!                                                 | [148] TOLL!!                                   (0.66)
+[241] Then, go for it!                                        | [177] Eigentlich nicht                         (0.51)
+[264] Yesss! No handicapp!                                    | [173] Jaa! Keine Behinderung!!                 (0.86)
+[265] HP restored.                                            | [174] HP wiederhergestellt.                    (0.75)
+[266] Worried about the other members?                        | [175] Besorgt um die anderen Mitglieder?       (0.47)
+[267] Yeah, a little                                          | [176] Ja, ein bichen                           (0.63)
+[268] Not really                                              | [777] Moral                                    (0.53)
+
+====================================================================================================
+BATTLE HANDICAPS
+====================================================================================================
+[242] Magic Materia is broken.                                | [151] Zaubersubstanz kaputt.                   (0.80)
+[243] Summon Materia is broken.                               | [797] Materia-Laden                            (0.77)
+[244] Support Materia is broken.                              | [765] Objekt    Materia                        (0.77)
+[245] Independent Materia is broken.                          | [167] 5 Ebenen zurück.                         (0.59)
+[246] Command Materia is broken.                              | [556] Cool! Das sollte ok sein!                (0.73)
+[247] All Materia is broken.                                  | [550] Das sollte ok sein.                      (0.84)
+[248] Accessory is broken.                                    | [156] Alle Substanz kaputt.                    (0.54)
+[249] Item command is sealed.                                 | [158] Objektbefehl ist versiegelt.             (0.89)
+[250] Armor is broken.                                        | [195] Absorbieren                              (0.52)
+[251] Weapon is broken.                                       | [150] Ok, dann los!                            (0.57)
+[252] 1/2 speed.                                              | [169] 1/2 HP.                                  (0.91)
+[253] 1/2 accuracy.                                           | [170] 1/2 MP.                                  (0.70)
+[254] Minimum                                                 | [540] Min.                                     (0.55)
+[255] Poison                                                  | [164] Gift                                     (0.70)
+[256] Toad                                                    | [652] Tifa                                     (0.50)
+[257] Time x30 damage.                                        | [166] Zeit x30 Schaden.                        (1.05)
+[258] Down 5 levels.                                          | [155] Befehlssubstanz kaputt.                  (0.47)
+[259] Down 10 levels.                                         | [168] 10 Ebenen zurück.                        (0.57)
+[260] 1/2 HP.                                                 | [171] 1/2 HP&MP.                               (1.02)
+[261] 1/2 MP.                                                 | [162] 1/2 Genauigkeit.                         (0.63)
+[262] 1/2 HP&MP.                                              | [161] 1/2 Geschwindigkeit.                     (0.60)
+[263] Zero MP.                                                | [157] Zubehör kaputt.                          (0.72)
+
+====================================================================================================
+PARTY MANAGEMENT
+====================================================================================================
+[269] Save                                                    | [855] Wirklich speichern?                      (0.47)
+[270] Reform                                                  | [183] Reformieren                              (0.91)
+[271] Split your allies into two groups.                      | [184] Mitglieden in zwei Gruppen aufteilen     (0.63)
+[272] Split your allies into three groups.                    | [185] Mitglieder in drei Gruppen aufteilen     (0.64)
+[273] Please make a party of two.                             | [188] Auswählen mit [START]-Taste              (0.53)
+[274] Please make a party of three.                           | [186] Gruppe aus zwei Personen bilden          (0.50)
+[275] Select with START button.                               | [187] Gruppe aus drei Personen bilden          (0.45)
+
+====================================================================================================
+EQUIPMENT LABELS
+====================================================================================================
+[276] Wpn.                                                    | [209] Waf.                                     (0.70)
+[277] Arm.                                                    | [210] Rüs.                                     (0.70)
+[278] Acc.                                                    | [211] Acc.                                     (1.20)
+[349] Wpn:                                                    | [469] Wind                                     (0.50)
+[350] Arm:                                                    | [457] Wachstum:                                (0.46)
+[351] Acc:                                                    | [437] Acc.                                     (0.95)
+[352] Limit level:                                            | [212] Limit-Ebene                              (1.11)
+[353] Wpn.                                                    | [435] Waf.                                     (0.70)
+[354] Arm.                                                    | [436] Rüs.                                     (0.70)
+[355] Acc.                                                    | [441] Acc.                                     (1.20)
+[372] Wpn.                                                    | [439] Waf.                                     (0.70)
+[373] Arm.                                                    | [440] Rüs.                                     (0.70)
+
+====================================================================================================
+LIMIT BREAK MENU
+====================================================================================================
+[279] LEVEL 1                                                 | [213] STUFE 1                                  (0.63)
+[280] LEVEL 2                                                 | [214] STUFE 2                                  (0.63)
+[281] LEVEL 3                                                 | [215] STUFE 3                                  (0.63)
+[282] LEVEL 4                                                 | [216] STUFE 4                                  (0.63)
+[283] Set BREAK LEVEL.                                        | [226] STUFE wählen                             (0.56)
+[284] Set                                                     | [ 62] Werte                                    (0.50)
+[285] Check                                                   | [197] Geschick                                 (0.62)
+[286] To change BREAK LEVEL,                                  | [220] Bei nderung der STUFE                    (0.48)
+[287] it will begin from Limit Point 0.                       | [221] Beginn bei Limit-Punkt 0.                (1.12)
+[288] Change BREAK LEVEL?                                     | [222] STUFE ändern?                            (0.45)
+[289] Yes                                                     | [626] Aeris                                    (0.50)
+[290] No                                                      | [219] Prüfen                                   (0.45)
+[291] Limit set!                                              | [225] Limit gewählt!                           (1.25)
+[292] Select LEVEL.                                           | [217] LIMIT-STUFE einrichten.                  (0.59)
+
+====================================================================================================
+ELEMENTS
+====================================================================================================
+[293] Fire                                                    | [380] Hitze                                    (0.64)
+[294] Ice                                                     | [381] Kälte                                    (0.75)
+[295] Lightning                                               | [464] Blitz                                    (0.93)
+[296] Earth                                                   | [656] Aerith                                   (0.73)
+[297] Poison                                                  | [384] Gift                                     (0.70)
+[298] Gravity                                                 | [466] Gift                                     (0.75)
+[299] Water                                                   | [386] Wasser                                   (1.23)
+[300] Wind                                                    | [707] Wind                                     (1.50)
+[301] Holy                                                    | [388] Heilig                                   (0.90)
+[302] Death                                                   | [791] Dreifach                                 (0.62)
+[303] Near-death                                              | [648] Barret                                   (0.50)
+
+====================================================================================================
+ELEMENT/STATUS EFFECTS
+====================================================================================================
+[329] Element                                                 | [415] Element/Nebenwirkung                     (0.72)
+[330] Effect                                                  | [417] Angriff                                  (0.51)
+[331] Attack                                                  | [416] Zusatzwirkung                            (0.52)
+[332] Defend                                                  | [536] Werfen                                   (0.67)
+[333] Halve                                                   | [193] Halbieren                                (0.77)
+[334] Invalid                                                 | [419] Halbieren                                (0.57)
+[335] Absorb                                                  | [421] Absorbieren                              (0.91)
+
+====================================================================================================
+CHARACTER ATTRIBUTES
+====================================================================================================
+[336] Strength                                                | [196] Stärke                                   (0.77)
+[337] Dexterity                                               | [204] Verteidigen                              (0.60)
+[338] Vitality                                                | [198] Vitalität                                (1.02)
+[339] Magic                                                   | [428] Angriff                                  (0.70)
+[340] Spirit                                                  | [474] Sephiroth                                (0.67)
+[341] Luck                                                    | [427] Glück                                    (0.87)
+[342] Attack                                                  | [448] Glück                                    (0.56)
+[343] Attack%                                                 | [499] Glück                                    (0.53)
+[344] Defense                                                 | [202] Angreifen                                (0.70)
+[345] Defense%                                                | [203] Angreifen %                              (0.73)
+[346] Magic atk                                               | [433] Zauberabwehr                             (0.69)
+[347] Magic def                                               | [199] Zauber                                   (0.77)
+[348] Magic def%                                              | [434] Zauberabw. %                             (0.77)
+[356] Attack                                                  | [737] Glück                                    (0.56)
+[357] Attack %                                                | [455] Zauberabw. %                             (0.60)
+[358] Defense                                                 | [779] Angreifen                                (0.70)
+[359] Defense %                                               | [506] Treffen - %                              (0.80)
+[360] Magic atk                                               | [454] Zauberabwehr                             (0.69)
+[361] Magic def                                               | [425] Zauber                                   (0.77)
+[362] Magic def%                                              | [432] Zauber                                   (0.75)
+[386] Dexterity                                               | [781] Verteidigen                              (0.60)
+[387] Cover                                                   | [207] Zbrvertdg                                (0.63)
+[388] Magic                                                   | [449] Angriff                                  (0.70)
+[389] Luck                                                    | [778] Glück                                    (0.87)
+[391] Strength                                                | [422] Stärke                                   (0.77)
+[392] Vitality                                                | [424] Vitalität                                (1.02)
+[393] Magic                                                   | [446] Zauber                                   (0.68)
+[394] Magic def                                               | [453] Zauber                                   (0.77)
+[395] Dexterity                                               | [430] Verteidigung                             (0.58)
+[396] Luck                                                    | [423] Geschick                                 (0.53)
+[397] MaxHP                                                   | [500] MAXHP                                    (1.20)
+[398] MaxMP                                                   | [501] MAXMP                                    (1.20)
+[399] MaxHPUP                                                 | [502] MAXHP                                    (1.03)
+[400] MaxMPUP                                                 | [503] MAXMP                                    (1.03)
+[401] EXP.UP                                                  | [738] MAXHP                                    (0.56)
+[402] Gil UP                                                  | [429] Angriff %                                (0.60)
+[403] Encount Down                                            | [431] Verteidigung %                           (0.51)
+[404] Encount Up                                              | [452] Verteidigung %                           (0.53)
+[405] Meet Chocobos                                           | [508] Chocobo treffen                          (0.70)
+[406] Pre-emptive                                             | [509] Präventivm. + %                          (0.66)
+[407] Long range attack                                       | [511] Alle angreifen                           (0.59)
+[408] Attack all                                              | [495] Vitalität                                (0.52)
+[409] Counter attack                                          | [490] Schutz   %HåHER                          (0.54)
+[547] Dexterity                                               | [451] Verteidigung                             (0.58)
+[548] Cover                                                   | [497] Zbrvertdg                                (0.63)
+[549] Magic                                                   | [496] Zauber                                   (0.68)
+[550] Luck                                                    | [444] Geschick                                 (0.53)
+[552] Strength                                                | [443] Stärke                                   (0.77)
+[553] Vitality                                                | [733] Vitalität                                (1.02)
+[554] Magic                                                   | [734] Zauber                                   (0.68)
+[555] Magic def                                               | [776] Zauber                                   (0.77)
+[556] Dexterity                                               | [512] Gegenangriff                             (0.58)
+[557] Luck                                                    | [492] Glück   %HåHER                           (0.53)
+[558] MaxHP                                                   | [740] MAXHP                                    (1.20)
+[559] MaxMP                                                   | [739] MAXMP                                    (1.20)
+[560] MaxHPUP                                                 | [741] MAXMP                                    (0.87)
+[561] MaxMPUP                                                 | [515] HP/MP-nderung                            (0.50)
+[562] EXP.UP                                                  | [753] HP/MP-nderung                            (0.41)
+[563] Gil UP                                                  | [450] Angriff %                                (0.60)
+[564] Encount Down                                            | [747] Präventivm. + %                          (0.50)
+[565] Encount Up                                              | [208] Zbrvertdg %                              (0.49)
+[566] Meet Chocobos                                           | [746] Chocobo treffen                          (0.70)
+[567] Pre-emptive                                             | [426] Gemüt                                    (0.57)
+[568] Long range attack                                       | [513] Alle angreifen                           (0.59)
+[569] Attack all                                              | [494] Stärke                                   (0.45)
+[570] Counter attack                                          | [728] Schutz   %HåHER                          (0.54)
+
+====================================================================================================
+MATERIA SLOTS
+====================================================================================================
+[363] Slot                                                    | [786] Schlitz:                                 (0.70)
+[364] Growth                                                  | [712] Sephiroth                                (0.53)
+[365] Nothing                                                 | [ 38] Heilung                                  (0.57)
+[366] Normal                                                  | [460] Doppelt                                  (0.51)
+[367] Double                                                  | [790] Doppelt                                  (0.66)
+[368] Triple                                                  | [788] Keine                                    (0.56)
+[583] Nothing                                                 | [787] Verstärkung:                             (0.52)
+[584] Normal                                                  | [859] Formatiert                               (0.50)
+[585] Double                                                  | [ 59] Zauber                                   (0.50)
+[586] Triple                                                  | [ 51] Hilfe                                    (0.55)
+
+====================================================================================================
+MATERIA MANAGEMENT
+====================================================================================================
+[369] Do you really want to remove this?                      | [725] Alles entfernen                          (0.53)
+[370] I sure do!                                              | [527] Turbo-MP                                 (0.53)
+[371] Wait a sec                                              | [668] Cait Seith                               (0.60)
+[374] Ability list                                            | [477] Fähigkeitsliste                          (0.72)
+[375] Equip effect                                            | [695] Full Equipent!                           (0.74)
+[376] Check                                                   | [724] Tauschen                                 (0.66)
+[377] Arrange                                                 | [485] Ordnen                                   (0.66)
+[378] AP                                                      | [472] Ja!                                      (0.60)
+[379] To next level                                           | [483] Auf nächste Ebene                        (0.60)
+[380] MASTER                                                  | [767] Preis für Master                         (0.85)
+[381] Arrange                                                 | [718] Ordnen                                   (0.66)
+[382] Exchange                                                | [526] Schlag                                   (0.77)
+[383] Remove all                                              | [473] Einen Moment                             (0.56)
+[384] Trash                                                   | [ 17] Fenster AUS                              (0.50)
+[390] MASTER                                                  | [517] Zauber                                   (0.70)
+[410] Magic                                                   | [398] Gemach                                   (0.55)
+[411] Summon                                                  | [711] Einen Moment                             (0.53)
+[412] Enemy-Skill                                             | [519] Feindtechnik                             (0.55)
+[413] Added-Ability                                           | [715] Fähigkeitsliste                          (0.56)
+[414] All                                                     | [710] Ja!                                      (0.53)
+[415] 4x-M                                                    | [522] 4x-Zber                                  (0.75)
+[416] Absorb MP                                               | [523] MP absorb.                               (0.83)
+[417] Absorb HP                                               | [524] HP absorb.                               (0.83)
+[418] Steal as well                                           | [481] Gespeicherte Zahl   /24                  (0.59)
+[419] Extra cut                                               | [699] Zero - AW YEAH!                          (0.53)
+[420] Turbo MP                                                | [529] Nicht genug MP.                          (0.43)
+[542] Ability list                                            | [629] Cait Sith                                (0.57)
+[543] Equip effect                                            | [478] Rüstungseffekt                           (0.66)
+[544] AP                                                      | [856] Ja                                       (0.50)
+[545] To next level                                           | [721] Auf nächste Ebene                        (0.60)
+[546] MASTER                                                  | [468] Wasser                                   (0.67)
+[551] MASTER                                                  | [706] Wasser                                   (0.67)
+
+====================================================================================================
+ITEM MENU
+====================================================================================================
+[421] Nothing.                                                | [528] Nichts                                   (0.49)
+[422] Not enough MP.                                          | [531] Ordnen                                   (0.50)
+[423] Use                                                     | [ 14] Auswählen                                (0.50)
+[424] Arrange                                                 | [530] Verwenden                                (0.57)
+[425] Key Items                                               | [532] Schlüsselobjekte                         (0.74)
+[426] Customize                                               | [543] Ist mir egal.                            (0.45)
+[427] Field                                                   | [628] Yuffie                                   (0.55)
+[428] Battle                                                  | [794] Objektladen                              (0.47)
+[429] Throw                                                   | [---] NO MATCH
+[430] Type                                                    | [165] Kröte                                    (0.44)
+[431] Name                                                    | [420] Unwirksam                                (0.46)
+[432] Most                                                    | [---] NO MATCH
+[433] Least                                                   | [761] Besitz                                   (0.55)
+
+====================================================================================================
+DIALOG RESPONSES (CLOUD)
+====================================================================================================
+[434] OK! Got it!                                             | [541] OK! Klar!                                (1.00)
+[435] I'm not sure but[A9]                                    | [542] Ich bin nicht sicher, aber               (0.55)
+[436] Don't really care.                                      | [749] Alle angreifen                           (0.44)
+
+====================================================================================================
+DIALOG RESPONSES (BARRET)
+====================================================================================================
+[437] Heh! No sweat!                                          | [544] Heh! Heh!                                (0.81)
+[438] D-d-d-damn! My head hurts!                              | [545] V-v-verdammt! Mein Kopf!                 (0.60)
+[439] Got nuthin' to do with me!                              | [546] Hat nichts mit mir zu tun!               (0.47)
+
+====================================================================================================
+DIALOG RESPONSES (TIFA)
+====================================================================================================
+[440] Hmm, so that's it.                                      | [547] Hmm, das wär's also.                     (0.78)
+[441] I'm not too sure but[A9]                                | [548] Ich bin nicht sicher, aber               (0.48)
+[442] I've got the wrong person.                              | [549] Ich hab die falsche Person erwischt.     (0.62)
+
+====================================================================================================
+DIALOG RESPONSES (AERIS)
+====================================================================================================
+[443] This should be okay.                                    | [553] Ok, klar!                                (0.51)
+[444] Not quite ready yet.                                    | [551] Noch nicht ganz bereit.                  (0.53)
+[445] It isn't me.                                            | [438] Limit-Stufe                              (0.43)
+
+====================================================================================================
+DIALOG RESPONSES (RED XIII)
+====================================================================================================
+[446] Right, I've got it!                                     | [555] Hat nichts mit mir zu tun.               (0.60)
+[447] I don't get it.                                         | [554] Kapier ich nicht.                        (0.57)
+[448] It has nothing to do with me.                           | [810] Du hast nicht genug Geld!                (0.41)
+
+====================================================================================================
+DIALOG RESPONSES (YUFFIE)
+====================================================================================================
+[449] Cool! This should do it!                                | [557] Nee! Kapier ich nicht!                   (0.50)
+[450] Nope! I don't get it!                                   | [558] Mann, ich tapp total im Dunkeln!         (0.50)
+[451] Oh wow, I'm totally clueless!                           | [---] NO MATCH
+
+====================================================================================================
+DIALOG RESPONSES (CAIT SITH)
+====================================================================================================
+[452] I'm getting less human[A9]                              | [560] Ich bin noch nicht bereit.               (0.43)
+[453] I'm still not ready.                                    | [561] Es hat nichts mit mir zu tun.            (0.53)
+[454] It has nothing to do with me.                           | [559] Ich verlier immer mehr Menschliches      (0.42)
+
+====================================================================================================
+DIALOG RESPONSES (VINCENT)
+====================================================================================================
+[455] Hey I like this! Lemme use it!                          | [564] Nicht ich! Gib es jemand anders!         (0.49)
+[456] Hmph. Don't quite get it but[A9]                        | [565] Es hat nichts mit mir zu tun.            (0.56)
+[457] Not me! Give it to someone else!                        | [562] Das gefällt mir! Her damit!              (0.54)
+[458] It's got nothing to do with me.                         | [563] Hmph. Hab ich nicht ganz kapiert, aber   (0.40)
+
+====================================================================================================
+CHARACTER NAMES
+====================================================================================================
+[459] Cloud                                                   | [632] Choco                                    (0.60)
+[460] Barret                                                  | [735] Zbrvertdg                                (0.53)
+[461] Tifa                                                    | [704] Gift                                     (0.50)
+[462] Aeris                                                   | [627] Red XIII                                 (0.51)
+[463] Red XIII                                                | [470] Heilig                                   (0.43)
+[464] Yuffie                                                  | [664] Yuffie                                   (1.50)
+[371] Sephiroth[B2][A9][A9][B3]                               | [683] Sephiroth                                (1.03)
+
+====================================================================================================
+CORRUPTED/GARBLED TEXT
+====================================================================================================
+[033] [C5][B8][B7]                                            | [---] NO MATCH
+[034] [BA][C5][B8][B8][C1]                                    | [---] NO MATCH
+[035] [B5][BF][C8][B8]                                        | [---] NO MATCH
+[465] 䄣呉㌀呉ｈ                                                   | [---] NO MATCH
+[466] 䤶䍎久ｔ                                                    | [---] NO MATCH
+[467] 䤣ｄ                                                      | [---] NO MATCH
+[468] 䠣䍏ｏ                                                     | [---] NO MATCH
+[469] 倳䍁ｅ                                                     | [---] NO MATCH
+[470] 䔤䕌䕔ÿ                                                    | [---] NO MATCH
+[471] 䔳䕌呃ÿ                                                    | [---] NO MATCH
+[472] 䔤䅆䱕ｔ                                                    | [---] NO MATCH
+[473] 䄣䍎䱅ÿ                                                    | [---] NO MATCH
+
+====================================================================================================
+UNICODE PLACEHOLDERS
+====================================================================================================
+[474] [UNICODE:21]                                            | [---] NO MATCH
+[475] [UNICODE:22]                                            | [---] NO MATCH
+[476] [UNICODE:23]                                            | [---] NO MATCH
+[477] [UNICODE:24]                                            | [---] NO MATCH
+[478] [UNICODE:25]                                            | [---] NO MATCH
+[479] [UNICODE:26]                                            | [---] NO MATCH
+[480] [UNICODE:27]                                            | [---] NO MATCH
+[481] [UNICODE:28]                                            | [---] NO MATCH
+[482] [UNICODE:29]                                            | [---] NO MATCH
+[483] [UNICODE:2a]                                            | [---] NO MATCH
+[484] [UNICODE:2b]                                            | [---] NO MATCH
+[485] [UNICODE:2c]                                            | [---] NO MATCH
+[486] [UNICODE:2d]                                            | [---] NO MATCH
+[487] [UNICODE:2e]                                            | [---] NO MATCH
+[488] [UNICODE:2f]                                            | [---] NO MATCH
+[489] [UNICODE:30]                                            | [---] NO MATCH
+[490] [UNICODE:31]                                            | [---] NO MATCH
+[491] [UNICODE:32]                                            | [---] NO MATCH
+[492] [UNICODE:33]                                            | [---] NO MATCH
+[493] [UNICODE:34]                                            | [---] NO MATCH
+[494] [UNICODE:35]                                            | [---] NO MATCH
+[495] [UNICODE:36]                                            | [---] NO MATCH
+[496] [UNICODE:37]                                            | [---] NO MATCH
+[497] [UNICODE:38]                                            | [---] NO MATCH
+[498] [UNICODE:39]                                            | [---] NO MATCH
+[499] [UNICODE:3a]                                            | [---] NO MATCH
+[500] [UNICODE:0c]                                            | [---] NO MATCH
+[501] [UNICODE:0e]                                            | [---] NO MATCH
+[502] [UNICODE:0b]                                            | [---] NO MATCH
+[503] [UNICODE:0d]                                            | [---] NO MATCH
+[504] [UNICODE:41]                                            | [---] NO MATCH
+[505] [UNICODE:42]                                            | [---] NO MATCH
+[506] [UNICODE:43]                                            | [---] NO MATCH
+[507] [UNICODE:44]                                            | [---] NO MATCH
+[508] [UNICODE:45]                                            | [---] NO MATCH
+[509] [UNICODE:46]                                            | [---] NO MATCH
+[510] [UNICODE:47]                                            | [---] NO MATCH
+[511] [UNICODE:48]                                            | [---] NO MATCH
+[512] [UNICODE:49]                                            | [---] NO MATCH
+[513] [UNICODE:4a]                                            | [---] NO MATCH
+[514] [UNICODE:4b]                                            | [---] NO MATCH
+[515] [UNICODE:4c]                                            | [---] NO MATCH
+[516] [UNICODE:4d]                                            | [---] NO MATCH
+[517] [UNICODE:4e]                                            | [---] NO MATCH
+[518] [UNICODE:4f]                                            | [---] NO MATCH
+[519] [UNICODE:50]                                            | [---] NO MATCH
+[520] [UNICODE:51]                                            | [---] NO MATCH
+[521] [UNICODE:52]                                            | [---] NO MATCH
+[522] [UNICODE:53]                                            | [---] NO MATCH
+[523] [UNICODE:54]                                            | [---] NO MATCH
+[524] [UNICODE:55]                                            | [---] NO MATCH
+[525] [UNICODE:56]                                            | [---] NO MATCH
+[526] [UNICODE:57]                                            | [---] NO MATCH
+[527] [UNICODE:58]                                            | [---] NO MATCH
+[528] [UNICODE:59]                                            | [---] NO MATCH
+[529] [UNICODE:5a]                                            | [---] NO MATCH
+[530] [UNICODE:1a]                                            | [---] NO MATCH
+[531] [UNICODE:1b]                                            | [---] NO MATCH
+[532] [UNICODE:10]                                            | [---] NO MATCH
+
+====================================================================================================
+NUMBERS
+====================================================================================================
+[533] 1                                                       | [---] NO MATCH
+[534] 2                                                       | [---] NO MATCH
+[535] 3                                                       | [---] NO MATCH
+[536] 4                                                       | [---] NO MATCH
+[537] 5                                                       | [---] NO MATCH
+[538] 6                                                       | [---] NO MATCH
+[539] 7                                                       | [---] NO MATCH
+[540] 8                                                       | [---] NO MATCH
+[541] 9                                                       | [---] NO MATCH
+
+====================================================================================================
+SHOP TYPES
+====================================================================================================
+[587] Weapon Shop                                             | [795] Waffengeschäft                           (0.60)
+[588] Item Shop                                               | [796] Objektladen                              (0.70)
+[589] Materia Shop                                            | [799] Gemüseladen                              (0.46)
+[590] General Store                                           | [802] Souvenierladen                           (0.64)
+[591] Vegetable Store                                         | [798] Gemischtwaren                            (0.63)
+[592] Accessory Shop                                          | [---] NO MATCH
+[593] Tool Shop                                               | [---] NO MATCH
+[594] Hotel Shop                                              | [---] NO MATCH
+
+====================================================================================================
+SHOP MENU
+====================================================================================================
+[571] A                                                       | [763] Gesamt                                   (0.49)
+[572] D                                                       | [756] Beenden                                  (0.45)
+[573] Buy   Sell     Exit                                     | [818] Soll das ein Witz sein? Das ist nicht genug! (0.52)
+[574] Gil                                                     | [643] Gold                                     (0.57)
+[575] Owned                                                   | [757] Objekt                                   (0.56)
+[576] Equipped                                                | [816] Vielen Dank!                             (0.50)
+[577] Total                                                   | [804] Was möchtest du kaufen?                  (0.41)
+[578] How many                                                | [803] Willkommen!                              (0.52)
+[579] Item      Materia                                       | [814] Hast du was zu verkaufen?                (0.58)
+[580] Gil remaining                                           | [812] Wie kann ich behilflich sein?            (0.49)
+[581] Price for Master                                        | [768] Preis durch AP                           (0.60)
+[582] Price through AP                                        | [817] Ihr werdet doch alle zurückkommen!       (0.48)
+[595] Welcome!                                                | [815] Wie viele willst du?                     (0.49)
+[596] What would you like to buy?                             | [806] Was möchtest du verkaufen?               (0.58)
+[597] How many would you like?!                               | [807] Wie viele willst du verkaufen?           (0.60)
+[598] What would you like to sell?!                           | [805] Wie viele willst du davon?               (0.49)
+[599] How many would you like to sell?!                       | [813] Wie viele willst du davon?               (0.54)
+
+====================================================================================================
+SAVE/LOAD MENU
+====================================================================================================
+[600] Load                                                    | [822] Laden                                    (0.87)
+[601] Select a save data file.                                | [851] Speichern nicht möglich.                 (0.83)
+[602] Select a save game.                                     | [870] Lesen nicht möglich.                     (0.56)
+[603] Loading. Please wait.                                   | [828] Bin am Laden. Bitte warten               (0.67)
+[604] Saving. Please wait.                                    | [853] Daten sind zerstört.                     (0.60)
+[605] EMPTY                                                   | [825] STECKPLATZ 1                             (0.55)
+[606] GAME                                                    | [830] LEER                                     (0.45)
+[607] Continue?                                               | [832] Weiter?                                  (0.57)
+[608] Checking Save Data File.                                | [864] Keine Spielstandsdatei.                  (0.67)
+[623] Saved.                                                  | [858] Beendet.                                 (0.63)
+[624] Could not save.                                         | [852] Laden nicht möglich.                     (0.60)
+[625] Could not load.                                         | [860] Formatierung nicht möglich               (0.54)
+[626] Data is ruined.                                         | [866] Andere Memory Card einlegen.             (0.53)
+[627] NEW GAME                                                | [863] Memory Card wird geprüft.                (0.50)
+[628] Are you sure you want to save?                          | [834] Überprüfe Spielstandsdatei               (0.52)
+[629] Yes                                                     | [850] Gespeichert.                             (0.47)
+[630] No                                                      | [---] NO MATCH
+[631] Completed.                                              | [826] STECKPLATZ 2                             (0.56)
+[632] Formatted.                                              | [862] Jetzt formatieren?                       (0.70)
+[633] Could not format.                                       | [872] Kann Speicherpuffer der Spielstandsdatei nicht zuordnen! (0.47)
+[634] Not formatted.                                          | [873] Ungültige Spielstandsdatei!              (0.49)
+[635] Want to format it now?                                  | [823] Wählen Sie eine Speicherdatei aus.       (0.49)
+[636] No save data file.                                      | [829] Bin am Sichern. Bitte warten             (0.55)
+[637] No save data file.                                      | [869] oder löschen Sie 1 Block gesicherter Daten. (0.53)
+[638] This Memory card is damaged and cannot be used.         | [865] Diese Memory Card ist beschädigt und kann nicht verwendet werden. (0.66)
+[639] Please insert another Memory card.                      | [824] Wählen Sie einen Speicherblock aus.      (0.63)
+[640] Not enough space left on save data file.                | [867] Nicht genug Platz in der Spielstandsdatei übrig. (0.63)
+[641] Use another save data file,                             | [868] Bitte benutzen Sie eine andere Spielstandsdatei (0.61)
+[642] or erase 1 block of saved data.                         | [---] NO MATCH
+[643] Couldn't read it.                                       | [---] NO MATCH
+[644] Still want to begin the game?                           | [871] Spiel beginnen?                          (0.70)
+[645] Can not allocate save file memory buffer!               | [---] NO MATCH
+[646] Invalid save file!                                      | [827] Wirklich?                                (0.42)
+
+====================================================================================================
+SAVE SLOTS
+====================================================================================================
+[609] 01                                                      | [---] NO MATCH
+[610] 02                                                      | [---] NO MATCH
+[611] 03                                                      | [---] NO MATCH
+[612] 04                                                      | [---] NO MATCH
+[613] 05                                                      | [---] NO MATCH
+[614] 06                                                      | [---] NO MATCH
+[615] 07                                                      | [---] NO MATCH
+[616] 08                                                      | [---] NO MATCH
+[617] 09                                                      | [---] NO MATCH
+[618] 10                                                      | [883] Spielstand 10                            (0.47)
+[619] 11                                                      | [---] NO MATCH
+[620] 12                                                      | [---] NO MATCH
+[621] 13                                                      | [---] NO MATCH
+[622] 14                                                      | [---] NO MATCH
+[623] 15                                                      | [---] NO MATCH
+[647] Save 1                                                  | [875] Spielstand 2                             (0.53)
+[648] Save 2                                                  | [876] Spielstand 3                             (0.53)
+[649] 3AVE [13]                                               | [---] NO MATCH
+[650] 3AVE [14]                                               | [877] Spielstand 4                             (0.49)
+[651] 3AVE [15]                                               | [878] Spielstand 5                             (0.49)
+[652] 3AVE [16]                                               | [879] Spielstand 6                             (0.49)
+[653] 3AVE [17]                                               | [880] Spielstand 7                             (0.49)
+[654] 3AVE [18]                                               | [881] Spielstand 8                             (0.49)
+[655] 3AVE [19]                                               | [882] Spielstand 9                             (0.49)
+[656] 3AVE [11][10]                                           | [---] NO MATCH
+
+====================================================================================================
+SNOWBOARDING MINIGAME
+====================================================================================================
+[657] ,EVEL                                                   | [633] Leer                                     (0.44)
+[658] 00'00"000                                               | [---] NO MATCH
+[659] --'--"---                                               | [---] NO MATCH
+[660] COURSE A RECORD                                         | [---] NO MATCH
+[661] 00'00"000                                               | [---] NO MATCH
+[662] --'--"---                                               | [---] NO MATCH
+[663] BEST                                                    | [784] Zbrvertdg                                (0.46)
+[664] CONTINUE                                                | [723] Ordnen                                   (0.43)
+[665] RETRY                                                   | [---] NO MATCH
+[666] EXIT                                                    | [382] Gewitter                                 (0.50)
+[667] OPTION                                                  | [---] NO MATCH
+[668] CONTINUE                                                | [---] NO MATCH
+[669] RETRY                                                   | [---] NO MATCH
+[670] EXIT                                                    | [702] Blitz                                    (0.44)
+[671] GHOST                                                   | [---] NO MATCH
+[672] SURFACE                                                 | [732] Stärke                                   (0.46)
+[673] OFF                                                     | [---] NO MATCH
+[674] BOARD                                                   | [206] Zbrangrf                                 (0.46)
+[675] SLEIGH                                                  | [708] Heilig                                   (0.50)
+[676] ? ? ?                                                   | [---] NO MATCH
+[677] SNOW                                                    | [ 33] Schn.                                    (0.44)
+[678] CHECKED                                                 | [498] Geschick                                 (0.53)
+[679] TRY AGAIN                                               | [638] RaginLion                                (0.56)
+[680] EXIT                                                    | [645] Ex-SOLDIER                               (0.43)
+
+====================================================================================================
+CHOCOBO RACING MINIGAME
+====================================================================================================
+[681] TECHNIQUE                                               | [736] Geschick                                 (0.47)
+[682] TIME                                                    | [463] Kälte                                    (0.44)
+[683] BALLOON                                                 | [---] NO MATCH
+[684] TOTAL                                                   | [---] NO MATCH
+[685] BEST                                                    | [518] Beschwören                               (0.43)
+[686] /30 PTS.                                                | [---] NO MATCH
+[687] OSP@ptsN                                                | [---] NO MATCH
+[688] OTP@ptsN                                                | [---] NO MATCH
+[689] OC@ptsN                                                 | [---] NO MATCH
+[690] OC@ptsN                                                 | [---] NO MATCH
+[691] QstN                                                    | [---] NO MATCH
+[692] RndN                                                    | [ 70] Verwendung                               (0.57)
+[693] SrdN                                                    | [ 35] GRÜN                                     (0.50)
+[694] TthN                                                    | [---] NO MATCH
+[695] UthN                                                    | [ 48] Auswählen                                (0.46)
+[696] TEIOH                                                   | [---] NO MATCH
+
+====================================================================================================
+ITEMS (BATTLE REWARDS/PRIZES)
+====================================================================================================
+[697] Sprint Shoes                                            | [---] NO MATCH
+[698] Counter                                                 | [672] Vincent                                  (0.43)
+[699] Magic Counter                                           | [491] Zauberkraft   %HåHER                     (0.54)
+[700] Precious Watch                                          | [---] NO MATCH
+[701] Ether                                                   | [488] Wegwerfen                                (0.43)
+[702] Hero Drink                                              | [418] Verteidigung                             (0.45)
+[703] Bolt Plume                                              | [---] NO MATCH
+[704] Elixir                                                  | [---] NO MATCH
+[705] Fire Fang                                               | [510] Fernangriff                              (0.50)
+[706] Antarctic Wind                                          | [489] Geschwindigkeit   %HåHER                 (0.56)
+[707] Potion                                                  | [---] NO MATCH
+[708] Phoenix Down                                            | [---] NO MATCH
+[709] Hyper                                                   | [---] NO MATCH
+[710] Tranquilizer                                            | [---] NO MATCH
+[711] Cat's Bell                                              | [---] NO MATCH
+[712] Enemy                                                   | [---] NO MATCH
+[713] Sneak                                                   | [716] Rüstungseffekt                           (0.42)
+[714] Chocobracelet[FF][FF][FF]                               | [---] NO MATCH
+[715] Swift                                                   | [385] Schwerkraft                              (0.50)
+[716] Fire                                                    | [---] NO MATCH
+[717] Megalixir[FF][FF][FF][FF][FF][FF][FF]                   | [---] NO MATCH
+[718] Turbo                                                   | [442] Zub.                                     (0.44)
+[719] Hi-Potion[FF][FF][FF][FF][FF][FF][FF]                   | [---] NO MATCH
+[720] Ice                                                     | [701] Kälte                                    (0.55)
+
+====================================================================================================
+CHOCOBO NAMES
+====================================================================================================
+[721] SAM                                                     | [---] NO MATCH
+[722] ELEN                                                    | [634] Löschen                                  (0.55)
+[723] BLUES                                                   | [---] NO MATCH
+[724] TOM                                                     | [---] NO MATCH
+[725] JOHN                                                    | [---] NO MATCH
+[726] GARY                                                    | [---] NO MATCH
+[727] MIKE                                                    | [---] NO MATCH
+[728] SANDY                                                   | [---] NO MATCH
+[729] JU                                                      | [---] NO MATCH
+[730] LY                                                      | [---] NO MATCH
+[731] JOEL                                                    | [---] NO MATCH
+[732] GREY                                                    | [726] Wegwerfen                                (0.46)
+[733] EDWARD                                                  | [---] NO MATCH
+[734] JAMES                                                   | [---] NO MATCH
+[735] HARVEY                                                  | [---] NO MATCH
+[736] DAN                                                     | [---] NO MATCH
+[737] RUDY                                                    | [---] NO MATCH
+[738] GRAHAM                                                  | [---] NO MATCH
+[739] FOX                                                     | [641] 3Dfx                                     (0.57)
+[740] CLIVE                                                   | [ 19] Schlachthilfe                            (0.44)
+[741] SEAN                                                    | [635] Auswählen                                (0.46)
+[742] YOUNG                                                   | [413] Lähmung                                  (0.50)
+[743] ROBIN                                                   | [---] NO MATCH
+[744] DARIO                                                   | [---] NO MATCH
+[745] K                                                       | [---] NO MATCH
+[746] ARL                                                     | [---] NO MATCH
+[747] SARA                                                    | [---] NO MATCH
+[748] MARIE                                                   | [780] Angreifen %                              (0.50)
+[749] SAMMY                                                   | [---] NO MATCH
+[750] LIA                                                     | [ 43] links2                                   (0.44)
+[751] KNIGHT                                                  | [---] NO MATCH
+[752] PAULA                                                   | [---] NO MATCH
+[753] PAU                                                     | [---] NO MATCH
+[754] LE                                                      | [---] NO MATCH
+[755] PETER                                                   | [---] NO MATCH
+[756] AIMEE                                                   | [637] Abbrechen                                (0.43)
+[757] TERRY                                                   | [---] NO MATCH
+[758] ANDY                                                    | [---] NO MATCH
+[759] NANCY                                                   | [---] NO MATCH
+[760] TIM                                                     | [---] NO MATCH
+[761] ROBER                                                   | [---] NO MATCH
+[762] T                                                       | [---] NO MATCH
+[763] GEORGE                                                  | [401] Zwerg                                    (0.55)
+[764] JENNY                                                   | [---] NO MATCH
+[765] RICA                                                    | [---] NO MATCH
+[766] JULIA                                                   | [---] NO MATCH
+
+====================================================================================================
+UNMAPPED GERMAN ENTRIES
+====================================================================================================
+
+CONFIG MENU:
+  [ 11] Kampfmeldung
+  [ 24] Benutzerdefiniert
+  [ 45] links1
+  [ 53] Zum Beenden Richtungstaste Links oder Rechts drücken.
+
+STATUS SCREEN LABELS:
+  [ 69] Anfänger
+  [ 71] Verwendung
+  [ 78] LV+1
+
+KEYBOARD CONFIGURATION:
+  [ 83] Drücken Sie auf [O.K.] um die
+  [ 85] Bitte neue Taste drücken
+
+BATTLE STATUSES:
+  [109] ã
+
+BATTLE ARENA MESSAGES:
+  [149] Gewonnene Schlachtpunkte
+
+BATTLE HANDICAPS:
+  [152] Aufrufsubstanz kaputt.
+  [153] Support-Substanz kaputt.
+  [154] Unabhängige Substanz kaputt.
+  [159] Rüstzeug kaputt.
+  [160] Waffe kaputt.
+
+ELEMENTS:
+  [467] Schwerkraft
+  [705] Schwerkraft
+
+CHARACTER ATTRIBUTES:
+  [205] Verteidigen %
+  [507] Treffen + %
+  [514] Ständiger Angriff
+  [727] Geschwindigkeit   %HåHER
+  [729] Zauberkraft   %HåHER
+  [730] Glück   %HåHER
+  [744] Treffen - %
+  [745] Treffen + %
+  [748] Fernangriff
+  [750] Gegenangriff
+  [751] Alle angreifen
+  [752] Ständiger Angriff
+  [773] Stärke
+  [774] Geschick
+  [782] Verteidigen %
+  [783] Zbrangrf
+  [785] Zbrvertdg %
+
+EQUIPMENT LABELS:
+  [475] Waf.
+  [476] Rüs.
+  [713] Waf.
+  [714] Rüs.
+  [769] Waf.
+  [770] Rüs.
+  [771] Zub.
+  [772] Zub.
+
+MATERIA SLOTS:
+  [456] Fassung:
+
+MATERIA MANAGEMENT:
+  [471] Soll das wirklich entfernt werden?
+  [479] Prüfen
+  [520] Zusätzliche Fähigkeit
+  [709] Soll das wirklich entfernt werden?
+  [717] Prüfen
+  [719] Gespeicherte Zahl   /24
+
+SHOP TYPES:
+  [800] Zubehörladen
+  [801] Werkzeugladen
+
+SHOP MENU:
+  [759] Kaufen Verkaufen Beenden
+
+MISCELLANEOUS:
+  [357] 7aBf
+  [375] 7nBz

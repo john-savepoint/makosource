@@ -1,0 +1,20 @@
+The German strings in your data are corrupted or improperly decoded. The text shown (like "X!", "D0", "lD,", "$D", "TD", "LD", etc.) doesn't represent actual German menu strings. 
+
+**Possible issues:**
+
+1. **Encoding problem**: The hex data needs proper decoding (possibly CP1252/Latin-1 for German)
+2. **Binary extraction error**: The offsets may be pointing to binary code, not string data
+3. **Decompilation issue**: The extraction tool may have misidentified string boundaries
+
+**To proceed, I need:**
+
+- The actual hex bytes for the German strings (not the decoded output shown)
+- Confirmation of the correct encoding for German FF7 strings
+- Or access to the original `ff7_de.exe` file to verify correct offsets
+
+Can you provide either:
+1. The raw hex data for these offsets from ff7_de.exe?
+2. A properly decoded German menu string sample (like "Artikel", "Magie", "Ausrüstung", etc.)?
+3. The extraction tool/method used to generate these strings?
+
+Without valid German text, I cannot create accurate mappings to the English touphScript indices.

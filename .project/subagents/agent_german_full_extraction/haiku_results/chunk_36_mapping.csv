@@ -1,0 +1,14 @@
+**Issue**: The German string data you provided appears to be in a garbled display format rather than clean hex bytes. To produce an accurate CSV mapping, I would need either:
+
+1. **Raw hex dump** of the German strings (actual byte values, not display artifacts)
+2. **Or already-decoded German text** for each offset
+3. Or access to the source `ff7_de.exe` file to extract and decode directly
+
+The English reference is clear and complete (indices 0-90 with proper menu text like Item, Magic, Equip, etc.). But without properly parsing the actual German bytes, any mapping would be unreliable guesswork.
+
+**Recommendation**: Do you have access to:
+- The raw binary data from `ff7_de.exe` at the specified offsets?
+- A previous extraction/decoding of these German strings?
+- The exact byte sequences (not display-rendered text)?
+
+With clean hex input, I can immediately produce the accurate CSV mapping using the touphScript +0x20 decoding scheme.

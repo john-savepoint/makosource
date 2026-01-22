@@ -1,0 +1,7 @@
+The German strings in this chunk are encoded and cannot be reliably decoded or mapped without the proper decoding scheme. To proceed with this mapping task, you would need:
+
+1. A working decoder for the German FF7 string encoding
+2. Pre-decoded German strings in readable format
+3. Context on how the encoding markers (tD, lD, dD, etc.) translate to actual characters
+
+If you have a decoder or can provide pre-decoded German strings, I can generate the CSV mappings.

@@ -1,0 +1,46 @@
+# FF7 English-German CORRECTED Mapping
+# Manual semantic matching
+# Only reliable translations included
+
+[  0] Do you want to quit                                | [  0] Möchten Sie Final
+[  1] playing Final Fantasy VII                          | [  1] Fantasy VII verlassen und
+[  2] and return to Windows?                             | [  2] zu Windows zurückkehren?
+[  3] Yes                                                | [  3] Ja
+[  4] No                                                 | [  4] Nein
+[  5] Window color                                       | [  5] Fensterfarbe
+[  6] Sound                                              | [  6] Sound
+[  7] Controller                                         | [  7] Kontroller
+[  8] Cursor                                             | [  8] Cursor
+[  9] ATB                                                | [  9] ATB
+[ 10] Battle speed                                       | [ 10] Kampftempo
+[ 11] Battle message                                     | [ 11] Kampfmeldung
+[ 12] Field message                                      | [ 12] Feldmeldung
+[ 13] Camera angle                                       | [ 13] Kamerawinkel
+[ 14] Select                                             | [ 14] Auswählen
+[ 15] Cancel                                             | [ 15] Abbrechen
+[ 16] Menu                                               | [ 16] Menü
+[ 38] Item                                               | [ 58] Objekt
+[ 39] Magic                                              | [ 59] Zauber
+[ 40] Materia                                            | [ 60] Materia
+[ 41] Equip                                              | [ 61] Ausrüsten
+[ 42] Status                                             | [ 62] Werte
+[ 43] Order                                              | [ 63] Reihe
+[ 44] Limit                                              | [ 64] Limit
+[ 45] Config                                             | [ 65] Konfig
+[ 46] PHS                                                | [ 66] PHS
+[ 47] Save                                               | [ 67] Speichern
+[ 48] Quit                                               | [ 68] Verlassen
+[ 49] Beginner                                           | [ 69] Anfänger
+[ 50] Time                                               | [ 72] Zeit
+[ 51] Gil                                                | [ 73] Gil
+[ 52] next level                                         | [ 74] Nächst. Lv
+[ 53] Limit level                                        | [ 75] Limit-Stufe
+[ 54] Tutorial                                           | [ 76] Anleitung
+[ 56] Fury                                               | [ 79] Zorn
+[ 57] Sadness                                            | [ 80] Traurigk.
+[459] Barret                                             | [623] Cloud
+[460] Tifa                                               | [624] Barret
+[461] Aeris                                              | [625] Tifa
+[462] Red XIII                                           | [626] Aeris
+[463] Yuffie                                             | [627] Red XIII
+[464] 䄣呉㌀呉ｈ                                              | [628] Yuffie

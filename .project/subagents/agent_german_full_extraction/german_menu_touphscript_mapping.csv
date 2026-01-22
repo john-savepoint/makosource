@@ -1,0 +1,12 @@
+touphscript_index,en_text,de_text,de_file_offset,en_file_offset,de_virtual_addr,en_virtual_addr,offset_delta,de_hex_bytes,notes
+38,Item,Objekt,0x00590C68,0x005192C0,0x00991468,0x00919AC0,+0x779A8,2F 42 4A 45 4B 54,German 'Objekt' = English 'Item'
+39,Magic,Zauber,0x00590C6F,0x005192D4,0x0099146F,0x00919AD4,+0x7799B,3A 41 55 42 45 52,German 'Zauber' = English 'Magic'
+40,Materia,Materia,0x00590C83,0x005192E8,0x00991483,0x00919AE8,+0x7799B,2D 41 54 45 52 49 41,Same in both languages
+41,Equip,Ausrüsten,0x00590C98,0x005192FC,0x00991498,0x00919AFC,+0x7799C,21 55 53 52 7F 53 54 45 4E,Contains ü-umlaut (0x7F)
+42,Status,Werte,0x00590CAE,0x00519310,0x009914AE,0x00919B10,+0x7799E,37 45 52 54 45,German uses 'Werte' (values) instead of 'Status'
+43,Order,Reihe,0x00590CBE,0x00519324,0x009914BE,0x00919B24,+0x7799A,32 45 49 48 45,German 'Reihe' (row/sequence)
+44,Limit,Limit,0x00590CD2,0x00519338,0x009914D2,0x00919B38,+0x7799A,2C 49 4D 49 54,Same in both languages
+45,Config,Konfig,0x00590CE6,0x0051934C,0x009914E6,0x00919B4C,+0x7799A,2B 4F 4E 46 49 47,German abbreviation of 'Konfiguration'
+46,PHS,PHS,0x00590CFB,0x00519360,0x009914FB,0x00919B60,+0x7799B,30 28 33,"Acronym, same in both languages"
+47,Save,Speichern,0x00590D0C,0x00519374,0x0099150C,0x00919B74,+0x77998,33 50 45 49 43 48 45 52 4E,German infinitive 'to save'
+48,Quit,Verlassen,0x00590D26,0x00519388,0x00991526,0x00919B88,+0x7799E,36 45 52 4C 41 53 53 45 4E,German infinitive 'to leave/quit'

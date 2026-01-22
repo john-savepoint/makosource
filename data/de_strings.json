@@ -1,0 +1,7349 @@
+{
+  "metadata": {
+    "source_file": "/mnt/d/Games/Stand-alone/FINAL FANTASY VII/ff7_de.exe",
+    "scan_start": "0x58F000",
+    "scan_end": "0x5C0000",
+    "total_strings": 1046,
+    "extraction_date": "2026-01-02",
+    "encoding_notes": {
+      "description": "FF7 custom text encoding",
+      "standard": "byte + 0x20 = ASCII char",
+      "space": "0x00",
+      "terminator": "0xFF",
+      "german_umlauts": {
+        "0x6A": "ä (replaces j slot)",
+        "0x7A": "ö (replaces z slot)",
+        "0x7E": "ß (replaces ~ slot)",
+        "0x7F": "ü (at DEL slot)"
+      },
+      "notes": [
+        "German font replaced certain character positions with umlauts",
+        "Letters j and z may have alternate encodings in German version"
+      ]
+    }
+  },
+  "strings": [
+    {
+      "offset": "0x58F050",
+      "offset_dec": 5828688,
+      "raw_bytes": "10000000500100000000000028000000000000002900000050010000C8000000D0FEFF",
+      "decoded": "0   p!      H       I   p!",
+      "length": 26
+    },
+    {
+      "offset": "0x58F0D0",
+      "offset_dec": 5828816,
+      "raw_bytes": "A70000005001000000000000280000000000000029000000D0FEFF",
+      "decoded": "p!      H       I",
+      "length": 17
+    },
+    {
+      "offset": "0x58F150",
+      "offset_dec": 5828944,
+      "raw_bytes": "10000000500100000000000028000000000000002900000050010000C8000000D0FEFF",
+      "decoded": "0   p!      H       I   p!",
+      "length": 26
+    },
+    {
+      "offset": "0x58F1D0",
+      "offset_dec": 5829072,
+      "raw_bytes": "D70000005001000000000000280000000000000029000000D0FEFF",
+      "decoded": "p!      H       I",
+      "length": 17
+    },
+    {
+      "offset": "0x58F250",
+      "offset_dec": 5829200,
+      "raw_bytes": "10000000500100000000000028000000000000002900000050010000C8000000D0FEFF",
+      "decoded": "0   p!      H       I   p!",
+      "length": 26
+    },
+    {
+      "offset": "0x58F2D0",
+      "offset_dec": 5829328,
+      "raw_bytes": "9E0000005001000000000000280000000000000029000000D0FEFF",
+      "decoded": "p!      H       I",
+      "length": 17
+    },
+    {
+      "offset": "0x58F350",
+      "offset_dec": 5829456,
+      "raw_bytes": "100000005001000000000000280000000000000029000000D0FEFF",
+      "decoded": "0   p!      H       I",
+      "length": 21
+    },
+    {
+      "offset": "0x58F390",
+      "offset_dec": 5829520,
+      "raw_bytes": "1000000050010000000000005000000000000000510000007001000008000000F0FEFF",
+      "decoded": "0   p!      p       q   !  (",
+      "length": 28
+    },
+    {
+      "offset": "0x58F3D0",
+      "offset_dec": 5829584,
+      "raw_bytes": "CA0000005001000000000000280000000000000029000000D0FEFF",
+      "decoded": "p!      H       I",
+      "length": 17
+    },
+    {
+      "offset": "0x58F450",
+      "offset_dec": 5829712,
+      "raw_bytes": "10000000500100000000000028000000000000002900000050010000C8000000D0FEFF",
+      "decoded": "0   p!      H       I   p!",
+      "length": 26
+    },
+    {
+      "offset": "0x58F4D0",
+      "offset_dec": 5829840,
+      "raw_bytes": "C80000005001000000000000280000000000000029000000D0FEFF",
+      "decoded": "p!      H       I",
+      "length": 17
+    },
+    {
+      "offset": "0x58F550",
+      "offset_dec": 5829968,
+      "raw_bytes": "10000000500100000000000028000000000000002900000050010000C8000000D0FEFF",
+      "decoded": "0   p!      H       I   p!",
+      "length": 26
+    },
+    {
+      "offset": "0x58F5D0",
+      "offset_dec": 5830096,
+      "raw_bytes": "CA0000005001000000000000280000000000000029000000D0FEFF",
+      "decoded": "p!      H       I",
+      "length": 17
+    },
+    {
+      "offset": "0x58FBA5",
+      "offset_dec": 5831589,
+      "raw_bytes": "01C80037004600D20064002D7A434854454E003349450026494E414C00FF",
+      "decoded": "! W f   Möchten Sie Final",
+      "length": 25
+    },
+    {
+      "offset": "0x58FBCE",
+      "offset_dec": 5831630,
+      "raw_bytes": "26414E5441535900362929005645524C415353454E00554E44FF",
+      "decoded": "Fantasy VII verlassen und",
+      "length": 25
+    },
+    {
+      "offset": "0x58FBEC",
+      "offset_dec": 5831660,
+      "raw_bytes": "5A550037494E444F5753005A55527F434B4B454852454E1FFF",
+      "decoded": "zu Windows zurückkehren?",
+      "length": 24
+    },
+    {
+      "offset": "0x58FC10",
+      "offset_dec": 5831696,
+      "raw_bytes": "2A41FF",
+      "decoded": "Ja",
+      "length": 2
+    },
+    {
+      "offset": "0x58FC15",
+      "offset_dec": 5831701,
+      "raw_bytes": "2E45494EFF",
+      "decoded": "Nein",
+      "length": 4
+    },
+    {
+      "offset": "0x5900EA",
+      "offset_dec": 5832938,
+      "raw_bytes": "2E74696D000026454E535445524641524245FF",
+      "decoded": "N  Fensterfarbe",
+      "length": 15
+    },
+    {
+      "offset": "0x590126",
+      "offset_dec": 5832998,
+      "raw_bytes": "334F554E44FF",
+      "decoded": "Sound",
+      "length": 5
+    },
+    {
+      "offset": "0x59015C",
+      "offset_dec": 5833052,
+      "raw_bytes": "2B4F4E54524F4C4C4552FF",
+      "decoded": "Kontroller",
+      "length": 10
+    },
+    {
+      "offset": "0x590192",
+      "offset_dec": 5833106,
+      "raw_bytes": "235552534F52FF",
+      "decoded": "Cursor",
+      "length": 6
+    },
+    {
+      "offset": "0x5901C8",
+      "offset_dec": 5833160,
+      "raw_bytes": "213422FF",
+      "decoded": "ATB",
+      "length": 3
+    },
+    {
+      "offset": "0x5901FE",
+      "offset_dec": 5833214,
+      "raw_bytes": "2B414D504654454D504FFF",
+      "decoded": "Kampftempo",
+      "length": 10
+    },
+    {
+      "offset": "0x590234",
+      "offset_dec": 5833268,
+      "raw_bytes": "2B414D50464D454C44554E47FF",
+      "decoded": "Kampfmeldung",
+      "length": 12
+    },
+    {
+      "offset": "0x59026A",
+      "offset_dec": 5833322,
+      "raw_bytes": "26454C444D454C44554E47FF",
+      "decoded": "Feldmeldung",
+      "length": 11
+    },
+    {
+      "offset": "0x5902A0",
+      "offset_dec": 5833376,
+      "raw_bytes": "2B414D45524157494E4B454CFF",
+      "decoded": "Kamerawinkel",
+      "length": 12
+    },
+    {
+      "offset": "0x5902D6",
+      "offset_dec": 5833430,
+      "raw_bytes": "215553576A484C454EFF",
+      "decoded": "Auswählen",
+      "length": 9
+    },
+    {
+      "offset": "0x59030C",
+      "offset_dec": 5833484,
+      "raw_bytes": "21424252454348454EFF",
+      "decoded": "Abbrechen",
+      "length": 9
+    },
+    {
+      "offset": "0x590342",
+      "offset_dec": 5833538,
+      "raw_bytes": "2D454E7FFF",
+      "decoded": "Menü",
+      "length": 4
+    },
+    {
+      "offset": "0x590378",
+      "offset_dec": 5833592,
+      "raw_bytes": "26454E5354455200213533FF",
+      "decoded": "Fenster AUS",
+      "length": 11
+    },
+    {
+      "offset": "0x5903AE",
+      "offset_dec": 5833646,
+      "raw_bytes": "3041555345FF",
+      "decoded": "Pause",
+      "length": 5
+    },
+    {
+      "offset": "0x5903E4",
+      "offset_dec": 5833700,
+      "raw_bytes": "3343484C4143485448494C4645FF",
+      "decoded": "Schlachthilfe",
+      "length": 13
+    },
+    {
+      "offset": "0x59041A",
+      "offset_dec": 5833754,
+      "raw_bytes": "2D4F4E4FFF",
+      "decoded": "Mono",
+      "length": 4
+    },
+    {
+      "offset": "0x590450",
+      "offset_dec": 5833808,
+      "raw_bytes": "33544552454FFF",
+      "decoded": "Stereo",
+      "length": 6
+    },
+    {
+      "offset": "0x590486",
+      "offset_dec": 5833862,
+      "raw_bytes": "2252454954FF",
+      "decoded": "Breit",
+      "length": 5
+    },
+    {
+      "offset": "0x5904BC",
+      "offset_dec": 5833916,
+      "raw_bytes": "2E4F524D414CFF",
+      "decoded": "Normal",
+      "length": 6
+    },
+    {
+      "offset": "0x5904F2",
+      "offset_dec": 5833970,
+      "raw_bytes": "22454E55545A4552444546494E49455254FF",
+      "decoded": "Benutzerdefiniert",
+      "length": 17
+    },
+    {
+      "offset": "0x590528",
+      "offset_dec": 5834024,
+      "raw_bytes": "214E46414E47FF",
+      "decoded": "Anfang",
+      "length": 6
+    },
+    {
+      "offset": "0x59055E",
+      "offset_dec": 5834078,
+      "raw_bytes": "3350454943484552FF",
+      "decoded": "Speicher",
+      "length": 8
+    },
+    {
+      "offset": "0x590594",
+      "offset_dec": 5834132,
+      "raw_bytes": "214B544956FF",
+      "decoded": "Aktiv",
+      "length": 5
+    },
+    {
+      "offset": "0x5905CA",
+      "offset_dec": 5834186,
+      "raw_bytes": "254D50464F484C454EFF",
+      "decoded": "Empfohlen",
+      "length": 9
+    },
+    {
+      "offset": "0x590600",
+      "offset_dec": 5834240,
+      "raw_bytes": "37415254454EFF",
+      "decoded": "Warten",
+      "length": 6
+    },
+    {
+      "offset": "0x590636",
+      "offset_dec": 5834294,
+      "raw_bytes": "2155544FFF",
+      "decoded": "Auto",
+      "length": 4
+    },
+    {
+      "offset": "0x59066C",
+      "offset_dec": 5834348,
+      "raw_bytes": "26455354FF",
+      "decoded": "Fest",
+      "length": 4
+    },
+    {
+      "offset": "0x5906D8",
+      "offset_dec": 5834456,
+      "raw_bytes": "2C414E47530EFF",
+      "decoded": "Langs.",
+      "length": 6
+    },
+    {
+      "offset": "0x59070E",
+      "offset_dec": 5834510,
+      "raw_bytes": "3343484E0EFF",
+      "decoded": "Schn.",
+      "length": 5
+    },
+    {
+      "offset": "0x590744",
+      "offset_dec": 5834564,
+      "raw_bytes": "322F34FF",
+      "decoded": "ROT",
+      "length": 3
+    },
+    {
+      "offset": "0x59077A",
+      "offset_dec": 5834618,
+      "raw_bytes": "2732662EFF",
+      "decoded": "GRN",
+      "length": 3
+    },
+    {
+      "offset": "0x5907B0",
+      "offset_dec": 5834672,
+      "raw_bytes": "222C2135FF",
+      "decoded": "BLAU",
+      "length": 4
+    },
+    {
+      "offset": "0x5907E6",
+      "offset_dec": 5834726,
+      "raw_bytes": "3A4155424552464F4C4745FF",
+      "decoded": "Zauberfolge",
+      "length": 11
+    },
+    {
+      "offset": "0x59081C",
+      "offset_dec": 5834780,
+      "raw_bytes": "2845494C554E47FF",
+      "decoded": "Heilung",
+      "length": 7
+    },
+    {
+      "offset": "0x590852",
+      "offset_dec": 5834834,
+      "raw_bytes": "214E4752494646FF",
+      "decoded": "Angriff",
+      "length": 7
+    },
+    {
+      "offset": "0x590888",
+      "offset_dec": 5834888,
+      "raw_bytes": "294E444952454B54FF",
+      "decoded": "Indirekt",
+      "length": 8
+    },
+    {
+      "offset": "0x5908BE",
+      "offset_dec": 5834942,
+      "raw_bytes": "364552424F54454EFF",
+      "decoded": "Verboten",
+      "length": 8
+    },
+    {
+      "offset": "0x5908F4",
+      "offset_dec": 5834996,
+      "raw_bytes": "345950FF",
+      "decoded": "Typ",
+      "length": 3
+    },
+    {
+      "offset": "0x59092A",
+      "offset_dec": 5835050,
+      "raw_bytes": "4C494E4B5312FF",
+      "decoded": "links2",
+      "length": 6
+    },
+    {
+      "offset": "0x590960",
+      "offset_dec": 5835104,
+      "raw_bytes": "52454348545312FF",
+      "decoded": "rechts2",
+      "length": 7
+    },
+    {
+      "offset": "0x590996",
+      "offset_dec": 5835158,
+      "raw_bytes": "4C494E4B5311FF",
+      "decoded": "links1",
+      "length": 6
+    },
+    {
+      "offset": "0x5909CC",
+      "offset_dec": 5835212,
+      "raw_bytes": "52454348545311FF",
+      "decoded": "rechts1",
+      "length": 7
+    },
+    {
+      "offset": "0x590A02",
+      "offset_dec": 5835266,
+      "raw_bytes": "2D454E7FFF",
+      "decoded": "Menü",
+      "length": 4
+    },
+    {
+      "offset": "0x590A38",
+      "offset_dec": 5835320,
+      "raw_bytes": "215553576A484C454EFF",
+      "decoded": "Auswählen",
+      "length": 9
+    },
+    {
+      "offset": "0x590A6E",
+      "offset_dec": 5835374,
+      "raw_bytes": "21424252454348454EFF",
+      "decoded": "Abbrechen",
+      "length": 9
+    },
+    {
+      "offset": "0x590AA4",
+      "offset_dec": 5835428,
+      "raw_bytes": "253834FF",
+      "decoded": "EXT",
+      "length": 3
+    },
+    {
+      "offset": "0x590ADA",
+      "offset_dec": 5835482,
+      "raw_bytes": "28494C4645FF",
+      "decoded": "Hilfe",
+      "length": 5
+    },
+    {
+      "offset": "0x590B10",
+      "offset_dec": 5835536,
+      "raw_bytes": "3A554D0025494E5249434854454E00B23334213234B30044527F434B454E0EFF",
+      "decoded": "Zum Einrichten START drücken.",
+      "length": 29
+    },
+    {
+      "offset": "0x590B46",
+      "offset_dec": 5835590,
+      "raw_bytes": "3A554D002245454E44454E003249434854554E47535441535445002C494E4B53004F444552003245434854530044527F434B454E0EFF",
+      "decoded": "Zum Beenden Richtungstaste Links oder Rechts drücken.",
+      "length": 53
+    },
+    {
+      "offset": "0x590B7C",
+      "offset_dec": 5835644,
+      "raw_bytes": "3041555345FF",
+      "decoded": "Pause",
+      "length": 5
+    },
+    {
+      "offset": "0x590BD0",
+      "offset_dec": 5835728,
+      "raw_bytes": "344F4E0D00554E44002D5553494B45494E5354454C4C554E47FF",
+      "decoded": "Ton- und Musikeinstellung",
+      "length": 25
+    },
+    {
+      "offset": "0x590BFD",
+      "offset_dec": 5835773,
+      "raw_bytes": "2E4943485400554E54455253547F545A54FF",
+      "decoded": "Nicht unterstützt",
+      "length": 17
+    },
+    {
+      "offset": "0x590C35",
+      "offset_dec": 5835829,
+      "raw_bytes": "023300000033008002AD010000000040011A0000001A004001D6000001020002010102000100020200010201000000FF",
+      "decoded": "\"S   S \"!    `!:   : `!  !\" \"!!\" ! \"\" !\"!",
+      "length": 41
+    },
+    {
+      "offset": "0x590C68",
+      "offset_dec": 5835880,
+      "raw_bytes": "2F424A454B54FF",
+      "decoded": "Objekt",
+      "length": 6
+    },
+    {
+      "offset": "0x590C7C",
+      "offset_dec": 5835900,
+      "raw_bytes": "3A4155424552FF",
+      "decoded": "Zauber",
+      "length": 6
+    },
+    {
+      "offset": "0x590C90",
+      "offset_dec": 5835920,
+      "raw_bytes": "2D415445524941FF",
+      "decoded": "Materia",
+      "length": 7
+    },
+    {
+      "offset": "0x590CA4",
+      "offset_dec": 5835940,
+      "raw_bytes": "215553527F5354454EFF",
+      "decoded": "Ausrüsten",
+      "length": 9
+    },
+    {
+      "offset": "0x590CB8",
+      "offset_dec": 5835960,
+      "raw_bytes": "3745525445FF",
+      "decoded": "Werte",
+      "length": 5
+    },
+    {
+      "offset": "0x590CCC",
+      "offset_dec": 5835980,
+      "raw_bytes": "3245494845FF",
+      "decoded": "Reihe",
+      "length": 5
+    },
+    {
+      "offset": "0x590CE0",
+      "offset_dec": 5836000,
+      "raw_bytes": "2C494D4954FF",
+      "decoded": "Limit",
+      "length": 5
+    },
+    {
+      "offset": "0x590CF4",
+      "offset_dec": 5836020,
+      "raw_bytes": "2B4F4E464947FF",
+      "decoded": "Konfig",
+      "length": 6
+    },
+    {
+      "offset": "0x590D08",
+      "offset_dec": 5836040,
+      "raw_bytes": "302833FF",
+      "decoded": "PHS",
+      "length": 3
+    },
+    {
+      "offset": "0x590D1C",
+      "offset_dec": 5836060,
+      "raw_bytes": "33504549434845524EFF",
+      "decoded": "Speichern",
+      "length": 9
+    },
+    {
+      "offset": "0x590D30",
+      "offset_dec": 5836080,
+      "raw_bytes": "3645524C415353454EFF",
+      "decoded": "Verlassen",
+      "length": 9
+    },
+    {
+      "offset": "0x590D44",
+      "offset_dec": 5836100,
+      "raw_bytes": "214E466A4E474552FF",
+      "decoded": "Anfänger",
+      "length": 8
+    },
+    {
+      "offset": "0x590D58",
+      "offset_dec": 5836120,
+      "raw_bytes": "36455257454E44554E47FF",
+      "decoded": "Verwendung",
+      "length": 10
+    },
+    {
+      "offset": "0x590D6C",
+      "offset_dec": 5836140,
+      "raw_bytes": "36455257454E44554E47FF",
+      "decoded": "Verwendung",
+      "length": 10
+    },
+    {
+      "offset": "0x590D80",
+      "offset_dec": 5836160,
+      "raw_bytes": "3A454954FF",
+      "decoded": "Zeit",
+      "length": 4
+    },
+    {
+      "offset": "0x590D94",
+      "offset_dec": 5836180,
+      "raw_bytes": "27494CFF",
+      "decoded": "Gil",
+      "length": 3
+    },
+    {
+      "offset": "0x590DA8",
+      "offset_dec": 5836200,
+      "raw_bytes": "2E6A434853540E002C56FF",
+      "decoded": "Nächst. Lv",
+      "length": 10
+    },
+    {
+      "offset": "0x590DBC",
+      "offset_dec": 5836220,
+      "raw_bytes": "2C494D49540D3354554645FF",
+      "decoded": "Limit-Stufe",
+      "length": 11
+    },
+    {
+      "offset": "0x590DD0",
+      "offset_dec": 5836240,
+      "raw_bytes": "214E4C454954554E47FF",
+      "decoded": "Anleitung",
+      "length": 9
+    },
+    {
+      "offset": "0x590DE4",
+      "offset_dec": 5836260,
+      "raw_bytes": "354E544552FF",
+      "decoded": "Unter",
+      "length": 5
+    },
+    {
+      "offset": "0x590DF8",
+      "offset_dec": 5836280,
+      "raw_bytes": "2C360B11FF",
+      "decoded": "LV+1",
+      "length": 4
+    },
+    {
+      "offset": "0x590E0C",
+      "offset_dec": 5836300,
+      "raw_bytes": "3A4F524EFF",
+      "decoded": "Zorn",
+      "length": 4
+    },
+    {
+      "offset": "0x590E20",
+      "offset_dec": 5836320,
+      "raw_bytes": "345241555249474B0EFF",
+      "decoded": "Traurigk.",
+      "length": 9
+    },
+    {
+      "offset": "0x590FF2",
+      "offset_dec": 5836786,
+      "raw_bytes": "B200B10100004359D900000000000000000001000000020000000400000005000000060000000700000008000000540000005354415254204F46204D454E552053595354454D2121210A00000000454E44204F46204D454E552053595354454D2121210A00002D4954003B21222232252328252E3D004245454E44454E0EFF",
+      "decoded": "!  cy         !   \"   $   %   &   '   (   t   start@of@menu@systemAAA*    end@of@menu@systemAAA*  Mit [ABBRECHEN] beenden.",
+      "length": 122
+    },
+    {
+      "offset": "0x591094",
+      "offset_dec": 5836948,
+      "raw_bytes": "24527F434B454E0033494500415546003B2F0E2B0E3D00554D00444945FF",
+      "decoded": "Drücken Sie auf [O.K.] um die",
+      "length": 29
+    },
+    {
+      "offset": "0x5910D0",
+      "offset_dec": 5837008,
+      "raw_bytes": "34415354454E42454C4547554E47005A55004B4F4E4649475552494552454E0EFF",
+      "decoded": "Tastenbelegung zu konfigurieren.",
+      "length": 32
+    },
+    {
+      "offset": "0x59110C",
+      "offset_dec": 5837068,
+      "raw_bytes": "2249545445004E4555450034415354450044527F434B454EA9FF",
+      "decoded": "Bitte neue Taste drücken",
+      "length": 24
+    },
+    {
+      "offset": "0x591149",
+      "offset_dec": 5837129,
+      "raw_bytes": "2F0E2B0E3DFF",
+      "decoded": "O.K.]",
+      "length": 5
+    },
+    {
+      "offset": "0x591184",
+      "offset_dec": 5837188,
+      "raw_bytes": "3B21222232252328252E3DFF",
+      "decoded": "[ABBRECHEN]",
+      "length": 11
+    },
+    {
+      "offset": "0x5911C1",
+      "offset_dec": 5837249,
+      "raw_bytes": "2D252E663DFF",
+      "decoded": "MEN]",
+      "length": 4
+    },
+    {
+      "offset": "0x5911FC",
+      "offset_dec": 5837308,
+      "raw_bytes": "3B352D332328212C34252E3DFF",
+      "decoded": "[UMSCHALTEN]",
+      "length": 12
+    },
+    {
+      "offset": "0x591238",
+      "offset_dec": 5837368,
+      "raw_bytes": "3B22292C2400282F23283DFF",
+      "decoded": "[BILD HOCH]",
+      "length": 11
+    },
+    {
+      "offset": "0x591274",
+      "offset_dec": 5837428,
+      "raw_bytes": "3B22292C2400282532352E3425323DFF",
+      "decoded": "[BILD HERUNTER]",
+      "length": 15
+    },
+    {
+      "offset": "0x5912B0",
+      "offset_dec": 5837488,
+      "raw_bytes": "3B2B212D2532213DFF",
+      "decoded": "[KAMERA]",
+      "length": 8
+    },
+    {
+      "offset": "0x5912ED",
+      "offset_dec": 5837549,
+      "raw_bytes": "3A29252C3DFF",
+      "decoded": "ZIEL]",
+      "length": 5
+    },
+    {
+      "offset": "0x591328",
+      "offset_dec": 5837608,
+      "raw_bytes": "3B28292C26253DFF",
+      "decoded": "[HILFE]",
+      "length": 7
+    },
+    {
+      "offset": "0x591364",
+      "offset_dec": 5837668,
+      "raw_bytes": "3B33342132343DFF",
+      "decoded": "[START]",
+      "length": 7
+    },
+    {
+      "offset": "0x5913A0",
+      "offset_dec": 5837728,
+      "raw_bytes": "3B2825322135263DFF",
+      "decoded": "[HERAUF]",
+      "length": 8
+    },
+    {
+      "offset": "0x5913DC",
+      "offset_dec": 5837788,
+      "raw_bytes": "3B352E34252E3DFF",
+      "decoded": "[UNTEN]",
+      "length": 7
+    },
+    {
+      "offset": "0x591418",
+      "offset_dec": 5837848,
+      "raw_bytes": "3B2C292E2B333DFF",
+      "decoded": "[LINKS]",
+      "length": 7
+    },
+    {
+      "offset": "0x591454",
+      "offset_dec": 5837908,
+      "raw_bytes": "3B32252328343DFF",
+      "decoded": "[RECHT]",
+      "length": 7
+    },
+    {
+      "offset": "0x591490",
+      "offset_dec": 5837968,
+      "raw_bytes": "3421333421343532FF",
+      "decoded": "TASTATUR",
+      "length": 8
+    },
+    {
+      "offset": "0x5914CC",
+      "offset_dec": 5838028,
+      "raw_bytes": "2A2F39333429232BFF",
+      "decoded": "JOYSTICK",
+      "length": 8
+    },
+    {
+      "offset": "0x594AC0",
+      "offset_dec": 5851840,
+      "raw_bytes": "2F387600215776002F387600FF",
+      "decoded": "OX Aw OX",
+      "length": 8
+    },
+    {
+      "offset": "0x594AE4",
+      "offset_dec": 5851876,
+      "raw_bytes": "2F3876002F3876004E367600FF",
+      "decoded": "OX OX nV",
+      "length": 8
+    },
+    {
+      "offset": "0x594C14",
+      "offset_dec": 5852180,
+      "raw_bytes": "343876003438760034387600FF",
+      "decoded": "TX TX TX",
+      "length": 8
+    },
+    {
+      "offset": "0x594C48",
+      "offset_dec": 5852232,
+      "raw_bytes": "3041555345FF",
+      "decoded": "Pause",
+      "length": 5
+    },
+    {
+      "offset": "0x594C70",
+      "offset_dec": 5852272,
+      "raw_bytes": "385878001C2C3C00580200003C0000000A000000010000000000803F0000000064FF",
+      "decoded": "Xx <L\\ x\"  \\   *   !     _",
+      "length": 26
+    },
+    {
+      "offset": "0x594CAC",
+      "offset_dec": 5852332,
+      "raw_bytes": "3343484C4146FF",
+      "decoded": "Schlaf",
+      "length": 6
+    },
+    {
+      "offset": "0x594CBA",
+      "offset_dec": 5852346,
+      "raw_bytes": "27494654FF",
+      "decoded": "Gift",
+      "length": 4
+    },
+    {
+      "offset": "0x594CC8",
+      "offset_dec": 5852360,
+      "raw_bytes": "345241555249474B454954FF",
+      "decoded": "Traurigkeit",
+      "length": 11
+    },
+    {
+      "offset": "0x594CD6",
+      "offset_dec": 5852374,
+      "raw_bytes": "3A4F524EFF",
+      "decoded": "Zorn",
+      "length": 4
+    },
+    {
+      "offset": "0x594CE4",
+      "offset_dec": 5852388,
+      "raw_bytes": "36455257495252554E47FF",
+      "decoded": "Verwirrung",
+      "length": 10
+    },
+    {
+      "offset": "0x594CF2",
+      "offset_dec": 5852402,
+      "raw_bytes": "3354554D4D48454954FF",
+      "decoded": "Stummheit",
+      "length": 9
+    },
+    {
+      "offset": "0x594D00",
+      "offset_dec": 5852416,
+      "raw_bytes": "3343484E454C4CFF",
+      "decoded": "Schnell",
+      "length": 7
+    },
+    {
+      "offset": "0x594D0E",
+      "offset_dec": 5852430,
+      "raw_bytes": "2C414E4753414DFF",
+      "decoded": "Langsam",
+      "length": 7
+    },
+    {
+      "offset": "0x594D1C",
+      "offset_dec": 5852444,
+      "raw_bytes": "33544F50FF",
+      "decoded": "Stop",
+      "length": 4
+    },
+    {
+      "offset": "0x594D54",
+      "offset_dec": 5852500,
+      "raw_bytes": "364552535445494E4552554E47FF",
+      "decoded": "Versteinerung",
+      "length": 13
+    },
+    {
+      "offset": "0x594D62",
+      "offset_dec": 5852514,
+      "raw_bytes": "524547454EFF",
+      "decoded": "regen",
+      "length": 5
+    },
+    {
+      "offset": "0x594D8C",
+      "offset_dec": 5852556,
+      "raw_bytes": "3245464C454B54494552454EFF",
+      "decoded": "Reflektieren",
+      "length": 12
+    },
+    {
+      "offset": "0x594D9A",
+      "offset_dec": 5852570,
+      "raw_bytes": "244F5050454CFF",
+      "decoded": "Doppel",
+      "length": 6
+    },
+    {
+      "offset": "0x594DA8",
+      "offset_dec": 5852584,
+      "raw_bytes": "334348494C44FF",
+      "decoded": "Schild",
+      "length": 6
+    },
+    {
+      "offset": "0x594DD2",
+      "offset_dec": 5852626,
+      "raw_bytes": "344F4C4CFF",
+      "decoded": "Toll",
+      "length": 4
+    },
+    {
+      "offset": "0x594DE0",
+      "offset_dec": 5852640,
+      "raw_bytes": "25494E5A49474152544947FF",
+      "decoded": "Einzigartig",
+      "length": 11
+    },
+    {
+      "offset": "0x594DEE",
+      "offset_dec": 5852654,
+      "raw_bytes": "2C6A484D554E47FF",
+      "decoded": "Lähmung",
+      "length": 7
+    },
+    {
+      "offset": "0x594DFC",
+      "offset_dec": 5852668,
+      "raw_bytes": "24554E4B454C48454954FF",
+      "decoded": "Dunkelheit",
+      "length": 10
+    },
+    {
+      "offset": "0x594E75",
+      "offset_dec": 5852789,
+      "raw_bytes": "800080325272004048505819293900000000003749455649454C0057494C4C535400445500415553474542454E1FFF",
+      "decoded": "Rr `hpx9IY     Wieviel willst du ausgeben?",
+      "length": 42
+    },
+    {
+      "offset": "0x594EA4",
+      "offset_dec": 5852836,
+      "raw_bytes": "27494CFF",
+      "decoded": "Gil",
+      "length": 3
+    },
+    {
+      "offset": "0x594EA8",
+      "offset_dec": 5852840,
+      "raw_bytes": "2E414348FF",
+      "decoded": "Nach",
+      "length": 4
+    },
+    {
+      "offset": "0x594EB0",
+      "offset_dec": 5852848,
+      "raw_bytes": "27494C00415546004445520028414E44FF",
+      "decoded": "Gil auf der Hand",
+      "length": 16
+    },
+    {
+      "offset": "0x594FAC",
+      "offset_dec": 5853100,
+      "raw_bytes": "4000C0008000C000000000000204081000000000010202020201010101010101010101010100020202000101010101010101010100000000000000000000000000000000010100020200010101010101010101010101010002020000010101010101010100000000000000000000000000000000010101000002000200010101010101010101010100000200020000010101010100000000000000000000000000000000010101010000000200000000010101010203040506070908090908000D0A0B09000000000000010C3745495445521FFF",
+      "decoded": "`        \"$(0    !\"\"\"\"!!!!!!!!!!!! \"\"\" !!!!!!!!!!                !! \"\" !!!!!!!!!!!!! \"\"  !!!!!!!!                !!!  \" \" !!!!!!!!!!!  \" \"  !!!!!                !!!!   \"    !!!!\"#$%&')())( -*+)      !,Weiter?",
+      "length": 208
+    },
+    {
+      "offset": "0x595080",
+      "offset_dec": 5853312,
+      "raw_bytes": "2A4100000000002E45494EFF",
+      "decoded": "Ja     Nein",
+      "length": 11
+    },
+    {
+      "offset": "0x595090",
+      "offset_dec": 5853328,
+      "raw_bytes": "364F5248414E44454E45003343484C4143485450554E4B5445FF",
+      "decoded": "Vorhandene Schlachtpunkte",
+      "length": 25
+    },
+    {
+      "offset": "0x5950AA",
+      "offset_dec": 5853354,
+      "raw_bytes": "3343484C49545A535441525401FF",
+      "decoded": "Schlitzstart!",
+      "length": 13
+    },
+    {
+      "offset": "0x5950C4",
+      "offset_dec": 5853380,
+      "raw_bytes": "342F2C2C0101FF",
+      "decoded": "TOLL!!",
+      "length": 6
+    },
+    {
+      "offset": "0x5950DE",
+      "offset_dec": 5853406,
+      "raw_bytes": "2745574F4E4E454E45003343484C4143485450554E4B5445FF",
+      "decoded": "Gewonnene Schlachtpunkte",
+      "length": 24
+    },
+    {
+      "offset": "0x5950F8",
+      "offset_dec": 5853432,
+      "raw_bytes": "2F4B0C0044414E4E004C4F5301FF",
+      "decoded": "Ok, dann los!",
+      "length": 13
+    },
+    {
+      "offset": "0x595117",
+      "offset_dec": 5853463,
+      "raw_bytes": "B23A41554245525355425354414E5A004B41505554540EB3FF",
+      "decoded": "Zaubersubstanz kaputt.",
+      "length": 22
+    },
+    {
+      "offset": "0x595136",
+      "offset_dec": 5853494,
+      "raw_bytes": "B22155465255465355425354414E5A004B41505554540EB3FF",
+      "decoded": "Aufrufsubstanz kaputt.",
+      "length": 22
+    },
+    {
+      "offset": "0x595155",
+      "offset_dec": 5853525,
+      "raw_bytes": "B2335550504F52540D3355425354414E5A004B41505554540EB3FF",
+      "decoded": "Support-Substanz kaputt.",
+      "length": 24
+    },
+    {
+      "offset": "0x595174",
+      "offset_dec": 5853556,
+      "raw_bytes": "B2354E4142486A4E47494745003355425354414E5A004B41505554540EB3FF",
+      "decoded": "Unabhängige Substanz kaputt.",
+      "length": 28
+    },
+    {
+      "offset": "0x595193",
+      "offset_dec": 5853587,
+      "raw_bytes": "B222454645484C535355425354414E5A004B41505554540EB3FF",
+      "decoded": "Befehlssubstanz kaputt.",
+      "length": 23
+    },
+    {
+      "offset": "0x5951B2",
+      "offset_dec": 5853618,
+      "raw_bytes": "B2214C4C45003355425354414E5A004B41505554540EB3FF",
+      "decoded": "Alle Substanz kaputt.",
+      "length": 21
+    },
+    {
+      "offset": "0x5951D1",
+      "offset_dec": 5853649,
+      "raw_bytes": "B23A554245487A52004B41505554540EB3FF",
+      "decoded": "Zubehör kaputt.",
+      "length": 15
+    },
+    {
+      "offset": "0x5951F0",
+      "offset_dec": 5853680,
+      "raw_bytes": "B22F424A454B5442454645484C004953540056455253494547454C540EB3FF",
+      "decoded": "Objektbefehl ist versiegelt.",
+      "length": 28
+    },
+    {
+      "offset": "0x59520F",
+      "offset_dec": 5853711,
+      "raw_bytes": "B2327F53545A455547004B41505554540EB3FF",
+      "decoded": "Rüstzeug kaputt.",
+      "length": 16
+    },
+    {
+      "offset": "0x59522E",
+      "offset_dec": 5853742,
+      "raw_bytes": "B23741464645004B41505554540EB3FF",
+      "decoded": "Waffe kaputt.",
+      "length": 13
+    },
+    {
+      "offset": "0x59524D",
+      "offset_dec": 5853773,
+      "raw_bytes": "B2110F1200274553434857494E4449474B4549540EB3FF",
+      "decoded": "1/2 Geschwindigkeit.",
+      "length": 20
+    },
+    {
+      "offset": "0x59526C",
+      "offset_dec": 5853804,
+      "raw_bytes": "B2110F120027454E415549474B4549540EB3FF",
+      "decoded": "1/2 Genauigkeit.",
+      "length": 16
+    },
+    {
+      "offset": "0x59528B",
+      "offset_dec": 5853835,
+      "raw_bytes": "B22D494E494D554DB3FF",
+      "decoded": "Minimum",
+      "length": 7
+    },
+    {
+      "offset": "0x5952AB",
+      "offset_dec": 5853867,
+      "raw_bytes": "27494654B3FF",
+      "decoded": "Gift",
+      "length": 4
+    },
+    {
+      "offset": "0x5952CA",
+      "offset_dec": 5853898,
+      "raw_bytes": "2B527A5445B3FF",
+      "decoded": "Kröte",
+      "length": 5
+    },
+    {
+      "offset": "0x5952E8",
+      "offset_dec": 5853928,
+      "raw_bytes": "B23A45495400581310003343484144454E0EB3FF",
+      "decoded": "Zeit x30 Schaden.",
+      "length": 17
+    },
+    {
+      "offset": "0x595307",
+      "offset_dec": 5853959,
+      "raw_bytes": "B215002542454E454E005A55527F434B0EB3FF",
+      "decoded": "5 Ebenen zurück.",
+      "length": 16
+    },
+    {
+      "offset": "0x595326",
+      "offset_dec": 5853990,
+      "raw_bytes": "B21110002542454E454E005A55527F434B0EB3FF",
+      "decoded": "10 Ebenen zurück.",
+      "length": 17
+    },
+    {
+      "offset": "0x595345",
+      "offset_dec": 5854021,
+      "raw_bytes": "B2110F120028300EB3FF",
+      "decoded": "1/2 HP.",
+      "length": 7
+    },
+    {
+      "offset": "0x595364",
+      "offset_dec": 5854052,
+      "raw_bytes": "B2110F12002D300EB3FF",
+      "decoded": "1/2 MP.",
+      "length": 7
+    },
+    {
+      "offset": "0x595383",
+      "offset_dec": 5854083,
+      "raw_bytes": "B2110F12002830062D300EB3FF",
+      "decoded": "1/2 HP&MP.",
+      "length": 10
+    },
+    {
+      "offset": "0x5953A2",
+      "offset_dec": 5854114,
+      "raw_bytes": "B22E554C4C002D300EB3FF",
+      "decoded": "Null MP.",
+      "length": 8
+    },
+    {
+      "offset": "0x5953C1",
+      "offset_dec": 5854145,
+      "raw_bytes": "B22A414101002B45494E4500224548494E444552554E470101B3FF",
+      "decoded": "Jaa! Keine Behinderung!!",
+      "length": 24
+    },
+    {
+      "offset": "0x5953E0",
+      "offset_dec": 5854176,
+      "raw_bytes": "B228300057494544455248455247455354454C4C540EB3FF",
+      "decoded": "HP wiederhergestellt.",
+      "length": 21
+    },
+    {
+      "offset": "0x595400",
+      "offset_dec": 5854208,
+      "raw_bytes": "2245534F52475400554D0044494500414E444552454E002D4954474C49454445521FFF",
+      "decoded": "Besorgt um die anderen Mitglieder?",
+      "length": 34
+    },
+    {
+      "offset": "0x595423",
+      "offset_dec": 5854243,
+      "raw_bytes": "2A410C0045494E004249874348454EFF",
+      "decoded": "Ja, ein bichen",
+      "length": 14
+    },
+    {
+      "offset": "0x595446",
+      "offset_dec": 5854278,
+      "raw_bytes": "254947454E544C494348004E49434854FF",
+      "decoded": "Eigentlich nicht",
+      "length": 16
+    },
+    {
+      "offset": "0x5955B4",
+      "offset_dec": 5854644,
+      "raw_bytes": "4F0165004C005F00A800330033504549434845524EFF",
+      "decoded": "o! l   S Speichern",
+      "length": 18
+    },
+    {
+      "offset": "0x595623",
+      "offset_dec": 5854755,
+      "raw_bytes": "253032642E66663700000000003245464F524D494552454EFF",
+      "decoded": "EPRNW     Reformieren",
+      "length": 21
+    },
+    {
+      "offset": "0x595656",
+      "offset_dec": 5854806,
+      "raw_bytes": "2D4954474C494544454E00494E005A574549002752555050454E004155465445494C454EFF",
+      "decoded": "Mitglieden in zwei Gruppen aufteilen",
+      "length": 36
+    },
+    {
+      "offset": "0x59567C",
+      "offset_dec": 5854844,
+      "raw_bytes": "2D4954474C494544455200494E0044524549002752555050454E004155465445494C454EFF",
+      "decoded": "Mitglieder in drei Gruppen aufteilen",
+      "length": 36
+    },
+    {
+      "offset": "0x5956A2",
+      "offset_dec": 5854882,
+      "raw_bytes": "27525550504500415553005A57454900304552534F4E454E0042494C44454EFF",
+      "decoded": "Gruppe aus zwei Personen bilden",
+      "length": 31
+    },
+    {
+      "offset": "0x5956C8",
+      "offset_dec": 5854920,
+      "raw_bytes": "27525550504500415553004452454900304552534F4E454E0042494C44454EFF",
+      "decoded": "Gruppe aus drei Personen bilden",
+      "length": 31
+    },
+    {
+      "offset": "0x5956EE",
+      "offset_dec": 5854958,
+      "raw_bytes": "215553576A484C454E004D4954003B33342132343D0D3441535445FF",
+      "decoded": "Auswählen mit [START]-Taste",
+      "length": 27
+    },
+    {
+      "offset": "0x595718",
+      "offset_dec": 5855000,
+      "raw_bytes": "254C454D454E54FF",
+      "decoded": "Element",
+      "length": 7
+    },
+    {
+      "offset": "0x59572E",
+      "offset_dec": 5855022,
+      "raw_bytes": "254646454B54FF",
+      "decoded": "Effekt",
+      "length": 6
+    },
+    {
+      "offset": "0x595744",
+      "offset_dec": 5855044,
+      "raw_bytes": "214E4752454946454EFF",
+      "decoded": "Angreifen",
+      "length": 9
+    },
+    {
+      "offset": "0x59575A",
+      "offset_dec": 5855066,
+      "raw_bytes": "364552544549444947454EFF",
+      "decoded": "Verteidigen",
+      "length": 11
+    },
+    {
+      "offset": "0x595770",
+      "offset_dec": 5855088,
+      "raw_bytes": "28414C42494552454EFF",
+      "decoded": "Halbieren",
+      "length": 9
+    },
+    {
+      "offset": "0x595786",
+      "offset_dec": 5855110,
+      "raw_bytes": "354E477F4C544947FF",
+      "decoded": "Ungültig",
+      "length": 8
+    },
+    {
+      "offset": "0x59579C",
+      "offset_dec": 5855132,
+      "raw_bytes": "2142534F5242494552454EFF",
+      "decoded": "Absorbieren",
+      "length": 11
+    },
+    {
+      "offset": "0x5957F4",
+      "offset_dec": 5855220,
+      "raw_bytes": "33546A524B45FF",
+      "decoded": "Stärke",
+      "length": 6
+    },
+    {
+      "offset": "0x59580A",
+      "offset_dec": 5855242,
+      "raw_bytes": "274553434849434BFF",
+      "decoded": "Geschick",
+      "length": 8
+    },
+    {
+      "offset": "0x595820",
+      "offset_dec": 5855264,
+      "raw_bytes": "364954414C49546A54FF",
+      "decoded": "Vitalität",
+      "length": 9
+    },
+    {
+      "offset": "0x595836",
+      "offset_dec": 5855286,
+      "raw_bytes": "3A4155424552FF",
+      "decoded": "Zauber",
+      "length": 6
+    },
+    {
+      "offset": "0x59584C",
+      "offset_dec": 5855308,
+      "raw_bytes": "2D4F52414CFF",
+      "decoded": "Moral",
+      "length": 5
+    },
+    {
+      "offset": "0x595862",
+      "offset_dec": 5855330,
+      "raw_bytes": "274C7F434BFF",
+      "decoded": "Glück",
+      "length": 5
+    },
+    {
+      "offset": "0x595878",
+      "offset_dec": 5855352,
+      "raw_bytes": "214E4752454946454EFF",
+      "decoded": "Angreifen",
+      "length": 9
+    },
+    {
+      "offset": "0x59588E",
+      "offset_dec": 5855374,
+      "raw_bytes": "214E4752454946454E0005FF",
+      "decoded": "Angreifen %",
+      "length": 11
+    },
+    {
+      "offset": "0x5958A4",
+      "offset_dec": 5855396,
+      "raw_bytes": "364552544549444947454EFF",
+      "decoded": "Verteidigen",
+      "length": 11
+    },
+    {
+      "offset": "0x5958BA",
+      "offset_dec": 5855418,
+      "raw_bytes": "364552544549444947454E0005FF",
+      "decoded": "Verteidigen %",
+      "length": 13
+    },
+    {
+      "offset": "0x5958D0",
+      "offset_dec": 5855440,
+      "raw_bytes": "3A4252414E475246FF",
+      "decoded": "Zbrangrf",
+      "length": 8
+    },
+    {
+      "offset": "0x5958E6",
+      "offset_dec": 5855462,
+      "raw_bytes": "3A4252564552544447FF",
+      "decoded": "Zbrvertdg",
+      "length": 9
+    },
+    {
+      "offset": "0x5958FC",
+      "offset_dec": 5855484,
+      "raw_bytes": "3A42525645525444470005FF",
+      "decoded": "Zbrvertdg %",
+      "length": 11
+    },
+    {
+      "offset": "0x595912",
+      "offset_dec": 5855506,
+      "raw_bytes": "3741460EFF",
+      "decoded": "Waf.",
+      "length": 4
+    },
+    {
+      "offset": "0x595928",
+      "offset_dec": 5855528,
+      "raw_bytes": "327F530EFF",
+      "decoded": "Rüs.",
+      "length": 4
+    },
+    {
+      "offset": "0x59593E",
+      "offset_dec": 5855550,
+      "raw_bytes": "2143430EFF",
+      "decoded": "Acc.",
+      "length": 4
+    },
+    {
+      "offset": "0x595954",
+      "offset_dec": 5855572,
+      "raw_bytes": "2C494D49540D2542454E45FF",
+      "decoded": "Limit-Ebene",
+      "length": 11
+    },
+    {
+      "offset": "0x5959BE",
+      "offset_dec": 5855678,
+      "raw_bytes": "3C0099005200A7009E0033343526250011FF",
+      "decoded": "\\  r   STUFE 1",
+      "length": 14
+    },
+    {
+      "offset": "0x5959E8",
+      "offset_dec": 5855720,
+      "raw_bytes": "33343526250012FF",
+      "decoded": "STUFE 2",
+      "length": 7
+    },
+    {
+      "offset": "0x595A08",
+      "offset_dec": 5855752,
+      "raw_bytes": "33343526250013FF",
+      "decoded": "STUFE 3",
+      "length": 7
+    },
+    {
+      "offset": "0x595A28",
+      "offset_dec": 5855784,
+      "raw_bytes": "33343526250014FF",
+      "decoded": "STUFE 4",
+      "length": 7
+    },
+    {
+      "offset": "0x595A48",
+      "offset_dec": 5855816,
+      "raw_bytes": "2C292D29340D33343526250045494E5249434854454E0EFF",
+      "decoded": "LIMIT-STUFE einrichten.",
+      "length": 23
+    },
+    {
+      "offset": "0x595A68",
+      "offset_dec": 5855848,
+      "raw_bytes": "25494E5249434854454EFF",
+      "decoded": "Einrichten",
+      "length": 10
+    },
+    {
+      "offset": "0x595A88",
+      "offset_dec": 5855880,
+      "raw_bytes": "30527F46454EFF",
+      "decoded": "Prüfen",
+      "length": 6
+    },
+    {
+      "offset": "0x595AA8",
+      "offset_dec": 5855912,
+      "raw_bytes": "22454900604E444552554E4700444552003334352625FF",
+      "decoded": "Bei nderung der STUFE",
+      "length": 21
+    },
+    {
+      "offset": "0x595AC8",
+      "offset_dec": 5855944,
+      "raw_bytes": "224547494E4E00424549002C494D49540D30554E4B5400100EFF",
+      "decoded": "Beginn bei Limit-Punkt 0.",
+      "length": 25
+    },
+    {
+      "offset": "0x595AE8",
+      "offset_dec": 5855976,
+      "raw_bytes": "3334352625006A4E4445524E1FFF",
+      "decoded": "STUFE ändern?",
+      "length": 13
+    },
+    {
+      "offset": "0x595B08",
+      "offset_dec": 5856008,
+      "raw_bytes": "2A41FF",
+      "decoded": "Ja",
+      "length": 2
+    },
+    {
+      "offset": "0x595B28",
+      "offset_dec": 5856040,
+      "raw_bytes": "2E45494EFF",
+      "decoded": "Nein",
+      "length": 4
+    },
+    {
+      "offset": "0x595B48",
+      "offset_dec": 5856072,
+      "raw_bytes": "2C494D4954004745576A484C5401FF",
+      "decoded": "Limit gewählt!",
+      "length": 14
+    },
+    {
+      "offset": "0x595B68",
+      "offset_dec": 5856104,
+      "raw_bytes": "333435262500576A484C454EFF",
+      "decoded": "STUFE wählen",
+      "length": 12
+    },
+    {
+      "offset": "0x595B94",
+      "offset_dec": 5856148,
+      "raw_bytes": "3200320013001130FF",
+      "decoded": "R R 3 1P",
+      "length": 8
+    },
+    {
+      "offset": "0x595BB0",
+      "offset_dec": 5856176,
+      "raw_bytes": "3400340013011134FF",
+      "decoded": "T T 3!1T",
+      "length": 8
+    },
+    {
+      "offset": "0x595BCC",
+      "offset_dec": 5856204,
+      "raw_bytes": "3300330013021138FF",
+      "decoded": "S S 3\"1X",
+      "length": 8
+    },
+    {
+      "offset": "0x595BE8",
+      "offset_dec": 5856232,
+      "raw_bytes": "3500350013031146FF",
+      "decoded": "U U 3#1f",
+      "length": 8
+    },
+    {
+      "offset": "0x595C04",
+      "offset_dec": 5856260,
+      "raw_bytes": "360036009704111AFF",
+      "decoded": "V V $1:",
+      "length": 7
+    },
+    {
+      "offset": "0x595C20",
+      "offset_dec": 5856288,
+      "raw_bytes": "3900390017051100FF",
+      "decoded": "Y Y 7%1",
+      "length": 7
+    },
+    {
+      "offset": "0x595C58",
+      "offset_dec": 5856344,
+      "raw_bytes": "4600460013071134FF",
+      "decoded": "f f 3'1T",
+      "length": 8
+    },
+    {
+      "offset": "0x595C74",
+      "offset_dec": 5856372,
+      "raw_bytes": "4800480017081136FF",
+      "decoded": "h h 7(1V",
+      "length": 8
+    },
+    {
+      "offset": "0x595C90",
+      "offset_dec": 5856400,
+      "raw_bytes": "4900490013092320FF",
+      "decoded": "i i 3)C@",
+      "length": 8
+    },
+    {
+      "offset": "0x595CAC",
+      "offset_dec": 5856428,
+      "raw_bytes": "4B004B00130A1100FF",
+      "decoded": "k k 3*1",
+      "length": 7
+    },
+    {
+      "offset": "0x595CC8",
+      "offset_dec": 5856456,
+      "raw_bytes": "4D004D00170B1123FF",
+      "decoded": "m m 7+1C",
+      "length": 8
+    },
+    {
+      "offset": "0x595CE4",
+      "offset_dec": 5856484,
+      "raw_bytes": "4E004E00970C1108FF",
+      "decoded": "n n ,1(",
+      "length": 7
+    },
+    {
+      "offset": "0x595D00",
+      "offset_dec": 5856512,
+      "raw_bytes": "4F004F00970D1114FF",
+      "decoded": "o o -14",
+      "length": 7
+    },
+    {
+      "offset": "0x595D1C",
+      "offset_dec": 5856540,
+      "raw_bytes": "5A005A00150E2410FF",
+      "decoded": "z z 5.D0",
+      "length": 8
+    },
+    {
+      "offset": "0x595D61",
+      "offset_dec": 5856609,
+      "raw_bytes": "7E80360000FF",
+      "decoded": "ßV",
+      "length": 2
+    },
+    {
+      "offset": "0x595DFC",
+      "offset_dec": 5856764,
+      "raw_bytes": "420042009715B116FF",
+      "decoded": "b b 56",
+      "length": 6
+    },
+    {
+      "offset": "0x595E34",
+      "offset_dec": 5856820,
+      "raw_bytes": "410041009715B11AFF",
+      "decoded": "a a 5:",
+      "length": 6
+    },
+    {
+      "offset": "0x595E50",
+      "offset_dec": 5856848,
+      "raw_bytes": "430043009715B11CFF",
+      "decoded": "c c 5<",
+      "length": 6
+    },
+    {
+      "offset": "0x595E6C",
+      "offset_dec": 5856876,
+      "raw_bytes": "440044009715B11EFF",
+      "decoded": "d d 5>",
+      "length": 6
+    },
+    {
+      "offset": "0x595E88",
+      "offset_dec": 5856904,
+      "raw_bytes": "450045009715B12AFF",
+      "decoded": "e e 5J",
+      "length": 6
+    },
+    {
+      "offset": "0x595F14",
+      "offset_dec": 5857044,
+      "raw_bytes": "6A006A0097201117FF",
+      "decoded": "ä ä @17",
+      "length": 7
+    },
+    {
+      "offset": "0x595F66",
+      "offset_dec": 5857126,
+      "raw_bytes": "23005000500013231130FF",
+      "decoded": "C p p 3C1P",
+      "length": 10
+    },
+    {
+      "offset": "0x595F84",
+      "offset_dec": 5857156,
+      "raw_bytes": "5100510000242200FF",
+      "decoded": "q q  DB",
+      "length": 7
+    },
+    {
+      "offset": "0x595FA0",
+      "offset_dec": 5857184,
+      "raw_bytes": "5300530013251114FF",
+      "decoded": "s s 3E14",
+      "length": 8
+    },
+    {
+      "offset": "0x595FBC",
+      "offset_dec": 5857212,
+      "raw_bytes": "550055009726110AFF",
+      "decoded": "u u F1*",
+      "length": 7
+    },
+    {
+      "offset": "0x595FD8",
+      "offset_dec": 5857240,
+      "raw_bytes": "5600560015272200FF",
+      "decoded": "v v 5GB",
+      "length": 7
+    },
+    {
+      "offset": "0x595FF4",
+      "offset_dec": 5857268,
+      "raw_bytes": "580058009728111EFF",
+      "decoded": "x x H1>",
+      "length": 7
+    },
+    {
+      "offset": "0x596010",
+      "offset_dec": 5857296,
+      "raw_bytes": "590059001729117DFF",
+      "decoded": "y y 7I1",
+      "length": 7
+    },
+    {
+      "offset": "0x596064",
+      "offset_dec": 5857380,
+      "raw_bytes": "7A007A00172C00FF",
+      "decoded": "ö ö 7L",
+      "length": 6
+    },
+    {
+      "offset": "0x5960F0",
+      "offset_dec": 5857520,
+      "raw_bytes": "6E006E0013311132FF",
+      "decoded": "3Q1R",
+      "length": 4
+    },
+    {
+      "offset": "0x59610C",
+      "offset_dec": 5857548,
+      "raw_bytes": "7300730015322410FF",
+      "decoded": "5RD0",
+      "length": 4
+    },
+    {
+      "offset": "0x596128",
+      "offset_dec": 5857576,
+      "raw_bytes": "7100710017331130FF",
+      "decoded": "7S1P",
+      "length": 4
+    },
+    {
+      "offset": "0x5961B4",
+      "offset_dec": 5857716,
+      "raw_bytes": "7E007E0015382200FF",
+      "decoded": "ß ß 5XB",
+      "length": 7
+    },
+    {
+      "offset": "0x5961EC",
+      "offset_dec": 5857772,
+      "raw_bytes": "7C007C00173A1150FF",
+      "decoded": "7Z1p",
+      "length": 4
+    },
+    {
+      "offset": "0x59625A",
+      "offset_dec": 5857882,
+      "raw_bytes": "23007F007F0013FF",
+      "decoded": "C ü ü 3",
+      "length": 7
+    },
+    {
+      "offset": "0x5962B0",
+      "offset_dec": 5857968,
+      "raw_bytes": "8500850017412246FF",
+      "decoded": "7aBf",
+      "length": 4
+    },
+    {
+      "offset": "0x5962E8",
+      "offset_dec": 5858024,
+      "raw_bytes": "8700870013432200FF",
+      "decoded": "3cB",
+      "length": 3
+    },
+    {
+      "offset": "0x596320",
+      "offset_dec": 5858080,
+      "raw_bytes": "8900890017452200FF",
+      "decoded": "7eB",
+      "length": 3
+    },
+    {
+      "offset": "0x596340",
+      "offset_dec": 5858112,
+      "raw_bytes": "174D1132FF",
+      "decoded": "7m1R",
+      "length": 4
+    },
+    {
+      "offset": "0x59635C",
+      "offset_dec": 5858140,
+      "raw_bytes": "174E225AFF",
+      "decoded": "7nBz",
+      "length": 4
+    },
+    {
+      "offset": "0x5969B2",
+      "offset_dec": 5859762,
+      "raw_bytes": "3E003B01B2000000000040013C0000003C0040011A000000510040019F0051001F009E005900FF",
+      "decoded": "^ [!     `!\\   \\ `!:   q `! q ?  y",
+      "length": 34
+    },
+    {
+      "offset": "0x5969F8",
+      "offset_dec": 5859832,
+      "raw_bytes": "2849545A45FF",
+      "decoded": "Hitze",
+      "length": 5
+    },
+    {
+      "offset": "0x596A04",
+      "offset_dec": 5859844,
+      "raw_bytes": "2B6A4C5445FF",
+      "decoded": "Kälte",
+      "length": 5
+    },
+    {
+      "offset": "0x596A10",
+      "offset_dec": 5859856,
+      "raw_bytes": "2745574954544552FF",
+      "decoded": "Gewitter",
+      "length": 8
+    },
+    {
+      "offset": "0x596A1C",
+      "offset_dec": 5859868,
+      "raw_bytes": "25524445FF",
+      "decoded": "Erde",
+      "length": 4
+    },
+    {
+      "offset": "0x596A28",
+      "offset_dec": 5859880,
+      "raw_bytes": "27494654FF",
+      "decoded": "Gift",
+      "length": 4
+    },
+    {
+      "offset": "0x596A34",
+      "offset_dec": 5859892,
+      "raw_bytes": "3343485745524B52414654FF",
+      "decoded": "Schwerkraft",
+      "length": 11
+    },
+    {
+      "offset": "0x596A40",
+      "offset_dec": 5859904,
+      "raw_bytes": "374153534552FF",
+      "decoded": "Wasser",
+      "length": 6
+    },
+    {
+      "offset": "0x596A4C",
+      "offset_dec": 5859916,
+      "raw_bytes": "37494E44FF",
+      "decoded": "Wind",
+      "length": 4
+    },
+    {
+      "offset": "0x596A58",
+      "offset_dec": 5859928,
+      "raw_bytes": "2845494C4947FF",
+      "decoded": "Heilig",
+      "length": 6
+    },
+    {
+      "offset": "0x596A68",
+      "offset_dec": 5859944,
+      "raw_bytes": "344F44FF",
+      "decoded": "Tod",
+      "length": 3
+    },
+    {
+      "offset": "0x596A7C",
+      "offset_dec": 5859964,
+      "raw_bytes": "274546414852FF",
+      "decoded": "Gefahr",
+      "length": 6
+    },
+    {
+      "offset": "0x596A90",
+      "offset_dec": 5859984,
+      "raw_bytes": "3343484C4146FF",
+      "decoded": "Schlaf",
+      "length": 6
+    },
+    {
+      "offset": "0x596AA4",
+      "offset_dec": 5860004,
+      "raw_bytes": "27494654FF",
+      "decoded": "Gift",
+      "length": 4
+    },
+    {
+      "offset": "0x596AB8",
+      "offset_dec": 5860024,
+      "raw_bytes": "345241554552FF",
+      "decoded": "Trauer",
+      "length": 6
+    },
+    {
+      "offset": "0x596ACC",
+      "offset_dec": 5860044,
+      "raw_bytes": "3A4F524EFF",
+      "decoded": "Zorn",
+      "length": 4
+    },
+    {
+      "offset": "0x596AE0",
+      "offset_dec": 5860064,
+      "raw_bytes": "30535943484FFF",
+      "decoded": "Psycho",
+      "length": 6
+    },
+    {
+      "offset": "0x596AF4",
+      "offset_dec": 5860084,
+      "raw_bytes": "33434857454947454EFF",
+      "decoded": "Schweigen",
+      "length": 9
+    },
+    {
+      "offset": "0x596B08",
+      "offset_dec": 5860104,
+      "raw_bytes": "28415354FF",
+      "decoded": "Hast",
+      "length": 4
+    },
+    {
+      "offset": "0x596B1C",
+      "offset_dec": 5860124,
+      "raw_bytes": "27454D414348FF",
+      "decoded": "Gemach",
+      "length": 6
+    },
+    {
+      "offset": "0x596B30",
+      "offset_dec": 5860144,
+      "raw_bytes": "33544F50FF",
+      "decoded": "Stop",
+      "length": 4
+    },
+    {
+      "offset": "0x596B44",
+      "offset_dec": 5860164,
+      "raw_bytes": "26524F534348FF",
+      "decoded": "Frosch",
+      "length": 6
+    },
+    {
+      "offset": "0x596B58",
+      "offset_dec": 5860184,
+      "raw_bytes": "3A57455247FF",
+      "decoded": "Zwerg",
+      "length": 5
+    },
+    {
+      "offset": "0x596B6C",
+      "offset_dec": 5860204,
+      "raw_bytes": "214C4C4D0E364552535445494E0EFF",
+      "decoded": "Allm.Verstein.",
+      "length": 14
+    },
+    {
+      "offset": "0x596B80",
+      "offset_dec": 5860224,
+      "raw_bytes": "364552535445494E0EFF",
+      "decoded": "Verstein.",
+      "length": 9
+    },
+    {
+      "offset": "0x596B94",
+      "offset_dec": 5860244,
+      "raw_bytes": "2845494C554E47FF",
+      "decoded": "Heilung",
+      "length": 7
+    },
+    {
+      "offset": "0x596BA8",
+      "offset_dec": 5860264,
+      "raw_bytes": "2241525249455245FF",
+      "decoded": "Barriere",
+      "length": 8
+    },
+    {
+      "offset": "0x596BBC",
+      "offset_dec": 5860284,
+      "raw_bytes": "3A224152520EFF",
+      "decoded": "ZBarr.",
+      "length": 6
+    },
+    {
+      "offset": "0x596BD0",
+      "offset_dec": 5860304,
+      "raw_bytes": "374153534552FF",
+      "decoded": "Wasser",
+      "length": 6
+    },
+    {
+      "offset": "0x596BF8",
+      "offset_dec": 5860344,
+      "raw_bytes": "334348494C44FF",
+      "decoded": "Schild",
+      "length": 6
+    },
+    {
+      "offset": "0x596C0C",
+      "offset_dec": 5860364,
+      "raw_bytes": "344F44455355525445494CFF",
+      "decoded": "Todesurteil",
+      "length": 11
+    },
+    {
+      "offset": "0x596C20",
+      "offset_dec": 5860384,
+      "raw_bytes": "2D414E4950554C0EFF",
+      "decoded": "Manipul.",
+      "length": 8
+    },
+    {
+      "offset": "0x596C34",
+      "offset_dec": 5860404,
+      "raw_bytes": "344F425355434854FF",
+      "decoded": "Tobsucht",
+      "length": 8
+    },
+    {
+      "offset": "0x596C48",
+      "offset_dec": 5860424,
+      "raw_bytes": "354E56455257554E44424152FF",
+      "decoded": "Unverwundbar",
+      "length": 12
+    },
+    {
+      "offset": "0x596C5C",
+      "offset_dec": 5860444,
+      "raw_bytes": "2C6A484D554E47FF",
+      "decoded": "Lähmung",
+      "length": 7
+    },
+    {
+      "offset": "0x596C70",
+      "offset_dec": 5860464,
+      "raw_bytes": "224C494E44FF",
+      "decoded": "Blind",
+      "length": 5
+    },
+    {
+      "offset": "0x596C88",
+      "offset_dec": 5860488,
+      "raw_bytes": "254C454D454E540F2E4542454E5749524B554E47FF",
+      "decoded": "Element/Nebenwirkung",
+      "length": 20
+    },
+    {
+      "offset": "0x596CA1",
+      "offset_dec": 5860513,
+      "raw_bytes": "3A555341545A5749524B554E47FF",
+      "decoded": "Zusatzwirkung",
+      "length": 13
+    },
+    {
+      "offset": "0x596CBA",
+      "offset_dec": 5860538,
+      "raw_bytes": "214E4752494646FF",
+      "decoded": "Angriff",
+      "length": 7
+    },
+    {
+      "offset": "0x596CD3",
+      "offset_dec": 5860563,
+      "raw_bytes": "364552544549444947554E47FF",
+      "decoded": "Verteidigung",
+      "length": 12
+    },
+    {
+      "offset": "0x596CEC",
+      "offset_dec": 5860588,
+      "raw_bytes": "28414C42494552454EFF",
+      "decoded": "Halbieren",
+      "length": 9
+    },
+    {
+      "offset": "0x596D05",
+      "offset_dec": 5860613,
+      "raw_bytes": "354E5749524B53414DFF",
+      "decoded": "Unwirksam",
+      "length": 9
+    },
+    {
+      "offset": "0x596D1E",
+      "offset_dec": 5860638,
+      "raw_bytes": "2142534F5242494552454EFF",
+      "decoded": "Absorbieren",
+      "length": 11
+    },
+    {
+      "offset": "0x596D82",
+      "offset_dec": 5860738,
+      "raw_bytes": "33546A524B45FF",
+      "decoded": "Stärke",
+      "length": 6
+    },
+    {
+      "offset": "0x596D9B",
+      "offset_dec": 5860763,
+      "raw_bytes": "274553434849434BFF",
+      "decoded": "Geschick",
+      "length": 8
+    },
+    {
+      "offset": "0x596DB4",
+      "offset_dec": 5860788,
+      "raw_bytes": "364954414C49546A54FF",
+      "decoded": "Vitalität",
+      "length": 9
+    },
+    {
+      "offset": "0x596DCD",
+      "offset_dec": 5860813,
+      "raw_bytes": "3A4155424552FF",
+      "decoded": "Zauber",
+      "length": 6
+    },
+    {
+      "offset": "0x596DE6",
+      "offset_dec": 5860838,
+      "raw_bytes": "27454D7F54FF",
+      "decoded": "Gemüt",
+      "length": 5
+    },
+    {
+      "offset": "0x596DFF",
+      "offset_dec": 5860863,
+      "raw_bytes": "274C7F434BFF",
+      "decoded": "Glück",
+      "length": 5
+    },
+    {
+      "offset": "0x596E18",
+      "offset_dec": 5860888,
+      "raw_bytes": "214E4752494646FF",
+      "decoded": "Angriff",
+      "length": 7
+    },
+    {
+      "offset": "0x596E31",
+      "offset_dec": 5860913,
+      "raw_bytes": "214E47524946460005FF",
+      "decoded": "Angriff %",
+      "length": 9
+    },
+    {
+      "offset": "0x596E4A",
+      "offset_dec": 5860938,
+      "raw_bytes": "364552544549444947554E47FF",
+      "decoded": "Verteidigung",
+      "length": 12
+    },
+    {
+      "offset": "0x596E63",
+      "offset_dec": 5860963,
+      "raw_bytes": "364552544549444947554E470005FF",
+      "decoded": "Verteidigung %",
+      "length": 14
+    },
+    {
+      "offset": "0x596E7C",
+      "offset_dec": 5860988,
+      "raw_bytes": "3A4155424552FF",
+      "decoded": "Zauber",
+      "length": 6
+    },
+    {
+      "offset": "0x596E95",
+      "offset_dec": 5861013,
+      "raw_bytes": "3A4155424552414257454852FF",
+      "decoded": "Zauberabwehr",
+      "length": 12
+    },
+    {
+      "offset": "0x596EAE",
+      "offset_dec": 5861038,
+      "raw_bytes": "3A41554245524142570E0005FF",
+      "decoded": "Zauberabw. %",
+      "length": 12
+    },
+    {
+      "offset": "0x596EC7",
+      "offset_dec": 5861063,
+      "raw_bytes": "3741460EFF",
+      "decoded": "Waf.",
+      "length": 4
+    },
+    {
+      "offset": "0x596EE0",
+      "offset_dec": 5861088,
+      "raw_bytes": "327F530EFF",
+      "decoded": "Rüs.",
+      "length": 4
+    },
+    {
+      "offset": "0x596EF9",
+      "offset_dec": 5861113,
+      "raw_bytes": "2143430EFF",
+      "decoded": "Acc.",
+      "length": 4
+    },
+    {
+      "offset": "0x596F12",
+      "offset_dec": 5861138,
+      "raw_bytes": "2C494D49540D3354554645FF",
+      "decoded": "Limit-Stufe",
+      "length": 11
+    },
+    {
+      "offset": "0x596F66",
+      "offset_dec": 5861222,
+      "raw_bytes": "78000000000000003C0000000000C90078000000000037003C003741460EFF",
+      "decoded": "\\           W \\ Waf.",
+      "length": 20
+    },
+    {
+      "offset": "0x596F96",
+      "offset_dec": 5861270,
+      "raw_bytes": "327F530EFF",
+      "decoded": "Rüs.",
+      "length": 4
+    },
+    {
+      "offset": "0x596FAC",
+      "offset_dec": 5861292,
+      "raw_bytes": "2143430EFF",
+      "decoded": "Acc.",
+      "length": 4
+    },
+    {
+      "offset": "0x596FC2",
+      "offset_dec": 5861314,
+      "raw_bytes": "3A55420EFF",
+      "decoded": "Zub.",
+      "length": 4
+    },
+    {
+      "offset": "0x596FD8",
+      "offset_dec": 5861336,
+      "raw_bytes": "33546A524B45FF",
+      "decoded": "Stärke",
+      "length": 6
+    },
+    {
+      "offset": "0x596FEE",
+      "offset_dec": 5861358,
+      "raw_bytes": "274553434849434BFF",
+      "decoded": "Geschick",
+      "length": 8
+    },
+    {
+      "offset": "0x597004",
+      "offset_dec": 5861380,
+      "raw_bytes": "364954414C49546AFF",
+      "decoded": "Vitalitä",
+      "length": 8
+    },
+    {
+      "offset": "0x59701A",
+      "offset_dec": 5861402,
+      "raw_bytes": "3A4155424552FF",
+      "decoded": "Zauber",
+      "length": 6
+    },
+    {
+      "offset": "0x597030",
+      "offset_dec": 5861424,
+      "raw_bytes": "2D4F52414CFF",
+      "decoded": "Moral",
+      "length": 5
+    },
+    {
+      "offset": "0x597046",
+      "offset_dec": 5861446,
+      "raw_bytes": "274C7F434BFF",
+      "decoded": "Glück",
+      "length": 5
+    },
+    {
+      "offset": "0x59705C",
+      "offset_dec": 5861468,
+      "raw_bytes": "214E4752494646FF",
+      "decoded": "Angriff",
+      "length": 7
+    },
+    {
+      "offset": "0x597072",
+      "offset_dec": 5861490,
+      "raw_bytes": "214E47524946460005FF",
+      "decoded": "Angriff %",
+      "length": 9
+    },
+    {
+      "offset": "0x597088",
+      "offset_dec": 5861512,
+      "raw_bytes": "364552544549444947554E47FF",
+      "decoded": "Verteidigung",
+      "length": 12
+    },
+    {
+      "offset": "0x59709E",
+      "offset_dec": 5861534,
+      "raw_bytes": "364552544549444947554E470005FF",
+      "decoded": "Verteidigung %",
+      "length": 14
+    },
+    {
+      "offset": "0x5970B4",
+      "offset_dec": 5861556,
+      "raw_bytes": "3A4155424552FF",
+      "decoded": "Zauber",
+      "length": 6
+    },
+    {
+      "offset": "0x5970CA",
+      "offset_dec": 5861578,
+      "raw_bytes": "3A4155424552414257454852FF",
+      "decoded": "Zauberabwehr",
+      "length": 12
+    },
+    {
+      "offset": "0x5970E0",
+      "offset_dec": 5861600,
+      "raw_bytes": "3A41554245524142570E0005FF",
+      "decoded": "Zauberabw. %",
+      "length": 12
+    },
+    {
+      "offset": "0x5970F6",
+      "offset_dec": 5861622,
+      "raw_bytes": "26415353554E471AFF",
+      "decoded": "Fassung:",
+      "length": 8
+    },
+    {
+      "offset": "0x59710C",
+      "offset_dec": 5861644,
+      "raw_bytes": "374143485354554D1AFF",
+      "decoded": "Wachstum:",
+      "length": 9
+    },
+    {
+      "offset": "0x597122",
+      "offset_dec": 5861666,
+      "raw_bytes": "2B45494E45FF",
+      "decoded": "Keine",
+      "length": 5
+    },
+    {
+      "offset": "0x597138",
+      "offset_dec": 5861688,
+      "raw_bytes": "2E4F524D414CFF",
+      "decoded": "Normal",
+      "length": 6
+    },
+    {
+      "offset": "0x59714E",
+      "offset_dec": 5861710,
+      "raw_bytes": "244F5050454C54FF",
+      "decoded": "Doppelt",
+      "length": 7
+    },
+    {
+      "offset": "0x597164",
+      "offset_dec": 5861732,
+      "raw_bytes": "2452454946414348FF",
+      "decoded": "Dreifach",
+      "length": 8
+    },
+    {
+      "offset": "0x5971D8",
+      "offset_dec": 5861848,
+      "raw_bytes": "C50051007B009F002645554552FF",
+      "decoded": "q   Feuer",
+      "length": 9
+    },
+    {
+      "offset": "0x5971EC",
+      "offset_dec": 5861868,
+      "raw_bytes": "2B6A4C5445FF",
+      "decoded": "Kälte",
+      "length": 5
+    },
+    {
+      "offset": "0x5971F8",
+      "offset_dec": 5861880,
+      "raw_bytes": "224C49545AFF",
+      "decoded": "Blitz",
+      "length": 5
+    },
+    {
+      "offset": "0x597204",
+      "offset_dec": 5861892,
+      "raw_bytes": "25524445FF",
+      "decoded": "Erde",
+      "length": 4
+    },
+    {
+      "offset": "0x597210",
+      "offset_dec": 5861904,
+      "raw_bytes": "27494654FF",
+      "decoded": "Gift",
+      "length": 4
+    },
+    {
+      "offset": "0x59721C",
+      "offset_dec": 5861916,
+      "raw_bytes": "3343485745524B52414654FF",
+      "decoded": "Schwerkraft",
+      "length": 11
+    },
+    {
+      "offset": "0x597228",
+      "offset_dec": 5861928,
+      "raw_bytes": "374153534552FF",
+      "decoded": "Wasser",
+      "length": 6
+    },
+    {
+      "offset": "0x597234",
+      "offset_dec": 5861940,
+      "raw_bytes": "37494E44FF",
+      "decoded": "Wind",
+      "length": 4
+    },
+    {
+      "offset": "0x597240",
+      "offset_dec": 5861952,
+      "raw_bytes": "2845494C4947FF",
+      "decoded": "Heilig",
+      "length": 6
+    },
+    {
+      "offset": "0x597250",
+      "offset_dec": 5861968,
+      "raw_bytes": "334F4C4C00444153005749524B4C49434800454E544645524E540057455244454E1FFF",
+      "decoded": "Soll das wirklich entfernt werden?",
+      "length": 34
+    },
+    {
+      "offset": "0x597274",
+      "offset_dec": 5862004,
+      "raw_bytes": "2A4101FF",
+      "decoded": "Ja!",
+      "length": 3
+    },
+    {
+      "offset": "0x597298",
+      "offset_dec": 5862040,
+      "raw_bytes": "25494E454E002D4F4D454E54FF",
+      "decoded": "Einen Moment",
+      "length": 12
+    },
+    {
+      "offset": "0x5972E0",
+      "offset_dec": 5862112,
+      "raw_bytes": "3741460EFF",
+      "decoded": "Waf.",
+      "length": 4
+    },
+    {
+      "offset": "0x5972FC",
+      "offset_dec": 5862140,
+      "raw_bytes": "327F530EFF",
+      "decoded": "Rüs.",
+      "length": 4
+    },
+    {
+      "offset": "0x597318",
+      "offset_dec": 5862168,
+      "raw_bytes": "266A4849474B454954534C49535445FF",
+      "decoded": "Fähigkeitsliste",
+      "length": 15
+    },
+    {
+      "offset": "0x597334",
+      "offset_dec": 5862196,
+      "raw_bytes": "327F5354554E4753454646454B54FF",
+      "decoded": "Rüstungseffekt",
+      "length": 14
+    },
+    {
+      "offset": "0x597350",
+      "offset_dec": 5862224,
+      "raw_bytes": "30527F46454EFF",
+      "decoded": "Prüfen",
+      "length": 6
+    },
+    {
+      "offset": "0x59736C",
+      "offset_dec": 5862252,
+      "raw_bytes": "2F52444E454EFF",
+      "decoded": "Ordnen",
+      "length": 6
+    },
+    {
+      "offset": "0x597388",
+      "offset_dec": 5862280,
+      "raw_bytes": "274553504549434845525445003A41484C0000000F1214FF",
+      "decoded": "Gespeicherte Zahl   /24",
+      "length": 23
+    },
+    {
+      "offset": "0x5973A4",
+      "offset_dec": 5862308,
+      "raw_bytes": "2130FF",
+      "decoded": "AP",
+      "length": 2
+    },
+    {
+      "offset": "0x5973C0",
+      "offset_dec": 5862336,
+      "raw_bytes": "215546004E6A4348535445002542454E45FF",
+      "decoded": "Auf nächste Ebene",
+      "length": 17
+    },
+    {
+      "offset": "0x5973DC",
+      "offset_dec": 5862364,
+      "raw_bytes": "2D2133342532FF",
+      "decoded": "MASTER",
+      "length": 6
+    },
+    {
+      "offset": "0x5973F8",
+      "offset_dec": 5862392,
+      "raw_bytes": "2F52444E454EFF",
+      "decoded": "Ordnen",
+      "length": 6
+    },
+    {
+      "offset": "0x597414",
+      "offset_dec": 5862420,
+      "raw_bytes": "344155534348454EFF",
+      "decoded": "Tauschen",
+      "length": 8
+    },
+    {
+      "offset": "0x597430",
+      "offset_dec": 5862448,
+      "raw_bytes": "214C4C455300454E544645524E454EFF",
+      "decoded": "Alles entfernen",
+      "length": 15
+    },
+    {
+      "offset": "0x59744C",
+      "offset_dec": 5862476,
+      "raw_bytes": "37454757455246454EFF",
+      "decoded": "Wegwerfen",
+      "length": 9
+    },
+    {
+      "offset": "0x597484",
+      "offset_dec": 5862532,
+      "raw_bytes": "274553434857494E4449474B454954000000052865282532FF",
+      "decoded": "Geschwindigkeit   %HHER",
+      "length": 23
+    },
+    {
+      "offset": "0x5974A0",
+      "offset_dec": 5862560,
+      "raw_bytes": "33434855545A000000052865282532FF",
+      "decoded": "Schutz   %HHER",
+      "length": 14
+    },
+    {
+      "offset": "0x5974BC",
+      "offset_dec": 5862588,
+      "raw_bytes": "3A41554245524B52414654000000052865282532FF",
+      "decoded": "Zauberkraft   %HHER",
+      "length": 19
+    },
+    {
+      "offset": "0x5974D8",
+      "offset_dec": 5862616,
+      "raw_bytes": "274C7F434B000000052865282532FF",
+      "decoded": "Glück   %HHER",
+      "length": 13
+    },
+    {
+      "offset": "0x5974F4",
+      "offset_dec": 5862644,
+      "raw_bytes": "2D2133342532FF",
+      "decoded": "MASTER",
+      "length": 6
+    },
+    {
+      "offset": "0x597510",
+      "offset_dec": 5862672,
+      "raw_bytes": "33546A524B45FF",
+      "decoded": "Stärke",
+      "length": 6
+    },
+    {
+      "offset": "0x59752C",
+      "offset_dec": 5862700,
+      "raw_bytes": "364954414C49546A54FF",
+      "decoded": "Vitalität",
+      "length": 9
+    },
+    {
+      "offset": "0x597548",
+      "offset_dec": 5862728,
+      "raw_bytes": "3A4155424552FF",
+      "decoded": "Zauber",
+      "length": 6
+    },
+    {
+      "offset": "0x597564",
+      "offset_dec": 5862756,
+      "raw_bytes": "3A4252564552544447FF",
+      "decoded": "Zbrvertdg",
+      "length": 9
+    },
+    {
+      "offset": "0x597580",
+      "offset_dec": 5862784,
+      "raw_bytes": "274553434849434BFF",
+      "decoded": "Geschick",
+      "length": 8
+    },
+    {
+      "offset": "0x59759C",
+      "offset_dec": 5862812,
+      "raw_bytes": "274C7F434BFF",
+      "decoded": "Glück",
+      "length": 5
+    },
+    {
+      "offset": "0x5975B8",
+      "offset_dec": 5862840,
+      "raw_bytes": "2D21382830FF",
+      "decoded": "MAXHP",
+      "length": 5
+    },
+    {
+      "offset": "0x5975D4",
+      "offset_dec": 5862868,
+      "raw_bytes": "2D21382D30FF",
+      "decoded": "MAXMP",
+      "length": 5
+    },
+    {
+      "offset": "0x5975F0",
+      "offset_dec": 5862896,
+      "raw_bytes": "2D21382830FF",
+      "decoded": "MAXHP",
+      "length": 5
+    },
+    {
+      "offset": "0x59760C",
+      "offset_dec": 5862924,
+      "raw_bytes": "2D21382D30FF",
+      "decoded": "MAXMP",
+      "length": 5
+    },
+    {
+      "offset": "0x597628",
+      "offset_dec": 5862952,
+      "raw_bytes": "2538300E3530FF",
+      "decoded": "EXP.UP",
+      "length": 6
+    },
+    {
+      "offset": "0x597644",
+      "offset_dec": 5862980,
+      "raw_bytes": "27494C003530FF",
+      "decoded": "Gil UP",
+      "length": 6
+    },
+    {
+      "offset": "0x597660",
+      "offset_dec": 5863008,
+      "raw_bytes": "3452454646454E000D0005FF",
+      "decoded": "Treffen - %",
+      "length": 11
+    },
+    {
+      "offset": "0x59767C",
+      "offset_dec": 5863036,
+      "raw_bytes": "3452454646454E000B0005FF",
+      "decoded": "Treffen + %",
+      "length": 11
+    },
+    {
+      "offset": "0x597698",
+      "offset_dec": 5863064,
+      "raw_bytes": "23484F434F424F005452454646454EFF",
+      "decoded": "Chocobo treffen",
+      "length": 15
+    },
+    {
+      "offset": "0x5976B4",
+      "offset_dec": 5863092,
+      "raw_bytes": "30526A56454E5449564D0E000B0005FF",
+      "decoded": "Präventivm. + %",
+      "length": 15
+    },
+    {
+      "offset": "0x5976D0",
+      "offset_dec": 5863120,
+      "raw_bytes": "2645524E414E4752494646FF",
+      "decoded": "Fernangriff",
+      "length": 11
+    },
+    {
+      "offset": "0x5976EC",
+      "offset_dec": 5863148,
+      "raw_bytes": "214C4C4500414E4752454946454EFF",
+      "decoded": "Alle angreifen",
+      "length": 14
+    },
+    {
+      "offset": "0x597708",
+      "offset_dec": 5863176,
+      "raw_bytes": "274547454E414E4752494646FF",
+      "decoded": "Gegenangriff",
+      "length": 12
+    },
+    {
+      "offset": "0x597724",
+      "offset_dec": 5863204,
+      "raw_bytes": "214C4C4500414E4752454946454EFF",
+      "decoded": "Alle angreifen",
+      "length": 14
+    },
+    {
+      "offset": "0x597740",
+      "offset_dec": 5863232,
+      "raw_bytes": "33546A4E444947455200214E4752494646FF",
+      "decoded": "Ständiger Angriff",
+      "length": 17
+    },
+    {
+      "offset": "0x59775C",
+      "offset_dec": 5863260,
+      "raw_bytes": "28300F2D300D604E444552554E47FF",
+      "decoded": "HP/MP-nderung",
+      "length": 13
+    },
+    {
+      "offset": "0x597862",
+      "offset_dec": 5863522,
+      "raw_bytes": "AD00FD004001320057007F00A0003A4155424552FF",
+      "decoded": "`!R w ü  Zauber",
+      "length": 15
+    },
+    {
+      "offset": "0x597886",
+      "offset_dec": 5863558,
+      "raw_bytes": "2245534348577A52454EFF",
+      "decoded": "Beschwören",
+      "length": 10
+    },
+    {
+      "offset": "0x59789C",
+      "offset_dec": 5863580,
+      "raw_bytes": "2645494E44544543484E494BFF",
+      "decoded": "Feindtechnik",
+      "length": 12
+    },
+    {
+      "offset": "0x5978B2",
+      "offset_dec": 5863602,
+      "raw_bytes": "3A55536A545A4C4943484500266A4849474B454954FF",
+      "decoded": "Zusätzliche Fähigkeit",
+      "length": 21
+    },
+    {
+      "offset": "0x5978C8",
+      "offset_dec": 5863624,
+      "raw_bytes": "214C4C45FF",
+      "decoded": "Alle",
+      "length": 4
+    },
+    {
+      "offset": "0x5978DE",
+      "offset_dec": 5863646,
+      "raw_bytes": "14580D3A424552FF",
+      "decoded": "4x-Zber",
+      "length": 7
+    },
+    {
+      "offset": "0x5978F4",
+      "offset_dec": 5863668,
+      "raw_bytes": "2D30004142534F52420EFF",
+      "decoded": "MP absorb.",
+      "length": 10
+    },
+    {
+      "offset": "0x59790A",
+      "offset_dec": 5863690,
+      "raw_bytes": "2830004142534F52420EFF",
+      "decoded": "HP absorb.",
+      "length": 10
+    },
+    {
+      "offset": "0x597936",
+      "offset_dec": 5863734,
+      "raw_bytes": "2155434800535445484C0EFF",
+      "decoded": "Auch stehl.",
+      "length": 11
+    },
+    {
+      "offset": "0x59794C",
+      "offset_dec": 5863756,
+      "raw_bytes": "3343484C4147FF",
+      "decoded": "Schlag",
+      "length": 6
+    },
+    {
+      "offset": "0x597962",
+      "offset_dec": 5863778,
+      "raw_bytes": "345552424F0D2D30FF",
+      "decoded": "Turbo-MP",
+      "length": 8
+    },
+    {
+      "offset": "0x597978",
+      "offset_dec": 5863800,
+      "raw_bytes": "2E4943485453FF",
+      "decoded": "Nichts",
+      "length": 6
+    },
+    {
+      "offset": "0x59798E",
+      "offset_dec": 5863822,
+      "raw_bytes": "2E494348540047454E5547002D300EFF",
+      "decoded": "Nicht genug MP.",
+      "length": 15
+    },
+    {
+      "offset": "0x5979F0",
+      "offset_dec": 5863920,
+      "raw_bytes": "F60016004A003C00F900160047003C00F60000004A001A0036455257454E44454EFF",
+      "decoded": "6 j \\  6 g \\    j : Verwenden",
+      "length": 29
+    },
+    {
+      "offset": "0x597A1A",
+      "offset_dec": 5863962,
+      "raw_bytes": "2F52444E454EFF",
+      "decoded": "Ordnen",
+      "length": 6
+    },
+    {
+      "offset": "0x597A2C",
+      "offset_dec": 5863980,
+      "raw_bytes": "3343484C7F5353454C4F424A454B5445FF",
+      "decoded": "Schlüsselobjekte",
+      "length": 16
+    },
+    {
+      "offset": "0x597A3E",
+      "offset_dec": 5863998,
+      "raw_bytes": "214C4C45494EFF",
+      "decoded": "Allein",
+      "length": 6
+    },
+    {
+      "offset": "0x597A50",
+      "offset_dec": 5864016,
+      "raw_bytes": "26454C44FF",
+      "decoded": "Feld",
+      "length": 4
+    },
+    {
+      "offset": "0x597A62",
+      "offset_dec": 5864034,
+      "raw_bytes": "3343484C41434854FF",
+      "decoded": "Schlacht",
+      "length": 8
+    },
+    {
+      "offset": "0x597A74",
+      "offset_dec": 5864052,
+      "raw_bytes": "37455246454EFF",
+      "decoded": "Werfen",
+      "length": 6
+    },
+    {
+      "offset": "0x597A86",
+      "offset_dec": 5864070,
+      "raw_bytes": "345950FF",
+      "decoded": "Typ",
+      "length": 3
+    },
+    {
+      "offset": "0x597A98",
+      "offset_dec": 5864088,
+      "raw_bytes": "2E414D45FF",
+      "decoded": "Name",
+      "length": 4
+    },
+    {
+      "offset": "0x597AAA",
+      "offset_dec": 5864106,
+      "raw_bytes": "2D41580EFF",
+      "decoded": "Max.",
+      "length": 4
+    },
+    {
+      "offset": "0x597ABC",
+      "offset_dec": 5864124,
+      "raw_bytes": "2D494E0EFF",
+      "decoded": "Min.",
+      "length": 4
+    },
+    {
+      "offset": "0x597AD0",
+      "offset_dec": 5864144,
+      "raw_bytes": "2F2B01002B4C415201FF",
+      "decoded": "OK! Klar!",
+      "length": 9
+    },
+    {
+      "offset": "0x597AF8",
+      "offset_dec": 5864184,
+      "raw_bytes": "2943480042494E004E49434854005349434845520C0041424552A9FF",
+      "decoded": "Ich bin nicht sicher, aber",
+      "length": 26
+    },
+    {
+      "offset": "0x597B20",
+      "offset_dec": 5864224,
+      "raw_bytes": "295354004D4952004547414C0EFF",
+      "decoded": "Ist mir egal.",
+      "length": 13
+    },
+    {
+      "offset": "0x597B48",
+      "offset_dec": 5864264,
+      "raw_bytes": "284548010028454801FF",
+      "decoded": "Heh! Heh!",
+      "length": 9
+    },
+    {
+      "offset": "0x597B70",
+      "offset_dec": 5864304,
+      "raw_bytes": "360D560D56455244414D4D5401002D45494E002B4F504601FF",
+      "decoded": "V-v-verdammt! Mein Kopf!",
+      "length": 24
+    },
+    {
+      "offset": "0x597B98",
+      "offset_dec": 5864344,
+      "raw_bytes": "284154004E4943485453004D4954004D4952005A550054554E01FF",
+      "decoded": "Hat nichts mit mir zu tun!",
+      "length": 26
+    },
+    {
+      "offset": "0x597BC0",
+      "offset_dec": 5864384,
+      "raw_bytes": "284D4D0C0044415300576A52075300414C534F0EFF",
+      "decoded": "Hmm, das wär's also.",
+      "length": 20
+    },
+    {
+      "offset": "0x597BE8",
+      "offset_dec": 5864424,
+      "raw_bytes": "2943480042494E004E49434854005349434845520C0041424552A9FF",
+      "decoded": "Ich bin nicht sicher, aber",
+      "length": 26
+    },
+    {
+      "offset": "0x597C10",
+      "offset_dec": 5864464,
+      "raw_bytes": "29434800484142004449450046414C5343484500304552534F4E0045525749534348540EFF",
+      "decoded": "Ich hab die falsche Person erwischt.",
+      "length": 36
+    },
+    {
+      "offset": "0x597C38",
+      "offset_dec": 5864504,
+      "raw_bytes": "24415300534F4C4C5445004F4B005345494E0EFF",
+      "decoded": "Das sollte ok sein.",
+      "length": 19
+    },
+    {
+      "offset": "0x597C60",
+      "offset_dec": 5864544,
+      "raw_bytes": "2E4F4348004E494348540047414E5A004245524549540EFF",
+      "decoded": "Noch nicht ganz bereit.",
+      "length": 23
+    },
+    {
+      "offset": "0x597C88",
+      "offset_dec": 5864584,
+      "raw_bytes": "2E45494E0C004943480042494E004553004E494348540EFF",
+      "decoded": "Nein, ich bin es nicht.",
+      "length": 23
+    },
+    {
+      "offset": "0x597CB0",
+      "offset_dec": 5864624,
+      "raw_bytes": "2F4B0C004B4C415201FF",
+      "decoded": "Ok, klar!",
+      "length": 9
+    },
+    {
+      "offset": "0x597CD8",
+      "offset_dec": 5864664,
+      "raw_bytes": "2B415049455200494348004E494348540EFF",
+      "decoded": "Kapier ich nicht.",
+      "length": 17
+    },
+    {
+      "offset": "0x597D00",
+      "offset_dec": 5864704,
+      "raw_bytes": "284154004E4943485453004D4954004D4952005A550054554E0EFF",
+      "decoded": "Hat nichts mit mir zu tun.",
+      "length": 26
+    },
+    {
+      "offset": "0x597D28",
+      "offset_dec": 5864744,
+      "raw_bytes": "234F4F4C010024415300534F4C4C5445004F4B005345494E01FF",
+      "decoded": "Cool! Das sollte ok sein!",
+      "length": 25
+    },
+    {
+      "offset": "0x597D50",
+      "offset_dec": 5864784,
+      "raw_bytes": "2E454501002B415049455200494348004E4943485401FF",
+      "decoded": "Nee! Kapier ich nicht!",
+      "length": 22
+    },
+    {
+      "offset": "0x597D78",
+      "offset_dec": 5864824,
+      "raw_bytes": "2D414E4E0C00494348005441505000544F54414C00494D0024554E4B454C4E01FF",
+      "decoded": "Mann, ich tapp total im Dunkeln!",
+      "length": 32
+    },
+    {
+      "offset": "0x597DA0",
+      "offset_dec": 5864864,
+      "raw_bytes": "294348005645524C49455200494D4D4552004D454852002D454E5343484C4943484553A9FF",
+      "decoded": "Ich verlier immer mehr Menschliches",
+      "length": 35
+    },
+    {
+      "offset": "0x597DC8",
+      "offset_dec": 5864904,
+      "raw_bytes": "2943480042494E004E4F4348004E49434854004245524549540EFF",
+      "decoded": "Ich bin noch nicht bereit.",
+      "length": 26
+    },
+    {
+      "offset": "0x597DF0",
+      "offset_dec": 5864944,
+      "raw_bytes": "255300484154004E4943485453004D4954004D4952005A550054554E0EFF",
+      "decoded": "Es hat nichts mit mir zu tun.",
+      "length": 29
+    },
+    {
+      "offset": "0x597E18",
+      "offset_dec": 5864984,
+      "raw_bytes": "244153004745466A4C4C54004D495201002845520044414D495401FF",
+      "decoded": "Das gefällt mir! Her damit!",
+      "length": 27
+    },
+    {
+      "offset": "0x597E40",
+      "offset_dec": 5865024,
+      "raw_bytes": "284D50480E0028414200494348004E494348540047414E5A004B4150494552540C0041424552A9FF",
+      "decoded": "Hmph. Hab ich nicht ganz kapiert, aber",
+      "length": 38
+    },
+    {
+      "offset": "0x597E68",
+      "offset_dec": 5865064,
+      "raw_bytes": "2E49434854004943480100274942004553004A454D414E4400414E4445525301FF",
+      "decoded": "Nicht ich! Gib es jemand anders!",
+      "length": 32
+    },
+    {
+      "offset": "0x597E90",
+      "offset_dec": 5865104,
+      "raw_bytes": "255300484154004E4943485453004D4954004D4952005A550054554E0EFF",
+      "decoded": "Es hat nichts mit mir zu tun.",
+      "length": 29
+    },
+    {
+      "offset": "0x5981BF",
+      "offset_dec": 5865919,
+      "raw_bytes": "108A210719481DE003ED294E2E0C0400000003000010002000FF",
+      "decoded": "0A'9h=#InN,$   #  0 @",
+      "length": 21
+    },
+    {
+      "offset": "0x59860C",
+      "offset_dec": 5867020,
+      "raw_bytes": "40011A0000001A0040011A0000002F004001C1006E000D0049007200234C4F5544FF",
+      "decoded": "`!:   : `!:   O `!  - i  Cloud",
+      "length": 30
+    },
+    {
+      "offset": "0x598634",
+      "offset_dec": 5867060,
+      "raw_bytes": "224152524554FF",
+      "decoded": "Barret",
+      "length": 6
+    },
+    {
+      "offset": "0x598640",
+      "offset_dec": 5867072,
+      "raw_bytes": "34494641FF",
+      "decoded": "Tifa",
+      "length": 4
+    },
+    {
+      "offset": "0x59864C",
+      "offset_dec": 5867084,
+      "raw_bytes": "2145524953FF",
+      "decoded": "Aeris",
+      "length": 5
+    },
+    {
+      "offset": "0x598658",
+      "offset_dec": 5867096,
+      "raw_bytes": "3245440038292929FF",
+      "decoded": "Red XIII",
+      "length": 8
+    },
+    {
+      "offset": "0x598664",
+      "offset_dec": 5867108,
+      "raw_bytes": "395546464945FF",
+      "decoded": "Yuffie",
+      "length": 6
+    },
+    {
+      "offset": "0x598670",
+      "offset_dec": 5867120,
+      "raw_bytes": "234149540033495448FF",
+      "decoded": "Cait Sith",
+      "length": 9
+    },
+    {
+      "offset": "0x59867C",
+      "offset_dec": 5867132,
+      "raw_bytes": "36494E43454E54FF",
+      "decoded": "Vincent",
+      "length": 7
+    },
+    {
+      "offset": "0x598688",
+      "offset_dec": 5867144,
+      "raw_bytes": "234944FF",
+      "decoded": "Cid",
+      "length": 3
+    },
+    {
+      "offset": "0x598694",
+      "offset_dec": 5867156,
+      "raw_bytes": "23484F434FFF",
+      "decoded": "Choco",
+      "length": 5
+    },
+    {
+      "offset": "0x5986BE",
+      "offset_dec": 5867198,
+      "raw_bytes": "2C454552FF",
+      "decoded": "Leer",
+      "length": 4
+    },
+    {
+      "offset": "0x5986C8",
+      "offset_dec": 5867208,
+      "raw_bytes": "2C7A534348454EFF",
+      "decoded": "Löschen",
+      "length": 7
+    },
+    {
+      "offset": "0x5986D2",
+      "offset_dec": 5867218,
+      "raw_bytes": "215553576A484C454EFF",
+      "decoded": "Auswählen",
+      "length": 9
+    },
+    {
+      "offset": "0x5986DC",
+      "offset_dec": 5867228,
+      "raw_bytes": "3354414E44415244FF",
+      "decoded": "Standard",
+      "length": 8
+    },
+    {
+      "offset": "0x5986E6",
+      "offset_dec": 5867238,
+      "raw_bytes": "21424252454348454EFF",
+      "decoded": "Abbrechen",
+      "length": 9
+    },
+    {
+      "offset": "0x598706",
+      "offset_dec": 5867270,
+      "raw_bytes": "35363738393A0C0E0B0D7A4142434445464748494A654B4C4D4E4F50515253546655565758595A1A1B00007F1011121314151617181987000000324147494E2C494F4EFF",
+      "decoded": "UVWXYZ,.+-öabcdefghijklmnopqrstuvwxyz:;  ü0123456789   RaginLion",
+      "length": 64
+    },
+    {
+      "offset": "0x598750",
+      "offset_dec": 5867344,
+      "raw_bytes": "26524553484D414B45FF",
+      "decoded": "Freshmake",
+      "length": 9
+    },
+    {
+      "offset": "0x598760",
+      "offset_dec": 5867360,
+      "raw_bytes": "335155415245FF",
+      "decoded": "Square",
+      "length": 6
+    },
+    {
+      "offset": "0x598770",
+      "offset_dec": 5867376,
+      "raw_bytes": "13244658FF",
+      "decoded": "3Dfx",
+      "length": 4
+    },
+    {
+      "offset": "0x598780",
+      "offset_dec": 5867392,
+      "raw_bytes": "2C4F43414CFF",
+      "decoded": "Local",
+      "length": 5
+    },
+    {
+      "offset": "0x598790",
+      "offset_dec": 5867408,
+      "raw_bytes": "274F4C44FF",
+      "decoded": "Gold",
+      "length": 4
+    },
+    {
+      "offset": "0x598864",
+      "offset_dec": 5867620,
+      "raw_bytes": "01000000020000000400000005000000070000000800000000000000000614101311060E000000000000016E25580D332F2C24292532FF",
+      "decoded": "!   \"   $   %   '   (        &4031&.      !Ex-SOLDIER",
+      "length": 53
+    },
+    {
+      "offset": "0x5988A1",
+      "offset_dec": 5867681,
+      "raw_bytes": "38010000000000000000003A013A013600360000000000FF",
+      "decoded": "X!         Z!Z!V V",
+      "length": 18
+    },
+    {
+      "offset": "0x5988BC",
+      "offset_dec": 5867708,
+      "raw_bytes": "620200003400000032000000FF",
+      "decoded": "\"  T   R",
+      "length": 8
+    },
+    {
+      "offset": "0x598900",
+      "offset_dec": 5867776,
+      "raw_bytes": "2300000001010F0D0B09050D000000000000017A224152524554FF",
+      "decoded": "C   !!/-+)%-      !öBarret",
+      "length": 26
+    },
+    {
+      "offset": "0x598988",
+      "offset_dec": 5867912,
+      "raw_bytes": "02010B0B0B0A070E000000000000011934494641FF",
+      "decoded": "\"!+++*'.      !9Tifa",
+      "length": 20
+    },
+    {
+      "offset": "0x598A0C",
+      "offset_dec": 5868044,
+      "raw_bytes": "03010A0B0D0E050E0000000000000114214552495448FF",
+      "decoded": "#!*+-.%.      !4Aerith",
+      "length": 22
+    },
+    {
+      "offset": "0x598A90",
+      "offset_dec": 5868176,
+      "raw_bytes": "04010A0C0B0A0A0E000000000000016A324544FF",
+      "decoded": "$!*,+**.      !äRed",
+      "length": 19
+    },
+    {
+      "offset": "0x598B14",
+      "offset_dec": 5868308,
+      "raw_bytes": "0501000000000000000000000000012B395546464945FF",
+      "decoded": "%!            !KYuffie",
+      "length": 22
+    },
+    {
+      "offset": "0x598B54",
+      "offset_dec": 5868372,
+      "raw_bytes": "272C0100FF",
+      "decoded": "GL!",
+      "length": 3
+    },
+    {
+      "offset": "0x598B98",
+      "offset_dec": 5868440,
+      "raw_bytes": "06010A0B0D0B050F000000000000010023414954003345495448FF",
+      "decoded": "&!*+-+%/      ! Cait Seith",
+      "length": 26
+    },
+    {
+      "offset": "0x598BD4",
+      "offset_dec": 5868500,
+      "raw_bytes": "0E0000002A0000003A581B00FF",
+      "decoded": ".   J   Zx;",
+      "length": 11
+    },
+    {
+      "offset": "0x598C1C",
+      "offset_dec": 5868572,
+      "raw_bytes": "0701090A0B0B050E000000000000013736494E43454E54FF",
+      "decoded": "'!)*++%.      !WVincent",
+      "length": 23
+    },
+    {
+      "offset": "0x598CA0",
+      "offset_dec": 5868704,
+      "raw_bytes": "08010C0C0B0A060E000000000000013F234944FF",
+      "decoded": "(!,,+*&.      !_Cid",
+      "length": 19
+    },
+    {
+      "offset": "0x598DA4",
+      "offset_dec": 5868964,
+      "raw_bytes": "740000000A3255484446412E00000000000001003345504849524F5448FF",
+      "decoded": "*RuhdfaN      ! Sephiroth",
+      "length": 25
+    },
+    {
+      "offset": "0x599124",
+      "offset_dec": 5869860,
+      "raw_bytes": "03000000070000000200000003000000090000000200000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000003100000032000000330000003400000035000000360000003700000038000000390000003A0000003B0000003C0000003D0000003E00000040000000410000004400000045000000460000004700000048000000000000004A0000004B0000004C0000004D0000004E0000004F0000005000000051000000520000005300000054000000550000005600000057000000580000005900000024000000250000002700000028000000290000002A0000002B00000000000000510000005500000026554C4C002551554950454E5401FF",
+      "decoded": "#   '   \"   #   )   \"   !                                               !                   Q   R   S   T   U   V   W   X   Y   Z   [   \\   ]   ^   `   a   d   e   f   g   h       j   k   l   m   n   o   p   q   r   s   t   u   v   w   x   y   D   E   G   H   I   J   K       q   u   Full Equipent!",
+      "length": 298
+    },
+    {
+      "offset": "0x599254",
+      "offset_dec": 5870164,
+      "raw_bytes": "2D41474943002D41544552494101FF",
+      "decoded": "Magic Materia!",
+      "length": 14
+    },
+    {
+      "offset": "0x599268",
+      "offset_dec": 5870184,
+      "raw_bytes": "33554D4D4F4E002D41544552494101FF",
+      "decoded": "Summon Materia!",
+      "length": 15
+    },
+    {
+      "offset": "0x59927C",
+      "offset_dec": 5870204,
+      "raw_bytes": "234F4D4D414E44FF",
+      "decoded": "Command",
+      "length": 7
+    },
+    {
+      "offset": "0x599290",
+      "offset_dec": 5870224,
+      "raw_bytes": "3A45524F000D002137003925212801FF",
+      "decoded": "Zero - AW YEAH!",
+      "length": 15
+    },
+    {
+      "offset": "0x5992A8",
+      "offset_dec": 5870248,
+      "raw_bytes": "2645554552FF",
+      "decoded": "Feuer",
+      "length": 5
+    },
+    {
+      "offset": "0x5992B4",
+      "offset_dec": 5870260,
+      "raw_bytes": "2B6A4C5445FF",
+      "decoded": "Kälte",
+      "length": 5
+    },
+    {
+      "offset": "0x5992C0",
+      "offset_dec": 5870272,
+      "raw_bytes": "224C49545AFF",
+      "decoded": "Blitz",
+      "length": 5
+    },
+    {
+      "offset": "0x5992CC",
+      "offset_dec": 5870284,
+      "raw_bytes": "25524445FF",
+      "decoded": "Erde",
+      "length": 4
+    },
+    {
+      "offset": "0x5992D8",
+      "offset_dec": 5870296,
+      "raw_bytes": "27494654FF",
+      "decoded": "Gift",
+      "length": 4
+    },
+    {
+      "offset": "0x5992E4",
+      "offset_dec": 5870308,
+      "raw_bytes": "3343485745524B52414654FF",
+      "decoded": "Schwerkraft",
+      "length": 11
+    },
+    {
+      "offset": "0x5992F0",
+      "offset_dec": 5870320,
+      "raw_bytes": "374153534552FF",
+      "decoded": "Wasser",
+      "length": 6
+    },
+    {
+      "offset": "0x5992FC",
+      "offset_dec": 5870332,
+      "raw_bytes": "37494E44FF",
+      "decoded": "Wind",
+      "length": 4
+    },
+    {
+      "offset": "0x599308",
+      "offset_dec": 5870344,
+      "raw_bytes": "2845494C4947FF",
+      "decoded": "Heilig",
+      "length": 6
+    },
+    {
+      "offset": "0x599318",
+      "offset_dec": 5870360,
+      "raw_bytes": "334F4C4C00444153005749524B4C49434800454E544645524E540057455244454E1FFF",
+      "decoded": "Soll das wirklich entfernt werden?",
+      "length": 34
+    },
+    {
+      "offset": "0x59933C",
+      "offset_dec": 5870396,
+      "raw_bytes": "2A4101FF",
+      "decoded": "Ja!",
+      "length": 3
+    },
+    {
+      "offset": "0x599360",
+      "offset_dec": 5870432,
+      "raw_bytes": "25494E454E002D4F4D454E54FF",
+      "decoded": "Einen Moment",
+      "length": 12
+    },
+    {
+      "offset": "0x5993A8",
+      "offset_dec": 5870504,
+      "raw_bytes": "3741460EFF",
+      "decoded": "Waf.",
+      "length": 4
+    },
+    {
+      "offset": "0x5993C4",
+      "offset_dec": 5870532,
+      "raw_bytes": "327F530EFF",
+      "decoded": "Rüs.",
+      "length": 4
+    },
+    {
+      "offset": "0x5993E0",
+      "offset_dec": 5870560,
+      "raw_bytes": "266A4849474B454954534C49535445FF",
+      "decoded": "Fähigkeitsliste",
+      "length": 15
+    },
+    {
+      "offset": "0x5993FC",
+      "offset_dec": 5870588,
+      "raw_bytes": "327F5354554E4753454646454B54FF",
+      "decoded": "Rüstungseffekt",
+      "length": 14
+    },
+    {
+      "offset": "0x599418",
+      "offset_dec": 5870616,
+      "raw_bytes": "30527F46454EFF",
+      "decoded": "Prüfen",
+      "length": 6
+    },
+    {
+      "offset": "0x599434",
+      "offset_dec": 5870644,
+      "raw_bytes": "2F52444E454EFF",
+      "decoded": "Ordnen",
+      "length": 6
+    },
+    {
+      "offset": "0x599450",
+      "offset_dec": 5870672,
+      "raw_bytes": "274553504549434845525445003A41484C0000000F1214FF",
+      "decoded": "Gespeicherte Zahl   /24",
+      "length": 23
+    },
+    {
+      "offset": "0x59946C",
+      "offset_dec": 5870700,
+      "raw_bytes": "2130FF",
+      "decoded": "AP",
+      "length": 2
+    },
+    {
+      "offset": "0x599488",
+      "offset_dec": 5870728,
+      "raw_bytes": "215546004E6A4348535445002542454E45FF",
+      "decoded": "Auf nächste Ebene",
+      "length": 17
+    },
+    {
+      "offset": "0x5994A4",
+      "offset_dec": 5870756,
+      "raw_bytes": "2D2133342532FF",
+      "decoded": "MASTER",
+      "length": 6
+    },
+    {
+      "offset": "0x5994C0",
+      "offset_dec": 5870784,
+      "raw_bytes": "2F52444E454EFF",
+      "decoded": "Ordnen",
+      "length": 6
+    },
+    {
+      "offset": "0x5994DC",
+      "offset_dec": 5870812,
+      "raw_bytes": "344155534348454EFF",
+      "decoded": "Tauschen",
+      "length": 8
+    },
+    {
+      "offset": "0x5994F8",
+      "offset_dec": 5870840,
+      "raw_bytes": "214C4C455300454E544645524E454EFF",
+      "decoded": "Alles entfernen",
+      "length": 15
+    },
+    {
+      "offset": "0x599514",
+      "offset_dec": 5870868,
+      "raw_bytes": "37454757455246454EFF",
+      "decoded": "Wegwerfen",
+      "length": 9
+    },
+    {
+      "offset": "0x59954C",
+      "offset_dec": 5870924,
+      "raw_bytes": "274553434857494E4449474B454954000000052865282532FF",
+      "decoded": "Geschwindigkeit   %HHER",
+      "length": 23
+    },
+    {
+      "offset": "0x599568",
+      "offset_dec": 5870952,
+      "raw_bytes": "33434855545A000000052865282532FF",
+      "decoded": "Schutz   %HHER",
+      "length": 14
+    },
+    {
+      "offset": "0x599584",
+      "offset_dec": 5870980,
+      "raw_bytes": "3A41554245524B52414654000000052865282532FF",
+      "decoded": "Zauberkraft   %HHER",
+      "length": 19
+    },
+    {
+      "offset": "0x5995A0",
+      "offset_dec": 5871008,
+      "raw_bytes": "274C7F434B000000052865282532FF",
+      "decoded": "Glück   %HHER",
+      "length": 13
+    },
+    {
+      "offset": "0x5995BC",
+      "offset_dec": 5871036,
+      "raw_bytes": "2D2133342532FF",
+      "decoded": "MASTER",
+      "length": 6
+    },
+    {
+      "offset": "0x5995D8",
+      "offset_dec": 5871064,
+      "raw_bytes": "33546A524B45FF",
+      "decoded": "Stärke",
+      "length": 6
+    },
+    {
+      "offset": "0x5995F4",
+      "offset_dec": 5871092,
+      "raw_bytes": "364954414C49546A54FF",
+      "decoded": "Vitalität",
+      "length": 9
+    },
+    {
+      "offset": "0x599610",
+      "offset_dec": 5871120,
+      "raw_bytes": "3A4155424552FF",
+      "decoded": "Zauber",
+      "length": 6
+    },
+    {
+      "offset": "0x59962C",
+      "offset_dec": 5871148,
+      "raw_bytes": "3A4252564552544447FF",
+      "decoded": "Zbrvertdg",
+      "length": 9
+    },
+    {
+      "offset": "0x599648",
+      "offset_dec": 5871176,
+      "raw_bytes": "274553434849434BFF",
+      "decoded": "Geschick",
+      "length": 8
+    },
+    {
+      "offset": "0x599664",
+      "offset_dec": 5871204,
+      "raw_bytes": "274C7F434BFF",
+      "decoded": "Glück",
+      "length": 5
+    },
+    {
+      "offset": "0x599680",
+      "offset_dec": 5871232,
+      "raw_bytes": "2D21382830FF",
+      "decoded": "MAXHP",
+      "length": 5
+    },
+    {
+      "offset": "0x59969C",
+      "offset_dec": 5871260,
+      "raw_bytes": "2D21382D30FF",
+      "decoded": "MAXMP",
+      "length": 5
+    },
+    {
+      "offset": "0x5996B8",
+      "offset_dec": 5871288,
+      "raw_bytes": "2D21382830FF",
+      "decoded": "MAXHP",
+      "length": 5
+    },
+    {
+      "offset": "0x5996D4",
+      "offset_dec": 5871316,
+      "raw_bytes": "2D21382D30FF",
+      "decoded": "MAXMP",
+      "length": 5
+    },
+    {
+      "offset": "0x5996F0",
+      "offset_dec": 5871344,
+      "raw_bytes": "2538300E3530FF",
+      "decoded": "EXP.UP",
+      "length": 6
+    },
+    {
+      "offset": "0x59970C",
+      "offset_dec": 5871372,
+      "raw_bytes": "27494C003530FF",
+      "decoded": "Gil UP",
+      "length": 6
+    },
+    {
+      "offset": "0x599728",
+      "offset_dec": 5871400,
+      "raw_bytes": "3452454646454E000D0005FF",
+      "decoded": "Treffen - %",
+      "length": 11
+    },
+    {
+      "offset": "0x599744",
+      "offset_dec": 5871428,
+      "raw_bytes": "3452454646454E000B0005FF",
+      "decoded": "Treffen + %",
+      "length": 11
+    },
+    {
+      "offset": "0x599760",
+      "offset_dec": 5871456,
+      "raw_bytes": "23484F434F424F005452454646454EFF",
+      "decoded": "Chocobo treffen",
+      "length": 15
+    },
+    {
+      "offset": "0x59977C",
+      "offset_dec": 5871484,
+      "raw_bytes": "30526A56454E5449564D0E000B0005FF",
+      "decoded": "Präventivm. + %",
+      "length": 15
+    },
+    {
+      "offset": "0x599798",
+      "offset_dec": 5871512,
+      "raw_bytes": "2645524E414E4752494646FF",
+      "decoded": "Fernangriff",
+      "length": 11
+    },
+    {
+      "offset": "0x5997B4",
+      "offset_dec": 5871540,
+      "raw_bytes": "214C4C4500414E4752454946454EFF",
+      "decoded": "Alle angreifen",
+      "length": 14
+    },
+    {
+      "offset": "0x5997D0",
+      "offset_dec": 5871568,
+      "raw_bytes": "274547454E414E4752494646FF",
+      "decoded": "Gegenangriff",
+      "length": 12
+    },
+    {
+      "offset": "0x5997EC",
+      "offset_dec": 5871596,
+      "raw_bytes": "214C4C4500414E4752454946454EFF",
+      "decoded": "Alle angreifen",
+      "length": 14
+    },
+    {
+      "offset": "0x599808",
+      "offset_dec": 5871624,
+      "raw_bytes": "33546A4E444947455200214E4752494646FF",
+      "decoded": "Ständiger Angriff",
+      "length": 17
+    },
+    {
+      "offset": "0x599824",
+      "offset_dec": 5871652,
+      "raw_bytes": "28300F2D300D604E444552554E47FF",
+      "decoded": "HP/MP-nderung",
+      "length": 13
+    },
+    {
+      "offset": "0x599840",
+      "offset_dec": 5871680,
+      "raw_bytes": "2B415546454EFF",
+      "decoded": "Kaufen",
+      "length": 6
+    },
+    {
+      "offset": "0x59985E",
+      "offset_dec": 5871710,
+      "raw_bytes": "3645524B415546454EFF",
+      "decoded": "Verkaufen",
+      "length": 9
+    },
+    {
+      "offset": "0x59987C",
+      "offset_dec": 5871740,
+      "raw_bytes": "2245454E44454EFF",
+      "decoded": "Beenden",
+      "length": 7
+    },
+    {
+      "offset": "0x59989A",
+      "offset_dec": 5871770,
+      "raw_bytes": "2F424A454B54FF",
+      "decoded": "Objekt",
+      "length": 6
+    },
+    {
+      "offset": "0x5998B8",
+      "offset_dec": 5871800,
+      "raw_bytes": "2D415445524941FF",
+      "decoded": "Materia",
+      "length": 7
+    },
+    {
+      "offset": "0x5998D8",
+      "offset_dec": 5871832,
+      "raw_bytes": "2B415546454E003645524B415546454E002245454E44454EFF",
+      "decoded": "Kaufen Verkaufen Beenden",
+      "length": 24
+    },
+    {
+      "offset": "0x5998F8",
+      "offset_dec": 5871864,
+      "raw_bytes": "27494CFF",
+      "decoded": "Gil",
+      "length": 3
+    },
+    {
+      "offset": "0x599918",
+      "offset_dec": 5871896,
+      "raw_bytes": "22455349545AFF",
+      "decoded": "Besitz",
+      "length": 6
+    },
+    {
+      "offset": "0x599938",
+      "offset_dec": 5871928,
+      "raw_bytes": "2155535354415454554E47FF",
+      "decoded": "Ausstattung",
+      "length": 11
+    },
+    {
+      "offset": "0x599958",
+      "offset_dec": 5871960,
+      "raw_bytes": "274553414D54FF",
+      "decoded": "Gesamt",
+      "length": 6
+    },
+    {
+      "offset": "0x599978",
+      "offset_dec": 5871992,
+      "raw_bytes": "3749455649454CFF",
+      "decoded": "Wieviel",
+      "length": 7
+    },
+    {
+      "offset": "0x599998",
+      "offset_dec": 5872024,
+      "raw_bytes": "2F424A454B54000000002D415445524941FF",
+      "decoded": "Objekt    Materia",
+      "length": 17
+    },
+    {
+      "offset": "0x5999B8",
+      "offset_dec": 5872056,
+      "raw_bytes": "6642524947450027494CFF",
+      "decoded": "brige Gil",
+      "length": 9
+    },
+    {
+      "offset": "0x5999D8",
+      "offset_dec": 5872088,
+      "raw_bytes": "305245495300467F52002D4153544552FF",
+      "decoded": "Preis für Master",
+      "length": 16
+    },
+    {
+      "offset": "0x5999F8",
+      "offset_dec": 5872120,
+      "raw_bytes": "3052454953004455524348002130FF",
+      "decoded": "Preis durch AP",
+      "length": 14
+    },
+    {
+      "offset": "0x599A18",
+      "offset_dec": 5872152,
+      "raw_bytes": "3741460EFF",
+      "decoded": "Waf.",
+      "length": 4
+    },
+    {
+      "offset": "0x599A2E",
+      "offset_dec": 5872174,
+      "raw_bytes": "327F530EFF",
+      "decoded": "Rüs.",
+      "length": 4
+    },
+    {
+      "offset": "0x599A44",
+      "offset_dec": 5872196,
+      "raw_bytes": "3A55420EFF",
+      "decoded": "Zub.",
+      "length": 4
+    },
+    {
+      "offset": "0x599A5A",
+      "offset_dec": 5872218,
+      "raw_bytes": "3A55420EFF",
+      "decoded": "Zub.",
+      "length": 4
+    },
+    {
+      "offset": "0x599A70",
+      "offset_dec": 5872240,
+      "raw_bytes": "33546A524B45FF",
+      "decoded": "Stärke",
+      "length": 6
+    },
+    {
+      "offset": "0x599A86",
+      "offset_dec": 5872262,
+      "raw_bytes": "274553434849434BFF",
+      "decoded": "Geschick",
+      "length": 8
+    },
+    {
+      "offset": "0x599A9C",
+      "offset_dec": 5872284,
+      "raw_bytes": "364954414C49546AFF",
+      "decoded": "Vitalitä",
+      "length": 8
+    },
+    {
+      "offset": "0x599AB2",
+      "offset_dec": 5872306,
+      "raw_bytes": "3A4155424552FF",
+      "decoded": "Zauber",
+      "length": 6
+    },
+    {
+      "offset": "0x599AC8",
+      "offset_dec": 5872328,
+      "raw_bytes": "2D4F52414CFF",
+      "decoded": "Moral",
+      "length": 5
+    },
+    {
+      "offset": "0x599ADE",
+      "offset_dec": 5872350,
+      "raw_bytes": "274C7F434BFF",
+      "decoded": "Glück",
+      "length": 5
+    },
+    {
+      "offset": "0x599AF4",
+      "offset_dec": 5872372,
+      "raw_bytes": "214E4752454946454EFF",
+      "decoded": "Angreifen",
+      "length": 9
+    },
+    {
+      "offset": "0x599B0A",
+      "offset_dec": 5872394,
+      "raw_bytes": "214E4752454946454E0005FF",
+      "decoded": "Angreifen %",
+      "length": 11
+    },
+    {
+      "offset": "0x599B20",
+      "offset_dec": 5872416,
+      "raw_bytes": "364552544549444947454EFF",
+      "decoded": "Verteidigen",
+      "length": 11
+    },
+    {
+      "offset": "0x599B36",
+      "offset_dec": 5872438,
+      "raw_bytes": "364552544549444947454E0005FF",
+      "decoded": "Verteidigen %",
+      "length": 13
+    },
+    {
+      "offset": "0x599B4C",
+      "offset_dec": 5872460,
+      "raw_bytes": "3A4252414E475246FF",
+      "decoded": "Zbrangrf",
+      "length": 8
+    },
+    {
+      "offset": "0x599B62",
+      "offset_dec": 5872482,
+      "raw_bytes": "3A4252564552544447FF",
+      "decoded": "Zbrvertdg",
+      "length": 9
+    },
+    {
+      "offset": "0x599B78",
+      "offset_dec": 5872504,
+      "raw_bytes": "3A42525645525444470005FF",
+      "decoded": "Zbrvertdg %",
+      "length": 11
+    },
+    {
+      "offset": "0x599B8E",
+      "offset_dec": 5872526,
+      "raw_bytes": "3343484C49545A1AFF",
+      "decoded": "Schlitz:",
+      "length": 8
+    },
+    {
+      "offset": "0x599BA4",
+      "offset_dec": 5872548,
+      "raw_bytes": "36455253546A524B554E471AFF",
+      "decoded": "Verstärkung:",
+      "length": 12
+    },
+    {
+      "offset": "0x599BBA",
+      "offset_dec": 5872570,
+      "raw_bytes": "2B45494E45FF",
+      "decoded": "Keine",
+      "length": 5
+    },
+    {
+      "offset": "0x599BD0",
+      "offset_dec": 5872592,
+      "raw_bytes": "2E4F524D414CFF",
+      "decoded": "Normal",
+      "length": 6
+    },
+    {
+      "offset": "0x599BE6",
+      "offset_dec": 5872614,
+      "raw_bytes": "244F5050454C54FF",
+      "decoded": "Doppelt",
+      "length": 7
+    },
+    {
+      "offset": "0x599BFC",
+      "offset_dec": 5872636,
+      "raw_bytes": "2452454946414348FF",
+      "decoded": "Dreifach",
+      "length": 8
+    },
+    {
+      "offset": "0x599C18",
+      "offset_dec": 5872664,
+      "raw_bytes": "2F424A454B544C4144454EFF",
+      "decoded": "Objektladen",
+      "length": 11
+    },
+    {
+      "offset": "0x599C40",
+      "offset_dec": 5872704,
+      "raw_bytes": "37414646454E47455343486A4654FF",
+      "decoded": "Waffengeschäft",
+      "length": 14
+    },
+    {
+      "offset": "0x599C68",
+      "offset_dec": 5872744,
+      "raw_bytes": "2F424A454B544C4144454EFF",
+      "decoded": "Objektladen",
+      "length": 11
+    },
+    {
+      "offset": "0x599C90",
+      "offset_dec": 5872784,
+      "raw_bytes": "2D4154455249410D2C4144454EFF",
+      "decoded": "Materia-Laden",
+      "length": 13
+    },
+    {
+      "offset": "0x599CB8",
+      "offset_dec": 5872824,
+      "raw_bytes": "27454D4953434854574152454EFF",
+      "decoded": "Gemischtwaren",
+      "length": 13
+    },
+    {
+      "offset": "0x599CE0",
+      "offset_dec": 5872864,
+      "raw_bytes": "27454D7F53454C4144454EFF",
+      "decoded": "Gemüseladen",
+      "length": 11
+    },
+    {
+      "offset": "0x599D08",
+      "offset_dec": 5872904,
+      "raw_bytes": "3A554245487A524C4144454EFF",
+      "decoded": "Zubehörladen",
+      "length": 12
+    },
+    {
+      "offset": "0x599D30",
+      "offset_dec": 5872944,
+      "raw_bytes": "3745524B5A4555474C4144454EFF",
+      "decoded": "Werkzeugladen",
+      "length": 13
+    },
+    {
+      "offset": "0x599D58",
+      "offset_dec": 5872984,
+      "raw_bytes": "334F5556454E4945524C4144454EFF",
+      "decoded": "Souvenierladen",
+      "length": 14
+    },
+    {
+      "offset": "0x599D80",
+      "offset_dec": 5873024,
+      "raw_bytes": "37494C4C4B4F4D4D454E01FF",
+      "decoded": "Willkommen!",
+      "length": 11
+    },
+    {
+      "offset": "0x599DAE",
+      "offset_dec": 5873070,
+      "raw_bytes": "374153004D7A434854455354004455004B415546454E1FFF",
+      "decoded": "Was möchtest du kaufen?",
+      "length": 23
+    },
+    {
+      "offset": "0x599DDC",
+      "offset_dec": 5873116,
+      "raw_bytes": "374945005649454C450057494C4C5354004455004441564F4E1FFF",
+      "decoded": "Wie viele willst du davon?",
+      "length": 26
+    },
+    {
+      "offset": "0x599E0A",
+      "offset_dec": 5873162,
+      "raw_bytes": "374153004D7A434854455354004455005645524B415546454E1FFF",
+      "decoded": "Was möchtest du verkaufen?",
+      "length": 26
+    },
+    {
+      "offset": "0x599E38",
+      "offset_dec": 5873208,
+      "raw_bytes": "374945005649454C450057494C4C5354004455005645524B415546454E1FFF",
+      "decoded": "Wie viele willst du verkaufen?",
+      "length": 30
+    },
+    {
+      "offset": "0x599E66",
+      "offset_dec": 5873254,
+      "raw_bytes": "24414E4B4501FF",
+      "decoded": "Danke!",
+      "length": 6
+    },
+    {
+      "offset": "0x599E94",
+      "offset_dec": 5873300,
+      "raw_bytes": "24414E4B4501FF",
+      "decoded": "Danke!",
+      "length": 6
+    },
+    {
+      "offset": "0x599EC2",
+      "offset_dec": 5873346,
+      "raw_bytes": "24550048415354004E494348540047454E55470027454C4401FF",
+      "decoded": "Du hast nicht genug Geld!",
+      "length": 25
+    },
+    {
+      "offset": "0x599F4C",
+      "offset_dec": 5873484,
+      "raw_bytes": "275554454E0034414701FF",
+      "decoded": "Guten Tag!",
+      "length": 10
+    },
+    {
+      "offset": "0x599F7A",
+      "offset_dec": 5873530,
+      "raw_bytes": "374945004B414E4E0049434800424548494C464C494348005345494E1FFF",
+      "decoded": "Wie kann ich behilflich sein?",
+      "length": 29
+    },
+    {
+      "offset": "0x599FA8",
+      "offset_dec": 5873576,
+      "raw_bytes": "374945005649454C450057494C4C5354004455004441564F4E1FFF",
+      "decoded": "Wie viele willst du davon?",
+      "length": 26
+    },
+    {
+      "offset": "0x599FD6",
+      "offset_dec": 5873622,
+      "raw_bytes": "2841535400445500574153005A55005645524B415546454E1FFF",
+      "decoded": "Hast du was zu verkaufen?",
+      "length": 25
+    },
+    {
+      "offset": "0x59A004",
+      "offset_dec": 5873668,
+      "raw_bytes": "374945005649454C450057494C4C53540044551FFF",
+      "decoded": "Wie viele willst du?",
+      "length": 20
+    },
+    {
+      "offset": "0x59A032",
+      "offset_dec": 5873714,
+      "raw_bytes": "3649454C454E0024414E4B01FF",
+      "decoded": "Vielen Dank!",
+      "length": 12
+    },
+    {
+      "offset": "0x59A060",
+      "offset_dec": 5873760,
+      "raw_bytes": "2948520057455244455400444F434800414C4C45005A55527F434B4B4F4D4D454E01FF",
+      "decoded": "Ihr werdet doch alle zurückkommen!",
+      "length": 34
+    },
+    {
+      "offset": "0x59A08E",
+      "offset_dec": 5873806,
+      "raw_bytes": "334F4C4C004441530045494E003749545A005345494E1F0024415300495354004E494348540047454E554701FF",
+      "decoded": "Soll das ein Witz sein? Das ist nicht genug!",
+      "length": 44
+    },
+    {
+      "offset": "0x59C015",
+      "offset_dec": 5881877,
+      "raw_bytes": "130000F40100004C1D000002000000401F0000401F0000401F0000020000004C1D000088130000020000002823000002000000E02E0000102700000200000002000000FF",
+      "decoded": "3  !  l=  \"   `?  `?  `?  \"   l=  3  \"   HC  \"   N  0G  \"   \"",
+      "length": 61
+    },
+    {
+      "offset": "0x59C169",
+      "offset_dec": 5882217,
+      "raw_bytes": "3A00000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000E8030000010000000100000001000000010000000100000000000000204E0000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000B0040000E803000010270000102700000100000010270000102700000100000001000000FF",
+      "decoded": "Z  !   !   !   !   !   !   !   !   !   !   !   #  !   !   !   !   !       @n  !   !   !   !   !   !   !   !   !   !   !   !   $  #  0G  0G  !   0G  0G  !   !",
+      "length": 157
+    },
+    {
+      "offset": "0x59C23D",
+      "offset_dec": 5882429,
+      "raw_bytes": "1700008813000010270000DC050000401F00001027000000000000204E00007017000000000000000000002823000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000FF",
+      "decoded": "7  3  0G  %  `?  0G      @n  7          HC  !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !",
+      "length": 129
+    },
+    {
+      "offset": "0x59C451",
+      "offset_dec": 5882961,
+      "raw_bytes": "010000EC003300CA00000076001A002C4144454EFF",
+      "decoded": "!   S     : Laden",
+      "length": 17
+    },
+    {
+      "offset": "0x59C488",
+      "offset_dec": 5883016,
+      "raw_bytes": "376A484C454E003349450045494E450033504549434845524441544549004155530EFF",
+      "decoded": "Wählen Sie eine Speicherdatei aus.",
+      "length": 34
+    },
+    {
+      "offset": "0x59C4B0",
+      "offset_dec": 5883056,
+      "raw_bytes": "376A484C454E003349450045494E454E003350454943484552424C4F434B004155530EFF",
+      "decoded": "Wählen Sie einen Speicherblock aus.",
+      "length": 35
+    },
+    {
+      "offset": "0x59C4D8",
+      "offset_dec": 5883096,
+      "raw_bytes": "333425232B302C21343A0011FF",
+      "decoded": "STECKPLATZ 1",
+      "length": 12
+    },
+    {
+      "offset": "0x59C500",
+      "offset_dec": 5883136,
+      "raw_bytes": "333425232B302C21343A0012FF",
+      "decoded": "STECKPLATZ 2",
+      "length": 12
+    },
+    {
+      "offset": "0x59C528",
+      "offset_dec": 5883176,
+      "raw_bytes": "3749524B4C4943481FFF",
+      "decoded": "Wirklich?",
+      "length": 9
+    },
+    {
+      "offset": "0x59C550",
+      "offset_dec": 5883216,
+      "raw_bytes": "22494E00414D002C4144454E0E0022495454450057415254454EA9FF",
+      "decoded": "Bin am Laden. Bitte warten",
+      "length": 26
+    },
+    {
+      "offset": "0x59C578",
+      "offset_dec": 5883256,
+      "raw_bytes": "22494E00414D003349434845524E0E0022495454450057415254454EA9FF",
+      "decoded": "Bin am Sichern. Bitte warten",
+      "length": 28
+    },
+    {
+      "offset": "0x59C5A0",
+      "offset_dec": 5883296,
+      "raw_bytes": "2C252532FF",
+      "decoded": "LEER",
+      "length": 4
+    },
+    {
+      "offset": "0x59C5C8",
+      "offset_dec": 5883336,
+      "raw_bytes": "222C2F232BFF",
+      "decoded": "BLOCK",
+      "length": 5
+    },
+    {
+      "offset": "0x59C5F0",
+      "offset_dec": 5883376,
+      "raw_bytes": "3745495445521FFF",
+      "decoded": "Weiter?",
+      "length": 7
+    },
+    {
+      "offset": "0x59C640",
+      "offset_dec": 5883456,
+      "raw_bytes": "6642455250527F464500335049454C5354414E44534441544549A9FF",
+      "decoded": "berprüfe Spielstandsdatei",
+      "length": 25
+    },
+    {
+      "offset": "0x59C8C0",
+      "offset_dec": 5884096,
+      "raw_bytes": "27455350454943484552540EFF",
+      "decoded": "Gespeichert.",
+      "length": 12
+    },
+    {
+      "offset": "0x59C8E8",
+      "offset_dec": 5884136,
+      "raw_bytes": "33504549434845524E004E49434854004D7A474C4943480EFF",
+      "decoded": "Speichern nicht möglich.",
+      "length": 24
+    },
+    {
+      "offset": "0x59C910",
+      "offset_dec": 5884176,
+      "raw_bytes": "2C4144454E004E49434854004D7A474C4943480EFF",
+      "decoded": "Laden nicht möglich.",
+      "length": 20
+    },
+    {
+      "offset": "0x59C938",
+      "offset_dec": 5884216,
+      "raw_bytes": "244154454E0053494E44005A455253547A52540EFF",
+      "decoded": "Daten sind zerstört.",
+      "length": 20
+    },
+    {
+      "offset": "0x59C960",
+      "offset_dec": 5884256,
+      "raw_bytes": "2E2535253300333029252CFF",
+      "decoded": "NEUES SPIEL",
+      "length": 11
+    },
+    {
+      "offset": "0x59C988",
+      "offset_dec": 5884296,
+      "raw_bytes": "3749524B4C4943480053504549434845524E1FFF",
+      "decoded": "Wirklich speichern?",
+      "length": 19
+    },
+    {
+      "offset": "0x59C9B0",
+      "offset_dec": 5884336,
+      "raw_bytes": "2A41FF",
+      "decoded": "Ja",
+      "length": 2
+    },
+    {
+      "offset": "0x59C9D8",
+      "offset_dec": 5884376,
+      "raw_bytes": "2E45494EFF",
+      "decoded": "Nein",
+      "length": 4
+    },
+    {
+      "offset": "0x59CA00",
+      "offset_dec": 5884416,
+      "raw_bytes": "2245454E4445540EFF",
+      "decoded": "Beendet.",
+      "length": 8
+    },
+    {
+      "offset": "0x59CAC6",
+      "offset_dec": 5884614,
+      "raw_bytes": "264F524D415449455254FF",
+      "decoded": "Formatiert",
+      "length": 10
+    },
+    {
+      "offset": "0x59CB08",
+      "offset_dec": 5884680,
+      "raw_bytes": "264F524D4154494552554E47004E49434854004D7A474C494348FF",
+      "decoded": "Formatierung nicht möglich",
+      "length": 26
+    },
+    {
+      "offset": "0x59CB4A",
+      "offset_dec": 5884746,
+      "raw_bytes": "2E4943485400464F524D415449455254FF",
+      "decoded": "Nicht formatiert",
+      "length": 16
+    },
+    {
+      "offset": "0x59CB8C",
+      "offset_dec": 5884812,
+      "raw_bytes": "2A45545A5400464F524D4154494552454E1FFF",
+      "decoded": "Jetzt formatieren?",
+      "length": 18
+    },
+    {
+      "offset": "0x59CBCE",
+      "offset_dec": 5884878,
+      "raw_bytes": "2D454D4F52590023415244005749524400474550527F46540EFF",
+      "decoded": "Memory Card wird geprüft.",
+      "length": 25
+    },
+    {
+      "offset": "0x59CC10",
+      "offset_dec": 5884944,
+      "raw_bytes": "2B45494E4500335049454C5354414E445344415445490EFF",
+      "decoded": "Keine Spielstandsdatei.",
+      "length": 23
+    },
+    {
+      "offset": "0x59CC52",
+      "offset_dec": 5885010,
+      "raw_bytes": "2449455345002D454D4F52590023415244004953540042455343486A4449475400554E44004B414E4E004E494348540056455257454E4445540057455244454E0EFF",
+      "decoded": "Diese Memory Card ist beschädigt und kann nicht verwendet werden.",
+      "length": 65
+    },
+    {
+      "offset": "0x59CC94",
+      "offset_dec": 5885076,
+      "raw_bytes": "214E44455245002D454D4F525900234152440045494E4C4547454E0EFF",
+      "decoded": "Andere Memory Card einlegen.",
+      "length": 28
+    },
+    {
+      "offset": "0x59CCD6",
+      "offset_dec": 5885142,
+      "raw_bytes": "2E494348540047454E554700304C41545A00494E0044455200335049454C5354414E44534441544549007F425249470EFF",
+      "decoded": "Nicht genug Platz in der Spielstandsdatei übrig.",
+      "length": 48
+    },
+    {
+      "offset": "0x59CD18",
+      "offset_dec": 5885208,
+      "raw_bytes": "22495454450042454E55545A454E003349450045494E4500414E4445524500335049454C5354414E44534441544549FF",
+      "decoded": "Bitte benutzen Sie eine andere Spielstandsdatei",
+      "length": 47
+    },
+    {
+      "offset": "0x59CD5A",
+      "offset_dec": 5885274,
+      "raw_bytes": "4F444552004C7A534348454E00334945001100224C4F434B00474553494348455254455200244154454E0EFF",
+      "decoded": "oder löschen Sie 1 Block gesicherter Daten.",
+      "length": 43
+    },
+    {
+      "offset": "0x59CE20",
+      "offset_dec": 5885472,
+      "raw_bytes": "2C4553454E004E49434854004D7A474C4943480EFF",
+      "decoded": "Lesen nicht möglich.",
+      "length": 20
+    },
+    {
+      "offset": "0x59CE62",
+      "offset_dec": 5885538,
+      "raw_bytes": "335049454C00424547494E4E454E1FFF",
+      "decoded": "Spiel beginnen?",
+      "length": 15
+    },
+    {
+      "offset": "0x59CFB0",
+      "offset_dec": 5885872,
+      "raw_bytes": "2B414E4E0033504549434845525055464645520044455200335049454C5354414E44534441544549004E49434854005A554F52444E454E01FF",
+      "decoded": "Kann Speicherpuffer der Spielstandsdatei nicht zuordnen!",
+      "length": 56
+    },
+    {
+      "offset": "0x59CFEC",
+      "offset_dec": 5885932,
+      "raw_bytes": "354E477F4C5449474500335049454C5354414E4453444154454901FF",
+      "decoded": "Ungültige Spielstandsdatei!",
+      "length": 27
+    },
+    {
+      "offset": "0x59D028",
+      "offset_dec": 5885992,
+      "raw_bytes": "335049454C5354414E440011000000FF",
+      "decoded": "Spielstand 1",
+      "length": 12
+    },
+    {
+      "offset": "0x59D03C",
+      "offset_dec": 5886012,
+      "raw_bytes": "335049454C5354414E440012000000FF",
+      "decoded": "Spielstand 2",
+      "length": 12
+    },
+    {
+      "offset": "0x59D050",
+      "offset_dec": 5886032,
+      "raw_bytes": "335049454C5354414E440013000000FF",
+      "decoded": "Spielstand 3",
+      "length": 12
+    },
+    {
+      "offset": "0x59D064",
+      "offset_dec": 5886052,
+      "raw_bytes": "335049454C5354414E440014000000FF",
+      "decoded": "Spielstand 4",
+      "length": 12
+    },
+    {
+      "offset": "0x59D078",
+      "offset_dec": 5886072,
+      "raw_bytes": "335049454C5354414E440015000000FF",
+      "decoded": "Spielstand 5",
+      "length": 12
+    },
+    {
+      "offset": "0x59D08C",
+      "offset_dec": 5886092,
+      "raw_bytes": "335049454C5354414E440016000000FF",
+      "decoded": "Spielstand 6",
+      "length": 12
+    },
+    {
+      "offset": "0x59D0A0",
+      "offset_dec": 5886112,
+      "raw_bytes": "335049454C5354414E440017000000FF",
+      "decoded": "Spielstand 7",
+      "length": 12
+    },
+    {
+      "offset": "0x59D0B4",
+      "offset_dec": 5886132,
+      "raw_bytes": "335049454C5354414E440018000000FF",
+      "decoded": "Spielstand 8",
+      "length": 12
+    },
+    {
+      "offset": "0x59D0C8",
+      "offset_dec": 5886152,
+      "raw_bytes": "335049454C5354414E440019000000FF",
+      "decoded": "Spielstand 9",
+      "length": 12
+    },
+    {
+      "offset": "0x59D0DC",
+      "offset_dec": 5886172,
+      "raw_bytes": "335049454C5354414E44001110FF",
+      "decoded": "Spielstand 10",
+      "length": 13
+    },
+    {
+      "offset": "0x59D132",
+      "offset_dec": 5886258,
+      "raw_bytes": "6700360023005600520094004D0000000000FEFF",
+      "decoded": "V C v r  m",
+      "length": 10
+    },
+    {
+      "offset": "0x59D150",
+      "offset_dec": 5886288,
+      "raw_bytes": "2C4556454CFF",
+      "decoded": "Level",
+      "length": 5
+    },
+    {
+      "offset": "0x59D248",
+      "offset_dec": 5886536,
+      "raw_bytes": "20397B000000000030227B0000000000000000000000000000000000000000C0FF",
+      "decoded": "@Y     PB",
+      "length": 9
+    },
+    {
+      "offset": "0x59D49A",
+      "offset_dec": 5887130,
+      "raw_bytes": "42437B000000000000000000F07F000000000000F8FF",
+      "decoded": "bc         ü",
+      "length": 12
+    },
+    {
+      "offset": "0x5AB40B",
+      "offset_dec": 5944331,
+      "raw_bytes": "30000000030000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007C9C9C959FF",
+      "decoded": "P   #                                                                                                                                                                                                                                           'y",
+      "length": 242
+    },
+    {
+      "offset": "0x5ABC0F",
+      "offset_dec": 5946383,
+      "raw_bytes": "2A0000000B0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005AFAFAF43FF",
+      "decoded": "J   +                                                                                                                                                                                                                                           %c",
+      "length": 242
+    },
+    {
+      "offset": "0x5AC9FD",
+      "offset_dec": 5949949,
+      "raw_bytes": "7F25FF",
+      "decoded": "üE",
+      "length": 2
+    },
+    {
+      "offset": "0x5ACBF9",
+      "offset_dec": 5950457,
+      "raw_bytes": "7F26FF",
+      "decoded": "üF",
+      "length": 2
+    },
+    {
+      "offset": "0x5ACE10",
+      "offset_dec": 5950992,
+      "raw_bytes": "4D6A00FF",
+      "decoded": "mä",
+      "length": 2
+    },
+    {
+      "offset": "0x5ACFF5",
+      "offset_dec": 5951477,
+      "raw_bytes": "7E24FF",
+      "decoded": "ßD",
+      "length": 2
+    },
+    {
+      "offset": "0x5AD1F1",
+      "offset_dec": 5951985,
+      "raw_bytes": "7F25FF",
+      "decoded": "üE",
+      "length": 2
+    },
+    {
+      "offset": "0x5AD3ED",
+      "offset_dec": 5952493,
+      "raw_bytes": "7F26FF",
+      "decoded": "üF",
+      "length": 2
+    },
+    {
+      "offset": "0x5AD418",
+      "offset_dec": 5952536,
+      "raw_bytes": "395600FF",
+      "decoded": "Yv",
+      "length": 2
+    },
+    {
+      "offset": "0x5AD61C",
+      "offset_dec": 5953052,
+      "raw_bytes": "314C00FF",
+      "decoded": "Ql",
+      "length": 2
+    },
+    {
+      "offset": "0x5AD7E9",
+      "offset_dec": 5953513,
+      "raw_bytes": "7E24FF",
+      "decoded": "ßD",
+      "length": 2
+    },
+    {
+      "offset": "0x5AD81C",
+      "offset_dec": 5953564,
+      "raw_bytes": "375100FF",
+      "decoded": "Wq",
+      "length": 2
+    },
+    {
+      "offset": "0x5AD820",
+      "offset_dec": 5953568,
+      "raw_bytes": "2E4800FF",
+      "decoded": "Nh",
+      "length": 2
+    },
+    {
+      "offset": "0x5AD9E5",
+      "offset_dec": 5954021,
+      "raw_bytes": "7F25FF",
+      "decoded": "üE",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADA18",
+      "offset_dec": 5954072,
+      "raw_bytes": "385200FF",
+      "decoded": "Xr",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADA1C",
+      "offset_dec": 5954076,
+      "raw_bytes": "344D00FF",
+      "decoded": "Tm",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADA20",
+      "offset_dec": 5954080,
+      "raw_bytes": "2F4800FF",
+      "decoded": "Oh",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADA24",
+      "offset_dec": 5954084,
+      "raw_bytes": "2B4200FF",
+      "decoded": "Kb",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADBE1",
+      "offset_dec": 5954529,
+      "raw_bytes": "7F26FF",
+      "decoded": "üF",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADC14",
+      "offset_dec": 5954580,
+      "raw_bytes": "395400FF",
+      "decoded": "Yt",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADC18",
+      "offset_dec": 5954584,
+      "raw_bytes": "354E00FF",
+      "decoded": "Un",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADC1C",
+      "offset_dec": 5954588,
+      "raw_bytes": "314900FF",
+      "decoded": "Qi",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADC20",
+      "offset_dec": 5954592,
+      "raw_bytes": "2C4400FF",
+      "decoded": "Ld",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADC28",
+      "offset_dec": 5954600,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADC2C",
+      "offset_dec": 5954604,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADDE1",
+      "offset_dec": 5955041,
+      "raw_bytes": "7E24FF",
+      "decoded": "ßD",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADE14",
+      "offset_dec": 5955092,
+      "raw_bytes": "365000FF",
+      "decoded": "Vp",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADE18",
+      "offset_dec": 5955096,
+      "raw_bytes": "324B00FF",
+      "decoded": "Rk",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADE1C",
+      "offset_dec": 5955100,
+      "raw_bytes": "2D4500FF",
+      "decoded": "Me",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADE28",
+      "offset_dec": 5955112,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADE2C",
+      "offset_dec": 5955116,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADE30",
+      "offset_dec": 5955120,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADE34",
+      "offset_dec": 5955124,
+      "raw_bytes": "223900FF",
+      "decoded": "BY",
+      "length": 2
+    },
+    {
+      "offset": "0x5ADE3C",
+      "offset_dec": 5955132,
+      "raw_bytes": "485A30FF",
+      "decoded": "hzP",
+      "length": 3
+    },
+    {
+      "offset": "0x5ADFDD",
+      "offset_dec": 5955549,
+      "raw_bytes": "7E25FF",
+      "decoded": "ßE",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE010",
+      "offset_dec": 5955600,
+      "raw_bytes": "385100FF",
+      "decoded": "Xq",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE014",
+      "offset_dec": 5955604,
+      "raw_bytes": "334C00FF",
+      "decoded": "Sl",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE018",
+      "offset_dec": 5955608,
+      "raw_bytes": "2F4700FF",
+      "decoded": "Og",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE01C",
+      "offset_dec": 5955612,
+      "raw_bytes": "2A4100FF",
+      "decoded": "Ja",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE024",
+      "offset_dec": 5955620,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE028",
+      "offset_dec": 5955624,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE02C",
+      "offset_dec": 5955628,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE030",
+      "offset_dec": 5955632,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE034",
+      "offset_dec": 5955636,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE038",
+      "offset_dec": 5955640,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE1D9",
+      "offset_dec": 5956057,
+      "raw_bytes": "7F26FF",
+      "decoded": "üF",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE20C",
+      "offset_dec": 5956108,
+      "raw_bytes": "395300FF",
+      "decoded": "Ys",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE210",
+      "offset_dec": 5956112,
+      "raw_bytes": "344D00FF",
+      "decoded": "Tm",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE214",
+      "offset_dec": 5956116,
+      "raw_bytes": "304800FF",
+      "decoded": "Ph",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE218",
+      "offset_dec": 5956120,
+      "raw_bytes": "2B4300FF",
+      "decoded": "Kc",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE220",
+      "offset_dec": 5956128,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE224",
+      "offset_dec": 5956132,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE228",
+      "offset_dec": 5956136,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE22C",
+      "offset_dec": 5956140,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE230",
+      "offset_dec": 5956144,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE234",
+      "offset_dec": 5956148,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE238",
+      "offset_dec": 5956152,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE23C",
+      "offset_dec": 5956156,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE240",
+      "offset_dec": 5956160,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE3D5",
+      "offset_dec": 5956565,
+      "raw_bytes": "7F27FF",
+      "decoded": "üG",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE408",
+      "offset_dec": 5956616,
+      "raw_bytes": "3A5400FF",
+      "decoded": "Zt",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE40C",
+      "offset_dec": 5956620,
+      "raw_bytes": "354F00FF",
+      "decoded": "Uo",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE410",
+      "offset_dec": 5956624,
+      "raw_bytes": "314900FF",
+      "decoded": "Qi",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE414",
+      "offset_dec": 5956628,
+      "raw_bytes": "2C4400FF",
+      "decoded": "Ld",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE41C",
+      "offset_dec": 5956636,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE420",
+      "offset_dec": 5956640,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE424",
+      "offset_dec": 5956644,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE428",
+      "offset_dec": 5956648,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE42C",
+      "offset_dec": 5956652,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE430",
+      "offset_dec": 5956656,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE434",
+      "offset_dec": 5956660,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE438",
+      "offset_dec": 5956664,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE43C",
+      "offset_dec": 5956668,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE440",
+      "offset_dec": 5956672,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE444",
+      "offset_dec": 5956676,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE448",
+      "offset_dec": 5956680,
+      "raw_bytes": "223800FF",
+      "decoded": "BX",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE450",
+      "offset_dec": 5956688,
+      "raw_bytes": "314615FF",
+      "decoded": "Qf5",
+      "length": 3
+    },
+    {
+      "offset": "0x5AE5D5",
+      "offset_dec": 5957077,
+      "raw_bytes": "7E24FF",
+      "decoded": "ßD",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE608",
+      "offset_dec": 5957128,
+      "raw_bytes": "375000FF",
+      "decoded": "Wp",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE60C",
+      "offset_dec": 5957132,
+      "raw_bytes": "324B00FF",
+      "decoded": "Rk",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE610",
+      "offset_dec": 5957136,
+      "raw_bytes": "2E4600FF",
+      "decoded": "Nf",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE61C",
+      "offset_dec": 5957148,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE620",
+      "offset_dec": 5957152,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE624",
+      "offset_dec": 5957156,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE628",
+      "offset_dec": 5957160,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE62C",
+      "offset_dec": 5957164,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE630",
+      "offset_dec": 5957168,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE634",
+      "offset_dec": 5957172,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE638",
+      "offset_dec": 5957176,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE63C",
+      "offset_dec": 5957180,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE640",
+      "offset_dec": 5957184,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE644",
+      "offset_dec": 5957188,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE648",
+      "offset_dec": 5957192,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE64C",
+      "offset_dec": 5957196,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE658",
+      "offset_dec": 5957208,
+      "raw_bytes": "3A4E1FFF",
+      "decoded": "Zn?",
+      "length": 3
+    },
+    {
+      "offset": "0x5AE7D1",
+      "offset_dec": 5957585,
+      "raw_bytes": "7E25FF",
+      "decoded": "ßE",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE804",
+      "offset_dec": 5957636,
+      "raw_bytes": "385200FF",
+      "decoded": "Xr",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE808",
+      "offset_dec": 5957640,
+      "raw_bytes": "334C00FF",
+      "decoded": "Sl",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE80C",
+      "offset_dec": 5957644,
+      "raw_bytes": "2F4700FF",
+      "decoded": "Og",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE810",
+      "offset_dec": 5957648,
+      "raw_bytes": "2A4200FF",
+      "decoded": "Jb",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE818",
+      "offset_dec": 5957656,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE81C",
+      "offset_dec": 5957660,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE820",
+      "offset_dec": 5957664,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE824",
+      "offset_dec": 5957668,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE828",
+      "offset_dec": 5957672,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE82C",
+      "offset_dec": 5957676,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE830",
+      "offset_dec": 5957680,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE834",
+      "offset_dec": 5957684,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE838",
+      "offset_dec": 5957688,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE83C",
+      "offset_dec": 5957692,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE840",
+      "offset_dec": 5957696,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE844",
+      "offset_dec": 5957700,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE848",
+      "offset_dec": 5957704,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE84C",
+      "offset_dec": 5957708,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE850",
+      "offset_dec": 5957712,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE854",
+      "offset_dec": 5957716,
+      "raw_bytes": "213800FF",
+      "decoded": "AX",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE858",
+      "offset_dec": 5957720,
+      "raw_bytes": "344814FF",
+      "decoded": "Th4",
+      "length": 3
+    },
+    {
+      "offset": "0x5AE861",
+      "offset_dec": 5957729,
+      "raw_bytes": "7A58FF",
+      "decoded": "öx",
+      "length": 2
+    },
+    {
+      "offset": "0x5AE9CD",
+      "offset_dec": 5958093,
+      "raw_bytes": "7F25FF",
+      "decoded": "üE",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA00",
+      "offset_dec": 5958144,
+      "raw_bytes": "395300FF",
+      "decoded": "Ys",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA04",
+      "offset_dec": 5958148,
+      "raw_bytes": "344E00FF",
+      "decoded": "Tn",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA08",
+      "offset_dec": 5958152,
+      "raw_bytes": "304800FF",
+      "decoded": "Ph",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA0C",
+      "offset_dec": 5958156,
+      "raw_bytes": "2B4300FF",
+      "decoded": "Kc",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA14",
+      "offset_dec": 5958164,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA18",
+      "offset_dec": 5958168,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA1C",
+      "offset_dec": 5958172,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA20",
+      "offset_dec": 5958176,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA24",
+      "offset_dec": 5958180,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA28",
+      "offset_dec": 5958184,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA2C",
+      "offset_dec": 5958188,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA30",
+      "offset_dec": 5958192,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA34",
+      "offset_dec": 5958196,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA38",
+      "offset_dec": 5958200,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA3C",
+      "offset_dec": 5958204,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA40",
+      "offset_dec": 5958208,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA44",
+      "offset_dec": 5958212,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA48",
+      "offset_dec": 5958216,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA4C",
+      "offset_dec": 5958220,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA50",
+      "offset_dec": 5958224,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEA58",
+      "offset_dec": 5958232,
+      "raw_bytes": "415427FF",
+      "decoded": "atG",
+      "length": 3
+    },
+    {
+      "offset": "0x5AEBFC",
+      "offset_dec": 5958652,
+      "raw_bytes": "3A5400FF",
+      "decoded": "Zt",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC00",
+      "offset_dec": 5958656,
+      "raw_bytes": "364F00FF",
+      "decoded": "Vo",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC04",
+      "offset_dec": 5958660,
+      "raw_bytes": "314A00FF",
+      "decoded": "Qj",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC08",
+      "offset_dec": 5958664,
+      "raw_bytes": "2D4500FF",
+      "decoded": "Me",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC18",
+      "offset_dec": 5958680,
+      "raw_bytes": "233900FF",
+      "decoded": "CY",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC24",
+      "offset_dec": 5958692,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC28",
+      "offset_dec": 5958696,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC2C",
+      "offset_dec": 5958700,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC30",
+      "offset_dec": 5958704,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC34",
+      "offset_dec": 5958708,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC38",
+      "offset_dec": 5958712,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC3C",
+      "offset_dec": 5958716,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC40",
+      "offset_dec": 5958720,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC44",
+      "offset_dec": 5958724,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC48",
+      "offset_dec": 5958728,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC4C",
+      "offset_dec": 5958732,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC50",
+      "offset_dec": 5958736,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEC5C",
+      "offset_dec": 5958748,
+      "raw_bytes": "2E430EFF",
+      "decoded": "Nc.",
+      "length": 3
+    },
+    {
+      "offset": "0x5AEDF8",
+      "offset_dec": 5959160,
+      "raw_bytes": "365100FF",
+      "decoded": "Vq",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEDFC",
+      "offset_dec": 5959164,
+      "raw_bytes": "375000FF",
+      "decoded": "Wp",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE00",
+      "offset_dec": 5959168,
+      "raw_bytes": "334B00FF",
+      "decoded": "Sk",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE04",
+      "offset_dec": 5959172,
+      "raw_bytes": "2A4200FF",
+      "decoded": "Jb",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE08",
+      "offset_dec": 5959176,
+      "raw_bytes": "233A00FF",
+      "decoded": "CZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE10",
+      "offset_dec": 5959184,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE20",
+      "offset_dec": 5959200,
+      "raw_bytes": "374B19FF",
+      "decoded": "Wk9",
+      "length": 3
+    },
+    {
+      "offset": "0x5AEE2C",
+      "offset_dec": 5959212,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE30",
+      "offset_dec": 5959216,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE34",
+      "offset_dec": 5959220,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE38",
+      "offset_dec": 5959224,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE3C",
+      "offset_dec": 5959228,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE40",
+      "offset_dec": 5959232,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE44",
+      "offset_dec": 5959236,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE48",
+      "offset_dec": 5959240,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE4C",
+      "offset_dec": 5959244,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE50",
+      "offset_dec": 5959248,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE54",
+      "offset_dec": 5959252,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE58",
+      "offset_dec": 5959256,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE5C",
+      "offset_dec": 5959260,
+      "raw_bytes": "223800FF",
+      "decoded": "BX",
+      "length": 2
+    },
+    {
+      "offset": "0x5AEE64",
+      "offset_dec": 5959268,
+      "raw_bytes": "2D420EFF",
+      "decoded": "Mb.",
+      "length": 3
+    },
+    {
+      "offset": "0x5AEFFC",
+      "offset_dec": 5959676,
+      "raw_bytes": "294400FF",
+      "decoded": "Id",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF014",
+      "offset_dec": 5959700,
+      "raw_bytes": "213800FF",
+      "decoded": "AX",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF018",
+      "offset_dec": 5959704,
+      "raw_bytes": "304411FF",
+      "decoded": "Pd1",
+      "length": 3
+    },
+    {
+      "offset": "0x5AF034",
+      "offset_dec": 5959732,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF038",
+      "offset_dec": 5959736,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF03C",
+      "offset_dec": 5959740,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF040",
+      "offset_dec": 5959744,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF044",
+      "offset_dec": 5959748,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF048",
+      "offset_dec": 5959752,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF04C",
+      "offset_dec": 5959756,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF050",
+      "offset_dec": 5959760,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF054",
+      "offset_dec": 5959764,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF058",
+      "offset_dec": 5959768,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF05C",
+      "offset_dec": 5959772,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF060",
+      "offset_dec": 5959776,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF064",
+      "offset_dec": 5959780,
+      "raw_bytes": "223800FF",
+      "decoded": "BX",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF06C",
+      "offset_dec": 5959788,
+      "raw_bytes": "324613FF",
+      "decoded": "Rf3",
+      "length": 3
+    },
+    {
+      "offset": "0x5AF201",
+      "offset_dec": 5960193,
+      "raw_bytes": "5622FF",
+      "decoded": "vB",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF204",
+      "offset_dec": 5960196,
+      "raw_bytes": "364C19FF",
+      "decoded": "Vl9",
+      "length": 3
+    },
+    {
+      "offset": "0x5AF220",
+      "offset_dec": 5960224,
+      "raw_bytes": "2C4211FF",
+      "decoded": "Lb1",
+      "length": 3
+    },
+    {
+      "offset": "0x5AF23C",
+      "offset_dec": 5960252,
+      "raw_bytes": "233900FF",
+      "decoded": "CY",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF240",
+      "offset_dec": 5960256,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF244",
+      "offset_dec": 5960260,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF248",
+      "offset_dec": 5960264,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF24C",
+      "offset_dec": 5960268,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF250",
+      "offset_dec": 5960272,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF254",
+      "offset_dec": 5960276,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF258",
+      "offset_dec": 5960280,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF25C",
+      "offset_dec": 5960284,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF260",
+      "offset_dec": 5960288,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF264",
+      "offset_dec": 5960292,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF268",
+      "offset_dec": 5960296,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF275",
+      "offset_dec": 5960309,
+      "raw_bytes": "5122FF",
+      "decoded": "qB",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF3F4",
+      "offset_dec": 5960692,
+      "raw_bytes": "6A7E47FF",
+      "decoded": "äßg",
+      "length": 3
+    },
+    {
+      "offset": "0x5AF409",
+      "offset_dec": 5960713,
+      "raw_bytes": "5127FF",
+      "decoded": "qG",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF418",
+      "offset_dec": 5960728,
+      "raw_bytes": "44572AFF",
+      "decoded": "dwJ",
+      "length": 3
+    },
+    {
+      "offset": "0x5AF444",
+      "offset_dec": 5960772,
+      "raw_bytes": "233900FF",
+      "decoded": "CY",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF448",
+      "offset_dec": 5960776,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF44C",
+      "offset_dec": 5960780,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF450",
+      "offset_dec": 5960784,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF454",
+      "offset_dec": 5960788,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF458",
+      "offset_dec": 5960792,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF45C",
+      "offset_dec": 5960796,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF460",
+      "offset_dec": 5960800,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF464",
+      "offset_dec": 5960804,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF468",
+      "offset_dec": 5960808,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF46C",
+      "offset_dec": 5960812,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF470",
+      "offset_dec": 5960816,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF47C",
+      "offset_dec": 5960828,
+      "raw_bytes": "324713FF",
+      "decoded": "Rg3",
+      "length": 3
+    },
+    {
+      "offset": "0x5AF624",
+      "offset_dec": 5961252,
+      "raw_bytes": "2F4310FF",
+      "decoded": "Oc0",
+      "length": 3
+    },
+    {
+      "offset": "0x5AF64C",
+      "offset_dec": 5961292,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF650",
+      "offset_dec": 5961296,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF654",
+      "offset_dec": 5961300,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF658",
+      "offset_dec": 5961304,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF65C",
+      "offset_dec": 5961308,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF660",
+      "offset_dec": 5961312,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF664",
+      "offset_dec": 5961316,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF668",
+      "offset_dec": 5961320,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF66C",
+      "offset_dec": 5961324,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF670",
+      "offset_dec": 5961328,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF674",
+      "offset_dec": 5961332,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF678",
+      "offset_dec": 5961336,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF835",
+      "offset_dec": 5961781,
+      "raw_bytes": "5124FF",
+      "decoded": "qD",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF847",
+      "offset_dec": 5961799,
+      "raw_bytes": "E9334718FF",
+      "decoded": "Sg8",
+      "length": 3
+    },
+    {
+      "offset": "0x5AF858",
+      "offset_dec": 5961816,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF85C",
+      "offset_dec": 5961820,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF860",
+      "offset_dec": 5961824,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF864",
+      "offset_dec": 5961828,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF868",
+      "offset_dec": 5961832,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF86C",
+      "offset_dec": 5961836,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF870",
+      "offset_dec": 5961840,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF874",
+      "offset_dec": 5961844,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF878",
+      "offset_dec": 5961848,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF87C",
+      "offset_dec": 5961852,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AF880",
+      "offset_dec": 5961856,
+      "raw_bytes": "233900FF",
+      "decoded": "CY",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFA54",
+      "offset_dec": 5962324,
+      "raw_bytes": "485A2CFF",
+      "decoded": "hzL",
+      "length": 3
+    },
+    {
+      "offset": "0x5AFA5C",
+      "offset_dec": 5962332,
+      "raw_bytes": "213700FF",
+      "decoded": "AW",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFA60",
+      "offset_dec": 5962336,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFA64",
+      "offset_dec": 5962340,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFA68",
+      "offset_dec": 5962344,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFA6C",
+      "offset_dec": 5962348,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFA70",
+      "offset_dec": 5962352,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFA74",
+      "offset_dec": 5962356,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFA78",
+      "offset_dec": 5962360,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFA7C",
+      "offset_dec": 5962364,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFA80",
+      "offset_dec": 5962368,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFC3D",
+      "offset_dec": 5962813,
+      "raw_bytes": "7A56FF",
+      "decoded": "öv",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFC64",
+      "offset_dec": 5962852,
+      "raw_bytes": "233A00FF",
+      "decoded": "CZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFC68",
+      "offset_dec": 5962856,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFC6C",
+      "offset_dec": 5962860,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFC70",
+      "offset_dec": 5962864,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFC74",
+      "offset_dec": 5962868,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFC78",
+      "offset_dec": 5962872,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFC7C",
+      "offset_dec": 5962876,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFC80",
+      "offset_dec": 5962880,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFC91",
+      "offset_dec": 5962897,
+      "raw_bytes": "4F22FF",
+      "decoded": "oB",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFE6C",
+      "offset_dec": 5963372,
+      "raw_bytes": "233900FF",
+      "decoded": "CY",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFE70",
+      "offset_dec": 5963376,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFE74",
+      "offset_dec": 5963380,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFE78",
+      "offset_dec": 5963384,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFE7C",
+      "offset_dec": 5963388,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFE80",
+      "offset_dec": 5963392,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFE84",
+      "offset_dec": 5963396,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFE88",
+      "offset_dec": 5963400,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFE8C",
+      "offset_dec": 5963404,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5AFE94",
+      "offset_dec": 5963412,
+      "raw_bytes": "2D4210FF",
+      "decoded": "Mb0",
+      "length": 3
+    },
+    {
+      "offset": "0x5B0074",
+      "offset_dec": 5963892,
+      "raw_bytes": "223800FF",
+      "decoded": "BX",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0078",
+      "offset_dec": 5963896,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B007C",
+      "offset_dec": 5963900,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0080",
+      "offset_dec": 5963904,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0084",
+      "offset_dec": 5963908,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0088",
+      "offset_dec": 5963912,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B008C",
+      "offset_dec": 5963916,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0090",
+      "offset_dec": 5963920,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0098",
+      "offset_dec": 5963928,
+      "raw_bytes": "334712FF",
+      "decoded": "Sg2",
+      "length": 3
+    },
+    {
+      "offset": "0x5B027C",
+      "offset_dec": 5964412,
+      "raw_bytes": "213800FF",
+      "decoded": "AX",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0280",
+      "offset_dec": 5964416,
+      "raw_bytes": "233900FF",
+      "decoded": "CY",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0284",
+      "offset_dec": 5964420,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0288",
+      "offset_dec": 5964424,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B028C",
+      "offset_dec": 5964428,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0290",
+      "offset_dec": 5964432,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0294",
+      "offset_dec": 5964436,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B02A4",
+      "offset_dec": 5964452,
+      "raw_bytes": "354916FF",
+      "decoded": "Ui6",
+      "length": 3
+    },
+    {
+      "offset": "0x5B0488",
+      "offset_dec": 5964936,
+      "raw_bytes": "213800FF",
+      "decoded": "AX",
+      "length": 2
+    },
+    {
+      "offset": "0x5B048C",
+      "offset_dec": 5964940,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0490",
+      "offset_dec": 5964944,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0494",
+      "offset_dec": 5964948,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0498",
+      "offset_dec": 5964952,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B049C",
+      "offset_dec": 5964956,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B04A0",
+      "offset_dec": 5964960,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B04AC",
+      "offset_dec": 5964972,
+      "raw_bytes": "445629FF",
+      "decoded": "dvI",
+      "length": 3
+    },
+    {
+      "offset": "0x5B0690",
+      "offset_dec": 5965456,
+      "raw_bytes": "213700FF",
+      "decoded": "AW",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0694",
+      "offset_dec": 5965460,
+      "raw_bytes": "213700FF",
+      "decoded": "AW",
+      "length": 2
+    },
+    {
+      "offset": "0x5B069C",
+      "offset_dec": 5965468,
+      "raw_bytes": "233900FF",
+      "decoded": "CY",
+      "length": 2
+    },
+    {
+      "offset": "0x5B06A0",
+      "offset_dec": 5965472,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B06A4",
+      "offset_dec": 5965476,
+      "raw_bytes": "233900FF",
+      "decoded": "CY",
+      "length": 2
+    },
+    {
+      "offset": "0x5B0894",
+      "offset_dec": 5965972,
+      "raw_bytes": "374B16FF",
+      "decoded": "Wk6",
+      "length": 3
+    },
+    {
+      "offset": "0x5B0AC5",
+      "offset_dec": 5966533,
+      "raw_bytes": "7E5AFF",
+      "decoded": "ßz",
+      "length": 2
+    },
+    {
+      "offset": "0x5B10DC",
+      "offset_dec": 5968092,
+      "raw_bytes": "485A31FF",
+      "decoded": "hzQ",
+      "length": 3
+    },
+    {
+      "offset": "0x5B6CA1",
+      "offset_dec": 5991585,
+      "raw_bytes": "7E25FF",
+      "decoded": "ßE",
+      "length": 2
+    },
+    {
+      "offset": "0x5B6F99",
+      "offset_dec": 5992345,
+      "raw_bytes": "7E25FF",
+      "decoded": "ßE",
+      "length": 2
+    },
+    {
+      "offset": "0x5B7095",
+      "offset_dec": 5992597,
+      "raw_bytes": "7F27FF",
+      "decoded": "üG",
+      "length": 2
+    },
+    {
+      "offset": "0x5B70B0",
+      "offset_dec": 5992624,
+      "raw_bytes": "334D00FF",
+      "decoded": "Sm",
+      "length": 2
+    },
+    {
+      "offset": "0x5B70B8",
+      "offset_dec": 5992632,
+      "raw_bytes": "324716FF",
+      "decoded": "Rg6",
+      "length": 3
+    },
+    {
+      "offset": "0x5B71AC",
+      "offset_dec": 5992876,
+      "raw_bytes": "375100FF",
+      "decoded": "Wq",
+      "length": 2
+    },
+    {
+      "offset": "0x5B71B0",
+      "offset_dec": 5992880,
+      "raw_bytes": "2E4600FF",
+      "decoded": "Nf",
+      "length": 2
+    },
+    {
+      "offset": "0x5B71C0",
+      "offset_dec": 5992896,
+      "raw_bytes": "425527FF",
+      "decoded": "buG",
+      "length": 3
+    },
+    {
+      "offset": "0x5B72A8",
+      "offset_dec": 5993128,
+      "raw_bytes": "3A5400FF",
+      "decoded": "Zt",
+      "length": 2
+    },
+    {
+      "offset": "0x5B72AC",
+      "offset_dec": 5993132,
+      "raw_bytes": "304900FF",
+      "decoded": "Pi",
+      "length": 2
+    },
+    {
+      "offset": "0x5B72B4",
+      "offset_dec": 5993140,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B72B8",
+      "offset_dec": 5993144,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B72BC",
+      "offset_dec": 5993148,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B738D",
+      "offset_dec": 5993357,
+      "raw_bytes": "7F26FF",
+      "decoded": "üF",
+      "length": 2
+    },
+    {
+      "offset": "0x5B73A8",
+      "offset_dec": 5993384,
+      "raw_bytes": "334C00FF",
+      "decoded": "Sl",
+      "length": 2
+    },
+    {
+      "offset": "0x5B73AC",
+      "offset_dec": 5993388,
+      "raw_bytes": "294100FF",
+      "decoded": "Ia",
+      "length": 2
+    },
+    {
+      "offset": "0x5B73B0",
+      "offset_dec": 5993392,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B73B4",
+      "offset_dec": 5993396,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B73B8",
+      "offset_dec": 5993400,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B73BC",
+      "offset_dec": 5993404,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B73C0",
+      "offset_dec": 5993408,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B73C4",
+      "offset_dec": 5993412,
+      "raw_bytes": "233900FF",
+      "decoded": "CY",
+      "length": 2
+    },
+    {
+      "offset": "0x5B74A4",
+      "offset_dec": 5993636,
+      "raw_bytes": "344E00FF",
+      "decoded": "Tn",
+      "length": 2
+    },
+    {
+      "offset": "0x5B74A8",
+      "offset_dec": 5993640,
+      "raw_bytes": "294100FF",
+      "decoded": "Ia",
+      "length": 2
+    },
+    {
+      "offset": "0x5B74B8",
+      "offset_dec": 5993656,
+      "raw_bytes": "233900FF",
+      "decoded": "CY",
+      "length": 2
+    },
+    {
+      "offset": "0x5B74BC",
+      "offset_dec": 5993660,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B74C0",
+      "offset_dec": 5993664,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B74C4",
+      "offset_dec": 5993668,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B74C8",
+      "offset_dec": 5993672,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B74CC",
+      "offset_dec": 5993676,
+      "raw_bytes": "213701FF",
+      "decoded": "AW!",
+      "length": 3
+    },
+    {
+      "offset": "0x5B74D0",
+      "offset_dec": 5993680,
+      "raw_bytes": "455829FF",
+      "decoded": "exI",
+      "length": 3
+    },
+    {
+      "offset": "0x5B7595",
+      "offset_dec": 5993877,
+      "raw_bytes": "7F23FF",
+      "decoded": "üC",
+      "length": 2
+    },
+    {
+      "offset": "0x5B75A8",
+      "offset_dec": 5993896,
+      "raw_bytes": "31460FFF",
+      "decoded": "Qf/",
+      "length": 3
+    },
+    {
+      "offset": "0x5B75C0",
+      "offset_dec": 5993920,
+      "raw_bytes": "223800FF",
+      "decoded": "BX",
+      "length": 2
+    },
+    {
+      "offset": "0x5B75C4",
+      "offset_dec": 5993924,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B75C8",
+      "offset_dec": 5993928,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B75CC",
+      "offset_dec": 5993932,
+      "raw_bytes": "233900FF",
+      "decoded": "CY",
+      "length": 2
+    },
+    {
+      "offset": "0x5B75D4",
+      "offset_dec": 5993940,
+      "raw_bytes": "314515FF",
+      "decoded": "Qe5",
+      "length": 3
+    },
+    {
+      "offset": "0x5B76B0",
+      "offset_dec": 5994160,
+      "raw_bytes": "2C4113FF",
+      "decoded": "La3",
+      "length": 3
+    },
+    {
+      "offset": "0x5B76C8",
+      "offset_dec": 5994184,
+      "raw_bytes": "223800FF",
+      "decoded": "BX",
+      "length": 2
+    },
+    {
+      "offset": "0x5B76CC",
+      "offset_dec": 5994188,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B76D0",
+      "offset_dec": 5994192,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B76DC",
+      "offset_dec": 5994204,
+      "raw_bytes": "425529FF",
+      "decoded": "buI",
+      "length": 3
+    },
+    {
+      "offset": "0x5B77D4",
+      "offset_dec": 5994452,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B77D8",
+      "offset_dec": 5994456,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B78CF",
+      "offset_dec": 5994703,
+      "raw_bytes": "DA304513FF",
+      "decoded": "Pe3",
+      "length": 3
+    },
+    {
+      "offset": "0x5B78DC",
+      "offset_dec": 5994716,
+      "raw_bytes": "243A00FF",
+      "decoded": "DZ",
+      "length": 2
+    },
+    {
+      "offset": "0x5B78E0",
+      "offset_dec": 5994720,
+      "raw_bytes": "223800FF",
+      "decoded": "BX",
+      "length": 2
+    },
+    {
+      "offset": "0x5B78E4",
+      "offset_dec": 5994724,
+      "raw_bytes": "223801FF",
+      "decoded": "BX!",
+      "length": 3
+    },
+    {
+      "offset": "0x5B78E8",
+      "offset_dec": 5994728,
+      "raw_bytes": "485A2FFF",
+      "decoded": "hzO",
+      "length": 3
+    },
+    {
+      "offset": "0x5B79D7",
+      "offset_dec": 5994967,
+      "raw_bytes": "E32E430FFF",
+      "decoded": "Nc/",
+      "length": 3
+    },
+    {
+      "offset": "0x5B79E4",
+      "offset_dec": 5994980,
+      "raw_bytes": "233900FF",
+      "decoded": "CY",
+      "length": 2
+    },
+    {
+      "offset": "0x5B79EC",
+      "offset_dec": 5994988,
+      "raw_bytes": "435626FF",
+      "decoded": "cvF",
+      "length": 3
+    },
+    {
+      "offset": "0x5B7ADF",
+      "offset_dec": 5995231,
+      "raw_bytes": "D7314514FF",
+      "decoded": "Qe4",
+      "length": 3
+    },
+    {
+      "offset": "0x5B7BEA",
+      "offset_dec": 5995498,
+      "raw_bytes": "3BF7354915FF",
+      "decoded": "[Ui5",
+      "length": 4
+    },
+    {
+      "offset": "0x5B9681",
+      "offset_dec": 6002305,
+      "raw_bytes": "7F27FF",
+      "decoded": "üG",
+      "length": 2
+    },
+    {
+      "offset": "0x5B970C",
+      "offset_dec": 6002444,
+      "raw_bytes": "2A4200FF",
+      "decoded": "Jb",
+      "length": 2
+    },
+    {
+      "offset": "0x5B971C",
+      "offset_dec": 6002460,
+      "raw_bytes": "47592BFF",
+      "decoded": "gyK",
+      "length": 3
+    },
+    {
+      "offset": "0x5B978C",
+      "offset_dec": 6002572,
+      "raw_bytes": "344913FF",
+      "decoded": "Ti3",
+      "length": 3
+    },
+    {
+      "offset": "0x5B9794",
+      "offset_dec": 6002580,
+      "raw_bytes": "354A16FF",
+      "decoded": "Uj6",
+      "length": 3
+    },
+    {
+      "offset": "0x5B97A0",
+      "offset_dec": 6002592,
+      "raw_bytes": "425526FF",
+      "decoded": "buF",
+      "length": 3
+    },
+    {
+      "offset": "0x5B981B",
+      "offset_dec": 6002715,
+      "raw_bytes": "D53F5224F8102800FF",
+      "decoded": "_rD0H",
+      "length": 5
+    },
+    {
+      "offset": "0x5B98A3",
+      "offset_dec": 6002851,
+      "raw_bytes": "A33D5021F40C2500FF",
+      "decoded": "]pA,E",
+      "length": 5
+    },
+    {
+      "offset": "0x5BAA4E",
+      "offset_dec": 6007374,
+      "raw_bytes": "24140F822AFF",
+      "decoded": "D4/J",
+      "length": 4
+    },
+    {
+      "offset": "0x5BAB5B",
+      "offset_dec": 6007643,
+      "raw_bytes": "44C5002500FF",
+      "decoded": "d E",
+      "length": 3
+    },
+    {
+      "offset": "0x5BAF98",
+      "offset_dec": 6008728,
+      "raw_bytes": "42212163422121632010103020101030E5FF",
+      "decoded": "bAAbAA@00P@00P",
+      "length": 14
+    },
+    {
+      "offset": "0x5BB327",
+      "offset_dec": 6009639,
+      "raw_bytes": "49AA5555FF",
+      "decoded": "iuu",
+      "length": 3
+    },
+    {
+      "offset": "0x5BB32D",
+      "offset_dec": 6009645,
+      "raw_bytes": "5555FF",
+      "decoded": "uu",
+      "length": 2
+    },
+    {
+      "offset": "0x5BC0F0",
+      "offset_dec": 6013168,
+      "raw_bytes": "24140F8228FF",
+      "decoded": "D4/H",
+      "length": 4
+    },
+    {
+      "offset": "0x5BC9EE",
+      "offset_dec": 6015470,
+      "raw_bytes": "250C283C498B283C498BFF",
+      "decoded": "E,H\\iH\\i",
+      "length": 8
+    },
+    {
+      "offset": "0x5BD3BD",
+      "offset_dec": 6017981,
+      "raw_bytes": "5F04C744242810000000E94CFF",
+      "decoded": "$dDH0   l",
+      "length": 9
+    },
+    {
+      "offset": "0x5BE659",
+      "offset_dec": 6022745,
+      "raw_bytes": "4520894424148B452489442418FF",
+      "decoded": "e@dD4eDdD8",
+      "length": 10
+    },
+    {
+      "offset": "0x5BF60C",
+      "offset_dec": 6026764,
+      "raw_bytes": "7F200F854CFF",
+      "decoded": "ü@/l",
+      "length": 4
+    }
+  ]
+}

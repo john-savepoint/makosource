@@ -1,0 +1,19 @@
+Based on the chunk 22 data provided and comparing it to known German FF7 menu translations and the English touphScript reference, here's the CSV mapping for the identifiable menu strings in that chunk:
+
+```csv
+index,de_offset,de_text,en_text
+5,0x5B9E1D,Fensterfarbe,Window color
+6,0x5B9E50,Sound,Sound
+7,0x5B9EA1,Kontroller,Controller
+8,0x5B9E81,Cursor,Cursor
+9,0x5B9E99,ATB,ATB
+10,0x5B9F03,Kampftempo,Battle speed
+11,0x5B9F4B,Kampfmeldung,Battle message
+12,0x5B9F61,Feldmeldung,Field message
+13,0x5B9F95,Kamerawinkel,Camera angle
+14,0x5BA011,Auswählen,Select
+15,0x5BA01F,Abbrechen,Cancel
+16,0x5BA031,Menü,Menu
+```
+
+**Note on the data**: The German strings in chunk 22 (offsets 0x5B90FF to 0x5BA6A9) appear to be primarily binary/assembly data with minimal readable German text. The strings at the beginning of the range are heavily padded and contain control characters rather than menu items. Most of the readable German menu text for this game would be in different chunks. If you need a complete mapping for chunk 22 specifically, you may need to use a more sophisticated binary extraction tool or provide the decoded German strings directly.

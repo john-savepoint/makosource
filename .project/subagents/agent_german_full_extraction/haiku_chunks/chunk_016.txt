@@ -1,0 +1,882 @@
+# Haiku Analysis Chunk 016
+# German strings 1600 to 1699
+#
+# TASK: Map each German string to its English touphScript index (0-766)
+# OUTPUT: CSV format only: english_index,german_offset,german_text,english_text
+#
+# ===========================================================================
+# GERMAN STRINGS TO MAP:
+# ===========================================================================
+
+0x5C0486 | /îõD(D,íD0SS/îG/îN/î} //ü/ü//íD4///îm$/îf$/ô@/ô@a%    /////ü//îl$//îd$/ô@/ß|</ô@i![/////ü///ß|</ô@/ô@//ü|@bS/îD/îN/îõD@/î} ///ü/ü//íD4///îõDD/îm$/îf$/ô@/ô@/ak/////ü/îõD//îl$//îd$/ô@/ß|</ô@/ki!/////ü///ß|</ô@/ô@/îõD///ü|@r![/a
+0x5C05ED | /•,#  D    %    õD(ë!D,S!Kd$+_/^!  dD<&S    #i! $[í<D4#õD0 /D@d@StDlH&#dD@f$ aó   #í@i! #$ [í<#d@D4 õD0# /D@S#tDí@ &tDlH#dD@f$ !   D        #í@i! #$ [í8#í@ # í<SlD,#tD3dHi$t@[lD<dD/!  YõD(lD,SS&F
+0x5C075A | <DlD,dD@!aD
+0x5C0780 | $#i! Lc?[,Dí<$#D4 õD0Lc/D@?í@Lp&?íDtH#dD@ f$!   D    i #í@ #d$ í<#íDi" #$ [í8#í@ # í<lD,SõD(#tD3dHt@[dD/   $i!lD,#d@ d@S[i!õe!D    i $#L  ?#í@i! # [,Dí<ß4s?D4õD0/D@#t@& t@íD#dD@y
+0x5C08FB | %    íD0D$õD@&SD    D    ;d $id$r! CC+
+0x5C0940 | $$l@kãD8!   ~{}mïîõçïìåò@míõèñíèâáõèïî@Üïò@£XVL@cryptogams@à@\áññòï`ïñåîôôíNïòç^ võD,wD4usS&S7S#dD437 8f$S#&3w$ #dD437 h$f(S#f$3w$ #&3w( #dD437 é(f,S#f(3w$ #f$3w( #&3w, #dD437 x,f0S#f,3w$ #f(3w( #f$3w, #&3w0 #dD437 h0f4S#f03w$ #f,3w( #f(3w, #f$3w0 #&3w4 #dD437 é4f8S#f43w$ #f03w( #f,3w, #f(3w0 #f$3w4 #&3w8 #dD437 x8f<S#f83w$ #f43w( #f03w, #f,3w0 #f(3w4 #f$3w8 #&3w< #dD43w$ h<f<S#f83w( #f43w, #f03w0 #f,3w4 #f(3w8 #f$3w< #dD43w( é@f<S#f83w, #f43w0 #f03w4 #f,3w8 #f(3w< #dD43w, xDf<S#f83w0 #f43w4 #f03w8 #f,3w< #dD43w0 hHf<S#f83w4 #f43w8 #f03w< #dD43w4 éLf<S#f83w8 #f43w< #dD43w8 xPf<S#f83w< #dD43w< hTf<S#dD43 éXx\{}~
+0x5C1850 | võD,wD4usS&S7S#dD437 8f$S#&3w$ #dD437 h$f(S#f$3w$ #&3w( #dD437 é(f,S#f(3w$ #f$3w( #&3w, #dD43w$ x,f,S#f(3w( #f$3w, #dD43w( h0f,S#f(3w, #dD43w, é4f,S#dD43 x8h<{}~
+0x5C1990 | vwusD4õD8SS&S#36 ?f$S#3 #3f( o$6S#3 #3f$ #36 ï(f,S#3 #3f( v$#3 #3f0 ,6S#3 #3f, v$#3 #3f( #36 o0f4S#3 #3f0 v$#3 #3f, v(#3 #3f8 ï46S#3 #3f4 v$#3 #3f0 v(#3 #3f, #36 8f<S#3 #3f8 v$#3 #3f4 v(#3 #3f0 v,#3 #3f< o<v$S#3 #3f8 v(#3 #3f4 v,#3 #3f0 #3v( ï@f<S#3 #3f8 v,#3 #3f4 v0#3 #3f< Dv,S#3 #3f8 v0#3 #3f4 #3v0 oHf<S#3 #3f8 v4#3 #3f< ïLv4S#3 #3f8 #3v8 Pf<S#3 #3f< oTS#3 ïX\{}~D    D    vwusD4õD8SS&S#36 ?f$S#3 #3f( o$6S#3 #3f$ #36 ï(f,S#3 #3f( v$#3 #3f, ,v$S#3 #3f( #3v( o0f,S#3 #3f, ï4S#3 8o<{}~usvwíD4õD8dD<`&#dD|0&~$n(v,////$D|D$lD(tD,f0~4n8v<////dD0|D4lD8tD<f@~DnHvL////dD@|DDlDHtDLfP~TnXv\////dDP|DTlDXtD\õDxe }$m(u,%S#C\DS"]z#%S#CtD$S"5z#%S#ClD(S"-z#%S#C|D,S"=z#%S#CdD0S"%z#%S#CõD4S"Uz#%S#CD8S"]z#%S#CtD<S"5z#%S#ClD@S"-z#%S#C|DDS"=z#%S#CdDHS"%z#%S#CõDLS"Uz#%S#CDPS"]z#%S#CtDTS"5z#%S#ClDXS"-z#%S#C|D\S"=z#<DS|D(SS|D@C"S|DTS<D#z%##dD$SdD,SSdDDC"SdDXSdD$Pz%##õD(SõD0SSõDHC"SõD\SõD(^z%##D,SD4SSDLC"S\DSD,7z%##tD0"StD8SStDPSStD$#tD0%Jî#lD4"SlD<SSlDTSSlD(#lD4%Iî#|D8"S|D@SS|DXSS|D,#|D8%Kî#dD<"SdDDSSdD\SSdD0#dD<%Hî#õD@"SõDHSSTDSSõD4#õD@%Nî#DD"SDLSSD$SSD8#DD%Oî#tDH"StDPSStD(SStD<#tDH%Jî#lDL"SlDTSSlD,SSlD@#lDL%Iî#|DP"S|DXSS|D0SS|DD#|DP%Kî#dDT"SdD\SSdD4SSdDH#dDT%Hî#õDX"STDSSõD8SSõDL#õDX%Nî#D\"SD$SSD<SSDP#D\%Oî#4D"StD(SStD@SStDT#4D%Jî#lD$"SlD,SSlDDSSlDX#lD$%Iî#|D("S|D0SS|DHSS|D\#|D(%Kî#dD,"SdD4SSdDLSS$D#dD,%Hî#õD0"SõD8SSõDPSSõD$#õD0%Nî#D4"SD<SSDTSSD(#D4%Oî#tD8"StD@SStDXSStD,#tD8%Jî#lD<"SlDDSSlD\SSlD0#lD<%Iî#|D@íDHSLDSíD4S+|D@C#;"C+%##dDDíDLSíD$SíD8S+dDDCP;"C+%##õDHíDPSíD(SíD<S+õDHC^;"C+%##DLíDTSíD,SíD@S+DLC7;"C+%##tDPíDXSíD0SíDDS+tDPC*;"C+%##lDTíD\SíD4SíDHS+lDTC9;"C+%##|DXLDSíD8SíDLS+|DXC#;"C+%##dD\íD$SíD<SíDPS+dD\CP;"C+%##TDíD(SíD@SíDTS+TDC^;"C+%##D$íD,SíDDSíDXS+D$C7;"C+%##tD(íD0SíDHSíD\S+tD(C*;"C+%##lD,íD4SíDLSLDS+lD,C9;"C+%##|D0íD8SíDPSíD$S+|D0C#;"C+%##dD4íD<SíDTSíD(S+dD4CP;"C+%##õD8íD@SíDXSíD,S+õD8C^;"C+%##D<íDDSíD\SíD0S+D<C7;"C+%##tD@íDHSLDSíD4S+tD@C*;"C+%##lDDíDLSíD$SíD8S+lDDC9;"C+%##|DHíDPSíD(SíD<S+|DHC#;"C+%##dDLíDTSíD,SíD@S+dDLCP;"C+%##õDP"SõDXSSõD0SSõDD#õDP%Nà#DT"SD\SSD4SSDH#DT%Oà#tDX"S4DSStD8SStDL#tDX%Jà#lD\"SlD$SSlD<SSlDP#lD\%Ià#<D"S|D(SS|D@SS|DT#<D%Kà#dD$"SdD,SSdDDSSdDX#dD$%Hà#õD("SõD0SSõDHSSõD\#õD(%Nà#D,"SD4SSDLSS\D#D,%Oà#tD0"StD8SStDPSStD$#tD0%Jà#lD4"SlD<SSlDTSSlD(#lD4%Ià#|D8"S|D@SS|DXSS|D,#|D8%Kà#dD<"SdDDSSdD\SSdD0#dD<%Hà#õD@"SõDHSSTDSSõD4#õD@%Nà#DD"SDLSSD$SSD8#DD%Oà#tDH"StDPSStD(SStD<#tDH%Jà#lDL"SlDTSSlD,SSlD@#lDL%Ià#|DP"S|DXSS|D0SS|DD#|DP%Kà#dDT"SdD\SSdD4SSdDH#dDT%Hà#õDX"STDSSõD8SSõDL#õDX%Nà#D\"SD$SSD<SSDP#D\%Oà#íDttDx# #$#e(#},#m0 `$[tD|e(},m0/
+0x5C3388 | `~{}shaQ@àíïâë@õòáîôÜïòì@Üïò@£XVL@cryptogams@à@\áññòï`ïñåîôôíNïòç^ usvwõD4D8dD<    }"  0&#TDD$dD(|D,D    '$o(w,////psqrg04o8w<////psqrg@DoHwL////psqrgPToXw\////psqr`@Dã&~$n(ß,|D$lD(D,v0~4n8ß<|D4lD8D<D    |D|&+õD4S.SD8#tD0SCtD,S#"#|D<-õD$S)#SD(#$D$+CC +$###õD   %    lDã#'S+S*D   1S"#S##|D£&+õD4S.|D|SD8#tD0SCtD,S#"#|D<-õD$S)#SD(#$D$+CC +$#D   ##£ó/p
+0x5C3610 | D!  |D$lD(D,#&#~$#n(#ß,&~$n(ß,dD4|D8lD<Dã!  #v0#f4#~8#n<v0f4~8n<!   !  [D(/
+0x5C367A | ãD,~{}D    D    D    D    D    D    D    D    %    ObdWó{vY1y_~<'!{2QD,uõ}ò&õèg/,DïLMõj|°rq^ìQG#üy+gqâ&çII4*GXA;NìLm3-Xstô*å*ä°NLòkÜ:ñkqí9D&U.ñä069(íW>l•hGT,<Yjno{ïNéõïâ£4£("
+0x5C37B2 | íp£óshaRUV@àíïâë@õòáîôÜïòì@Üïò@£XVL@cryptogams@à@\áññòï`ïñåîôôíNïòç^ usvwõD4D8dD<    }I)  0'#TDD$dD(|D,5!/B:/#  /ï&/ïn(/ïv0/ï~8/ïÜ@/ïîH/ï°P/ïßXp    /ülD(/ütD0/ü|D8/üíDH/üõDP/üDX/w$(//lDltDhD    D    '$(//dDd|D`/ïíDH/ïõDP/ïDX/ü/ü/ô./üãD@/ô7/ü/ô$//ô7//ô7//ô$// ///ïlD(//ïtD0//ïãD8//ü$D//ü/ü/|Dh/ô<//ô9/ü/ô&//ô%//ô%//ô&/(//ü//////üu /(U/@
+0x5C4590 | /ïíDH/ïõDP/ïDX/ü/ü/ô./üãD@/ô7/ü/ô$//ô7//ô7//ô$// ///ïlD(//ïtD0//ïãD8//ü$D//ü/ü/|Dh/ô<//ô9/ü/ô&//ô%//ô%//ô&/(//ü//ïõDx///ïD   ///üu /(/ü/ô!/ü/ô&/ü/ô&/ü/ô-//ô!//ôJ//ïD   /ôX//ô#//D   /ô'//ôJ/////ü|Dh/ïíDH/ïõDP/ïDX/ü/ü/ô./üãD@/ô7/ü/ô$//ô7//ô7//ô$// ///ïlD(//ïtD0//ïãD8//ü$D//ü/ü/|Dh/ô<//ô9/ü/ô&//ô%//ô%//ô&/(//ü//ïõDx///ïD   ///üu /(7/
+0x5C47A0 | /ïlD(/ïtD0/ï|D8/ïíDH/ïõDP/ïDX/&/n(/v0/~8/Ü@/îH/°P/ßX/ü&/ün(/üv0/ü~8/üÜ@/üîH/ü°P/üßX"  "  [Dx/~
+0x5C4812 | /•ãD|~{}i '$o(w,////psqrg04o8w<////psqrg@DoHwL////psqrgPToXw\////psqrg`dohwl////psqrgptoxw|////psqrgãoéwí////psqrgñõo£w////psqr   hD   D(0   ãD lDHtDL))..S%S%S$S$S$S$S%S%SSlDPtDTõDXD\#dD`3|DdSSClDHCtDL#D   3D   SS $#3lD@tDD#3$D|D$#3lD(tD,dD@|DD""$$S%S%S5S5S5S5S%S%SSlD(tD,õD0D4#$D3|D$++ClD8CtD<CõD(CD,++#3$D|D$u (ì(/
+0x5C4A3B | %    DX!  D\!  88S&S&S'SSSS&SS$D|D$D   D   &&##S-S-S*S*S*S*S-SSD`!  Dd!  #$D3|D$D   D   #3#3D   D   lDHtDL))..S%S%S$S$S$S$S%S%SSlDPtDTõDXD\#dD`3|DdSSClDHCtDL#D   3D   SS $#3lD@tDD#3$D|D$#3lD(tD,dD@|DD""$$S%S%S5S5S5S5S%S%SSlD(tD,õD0D4#$D3|D$++ClD8CtD<CõD(CD,++#3$D|D$u (ì(7/
+0x5C4C48 | Dh#  Dl#  &~$n(v,#dD(3|D,&~$#lD03tD4n(v,f0~4n8v<#dD83|D<f0~4#lD@3tDDn8v<f@~DnHvL#dDH3|DLf@~D#lDP3tDTnHvLfP~TnXv\#dDX3|D\fP~T#lD`3tDdnXv\h#  "  [D(/6
+0x5C4D0A | ãD,~{}D    D    D    D    D    D    i BHObåCdWóO[mXh{vY9%1yo9_8ì~<b"#'ïñe!{2nQD
+0x5C4D9B | ,uïõ}ò6[U2E&FèõjèEoXg/å•,D"KyïLMîõja|s1°Ürq^0RMìQ_AG#.üy]+E*gï#qâ&ñî.*çII4Of*GFF|XA;NJzìLm3-Xsâtô*å•\*ä°gN[U4Lòã#l!PbkÜ:ñkPt&qí8r90åuD&J@ówU.Rñä069saq(íW>l•hGhTâz,<Yajnôâ•o{ïNé}õO7cïâ£ò4£Yã:("H>âC
+0x5C4F26 | íp5Ksò£óáF^G'A>£îüoï7òç&â*-$_1;g<3U+ó;$C•HD`R5*\l-0ç=cb^lJßåIüyZï7xgj9díshaUQR@àíïâë@õòáîôÜïòì@Üïò@£XVL@cryptogams@à@\áññòï`ïñåîôôíNïòç^ vwD,õD0lD4u&s#`'q$o(w,NSCH£äS#'î$#SCJvS#,î(#SCIñ@DS#1î,#SCKS#6î0#SCH/S#'î4#SCJJgS#,î8#SCI3fPS#1î<#SCK!fS#6î@#SCHèS#'îD#SCJdS#,îH#SCI{
+0x5C552D | S#1îL#SCK|S#6îP#SCHB1ëS#'îT#SCJóS#,îX#SCIcS#1î\#SCKA(iS#6î$#HàE>SCî8S#%#J``SCîLS#)#Iqz~FSCNS#.#KSCî4S#4#H}0OSCîHS#%#Js4d"SCî\S#)#ISCî0S#.#KSCîDS#4#HASCîXS#%#J'WSCî,S#)#I-SCî@S#.#K4zeSCîTS#4#H%SCî(S#%#JSCî<S#)#I"ïçSCîPS#.#KlJSCî4S#4#SSHbY
+0x5C5752 | #$î@Jó#SSîL#+#SSIBáì#0îXK,X#SSî$#7#SSHd#$î0Jk#SSî<#+#SSIk#0îHKñ#SSîT#7#SSHßH#$NJG#SSî,#+#SSIP#0î8K%=$#SSîD#7#SSHY#$îPJ#SSî\#+#SSI?#0î(Kåv#SSN#
+0x5C58B3 | 7#S+HdBISî<#
+0x5C58CF | &S#+J
+0x5C58DD | JcSîX#
+0x5C58EB | *S#+ICSî4#
+0x5C5907 | /S#+KYSîP#
+0x5C5923 | 5S#+Hy{åSî,#
+0x5C593F | &S#+J,SîH#
+0x5C595B | *S#+I
+0x5C596B | Sî$#
+0x5C5977 | /S#+K}Sî@#
+0x5C5993 | 5S#+HoßïSî\#
+0x5C59AF | &S#+JLSî8#
+0x5C59CB | *S#+I4c!SîT#
+0x5C59E7 | /S#+K1(nSî0#
+0x5C5A03 | 5S#+HßsSîL#
+0x5C5A1F | &S#+JUZSî(#
+0x5C5A3B | *S#+IJSîD#
+0x5C5A57 | /S#+KSíD8#`5 ##$#(#,#e }$\Dm(u,[/
+0x5C5AA2 | x{}~usvwdD4õD8D<<oK#  K$&$'|D4dD0    }c2  &~$n(/v,///   ãD4/õD@///&~$n(v,~{}ãD    KdD$#    dD$Ü
+0x5C649A | usvwõD4D<<0!  oK#  K$&$'|D4dD0    }1  &~$n(/v,///B   ãD4/õD8///&~$n(v,~{}
+0x5C6520 | S'S$So(Sw,•0dD$|D(lD,tD0
+0x5C6540 | SS4/$(  /St$0/l /St /Sl$0/S (  /dD0S(S (  /|D,SS$(  •8StD0SlD,SSw</$(  /S|$0/d /S| /Sd$0/S (  /lD(S(S (  /tD$SS$(  •@S|D(SdD$SSD/$(  /St$0/l /St /Sl$0/S (  /dD0S(S (  /|D,SS$(  •HStD0SlD,SSwL/$(  /S|$0/d /S| /Sd$0/S (  /lD(S(S (  /tD$SS$(  •PS|D(SdD$SST/$(  /St$0/l /St /Sl$0/S (  /dD0S(S (  /|D,SS$(  •XStD0SlD,SSw\/$(  /S|$0/d /S| /Sd$0/S (  /lD(S(S (  /tD$SS$(  •`S|D(SdD$`[D4õYCtD0S+o,|D(SlD,•$lD,+Co(SdD$S•0tD0P
+0x5C6810 | dD,|D0SS$So(Sw,D    usvwdD4õD8D<<oK#  K$&D0\'|D4    }3.  &~$n(/v,///   ãD4/õD@///&~$n(v,~{}ãD    KdD$#    dD$Ü
+0x5C68CA | usvwõD4D<<0!  oK#  K$&D0\'|D4    }ó-  &~$n(/v,///B   ãD4/õD8///&~$n(v,~{}
+0x5C6950 | S'S$So(Sw,•dD$|D(lD,tD0
+0x5C6970 | SS/$(  /St$0/l /St /Sl$0/S (  /dD0S(S (  /|D,SS$(  •StD0SlD,SSw/$(  /S|$0/d /S| /Sd$0/S (  /lD(S(S (  /tD$SS$(  •S|D(SdD$SS/$(  /St$0/l /St /Sl$0/S (  /dD0S(S (  /|D,SS$(  •StD0SlD,SSw/$(  /S|$0/d /S| /Sd$0/S (  /lD(S(S (  /tD$SS$(  •S|D(SdD$SS/$(  /St$0/l /St /Sl$0/S (  /dD0S(S (  /|D,SS$(  •StD0SlD,SSw/$(  /S|$0/d /S| /Sd$0/S (  /lD(S(S (  /tD$SS$(  •S|D(SdD$`[D4õYCtD0S+o$|D(SlD,•,lD,+C/SdD$S•tD0Q
+0x5C6C3F | dD,|D0SSw,S'S$D
+0x5C6C60 | usvw0íDDõDHDL&~$n(v,////'$o(w,   õ_f0~4   õ)n8v<)////g@DoHwLS'S$So(Sw,    })  W$D|D$lD(tD,SS$/$(  /St$0/l /St /Sl$0/S (  /dD,S(S (  /|D(SS$(  •(StD,SlD(SSw,/$(  /S|$0/d /S| /Sd$0/S (  /lD$S(S (  /4DSS$(  •0S|D$S$DlD(tD,õDLS&S~$Sn(Sv,•0$D|D$lD(tD,SS4/$(  /St$0/l /St /Sl$0/S (  /dD,S(S (  /|D(SS$(  •8StD,SlD(SSw</$(  /S|$0/d /S| /Sd$0/S (  /lD$S(S (  /4DSS$(  •@S|D$S$DlD(tD,õDD   /"  DL   gow/1/+/g1+11/++ow/1/+/g1+11/++ow/1/+/g1+11/++/1/+/g1+11/++ow">"+"@>+>>oD"++wHgL1/1+1`/+//od1++whglowg/1/+/1+11o/++wg>">+>"+""o>++wg/1/+/1+11/++wg1/1+1?/+//o$1++w(g,1/1+10/+//o41++w8g<1/1+1P/+//oT1++wXg\#   d$  D    õDLfP~TnXv\Sf@S~DSnHSvL•@$D|D$lD(tD,SSD/$(  /St$0/l /St /Sl$0/S (  /dD,S(S (  /|D(SS$(  •HStD,SlD(SSwL/$(  /S|$0/d /S| /Sd$0/S (  /lD$S(S (  /4DSS$(  •PS|D$S$DlD(tD,DL   gow>">+>g"+"">++ow>">+>g@"+""D>++oHwL3-3+3   -+--   3++      owg/1/+/1+11o/++wg/1/+/1+11o/++wg>">+>0"+""o4>++w8g<">"+"op>+>>wt"++gx|owg/1/+/o1+11w/++g>">+>o"+""w>++gw`gdhol1/1+1w/+//gã1++éoíwgo-3-+-g3+33-++ow/1/+/'1+11$/++o(w,1/1+1gP/+//T1++oXw\">"+"ñ>+>>oõ"++w£g$      0~{}    slD(|D,tD0
+0x5C75E2 | õRõN
+0x5C75EF | !  õ1   õ)   1rqsp
+0x5C7610 | ,"S{D    D    D    D    D    i üÜ[xöôlOWos
+0x5C765B | t<ïG0=Mév                 ññññ ññ L LL LLL      GGGw ww     C CC ë ëë wwwe ee UUU    ,,,o oo = == aaa  CCC    ëëë  ? ?? eee^ ^^ 999  ~ ~~ AAA+ ++   ...Y YY ooo  nnn} }} ===  åååz zz q qq í íí         õ õõ K KK ???    ^^^  PPP  T TT ° °° ~~~ì ìì   +++  :::$ $$ 4 44 Z ZZ YYY  1 11 R RR ggg  }}}s ss ]]]    !!!  zzz  ö öö qqqD DD vvv  ííí  mmmè èè   ---    ÜÜÜà àà t tt > >>   MMMã ãã õõõ0 00 222     KKK  @@@      ) ))     lll      TTTô ôô ßßß  °°°  %%%  ìììr rr     QQQ    777ï ïï $$$3 33 â ââ 444  xxx  ZZZ  ááá  I II ;;;  111O OO <<<  RRR£ ££ ///& &&   666ó óó sss  888    BBB  ò òò ddd      V VV J JJ ööö\ \\   DDD` `` (((    c cc 5 55   èèè• •• ppp      G GG     U UU ààà, ,, a aa ttt  {{{  >>>9 99 A AA . ..
+0x5C7AEC | n nn ãããå åå   000         hhh  P PP     : ::   ###  g gg ] ]] )))! !! ___  v vv m mm - -- |||Ü ÜÜ   """M MM 2 22 jjj@ @@   SSS  ôôôl ll ççç  ß ßß % %%   üüüQ QQ 7 77   rrrx xx á áá ; ;; FFF< << / // WWW6 66 8 88 [[[B BB d dd   ïïï  kkk  333( ((   âââ  NNNp pp         { {{ îîî
+0x5C7CB8 | III  h hh     OOO# ##   _ __ yyy  £££| || " "" &&&j jj äääS SS ç çç fff  óóóü üü     EEEF FF W WW bbb[ [[   k kk   N NN òòò  '''  î îî uuu        ***y yy VVV  iiiä ää JJJf ff ééé  \\\E EE XXXb bb     ```' '' HHHu uu   * ** i ii é éé cccX XX   555H HH       •••        XX X%%% aa axxx 66 6 °° °ççç  nnn       òò ò+++    äää    888 && &}}} ww w  fff      GGG    RRR  kkk  bbb    <<< '' '   GG GZZZ    EEE ii i  --- cc cóóó || |  ???   ^^ ^  ^^^   çç ç ?? ? 88 8 îî î   OO O  666  TTT -- -mmm ss s  òòò   åå å      ööö    """   MM M ëë ë   KK K VV V  777  :::  UUU mm m SS S   ÜÜ Üááá xx xzzz   ZZ ZDDD )) )vvv  ``` 00 0 ££ £âââ  ))) bb bSSS     FF F   áá áééé :: : __ _ [[ [***    ïïï  sss  ààà    NNN  ((( "" "  HHH ** * LL Lõõõ == =   ïï ïVVV  BBB  XXX .. .ããã 99 9>>>  YYY nn nLLL ++ +  PPP ,, ,  ddd 11 1 üü ü BB B  ååå yy y  ëëë   ]] ]CCC  hhh 22 2000 $$ $ õõ õqqq tt t PP P ßß ß   HH Huuu uu u éé éaaa pp p  ccc  333   QQ QOOO   JJ J  \\\ // /KKK   ññ ñ
+0x5C82F0 | RR R èè è@@@ (( ( àà à         DD Dggg        555 ee e&&&   ôô ô ìì ì222  ßßß    III jj j///   NN N'''  $$$ !! !   EE EAAA hh hÜÜÜ          [[[    üüü   óó ó II IWWW   íí ílll 33 3 ãã ãîîî   ââ â°°°  ###  MMM kk k    FFF      ||| 77 7    ooo  999 ff f___   WW W ~~ ~=== gg grrr      ììì {{ {~~~    èèè zz z   \\ \QQQ ll l,,, ## # UU U   CC C   }} } ää äjjj  www   AA A111 dd deee qq q;;;     YY Y...  ôôô       •• •yyy vv v444 %% %ííí ;; ;  ttt 55 5 TT T£££ >> >ñññ << <  iii rr r @@ @ppp 44 4    •••        JJJ    {{{   öö ö    !!! `` `]]] oo ousvwlD< /S!  dD8|D<tDDíDHõDöK#  KDL$õD4dD8|D<lD@tDDíDH    }
+0x5C86E6 | @   e }@m`u   ndDD 0  õD80!
+0x5C8717 | /   lD@DH&40tD0
+0x5C8736 | /   '$i o(w,S&S~$Sn(/Sv,/DD//
+0x5C8766 | õD8D<///'/$o(w,lD@°0õD8w0tD<0
+0x5C879C | lD@/   BõDHo(w,&~$n(v,ãD4~{}
+0x5C87CC | D<p0   K[õ(
+0x5C87E0 | #\/Si õD<'$dD@0   Y
+0x5C880B | %    &40dD0tDD[õD</   DHDL&~$n(/v,/DD//$
+0x5C884C | DLõD@///S'/S$So(Sw,0òpõD@õD8D<'$o(w,õDL°0õD8ü0D<DLõDH'$o(w,&~$n(v,
+0x5C88BC | DL'$o(w,n0D<D8
+0x5C88E0 | DL&~$n(v,'$o(/w,/DD//e
+0x5C890B | DHõD<///S'/S$So(Sw,&~$n(v,°0õD<õDL&~$n(v,'$o(w,õD8°0õD8lD@0ò.lD@/ñ
+0x5C8974 | D<õDL\/õ.0i ãD4~{}cáìåííèá@Üïò@£XV@à@\áññòï`ïñåîôôíNïòç^ usvwD4tD8õD<íD@SS /b!  '$(,6KlD8 !
+0x5C943B | /   ,/   t6tD<íD@D    "4,4#
+0x5C94C9 | (lD@+L(SN[õD<LQ°$,/ò
+0x5C94EE | [õD8õçíD@D    "4,4#
+0x5C9512 | 4R6°!,[õD8tU
+0x5C9528 | òOãD /,'"/4?,?4'"/47$!R6°!/,'[õD8tU
+0x5C9559 | òg~{}D    usvwD4íD8õD<5!ü(TNSï/B4òWD    $$!ôSS%    $"4N"!<#ï$<!ôX$'$!ôSSSi $/"4N"!<7#ï$7</!ô !
+0x5C9608 | Sgg~{}D    ãD     x;   5!/B4ô#,ãD òâTHT£LèîõI òâTHQ£LâéáòI rcT@Üïò@£XVL@cryptogams@à@\áññòï`ïñåîôôíNïòç^ D    D    D    D    D    D    D    D    q!Sq$SSSE$S= S- "  0S= !  0S- #  E
+0x5CA44F | S= &  S- '  ,DS% $  S5 %  a(Sq,SSSE$Sõ= S- "  0S= !  0S- #  E
+0x5CA4C0 | S= &  S- '  ,DS% $  S5 %  a0Sq4SSSE$S= S- "  0S= !  0S- #  E
+0x5CA531 | S= &  S- '  ,DS% $  S5 %  a8Sq<SSSE$Sõ= S- "  0S= !  0S- #  E
+0x5CA5A2 | S= &  S- '  ,DS% $  S5 %  a@SqDSSSE$S= S- "  0S= !  0S- #  E
+0x5CA613 | S= &  S- '  ,DS% $  S5 %  aHSqLSSSE$Sõ= S- "  0S= !  0S- #  E
+0x5CA684 | S= &  S- '  ,DS% $  S5 %  aPSqTSSSE$S= S- "  0S= !  0S- #  E
+0x5CA6F5 | S= &  S- '  ,DS% $  S5 %  aXSq\SSSE$Sõ= S- "  0S= !  0S- #  E
+0x5CA766 | S= &  S- '  ,DS% $  S5 %  a`SqdSSSE$S= S- "  0S= !  0S- #  E
+0x5CA7D7 | S= &  S- '  ,DS% $  S5 %  ahSqlSSSE$Sõ= S- "  0S= !  0S- #  E
+0x5CA848 | S= &  S- '  ,DS% $  S5 %  apSqtSSSE$S= S- "  0S= !  0S- #  E
+0x5CA8B9 | S= &  S- '  ,DS% $  S5 %  axSq|SSSE$Sõ= S- "  0S= !  0S- #  E
+0x5CA92A | S= &  S- '  ,DS% $  S5 %  aSqãSSSE$S= S- "  0S= !  0S- #  E
+0x5CA99B | S= &  S- '  ,DS% $  S5 %  aéSqíSSSE$Sõ= S- "  0S= !  0S- #  E
+0x5CAA0C | S= &  S- '  ,DS% $  S5 %  añSqõSSSE$S= S- "  0S= !  0S- #  E
+0x5CAA7D | S= &  S- '  ,DS% $  S5 %  a£SqSSSE$Sõ= S- "  0S= !  0S- #  E
+0x5CAAEE | S= &  S- '  ,DS% $  S5 %  $D    %    qa£SqSSSE$S= S- "  0S= !  0S- #  E
+0x5CAB70 | S= &  S- '  ,DS% $  S5 %  añSqõSSSE$Sõ= S- "  0S= !  0S- #  E
+0x5CABE1 | S= &  S- '  ,DS% $  S5 %  aéSqíSSSE$S= S- "  0S= !  0S- #  E
+0x5CAC52 | S= &  S- '  ,DS% $  S5 %  aSqãSSSE$Sõ= S- "  0S= !  0S- #  E
+0x5CACC3 | S= &  S- '  ,DS% $  S5 %  axSq|SSSE$S= S- "  0S= !  0S- #  E
+0x5CAD34 | S= &  S- '  ,DS% $  S5 %  apSqtSSSE$Sõ= S- "  0S= !  0S- #  E
+0x5CADA5 | S= &  S- '  ,DS% $  S5 %  ahSqlSSSE$S= S- "  0S= !  0S- #  E
+0x5CAE16 | S= &  S- '  ,DS% $  S5 %  a`SqdSSSE$Sõ= S- "  0S= !  0S- #  E
+
+# ===========================================================================
+# ENGLISH REFERENCE (all 767 indices):
+# ===========================================================================
+
+000 | Do you want to quit
+001 | playing Final Fantasy VII
+002 | and return to Windows?
+003 | Yes
+004 | No
+005 | Window color
+006 | Sound
+007 | Controller
+008 | Cursor
+009 | ATB
+010 | Battle speed
+011 | Battle message
+012 | Field message
+013 | Camera angle
+014 | Select
+015 | Cancel
+016 | Menu
+017 | Normal
+018 | Customize
+019 | Initial
+020 | Memory
+021 | Active
+022 | Recommended
+023 | Wait
+024 | Auto
+025 | Fixed
+026 | Slow
+027 | Fast
+028 | Magic order
+029 | restore
+030 | attack
+031 | indirect
+032 | No.
+033 | [C5][B8][B7]
+034 | [BA][C5][B8][B8][C1]
+035 | [B5][BF][C8][B8]
+036 | Set Sound & Music Volume
+037 | Not supported.
+038 | Item
+039 | Magic
+040 | Materia
+041 | Equip
+042 | Status
+043 | Order
+044 | Limit
+045 | Config
+046 | PHS
+047 | Save
+048 | Quit
+049 | Beginner
+050 | Time
+051 | Gil
+052 | next level
+053 | Limit level
+054 | Tutorial
+055 | LEVEL UP
+056 | Fury
+057 | Sadness
+058 | Press [CANCEL] to end.
+059 | Press [OK] to configure a key.
+060 | Now press the new key.
+061 | [OK]
+062 | [CANCEL]
+063 | [MENU]
+064 | [SWITCH]
+065 | [PAGEUP]
+066 | [PAGEDOWN]
+067 | [CAMERA]
+068 | [TARGET]
+069 | [ASSIST]
+070 | [START]
+071 | [UP]
+072 | [DOWN]
+073 | [LEFT]
+074 | [RIGHT]
+075 | KEYBOARD
+076 | JOYSTICK
+077 | ESCAPE
+078 | 1
+079 | 2
+080 | 3
+081 | 4
+082 | 5
+083 | 6
+084 | 7
+085 | 8
+086 | 9
+087 | 0
+088 | MINUS
+089 | EQUALS
+090 | BACK SPACE
+091 | TAB
+092 | Q
+093 | W
+094 | E
+095 | R
+096 | T
+097 | Y
+098 | U
+099 | I
+100 | O
+101 | P
+102 | LEFT BRACKET
+103 | RIGHT BRACKET
+104 | RETURN
+105 | LEFT CONTROL
+106 | A
+107 | S
+108 | D
+109 | F
+110 | G
+111 | H
+112 | J
+113 | K
+114 | L
+115 | SEMICOLON
+116 | APOSTROPHE
+117 | GRAVE
+118 | LEFT SHIFT
+119 | BACK SLASH
+120 | Z
+121 | X
+122 | C
+123 | V
+124 | B
+125 | N
+126 | M
+127 | COMMA
+128 | PERIOD
+129 | SLASH
+130 | RIGHT SHIFT
+131 | MULTIPLY
+132 | LEFT ALT
+133 | SPACE
+134 | CAPS LOCK
+135 | F1
+136 | F2
+137 | F3
+138 | F4
+139 | F5
+140 | F6
+141 | F7
+142 | F8
+143 | F9
+144 | F10
+145 | NUMLOCK
+146 | SCROLL
+147 | NUMPAD7
+148 | NUMPAD8
+149 | NUMPAD9
+150 | SUBTRACT
+151 | NUMPAD4
+152 | NUMPAD5
+153 | NUMPAD6
+154 | ADD
+155 | NUMPAD1
+156 | NUMPAD2
+157 | NUMPAD3
+158 | NUMPAD0
+159 | DECIMAL
+160 | F11
+161 | F12
+162 | F13
+163 | F14
+164 | F15
+165 | KANA
+166 | CONVERT
+167 | NOCONVERT
+168 | YEN
+169 | NUMPADEQUALS
+170 | CIRCUMFLEX
+171 | AT
+172 | COLON
+173 | UNDERLINE
+174 | KANJI
+175 | STOP
+176 | AX
+177 | UNLABELED
+178 | NUMPADENTER
+179 | RIGHT CONTROL
+180 | NUMPADCOMMA
+181 | DIVIDE
+182 | SYSRQ
+183 | RIGHT ALT
+184 | HOME
+185 | UP
+186 | PAGE UP
+187 | LEFT
+188 | RIGHT
+189 | END
+190 | DOWN
+191 | PAGE DOWN
+192 | INSERT
+193 | DELETE
+194 | LEFT WIN
+195 | RIGHT WIN
+196 | APPS
+197 | MOUSE_B1
+198 | MOUSE_B2
+199 | MOUSE_B3
+200 | UP
+201 | DOWN
+202 | LEFT
+203 | RIGHT
+204 | BUTTON 1
+205 | BUTTON 2
+206 | BUTTON 3
+207 | BUTTON 4
+208 | BUTTON 5
+209 | BUTTON 6
+210 | BUTTON 7
+211 | BUTTON 8
+212 | button@Y
+213 | button@QP
+214 | Pause
+215 | Sleep
+216 | Poison
+217 | Sadness
+218 | Fury
+219 | Confusion
+220 | Silence
+221 | Haste
+222 | Slow
+223 | Stop
+224 | Petrify
+225 | Regen
+226 | Reflect
+227 | Shield
+228 | Berserk
+229 | Peerless
+230 | Paralyze
+231 | Darkness
+232 | How much will you raise?
+233 | Gil
+234 | After
+235 | Gil on hand
+236 | Keep goin'?
+237 | Of course!     No way!
+238 | Current Battle Points
+239 | Slot start!
+240 | GREAT!!
+241 | Then, go for it!
+242 | Magic Materia is broken.
+243 | Summon Materia is broken.
+244 | Support Materia is broken.
+245 | Independent Materia is broken.
+246 | Command Materia is broken.
+247 | All Materia is broken.
+248 | Accessory is broken.
+249 | Item command is sealed.
+250 | Armor is broken.
+251 | Weapon is broken.
+252 | 1/2 speed.
+253 | 1/2 accuracy.
+254 | Minimum
+255 | Poison
+256 | Toad
+257 | Time x30 damage.
+258 | Down 5 levels.
+259 | Down 10 levels.
+260 | 1/2 HP.
+261 | 1/2 MP.
+262 | 1/2 HP&MP.
+263 | Zero MP.
+264 | Yesss! No handicapp!
+265 | HP restored.
+266 | Worried about the other members?
+267 | Yeah, a little
+268 | Not really
+269 | Save
+270 | Reform
+271 | Split your allies into two groups.
+272 | Split your allies into three groups.
+273 | Please make a party of two.
+274 | Please make a party of three.
+275 | Select with START button.
+276 | Wpn.
+277 | Arm.
+278 | Acc.
+279 | LEVEL 1
+280 | LEVEL 2
+281 | LEVEL 3
+282 | LEVEL 4
+283 | Set BREAK LEVEL.
+284 | Set
+285 | Check
+286 | To change BREAK LEVEL,
+287 | it will begin from Limit Point 0.
+288 | Change BREAK LEVEL?
+289 | Yes
+290 | No
+291 | Limit set!
+292 | Select LEVEL.
+293 | Fire
+294 | Ice
+295 | Lightning
+296 | Earth
+297 | Poison
+298 | Gravity
+299 | Water
+300 | Wind
+301 | Holy
+302 | Death
+303 | Near-death
+304 | Sleep
+305 | Poison
+306 | Sadness
+307 | Fury
+308 | Confusion
+309 | Silence
+310 | Haste
+311 | Slow
+312 | Stop
+313 | Frog
+314 | Small
+315 | Slow-numb
+316 | Petrify
+317 | Regen
+318 | Barrier
+319 | MBarrier
+320 | Reflect
+321 | Shield
+322 | Death-sentence
+323 | Manipulate
+324 | Berserk
+325 | Peerless
+326 | Paralyzed
+327 | Darkness
+328 | Element
+329 | Effect
+330 | Attack
+331 | Defend
+332 | Halve
+333 | Invalid
+334 | Absorb
+335 | Strength
+336 | Dexterity
+337 | Vitality
+338 | Magic
+339 | Spirit
+340 | Luck
+341 | Attack
+342 | Attack%
+343 | Defense
+344 | Defense%
+345 | Magic atk
+346 | Magic def
+347 | Magic def%
+348 | Wpn:
+349 | Arm:
+350 | Acc:
+351 | Limit level:
+352 | Wpn.
+353 | Arm.
+354 | Acc.
+355 | Attack
+356 | Attack %
+357 | Defense
+358 | Defense %
+359 | Magic atk
+360 | Magic def
+361 | Magic def%
+362 | Slot
+363 | Growth
+364 | Nothing
+365 | Normal
+366 | Double
+367 | Triple
+368 | Do you really want to remove this?
+369 | I sure do!
+370 | Wait a sec
+371 | Sephiroth[B2][A9][A9][B3]
+372 | Wpn.
+373 | Arm.
+374 | Ability list
+375 | Equip effect
+376 | Check
+377 | Arrange
+378 | AP
+379 | To next level
+380 | MASTER
+381 | Arrange
+382 | Exchange
+383 | Remove all
+384 | Trash
+385 | Dexterity
+386 | Cover
+387 | Magic
+388 | Luck
+389 | MASTER
+390 | Strength
+391 | Vitality
+392 | Magic
+393 | Magic def
+394 | Dexterity
+395 | Luck
+396 | MaxHP
+397 | MaxMP
+398 | MaxHPUP
+399 | MaxMPUP
+400 | EXP.UP
+401 | Gil UP
+402 | Encount Down
+403 | Encount Up
+404 | Meet Chocobos
+405 | Pre-emptive
+406 | Long range attack
+407 | Attack all
+408 | Counter attack
+409 | Magic
+410 | Summon
+411 | Enemy-Skill
+412 | Added-Ability
+413 | All
+414 | 4x-M
+415 | Absorb MP
+416 | Absorb HP
+417 | Steal as well
+418 | Extra cut
+419 | Turbo MP
+420 | Nothing.
+421 | Not enough MP.
+422 | Use
+423 | Arrange
+424 | Key Items
+425 | Customize
+426 | Field
+427 | Battle
+428 | Throw
+429 | Type
+430 | Name
+431 | Most
+432 | Least
+433 | OK! Got it!
+434 | I'm not sure but[A9]
+435 | Don't really care.
+436 | Heh! No sweat!
+437 | D-d-d-damn! My head hurts!
+438 | Got nuthin' to do with me!
+439 | Hmm, so that's it.
+440 | I'm not too sure but[A9]
+441 | I've got the wrong person.
+442 | This should be okay.
+443 | Not quite ready yet.
+444 | It isn't me.
+445 | Right, I've got it!
+446 | I don't get it.
+447 | It has nothing to do with me.
+448 | Cool! This should do it!
+449 | Nope! I don't get it!
+450 | Oh wow, I'm totally clueless!
+451 | I'm getting less human[A9]
+452 | I'm still not ready.
+453 | It has nothing to do with me.
+454 | Hey I like this! Lemme use it!
+455 | Hmph. Don't quite get it but[A9]
+456 | Not me! Give it to someone else!
+457 | It's got nothing to do with me.
+458 | Cloud
+459 | Barret
+460 | Tifa
+461 | Aeris
+462 | Red XIII
+463 | Yuffie
+464 | 䄣呉㌀呉ｈ
+465 | 䤶䍎久ｔ
+466 | 䤣ｄ
+467 | 䠣䍏ｏ
+468 | 倳䍁ｅ
+469 | 䔤䕌䕔ÿ
+470 | 䔳䕌呃ÿ
+471 | 䔤䅆䱕ｔ
+472 | 䄣䍎䱅ÿ
+473 | [UNICODE:21]
+474 | [UNICODE:22]
+475 | [UNICODE:23]
+476 | [UNICODE:24]
+477 | [UNICODE:25]
+478 | [UNICODE:26]
+479 | [UNICODE:27]
+480 | [UNICODE:28]
+481 | [UNICODE:29]
+482 | [UNICODE:2a]
+483 | [UNICODE:2b]
+484 | [UNICODE:2c]
+485 | [UNICODE:2d]
+486 | [UNICODE:2e]
+487 | [UNICODE:2f]
+488 | [UNICODE:30]
+489 | [UNICODE:31]
+490 | [UNICODE:32]
+491 | [UNICODE:33]
+492 | [UNICODE:34]
+493 | [UNICODE:35]
+494 | [UNICODE:36]
+495 | [UNICODE:37]
+496 | [UNICODE:38]
+497 | [UNICODE:39]
+498 | [UNICODE:3a]
+499 | [UNICODE:0c]
+500 | [UNICODE:0e]
+501 | [UNICODE:0b]
+502 | [UNICODE:0d]
+503 | [UNICODE:41]
+504 | [UNICODE:42]
+505 | [UNICODE:43]
+506 | [UNICODE:44]
+507 | [UNICODE:45]
+508 | [UNICODE:46]
+509 | [UNICODE:47]
+510 | [UNICODE:48]
+511 | [UNICODE:49]
+512 | [UNICODE:4a]
+513 | [UNICODE:4b]
+514 | [UNICODE:4c]
+515 | [UNICODE:4d]
+516 | [UNICODE:4e]
+517 | [UNICODE:4f]
+518 | [UNICODE:50]
+519 | [UNICODE:51]
+520 | [UNICODE:52]
+521 | [UNICODE:53]
+522 | [UNICODE:54]
+523 | [UNICODE:55]
+524 | [UNICODE:56]
+525 | [UNICODE:57]
+526 | [UNICODE:58]
+527 | [UNICODE:59]
+528 | [UNICODE:5a]
+529 | [UNICODE:1a]
+530 | [UNICODE:1b]
+531 | [UNICODE:10]
+532 | 1
+533 | 2
+534 | 3
+535 | 4
+536 | 5
+537 | 6
+538 | 7
+539 | 8
+540 | 9
+541 | Ability list
+542 | Equip effect
+543 | AP
+544 | To next level
+545 | MASTER
+546 | Dexterity
+547 | Cover
+548 | Magic
+549 | Luck
+550 | MASTER
+551 | Strength
+552 | Vitality
+553 | Magic
+554 | Magic def
+555 | Dexterity
+556 | Luck
+557 | MaxHP
+558 | MaxMP
+559 | MaxHPUP
+560 | MaxMPUP
+561 | EXP.UP
+562 | Gil UP
+563 | Encount Down
+564 | Encount Up
+565 | Meet Chocobos
+566 | Pre-emptive
+567 | Long range attack
+568 | Attack all
+569 | Counter attack
+570 | A
+571 | D
+572 | Buy   Sell     Exit
+573 | Gil
+574 | Owned
+575 | Equipped
+576 | Total
+577 | How many
+578 | Item      Materia
+579 | Gil remaining
+580 | Price for Master
+581 | Price through AP
+582 | Nothing
+583 | Normal
+584 | Double
+585 | Triple
+586 | Weapon Shop
+587 | Item Shop
+588 | Materia Shop
+589 | General Store
+590 | Vegetable Store
+591 | Accessory Shop
+592 | Tool Shop
+593 | Hotel Shop
+594 | Welcome!
+595 | What would you like to buy?
+596 | How many would you like?!
+597 | What would you like to sell?!
+598 | How many would you like to sell?!
+599 | Load
+600 | Select a save data file.
+601 | Select a save game.
+602 | Loading. Please wait.
+603 | Saving. Please wait.
+604 | EMPTY
+605 | GAME
+606 | Continue?
+607 | Checking Save Data File.
+608 | 01
+609 | 02
+610 | 03
+611 | 04
+612 | 05
+613 | 06
+614 | 07
+615 | 08
+616 | 09
+617 | 10
+618 | 11
+619 | 12
+620 | 13
+621 | 14
+622 | 15
+623 | Saved.
+624 | Could not save.
+625 | Could not load.
+626 | Data is ruined.
+627 | NEW GAME
+628 | Are you sure you want to save?
+629 | Yes
+630 | No
+631 | Completed.
+632 | Formatted.
+633 | Could not format.
+634 | Not formatted.
+635 | Want to format it now?
+636 | No save data file.
+637 | No save data file.
+638 | This Memory card is damaged and cannot be used.
+639 | Please insert another Memory card.
+640 | Not enough space left on save data file.
+641 | Use another save data file,
+642 | or erase 1 block of saved data.
+643 | Couldn't read it.
+644 | Still want to begin the game?
+645 | Can not allocate save file memory buffer!
+646 | Invalid save file!
+647 | Save 1
+648 | Save 2
+649 | 3AVE [13]
+650 | 3AVE [14]
+651 | 3AVE [15]
+652 | 3AVE [16]
+653 | 3AVE [17]
+654 | 3AVE [18]
+655 | 3AVE [19]
+656 | 3AVE [11][10]
+657 | ,EVEL
+658 | 00'00"000
+659 | --'--"---
+660 | COURSE A RECORD
+661 | 00'00"000
+662 | --'--"---
+663 | BEST
+664 | CONTINUE
+665 | RETRY
+666 | EXIT
+667 | OPTION
+668 | CONTINUE
+669 | RETRY
+670 | EXIT
+671 | GHOST
+672 | SURFACE
+673 | OFF
+674 | BOARD
+675 | SLEIGH
+676 | ? ? ?
+677 | SNOW
+678 | CHECKED
+679 | TRY AGAIN
+680 | EXIT
+681 | TECHNIQUE
+682 | TIME
+683 | BALLOON
+684 | TOTAL
+685 | BEST
+686 | /30 PTS.
+687 | OSP@ptsN
+688 | OTP@ptsN
+689 | OC@ptsN
+690 | OC@ptsN
+691 | QstN
+692 | RndN
+693 | SrdN
+694 | TthN
+695 | UthN
+696 | TEIOH
+697 | Sprint Shoes
+698 | Counter
+699 | Magic Counter
+700 | Precious Watch
+701 | Ether
+702 | Hero Drink
+703 | Bolt Plume
+704 | Elixir
+705 | Fire Fang
+706 | Antarctic Wind
+707 | Potion
+708 | Phoenix Down
+709 | Hyper
+710 | Tranquilizer
+711 | Cat's Bell
+712 | Enemy
+713 | Sneak
+714 | Chocobracelet[FF][FF][FF]
+715 | Swift
+716 | Fire
+717 | Megalixir[FF][FF][FF][FF][FF][FF][FF]
+718 | Turbo
+719 | Hi-Potion[FF][FF][FF][FF][FF][FF][FF]
+720 | Ice
+721 | SAM
+722 | ELEN
+723 | BLUES
+724 | TOM
+725 | JOHN
+726 | GARY
+727 | MIKE
+728 | SANDY
+729 | JU
+730 | LY
+731 | JOEL
+732 | GREY
+733 | EDWARD
+734 | JAMES
+735 | HARVEY
+736 | DAN
+737 | RUDY
+738 | GRAHAM
+739 | FOX
+740 | CLIVE
+741 | SEAN
+742 | YOUNG
+743 | ROBIN
+744 | DARIO
+745 | K
+746 | ARL
+747 | SARA
+748 | MARIE
+749 | SAMMY
+750 | LIA
+751 | KNIGHT
+752 | PAULA
+753 | PAU
+754 | LE
+755 | PETER
+756 | AIMEE
+757 | TERRY
+758 | ANDY
+759 | NANCY
+760 | TIM
+761 | ROBER
+762 | T
+763 | GEORGE
+764 | JENNY
+765 | RICA
+766 | JULIA

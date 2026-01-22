@@ -1,0 +1,17 @@
+Based on the corrupted nature of the German string data provided, I cannot reliably extract readable German menu text to map against the English indices. The German strings appear to be:
+
+1. Encoded in an unknown format or codec
+2. Corrupted during extraction
+3. Using multi-byte encoding that wasn't properly decoded
+
+To complete this mapping accurately, I would need:
+- Properly decoded German strings with readable text
+- Confirmation of the encoding scheme used (UTF-8, Shift-JIS, custom encoding, etc.)
+- Raw hex data that can be properly interpreted
+
+The English reference data is clear and well-structured (e.g., indices 38-48 show menu items: Item, Magic, Materia, Equip, Status, Order, Limit, Config, PHS, Save, Quit), but without readable German equivalents, I cannot create a reliable CSV mapping.
+
+Would you like me to:
+1. Re-examine the German extraction with different encoding assumptions?
+2. Wait for properly decoded German string data?
+3. Create a template CSV with the known English menu indices, leaving German columns empty pending proper data?

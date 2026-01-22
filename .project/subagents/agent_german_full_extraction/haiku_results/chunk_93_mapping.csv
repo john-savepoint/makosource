@@ -1,0 +1,16 @@
+The German data provided is **mostly assembly instructions and memory addressing operations, not menu strings**. The characters like `D$`, `|D`, `lD`, `dD`, `LD`, `TD`, etc. are x86 assembly opcodes and operands, not actual text strings.
+
+This data does not contain recognizable German menu text that can be meaningfully mapped to English touphScript indices. The only readable elements are stray umlauts (ö, ä, Ö, Ü) and single characters that appear to be assembly artifacts.
+
+**The actual German menu strings are not present in Chunk 93 (offset range 0x5D9E43 to 0x5DA377).** This chunk contains compiled machine code rather than string data.
+
+**CSV Output (empty - no valid mappings found):**
+
+```csv
+index,de_offset,de_text,en_text
+```
+
+**Recommendation:** To obtain valid German menu strings, you need to:
+1. Verify the correct offset range for German menu strings in ff7_de.exe
+2. Use proper string extraction tools (like strings utility or hex editors with string scanning)
+3. Ensure the extracted data contains actual UTF-8/ASCII text, not binary code

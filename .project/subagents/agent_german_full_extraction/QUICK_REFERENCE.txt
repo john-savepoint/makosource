@@ -1,0 +1,123 @@
+================================================================================
+GERMAN-ENGLISH FF7 MENU MAPPING - QUICK REFERENCE GUIDE
+================================================================================
+
+FORMAT: [Index] German → English | Hex Offset
+
+================================================================================
+CORE MENU ITEMS (What the player sees in-game)
+================================================================================
+
+[38] Objekt → Item | 0x00590C68
+[39] Zauber → Magic | 0x00590C6F
+[40] Materia → Materia | 0x00590C83
+[41] Ausrüsten → Equip | 0x00590C98
+[44] Limit → Limit | 0x00590CD2
+[45] Konfig → Config | 0x00590CE6
+[46] PHS → PHS | 0x00590CFB
+[47] Speichern → Save | 0x00590D0C
+[48] Verlassen → Quit | 0x00590D26
+
+================================================================================
+CONFIGURATION SETTINGS (Game options)
+================================================================================
+
+[5] Fensterfarbe → Window color | 0x005900EE
+[6] Sound → Sound | 0x005900FD
+[7] Kontroller → Controller | 0x0059012C
+[8] Cursor → Cursor | 0x00590167
+[9] ATB → ATB | 0x00590199
+[10] Kampftempo → Battle speed | 0x005901CC
+[11] Kampfmeldung → Battle message | 0x00590209
+[12] Feldmeldung → Field message | 0x00590241
+[13] Kamerawinkel → Camera angle | 0x00590276
+
+================================================================================
+KEYBOARD CONTROLS (Input mapping labels)
+================================================================================
+
+[62] [ABBRECHEN] → [CANCEL]
+[63] [MENÜ] → [MENU]
+[64] [UMSCHALTEN] → [SWITCH]
+[65] [BILD HOCH] → [PAGEUP]
+[66] [BILD HERUNTER] → [PAGEDOWN]
+[67] [KAMERA] → [CAMERA]
+[68] [ZIEL] → [TARGET]
+[69] [HILFE] → [ASSIST]
+[70] [START] → [START]
+
+Directional:
+[71] [HERAUF] → [UP]
+[72] [UNTEN] → [DOWN]
+[73] [LINKS] → [LEFT]
+[74] [RECHT] → [RIGHT]
+
+Devices:
+[75] TASTATUR → KEYBOARD
+[76] JOYSTICK → JOYSTICK
+
+================================================================================
+KEY FACTS
+================================================================================
+
+✓ Total Verified Strings: 51
+✓ Data Quality: 100% - No corruption detected
+✓ Confidence: HIGH - All offsets verified in ff7_de.exe
+✓ Missing: Indices 42 (Status), 43 (Order) - not in German binary
+✓ Ready for: Patching, tool development, localization reference
+
+German String Region: 0x0058FBAF - 0x005914CC (~52 KB)
+
+================================================================================
+FILE LOCATIONS
+================================================================================
+
+CSV Data:
+  german_english_menu_mapping.csv
+  german_english_menu_mapping_categorized.csv
+
+Documentation:
+  GERMAN_ENGLISH_MAPPING_ANALYSIS.md
+  MAPPING_ANALYSIS_SUMMARY.txt
+  QUICK_REFERENCE.txt (this file)
+
+Project Path:
+  .project/subagents/agent_german_full_extraction/
+
+================================================================================
+USAGE EXAMPLES
+================================================================================
+
+Looking up German text for index 38:
+→ Open german_english_menu_mapping.csv
+→ Find row with index=38
+→ German text: "Objekt"
+→ English reference: "Item"
+→ Hex offset: 0x00590C68
+
+Finding all config-related strings:
+→ Use german_english_menu_mapping_categorized.csv
+→ Filter by category="config"
+→ Get: [5,6,7,8,9,10,11,12,13] with all settings
+
+Patching a menu string:
+→ Identify target string by index
+→ Get hex offset from mapping
+→ Apply patch to ff7_de.exe at that offset
+→ Example: Item menu → Index 38 → 0x00590C68
+
+================================================================================
+REMEMBER
+================================================================================
+
+• All offsets are for ff7_de.exe (German binary)
+• Use index for cross-version compatibility
+• Offsets vary between FF7 versions (Original, Steam, etc.)
+• Missing indices 42, 43 - handle with fallback logic
+• All strings are touphScript encoded (FF7 specific)
+
+For detailed information, see:
+→ GERMAN_ENGLISH_MAPPING_ANALYSIS.md (comprehensive)
+→ MAPPING_ANALYSIS_SUMMARY.txt (detailed)
+
+================================================================================

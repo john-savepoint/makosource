@@ -1,0 +1,10 @@
+I need to clarify: The hex data provided appears to be assembly code fragments, not decoded German text strings. To properly map German menu strings to English touphScript indices, I need:
+
+1. **The actual German menu text** (decoded from the hex offsets in ff7_de.exe)
+2. **Confirmation of which offsets contain actual menu strings** (not assembly instructions)
+
+Can you provide either:
+- A list of German menu strings with their offsets (already decoded)?
+- Or the actual text content at those hex offsets from ff7_de.exe?
+
+Without the actual readable German text, I cannot reliably match them to English touphScript indices like "Item" (038), "Magic" (039), "Equip" (041), etc.

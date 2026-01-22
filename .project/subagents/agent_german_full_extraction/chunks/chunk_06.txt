@@ -1,0 +1,203 @@
+# Chunk 6: Strings 1200 to 1399
+# Offset range: 0x58EC71 to 0x58FDEC
+
+0x58EC71 | "  
+0x58EC75 |    0       1       0   
+0x58EC8D | !  0   @
+0x58ECAC | (   
+0x58ECB1 | "  (   0       0       0   
+0x58ECD0 | 0   p!      H       I   p!  
+0x58ED0D | !  
+0x58ED29 | !  (   
+0x58ED34 | (   
+0x58ED51 |    p!      H       I   
+0x58ED71 | "  
+0x58ED75 |    0       1       0   
+0x58ED8D | !  0   @
+0x58EDAC | (   
+0x58EDB1 | "  (   0       0       0   
+0x58EDD0 | 0   p!      H       I   p!  
+0x58EE0D | !  
+0x58EE29 | !  (   
+0x58EE34 | (   
+0x58EE51 |    p!      H       I   
+0x58EE71 | "  
+0x58EE75 |    0       1       0   
+0x58EE8D | !  0   @
+0x58EEA9 | !  (   
+0x58EEB4 | (   
+0x58EED1 |    p!      H       I   
+0x58EEF1 | "  
+0x58EEF5 |    0       1       0   
+0x58EF0D | !  0   @
+0x58EF2C | (   
+0x58EF31 | "  (   0       0       0   
+0x58EF50 | 0   p!      H       I   p!  
+0x58EF8D | !  
+0x58EFA9 | !  (   
+0x58EFB4 | (   
+0x58EFD1 |    p!      H       I   
+0x58EFF1 | "  
+0x58EFF5 |    0       1       0   
+0x58F00D | !  0   @
+0x58F02C | (   
+0x58F031 | "  (   0       0       0   
+0x58F050 | 0   p!      H       I   p!  
+0x58F08D | !  
+0x58F0A9 | !  (   
+0x58F0B4 | (   
+0x58F0D1 |    p!      H       I   
+0x58F0F1 | "  
+0x58F0F5 |    0       1       0   
+0x58F10D | !  0   @
+0x58F12C | (   
+0x58F131 | "  (   0       0       0   
+0x58F150 | 0   p!      H       I   p!  
+0x58F18D | !  
+0x58F1A9 | !  (   
+0x58F1B4 | (   
+0x58F1D1 |    p!      H       I   
+0x58F1F1 | "  
+0x58F1F5 |    0       1       0   
+0x58F20D | !  0   @
+0x58F22C | (   
+0x58F231 | "  (   0       0       0   
+0x58F250 | 0   p!      H       I   p!  
+0x58F28D | !  
+0x58F2A9 | !  (   
+0x58F2B4 | (   
+0x58F2D1 |    p!      H       I   
+0x58F2F1 | "  
+0x58F2F5 |    0       1       0   
+0x58F30D | !  0   @
+0x58F32C | (   
+0x58F331 | "  (   0       0       0   
+0x58F350 | 0   p!      H       I   
+0x58F36C | \   
+0x58F371 | "  \   0       0       0   
+0x58F390 | 0   p!      p       q   
+0x58F3A9 | !  (   
+0x58F3B4 | (   
+0x58F3D1 |    p!      H       I   
+0x58F3F1 | "  
+0x58F3F5 |    0       1       0   
+0x58F40D | !  0   @
+0x58F42C | (   
+0x58F431 | "  (   0       0       0   
+0x58F450 | 0   p!      H       I   p!  
+0x58F48D | !  
+0x58F4A9 | !  (   
+0x58F4B4 | (   
+0x58F4D1 |    p!      H       I   
+0x58F4F1 | "  
+0x58F4F5 |    0       1       0   
+0x58F50D | !  0   @
+0x58F52C | (   
+0x58F531 | "  (   0       0       0   
+0x58F550 | 0   p!      H       I   p!  
+0x58F58D | !  
+0x58F5A9 | !  (   
+0x58F5B4 | (   
+0x58F5D1 |    p!      H       I   
+0x58F5F1 | "  
+0x58F5F5 |    0       1       0   
+0x58F60D | !  0   @
+0x58F625 |    !   !   "   "           #   #         
+0x58F64F | ^  `_   _       ^  
+0x58F663 | ^  
+0x58F667 | ^   _  @_  
+0x58F673 | _  `_
+0x58F67C |     $       $       
+0x58F694 |     $       
+0x58F6AC |     $           $       
+0x58F6C8 |     $       
+0x58F6E0 |     $       
+0x58F6F0 |     $   "   $   start@of@creditsAAA*    end@of@creditsAAA*      >   :   ;   <   9   8   =   ;   +   1   <   6   @   ;   @   <   @   ;   :   :   <   =   @   >   =   <   0   5   *   *   *   >   .   /   *   3   4   2   6   @   >   >   @   @   9   9   :   @   
+0x58F807 |  0
+0x58F80B |  @
+0x58F80F |  P
+0x58F813 |  `
+0x58F817 |  p
+0x58F81B |  |
+0x58F853 |  $ 
+0x58F857 |  0 
+0x58F85B |  < 
+0x58F85F |  H 
+0x58F863 |      T 
+0x58F86B |  ` 
+0x58F86F |  l 
+0x58F873 |  x 
+0x58F954 | QÜ
+0x58F960 | QÜ
+0x58F96C | RÜ
+0x58F978 | RÜ
+0x58F984 | SÜ
+0x58F990 | SÜ
+0x58F99C | TÜ
+0x58F9A8 | TÜ
+0x58F9B4 | UÜ
+0x58F9C0 | UÜ
+0x58F9CC | VÜ
+0x58F9D8 | VÜ
+0x58F9E4 | WÜ
+0x58F9F0 | WÜ
+0x58F9FC | XÜ
+0x58FA08 | XÜ
+0x58FA16 | QN
+0x58FA22 | RN
+0x58FA38 | QN
+0x58FA44 | RN
+0x58FA50 | SN
+0x58FA5C | TN
+0x58FA68 | UN
+0x58FA74 | VN
+0x58FA80 | WN
+0x58FA8C | XN
+0x58FAC9 | ÜQN
+0x58FAFE | SN
+0x58FB10 |     cZ|ffW|
+0x58FB1E | |c
+0x58FB3E |   cZ|ffW|
+0x58FB4A | |c
+0x58FB5F |  E
+0x58FB64 |         !   "   #   $   %   &   '   (   &   '               
+0x58FBA7 |  W f 
+0x58FBAF |  Möchten Sie Final 
+0x58FBC3 |            Fantasy VII verlassen und
+0x58FBE8 |     Öu Windows Öurückkehren?
+0x58FC05 |            Ja
+0x58FC13 |   Nein
+0x58FC1A |         @c  ^c              `
+0x58FC38 |       `
+0x58FC40 |   `a      `a  `a               
+0x58FC60 |       0
+0x58FC68 |   @a      0a  @a          
+0x58FC83 | _  
+0x58FC87 | `      
+0x58FC93 | `      
+0x58FC9B | _  0a          
+0x58FCAF | `      
+0x58FCB8 |   0a      
+0x58FCC3 | _  0a          `
+0x58FCD8 |       `
+0x58FCE3 | _      
+0x58FCF0 |           `
+0x58FCFF | _      
+0x58FD0B | _      
+0x58FD24 |   `
+0x58FD28 |       `
+0x58FD34 |        `  `
+0x58FD40 |           `
+0x58FD50 |       ``  
+0x58FD5C |        `  `
+0x58FD73 | _  
+0x58FD7F | _  
+0x58FD83 | _      ``  
+0x58FD9B | _  
+0x58FD9F | _      ``  
+0x58FDAB | _      ``  
+0x58FDC3 | _  
+0x58FDC7 | _      
+0x58FDD0 |   ``      ``  
+0x58FDDF | _          
+0x58FDEC |   ``      

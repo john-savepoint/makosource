@@ -1,0 +1,7 @@
+**Analysis Result:**
+
+The German strings in chunk 86 (0x5D7901-0x5D7E36) are **not menu text** — they're **compiled x86-64 assembly code**. When forced into ASCII interpretation, CPU instructions appear as gibberish ("lD8(", "dD,", "$rÖ").
+
+The actual German FF7 menu strings are at **0x00590C68-0x00590D26** and contain readable German text like "Objekt", "Zauber", "Speichern".
+
+**Cannot generate mapping** — the provided chunk 86 does not contain decodable menu strings. You need to extract the actual German menu strings from the correct offset range (0x00590C68+) to create an accurate CSV mapping to the English touphScript indices.

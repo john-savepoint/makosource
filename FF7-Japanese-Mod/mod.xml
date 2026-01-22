@@ -13,4 +13,5 @@
   <!-- Always active folders -->
   <ModFolder Folder="mods" />
   <ModFolder Folder="lang-ja" />
+  <ModFolder Folder="lang-en" />
 </ModInfo>

@@ -1,0 +1,780 @@
+{
+  "delta_data": [
+    {
+      "index": 0,
+      "en_offset": 5342064,
+      "de_offset": 5831600,
+      "delta": 489536,
+      "en_text": "Do you want to quit",
+      "de_text": "M\u00f6chten Sie Final"
+    },
+    {
+      "index": 4,
+      "en_offset": 5342164,
+      "de_offset": 5831701,
+      "delta": 489537,
+      "en_text": "No",
+      "de_text": "Nein"
+    },
+    {
+      "index": 4,
+      "en_offset": 5342164,
+      "de_offset": 5853319,
+      "delta": 511155,
+      "en_text": "No",
+      "de_text": "Nein"
+    },
+    {
+      "index": 4,
+      "en_offset": 5342164,
+      "de_offset": 5856040,
+      "delta": 513876,
+      "en_text": "No",
+      "de_text": "Nein"
+    },
+    {
+      "index": 4,
+      "en_offset": 5342164,
+      "de_offset": 5864584,
+      "delta": 522420,
+      "en_text": "No",
+      "de_text": "Nein"
+    },
+    {
+      "index": 4,
+      "en_offset": 5342164,
+      "de_offset": 5884376,
+      "delta": 542212,
+      "en_text": "No",
+      "de_text": "Nein"
+    },
+    {
+      "index": 5,
+      "en_offset": 5343400,
+      "de_offset": 5832944,
+      "delta": 489544,
+      "en_text": "Window color",
+      "de_text": "Fensterfarbe"
+    },
+    {
+      "index": 6,
+      "en_offset": 5343448,
+      "de_offset": 5832998,
+      "delta": 489550,
+      "en_text": "Sound",
+      "de_text": "Sound"
+    },
+    {
+      "index": 7,
+      "en_offset": 5343496,
+      "de_offset": 5833052,
+      "delta": 489556,
+      "en_text": "Controller",
+      "de_text": "Kontroller"
+    },
+    {
+      "index": 8,
+      "en_offset": 5343544,
+      "de_offset": 5833106,
+      "delta": 489562,
+      "en_text": "Cursor",
+      "de_text": "Cursor"
+    },
+    {
+      "index": 9,
+      "en_offset": 5343592,
+      "de_offset": 5833160,
+      "delta": 489568,
+      "en_text": "ATB",
+      "de_text": "ATB"
+    },
+    {
+      "index": 10,
+      "en_offset": 5343640,
+      "de_offset": 5833214,
+      "delta": 489574,
+      "en_text": "Battle speed",
+      "de_text": "Kampftempo"
+    },
+    {
+      "index": 11,
+      "en_offset": 5343688,
+      "de_offset": 5833268,
+      "delta": 489580,
+      "en_text": "Battle message",
+      "de_text": "Kampfmeldung"
+    },
+    {
+      "index": 12,
+      "en_offset": 5343736,
+      "de_offset": 5833322,
+      "delta": 489586,
+      "en_text": "Field message",
+      "de_text": "Feldmeldung"
+    },
+    {
+      "index": 13,
+      "en_offset": 5343784,
+      "de_offset": 5833376,
+      "delta": 489592,
+      "en_text": "Camera angle",
+      "de_text": "Kamerawinkel"
+    },
+    {
+      "index": 14,
+      "en_offset": 5343832,
+      "de_offset": 5833430,
+      "delta": 489598,
+      "en_text": "Select",
+      "de_text": "Ausw\u00e4hlen"
+    },
+    {
+      "index": 14,
+      "en_offset": 5343832,
+      "de_offset": 5835320,
+      "delta": 491488,
+      "en_text": "Select",
+      "de_text": "Ausw\u00e4hlen"
+    },
+    {
+      "index": 14,
+      "en_offset": 5343832,
+      "de_offset": 5854958,
+      "delta": 511126,
+      "en_text": "Select",
+      "de_text": "Ausw\u00e4hlen"
+    },
+    {
+      "index": 14,
+      "en_offset": 5343832,
+      "de_offset": 5867218,
+      "delta": 523386,
+      "en_text": "Select",
+      "de_text": "Ausw\u00e4hlen"
+    },
+    {
+      "index": 15,
+      "en_offset": 5343880,
+      "de_offset": 5833484,
+      "delta": 489604,
+      "en_text": "Cancel",
+      "de_text": "Abbrechen"
+    },
+    {
+      "index": 15,
+      "en_offset": 5343880,
+      "de_offset": 5835374,
+      "delta": 491494,
+      "en_text": "Cancel",
+      "de_text": "Abbrechen"
+    },
+    {
+      "index": 15,
+      "en_offset": 5343880,
+      "de_offset": 5867238,
+      "delta": 523358,
+      "en_text": "Cancel",
+      "de_text": "Abbrechen"
+    },
+    {
+      "index": 16,
+      "en_offset": 5343928,
+      "de_offset": 5833538,
+      "delta": 489610,
+      "en_text": "Menu",
+      "de_text": "Men\u00fc"
+    },
+    {
+      "index": 16,
+      "en_offset": 5343928,
+      "de_offset": 5835266,
+      "delta": 491338,
+      "en_text": "Menu",
+      "de_text": "Men\u00fc"
+    },
+    {
+      "index": 29,
+      "en_offset": 5345032,
+      "de_offset": 5834780,
+      "delta": 489748,
+      "en_text": "restore",
+      "de_text": "Heilung"
+    },
+    {
+      "index": 29,
+      "en_offset": 5345032,
+      "de_offset": 5860244,
+      "delta": 515212,
+      "en_text": "restore",
+      "de_text": "Heilung"
+    },
+    {
+      "index": 30,
+      "en_offset": 5345080,
+      "de_offset": 5834834,
+      "delta": 489754,
+      "en_text": "attack",
+      "de_text": "Angriff"
+    },
+    {
+      "index": 30,
+      "en_offset": 5345080,
+      "de_offset": 5860538,
+      "delta": 515458,
+      "en_text": "attack",
+      "de_text": "Angriff"
+    },
+    {
+      "index": 30,
+      "en_offset": 5345080,
+      "de_offset": 5860888,
+      "delta": 515808,
+      "en_text": "attack",
+      "de_text": "Angriff"
+    },
+    {
+      "index": 30,
+      "en_offset": 5345080,
+      "de_offset": 5860913,
+      "delta": 515833,
+      "en_text": "attack",
+      "de_text": "Angriff"
+    },
+    {
+      "index": 30,
+      "en_offset": 5345080,
+      "de_offset": 5861468,
+      "delta": 516388,
+      "en_text": "attack",
+      "de_text": "Angriff"
+    },
+    {
+      "index": 30,
+      "en_offset": 5345080,
+      "de_offset": 5861490,
+      "delta": 516410,
+      "en_text": "attack",
+      "de_text": "Angriff"
+    },
+    {
+      "index": 30,
+      "en_offset": 5345080,
+      "de_offset": 5863242,
+      "delta": 518162,
+      "en_text": "attack",
+      "de_text": "Angriff"
+    },
+    {
+      "index": 30,
+      "en_offset": 5345080,
+      "de_offset": 5871634,
+      "delta": 526554,
+      "en_text": "attack",
+      "de_text": "Angriff"
+    },
+    {
+      "index": 31,
+      "en_offset": 5345128,
+      "de_offset": 5834888,
+      "delta": 489760,
+      "en_text": "indirect",
+      "de_text": "Indirekt"
+    },
+    {
+      "index": 38,
+      "en_offset": 5345984,
+      "de_offset": 5835880,
+      "delta": 489896,
+      "en_text": "Item",
+      "de_text": "Objekt"
+    },
+    {
+      "index": 38,
+      "en_offset": 5345984,
+      "de_offset": 5853681,
+      "delta": 507697,
+      "en_text": "Item",
+      "de_text": "Objekt"
+    },
+    {
+      "index": 38,
+      "en_offset": 5345984,
+      "de_offset": 5871770,
+      "delta": 525786,
+      "en_text": "Item",
+      "de_text": "Objekt"
+    },
+    {
+      "index": 38,
+      "en_offset": 5345984,
+      "de_offset": 5872024,
+      "delta": 526040,
+      "en_text": "Item",
+      "de_text": "Objekt"
+    },
+    {
+      "index": 38,
+      "en_offset": 5345984,
+      "de_offset": 5872664,
+      "delta": 526680,
+      "en_text": "Item",
+      "de_text": "Objekt"
+    },
+    {
+      "index": 38,
+      "en_offset": 5345984,
+      "de_offset": 5872744,
+      "delta": 526760,
+      "en_text": "Item",
+      "de_text": "Objekt"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5834726,
+      "delta": 488722,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5835900,
+      "delta": 489896,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5853464,
+      "delta": 507460,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5855286,
+      "delta": 509282,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5860813,
+      "delta": 514809,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5860988,
+      "delta": 514984,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5861013,
+      "delta": 515009,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5861038,
+      "delta": 515034,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5861402,
+      "delta": 515398,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5861556,
+      "delta": 515552,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5861578,
+      "delta": 515574,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5861600,
+      "delta": 515596,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5862588,
+      "delta": 516584,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5862728,
+      "delta": 516724,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5863536,
+      "delta": 517532,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5870980,
+      "delta": 524976,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5871120,
+      "delta": 525116,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 39,
+      "en_offset": 5346004,
+      "de_offset": 5872306,
+      "delta": 526302,
+      "en_text": "Magic",
+      "de_text": "Zauber"
+    },
+    {
+      "index": 40,
+      "en_offset": 5346024,
+      "de_offset": 5835920,
+      "delta": 489896,
+      "en_text": "Materia",
+      "de_text": "Materia"
+    },
+    {
+      "index": 40,
+      "en_offset": 5346024,
+      "de_offset": 5870170,
+      "delta": 524146,
+      "en_text": "Materia",
+      "de_text": "Materia"
+    },
+    {
+      "index": 40,
+      "en_offset": 5346024,
+      "de_offset": 5870191,
+      "delta": 524167,
+      "en_text": "Materia",
+      "de_text": "Materia"
+    },
+    {
+      "index": 40,
+      "en_offset": 5346024,
+      "de_offset": 5871800,
+      "delta": 525776,
+      "en_text": "Materia",
+      "de_text": "Materia"
+    },
+    {
+      "index": 40,
+      "en_offset": 5346024,
+      "de_offset": 5872034,
+      "delta": 526010,
+      "en_text": "Materia",
+      "de_text": "Materia"
+    },
+    {
+      "index": 40,
+      "en_offset": 5346024,
+      "de_offset": 5872784,
+      "delta": 526760,
+      "en_text": "Materia",
+      "de_text": "Materia"
+    },
+    {
+      "index": 41,
+      "en_offset": 5346044,
+      "de_offset": 5835940,
+      "delta": 489896,
+      "en_text": "Equip",
+      "de_text": "Ausr\u00fcsten"
+    },
+    {
+      "index": 44,
+      "en_offset": 5346104,
+      "de_offset": 5836000,
+      "delta": 489896,
+      "en_text": "Limit",
+      "de_text": "Limit"
+    },
+    {
+      "index": 44,
+      "en_offset": 5346104,
+      "de_offset": 5836220,
+      "delta": 490116,
+      "en_text": "Limit",
+      "de_text": "Limit"
+    },
+    {
+      "index": 44,
+      "en_offset": 5346104,
+      "de_offset": 5855572,
+      "delta": 509468,
+      "en_text": "Limit",
+      "de_text": "Limit"
+    },
+    {
+      "index": 44,
+      "en_offset": 5346104,
+      "de_offset": 5855955,
+      "delta": 509851,
+      "en_text": "Limit",
+      "de_text": "Limit"
+    },
+    {
+      "index": 44,
+      "en_offset": 5346104,
+      "de_offset": 5856072,
+      "delta": 509968,
+      "en_text": "Limit",
+      "de_text": "Limit"
+    },
+    {
+      "index": 44,
+      "en_offset": 5346104,
+      "de_offset": 5861138,
+      "delta": 515034,
+      "en_text": "Limit",
+      "de_text": "Limit"
+    },
+    {
+      "index": 45,
+      "en_offset": 5346124,
+      "de_offset": 5836020,
+      "delta": 489896,
+      "en_text": "Config",
+      "de_text": "Konfig"
+    },
+    {
+      "index": 47,
+      "en_offset": 5346164,
+      "de_offset": 5836060,
+      "delta": 489896,
+      "en_text": "Save",
+      "de_text": "Speichern"
+    },
+    {
+      "index": 47,
+      "en_offset": 5346164,
+      "de_offset": 5854656,
+      "delta": 508492,
+      "en_text": "Save",
+      "de_text": "Speichern"
+    },
+    {
+      "index": 47,
+      "en_offset": 5346164,
+      "de_offset": 5884136,
+      "delta": 537972,
+      "en_text": "Save",
+      "de_text": "Speichern"
+    },
+    {
+      "index": 48,
+      "en_offset": 5346184,
+      "de_offset": 5836080,
+      "delta": 489896,
+      "en_text": "Quit",
+      "de_text": "Verlassen"
+    },
+    {
+      "index": 75,
+      "en_offset": 5347842,
+      "de_offset": 5837968,
+      "delta": 490126,
+      "en_text": "KEYBOARD",
+      "de_text": "TASTATUR"
+    },
+    {
+      "index": 76,
+      "en_offset": 5347892,
+      "de_offset": 5838028,
+      "delta": 490136,
+      "en_text": "JOYSTICK",
+      "de_text": "JOYSTICK"
+    }
+  ],
+  "unique_deltas": [
+    515458,
+    542212,
+    489604,
+    490116,
+    524167,
+    489610,
+    515212,
+    515596,
+    490126,
+    509968,
+    518162,
+    488722,
+    489748,
+    511126,
+    490136,
+    489754,
+    509851,
+    517532,
+    509468,
+    489760,
+    516388,
+    489896,
+    526760,
+    514984,
+    524976,
+    507697,
+    511155,
+    522420,
+    514809,
+    516410,
+    526010,
+    525116,
+    489536,
+    489537,
+    515009,
+    507460,
+    515398,
+    489544,
+    491338,
+    508492,
+    489550,
+    525776,
+    513876,
+    489556,
+    526040,
+    526680,
+    489562,
+    526554,
+    525786,
+    515034,
+    523358,
+    526302,
+    489568,
+    491488,
+    515808,
+    509282,
+    515552,
+    489574,
+    491494,
+    516584,
+    489580,
+    489586,
+    524146,
+    516724,
+    537972,
+    515574,
+    489592,
+    515833,
+    523386,
+    489598
+  ],
+  "delta_frequency": {
+    "489536": 1,
+    "489537": 1,
+    "511155": 1,
+    "513876": 1,
+    "522420": 1,
+    "542212": 1,
+    "489544": 1,
+    "489550": 1,
+    "489556": 1,
+    "489562": 1,
+    "489568": 1,
+    "489574": 1,
+    "489580": 1,
+    "489586": 1,
+    "489592": 1,
+    "489598": 1,
+    "491488": 1,
+    "511126": 1,
+    "523386": 1,
+    "489604": 1,
+    "491494": 1,
+    "523358": 1,
+    "489610": 1,
+    "491338": 1,
+    "489748": 1,
+    "515212": 1,
+    "489754": 1,
+    "515458": 1,
+    "515808": 1,
+    "515833": 1,
+    "516388": 1,
+    "516410": 1,
+    "518162": 1,
+    "526554": 1,
+    "489760": 1,
+    "489896": 8,
+    "507697": 1,
+    "525786": 1,
+    "526040": 1,
+    "526680": 1,
+    "526760": 2,
+    "488722": 1,
+    "507460": 1,
+    "509282": 1,
+    "514809": 1,
+    "514984": 1,
+    "515009": 1,
+    "515034": 2,
+    "515398": 1,
+    "515552": 1,
+    "515574": 1,
+    "515596": 1,
+    "516584": 1,
+    "516724": 1,
+    "517532": 1,
+    "524976": 1,
+    "525116": 1,
+    "526302": 1,
+    "524146": 1,
+    "524167": 1,
+    "525776": 1,
+    "526010": 1,
+    "490116": 1,
+    "509468": 1,
+    "509851": 1,
+    "509968": 1,
+    "508492": 1,
+    "537972": 1,
+    "490126": 1,
+    "490136": 1
+  }
+}

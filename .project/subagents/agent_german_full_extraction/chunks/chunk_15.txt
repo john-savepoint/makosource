@@ -1,0 +1,203 @@
+# Chunk 15: Strings 3000 to 3199
+# Offset range: 0x59C8CD to 0x59D8AE
+
+0x59C8CD |                            Speichern nicht möglich.
+0x59C901 |                Laden nicht möglich.
+0x59C925 |                    Daten sind Öerstört.
+0x59C94D |                    NEUES SPIEL
+0x59C96C |                             Wirklich speichern?
+0x59C99C |                     Ja
+0x59C9B3 |                                      Nein
+0x59C9DD |                                    Beendet.
+0x59CA85 |                                                                  Formatiert
+0x59CAD1 |                                                        Formatierung nicht möglich
+0x59CB23 |                                        Nicht formatiert
+0x59CB5B |                                                  JetÖt formatieren?
+0x59CB9F |                                                Memory Card wird geprüft.
+0x59CBE8 |                                         Keine Spielstandsdatei.
+0x59CC28 |                                           Diese Memory Card ist beschädigt und kann nicht verwendet werden.
+0x59CC94 | Andere Memory Card einlegen.
+0x59CCB1 |                                      Nicht genug PlatÖ in der Spielstandsdatei übrig.
+0x59CD07 |                  Bitte benutÖen Sie eine andere Spielstandsdatei
+0x59CD48 |                   oder löschen Sie 1 Block gesicherter Daten.
+0x59CDDF |                                                                  Lesen nicht möglich.
+0x59CE35 |                                              Spiel beginnen?
+0x59CF6B |                                                                      Kann Speicherpuffer der Spielstandsdatei nicht Öuordnen!
+0x59CFE9 |    Ungültige Spielstandsdatei!
+0x59D008 |                                 Spielstand 1   
+0x59D038 |     Spielstand 2   
+0x59D04C |     Spielstand 3   
+0x59D060 |     Spielstand 4   
+0x59D074 |     Spielstand 5   
+0x59D088 |     Spielstand 6   
+0x59D09C |     Spielstand 7   
+0x59D0B0 |     Spielstand 8   
+0x59D0C4 |     Spielstand 9   
+0x59D0D8 |     Spielstand 10
+0x59D0F1 | !) 
+0x59D0F5 |  m t!v L!S     
+0x59D109 |  % Ä G 
+0x59D111 |  K 
+0x59D115 |  :     `!e +!
+0x59D125 |  e 
+0x59D12B |  [!
+0x59D133 |  V C v r 
+0x59D13D |  m     
+0x59D150 | Level
+0x59D160 | p  
+0x59D164 | @  
+0x59D168 | cZ|ffW|
+0x59D177 | |g
+0x59D18B |  cZ|ffW|
+0x59D19B | |g
+0x59D1AF |  E
+0x59D1B6 |   E
+0x59D1C3 | EPR
+0x59D1CA | W E
+0x59D1D7 | EPR
+0x59D1DE | W 
+0x59D244 |     @Y
+0x59D24B |      PB
+0x59D273 | _      
+0x59D27B | _($((($(( $,( $,(           
+0x59D299 | ü       
+0x59D2AC | -`      
+0x59D2B6 | -`
+0x59D2B9 | Vc,
+0x59D2C1 | _      
+0x59D2C9 | _#
+0x59D2CE |          !4 AM
+0x59D2DD |  }J
+0x59D2E9 |        %
+0x59D2F5 | R       "0 
+0x59D30B |  uR
+0x59D30F |  uR
+0x59D313 |  uR
+0x59D31B |  uR
+0x59D33F |   !  $  '  *  -    
+0x59D353 | _  
+0x59D357 | _   Ü !  $  '  *  -        
+0x59D373 | _      
+0x59D37B | c      
+0x59D383 | [      
+0x59D38B | _      
+0x59D393 | _      
+0x59D3C1 |  ._
+0x59D3C5 |  3_
+0x59D3C9 |  I_
+0x59D3CD |  N_
+0x59D3D1 |  Ä_
+0x59D3D5 |  Ö_
+0x59D3DD |  ß_
+0x59D3F9 |  .`
+0x59D3FD |  B`
+0x59D401 |  b`
+0x59D405 |  g`
+0x59D429 |  %a
+0x59D42D |  *a
+0x59D431 |  Ja
+0x59D435 |  ^a
+0x59D439 |  va
+0x59D43D |  äa
+0x59D45D |  .b
+0x59D461 |  Nb
+0x59D465 |  Sb
+0x59D469 |  mb
+0x59D46D |  rb
+0x59D491 |  6c
+0x59D495 |  Jc
+0x59D499 |  bc
+0x59D4A7 | ü      
+0x59D4B7 | ü      0        
+0x59D4C8 | 4   
+0x59D4CF |  =   
+0x59D4D7 |  :   
+0x59D4DF |  ;   
+0x59D4E7 |  ?   
+0x59D4EF |  3   
+0x59D4F7 |  A   
+0x59D4FF |  .   
+0x59D507 |  -   
+0x59D50F |  /   
+0x59D517 |  0   
+0x59D51F |  %   
+0x59D527 |  >   
+0x59D52F |  2   
+0x59D537 |  @   
+0x59D53F |  ,   
+0x59D547 |  +   |
+0x59D54F |  5   t
+0x59D557 |  <   l
+0x59D55F |  9   d
+0x59D567 |  1   \
+0x59D56F |  8   T
+0x59D577 |  6   L
+0x59D57F |  7   D
+0x59D587 |  B   @
+0x59D58F |  C   <
+0x59D597 |  D   8
+0x59D5A1 | F             
+0x59D5B0 | 0d      !      
+0x59D5C0 |  P                                                                      $     # #   H  
+0x59D618 | .   
+0x59D620 | 0   
+0x59D628 |         $     & !   
+0x59D640 | "   
+0x59D648 | #   
+0x59D650 | $   
+0x59D658 | %   
+0x59D660 | &   0! 
+0x59D668 |         $     ! 
+0x59D679 |    H! 
+0x59D680 |         $     ! !   `! 
+0x59D698 |         $     ! )$  x!          $     ! )$  
+0x59D6C5 | !          $     ! )$  
+0x59D6DD | !          $     ! )$  
+0x59D6F5 | !          $     ! )$  
+0x59D70D | !          $     ! )$  
+0x59D725 | !          $     ! )$  
+0x59D73D | !          $     !     
+0x59D755 | !  
+0x59D75B |  Hl  
+0x59D761 | $       
+0x59D76B |  H6  
+0x59D771 | $      H
+0x59D77D | (  
+0x59D781 | $      
+0x59D78B |  H(! 
+0x59D791 | $      
+0x59D79B |  Hb  
+0x59D7A1 | $      @
+0x59D7AD | 0  
+0x59D7B1 | $      
+0x59D7BB |  Ö   
+0x59D7C1 | $      D
+0x59D7CB |  @#  
+0x59D7D1 | $      H   
+0x59D7DD |     !  ! (      `           !   !      .F  6M  ;R  CZ  J_6 Lc" Rk  Zu  La0 Ui7 \p= \oB ]qD a}" c{; e
+0x59D842 | ! Ä
+0x59D846 | # m
+0x59D84A | $ p
+0x59D84E | & s
+0x59D852 | ( u
+0x59D856 | * x
+0x59D85A | . w
+0x59D85E | 6 {
+0x59D862 | 2 w
+0x59D866 | : 
+0x59D86A | 6 
+0x59D86E | 6 
+0x59D872 | ; dxG i{P w
+0x59D87E | I n
+0x59D882 | R r
+0x59D886 | [ ä
+0x59D88A | B {
+0x59D88E | f 
+0x59D892 | k 
+0x59D895 | öw 
+0x59D899 | ß} 
+0x59D89E | G 
+0x59D8A2 | H 
+0x59D8A6 | G 
+0x59D8AA | L 
+0x59D8AE | R 

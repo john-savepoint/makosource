@@ -1,0 +1,15 @@
+Perfect! The German strings ARE in the file, but they're still in their encoded format. The problem is clear: **the offsets in chunk_016 (0x5C0486 onwards) contain encoded German text that has not been decoded yet.**
+
+The existing mapping file only covers offsets starting with `0x00590...` and `0x005907...` range, which are the main menu strings. The chunk_016 offsets (0x5C0486+) appear to be from a different section of the exe that hasn't been analyzed and decoded yet.
+
+**Since the German strings in chunk_016 are still in encrypted/encoded format and there's no available decoding function or pre-decoded reference for these specific offsets, I cannot create accurate mappings.**
+
+To provide the output you requested, I would need one of:
+1. A working decoding script to decode these specific offsets
+2. A pre-decoded German strings file with human-readable text for these offsets
+3. Access to the German exe file to extract and analyze these strings directly
+
+Would you like me to:
+- A) Check if there's a decoding script available that I can use?
+- B) Output what we CAN map from the existing decoded strings (only the 0x005900+ range)?
+- C) Analyze the chunk file differently to identify patterns and attempt a mapping?

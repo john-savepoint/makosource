@@ -585,6 +585,190 @@ This character table fills an **18-year gap** in FF7 modding community documenta
 
 ---
 
-**AF3DN_ANALYSIS.md Version**: 3.0.0
-**Last Updated**: 2025-11-17 20:13:00 JST (Monday)
-**Session-ID**: 1021bc57-9aa2-41fe-baad-a6b89b252744
+## SESSION 27 UPDATE: IDA PRO DECOMPILATION ANALYSIS (2025-12-16)
+
+### Overview
+
+Complete IDA Pro decompilation analysis of AF3DN.P using parallel Claude agents. The entire 38,782-line decompiled C file was analyzed in 35 chunks using headless Claude Code with Haiku model.
+
+### Analysis Method
+
+1. **IDA Pro Export**: Decompiled AF3DN.P to C pseudocode (38,782 lines)
+2. **Chunking**: Split into 35 function-boundary-respecting chunks (~1000 lines each)
+3. **Pass 1 (Haiku)**: 35 parallel agents categorized all 549 functions
+4. **Pass 2 (Sonnet)**: Deep analysis of 20 key Japanese text/naming screen functions
+5. **Consolidation**: Combined into comprehensive analysis documents
+
+### Key Discoveries
+
+#### 1. Function Count and Categories
+
+**549 total functions** identified and categorized:
+
+| Category | Count | Description |
+|----------|-------|-------------|
+| Graphics | ~120 | DirectX rendering, texture management |
+| Text | ~60 | Japanese text rendering, glyph lookup |
+| Audio | ~50 | vgmstream, FFmpeg playback |
+| Memory | ~40 | Allocation, buffers, caching |
+| Init | ~35 | Startup, patching, configuration |
+| File I/O | ~30 | LGP archive, asset loading |
+| Input | ~25 | Controller, keyboard handling |
+| Utility | ~150 | STL containers, exceptions, helpers |
+| Unknown | ~40 | Compiler-generated, unclear purpose |
+
+#### 2. Critical Naming Screen Functions
+
+| Address | Suggested Name | Purpose |
+|---------|----------------|---------|
+| `sub_10001340` | `lookup_japanese_character` | Core cursor→character lookup |
+| `sub_10019110` | `naming_screen_input_thread` | Main input dispatcher |
+| `sub_10016CE0` | `validate_naming_screen_input` | Validates Hiragana/Katakana/EISUU |
+| `sub_10019230` | `character_table_offset_lookup` | Looks up character in byte table |
+| `sub_1000F190` | `render_character_glyph` | Renders single Japanese glyph |
+| `sub_1000F5C0` | `render_text_string` | Main Shift-JIS text rendering loop |
+| `sub_10016A30` | `init_sprite_and_font` | Creates D3D font (MS PGothic for JP) |
+| `sub_10007010` | `init_character_tables_and_pointers` | Sets up JP character tables |
+
+#### 3. Key Global Variables Identified
+
+| Address | Name | Purpose |
+|---------|------|---------|
+| `dword_1004CB78` | `g_locale_flag` | JP/EN mode (0=EN, non-zero=JP) |
+| `dword_1004CCF8` | `g_naming_screen_state` | Current naming screen data |
+| `dword_1004CBBC` | `g_cached_char_id` | Last looked-up character |
+| `unk_10051880` | `g_char_table` | Runtime character table (RAM copy) |
+| `dword_10050D78` | `g_char_table_count` | Number of character entries |
+| `dword_1004CCD0-CCE4` | `g_font_page_ptrs` | 6 font texture page pointers |
+| `dword_1004FF80[64]` | `g_texture_cache` | 64-entry texture cache |
+
+#### 4. Data Structure Findings
+
+**Character Table Entry (20 bytes)**:
+```c
+struct CharTableEntry {
+    uint32_t char_id;      // +0:  Character code
+    uint32_t grid_x;       // +4:  X position (0-9)
+    uint32_t grid_y;       // +8:  Y position (0-8 or 0-4)
+    uint32_t page_id;      // +12: Page (0=Hiragana, 1=Katakana, 2=EISUU)
+    uint32_t flags;        // +16: State flags
+};
+```
+
+**Naming Screen State Offsets**:
+- `+2572 (EN) / +2892 (JP)`: Current page data pointer
+- `+2076 (EN) / +2344 (JP)`: Character selection flags
+- `+80 (EN) / +84 (JP)`: Palette index storage
+
+#### 5. Sidebar Label Access Pattern
+
+**Key Finding**: Sidebar labels (ひらがな, カタカナ, えいすう, etc.) are NOT accessed via dedicated functions. Instead:
+
+1. Entire data block copied via `qmemcpy(&unk_10051880, &unk_1004A868, 560)`
+2. Labels accessed via pointer arithmetic: `base + LABELS_OFFSET + (page * LABEL_SIZE)`
+3. Generic text renderer (`sub_1000F5C0`) draws the bytes
+
+This explains why labels aren't visible as strings in decompilation - they're embedded in `_UNKNOWN` data blobs.
+
+#### 6. Font Texture Cache System
+
+```c
+// 64-entry circular cache for font texture pages
+dword_1004FF80[64]  // Cached texture object pointers
+Block[64]           // Cached texture data buffers
+dword_10050180      // Next eviction index (circular)
+dword_100501E4      // Cache miss counter
+```
+
+This cache handles frequent page swapping when rendering mixed kana/kanji text.
+
+### Analysis Files Generated
+
+Located in `/home/johnzealanddoyle/projects/tools/af3dn_analysis/`:
+
+| File | Size | Description |
+|------|------|-------------|
+| `AF3DN_FULL_ANALYSIS.md` | 257KB | Complete analysis of all 549 functions |
+| `NAMING_SCREEN_CALL_FLOW.md` | 13KB | Visual call flow diagram |
+| `ida_rename_script.py` | 28KB | IDA Pro rename script (510 functions) |
+| `function_names.csv` | 23KB | CSV mapping original→suggested names |
+| `pass2/detailed_analysis.md` | 24KB | Deep dive on 20 key functions |
+| `pass2/key_functions_code.c` | 74KB | Extracted source for key functions |
+| `outputs/chunk_*.md` | ~180KB | Individual chunk analyses (35 files) |
+
+### Naming Screen Call Flow
+
+```
+INITIALIZATION:
+  DllMain
+    └──► sub_10014FF0 (initialize_japanese_locale)
+           ├──► sub_10014E10 (patch_binary_for_japanese)
+           └──► sub_10008550 (init_character_table)
+                  └──► qmemcpy(unk_10051880, unk_1004A868, 560)
+
+INPUT LOOP:
+  sub_10019110 (naming_screen_input_thread)
+    └──► WaitForSingleObject(semaphore)
+           └──► sub_10001340 (lookup_japanese_character)
+                  ├──► Search unk_10051880[] for cursor match
+                  ├──► Cache result in dword_1004CBBC
+                  └──► Return pointer to 20-byte struct
+
+RENDERING:
+  sub_1000F5C0 (render_text_string)
+    └──► For each Shift-JIS byte:
+           └──► sub_1000F190 (render_character_glyph)
+                  ├──► Determine font page (0x00/FA-FE)
+                  └──► sub_1000B740 (render_with_transform)
+```
+
+### Implications for FFNx Implementation
+
+#### What This Analysis Confirms
+
+1. **No dedicated sidebar renderer** - Text labels use generic rendering
+2. **Data-driven approach** - Character tables copied to RAM at init
+3. **Locale flag branching** - `dword_1004CB78` checked throughout code
+4. **Texture caching** - 64-entry cache for performance
+
+#### What FFNx Should Do
+
+1. **Keep current approach** - Static arrays in `naming_screen.cpp` are cleaner
+2. **Use HEXT for runtime fixes** - Space character patch `71905E = 3F` ✓
+3. **Reference this analysis when debugging** - Function names now documented
+4. **Don't port AF3DN.P code directly** - Decompiled code is messy, indirect
+
+#### Limitations of This Analysis
+
+- **IDA marks large data as `_UNKNOWN`** - Raw bytes not visible in decompilation
+- **Vtable calls are opaque** - `(*(func_ptr + offset))(...)` hard to trace
+- **No source-level documentation** - Only reverse-engineered understanding
+
+### IDA Rename Script Usage
+
+To apply function names in IDA Pro:
+
+```
+File → Script file... → ida_rename_script.py
+```
+
+Or:
+```
+Alt+F7 → Select ida_rename_script.py
+```
+
+This renames 510 `sub_XXXXXXXX` functions with descriptive names.
+
+### Session Details
+
+- **Date**: 2025-12-16 15:00-15:45 JST
+- **Session-ID**: 0681f78b-0382-45ee-898b-5a32b7ce32d5
+- **Method**: Headless Claude Code with parallel agents
+- **Models**: Haiku (Pass 1), Sonnet (Pass 2)
+- **Total analysis time**: ~5 minutes for 549 functions
+
+---
+
+**AF3DN_ANALYSIS.md Version**: 4.0.0
+**Last Updated**: 2025-12-16 15:47 JST (Tuesday)
+**Session-ID**: 0681f78b-0382-45ee-898b-5a32b7ce32d5

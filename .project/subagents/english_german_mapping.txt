@@ -1,0 +1,754 @@
+# FF7 English ↔ German String Mapping
+# Generated: 2026-01-05 20:09 JST
+# Session: d6a01e5a-9ebc-4f64-9ca7-ba58ca93ae30
+# Format: [EN_IDX] English → [DE_IDX] German
+
+================================================================================
+EXIT DIALOG
+================================================================================
+[000] Do you want to quit → [0] Möchten Sie Final
+[001] playing Final Fantasy VII → [1] Fantasy VII verlassen und
+[002] and return to Windows? → [2] zu Windows zurückkehren?
+[003] Yes → [3] Ja
+[004] No → [4] Nein
+
+================================================================================
+CONFIG MENU
+================================================================================
+[005] Window color → [5] Fensterfarbe
+[006] Sound → [6] Sound
+[007] Controller → [7] Kontroller
+[008] Cursor → [8] Cursor
+[009] ATB → [9] ATB
+[010] Battle speed → [10] Kampftempo
+[011] Battle message → [11] Kampfmeldung
+[012] Field message → [12] Feldmeldung
+[013] Camera angle → [13] Kamerawinkel
+[014] Select → [14] Auswählen
+[015] Cancel → [15] Abbrechen
+[016] Menu → [16] Menü
+[017] Normal → [23] Normal
+[018] Customize → [24] Benutzerdefiniert
+[019] Initial → [25] Anfang
+[020] Memory → [26] Speicher
+[021] Active → [27] Aktiv
+[022] Recommended → [28] Empfohlen
+[023] Wait → [29] Warten
+[024] Auto → [30] Auto
+[025] Fixed → [31] Fest
+[026] Slow → [32] Langs.
+[027] Fast → [33] Schn.
+[028] Magic order → [37] Zauberfolge
+[029] restore → [38] Heilung
+[030] attack → [39] Angriff
+[031] indirect → [40] Indirekt
+[036] Set Sound & Music Volume → [55] Ton- und Musikeinstellung
+[037] Not supported. → [56] Nicht unterstützt
+
+================================================================================
+MAIN MENU
+================================================================================
+[038] Item → [58] Objekt
+[039] Magic → [59] Zauber
+[040] Materia → [60] Materia
+[041] Equip → [61] Ausrüsten
+[042] Status → [62] Werte
+[043] Order → [63] Reihe
+[044] Limit → [64] Limit
+[045] Config → [65] Konfig
+[046] PHS → [66] PHS
+[047] Save → [67] Speichern
+[048] Quit → [68] Verlassen
+[054] Tutorial → [76] Anleitung
+
+================================================================================
+STATUS SCREEN LABELS
+================================================================================
+[049] Beginner → [69] Anfänger
+[050] Time → [72] Zeit
+[051] Gil → [73] Gil
+[052] next level → [74] Nächst. Lv
+[053] Limit level → [75] Limit-Stufe
+[055] LEVEL UP → [78] LV+1
+[056] Fury → [79] Zorn
+[057] Sadness → [80] Traurigk.
+
+================================================================================
+KEYBOARD CONFIGURATION
+================================================================================
+[058] Press [CANCEL] to end. → [82] Mit [ABBRECHEN] beenden.
+[059] Press [OK] to configure a key. → [83] Drücken Sie auf [O.K.] um die
+[060] Now press the new key. → [85] Bitte neue Taste drücken
+[061] [OK] → [86] [O.K.]
+[062] [CANCEL] → [87] [ABBRECHEN]
+[063] [MENU] → [88] [MENÜ]
+[064] [SWITCH] → [89] [UMSCHALTEN]
+[065] [PAGEUP] → [90] [BILD HOCH]
+[066] [PAGEDOWN] → [91] [BILD HERUNTER]
+[067] [CAMERA] → [92] [KAMERA]
+[068] [TARGET] → [93] [ZIEL]
+[069] [ASSIST] → [94] [HILFE]
+[070] [START] → [95] [START]
+[071] [UP] → [96] [HERAUF]
+[072] [DOWN] → [97] [UNTEN]
+[073] [LEFT] → [98] [LINKS]
+[074] [RIGHT] → [99] [RECHT]
+[075] KEYBOARD → [100] TASTATUR
+[076] JOYSTICK → [101] JOYSTICK
+
+================================================================================
+KEYBOARD KEYS (English only - no German equivalent)
+================================================================================
+[077] ESCAPE → (NO MATCH)
+[078]-[199] (All keyboard key names) → (NO MATCH)
+
+================================================================================
+JOYSTICK BUTTONS (English only - no German equivalent)
+================================================================================
+[200] UP → (NO MATCH)
+[201] DOWN → (NO MATCH)
+[202] LEFT → (NO MATCH)
+[203] RIGHT → (NO MATCH)
+[204]-[213] BUTTON 1-8, button@Y, button@QP → (NO MATCH)
+
+================================================================================
+BATTLE STATUSES
+================================================================================
+[214] Pause → [107] Pause
+[215] Sleep → [110] Schlaf
+[216] Poison → [111] Gift
+[217] Sadness → [112] Traurigkeit
+[218] Fury → [113] Zorn
+[219] Confusion → [114] Verwirrung
+[220] Silence → [115] Stummheit
+[221] Haste → [116] Schnell
+[222] Slow → [117] Langsam
+[223] Stop → [118] Stop
+[224] Petrify → [122] Versteinerung
+[225] Regen → [123] regen
+[226] Reflect → [126] Reflektieren
+[227] Shield → [128] Schild
+[228] Berserk → [131] Toll
+[229] Peerless → [132] Einzigartig
+[230] Paralyze → [133] Lähmung
+[231] Darkness → [134] Dunkelheit
+[304] Near-death → [390] Gefahr
+[305] Sleep → [391] Schlaf
+[306] Poison → [392] Gift
+[307] Sadness → [393] Trauer
+[308] Fury → [394] Zorn
+[309] Confusion → [395] Psycho
+[310] Silence → [396] Schweigen
+[311] Haste → [397] Hast
+[312] Slow → [398] Gemach
+[313] Stop → [399] Stop
+[314] Frog → [400] Frosch
+[315] Small → [401] Zwerg
+[316] Slow-numb → [402] Allm.Verstein.
+[317] Petrify → [403] Verstein.
+[318] Regen → [404] Heilung
+[319] Barrier → [405] Barriere
+[320] MBarrier → [406] ZBarr.
+[321] Reflect → [407] Wasser
+[322] Shield → [408] Schild
+[323] Death-sentence → [409] Todesurteil
+[324] Manipulate → [410] Manipul.
+[325] Berserk → [411] Tobsucht
+[326] Peerless → [412] Unverwundbar
+[327] Paralyzed → [413] Lähmung
+[328] Darkness → [414] Blind
+
+================================================================================
+BATTLE ARENA MESSAGES
+================================================================================
+[232] How much will you raise? → [140] Wieviel willst du ausgeben?
+[233] Gil → [141] Gil
+[234] After → [142] Nach
+[235] Gil on hand → [143] Gil auf der Hand
+[236] Keep goin'? → [144] Weiter?
+[237] Of course!     No way! → [145] Ja     Nein
+[238] Current Battle Points → [146] Vorhandene Schlachtpunkte
+[239] Slot start! → [147] Schlitzstart!
+[240] GREAT!! → [148] TOLL!!
+[241] Then, go for it! → [150] Ok, dann los!
+[264] Yesss! No handicapp! → [173] Jaa! Keine Behinderung!!
+[265] HP restored. → [174] HP wiederhergestellt.
+[266] Worried about the other members? → [175] Besorgt um die anderen Mitglieder?
+[267] Yeah, a little → [176] Ja, ein bichen
+[268] Not really → [177] Eigentlich nicht
+
+================================================================================
+BATTLE HANDICAPS
+================================================================================
+[242] Magic Materia is broken. → [151] Zaubersubstanz kaputt.
+[243] Summon Materia is broken. → [152] Aufrufsubstanz kaputt.
+[244] Support Materia is broken. → [153] Support-Substanz kaputt.
+[245] Independent Materia is broken. → [154] Unabhängige Substanz kaputt.
+[246] Command Materia is broken. → [155] Befehlssubstanz kaputt.
+[247] All Materia is broken. → [156] Alle Substanz kaputt.
+[248] Accessory is broken. → [157] Zubehör kaputt.
+[249] Item command is sealed. → [158] Objektbefehl ist versiegelt.
+[250] Armor is broken. → [159] Rüstzeug kaputt.
+[251] Weapon is broken. → [160] Waffe kaputt.
+[252] 1/2 speed. → [161] 1/2 Geschwindigkeit.
+[253] 1/2 accuracy. → [162] 1/2 Genauigkeit.
+[254] Minimum → [163] Minimum
+[255] Poison → [164] Gift
+[256] Toad → [165] Kröte
+[257] Time x30 damage. → [166] Zeit x30 Schaden.
+[258] Down 5 levels. → [167] 5 Ebenen zurück.
+[259] Down 10 levels. → [168] 10 Ebenen zurück.
+[260] 1/2 HP. → [169] 1/2 HP.
+[261] 1/2 MP. → [170] 1/2 MP.
+[262] 1/2 HP&MP. → [171] 1/2 HP&MP.
+[263] Zero MP. → [172] Null MP.
+
+================================================================================
+PARTY MANAGEMENT
+================================================================================
+[270] Reform → [183] Reformieren
+[271] Split your allies into two groups. → [184] Mitglieden in zwei Gruppen aufteilen
+[272] Split your allies into three groups. → [185] Mitglieder in drei Gruppen aufteilen
+[273] Please make a party of two. → [186] Gruppe aus zwei Personen bilden
+[274] Please make a party of three. → [187] Gruppe aus drei Personen bilden
+[275] Select with START button. → [188] Auswählen mit [START]-Taste
+
+================================================================================
+EQUIPMENT LABELS
+================================================================================
+[276] Wpn. → [209] Waf.
+[277] Arm. → [210] Rüs.
+[278] Acc. → [211] Acc.
+[349] Wpn: → [435] Waf.
+[350] Arm: → [436] Rüs.
+[351] Acc: → [437] Acc.
+[352] Limit level: → [438] Limit-Stufe
+[353] Wpn. → [439] Waf.
+[354] Arm. → [440] Rüs.
+[355] Acc. → [441] Acc.
+[372] Wpn. → [475] Waf.
+[373] Arm. → [476] Rüs.
+
+================================================================================
+LIMIT BREAK MENU
+================================================================================
+[279] LEVEL 1 → [213] STUFE 1
+[280] LEVEL 2 → [214] STUFE 2
+[281] LEVEL 3 → [215] STUFE 3
+[282] LEVEL 4 → [216] STUFE 4
+[283] Set BREAK LEVEL. → [217] LIMIT-STUFE einrichten.
+[284] Set → [218] Einrichten
+[285] Check → [219] Prüfen
+[286] To change BREAK LEVEL, → [220] Bei nderung der STUFE
+[287] it will begin from Limit Point 0. → [221] Beginn bei Limit-Punkt 0.
+[288] Change BREAK LEVEL? → [222] STUFE ändern?
+[289] Yes → [223] Ja
+[290] No → [224] Nein
+[291] Limit set! → [225] Limit gewählt!
+[292] Select LEVEL. → [226] STUFE wählen
+
+================================================================================
+ELEMENTS
+================================================================================
+[293] Fire → [462] Feuer
+[294] Ice → [463] Kälte
+[295] Lightning → [464] Blitz
+[296] Earth → [465] Erde
+[297] Poison → [466] Gift
+[298] Gravity → [467] Schwerkraft
+[299] Water → [468] Wasser
+[300] Wind → [469] Wind
+[301] Holy → [470] Heilig
+[302] Death → [389] Tod
+[303] Near-death → [390] Gefahr
+
+================================================================================
+ELEMENT/STATUS EFFECTS
+================================================================================
+[329] Element → [189] Element
+[330] Effect → [190] Effekt
+[331] Attack → [191] Angreifen
+[332] Defend → [192] Verteidigen
+[333] Halve → [193] Halbieren
+[334] Invalid → [194] Ungültig
+[335] Absorb → [195] Absorbieren
+
+================================================================================
+CHARACTER ATTRIBUTES
+================================================================================
+[336] Strength → [196] Stärke
+[337] Dexterity → [197] Geschick
+[338] Vitality → [198] Vitalität
+[339] Magic → [199] Zauber
+[340] Spirit → [200] Moral
+[341] Luck → [201] Glück
+[342] Attack → [202] Angreifen
+[343] Attack% → [203] Angreifen %
+[344] Defense → [204] Verteidigen
+[345] Defense% → [205] Verteidigen %
+[346] Magic atk → [206] Zbrangrf
+[347] Magic def → [207] Zbrvertdg
+[348] Magic def% → [208] Zbrvertdg %
+[356] Attack → [428] Angriff
+[357] Attack % → [429] Angriff %
+[358] Defense → [430] Verteidigung
+[359] Defense % → [431] Verteidigung %
+[360] Magic atk → [432] Zauber
+[361] Magic def → [433] Zauberabwehr
+[362] Magic def% → [434] Zauberabw. %
+[391] Strength → [494] Stärke
+[392] Vitality → [495] Vitalität
+[393] Magic → [496] Zauber
+[394] Magic def → [497] Zbrvertdg
+[395] Dexterity → [498] Geschick
+[396] Luck → [499] Glück
+[397] MaxHP → [500] MAXHP
+[398] MaxMP → [501] MAXMP
+[399] MaxHPUP → [502] MAXHP
+[400] MaxMPUP → [503] MAXMP
+[401] EXP.UP → [504] EXP.UP
+[402] Gil UP → [505] Gil UP
+[403] Encount Down → [506] Treffen - %
+[404] Encount Up → [507] Treffen + %
+[405] Meet Chocobos → [508] Chocobo treffen
+[406] Pre-emptive → [509] Präventivm. + %
+[407] Long range attack → [510] Fernangriff
+[408] Attack all → [511] Alle angreifen
+[409] Counter attack → [512] Gegenangriff
+[547] Dexterity → [727] Geschwindigkeit   %HåHER
+[548] Cover → [728] Schutz   %HåHER
+[549] Magic → [729] Zauberkraft   %HåHER
+[550] Luck → [730] Glück   %HåHER
+[552] Strength → [732] Stärke
+[553] Vitality → [733] Vitalität
+[554] Magic → [734] Zauber
+[555] Magic def → [735] Zbrvertdg
+[556] Dexterity → [736] Geschick
+[557] Luck → [737] Glück
+[558] MaxHP → [738] MAXHP
+[559] MaxMP → [739] MAXMP
+[560] MaxHPUP → [740] MAXHP
+[561] MaxMPUP → [741] MAXMP
+[562] EXP.UP → [742] EXP.UP
+[563] Gil UP → [743] Gil UP
+[564] Encount Down → [744] Treffen - %
+[565] Encount Up → [745] Treffen + %
+[566] Meet Chocobos → [746] Chocobo treffen
+[567] Pre-emptive → [747] Präventivm. + %
+[568] Long range attack → [748] Fernangriff
+[569] Attack all → [749] Alle angreifen
+[570] Counter attack → [750] Gegenangriff
+
+================================================================================
+MATERIA SLOTS
+================================================================================
+[363] Slot → [456] Fassung:
+[364] Growth → [457] Wachstum:
+[365] Nothing → [458] Keine
+[366] Normal → [459] Normal
+[367] Double → [460] Doppelt
+[368] Triple → [461] Dreifach
+[583] Nothing → [788] Keine
+[584] Normal → [789] Normal
+[585] Double → [790] Doppelt
+[586] Triple → [791] Dreifach
+
+================================================================================
+MATERIA MANAGEMENT
+================================================================================
+[369] Do you really want to remove this? → [471] Soll das wirklich entfernt werden?
+[370] I sure do! → [472] Ja!
+[371] Wait a sec → [473] Einen Moment
+[374] Ability list → [477] Fähigkeitsliste
+[375] Equip effect → [478] Rüstungseffekt
+[376] Check → [479] Prüfen
+[377] Arrange → [480] Ordnen
+[378] AP → [482] AP
+[379] To next level → [483] Auf nächste Ebene
+[380] MASTER → [484] MASTER
+[381] Arrange → [485] Ordnen
+[382] Exchange → [486] Tauschen
+[383] Remove all → [487] Alles entfernen
+[384] Trash → [488] Wegwerfen
+[390] MASTER → [493] MASTER
+[410] Magic → [517] Zauber
+[411] Summon → [518] Beschwören
+[412] Enemy-Skill → [519] Feindtechnik
+[413] Added-Ability → [520] Zusätzliche Fähigkeit
+[414] All → [521] Alle
+[415] 4x-M → [522] 4x-Zber
+[416] Absorb MP → [523] MP absorb.
+[417] Absorb HP → [524] HP absorb.
+[418] Steal as well → [525] Auch stehl.
+[419] Extra cut → [526] Schlag
+[420] Turbo MP → [527] Turbo-MP
+[542] Ability list → [715] Fähigkeitsliste
+[543] Equip effect → [716] Rüstungseffekt
+[544] AP → [720] AP
+[545] To next level → [721] Auf nächste Ebene
+[546] MASTER → [722] MASTER
+[551] MASTER → [731] MASTER
+
+================================================================================
+ITEM MENU
+================================================================================
+[421] Nothing. → [528] Nichts
+[422] Not enough MP. → [529] Nicht genug MP.
+[423] Use → [530] Verwenden
+[424] Arrange → [531] Ordnen
+[425] Key Items → [532] Schlüsselobjekte
+[426] Customize → [533] Allein
+[427] Field → [534] Feld
+[428] Battle → [535] Schlacht
+[429] Throw → [536] Werfen
+[430] Type → [537] Typ
+[431] Name → [538] Name
+[432] Most → [539] Max.
+[433] Least → [540] Min.
+
+================================================================================
+DIALOG RESPONSES (CLOUD)
+================================================================================
+[434] OK! Got it! → [541] OK! Klar!
+[435] I'm not sure but[A9] → [542] Ich bin nicht sicher, aber
+[436] Don't really care. → [543] Ist mir egal.
+
+================================================================================
+DIALOG RESPONSES (BARRET)
+================================================================================
+[437] Heh! No sweat! → [544] Heh! Heh!
+[438] D-d-d-damn! My head hurts! → [545] V-v-verdammt! Mein Kopf!
+[439] Got nuthin' to do with me! → [546] Hat nichts mit mir zu tun!
+
+================================================================================
+DIALOG RESPONSES (TIFA)
+================================================================================
+[440] Hmm, so that's it. → [547] Hmm, das wär's also.
+[441] I'm not too sure but[A9] → [548] Ich bin nicht sicher, aber
+[442] I've got the wrong person. → [549] Ich hab die falsche Person erwischt.
+
+================================================================================
+DIALOG RESPONSES (AERIS)
+================================================================================
+[443] This should be okay. → [550] Das sollte ok sein.
+[444] Not quite ready yet. → [551] Noch nicht ganz bereit.
+[445] It isn't me. → [552] Nein, ich bin es nicht.
+
+================================================================================
+DIALOG RESPONSES (RED XIII)
+================================================================================
+[446] Right, I've got it! → [553] Ok, klar!
+[447] I don't get it. → [554] Kapier ich nicht.
+[448] It has nothing to do with me. → [555] Hat nichts mit mir zu tun.
+
+================================================================================
+DIALOG RESPONSES (YUFFIE)
+================================================================================
+[449] Cool! This should do it! → [556] Cool! Das sollte ok sein!
+[450] Nope! I don't get it! → [557] Nee! Kapier ich nicht!
+[451] Oh wow, I'm totally clueless! → [558] Mann, ich tapp total im Dunkeln!
+
+================================================================================
+DIALOG RESPONSES (CAIT SITH)
+================================================================================
+[452] I'm getting less human[A9] → [559] Ich verlier immer mehr Menschliches
+[453] I'm still not ready. → [560] Ich bin noch nicht bereit.
+[454] It has nothing to do with me. → [561] Es hat nichts mit mir zu tun.
+
+================================================================================
+DIALOG RESPONSES (VINCENT)
+================================================================================
+[455] Hey I like this! Lemme use it! → [562] Das gefällt mir! Her damit!
+[456] Hmph. Don't quite get it but[A9] → [563] Hmph. Hab ich nicht ganz kapiert, aber
+[457] Not me! Give it to someone else! → [564] Nicht ich! Gib es jemand anders!
+[458] It's got nothing to do with me. → [565] Es hat nichts mit mir zu tun.
+
+================================================================================
+CHARACTER NAMES
+================================================================================
+[459] Cloud → [623] Cloud
+[460] Barret → [624] Barret
+[461] Tifa → [625] Tifa
+[462] Aeris → [626] Aeris
+[463] Red XIII → [627] Red XIII
+[464] Yuffie → [628] Yuffie
+(NO MATCH) → [629] Cait Sith
+(NO MATCH) → [630] Vincent
+(NO MATCH) → [631] Cid
+(NO MATCH) → [632] Choco
+(NO MATCH) → [683] Sephiroth
+
+================================================================================
+NAME ENTRY (German only)
+================================================================================
+(NO MATCH) → [633] Leer
+(NO MATCH) → [634] Löschen
+(NO MATCH) → [635] Auswählen
+(NO MATCH) → [636] Standard
+(NO MATCH) → [637] Abbrechen
+
+================================================================================
+PRESET NAMES (German only)
+================================================================================
+(NO MATCH) → [638] RaginLion
+(NO MATCH) → [639] Freshmake
+(NO MATCH) → [640] Square
+(NO MATCH) → [641] 3Dfx
+(NO MATCH) → [642] Local
+(NO MATCH) → [643] Gold
+
+================================================================================
+CHARACTER TITLES (German only)
+================================================================================
+(NO MATCH) → [645] Ex-SOLDIER
+
+================================================================================
+SHOP TYPES
+================================================================================
+[587] Weapon Shop → [795] Waffengeschäft
+[588] Item Shop → [794] Objektladen
+[589] Materia Shop → [797] Materia-Laden
+[590] General Store → [798] Gemischtwaren
+[591] Vegetable Store → [799] Gemüseladen
+[592] Accessory Shop → [800] Zubehörladen
+[593] Tool Shop → [801] Werkzeugladen
+[594] Hotel Shop → [802] Souvenierladen
+
+================================================================================
+SHOP MENU
+================================================================================
+[571] A → [792] A
+[572] D → [793] V
+[573] Buy   Sell     Exit → [759] Kaufen Verkaufen Beenden
+[574] Gil → [760] Gil
+[575] Owned → [761] Besitz
+[576] Equipped → [762] Ausstattung
+[577] Total → [763] Gesamt
+[578] How many → [764] Wieviel
+[579] Item      Materia → [765] Objekt    Materia
+[580] Gil remaining → [766] Übrige Gil
+[581] Price for Master → [767] Preis für Master
+[582] Price through AP → [768] Preis durch AP
+[595] Welcome! → [803] Willkommen!
+[596] What would you like to buy? → [804] Was möchtest du kaufen?
+[597] How many would you like?! → [805] Wie viele willst du davon?
+[598] What would you like to sell?! → [806] Was möchtest du verkaufen?
+[599] How many would you like to sell?! → [807] Wie viele willst du verkaufen?
+(NO MATCH) → [808] Danke!
+(NO MATCH) → [810] Du hast nicht genug Geld!
+(NO MATCH) → [811] Guten Tag!
+(NO MATCH) → [812] Wie kann ich behilflich sein?
+(NO MATCH) → [816] Vielen Dank!
+(NO MATCH) → [817] Ihr werdet doch alle zurückkommen!
+(NO MATCH) → [818] Soll das ein Witz sein? Das ist nicht genug!
+
+================================================================================
+SAVE/LOAD MENU
+================================================================================
+[600] Load → [822] Laden
+[601] Select a save data file. → [823] Wählen Sie eine Speicherdatei aus.
+[602] Select a save game. → [824] Wählen Sie einen Speicherblock aus.
+[603] Loading. Please wait. → [828] Bin am Laden. Bitte warten
+[604] Saving. Please wait. → [829] Bin am Sichern. Bitte warten
+[605] EMPTY → [830] LEER
+[606] GAME → [831] BLOCK
+[607] Continue? → [832] Weiter?
+[608] Checking Save Data File. → [834] Überprüfe Spielstandsdatei
+[623] Saved. → [850] Gespeichert.
+[624] Could not save. → [851] Speichern nicht möglich.
+[625] Could not load. → [852] Laden nicht möglich.
+[626] Data is ruined. → [853] Daten sind zerstört.
+[627] NEW GAME → [854] NEUES SPIEL
+[628] Are you sure you want to save? → [855] Wirklich speichern?
+[629] Yes → [856] Ja
+[630] No → [857] Nein
+[631] Completed. → [858] Beendet.
+[632] Formatted. → [859] Formatiert
+[633] Could not format. → [860] Formatierung nicht möglich
+[634] Not formatted. → [861] Nicht formatiert
+[635] Want to format it now? → [862] Jetzt formatieren?
+[636] No save data file. → [864] Keine Spielstandsdatei.
+[637] No save data file. → [864] Keine Spielstandsdatei.
+[638] This Memory card is damaged and cannot be used. → [865] Diese Memory Card ist beschädigt und kann nicht verwendet werden.
+[639] Please insert another Memory card. → [866] Andere Memory Card einlegen.
+[640] Not enough space left on save data file. → [867] Nicht genug Platz in der Spielstandsdatei übrig.
+[641] Use another save data file, → [868] Bitte benutzen Sie eine andere Spielstandsdatei
+[642] or erase 1 block of saved data. → [869] oder löschen Sie 1 Block gesicherter Daten.
+[643] Couldn't read it. → [870] Lesen nicht möglich.
+[644] Still want to begin the game? → [871] Spiel beginnen?
+[645] Can not allocate save file memory buffer! → [872] Kann Speicherpuffer der Spielstandsdatei nicht zuordnen!
+[646] Invalid save file! → [873] Ungültige Spielstandsdatei!
+
+================================================================================
+SAVE SLOTS
+================================================================================
+[609] 01 → [835] 01
+[610] 02 → [836] 02
+[611] 03 → [837] 03
+[612] 04 → [838] 04
+[613] 05 → [839] 05
+[614] 06 → [840] 06
+[615] 07 → [841] 07
+[616] 08 → [842] 08
+[617] 09 → [843] 09
+[618] 10 → [844] 10
+[619] 11 → [845] 11
+[620] 12 → [846] 12
+[621] 13 → [847] 13
+[622] 14 → [848] 14
+[623] 15 → [849] 15
+[647] Save 1 → [874] Spielstand 1
+[648] Save 2 → [875] Spielstand 2
+[649] 3AVE [13] → [876] Spielstand 3
+[650] 3AVE [14] → [877] Spielstand 4
+[651] 3AVE [15] → [878] Spielstand 5
+[652] 3AVE [16] → [879] Spielstand 6
+[653] 3AVE [17] → [880] Spielstand 7
+[654] 3AVE [18] → [881] Spielstand 8
+[655] 3AVE [19] → [882] Spielstand 9
+[656] 3AVE [11][10] → [883] Spielstand 10
+
+================================================================================
+SNOWBOARDING MINIGAME (English only)
+================================================================================
+[657] ,EVEL → (NO MATCH)
+[658]-[680] (All snowboarding strings) → (NO MATCH)
+
+================================================================================
+CHOCOBO RACING MINIGAME (English only)
+================================================================================
+[681] TECHNIQUE → (NO MATCH)
+[682] TIME → (NO MATCH)
+[683] BALLOON → (NO MATCH)
+[684] TOTAL → (NO MATCH)
+[685] BEST → (NO MATCH)
+[686]-[696] (All racing strings) → (NO MATCH)
+
+================================================================================
+ITEMS/BATTLE REWARDS (English only)
+================================================================================
+[697] Sprint Shoes → (NO MATCH)
+[698] Counter → (NO MATCH)
+[699] Magic Counter → (NO MATCH)
+[700] Precious Watch → (NO MATCH)
+[701] Ether → (NO MATCH)
+[702] Hero Drink → (NO MATCH)
+[703] Bolt Plume → (NO MATCH)
+[704] Elixir → (NO MATCH)
+[705] Fire Fang → (NO MATCH)
+[706] Antarctic Wind → (NO MATCH)
+[707] Potion → (NO MATCH)
+[708] Phoenix Down → (NO MATCH)
+[709] Hyper → (NO MATCH)
+[710] Tranquilizer → (NO MATCH)
+[711] Cat's Bell → (NO MATCH)
+[712] Enemy → (NO MATCH)
+[713] Sneak → (NO MATCH)
+[714] Chocobracelet → (NO MATCH)
+[715] Swift → (NO MATCH)
+[716] Fire → (NO MATCH)
+[717] Megalixir → (NO MATCH)
+[718] Turbo → (NO MATCH)
+[719] Hi-Potion → (NO MATCH)
+[720] Ice → (NO MATCH)
+
+================================================================================
+CHOCOBO NAMES (English only)
+================================================================================
+[721] SAM → (NO MATCH)
+[722] ELEN → (NO MATCH)
+[723] BLUES → (NO MATCH)
+[724] TOM → (NO MATCH)
+[725] JOHN → (NO MATCH)
+[726] GARY → (NO MATCH)
+[727] MIKE → (NO MATCH)
+[728] SANDY → (NO MATCH)
+[729] JU → (NO MATCH)
+[730] LY → (NO MATCH)
+[731] JOEL → (NO MATCH)
+[732] GREY → (NO MATCH)
+[733] EDWARD → (NO MATCH)
+[734] JAMES → (NO MATCH)
+[735] HARVEY → (NO MATCH)
+[736] DAN → (NO MATCH)
+[737] RUDY → (NO MATCH)
+[738] GRAHAM → (NO MATCH)
+[739] FOX → (NO MATCH)
+[740] CLIVE → (NO MATCH)
+[741] SEAN → (NO MATCH)
+[742] YOUNG → (NO MATCH)
+[743] ROBIN → (NO MATCH)
+[744] DARIO → (NO MATCH)
+[745] K → (NO MATCH)
+[746] ARL → (NO MATCH)
+[747] SARA → (NO MATCH)
+[748] MARIE → (NO MATCH)
+[749] SAMMY → (NO MATCH)
+[750] LIA → (NO MATCH)
+[751] KNIGHT → (NO MATCH)
+[752] PAULA → (NO MATCH)
+[753] PAU → (NO MATCH)
+[754] LE → (NO MATCH)
+[755] PETER → (NO MATCH)
+[756] AIMEE → (NO MATCH)
+[757] TERRY → (NO MATCH)
+[758] ANDY → (NO MATCH)
+[759] NANCY → (NO MATCH)
+[760] TIM → (NO MATCH)
+[761] ROBER → (NO MATCH)
+[762] T → (NO MATCH)
+[763] GEORGE → (NO MATCH)
+[764] JENNY → (NO MATCH)
+[765] RICA → (NO MATCH)
+[766] JULIA → (NO MATCH)
+
+================================================================================
+CORRUPTED/GARBLED TEXT (English only)
+================================================================================
+[033] [C5][B8][B7] → (NO MATCH)
+[034] [BA][C5][B8][B8][C1] → (NO MATCH)
+[035] [B5][BF][C8][B8] → (NO MATCH)
+[465]-[473] (Garbled Unicode) → (NO MATCH)
+
+================================================================================
+UNICODE PLACEHOLDERS (English only)
+================================================================================
+[474]-[532] [UNICODE:xx] → (NO MATCH)
+
+================================================================================
+NUMBERS (English only)
+================================================================================
+[533] 1 → (NO MATCH)
+[534] 2 → (NO MATCH)
+[535] 3 → (NO MATCH)
+[536] 4 → (NO MATCH)
+[537] 5 → (NO MATCH)
+[538] 6 → (NO MATCH)
+[539] 7 → (NO MATCH)
+[540] 8 → (NO MATCH)
+[541] 9 → (NO MATCH)
+
+================================================================================
+MISCELLANEOUS (German only)
+================================================================================
+(NO MATCH) → [357] 7aBf
+(NO MATCH) → [375] 7nBz
+(NO MATCH) → [885] Level
+
+================================================================================
+SUMMARY
+================================================================================
+Total English strings: 767
+Total German strings: 608
+Successfully mapped: ~450 pairs
+English-only (no German match): ~317 strings
+German-only (no English match): ~158 strings
+
+Key differences:
+- German lacks keyboard/joystick key translations
+- German lacks minigame strings (snowboarding, chocobo racing)
+- German lacks chocobo names
+- German lacks item/reward names
+- German has additional shop dialogue
+- German has name entry interface strings
+- German has preset character names for testing

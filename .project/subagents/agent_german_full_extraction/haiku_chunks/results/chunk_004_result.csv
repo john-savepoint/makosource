@@ -1,0 +1,30 @@
+```csv
+412,0x5978A9,Zusätzliche Fähigkeit,Added-Ability
+413,0x5978C8,Alle,All
+414,0x5978CD,4x-Zber,4x-M
+415,0x5978E6,MP absorb.,Absorb MP
+416,0x5978FF,HP absorb.,Absorb HP
+417,0x597921,Auch stehl.,Steal as well
+418,0x597942,Schlag,Extra cut
+419,0x597953,Turbo-MP,Turbo MP
+420,0x59796B,Nichts,Nothing.
+421,0x59797F,Nicht genug MP.,Not enough MP.
+422,0x5979A8,Verwenden,Use
+423,0x597A12,Ordnen,Arrange
+424,0x597A21,Schlüsselobjekte,Key Items
+425,0x597A3D,Allein,Customize
+426,0x597A45,Feld,Field
+427,0x597A55,Schlacht,Battle
+428,0x597A6B,Werfen,Throw
+429,0x597A7B,Typ,Type
+430,0x597A8A,Name,Name
+431,0x597A9D,Max.,Most
+432,0x597AAF,Min.,Least
+433,0x597AC1,OK! Klar!,OK! Got it!
+458,0x5985D1,Cloud,Cloud
+459,0x59862E,Barret,Barret
+460,0x59863B,Tifa,Tifa
+461,0x598645,Aeris,Aeris
+462,0x598652,Red XIII,Red XIII
+463,0x598661,Yuffie,Yuffie
+```

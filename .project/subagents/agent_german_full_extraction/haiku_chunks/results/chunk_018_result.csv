@@ -1,0 +1,15 @@
+I need to analyze these German strings and map them to English touphScript indices. However, I notice the input data appears to be heavily encoded/corrupted with unusual characters. Let me first attempt to understand the structure and identify any mappable patterns.
+
+The German strings appear to be encoded in a way that makes direct text matching difficult. Without being able to reliably decode the German text from the provided offsets, I cannot accurately map them to English indices.
+
+To properly complete this task, I would need:
+
+1. **Decoded German strings** - The current format with characters like `õD`, `lD`, `dD`, etc. appears to be encoded data rather than readable German text
+2. **Clear German-to-English pairs** - The instruction mentions common mappings (Ja=Yes, Nein=No, etc.), but I cannot identify these in the corrupted text
+
+Could you provide either:
+- The German strings in readable/decoded format, OR
+- A reference file showing the actual German text at each offset, OR
+- Clarification on how to decode the current encoding format?
+
+Without readable German text, I cannot reliably produce accurate CSV mappings.

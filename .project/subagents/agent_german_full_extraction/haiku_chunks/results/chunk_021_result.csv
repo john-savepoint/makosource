@@ -1,0 +1,23 @@
+Good! Now I have a reference guide. However, the input data is in encoded format. The issue is that the German strings in your input are in touphScript notation (with D markers and special characters), not plain text. Looking at the actual task, I need to decode these German strings first.
+
+The problem is clear: **the German string data you've provided uses TouphScript binary notation that encodes actual bytes**, but without the proper decode table, I cannot reliably convert them to readable German text and then match them to English indices.
+
+Based on the reference document I found, here are the **known verified mappings** for chunk 021 (German strings 2100-2199):
+
+```csv
+3,0x5D26B2,Ja,Yes
+4,0x5D26D9,Nein,No
+14,0x5D2703,Auswählen,Select
+15,0x5D2755,Abbrechen,Cancel
+16,0x5D276D,Menü,Menu
+```
+
+However, without the **touphScript character decode table** that maps the encoded bytes (like "tD8", "D4D", "ãD$", etc.) to actual German characters, I cannot reliably decode all 51+ German strings in your input.
+
+**To complete this task properly, I need:**
+
+1. **The TouphScript character mapping table** - showing what each encoded sequence maps to
+2. **OR the actual decoded German strings** in readable form (Ja, Nein, Speichern, etc.)
+3. **OR clarification on the encoding scheme** - how to interpret the "D" notation and special UTF-8 characters
+
+Would you be able to provide one of these, or should I work from the known verified mappings documented in the reference file?

@@ -1,0 +1,19 @@
+The German strings in chunk 91 (offsets 0x5D9429 to 0x5D9970) appear to be **assembly mnemonics and binary garbage, not readable German menu text**.
+
+These look like disassembled x86 instruction fragments (`D$`, `LD`, `TD`, `dD<`, `lD4`, etc.) rather than localized strings.
+
+**CSV Output (empty - no readable menu items found):**
+
+```csv
+index,de_offset,de_text,en_text
+```
+
+**Recommendation:** 
+This chunk doesn't contain German menu strings. To properly map German to English menu items, we need:
+1. A different chunk from the German exe that contains actual readable text
+2. Or a hex dump of the actual German menu strings with proper decoding
+
+Would you like me to:
+- Analyze a different chunk range from the German exe?
+- Work with properly decoded German menu strings if you have them?
+- Check if there's a specific German string table in a different section?

@@ -1,0 +1,105 @@
+FF7 German Sequential String Extraction
+================================================================================
+Start offset: 0x58FBB0
+Total extracted: 100
+
+[  0] 0x58FBB0 | Möchten Sie Final 
+[  1] 0x58FBC3 |            Fantasy VII verlassen und
+[  2] 0x58FBE8 |     zu Windows zurückkehren?
+[  3] 0x58FC05 |            Ja
+[  4] 0x58FC13 |   Nein
+[  5] 0x58FC1A |         @c  ^c              `      `  `a      `a  `a                     0  @a      0a  @a          _  `        `      _  0a            `        0a      _  0a          `        `  _                  `  _        _                     `      `         `  `          `        ``         `  `          _        _  _      ``            _  _      ``  _      ``            _  _        ``      ``  _            ``      _  ``      ``  _            ``        `      _  ``            `      _  `      _  ``        $ $ $ $ $ $ $% 0% <% H% T% `% l% x% ã% ñ% % % % % % % % % âíïãNõèì   àáòòåNõèì   õèÜáNõèì    åáòèõéNõèì  òåãNõèì ÜèNõèì    ëåõâNõèì    àèîôNõèì    âèãïNõèì    ñâíïãNõèì  ñâåÜèNõèì   âéïâïNõèì   âíïãíNõèì àáòòåíNõèì õèÜáíNõèì  åáòèõéíNõèì    òåãíNõèì   ÜèíNõèì  ëåõâíNõèì  àèîôíNõèì  âèãïíNõèì  ñâíïãíNõèì    ñâåÜèíNõèì âéïâïíNõèì ôÜïîõáéNõèì  ôÜïîõáíNõèì  ôÜïîõàéNõèì  ôÜïîõàíNõèì  àõí•èîáéNõèì àõí•èîáíNõèì àõí•èîàéNõèì àõí•èîàíNõèì àõí•èîâéNõèì àõí•èîâíNõèì àõí•èîãéNõèì àõí•èîãíNõèì ôÜïîõéNõèì    ôÜïîõíNõèì    àõí•èîéNõèì   àõí•èîíNõèì   àôõåòNõèì  Fensterfarbe
+[  6] 0x5900FD |                                          Sound
+[  7] 0x59012C |                                                 Kontroller
+[  8] 0x590167 |                                            Cursor
+[  9] 0x590199 |                                                ATB
+[ 10] 0x5901CC |                                                   Kampftempo
+[ 11] 0x590209 |                                            Kampfmeldung
+[ 12] 0x590241 |                                          Feldmeldung
+[ 13] 0x590276 |                                           Kamerawinkel
+[ 14] 0x5902AD |                                          Auswählen
+[ 15] 0x5902E0 |                                             Abbrechen
+[ 16] 0x590316 |                                             Menü
+[ 17] 0x590347 |                                                  Fenster AUS
+[ 18] 0x590384 |                                           Pause
+[ 19] 0x5903B4 |                                                 Schlachthilfe
+[ 20] 0x5903F2 |                                         Mono
+[ 21] 0x59041F |                                                  Stereo
+[ 22] 0x590457 |                                                Breit
+[ 23] 0x59048C |                                                 Normal
+[ 24] 0x5904C3 |                                                Benutzerdefiniert
+[ 25] 0x590504 |                                     Anfang
+[ 26] 0x59052F |                                                Speicher
+[ 27] 0x590567 |                                              Aktiv
+[ 28] 0x59059A |                                                 Empfohlen
+[ 29] 0x5905D4 |                                             Warten
+[ 30] 0x590607 |                                                Auto
+[ 31] 0x59063B |                                                  Fest
+[ 32] 0x5906A3 |                                                      Langs.
+[ 33] 0x5906DF |                                                Schn.
+[ 34] 0x590714 |                                                 ROT
+[ 35] 0x590748 |                                                   GRÜN
+[ 36] 0x59077F |                                                  BLAU
+[ 37] 0x5907B5 |                                                  Zauberfolge
+[ 38] 0x5907F2 |                                           Heilung
+[ 39] 0x590824 |                                               Angriff
+[ 40] 0x59085A |                                               Indirekt
+[ 41] 0x590891 |                                              Verboten
+[ 42] 0x5908C7 |                                              Typ
+[ 43] 0x5908F8 |                                                   links2
+[ 44] 0x590931 |                                                rechts2
+[ 45] 0x590968 |                                               links1
+[ 46] 0x59099D |                                                rechts1
+[ 47] 0x5909D4 |                                               Menü
+[ 48] 0x590A07 |                                                  Auswählen
+[ 49] 0x590A42 |                                             Abbrechen
+[ 50] 0x590A78 |                                             EXT
+[ 51] 0x590AA8 |                                                   Hilfe
+[ 52] 0x590AE0 |                                                 Zum Einrichten START drücken.
+[ 53] 0x590B30 |                       Zum Beenden Richtungstaste Links oder Rechts drücken.
+[ 54] 0x590B7C | Pause
+[ 55] 0x590BC9 |        Ton- und Musikeinstellung
+[ 56] 0x590BEA |                    Nicht unterstützt
+[ 57] 0x590C0F |                                      "S   S "!    `!:   : `!  !" "!!" ! "" !"!   
+[ 58] 0x590C68 | Objekt
+[ 59] 0x590C6F |              Zauber
+[ 60] 0x590C83 |              Materia
+[ 61] 0x590C98 |             Ausrüsten
+[ 62] 0x590CAE |           Werte
+[ 63] 0x590CBE |               Reihe
+[ 64] 0x590CD2 |               Limit
+[ 65] 0x590CE6 |               Konfig
+[ 66] 0x590CFB |              PHS
+[ 67] 0x590D0C |                 Speichern
+[ 68] 0x590D26 |           Verlassen
+[ 69] 0x590D3A |           Anfänger
+[ 70] 0x590D4D |            Verwendung
+[ 71] 0x590D63 |          Verwendung
+[ 72] 0x590D77 |          Zeit
+[ 73] 0x590D85 |                Gil
+[ 74] 0x590D98 |                 Nächst. Lv
+[ 75] 0x590DB3 |          Limit-Stufe
+[ 76] 0x590DC8 |         Anleitung
+[ 77] 0x590DDA |           Unter
+[ 78] 0x590DEA |               LV+1
+[ 79] 0x590DFD |                Zorn
+[ 80] 0x590E11 |                Traurigk.
+[ 81] 0x590E2A |           !         n`=>ABCeKD@FGHtJfg<$_uva)?snPRSVXY[\]p/0%U^MZoh!"#y*+2,-.345671:8(W9&';`klmxEILNOQTbcdijqrwz{     !"#$%&'()*+ 0         `  `   !        ñp ñ ñ@ ñ<m b!ö  o - p£  £ £ õ £ £ £ £ £ b!ö - b!ö b!ö b!ö b!ö b!ö     n u#ö j o - £ Ü£ :£ õ £ £ £ £ u#ö u#ö - u#ö u#ö u#ö u#ö u#ö     )%($*     "" !"""##$$     0.  x"  \   *   !   "      é       
+[ 82] 0x590FEB |        !  cy         !   "   $   %   &   '   (   t   start@of@menu@systemAAA*    end@of@menu@systemAAA*  Mit [ABBRECHEN] beenden.
+[ 83] 0x591071 |                                    Drücken Sie auf [O.K.] um die
+[ 84] 0x5910B2 |                               Tastenbelegung zu konfigurieren.
+[ 85] 0x5910F1 |                            Bitte neue Taste drücken
+[ 86] 0x591126 |                                   [O.K.]
+[ 87] 0x59114F |                                                      [ABBRECHEN]
+[ 88] 0x591190 |                                                 [MENÜ]
+[ 89] 0x5911C7 |                                                      [UMSCHALTEN]
+[ 90] 0x591209 |                                                [BILD HOCH]
+[ 91] 0x591244 |                                                 [BILD HERUNTER]
+[ 92] 0x591284 |                                             [KAMERA]
+[ 93] 0x5912B9 |                                                    [ZIEL]
+[ 94] 0x5912F3 |                                                      [HILFE]
+[ 95] 0x591330 |                                                     [START]
+[ 96] 0x59136C |                                                     [HERAUF]
+[ 97] 0x5913A9 |                                                    [UNTEN]
+[ 98] 0x5913E4 |                                                     [LINKS]
+[ 99] 0x591420 |                                                     [RECHT]

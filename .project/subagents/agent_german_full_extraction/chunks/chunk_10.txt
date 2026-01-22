@@ -1,0 +1,203 @@
+# Chunk 10: Strings 2000 to 2199
+# Offset range: 0x5952AB to 0x59614E
+
+0x5952AB | Gift
+0x5952CA | Kröte
+0x5952E9 | Zeit x30 Schaden.
+0x595308 | 5 Ebenen Öurück.
+0x595327 | 10 Ebenen Öurück.
+0x595346 | 1/2 HP.
+0x595365 | 1/2 MP.
+0x595384 | 1/2 HP&MP.
+0x5953A3 | Null MP.
+0x5953C2 | Jaa! Keine Behinderung!!
+0x5953E1 | HP wiederhergestellt.
+0x5953F8 |         Besorgt um die anderen Mitglieder?
+0x595423 | Ja, ein bi
+0x59542E | chen
+0x595433 |                    Eigentlich nicht
+0x59547A |       4   
+0x595489 |    "   !   &   &   !   !       
+0x5954A9 | x 
+0x5954B0 | p  
+0x5954B4 | @  
+0x5954B8 |  x
+0x5954BE |   p  @    
+0x5954CA | GW
+0x5954CE | XW
+0x5954D1 | siW
+0x5954D5 | :ÖWx"  \   *   !   
+0x5954EB |  `b/ 
+0x5954F2 | ! 0G  
+0x5954F9 | #  
+0x5954FD |    *   !   '   `   
+0x595514 | /   
+0x595525 | "S   S 
+0x59552F | !s
+0x595537 |  $   #   "   !   
+0x595558 | QRSTUVWXYZ[\]^`adefgh   ÄklmnopqrstuvwxyDEGHIJK qu      +!
+0x595595 |  c 
+0x59559B |  [!
+0x5955A3 |  V B v r 
+0x5955AD |  l 
+0x5955B3 |  o!
+0x5955B7 |  l Ü 
+0x5955BD |  S Speichern
+0x5955D9 | !) 
+0x5955DD |  m t!v L!S     
+0x5955F1 |  % Ä G 
+0x5955F9 |  K 
+0x5955FD |  :     `!e 
+0x595609 | !  
+0x59560D |  S 
+0x595611 |    Ä : E
+0x595623 | EPR
+0x59562A | W     Reformieren
+0x59563C |                           Mitglieden in Öwei Gruppen aufteilen
+0x59567B |  Mitglieder in drei Gruppen aufteilen
+0x5956A1 |  Gruppe aus Öwei Personen bilden
+0x5956C2 |       Gruppe aus drei Personen bilden
+0x5956E8 |       Auswählen mit [START]-Taste
+0x59570A |               Element
+0x595720 |               Effekt
+0x595735 |                Angreifen
+0x59574E |             Verteidigen
+0x595766 |           Halbieren
+0x59577A |             Ungültig
+0x59578F |              Absorbieren
+0x5957DF |                      Stärke
+0x5957FB |                Geschick
+0x595813 |              Vitalität
+0x59582A |             Zauber
+0x59583D |                Moral
+0x595852 |                 Glück
+0x595868 |                 Angreifen
+0x595882 |             Angreifen %
+0x59589A |           Verteidigen
+0x5958B0 |           Verteidigen %
+0x5958C8 |         Zbrangrf
+0x5958D9 |              Zbrvertdg
+0x5958F0 |             Zbrvertdg %
+0x595908 |           Waf.
+0x595917 |                  Rüs.
+0x59592D |                  Acc.
+0x595943 |                  Limit-Ebene
+0x595979 | !  
+0x59597D |  S 
+0x595981 |    Ä :     
+0x59598D | "S   S S!
+0x595997 | !S!S m!
+0x59599F |  S!
+0x5959A3 |  m!]!    `!:   : 
+0x5959B9 |  : 
+0x5959BD |  \ 
+0x5959C1 |  r 
+0x5959C7 |  STUFE 1
+0x5959D0 |                         STUFE 2
+0x5959F0 |                         STUFE 3
+0x595A10 |                         STUFE 4
+0x595A30 |                         LIMIT-STUFE einrichten.
+0x595A60 |         Einrichten
+0x595A73 |                      Prüfen
+0x595A8F |                          Bei 
+0x595AAD | nderung der STUFE
+0x595ABF |          Beginn bei Limit-Punkt 0.
+0x595AE2 |       STUFE ändern?
+0x595AF6 |                   Ja
+0x595B0B |                              Nein
+0x595B2D |                            Limit gewählt!
+0x595B57 |                  STUFE wählen
+0x595B94 | R R 3 1P
+0x595BB0 | T T 3!1T
+0x595BBC |    "  
+0x595BCC | S S 3"1X
+0x595BD6 | :ö
+0x595BE8 | U U 3#1f
+0x595C04 | V V 
+0x595C09 | $1:
+0x595C0E |  &
+0x595C20 | Y Y 7%1 
+0x595C29 | _8
+0x595C2C | !     
+0x595C3C | [ \ 
+0x595C41 | &1,
+0x595C46 |  /
+0x595C58 | f f 3'1T
+0x595C74 | h h 7(1V
+0x595C90 | i i 3)C@
+0x595CA0 | @ 
+0x595CAC | k k 3*1 
+0x595CB8 | !     
+0x595CC8 | m m 7+1C
+0x595CE4 | n n 
+0x595CE9 | ,1(
+0x595CEE |  2
+0x595D00 | o o 
+0x595D05 | -14
+0x595D0A |  *
+0x595D1C | Ö Ö 5.D0
+0x595D2C |  "
+0x595D38 | { { 7/B 
+0x595D45 | $    
+0x595D54 | ~ ~ 50B 
+0x595D63 | V  
+0x595D73 |  51 
+0x595D8F |  52B 
+0x595D98 |    !  
+0x595DAB |  53(@
+0x595DB4 | !    "
+0x595DC7 |  54(@
+0x595DD0 |    ! "
+0x595DE0 | ^ ^ 
+0x595DFC | b b 
+0x595E18 | ` ` 
+0x595E34 | a a 
+0x595E50 | c c 
+0x595E6C | d d 
+0x595E88 | e e 
+0x595EA7 |  3<1T
+0x595EC3 |  3=14
+0x595EDF |  7>1X
+0x595EE8 | !     
+0x595EFB |  7?1D
+0x595F14 | ä ä 
+0x595F19 | @17
+0x595F1D | ' &!     
+0x595F35 | A12
+0x595F3A |  (
+0x595F51 | B1+
+0x595F56 |  2
+0x595F61 | G 
+0x595F64 |   C p p 3C1P
+0x595F84 | q q  DB 
+0x595F8D | _7
+0x595F90 |  !
+0x595FA0 | s s 3E14
+0x595FBC | u u 
+0x595FC1 | F1*
+0x595FC6 |  *
+0x595FD8 | v v 5GB 
+0x595FE1 | _6
+0x595FE4 |  !    
+0x595FF4 | x x 
+0x595FF9 | H1>
+0x595FFE |  %
+0x596010 | y y 7I1
+0x59602F |  3J
+0x59604B |  3f1
+0x596064 | ö ö 7L 
+0x596083 |   M 
+0x59608A | # 
+0x59609F |   N 
+0x5960A6 | #!
+0x5960BB |   O 
+0x5960C2 | #"
+0x5960D7 |   P 
+0x5960DE | ##
+0x5960F3 |  3Q1R
+0x59610F |  5RD0
+0x59611C |  "
+0x59612B |  7S1P
+0x596138 | ( 
+0x596149 | T1*
+0x59614E |  *

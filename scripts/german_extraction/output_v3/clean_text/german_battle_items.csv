@@ -1,0 +1,23 @@
+index,offset,text,length,confidence,reason
+B000,0x56F9C0,TEIOH,5,95,battle item/prize - FF7 encoding
+B001,0x56FAF9,Gegenangriff,12,95,battle item/prize - FF7 encoding
+B002,0x56FB0A,Zauberangriff,13,95,battle item/prize - FF7 encoding
+B003,0x56FB1B,Wertvolle Uhr,13,95,battle item/prize - FF7 encoding
+B004,0x56FB2C,Katzenglocke,12,95,battle item/prize - FF7 encoding
+B005,0x56FB3D,Feind weg,9,95,battle item/prize - FF7 encoding
+B006,0x56FB4E,Schleichangriff,15,95,battle item/prize - FF7 encoding
+B007,0x56FB5F,Choco-Armband,13,95,battle item/prize - FF7 encoding
+B008,0x56FB81,Elixier,7,95,battle item/prize - FF7 encoding
+B009,0x56FB92,Heldentrank,11,95,battle item/prize - FF7 encoding
+B010,0x56FBA3,Blitzstrahlrauch,16,95,battle item/prize - FF7 encoding
+B011,0x56FBB4,Feuerzahn,9,95,battle item/prize - FF7 encoding
+B012,0x56FBC5,Antarkt. Wind,13,95,battle item/prize - FF7 encoding
+B013,0x56FBD6,Schnellblitz,12,95,battle item/prize - FF7 encoding
+B014,0x56FBE7,Feuerschleier,13,95,battle item/prize - FF7 encoding
+B015,0x56FBF8,Eiskristall,11,95,battle item/prize - FF7 encoding
+B016,0x56FC09,Megalixier,10,95,battle item/prize - FF7 encoding
+B017,0x56FC2B,Trank,5,95,battle item/prize - FF7 encoding
+B018,0x56FC3C,Phönix-Feder,12,95,battle item/prize - FF7 encoding
+B019,0x56FC4D,Hyper,5,95,battle item/prize - FF7 encoding
+B020,0x56FC5E,Beruhigungsm.,13,95,battle item/prize - FF7 encoding
+B021,0x56FC6F,Hi-Trank,8,95,battle item/prize - FF7 encoding

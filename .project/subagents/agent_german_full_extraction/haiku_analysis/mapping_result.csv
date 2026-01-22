@@ -1,0 +1,33 @@
+```csv
+index,en_offset,de_offset,en_text,de_text
+5,0x005188A8,0x5900EE,Window color,Fensterfarbe
+6,0x005188D8,0x5900FD,Sound,Sound
+7,0x00518908,0x59012C,Controller,Kontroller
+8,0x00518938,0x590167,Cursor,Cursor
+9,0x00518968,0x590199,ATB,ATB
+10,0x00518998,0x5901CC,Battle speed,Kampftempo
+11,0x005189C8,0x590209,Battle message,Kampfmeldung
+12,0x005189F8,0x590241,Field message,Feldmeldung
+13,0x00518A28,0x590276,Camera angle,Kamerawinkel
+14,0x00518A58,0x5902AD,Select,Auswählen
+15,0x00518A88,0x5902E0,Cancel,Abbrechen
+16,0x00518AB8,0x590316,Menu,Menü
+24,0x00518D58,0x590607,Auto,Auto
+25,0x00518D88,0x59063B,Fixed,Fest
+28,0x00518ED8,,Magic order,Zauberfolge
+29,0x00518F08,0x5907F2,restore,Heilung
+30,0x00518F38,0x590824,attack,Angriff
+31,0x00518F68,0x59085A,indirect,Indirekt
+38,0x005192C0,0x590C68,Item,Objekt
+39,0x005192D4,0x590C6F,Magic,Zauber
+40,0x005192E8,0x590C83,Materia,Materia
+41,0x005192FC,0x590C98,Equip,Ausrüsten
+44,0x00519338,0x590CD2,Limit,Limit
+45,0x0051934C,0x590CE6,Config,Konfig
+46,0x00519360,0x590CFB,PHS,PHS
+47,0x00519374,0x590D0C,Save,Speichern
+48,0x00519388,0x590D26,Quit,Verlassen
+49,0x0051939C,0x590D3A,Beginner,Anfänger
+50,0x005193D8,0x590D77,Time,Zeit
+51,0x005193EC,0x590D85,Gil,Gil
+```

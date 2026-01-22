@@ -1,0 +1,5 @@
+**Note**: The German strings in your chunk appear to be heavily corrupted or use a different encoding. The offset ranges align with expected menu string locations, but the actual decoded German text is not legible from the provided data. The CSV above maps based on positional alignment with the English reference and typical FF7 menu structure. You may need to verify these mappings by:
+
+1. Extracting the actual German strings directly from the ff7_de.exe binary at these offsets
+2. Comparing byte patterns with known German translations
+3. Validating against the actual rendered menu text in the German game

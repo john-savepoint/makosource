@@ -1,0 +1,1193 @@
+# FF7 English-German String Mapping (Index-Based)
+# Generated: 2026-01-05 19:54 JST
+# Session: ff862825-4ec7-4a49-a932-e9e5dcc0ea9f
+#
+# Mapped by original touphScript index numbers
+# Format: [INDEX] English Text | German Text
+# Mapped (both languages): 491
+# English only: 275
+# German only: 116
+
+
+
+========================================================================================================================
+EXIT DIALOG
+========================================================================================================================
+[  0] Do you want to quit                                          | Möchten Sie Final
+[  1] playing Final Fantasy VII                                    | Fantasy VII verlassen und
+[  2] and return to Windows?                                       | zu Windows zurückkehren?
+[  3] Yes                                                          | Ja
+[  4] No                                                           | Nein
+
+========================================================================================================================
+CONFIG MENU
+========================================================================================================================
+[  5] Window color                                                 | Fensterfarbe
+[  6] Sound                                                        | Sound
+[  7] Controller                                                   | Kontroller
+[  8] Cursor                                                       | Cursor
+[  9] ATB                                                          | ATB
+[ 10] Battle speed                                                 | Kampftempo
+[ 11] Battle message                                               | Kampfmeldung
+[ 12] Field message                                                | Feldmeldung
+[ 13] Camera angle                                                 | Kamerawinkel
+[ 14] Select                                                       | Auswählen
+[ 15] Cancel                                                       | Abbrechen
+[ 16] Menu                                                         | Menü
+[ 17] Normal                                                       | Fenster AUS
+[ 18] Customize                                                    | Pause
+[ 19] Initial                                                      | Schlachthilfe
+[ 20] Memory                                                       | Mono
+[ 21] Active                                                       | Stereo
+[ 22] Recommended                                                  | Breit
+[ 23] Wait                                                         | Normal
+[ 24] Auto                                                         | Benutzerdefiniert
+[ 25] Fixed                                                        | Anfang
+[ 26] Slow                                                         | Speicher
+[ 27] Fast                                                         | Aktiv
+[ 28] Magic order                                                  | Empfohlen
+[ 29] restore                                                      | Warten
+[ 30] attack                                                       | Auto
+[ 31] indirect                                                     | Fest
+[ 32] No.                                                          | Langs.
+
+========================================================================================================================
+CORRUPTED/GARBLED TEXT
+========================================================================================================================
+[ 33] [C5][B8][B7]                                                 | Schn.
+[ 34] [BA][C5][B8][B8][C1]                                         | ROT
+[ 35] [B5][BF][C8][B8]                                             | GRÜN
+
+========================================================================================================================
+CONFIG MENU
+========================================================================================================================
+[ 36] Set Sound & Music Volume                                     | BLAU
+[ 37] Not supported.                                               | Zauberfolge
+
+========================================================================================================================
+MAIN MENU
+========================================================================================================================
+[ 38] Item                                                         | Heilung
+[ 39] Magic                                                        | Angriff
+[ 40] Materia                                                      | Indirekt
+[ 41] Equip                                                        | Verboten
+[ 42] Status                                                       | Typ
+[ 43] Order                                                        | links2
+[ 44] Limit                                                        | rechts2
+[ 45] Config                                                       | links1
+[ 46] PHS                                                          | rechts1
+[ 47] Save                                                         | Menü
+[ 48] Quit                                                         | Auswählen
+
+========================================================================================================================
+STATUS SCREEN LABELS
+========================================================================================================================
+[ 49] Beginner                                                     | Abbrechen
+[ 50] Time                                                         | EXT
+[ 51] Gil                                                          | Hilfe
+[ 52] next level                                                   | Zum Einrichten START drücken.
+[ 53] Limit level                                                  | Zum Beenden Richtungstaste Links oder Rechts drücken.
+
+========================================================================================================================
+MAIN MENU
+========================================================================================================================
+[ 54] Tutorial                                                     | Pause
+
+========================================================================================================================
+STATUS SCREEN LABELS
+========================================================================================================================
+[ 55] LEVEL UP                                                     | Ton- und Musikeinstellung
+[ 56] Fury                                                         | Nicht unterstützt
+[ 57] Sadness                                                      | (German not extracted)
+
+========================================================================================================================
+KEYBOARD CONFIGURATION
+========================================================================================================================
+[ 58] Press [CANCEL] to end.                                       | Objekt
+[ 59] Press [OK] to configure a key.                               | Zauber
+[ 60] Now press the new key.                                       | Materia
+[ 61] [OK]                                                         | Ausrüsten
+[ 62] [CANCEL]                                                     | Werte
+[ 63] [MENU]                                                       | Reihe
+[ 64] [SWITCH]                                                     | Limit
+[ 65] [PAGEUP]                                                     | Konfig
+[ 66] [PAGEDOWN]                                                   | PHS
+[ 67] [CAMERA]                                                     | Speichern
+[ 68] [TARGET]                                                     | Verlassen
+[ 69] [ASSIST]                                                     | Anfänger
+[ 70] [START]                                                      | Verwendung
+[ 71] [UP]                                                         | Verwendung
+[ 72] [DOWN]                                                       | Zeit
+[ 73] [LEFT]                                                       | Gil
+[ 74] [RIGHT]                                                      | Nächst. Lv
+[ 75] KEYBOARD                                                     | Limit-Stufe
+[ 76] JOYSTICK                                                     | Anleitung
+
+========================================================================================================================
+KEYBOARD KEYS
+========================================================================================================================
+[ 77] ESCAPE                                                       | Unter
+[ 78] 1                                                            | LV+1
+[ 79] 2                                                            | Zorn
+[ 80] 3                                                            | Traurigk.
+[ 81] 4                                                            | (German not extracted)
+[ 82] 5                                                            | Mit [ABBRECHEN] beenden.
+[ 83] 6                                                            | Drücken Sie auf [O.K.] um die
+[ 84] 7                                                            | Tastenbelegung zu konfigurieren.
+[ 85] 8                                                            | Bitte neue Taste drücken
+[ 86] 9                                                            | [O.K.]
+[ 87] 0                                                            | [ABBRECHEN]
+[ 88] MINUS                                                        | [MENÜ]
+[ 89] EQUALS                                                       | [UMSCHALTEN]
+[ 90] BACK SPACE                                                   | [BILD HOCH]
+[ 91] TAB                                                          | [BILD HERUNTER]
+[ 92] Q                                                            | [KAMERA]
+[ 93] W                                                            | [ZIEL]
+[ 94] E                                                            | [HILFE]
+[ 95] R                                                            | [START]
+[ 96] T                                                            | [HERAUF]
+[ 97] Y                                                            | [UNTEN]
+[ 98] U                                                            | [LINKS]
+[ 99] I                                                            | [RECHT]
+[100] O                                                            | TASTATUR
+[101] P                                                            | JOYSTICK
+[102] LEFT BRACKET                                                 | (German not extracted)
+[103] RIGHT BRACKET                                                | (German not extracted)
+[104] RETURN                                                       | (German not extracted)
+[105] LEFT CONTROL                                                 | (German not extracted)
+[106] A                                                            | (German not extracted)
+[107] S                                                            | Pause
+[108] D                                                            | (German not extracted)
+[109] F                                                            | ã
+[110] G                                                            | Schlaf
+[111] H                                                            | Gift
+[112] J                                                            | Traurigkeit
+[113] K                                                            | Zorn
+[114] L                                                            | Verwirrung
+[115] SEMICOLON                                                    | Stummheit
+[116] APOSTROPHE                                                   | Schnell
+[117] GRAVE                                                        | Langsam
+[118] LEFT SHIFT                                                   | Stop
+[119] BACK SLASH                                                   | (German not extracted)
+[120] Z                                                            | (German not extracted)
+[121] X                                                            | (German not extracted)
+[122] C                                                            | Versteinerung
+[123] V                                                            | regen
+[124] B                                                            | (German not extracted)
+[125] N                                                            | (German not extracted)
+[126] M                                                            | Reflektieren
+[127] COMMA                                                        | Doppel
+[128] PERIOD                                                       | Schild
+[129] SLASH                                                        | (German not extracted)
+[130] RIGHT SHIFT                                                  | (German not extracted)
+[131] MULTIPLY                                                     | Toll
+[132] LEFT ALT                                                     | Einzigartig
+[133] SPACE                                                        | Lähmung
+[134] CAPS LOCK                                                    | Dunkelheit
+[135] F1                                                           | (German not extracted)
+[136] F2                                                           | (German not extracted)
+[137] F3                                                           | (German not extracted)
+[138] F4                                                           | (German not extracted)
+[139] F5                                                           | (German not extracted)
+[140] F6                                                           | Wieviel willst du ausgeben?
+[141] F7                                                           | Gil
+[142] F8                                                           | Nach
+[143] F9                                                           | Gil auf der Hand
+[144] F10                                                          | Weiter?
+[145] NUMLOCK                                                      | Ja     Nein
+[146] SCROLL                                                       | Vorhandene Schlachtpunkte
+[147] NUMPAD7                                                      | Schlitzstart!
+[148] NUMPAD8                                                      | TOLL!!
+[149] NUMPAD9                                                      | Gewonnene Schlachtpunkte
+[150] SUBTRACT                                                     | Ok, dann los!
+[151] NUMPAD4                                                      | Zaubersubstanz kaputt.
+[152] NUMPAD5                                                      | Aufrufsubstanz kaputt.
+[153] NUMPAD6                                                      | Support-Substanz kaputt.
+[154] ADD                                                          | Unabhängige Substanz kaputt.
+[155] NUMPAD1                                                      | Befehlssubstanz kaputt.
+[156] NUMPAD2                                                      | Alle Substanz kaputt.
+[157] NUMPAD3                                                      | Zubehör kaputt.
+[158] NUMPAD0                                                      | Objektbefehl ist versiegelt.
+[159] DECIMAL                                                      | Rüstzeug kaputt.
+[160] F11                                                          | Waffe kaputt.
+[161] F12                                                          | 1/2 Geschwindigkeit.
+[162] F13                                                          | 1/2 Genauigkeit.
+[163] F14                                                          | Minimum
+[164] F15                                                          | Gift
+[165] KANA                                                         | Kröte
+[166] CONVERT                                                      | Zeit x30 Schaden.
+[167] NOCONVERT                                                    | 5 Ebenen zurück.
+[168] YEN                                                          | 10 Ebenen zurück.
+[169] NUMPADEQUALS                                                 | 1/2 HP.
+[170] CIRCUMFLEX                                                   | 1/2 MP.
+[171] AT                                                           | 1/2 HP&MP.
+[172] COLON                                                        | Null MP.
+[173] UNDERLINE                                                    | Jaa! Keine Behinderung!!
+[174] KANJI                                                        | HP wiederhergestellt.
+[175] STOP                                                         | Besorgt um die anderen Mitglieder?
+[176] AX                                                           | Ja, ein bichen
+[177] UNLABELED                                                    | Eigentlich nicht
+[178] NUMPADENTER                                                  | (German not extracted)
+[179] RIGHT CONTROL                                                | (German not extracted)
+[180] NUMPADCOMMA                                                  | (German not extracted)
+[181] DIVIDE                                                       | (German not extracted)
+[182] SYSRQ                                                        | (German not extracted)
+[183] RIGHT ALT                                                    | Reformieren
+[184] HOME                                                         | Mitglieden in zwei Gruppen aufteilen
+[185] UP                                                           | Mitglieder in drei Gruppen aufteilen
+[186] PAGE UP                                                      | Gruppe aus zwei Personen bilden
+[187] LEFT                                                         | Gruppe aus drei Personen bilden
+[188] RIGHT                                                        | Auswählen mit [START]-Taste
+[189] END                                                          | Element
+[190] DOWN                                                         | Effekt
+[191] PAGE DOWN                                                    | Angreifen
+[192] INSERT                                                       | Verteidigen
+[193] DELETE                                                       | Halbieren
+[194] LEFT WIN                                                     | Ungültig
+[195] RIGHT WIN                                                    | Absorbieren
+[196] APPS                                                         | Stärke
+[197] MOUSE_B1                                                     | Geschick
+[198] MOUSE_B2                                                     | Vitalität
+[199] MOUSE_B3                                                     | Zauber
+
+========================================================================================================================
+JOYSTICK BUTTONS
+========================================================================================================================
+[200] UP                                                           | Moral
+[201] DOWN                                                         | Glück
+[202] LEFT                                                         | Angreifen
+[203] RIGHT                                                        | Angreifen %
+[204] BUTTON 1                                                     | Verteidigen
+[205] BUTTON 2                                                     | Verteidigen %
+[206] BUTTON 3                                                     | Zbrangrf
+[207] BUTTON 4                                                     | Zbrvertdg
+[208] BUTTON 5                                                     | Zbrvertdg %
+[209] BUTTON 6                                                     | Waf.
+[210] BUTTON 7                                                     | Rüs.
+[211] BUTTON 8                                                     | Acc.
+[212] button@Y                                                     | Limit-Ebene
+[213] button@QP                                                    | STUFE 1
+
+========================================================================================================================
+BATTLE STATUSES
+========================================================================================================================
+[214] Pause                                                        | STUFE 2
+[215] Sleep                                                        | STUFE 3
+[216] Poison                                                       | STUFE 4
+[217] Sadness                                                      | LIMIT-STUFE einrichten.
+[218] Fury                                                         | Einrichten
+[219] Confusion                                                    | Prüfen
+[220] Silence                                                      | Bei nderung der STUFE
+[221] Haste                                                        | Beginn bei Limit-Punkt 0.
+[222] Slow                                                         | STUFE ändern?
+[223] Stop                                                         | Ja
+[224] Petrify                                                      | Nein
+[225] Regen                                                        | Limit gewählt!
+[226] Reflect                                                      | STUFE wählen
+[227] Shield                                                       | (German not extracted)
+[228] Berserk                                                      | (German not extracted)
+[229] Peerless                                                     | (German not extracted)
+[230] Paralyze                                                     | (German not extracted)
+[231] Darkness                                                     | (German not extracted)
+
+========================================================================================================================
+BATTLE ARENA MESSAGES
+========================================================================================================================
+[232] How much will you raise?                                     | (German not extracted)
+[233] Gil                                                          | (German not extracted)
+[234] After                                                        | (German not extracted)
+[235] Gil on hand                                                  | (German not extracted)
+[236] Keep goin'?                                                  | (German not extracted)
+[237] Of course!     No way!                                       | (German not extracted)
+[238] Current Battle Points                                        | (German not extracted)
+[239] Slot start!                                                  | (German not extracted)
+[240] GREAT!!                                                      | (German not extracted)
+[241] Then, go for it!                                             | (German not extracted)
+
+========================================================================================================================
+BATTLE HANDICAPS
+========================================================================================================================
+[242] Magic Materia is broken.                                     | (German not extracted)
+[243] Summon Materia is broken.                                    | (German not extracted)
+[244] Support Materia is broken.                                   | (German not extracted)
+[245] Independent Materia is broken.                               | (German not extracted)
+[246] Command Materia is broken.                                   | (German not extracted)
+[247] All Materia is broken.                                       | (German not extracted)
+[248] Accessory is broken.                                         | (German not extracted)
+[249] Item command is sealed.                                      | (German not extracted)
+[250] Armor is broken.                                             | (German not extracted)
+[251] Weapon is broken.                                            | (German not extracted)
+[252] 1/2 speed.                                                   | (German not extracted)
+[253] 1/2 accuracy.                                                | (German not extracted)
+[254] Minimum                                                      | (German not extracted)
+[255] Poison                                                       | (German not extracted)
+[256] Toad                                                         | (German not extracted)
+[257] Time x30 damage.                                             | (German not extracted)
+[258] Down 5 levels.                                               | (German not extracted)
+[259] Down 10 levels.                                              | (German not extracted)
+[260] 1/2 HP.                                                      | (German not extracted)
+[261] 1/2 MP.                                                      | (German not extracted)
+[262] 1/2 HP&MP.                                                   | (German not extracted)
+[263] Zero MP.                                                     | (German not extracted)
+
+========================================================================================================================
+BATTLE ARENA MESSAGES
+========================================================================================================================
+[264] Yesss! No handicapp!                                         | (German not extracted)
+[265] HP restored.                                                 | (German not extracted)
+[266] Worried about the other members?                             | (German not extracted)
+[267] Yeah, a little                                               | (German not extracted)
+[268] Not really                                                   | (German not extracted)
+
+========================================================================================================================
+PARTY MANAGEMENT
+========================================================================================================================
+[269] Save                                                         | (German not extracted)
+[270] Reform                                                       | (German not extracted)
+[271] Split your allies into two groups.                           | (German not extracted)
+[272] Split your allies into three groups.                         | (German not extracted)
+[273] Please make a party of two.                                  | (German not extracted)
+[274] Please make a party of three.                                | (German not extracted)
+[275] Select with START button.                                    | (German not extracted)
+
+========================================================================================================================
+EQUIPMENT LABELS
+========================================================================================================================
+[276] Wpn.                                                         | (German not extracted)
+[277] Arm.                                                         | (German not extracted)
+[278] Acc.                                                         | (German not extracted)
+
+========================================================================================================================
+LIMIT BREAK MENU
+========================================================================================================================
+[279] LEVEL 1                                                      | (German not extracted)
+[280] LEVEL 2                                                      | (German not extracted)
+[281] LEVEL 3                                                      | (German not extracted)
+[282] LEVEL 4                                                      | (German not extracted)
+[283] Set BREAK LEVEL.                                             | (German not extracted)
+[284] Set                                                          | (German not extracted)
+[285] Check                                                        | (German not extracted)
+[286] To change BREAK LEVEL,                                       | (German not extracted)
+[287] it will begin from Limit Point 0.                            | (German not extracted)
+[288] Change BREAK LEVEL?                                          | (German not extracted)
+[289] Yes                                                          | (German not extracted)
+[290] No                                                           | (German not extracted)
+[291] Limit set!                                                   | (German not extracted)
+[292] Select LEVEL.                                                | (German not extracted)
+
+========================================================================================================================
+ELEMENTS
+========================================================================================================================
+[293] Fire                                                         | (German not extracted)
+[294] Ice                                                          | (German not extracted)
+[295] Lightning                                                    | (German not extracted)
+[296] Earth                                                        | (German not extracted)
+[297] Poison                                                       | (German not extracted)
+[298] Gravity                                                      | (German not extracted)
+[299] Water                                                        | (German not extracted)
+[300] Wind                                                         | (German not extracted)
+[301] Holy                                                         | (German not extracted)
+[302] Death                                                        | (German not extracted)
+[303] Near-death                                                   | (German not extracted)
+
+========================================================================================================================
+BATTLE STATUSES
+========================================================================================================================
+[304] Near-death                                                   | (German not extracted)
+[305] Sleep                                                        | (German not extracted)
+[306] Poison                                                       | (German not extracted)
+[307] Sadness                                                      | (German not extracted)
+[308] Fury                                                         | (German not extracted)
+[309] Confusion                                                    | (German not extracted)
+[310] Silence                                                      | (German not extracted)
+[311] Haste                                                        | (German not extracted)
+[312] Slow                                                         | (German not extracted)
+[313] Stop                                                         | (German not extracted)
+[314] Frog                                                         | (German not extracted)
+[315] Small                                                        | (German not extracted)
+[316] Slow-numb                                                    | (German not extracted)
+[317] Petrify                                                      | (German not extracted)
+[318] Regen                                                        | (German not extracted)
+[319] Barrier                                                      | (German not extracted)
+[320] MBarrier                                                     | (German not extracted)
+[321] Reflect                                                      | (German not extracted)
+[322] Shield                                                       | (German not extracted)
+[323] Death-sentence                                               | (German not extracted)
+[324] Manipulate                                                   | (German not extracted)
+[325] Berserk                                                      | (German not extracted)
+[326] Peerless                                                     | (German not extracted)
+[327] Paralyzed                                                    | (German not extracted)
+[328] Darkness                                                     | (German not extracted)
+
+========================================================================================================================
+ELEMENT/STATUS EFFECTS
+========================================================================================================================
+[329] Element                                                      | (German not extracted)
+[330] Effect                                                       | (German not extracted)
+[331] Attack                                                       | (German not extracted)
+[332] Defend                                                       | (German not extracted)
+[333] Halve                                                        | (German not extracted)
+[334] Invalid                                                      | (German not extracted)
+[335] Absorb                                                       | (German not extracted)
+
+========================================================================================================================
+CHARACTER ATTRIBUTES
+========================================================================================================================
+[336] Strength                                                     | (German not extracted)
+[337] Dexterity                                                    | (German not extracted)
+[338] Vitality                                                     | (German not extracted)
+[339] Magic                                                        | (German not extracted)
+[340] Spirit                                                       | (German not extracted)
+[341] Luck                                                         | (German not extracted)
+[342] Attack                                                       | (German not extracted)
+[343] Attack%                                                      | (German not extracted)
+[344] Defense                                                      | (German not extracted)
+[345] Defense%                                                     | (German not extracted)
+[346] Magic atk                                                    | (German not extracted)
+[347] Magic def                                                    | (German not extracted)
+[348] Magic def%                                                   | (German not extracted)
+
+========================================================================================================================
+EQUIPMENT LABELS
+========================================================================================================================
+[349] Wpn:                                                         | (German not extracted)
+[350] Arm:                                                         | (German not extracted)
+[351] Acc:                                                         | (German not extracted)
+[352] Limit level:                                                 | (German not extracted)
+[353] Wpn.                                                         | (German not extracted)
+[354] Arm.                                                         | (German not extracted)
+[355] Acc.                                                         | (German not extracted)
+
+========================================================================================================================
+CHARACTER ATTRIBUTES
+========================================================================================================================
+[356] Attack                                                       | (German not extracted)
+[357] Attack %                                                     | 7aBf
+[358] Defense                                                      | (German not extracted)
+[359] Defense %                                                    | (German not extracted)
+[360] Magic atk                                                    | (German not extracted)
+[361] Magic def                                                    | (German not extracted)
+[362] Magic def%                                                   | (German not extracted)
+
+========================================================================================================================
+MATERIA SLOTS
+========================================================================================================================
+[363] Slot                                                         | (German not extracted)
+[364] Growth                                                       | (German not extracted)
+[365] Nothing                                                      | (German not extracted)
+[366] Normal                                                       | (German not extracted)
+[367] Double                                                       | (German not extracted)
+[368] Triple                                                       | (German not extracted)
+
+========================================================================================================================
+MATERIA MANAGEMENT
+========================================================================================================================
+[369] Do you really want to remove this?                           | (German not extracted)
+[370] I sure do!                                                   | (German not extracted)
+
+========================================================================================================================
+CHARACTER NAMES
+========================================================================================================================
+[371] Sephiroth[B2][A9][A9][B3]                                    | (German not extracted)
+
+========================================================================================================================
+EQUIPMENT LABELS
+========================================================================================================================
+[372] Wpn.                                                         | (German not extracted)
+[373] Arm.                                                         | (German not extracted)
+
+========================================================================================================================
+MATERIA MANAGEMENT
+========================================================================================================================
+[374] Ability list                                                 | (German not extracted)
+[375] Equip effect                                                 | 7nBz
+[376] Check                                                        | (German not extracted)
+[377] Arrange                                                      | (German not extracted)
+[378] AP                                                           | (German not extracted)
+[379] To next level                                                | (German not extracted)
+[380] MASTER                                                       | Hitze
+[381] Arrange                                                      | Kälte
+[382] Exchange                                                     | Gewitter
+[383] Remove all                                                   | Erde
+[384] Trash                                                        | Gift
+
+========================================================================================================================
+ELEMENTS
+========================================================================================================================
+[385] (English not extracted)                                            | Schwerkraft
+
+========================================================================================================================
+CHARACTER ATTRIBUTES
+========================================================================================================================
+[386] Dexterity                                                    | Wasser
+[387] Cover                                                        | Wind
+[388] Magic                                                        | Heilig
+[389] Luck                                                         | Tod
+
+========================================================================================================================
+MATERIA MANAGEMENT
+========================================================================================================================
+[390] MASTER                                                       | Gefahr
+
+========================================================================================================================
+CHARACTER ATTRIBUTES
+========================================================================================================================
+[391] Strength                                                     | Schlaf
+[392] Vitality                                                     | Gift
+[393] Magic                                                        | Trauer
+[394] Magic def                                                    | Zorn
+[395] Dexterity                                                    | Psycho
+[396] Luck                                                         | Schweigen
+[397] MaxHP                                                        | Hast
+[398] MaxMP                                                        | Gemach
+[399] MaxHPUP                                                      | Stop
+[400] MaxMPUP                                                      | Frosch
+[401] EXP.UP                                                       | Zwerg
+[402] Gil UP                                                       | Allm.Verstein.
+[403] Encount Down                                                 | Verstein.
+[404] Encount Up                                                   | Heilung
+[405] Meet Chocobos                                                | Barriere
+[406] Pre-emptive                                                  | ZBarr.
+[407] Long range attack                                            | Wasser
+[408] Attack all                                                   | Schild
+[409] Counter attack                                               | Todesurteil
+
+========================================================================================================================
+MATERIA MANAGEMENT
+========================================================================================================================
+[410] Magic                                                        | Manipul.
+[411] Summon                                                       | Tobsucht
+[412] Enemy-Skill                                                  | Unverwundbar
+[413] Added-Ability                                                | Lähmung
+[414] All                                                          | Blind
+[415] 4x-M                                                         | Element/Nebenwirkung
+[416] Absorb MP                                                    | Zusatzwirkung
+[417] Absorb HP                                                    | Angriff
+[418] Steal as well                                                | Verteidigung
+[419] Extra cut                                                    | Halbieren
+[420] Turbo MP                                                     | Unwirksam
+
+========================================================================================================================
+ITEM MENU
+========================================================================================================================
+[421] Nothing.                                                     | Absorbieren
+[422] Not enough MP.                                               | Stärke
+[423] Use                                                          | Geschick
+[424] Arrange                                                      | Vitalität
+[425] Key Items                                                    | Zauber
+[426] Customize                                                    | Gemüt
+[427] Field                                                        | Glück
+[428] Battle                                                       | Angriff
+[429] Throw                                                        | Angriff %
+[430] Type                                                         | Verteidigung
+[431] Name                                                         | Verteidigung %
+[432] Most                                                         | Zauber
+[433] Least                                                        | Zauberabwehr
+
+========================================================================================================================
+DIALOG RESPONSES (CLOUD)
+========================================================================================================================
+[434] OK! Got it!                                                  | Zauberabw. %
+[435] I'm not sure but[A9]                                         | Waf.
+[436] Don't really care.                                           | Rüs.
+
+========================================================================================================================
+DIALOG RESPONSES (BARRET)
+========================================================================================================================
+[437] Heh! No sweat!                                               | Acc.
+[438] D-d-d-damn! My head hurts!                                   | Limit-Stufe
+[439] Got nuthin' to do with me!                                   | Waf.
+
+========================================================================================================================
+DIALOG RESPONSES (TIFA)
+========================================================================================================================
+[440] Hmm, so that's it.                                           | Rüs.
+[441] I'm not too sure but[A9]                                     | Acc.
+[442] I've got the wrong person.                                   | Zub.
+
+========================================================================================================================
+DIALOG RESPONSES (AERIS)
+========================================================================================================================
+[443] This should be okay.                                         | Stärke
+[444] Not quite ready yet.                                         | Geschick
+[445] It isn't me.                                                 | Vitalitä
+
+========================================================================================================================
+DIALOG RESPONSES (RED XIII)
+========================================================================================================================
+[446] Right, I've got it!                                          | Zauber
+[447] I don't get it.                                              | Moral
+[448] It has nothing to do with me.                                | Glück
+
+========================================================================================================================
+DIALOG RESPONSES (YUFFIE)
+========================================================================================================================
+[449] Cool! This should do it!                                     | Angriff
+[450] Nope! I don't get it!                                        | Angriff %
+[451] Oh wow, I'm totally clueless!                                | Verteidigung
+
+========================================================================================================================
+DIALOG RESPONSES (CAIT SITH)
+========================================================================================================================
+[452] I'm getting less human[A9]                                   | Verteidigung %
+[453] I'm still not ready.                                         | Zauber
+[454] It has nothing to do with me.                                | Zauberabwehr
+
+========================================================================================================================
+DIALOG RESPONSES (VINCENT)
+========================================================================================================================
+[455] Hey I like this! Lemme use it!                               | Zauberabw. %
+[456] Hmph. Don't quite get it but[A9]                             | Fassung:
+[457] Not me! Give it to someone else!                             | Wachstum:
+[458] It's got nothing to do with me.                              | Keine
+
+========================================================================================================================
+CHARACTER NAMES
+========================================================================================================================
+[459] Cloud                                                        | Normal
+[460] Barret                                                       | Doppelt
+[461] Tifa                                                         | Dreifach
+[462] Aeris                                                        | Feuer
+[463] Red XIII                                                     | Kälte
+[464] Yuffie                                                       | Blitz
+
+========================================================================================================================
+CORRUPTED/GARBLED TEXT
+========================================================================================================================
+[465] 䄣呉㌀呉ｈ                                                        | Erde
+[466] 䤶䍎久ｔ                                                         | Gift
+[467] 䤣ｄ                                                           | Schwerkraft
+[468] 䠣䍏ｏ                                                          | Wasser
+[469] 倳䍁ｅ                                                          | Wind
+[470] 䔤䕌䕔ÿ                                                         | Heilig
+[471] 䔳䕌呃ÿ                                                         | Soll das wirklich entfernt werden?
+[472] 䔤䅆䱕ｔ                                                         | Ja!
+[473] 䄣䍎䱅ÿ                                                         | Einen Moment
+
+========================================================================================================================
+UNICODE PLACEHOLDERS
+========================================================================================================================
+[474] [UNICODE:21]                                                 | Sephiroth
+[475] [UNICODE:22]                                                 | Waf.
+[476] [UNICODE:23]                                                 | Rüs.
+[477] [UNICODE:24]                                                 | Fähigkeitsliste
+[478] [UNICODE:25]                                                 | Rüstungseffekt
+[479] [UNICODE:26]                                                 | Prüfen
+[480] [UNICODE:27]                                                 | Ordnen
+[481] [UNICODE:28]                                                 | Gespeicherte Zahl   /24
+[482] [UNICODE:29]                                                 | AP
+[483] [UNICODE:2a]                                                 | Auf nächste Ebene
+[484] [UNICODE:2b]                                                 | MASTER
+[485] [UNICODE:2c]                                                 | Ordnen
+[486] [UNICODE:2d]                                                 | Tauschen
+[487] [UNICODE:2e]                                                 | Alles entfernen
+[488] [UNICODE:2f]                                                 | Wegwerfen
+[489] [UNICODE:30]                                                 | Geschwindigkeit   %HåHER
+[490] [UNICODE:31]                                                 | Schutz   %HåHER
+[491] [UNICODE:32]                                                 | Zauberkraft   %HåHER
+[492] [UNICODE:33]                                                 | Glück   %HåHER
+[493] [UNICODE:34]                                                 | MASTER
+[494] [UNICODE:35]                                                 | Stärke
+[495] [UNICODE:36]                                                 | Vitalität
+[496] [UNICODE:37]                                                 | Zauber
+[497] [UNICODE:38]                                                 | Zbrvertdg
+[498] [UNICODE:39]                                                 | Geschick
+[499] [UNICODE:3a]                                                 | Glück
+[500] [UNICODE:0c]                                                 | MAXHP
+[501] [UNICODE:0e]                                                 | MAXMP
+[502] [UNICODE:0b]                                                 | MAXHP
+[503] [UNICODE:0d]                                                 | MAXMP
+[504] [UNICODE:41]                                                 | EXP.UP
+[505] [UNICODE:42]                                                 | Gil UP
+[506] [UNICODE:43]                                                 | Treffen - %
+[507] [UNICODE:44]                                                 | Treffen + %
+[508] [UNICODE:45]                                                 | Chocobo treffen
+[509] [UNICODE:46]                                                 | Präventivm. + %
+[510] [UNICODE:47]                                                 | Fernangriff
+[511] [UNICODE:48]                                                 | Alle angreifen
+[512] [UNICODE:49]                                                 | Gegenangriff
+[513] [UNICODE:4a]                                                 | Alle angreifen
+[514] [UNICODE:4b]                                                 | Ständiger Angriff
+[515] [UNICODE:4c]                                                 | HP/MP-nderung
+[516] [UNICODE:4d]                                                 | (German not extracted)
+[517] [UNICODE:4e]                                                 | Zauber
+[518] [UNICODE:4f]                                                 | Beschwören
+[519] [UNICODE:50]                                                 | Feindtechnik
+[520] [UNICODE:51]                                                 | Zusätzliche Fähigkeit
+[521] [UNICODE:52]                                                 | Alle
+[522] [UNICODE:53]                                                 | 4x-Zber
+[523] [UNICODE:54]                                                 | MP absorb.
+[524] [UNICODE:55]                                                 | HP absorb.
+[525] [UNICODE:56]                                                 | Auch stehl.
+[526] [UNICODE:57]                                                 | Schlag
+[527] [UNICODE:58]                                                 | Turbo-MP
+[528] [UNICODE:59]                                                 | Nichts
+[529] [UNICODE:5a]                                                 | Nicht genug MP.
+[530] [UNICODE:1a]                                                 | Verwenden
+[531] [UNICODE:1b]                                                 | Ordnen
+[532] [UNICODE:10]                                                 | Schlüsselobjekte
+
+========================================================================================================================
+NUMBERS
+========================================================================================================================
+[533] 1                                                            | Allein
+[534] 2                                                            | Feld
+[535] 3                                                            | Schlacht
+[536] 4                                                            | Werfen
+[537] 5                                                            | Typ
+[538] 6                                                            | Name
+[539] 7                                                            | Max.
+[540] 8                                                            | Min.
+[541] 9                                                            | OK! Klar!
+
+========================================================================================================================
+MATERIA MANAGEMENT
+========================================================================================================================
+[542] Ability list                                                 | Ich bin nicht sicher, aber
+[543] Equip effect                                                 | Ist mir egal.
+[544] AP                                                           | Heh! Heh!
+[545] To next level                                                | V-v-verdammt! Mein Kopf!
+[546] MASTER                                                       | Hat nichts mit mir zu tun!
+
+========================================================================================================================
+CHARACTER ATTRIBUTES
+========================================================================================================================
+[547] Dexterity                                                    | Hmm, das wär's also.
+[548] Cover                                                        | Ich bin nicht sicher, aber
+[549] Magic                                                        | Ich hab die falsche Person erwischt.
+[550] Luck                                                         | Das sollte ok sein.
+
+========================================================================================================================
+MATERIA MANAGEMENT
+========================================================================================================================
+[551] MASTER                                                       | Noch nicht ganz bereit.
+
+========================================================================================================================
+CHARACTER ATTRIBUTES
+========================================================================================================================
+[552] Strength                                                     | Nein, ich bin es nicht.
+[553] Vitality                                                     | Ok, klar!
+[554] Magic                                                        | Kapier ich nicht.
+[555] Magic def                                                    | Hat nichts mit mir zu tun.
+[556] Dexterity                                                    | Cool! Das sollte ok sein!
+[557] Luck                                                         | Nee! Kapier ich nicht!
+[558] MaxHP                                                        | Mann, ich tapp total im Dunkeln!
+[559] MaxMP                                                        | Ich verlier immer mehr Menschliches
+[560] MaxHPUP                                                      | Ich bin noch nicht bereit.
+[561] MaxMPUP                                                      | Es hat nichts mit mir zu tun.
+[562] EXP.UP                                                       | Das gefällt mir! Her damit!
+[563] Gil UP                                                       | Hmph. Hab ich nicht ganz kapiert, aber
+[564] Encount Down                                                 | Nicht ich! Gib es jemand anders!
+[565] Encount Up                                                   | Es hat nichts mit mir zu tun.
+[566] Meet Chocobos                                                | (German not extracted)
+[567] Pre-emptive                                                  | (German not extracted)
+[568] Long range attack                                            | (German not extracted)
+[569] Attack all                                                   | (German not extracted)
+[570] Counter attack                                               | (German not extracted)
+
+========================================================================================================================
+SHOP MENU
+========================================================================================================================
+[571] A                                                            | (German not extracted)
+[572] D                                                            | (German not extracted)
+[573] Buy   Sell     Exit                                          | (German not extracted)
+[574] Gil                                                          | (German not extracted)
+[575] Owned                                                        | (German not extracted)
+[576] Equipped                                                     | (German not extracted)
+[577] Total                                                        | (German not extracted)
+[578] How many                                                     | (German not extracted)
+[579] Item      Materia                                            | (German not extracted)
+[580] Gil remaining                                                | (German not extracted)
+[581] Price for Master                                             | (German not extracted)
+[582] Price through AP                                             | (German not extracted)
+
+========================================================================================================================
+MATERIA SLOTS
+========================================================================================================================
+[583] Nothing                                                      | (German not extracted)
+[584] Normal                                                       | (German not extracted)
+[585] Double                                                       | (German not extracted)
+[586] Triple                                                       | (German not extracted)
+
+========================================================================================================================
+SHOP TYPES
+========================================================================================================================
+[587] Weapon Shop                                                  | (German not extracted)
+[588] Item Shop                                                    | (German not extracted)
+[589] Materia Shop                                                 | (German not extracted)
+[590] General Store                                                | (German not extracted)
+[591] Vegetable Store                                              | (German not extracted)
+[592] Accessory Shop                                               | (German not extracted)
+[593] Tool Shop                                                    | (German not extracted)
+[594] Hotel Shop                                                   | (German not extracted)
+
+========================================================================================================================
+SHOP MENU
+========================================================================================================================
+[595] Welcome!                                                     | (German not extracted)
+[596] What would you like to buy?                                  | (German not extracted)
+[597] How many would you like?!                                    | (German not extracted)
+[598] What would you like to sell?!                                | (German not extracted)
+[599] How many would you like to sell?!                            | (German not extracted)
+
+========================================================================================================================
+SAVE/LOAD MENU
+========================================================================================================================
+[600] Load                                                         | (German not extracted)
+[601] Select a save data file.                                     | (German not extracted)
+[602] Select a save game.                                          | (German not extracted)
+[603] Loading. Please wait.                                        | (German not extracted)
+[604] Saving. Please wait.                                         | (German not extracted)
+[605] EMPTY                                                        | (German not extracted)
+[606] GAME                                                         | (German not extracted)
+[607] Continue?                                                    | (German not extracted)
+[608] Checking Save Data File.                                     | (German not extracted)
+
+========================================================================================================================
+SAVE SLOTS
+========================================================================================================================
+[609] 01                                                           | (German not extracted)
+[610] 02                                                           | (German not extracted)
+[611] 03                                                           | (German not extracted)
+[612] 04                                                           | (German not extracted)
+[613] 05                                                           | (German not extracted)
+[614] 06                                                           | (German not extracted)
+[615] 07                                                           | (German not extracted)
+[616] 08                                                           | (German not extracted)
+[617] 09                                                           | (German not extracted)
+[618] 10                                                           | (German not extracted)
+[619] 11                                                           | (German not extracted)
+[620] 12                                                           | (German not extracted)
+[621] 13                                                           | (German not extracted)
+[622] 14                                                           | (German not extracted)
+[623] 15                                                           | Cloud
+
+========================================================================================================================
+SAVE/LOAD MENU
+========================================================================================================================
+[624] Could not save.                                              | Barret
+[625] Could not load.                                              | Tifa
+[626] Data is ruined.                                              | Aeris
+[627] NEW GAME                                                     | Red XIII
+[628] Are you sure you want to save?                               | Yuffie
+[629] Yes                                                          | Cait Sith
+[630] No                                                           | Vincent
+[631] Completed.                                                   | Cid
+[632] Formatted.                                                   | Choco
+[633] Could not format.                                            | Leer
+[634] Not formatted.                                               | Löschen
+[635] Want to format it now?                                       | Auswählen
+[636] No save data file.                                           | Standard
+[637] No save data file.                                           | Abbrechen
+[638] This Memory card is damaged and cannot be used.              | RaginLion
+[639] Please insert another Memory card.                           | Freshmake
+[640] Not enough space left on save data file.                     | Square
+[641] Use another save data file,                                  | 3Dfx
+[642] or erase 1 block of saved data.                              | Local
+[643] Couldn't read it.                                            | Gold
+[644] Still want to begin the game?                                | (German not extracted)
+[645] Can not allocate save file memory buffer!                    | Ex-SOLDIER
+[646] Invalid save file!                                           | (German not extracted)
+
+========================================================================================================================
+SAVE SLOTS
+========================================================================================================================
+[647] Save 1                                                       | (German not extracted)
+[648] Save 2                                                       | Barret
+[649] 3AVE [13]                                                    | (German not extracted)
+[650] 3AVE [14]                                                    | (German not extracted)
+[651] 3AVE [15]                                                    | (German not extracted)
+[652] 3AVE [16]                                                    | Tifa
+[653] 3AVE [17]                                                    | (German not extracted)
+[654] 3AVE [18]                                                    | (German not extracted)
+[655] 3AVE [19]                                                    | (German not extracted)
+[656] 3AVE [11][10]                                                | Aerith
+
+========================================================================================================================
+SNOWBOARDING MINIGAME
+========================================================================================================================
+[657] ,EVEL                                                        | (German not extracted)
+[658] 00'00"000                                                    | (German not extracted)
+[659] --'--"---                                                    | Red
+[660] COURSE A RECORD                                              | (German not extracted)
+[661] 00'00"000                                                    | (German not extracted)
+[662] --'--"---                                                    | (German not extracted)
+[663] BEST                                                         | (German not extracted)
+[664] CONTINUE                                                     | Yuffie
+[665] RETRY                                                        | (German not extracted)
+[666] EXIT                                                         | (German not extracted)
+[667] OPTION                                                       | (German not extracted)
+[668] CONTINUE                                                     | Cait Seith
+[669] RETRY                                                        | (German not extracted)
+[670] EXIT                                                         | (German not extracted)
+[671] GHOST                                                        | (German not extracted)
+[672] SURFACE                                                      | Vincent
+[673] OFF                                                          | (German not extracted)
+[674] BOARD                                                        | (German not extracted)
+[675] SLEIGH                                                       | (German not extracted)
+[676] ? ? ?                                                        | Cid
+[677] SNOW                                                         | (German not extracted)
+[678] CHECKED                                                      | (German not extracted)
+[679] TRY AGAIN                                                    | (German not extracted)
+[680] EXIT                                                         | (German not extracted)
+
+========================================================================================================================
+CHOCOBO RACING MINIGAME
+========================================================================================================================
+[681] TECHNIQUE                                                    | (German not extracted)
+[682] TIME                                                         | (German not extracted)
+[683] BALLOON                                                      | Sephiroth
+[684] TOTAL                                                        | (German not extracted)
+[685] BEST                                                         | (German not extracted)
+[686] /30 PTS.                                                     | (German not extracted)
+[687] OSP@ptsN                                                     | (German not extracted)
+[688] OTP@ptsN                                                     | (German not extracted)
+[689] OC@ptsN                                                      | (German not extracted)
+[690] OC@ptsN                                                      | (German not extracted)
+[691] QstN                                                         | (German not extracted)
+[692] RndN                                                         | (German not extracted)
+[693] SrdN                                                         | (German not extracted)
+[694] TthN                                                         | (German not extracted)
+[695] UthN                                                         | Full Equipent!
+[696] TEIOH                                                        | Magic Materia!
+
+========================================================================================================================
+ITEMS (BATTLE REWARDS/PRIZES)
+========================================================================================================================
+[697] Sprint Shoes                                                 | Summon Materia!
+[698] Counter                                                      | Command
+[699] Magic Counter                                                | Zero - AW YEAH!
+[700] Precious Watch                                               | Feuer
+[701] Ether                                                        | Kälte
+[702] Hero Drink                                                   | Blitz
+[703] Bolt Plume                                                   | Erde
+[704] Elixir                                                       | Gift
+[705] Fire Fang                                                    | Schwerkraft
+[706] Antarctic Wind                                               | Wasser
+[707] Potion                                                       | Wind
+[708] Phoenix Down                                                 | Heilig
+[709] Hyper                                                        | Soll das wirklich entfernt werden?
+[710] Tranquilizer                                                 | Ja!
+[711] Cat's Bell                                                   | Einen Moment
+[712] Enemy                                                        | Sephiroth
+[713] Sneak                                                        | Waf.
+[714] Chocobracelet[FF][FF][FF]                                    | Rüs.
+[715] Swift                                                        | Fähigkeitsliste
+[716] Fire                                                         | Rüstungseffekt
+[717] Megalixir[FF][FF][FF][FF][FF][FF][FF]                        | Prüfen
+[718] Turbo                                                        | Ordnen
+[719] Hi-Potion[FF][FF][FF][FF][FF][FF][FF]                        | Gespeicherte Zahl   /24
+[720] Ice                                                          | AP
+
+========================================================================================================================
+CHOCOBO NAMES
+========================================================================================================================
+[721] SAM                                                          | Auf nächste Ebene
+[722] ELEN                                                         | MASTER
+[723] BLUES                                                        | Ordnen
+[724] TOM                                                          | Tauschen
+[725] JOHN                                                         | Alles entfernen
+[726] GARY                                                         | Wegwerfen
+[727] MIKE                                                         | Geschwindigkeit   %HåHER
+[728] SANDY                                                        | Schutz   %HåHER
+[729] JU                                                           | Zauberkraft   %HåHER
+[730] LY                                                           | Glück   %HåHER
+[731] JOEL                                                         | MASTER
+[732] GREY                                                         | Stärke
+[733] EDWARD                                                       | Vitalität
+[734] JAMES                                                        | Zauber
+[735] HARVEY                                                       | Zbrvertdg
+[736] DAN                                                          | Geschick
+[737] RUDY                                                         | Glück
+[738] GRAHAM                                                       | MAXHP
+[739] FOX                                                          | MAXMP
+[740] CLIVE                                                        | MAXHP
+[741] SEAN                                                         | MAXMP
+[742] YOUNG                                                        | EXP.UP
+[743] ROBIN                                                        | Gil UP
+[744] DARIO                                                        | Treffen - %
+[745] K                                                            | Treffen + %
+[746] ARL                                                          | Chocobo treffen
+[747] SARA                                                         | Präventivm. + %
+[748] MARIE                                                        | Fernangriff
+[749] SAMMY                                                        | Alle angreifen
+[750] LIA                                                          | Gegenangriff
+[751] KNIGHT                                                       | Alle angreifen
+[752] PAULA                                                        | Ständiger Angriff
+[753] PAU                                                          | HP/MP-nderung
+[754] LE                                                           | Kaufen
+[755] PETER                                                        | Verkaufen
+[756] AIMEE                                                        | Beenden
+[757] TERRY                                                        | Objekt
+[758] ANDY                                                         | Materia
+[759] NANCY                                                        | Kaufen Verkaufen Beenden
+[760] TIM                                                          | Gil
+[761] ROBER                                                        | Besitz
+[762] T                                                            | Ausstattung
+[763] GEORGE                                                       | Gesamt
+[764] JENNY                                                        | Wieviel
+[765] RICA                                                         | Objekt    Materia
+[766] JULIA                                                        | Übrige Gil
+
+========================================================================================================================
+SHOP MENU
+========================================================================================================================
+[767] (English not extracted)                                            | Preis für Master
+[768] (English not extracted)                                            | Preis durch AP
+
+========================================================================================================================
+EQUIPMENT LABELS
+========================================================================================================================
+[769] (English not extracted)                                            | Waf.
+[770] (English not extracted)                                            | Rüs.
+[771] (English not extracted)                                            | Zub.
+[772] (English not extracted)                                            | Zub.
+
+========================================================================================================================
+CHARACTER ATTRIBUTES
+========================================================================================================================
+[773] (English not extracted)                                            | Stärke
+[774] (English not extracted)                                            | Geschick
+[775] (English not extracted)                                            | Vitalitä
+[776] (English not extracted)                                            | Zauber
+[777] (English not extracted)                                            | Moral
+[778] (English not extracted)                                            | Glück
+[779] (English not extracted)                                            | Angreifen
+[780] (English not extracted)                                            | Angreifen %
+[781] (English not extracted)                                            | Verteidigen
+[782] (English not extracted)                                            | Verteidigen %
+[783] (English not extracted)                                            | Zbrangrf
+[784] (English not extracted)                                            | Zbrvertdg
+[785] (English not extracted)                                            | Zbrvertdg %
+
+========================================================================================================================
+MATERIA SLOTS
+========================================================================================================================
+[786] (English not extracted)                                            | Schlitz:
+[787] (English not extracted)                                            | Verstärkung:
+[788] (English not extracted)                                            | Keine
+[789] (English not extracted)                                            | Normal
+[790] (English not extracted)                                            | Doppelt
+[791] (English not extracted)                                            | Dreifach
+
+========================================================================================================================
+SHOP MENU
+========================================================================================================================
+[792] (English not extracted)                                            | A
+[793] (English not extracted)                                            | V
+
+========================================================================================================================
+SHOP TYPES
+========================================================================================================================
+[794] (English not extracted)                                            | Objektladen
+[795] (English not extracted)                                            | Waffengeschäft
+[796] (English not extracted)                                            | Objektladen
+[797] (English not extracted)                                            | Materia-Laden
+[798] (English not extracted)                                            | Gemischtwaren
+[799] (English not extracted)                                            | Gemüseladen
+[800] (English not extracted)                                            | Zubehörladen
+[801] (English not extracted)                                            | Werkzeugladen
+[802] (English not extracted)                                            | Souvenierladen
+
+========================================================================================================================
+SHOP MENU
+========================================================================================================================
+[803] (English not extracted)                                            | Willkommen!
+[804] (English not extracted)                                            | Was möchtest du kaufen?
+[805] (English not extracted)                                            | Wie viele willst du davon?
+[806] (English not extracted)                                            | Was möchtest du verkaufen?
+[807] (English not extracted)                                            | Wie viele willst du verkaufen?
+[808] (English not extracted)                                            | Danke!
+[809] (English not extracted)                                            | Danke!
+[810] (English not extracted)                                            | Du hast nicht genug Geld!
+[811] (English not extracted)                                            | Guten Tag!
+[812] (English not extracted)                                            | Wie kann ich behilflich sein?
+[813] (English not extracted)                                            | Wie viele willst du davon?
+[814] (English not extracted)                                            | Hast du was zu verkaufen?
+[815] (English not extracted)                                            | Wie viele willst du?
+[816] (English not extracted)                                            | Vielen Dank!
+[817] (English not extracted)                                            | Ihr werdet doch alle zurückkommen!
+[818] (English not extracted)                                            | Soll das ein Witz sein? Das ist nicht genug!
+
+========================================================================================================================
+SAVE/LOAD MENU
+========================================================================================================================
+[822] (English not extracted)                                            | Laden
+[823] (English not extracted)                                            | Wählen Sie eine Speicherdatei aus.
+[824] (English not extracted)                                            | Wählen Sie einen Speicherblock aus.
+[825] (English not extracted)                                            | STECKPLATZ 1
+[826] (English not extracted)                                            | STECKPLATZ 2
+[827] (English not extracted)                                            | Wirklich?
+[828] (English not extracted)                                            | Bin am Laden. Bitte warten
+[829] (English not extracted)                                            | Bin am Sichern. Bitte warten
+[830] (English not extracted)                                            | LEER
+[831] (English not extracted)                                            | BLOCK
+[832] (English not extracted)                                            | Weiter?
+[833] (English not extracted)                                            | /15
+[834] (English not extracted)                                            | Überprüfe Spielstandsdatei
+
+========================================================================================================================
+SAVE SLOTS
+========================================================================================================================
+[835] (English not extracted)                                            | 01
+[836] (English not extracted)                                            | 02
+[837] (English not extracted)                                            | 03
+[838] (English not extracted)                                            | 04
+[839] (English not extracted)                                            | 05
+[840] (English not extracted)                                            | 06
+[841] (English not extracted)                                            | 07
+[842] (English not extracted)                                            | 08
+[843] (English not extracted)                                            | 09
+[844] (English not extracted)                                            | 10
+[845] (English not extracted)                                            | 11
+[846] (English not extracted)                                            | 12
+[847] (English not extracted)                                            | 13
+[848] (English not extracted)                                            | 14
+[849] (English not extracted)                                            | 15
+
+========================================================================================================================
+SAVE/LOAD MENU
+========================================================================================================================
+[850] (English not extracted)                                            | Gespeichert.
+[851] (English not extracted)                                            | Speichern nicht möglich.
+[852] (English not extracted)                                            | Laden nicht möglich.
+[853] (English not extracted)                                            | Daten sind zerstört.
+[854] (English not extracted)                                            | NEUES SPIEL
+[855] (English not extracted)                                            | Wirklich speichern?
+[856] (English not extracted)                                            | Ja
+[857] (English not extracted)                                            | Nein
+[858] (English not extracted)                                            | Beendet.
+[859] (English not extracted)                                            | Formatiert
+[860] (English not extracted)                                            | Formatierung nicht möglich
+[861] (English not extracted)                                            | Nicht formatiert
+[862] (English not extracted)                                            | Jetzt formatieren?
+[863] (English not extracted)                                            | Memory Card wird geprüft.
+[864] (English not extracted)                                            | Keine Spielstandsdatei.
+[865] (English not extracted)                                            | Diese Memory Card ist beschädigt und kann nicht verwendet werden.
+[866] (English not extracted)                                            | Andere Memory Card einlegen.
+[867] (English not extracted)                                            | Nicht genug Platz in der Spielstandsdatei übrig.
+[868] (English not extracted)                                            | Bitte benutzen Sie eine andere Spielstandsdatei
+[869] (English not extracted)                                            | oder löschen Sie 1 Block gesicherter Daten.
+[870] (English not extracted)                                            | Lesen nicht möglich.
+[871] (English not extracted)                                            | Spiel beginnen?
+[872] (English not extracted)                                            | Kann Speicherpuffer der Spielstandsdatei nicht zuordnen!
+[873] (English not extracted)                                            | Ungültige Spielstandsdatei!
+
+========================================================================================================================
+SAVE SLOTS
+========================================================================================================================
+[874] (English not extracted)                                            | Spielstand 1
+[875] (English not extracted)                                            | Spielstand 2
+[876] (English not extracted)                                            | Spielstand 3
+[877] (English not extracted)                                            | Spielstand 4
+[878] (English not extracted)                                            | Spielstand 5
+[879] (English not extracted)                                            | Spielstand 6
+[880] (English not extracted)                                            | Spielstand 7
+[881] (English not extracted)                                            | Spielstand 8
+[882] (English not extracted)                                            | Spielstand 9
+[883] (English not extracted)                                            | Spielstand 10
+
+========================================================================================================================
+MISCELLANEOUS
+========================================================================================================================
+[885] (English not extracted)                                            | Level

@@ -1,0 +1,896 @@
+index,offset,text,hex_bytes,byte_length,text_length,type_info
+0,0x58FBB0,Möchten Sie Final,N/A,18,18,padding:0
+1,0x58FBCE,Fantasy VII verlassen und,N/A,36,25,padding:11
+2,0x58FBEC,zu Windows zurückkehren?,N/A,28,24,padding:4
+3,0x58FC10,Ja,N/A,13,2,padding:11
+4,0x58FC15,Nein,N/A,6,4,padding:2
+5,0x58FC22,@c  ^c              `      `  `a      `a  `a                     0  @a      0a  @a          _  `        `      _  0a            `        0a      _  0a          `        `  _                  `  _        _                     `      `         `  `          `        ``         `  `          _        _  _      ``            _  _      ``  _      ``            _  _        ``      ``  _            ``      _  ``      ``  _            ``        `      _  ``            `      _  `      _  ``        $ $ $ $ $ $ $% 0% <% H% T% `% l% x% ã% ñ% % % % % % % % % âíïãNõèì   àáòòåNõèì   õèÜáNõèì    åáòèõéNõèì  òåãNõèì ÜèNõèì    ëåõâNõèì    àèîôNõèì    âèãïNõèì    ñâíïãNõèì  ñâåÜèNõèì   âéïâïNõèì   âíïãíNõèì àáòòåíNõèì õèÜáíNõèì  åáòèõéíNõèì    òåãíNõèì   ÜèíNõèì  ëåõâíNõèì  àèîôíNõèì  âèãïíNõèì  ñâíïãíNõèì    ñâåÜèíNõèì âéïâïíNõèì ôÜïîõáéNõèì  ôÜïîõáíNõèì  ôÜïîõàéNõèì  ôÜïîõàíNõèì  àõí•èîáéNõèì àõí•èîáíNõèì àõí•èîàéNõèì àõí•èîàíNõèì àõí•èîâéNõèì àõí•èîâíNõèì àõí•èîãéNõèì àõí•èîãíNõèì ôÜïîõéNõèì    ôÜïîõíNõèì    àõí•èîéNõèì   àõí•èîíNõèì   àôõåòNõèì  Fensterfarbe,N/A,1250,1242,padding:8
+6,0x590126,Sound,N/A,46,5,padding:41
+7,0x59015C,Kontroller,N/A,58,10,padding:48
+8,0x590192,Cursor,N/A,49,6,padding:43
+9,0x5901C8,ATB,N/A,50,3,padding:47
+10,0x5901FE,Kampftempo,N/A,60,10,padding:50
+11,0x590234,Kampfmeldung,N/A,55,12,padding:43
+12,0x59026A,Feldmeldung,N/A,52,11,padding:41
+13,0x5902A0,Kamerawinkel,N/A,54,12,padding:42
+14,0x5902D6,Auswählen,N/A,50,9,padding:41
+15,0x59030C,Abbrechen,N/A,53,9,padding:44
+16,0x590342,Menü,N/A,48,4,padding:44
+17,0x590378,Fenster AUS,N/A,60,11,padding:49
+18,0x5903AE,Pause,N/A,47,5,padding:42
+19,0x5903E4,Schlachthilfe,N/A,61,13,padding:48
+20,0x59041A,Mono,N/A,44,4,padding:40
+21,0x590450,Stereo,N/A,55,6,padding:49
+22,0x590486,Breit,N/A,52,5,padding:47
+23,0x5904BC,Normal,N/A,54,6,padding:48
+24,0x5904F2,Benutzerdefiniert,N/A,64,17,padding:47
+25,0x590528,Anfang,N/A,42,6,padding:36
+26,0x59055E,Speicher,N/A,55,8,padding:47
+27,0x590594,Aktiv,N/A,50,5,padding:45
+28,0x5905CA,Empfohlen,N/A,57,9,padding:48
+29,0x590600,Warten,N/A,50,6,padding:44
+30,0x590636,Auto,N/A,51,4,padding:47
+31,0x59066C,Fest,N/A,53,4,padding:49
+32,0x5906D8,Langs.,N/A,59,6,padding:53
+33,0x59070E,Schn.,N/A,52,5,padding:47
+34,0x590744,ROT,N/A,51,3,padding:48
+35,0x59077A,GRÜN,N/A,54,4,padding:50
+36,0x5907B0,BLAU,N/A,53,4,padding:49
+37,0x5907E6,Zauberfolge,N/A,60,11,padding:49
+38,0x59081C,Heilung,N/A,49,7,padding:42
+39,0x590852,Angriff,N/A,53,7,padding:46
+40,0x590888,Indirekt,N/A,54,8,padding:46
+41,0x5908BE,Verboten,N/A,53,8,padding:45
+42,0x5908F4,Typ,N/A,48,3,padding:45
+43,0x59092A,links2,N/A,56,6,padding:50
+44,0x590960,rechts2,N/A,54,7,padding:47
+45,0x590996,links1,N/A,52,6,padding:46
+46,0x5909CC,rechts1,N/A,54,7,padding:47
+47,0x590A02,Menü,N/A,50,4,padding:46
+48,0x590A38,Auswählen,N/A,58,9,padding:49
+49,0x590A6E,Abbrechen,N/A,53,9,padding:44
+50,0x590AA4,EXT,N/A,47,3,padding:44
+51,0x590ADA,Hilfe,N/A,55,5,padding:50
+52,0x590B10,Zum Einrichten START drücken.,N/A,79,31,padding:48
+53,0x590B46,Zum Beenden Richtungstaste Links oder Rechts drücken.,N/A,75,53,padding:22
+54,0x590B7C,Pause,N/A,5,5,padding:0
+55,0x590BD0,Ton- und Musikeinstellung,N/A,32,25,padding:7
+56,0x590BFD,Nicht unterstützt,N/A,36,17,padding:19
+57,0x590C34,"""S   S ""!    `!:   : `!  !"" ""!!"" ! """" !""!",N/A,85,48,padding:37
+58,0x590C68,Objekt,N/A,6,6,padding:0
+59,0x590C7C,Zauber,N/A,19,6,padding:13
+60,0x590C90,Materia,N/A,20,7,padding:13
+61,0x590CA4,Ausrüsten,N/A,21,9,padding:12
+62,0x590CB8,Werte,N/A,15,5,padding:10
+63,0x590CCC,Reihe,N/A,19,5,padding:14
+64,0x590CE0,Limit,N/A,19,5,padding:14
+65,0x590CF4,Konfig,N/A,20,6,padding:14
+66,0x590D08,PHS,N/A,16,3,padding:13
+67,0x590D1C,Speichern,N/A,25,9,padding:16
+68,0x590D30,Verlassen,N/A,19,9,padding:10
+69,0x590D44,Anfänger,N/A,18,8,padding:10
+70,0x590D58,Verwendung,N/A,21,10,padding:11
+71,0x590D6C,Verwendung,N/A,19,10,padding:9
+72,0x590D80,Zeit,N/A,13,4,padding:9
+73,0x590D94,Gil,N/A,18,3,padding:15
+74,0x590DA8,Nächst. Lv,N/A,26,10,padding:16
+75,0x590DBC,Limit-Stufe,N/A,20,11,padding:9
+76,0x590DD0,Anleitung,N/A,17,9,padding:8
+77,0x590DE4,Unter,N/A,15,5,padding:10
+78,0x590DF8,LV+1,N/A,18,4,padding:14
+79,0x590E0C,Zorn,N/A,19,4,padding:15
+80,0x590E20,Traurigk.,N/A,24,9,padding:15
+81,0x590E34,"!         n`=>ABCeKD@FGHtJfg<$_uva)?snPRSVXY[\]p/0%U^MZoh!""#y*+2,-.345671:8(W9&';`klmxEILNOQTbcdijqrwz{     !""#$%&'()*+ 0         `  `   !        ñp ñ ñ@ ñ<m b!ö  o - p£  £ £ õ £ £ £ £ £ b!ö - b!ö b!ö b!ö b!ö b!ö     n u#ö j o - £ Ü£ :£ õ £ £ £ £ u#ö u#ö - u#ö u#ö u#ö u#ö u#ö     )%($*     """" !""""""##$$     0.  x""  \   *   !   ""      é",N/A,432,422,padding:10
+82,0x590FF0,"!  cy         !   ""   $   %   &   '   (   t   start@of@menu@systemAAA*    end@of@menu@systemAAA*  Mit [ABBRECHEN] beenden.",N/A,133,128,padding:5
+83,0x591094,Drücken Sie auf [O.K.] um die,N/A,64,29,padding:35
+84,0x5910D0,Tastenbelegung zu konfigurieren.,N/A,62,32,padding:30
+85,0x59110C,Bitte neue Taste drücken,N/A,52,25,padding:27
+86,0x591148,[O.K.],N/A,40,6,padding:34
+87,0x591184,[ABBRECHEN],N/A,64,11,padding:53
+88,0x5911C0,[MENÜ],N/A,54,6,padding:48
+89,0x5911FC,[UMSCHALTEN],N/A,65,12,padding:53
+90,0x591238,[BILD HOCH],N/A,58,11,padding:47
+91,0x591274,[BILD HERUNTER],N/A,63,15,padding:48
+92,0x5912B0,[KAMERA],N/A,52,8,padding:44
+93,0x5912EC,[ZIEL],N/A,57,6,padding:51
+94,0x591328,[HILFE],N/A,60,7,padding:53
+95,0x591364,[START],N/A,59,7,padding:52
+96,0x5913A0,[HERAUF],N/A,60,8,padding:52
+97,0x5913DC,[UNTEN],N/A,58,7,padding:51
+98,0x591418,[LINKS],N/A,59,7,padding:52
+99,0x591454,[RECHT],N/A,59,7,padding:52
+100,0x591490,TASTATUR,N/A,60,8,padding:52
+101,0x5914CC,JOYSTICK,N/A,59,8,padding:51
+102,0x591508,"£@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ $A 0A 4A 8A <A @A DA HA LA PA TA XA \A `A pA tA xA |A A ãA éA íA ñA £A A A A A A A A A A A A A A A A A A A A A A $B ,B 4B <B DB LB TB \B dB lB xB B éB ñB õB £B B B B B B B B B B B B B B B B B B B $C ,C 4C <C DC LC TC \C dC lC tC |C ãC íC õC C C C C C C C C C C C C C C C C C $D ,D <D DD LD XD \D dD pD xD D ãD ñD £D D D D D D D D D D D D D D D D  E (E 0E 8E @E HE PE XE `E hE pE |E ãE íE õE E E E E E E E E E E E E E E E E  F (F 0F 8F @F HF PF XF `F lF xF F éF ñF £F F F F F F F F F F F F F F F $G ,G 4G <G DG LG TG `G lG xG ãG ñG G G G G G    k   @      ã   `         0                  $         (         !         ""      3!   !     L!   (     e!   0     ~!   `     •!        !   @  !  k   @   !  ã   `   !     0   !        !     $   !     (   !     !   !     ""   !  3!   !  !  L!   (  !  e!   0  !  ~!   `  !  •!     !  !   @  ''%'&'$'#' '!'""'('    )'%&$'""# !(+          ""S   S ""!    `!:   : `! keines  esc Q   R   S   T   U   V   W   X   Y   P      apostrophe  rcktaste   tab q   w   e   r   t   z   u   i   o   p      K   eingabe linke@strg  a   s   d   f   g   h   j   k   l         ~   linker@shift    C   y   x   c   v   b   n   m   komma   punkt   minus   rechter@shift   mal alt leertaste   caps    fQ  fR  fS  fT  fU  fV  fW  fX  fY  fQP numlock scroll  numN@W  numN@X  numN@Y  minus   numN@T  numN@U  numN@V  plus    numN@Q  numN@R  numN@S  numN@P  numN@entf   keines  keines  keines  fQQ fQR keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  fQS fQT fQU keines  keines  keines  keines  keines  keines  keines  keines  keines  kana    keines  keines  keines  keines  keines  keines  keines  keines  convert keines  noconvert   keines  yen keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  numpadequals    keines  keines  circumflex  at  colon   underline   kanji   stop    ax  unlabeled   keines  keines  keines  keines  numN@enter  rechte@strg keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  numN@komma  keines  geteilt keines  prtN@scrn   alt@gr  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  pos@Q   hoch    bN@hoch keines  links   keines  rechts  keines  ende    herunter    bN@runter   einfg   entf    keines  keines  keines  keines  keines  keines  keines  linker@win  rechter@win apps    keines  mousebQ    mousebR    mousebS    keines  hoch    runter  links   rechtes keines  keines  keines  keines  button@Q    button@R    button@S    button@T    button@U    button@V    button@W    button@X    button@Y    button@QP   keines  EôÜÜWèîñõNâÜç  EôÜÜWèîñõNâÜç",N/A,3327,3276,padding:51
+103,0x5921D8,"""   ëåõâRáNõèì ëåõâRàNõèì öåîèéNõèì  âïíïáNõèì   âïíïàNõèì   âïíïâNõèì   ëåõâRNõèì  öåîèNõèì    âïíïNõèì    cZ|ffW|ôòâ|ìåî|àõíìåî|çåòìáî|âáííàáâëNâññ ôÜïîõáíNõèì  ôÜïîõàíNõèì  àõí•èîáíNõèì àõí•èîàíNõèì àõí•èîâíNõèì àõí•èîãíNõèì ôÜïîõíNõèì    àõí•èîíNõèì       H          (8!    0  0   88!0 ""  (   0 ( ""  8   0 ( ""  H   0 ( ""  X   0 ( ""  h   0 ( ""  x   0 ( ""  é   0 ( ""  £   0 ( ""     0 ( ""     0 ( ""     0 ( ""     0 ( ""     0 ( ""     0 ( ""     0 ( ""     0 ( ""  (!  0 ( "" 0( 0 0 ( "" 08 0 0 ( "" 0H 0 0 ( "" 0X 0 0 ( "" 0h 0 0 ( "" 0x 0 0 ( "" 0é 0 0 ( "" 0£ 0 0 ( "" 0 0 0 ( "" 0 0 0 ( "" 0 0 0 ( "" 0 0 0 ( "" 0 0 0 ( "" 0 0 0 ( "" 0 0 0 ( "" 0 0 0 ( "" 0(!0 0 (      (   88!(       4          (£     0  0   8£ 0 ""  (   0 ( ""  8   0 ( ""  H   0 ( ""  X   0 ( ""  h   0 ( ""  x   0 ( ""  é   0 ( "" 0( 0 0 ( "" 08 0 0 ( "" 0H 0 0 ( "" 0X 0 0 ( "" 0h 0 0 ( "" 0x 0 0 ( "" 0é 0 0 (      (   8£ (       L          (X!    0  0   8X!0 ""  (   0 ( ""  8   0 ( ""  H   0 ( ""  X   0 ( ""  h   0 ( ""  x   0 ( ""  é   0 ( ""  £   0 ( ""     0 ( ""     0 ( ""     0 ( ""     0 ( ""     0 ( ""     0 ( ""     0 ( ""     0 ( ""  (!  0 ( "" 0( 0 0 ( "" 08 0 0 ( "" 0H 0 0 ( "" 0X 0 0 ( "" 0h 0 0 ( "" 0x 0 0 ( "" 0é 0 0 ( "" 0£ 0 0 ( "" 0 0 0 ( "" 0 0 0 ( "" 0 0 0 ( "" 0 0 0 ( "" 0 0 0 ( "" 0 0 0 ( "" 0 0 0 ( "" 0 0 0 ( "" 0(!0 0 (      (   8X!( ""  8!  0 ( ""  H!  0 ( "" 08!0 0 ( "" 0H!0 0 (         l!""ñ         ""     2!ñ 2!  ""ñ                                                                                                                     t!î ñ         !     ñ ñ                                                                                                                            P t!£ P         !     £ P                                                                                                                            P t!£ P         !     £ P                                                                                                                              |!""ñ         ""     !ñ !  ""ñ                                                                                                                      |!""ñ         !     ""ñ                                                                                                                              |!""ñ         ""     !ñ !  ""ñ                                                                                                                      |!""ñ         ""     !ñ !  ""ñ                                                                                                                      l!""£                                                                                                                                                |!""£         !     ""£                                                                                                                              l!""£                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ã t!!ñ         !      ñ                                                                                                                            ã |!h!õ         !     h!õ                                                                                                                             ã!!ñ     @ ñ !     !ñ                                                                                                                             0  !P         !      !P                                                                                                                           J   <!""P         !     ""P                                                                                                                           K  |!0!ñ         !     0!ñ                                                                                                                            @ 0 `""P         !     `""P                                                                                                                           H   |!""ñ         !     ""ñ                                                                                                                           H   |!""ñ         !     ""ñ                                                                                                                           H   |!""ñ         !     ""ñ                                                                                                                           H    `!X         ""      X    `!X                                                                                                                    h  W X         !     X X                                                                                                                            8  X 8         !     X 8                                                                                                                            8  X 8         !     X 8                                                                                                                               `!X         ""      X    `!X                                                                                                                       `!X         !     `!X                                                                                                                               `!X         ""      X    `!X                                                                                                                       `!X         ""      X    `!X                                                                                                                       `!\                                                                                                                                                 `!\         !     `!\                                                                                                                               `!\                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      H   X         !     £ X                                                                                                                            R   Z         !      Z                                                                                                                            p   X     0 X !      X                                                                                                                             (  8         !      8                                                                                                                           J    `!8         !     `!8                                                                                                                           K p   X         !      X                                                                                                                            0 ( @!8         !     @!8                                                                                                                           H    `!X         !     `!X                                                                                                                           H    `!X         !     `!X                                                                                                                           H    `!X         !     `!X                                                                                                                           H 9_   _^^^^^^    ^                                       _^^        ^    ^^^                    mX° \° i° j° 9n° )d° f° k° OX° Aw° OX°",N/A,10484,10484,padding:0
+104,0x594ACD,Z° ^X° OX° OX° p° OX° OX° OX° nV°,N/A,35,35,padding:0
+105,0x594AF1,Z° ^X° OX° OX° p° OX° ët° és° äu° OX° OX° OX° rX° ]° i° j° o° d° g° ol° YX° w° YX° D[° cX° YX° YX° {r° YX° YX° YX° V° D[° cX° YX° YX° {r° YX° t° òs° u° YX° YX° YX° Z° $d° j° k° p° f° i° 4n° TX° TX° TX° \° hX° TX° TX° âs° TX° TX° TX° JX° \° hX° TX° TX° âs° TX° åu° Üt° <w° TX° TX° TX°,N/A,303,303,padding:0
+106,0x594C28,"0G#ã * !        !""#%",N/A,25,21,padding:4
+107,0x594C48,Pause,N/A,12,5,padding:7
+108,0x594C50,"ß  Z!!\ ì   Xx£ <L\ x""  \   *   !     _    ã",N/A,67,65,padding:2
+109,0x594C9E,ã,N/A,13,1,padding:12
+110,0x594CAC,Schlaf,N/A,18,6,padding:12
+111,0x594CBA,Gift,N/A,11,4,padding:7
+112,0x594CC8,Traurigkeit,N/A,20,11,padding:9
+113,0x594CD6,Zorn,N/A,6,4,padding:2
+114,0x594CE4,Verwirrung,N/A,19,10,padding:9
+115,0x594CF2,Stummheit,N/A,12,9,padding:3
+116,0x594D00,Schnell,N/A,11,7,padding:4
+117,0x594D0E,Langsam,N/A,13,7,padding:6
+118,0x594D1C,Stop,N/A,10,4,padding:6
+119,0x594D2A,ã,N/A,10,1,padding:9
+120,0x594D38,ã,N/A,13,1,padding:12
+121,0x594D46,ã,N/A,13,1,padding:12
+122,0x594D54,Versteinerung,N/A,25,13,padding:12
+123,0x594D62,regen,N/A,5,5,padding:0
+124,0x594D70,ã,N/A,9,1,padding:8
+125,0x594D7E,ã,N/A,13,1,padding:12
+126,0x594D8C,Reflektieren,N/A,24,12,padding:12
+127,0x594D9A,Doppel,N/A,7,6,padding:1
+128,0x594DA8,Schild,N/A,13,6,padding:7
+129,0x594DB6,ã,N/A,8,1,padding:7
+130,0x594DC4,ã,N/A,13,1,padding:12
+131,0x594DD2,Toll,N/A,16,4,padding:12
+132,0x594DE0,Einzigartig,N/A,20,11,padding:9
+133,0x594DEE,Lähmung,N/A,9,7,padding:2
+134,0x594DFC,Dunkelheit,N/A,16,10,padding:6
+135,0x594E0A,ã,N/A,4,1,padding:3
+136,0x594E18,ã,N/A,13,1,padding:12
+137,0x594E26,ã,N/A,13,1,padding:12
+138,0x594E34,ã,N/A,13,1,padding:12
+139,0x594E42,ã,N/A,13,1,padding:12
+140,0x594E50,$             `  `   Rrò `hpx9IY     Wieviel willst du ausgeben?,N/A,95,83,padding:12
+141,0x594EA4,Gil,N/A,3,3,padding:0
+142,0x594EA8,Nach,N/A,4,4,padding:0
+143,0x594EB0,Gil auf der Hand,N/A,19,16,padding:3
+144,0x594EC8,"""%$#!""$ !#%""$ %!!""$ ""!#%$ ""!%$""#""$#""!$ %""!#""$!""%  `   ñ @ ñ ` ñ    @  `      @ `   ñ @ ñ ` ñ    @  `      ` `   ñ @ ñ ` ñ    @  `             `       `        `      `       `              `       `        ""$(0    !""""""""!!!!!!!!!!!! """""" !!!!!!!!!!                !! """" !!!!!!!!!!!!! """"  !!!!!!!!                !!!  "" "" !!!!!!!!!!!  "" ""  !!!!!                !!!!   ""    !!!!""#$%&')())( -*+)      !,Weiter?",N/A,446,439,padding:7
+145,0x595080,Ja     Nein,N/A,11,11,padding:0
+146,0x595090,Vorhandene Schlachtpunkte,N/A,29,25,padding:4
+147,0x5950AA,Schlitzstart!,N/A,13,13,padding:0
+148,0x5950C4,TOLL!!,N/A,18,6,padding:12
+149,0x5950DE,Gewonnene Schlachtpunkte,N/A,43,24,padding:19
+150,0x5950F8,"Ok, dann los!",N/A,14,13,padding:1
+151,0x595117,Zaubersubstanz kaputt.,N/A,41,24,padding:17
+152,0x595136,Aufrufsubstanz kaputt.,N/A,30,24,padding:6
+153,0x595155,Support-Substanz kaputt.,N/A,32,26,padding:6
+154,0x595174,Unabhängige Substanz kaputt.,N/A,34,30,padding:4
+155,0x595193,Befehlssubstanz kaputt.,N/A,25,25,padding:0
+156,0x5951B2,Alle Substanz kaputt.,N/A,28,23,padding:5
+157,0x5951D1,Zubehör kaputt.,N/A,24,17,padding:7
+158,0x5951F0,Objektbefehl ist versiegelt.,N/A,43,30,padding:13
+159,0x59520F,Rüstzeug kaputt.,N/A,18,18,padding:0
+160,0x59522E,Waffe kaputt.,N/A,27,15,padding:12
+161,0x59524D,1/2 Geschwindigkeit.,N/A,37,22,padding:15
+162,0x59526C,1/2 Genauigkeit.,N/A,26,18,padding:8
+163,0x59528B,Minimum,N/A,21,9,padding:12
+164,0x5952AA,Gift,N/A,27,6,padding:21
+165,0x5952C9,Kröte,N/A,31,7,padding:24
+166,0x5952E8,Zeit x30 Schaden.,N/A,42,19,padding:23
+167,0x595307,5 Ebenen zurück.,N/A,29,18,padding:11
+168,0x595326,10 Ebenen zurück.,N/A,31,19,padding:12
+169,0x595345,1/2 HP.,N/A,20,9,padding:11
+170,0x595364,1/2 MP.,N/A,30,9,padding:21
+171,0x595383,1/2 HP&MP.,N/A,33,12,padding:21
+172,0x5953A2,Null MP.,N/A,28,10,padding:18
+173,0x5953C1,Jaa! Keine Behinderung!!,N/A,46,26,padding:20
+174,0x5953E0,HP wiederhergestellt.,N/A,27,23,padding:4
+175,0x595400,Besorgt um die anderen Mitglieder?,N/A,42,34,padding:8
+176,0x595423,"Ja, ein bichen",N/A,15,15,padding:0
+177,0x595446,Eigentlich nicht,N/A,35,16,padding:19
+178,0x595480,"4      £   ""   !   &   &   !   !       x   p  @   x    p  @    GWXWsiW:zWx""  \   *   !    `b/ ! 0G  #  ã   *   !   '   `",N/A,150,144,padding:6
+179,0x595514,/,N/A,4,4,padding:0
+180,0x595524,"""S   S ""!sè7áè",N/A,26,18,padding:8
+181,0x595538,"$   #   ""   !",N/A,17,16,padding:1
+182,0x595558,QRSTUVWXYZ[\]^`adefgh   jklmnopqrstuvwxyDEGHIJK qu      +! ë c   [!  ç V B v r  l   o!å l   S Speichern,N/A,113,113,padding:0
+183,0x5955D8,"!)  m t!v L!S     ""  % j G  K  :     `!e !   S    j : Eôôá°åOôá°åEPRãNÜÜW     Reformieren",N/A,113,99,padding:14
+184,0x595656,Mitglieden in zwei Gruppen aufteilen,N/A,62,36,padding:26
+185,0x59567C,Mitglieder in drei Gruppen aufteilen,N/A,37,36,padding:1
+186,0x5956A2,Gruppe aus zwei Personen bilden,N/A,32,31,padding:1
+187,0x5956C8,Gruppe aus drei Personen bilden,N/A,37,31,padding:6
+188,0x5956EE,Auswählen mit [START]-Taste,N/A,33,27,padding:6
+189,0x595718,Element,N/A,21,7,padding:14
+190,0x59572E,Effekt,N/A,20,6,padding:14
+191,0x595744,Angreifen,N/A,24,9,padding:15
+192,0x59575A,Verteidigen,N/A,23,11,padding:12
+193,0x595770,Halbieren,N/A,19,9,padding:10
+194,0x595786,Ungültig,N/A,20,8,padding:12
+195,0x59579C,Absorbieren,N/A,24,11,padding:13
+196,0x5957F4,Stärke,N/A,27,6,padding:21
+197,0x59580A,Geschick,N/A,23,8,padding:15
+198,0x595820,Vitalität,N/A,22,9,padding:13
+199,0x595836,Zauber,N/A,18,6,padding:12
+200,0x59584C,Moral,N/A,20,5,padding:15
+201,0x595862,Glück,N/A,21,5,padding:16
+202,0x595878,Angreifen,N/A,25,9,padding:16
+203,0x59588E,Angreifen %,N/A,23,11,padding:12
+204,0x5958A4,Verteidigen,N/A,21,11,padding:10
+205,0x5958BA,Verteidigen %,N/A,23,13,padding:10
+206,0x5958D0,Zbrangrf,N/A,16,8,padding:8
+207,0x5958E6,Zbrvertdg,N/A,22,9,padding:13
+208,0x5958FC,Zbrvertdg %,N/A,23,11,padding:12
+209,0x595912,Waf.,N/A,14,4,padding:10
+210,0x595928,Rüs.,N/A,21,4,padding:17
+211,0x59593E,Acc.,N/A,21,4,padding:17
+212,0x595954,Limit-Ebene,N/A,28,11,padding:17
+213,0x595978,"!   S    j :     ""S   S S!!S!S m!£ S! m!]!    `!:   :    :  \  r   STUFE 1",N/A,91,87,padding:4
+214,0x5959E8,STUFE 2,N/A,31,7,padding:24
+215,0x595A08,STUFE 3,N/A,31,7,padding:24
+216,0x595A28,STUFE 4,N/A,31,7,padding:24
+217,0x595A48,LIMIT-STUFE einrichten.,N/A,47,23,padding:24
+218,0x595A68,Einrichten,N/A,18,10,padding:8
+219,0x595A88,Prüfen,N/A,27,6,padding:21
+220,0x595AA8,Bei nderung der STUFE,N/A,47,22,padding:25
+221,0x595AC8,Beginn bei Limit-Punkt 0.,N/A,34,25,padding:9
+222,0x595AE8,STUFE ändern?,N/A,19,13,padding:6
+223,0x595B08,Ja,N/A,20,2,padding:18
+224,0x595B28,Nein,N/A,33,4,padding:29
+225,0x595B48,Limit gewählt!,N/A,41,14,padding:27
+226,0x595B68,STUFE wählen,N/A,29,12,padding:17
+227,0x595B94,R R 3 1P,N/A,8,8,padding:0
+228,0x595BB0,T T 3!1T,N/A,8,8,padding:0
+229,0x595BB9,_,N/A,1,1,padding:0
+230,0x595BBF,"""",N/A,6,3,padding:3
+231,0x595BCC,"S S 3""1X",N/A,8,8,padding:0
+232,0x595BD6,:ö,N/A,2,2,padding:0
+233,0x595BE8,U U 3#1f,N/A,8,8,padding:0
+234,0x595C04,V V $1:,N/A,8,8,padding:0
+235,0x595C0F,&,N/A,2,1,padding:1
+236,0x595C20,Y Y 7%1,N/A,8,8,padding:0
+237,0x595C29,_8£!,N/A,9,9,padding:0
+238,0x595C3C,"[ \ &1,",N/A,8,8,padding:0
+239,0x595C47,/,N/A,2,1,padding:1
+240,0x595C58,f f 3'1T,N/A,8,8,padding:0
+241,0x595C74,h h 7(1V,N/A,8,8,padding:0
+242,0x595C90,i i 3)C@,N/A,8,8,padding:0
+243,0x595CA0,@,N/A,3,3,padding:0
+244,0x595CAC,k k 3*1,N/A,8,8,padding:0
+245,0x595CB5,_,N/A,1,1,padding:0
+246,0x595CB8,!,N/A,6,6,padding:0
+247,0x595CC8,m m 7+1C,N/A,8,8,padding:0
+248,0x595CE4,"n n ,1(",N/A,8,8,padding:0
+249,0x595CEF,2,N/A,2,1,padding:1
+250,0x595D00,o o -14,N/A,8,8,padding:0
+251,0x595D0B,*,N/A,2,1,padding:1
+252,0x595D1C,z z 5.D0,N/A,8,8,padding:0
+253,0x595D2D,"""",N/A,2,1,padding:1
+254,0x595D38,{ { 7/B,N/A,8,8,padding:0
+255,0x595D41,_,N/A,1,1,padding:0
+256,0x595D44,$,N/A,6,6,padding:0
+257,0x595D54,~ ~ 50B,N/A,8,8,padding:0
+258,0x595D5D,ü,N/A,1,1,padding:0
+259,0x595D60,ßV,N/A,6,6,padding:0
+260,0x595D70,à à 51,N/A,7,7,padding:0
+261,0x595D7A,4,N/A,1,1,padding:0
+262,0x595D8C,52B,N/A,8,8,padding:0
+263,0x595D95,_,N/A,1,1,padding:0
+264,0x595D9B,!,N/A,6,3,padding:3
+265,0x595DA8,á á 53(@,N/A,8,8,padding:0
+266,0x595DB1,ü,N/A,1,1,padding:0
+267,0x595DB4,"!    """,N/A,6,6,padding:0
+268,0x595DC4,â â 54(@,N/A,8,8,padding:0
+269,0x595DCD,_,N/A,1,1,padding:0
+270,0x595DD3,"! """,N/A,6,3,padding:3
+271,0x595DE0,^ ^ 54,N/A,8,8,padding:0
+272,0x595DEA,3,N/A,1,1,padding:0
+273,0x595DFC,b b 56,N/A,8,8,padding:0
+274,0x595E06,3,N/A,1,1,padding:0
+275,0x595E18,` ` 58,N/A,8,8,padding:0
+276,0x595E22,3,N/A,1,1,padding:0
+277,0x595E34,a a 5:,N/A,8,8,padding:0
+278,0x595E3E,3,N/A,1,1,padding:0
+279,0x595E50,c c 5<,N/A,8,8,padding:0
+280,0x595E5A,3,N/A,1,1,padding:0
+281,0x595E6C,d d 5>,N/A,8,8,padding:0
+282,0x595E76,3,N/A,1,1,padding:0
+283,0x595E88,e e 5J,N/A,8,8,padding:0
+284,0x595E92,3,N/A,1,1,padding:0
+285,0x595EA4,ã ã 3<1T,N/A,8,8,padding:0
+286,0x595EC0,å å 3=14,N/A,8,8,padding:0
+287,0x595EDC,ç ç 7>1X,N/A,8,8,padding:0
+288,0x595EE5,%,N/A,1,1,padding:0
+289,0x595EE8,!,N/A,6,6,padding:0
+290,0x595EF8,é é 7?1D,N/A,8,8,padding:0
+291,0x595F14,ä ä @17,N/A,8,8,padding:0
+292,0x595F1D,' &!,N/A,9,9,padding:0
+293,0x595F30,í í A12,N/A,8,8,padding:0
+294,0x595F3B,(,N/A,2,1,padding:1
+295,0x595F4C,ì ì B1+,N/A,8,8,padding:0
+296,0x595F57,2,N/A,2,1,padding:1
+297,0x595F61,G,N/A,2,2,padding:0
+298,0x595F66,C p p 3C1P,N/A,12,10,padding:2
+299,0x595F84,q q  DB,N/A,8,8,padding:0
+300,0x595F8D,_7 !,N/A,9,9,padding:0
+301,0x595FA0,s s 3E14,N/A,8,8,padding:0
+302,0x595FBC,u u F1*,N/A,8,8,padding:0
+303,0x595FC7,*,N/A,2,1,padding:1
+304,0x595FD8,v v 5GB,N/A,8,8,padding:0
+305,0x595FE1,_6 !,N/A,9,9,padding:0
+306,0x595FF4,x x H1>,N/A,8,8,padding:0
+307,0x595FFF,%,N/A,2,1,padding:1
+308,0x596010,y y 7I1,N/A,8,8,padding:0
+309,0x59602C,£ £ 3Jé,N/A,7,7,padding:0
+310,0x596048,3f1,N/A,7,7,padding:0
+311,0x596052,(,N/A,1,1,padding:0
+312,0x596064,ö ö 7L,N/A,7,7,padding:0
+313,0x59606E,/,N/A,1,1,padding:0
+314,0x596080,M,N/A,7,7,padding:0
+315,0x59608A,#,N/A,2,2,padding:0
+316,0x59609C,N,N/A,7,7,padding:0
+317,0x5960A6,#!,N/A,2,2,padding:0
+318,0x5960B8,O,N/A,7,7,padding:0
+319,0x5960C2,"#""",N/A,2,2,padding:0
+320,0x5960D4,P,N/A,7,7,padding:0
+321,0x5960DE,##,N/A,2,2,padding:0
+322,0x5960F0,î î 3Q1R,N/A,8,8,padding:0
+323,0x59610C,ô ô 5RD0,N/A,8,8,padding:0
+324,0x59611D,"""",N/A,2,1,padding:1
+325,0x596128,ó ó 7S1P,N/A,8,8,padding:0
+326,0x596138,(,N/A,2,2,padding:0
+327,0x596144,ò ò T1*,N/A,8,8,padding:0
+328,0x59614F,*,N/A,2,1,padding:1
+329,0x596160,õ õ 7U1<,N/A,8,8,padding:0
+330,0x59617C,° ° V1*,N/A,8,8,padding:0
+331,0x596187,/,N/A,2,1,padding:1
+332,0x596198,• • 7W1,N/A,8,8,padding:0
+333,0x5961B4,ß ß 5XB,N/A,8,8,padding:0
+334,0x5961BE,0,N/A,1,1,padding:0
+335,0x5961D0,5Y(@,N/A,8,8,padding:0
+336,0x5961E1,"""",N/A,2,1,padding:1
+337,0x5961EC,7Z1p,N/A,8,8,padding:0
+338,0x596208,5[B,N/A,8,8,padding:0
+339,0x596211,_,N/A,1,1,padding:0
+340,0x596217,`,N/A,6,3,padding:3
+341,0x596224,5\B,N/A,8,8,padding:0
+342,0x59622D,_,N/A,1,1,padding:0
+343,0x596230,!     ü,N/A,7,7,padding:0
+344,0x596240,7]B,N/A,8,8,padding:0
+345,0x596249,_,N/A,1,1,padding:0
+346,0x59624C,!     ü,N/A,7,7,padding:0
+347,0x596254,£E,N/A,3,3,padding:0
+348,0x59625A,C ü ü 3,N/A,9,7,padding:2
+349,0x596262,18,N/A,2,2,padding:0
+350,0x596270,ã,N/A,1,1,padding:0
+351,0x596278,7_B\,N/A,8,8,padding:0
+352,0x596288,!,N/A,2,2,padding:0
+353,0x59628C,£L,N/A,3,3,padding:0
+354,0x596292,4   3,N/A,9,7,padding:2
+355,0x59629A,1J,N/A,2,2,padding:0
+356,0x5962A8,ã,N/A,1,1,padding:0
+357,0x5962B0,7aBf,N/A,8,8,padding:0
+358,0x5962C0,$,N/A,2,2,padding:0
+359,0x5962C4,£C,N/A,3,3,padding:0
+360,0x5962CA,3,N/A,9,7,padding:2
+361,0x5962D2,1(,N/A,2,2,padding:0
+362,0x5962D7,%,N/A,2,1,padding:1
+363,0x5962E0,ã,N/A,1,1,padding:0
+364,0x5962E8,3cB,N/A,8,8,padding:0
+365,0x5962F1,_,N/A,1,1,padding:0
+366,0x5962F4,8,N/A,6,6,padding:0
+367,0x5962FC,£9,N/A,3,3,padding:0
+368,0x596302,!  7,N/A,9,7,padding:2
+369,0x59630A,1H,N/A,2,2,padding:0
+370,0x596318,ã,N/A,1,1,padding:0
+371,0x596320,7eB,N/A,8,8,padding:0
+372,0x596329,'8!,N/A,9,9,padding:0
+373,0x596340,7m1R,N/A,4,4,padding:0
+374,0x596350,ã,N/A,1,1,padding:0
+375,0x59635C,7nBz,N/A,4,4,padding:0
+376,0x596378,6o10,N/A,4,4,padding:0
+377,0x596385,`,N/A,2,1,padding:1
+378,0x59699C,"""£   £ ""S    ""]! ^ [!     `!\   \ `!:   q `! q ?  y",N/A,68,60,padding:8
+379,0x5969E4,"""S   S ""!sè7áè",N/A,26,18,padding:8
+380,0x5969F8,Hitze,N/A,6,5,padding:1
+381,0x596A04,Kälte,N/A,11,5,padding:6
+382,0x596A10,Gewitter,N/A,14,8,padding:6
+383,0x596A1C,Erde,N/A,7,4,padding:3
+384,0x596A28,Gift,N/A,11,4,padding:7
+385,0x596A34,Schwerkraft,N/A,18,11,padding:7
+386,0x596A40,Wasser,N/A,6,6,padding:0
+387,0x596A4C,Wind,N/A,9,4,padding:5
+388,0x596A58,Heilig,N/A,13,6,padding:7
+389,0x596A68,Tod,N/A,12,3,padding:9
+390,0x596A7C,Gefahr,N/A,22,6,padding:16
+391,0x596A90,Schlaf,N/A,19,6,padding:13
+392,0x596AA4,Gift,N/A,17,4,padding:13
+393,0x596AB8,Trauer,N/A,21,6,padding:15
+394,0x596ACC,Zorn,N/A,17,4,padding:13
+395,0x596AE0,Psycho,N/A,21,6,padding:15
+396,0x596AF4,Schweigen,N/A,22,9,padding:13
+397,0x596B08,Hast,N/A,14,4,padding:10
+398,0x596B1C,Gemach,N/A,21,6,padding:15
+399,0x596B30,Stop,N/A,17,4,padding:13
+400,0x596B44,Frosch,N/A,21,6,padding:15
+401,0x596B58,Zwerg,N/A,18,5,padding:13
+402,0x596B6C,Allm.Verstein.,N/A,28,14,padding:14
+403,0x596B80,Verstein.,N/A,14,9,padding:5
+404,0x596B94,Heilung,N/A,17,7,padding:10
+405,0x596BA8,Barriere,N/A,20,8,padding:12
+406,0x596BBC,ZBarr.,N/A,17,6,padding:11
+407,0x596BD0,Wasser,N/A,19,6,padding:13
+408,0x596BF8,Schild,N/A,25,6,padding:19
+409,0x596C0C,Todesurteil,N/A,24,11,padding:13
+410,0x596C20,Manipul.,N/A,16,8,padding:8
+411,0x596C34,Tobsucht,N/A,19,8,padding:11
+412,0x596C48,Unverwundbar,N/A,23,12,padding:11
+413,0x596C5C,Lähmung,N/A,14,7,padding:7
+414,0x596C70,Blind,N/A,17,5,padding:12
+415,0x596C88,Element/Nebenwirkung,N/A,38,20,padding:18
+416,0x596CA1,Zusatzwirkung,N/A,17,13,padding:4
+417,0x596CBA,Angriff,N/A,18,7,padding:11
+418,0x596CD3,Verteidigung,N/A,29,12,padding:17
+419,0x596CEC,Halbieren,N/A,21,9,padding:12
+420,0x596D05,Unwirksam,N/A,24,9,padding:15
+421,0x596D1E,Absorbieren,N/A,26,11,padding:15
+422,0x596D82,Stärke,N/A,30,6,padding:24
+423,0x596D9B,Geschick,N/A,26,8,padding:18
+424,0x596DB4,Vitalität,N/A,25,9,padding:16
+425,0x596DCD,Zauber,N/A,21,6,padding:15
+426,0x596DE6,Gemüt,N/A,23,5,padding:18
+427,0x596DFF,Glück,N/A,24,5,padding:19
+428,0x596E18,Angriff,N/A,26,7,padding:19
+429,0x596E31,Angriff %,N/A,26,9,padding:17
+430,0x596E4A,Verteidigung,N/A,27,12,padding:15
+431,0x596E63,Verteidigung %,N/A,26,14,padding:12
+432,0x596E7C,Zauber,N/A,16,6,padding:10
+433,0x596E95,Zauberabwehr,N/A,30,12,padding:18
+434,0x596EAE,Zauberabw. %,N/A,24,12,padding:12
+435,0x596EC7,Waf.,N/A,16,4,padding:12
+436,0x596EE0,Rüs.,N/A,24,4,padding:20
+437,0x596EF9,Acc.,N/A,24,4,padding:20
+438,0x596F12,Limit-Stufe,N/A,31,11,padding:20
+439,0x596F34,"""!    `! ã   `!R w ü        £     !£     î £       \      £     W \ Waf.",N/A,102,80,padding:22
+440,0x596F96,Rüs.,N/A,21,4,padding:17
+441,0x596FAC,Acc.,N/A,21,4,padding:17
+442,0x596FC2,Zub.,N/A,21,4,padding:17
+443,0x596FD8,Stärke,N/A,23,6,padding:17
+444,0x596FEE,Geschick,N/A,23,8,padding:15
+445,0x597004,Vitalitä,N/A,21,8,padding:13
+446,0x59701A,Zauber,N/A,19,6,padding:13
+447,0x597030,Moral,N/A,20,5,padding:15
+448,0x597046,Glück,N/A,21,5,padding:16
+449,0x59705C,Angriff,N/A,23,7,padding:16
+450,0x597072,Angriff %,N/A,23,9,padding:14
+451,0x597088,Verteidigung,N/A,24,12,padding:12
+452,0x59709E,Verteidigung %,N/A,23,14,padding:9
+453,0x5970B4,Zauber,N/A,13,6,padding:7
+454,0x5970CA,Zauberabwehr,N/A,27,12,padding:15
+455,0x5970E0,Zauberabw. %,N/A,21,12,padding:9
+456,0x5970F6,Fassung:,N/A,17,8,padding:9
+457,0x59710C,Wachstum:,N/A,22,9,padding:13
+458,0x597122,Keine,N/A,17,5,padding:12
+459,0x597138,Normal,N/A,22,6,padding:16
+460,0x59714E,Doppelt,N/A,22,7,padding:15
+461,0x597164,Dreifach,N/A,22,8,padding:14
+462,0x597194,"""£   £ ""S    !ï   !!! !  ]!    `!\   \ `!:   r  X     ñ  q   Feuer",N/A,106,81,padding:25
+463,0x5971EC,Kälte,N/A,11,5,padding:6
+464,0x5971F8,Blitz,N/A,11,5,padding:6
+465,0x597204,Erde,N/A,10,4,padding:6
+466,0x597210,Gift,N/A,11,4,padding:7
+467,0x59721C,Schwerkraft,N/A,18,11,padding:7
+468,0x597228,Wasser,N/A,6,6,padding:0
+469,0x597234,Wind,N/A,9,4,padding:5
+470,0x597240,Heilig,N/A,13,6,padding:7
+471,0x597250,Soll das wirklich entfernt werden?,N/A,43,34,padding:9
+472,0x597274,Ja!,N/A,4,3,padding:1
+473,0x597298,Einen Moment,N/A,44,12,padding:32
+474,0x5972BC,Sephiroth,N/A,36,13,padding:23
+475,0x5972E0,Waf.,N/A,26,4,padding:22
+476,0x5972FC,Rüs.,N/A,27,4,padding:23
+477,0x597318,Fähigkeitsliste,N/A,38,15,padding:23
+478,0x597334,Rüstungseffekt,N/A,26,14,padding:12
+479,0x597350,Prüfen,N/A,19,6,padding:13
+480,0x59736C,Ordnen,N/A,27,6,padding:21
+481,0x597388,Gespeicherte Zahl   /24,N/A,44,23,padding:21
+482,0x5973A4,AP,N/A,6,2,padding:4
+483,0x5973C0,Auf nächste Ebene,N/A,42,17,padding:25
+484,0x5973DC,MASTER,N/A,16,6,padding:10
+485,0x5973F8,Ordnen,N/A,27,6,padding:21
+486,0x597414,Tauschen,N/A,29,8,padding:21
+487,0x597430,Alles entfernen,N/A,34,15,padding:19
+488,0x59744C,Wegwerfen,N/A,21,9,padding:12
+489,0x597484,Geschwindigkeit   %HåHER,N/A,51,24,padding:27
+490,0x5974A0,Schutz   %HåHER,N/A,18,15,padding:3
+491,0x5974BC,Zauberkraft   %HåHER,N/A,32,20,padding:12
+492,0x5974D8,Glück   %HåHER,N/A,21,14,padding:7
+493,0x5974F4,MASTER,N/A,19,6,padding:13
+494,0x597510,Stärke,N/A,27,6,padding:21
+495,0x59752C,Vitalität,N/A,30,9,padding:21
+496,0x597548,Zauber,N/A,24,6,padding:18
+497,0x597564,Zbrvertdg,N/A,30,9,padding:21
+498,0x597580,Geschick,N/A,26,8,padding:18
+499,0x59759C,Glück,N/A,24,5,padding:19
+500,0x5975B8,MAXHP,N/A,27,5,padding:22
+501,0x5975D4,MAXMP,N/A,27,5,padding:22
+502,0x5975F0,MAXHP,N/A,27,5,padding:22
+503,0x59760C,MAXMP,N/A,27,5,padding:22
+504,0x597628,EXP.UP,N/A,28,6,padding:22
+505,0x597644,Gil UP,N/A,27,6,padding:21
+506,0x597660,Treffen - %,N/A,32,11,padding:21
+507,0x59767C,Treffen + %,N/A,27,11,padding:16
+508,0x597698,Chocobo treffen,N/A,31,15,padding:16
+509,0x5976B4,Präventivm. + %,N/A,27,15,padding:12
+510,0x5976D0,Fernangriff,N/A,23,11,padding:12
+511,0x5976EC,Alle angreifen,N/A,30,14,padding:16
+512,0x597708,Gegenangriff,N/A,25,12,padding:13
+513,0x597724,Alle angreifen,N/A,29,14,padding:15
+514,0x597740,Ständiger Angriff,N/A,30,17,padding:13
+515,0x59775C,HP/MP-nderung,N/A,24,14,padding:10
+516,0x59777C,"""    ""S    !C!! $!C!   ""C! D  £ } : !ì     5""S   S ""T !ç $!!|!ç @ !    `!i   i `!:   ~    ~     ~ `!  2 z \ O -  W     *!:   : `!:  S    S 0",N/A,189,172,padding:17
+517,0x597830,O    £ O w!!£     ô £ 8 ë   \ 8   \     Z \ ã   `!R w ü  Zauber,N/A,74,70,padding:4
+518,0x597886,Beschwören,N/A,25,10,padding:15
+519,0x59789C,Feindtechnik,N/A,23,12,padding:11
+520,0x5978B2,Zusätzliche Fähigkeit,N/A,30,21,padding:9
+521,0x5978C8,Alle,N/A,4,4,padding:0
+522,0x5978DE,4x-Zber,N/A,24,7,padding:17
+523,0x5978F4,MP absorb.,N/A,24,10,padding:14
+524,0x59790A,HP absorb.,N/A,21,10,padding:11
+525,0x597936,Auch stehl.,N/A,32,11,padding:21
+526,0x59794C,Schlag,N/A,16,6,padding:10
+527,0x597962,Turbo-MP,N/A,23,8,padding:15
+528,0x597978,Nichts,N/A,19,6,padding:13
+529,0x59798E,Nicht genug MP.,N/A,30,15,padding:15
+530,0x5979AC,"""    ""S    ""2!!K  £ !K  £ !   S     `!r   r `!:   ç `!  6 j \  6 g \    j : Verwenden",N/A,105,101,padding:4
+531,0x597A1A,Ordnen,N/A,14,6,padding:8
+532,0x597A2C,Schlüsselobjekte,N/A,27,16,padding:11
+533,0x597A3E,Allein,N/A,7,6,padding:1
+534,0x597A50,Feld,N/A,15,4,padding:11
+535,0x597A62,Schlacht,N/A,21,8,padding:13
+536,0x597A74,Werfen,N/A,15,6,padding:9
+537,0x597A86,Typ,N/A,14,3,padding:11
+538,0x597A98,Name,N/A,18,4,padding:14
+539,0x597AAA,Max.,N/A,17,4,padding:13
+540,0x597ABC,Min.,N/A,17,4,padding:13
+541,0x597AD0,OK! Klar!,N/A,24,9,padding:15
+542,0x597AF8,"Ich bin nicht sicher, aber",N/A,57,27,padding:30
+543,0x597B20,Ist mir egal.,N/A,25,13,padding:12
+544,0x597B48,Heh! Heh!,N/A,35,9,padding:26
+545,0x597B70,V-v-verdammt! Mein Kopf!,N/A,54,24,padding:30
+546,0x597B98,Hat nichts mit mir zu tun!,N/A,41,26,padding:15
+547,0x597BC0,"Hmm, das wär's also.",N/A,33,20,padding:13
+548,0x597BE8,"Ich bin nicht sicher, aber",N/A,46,27,padding:19
+549,0x597C10,Ich hab die falsche Person erwischt.,N/A,48,36,padding:12
+550,0x597C38,Das sollte ok sein.,N/A,22,19,padding:3
+551,0x597C60,Noch nicht ganz bereit.,N/A,43,23,padding:20
+552,0x597C88,"Nein, ich bin es nicht.",N/A,39,23,padding:16
+553,0x597CB0,"Ok, klar!",N/A,25,9,padding:16
+554,0x597CD8,Kapier ich nicht.,N/A,47,17,padding:30
+555,0x597D00,Hat nichts mit mir zu tun.,N/A,48,26,padding:22
+556,0x597D28,Cool! Das sollte ok sein!,N/A,38,25,padding:13
+557,0x597D50,Nee! Kapier ich nicht!,N/A,36,22,padding:14
+558,0x597D78,"Mann, ich tapp total im Dunkeln!",N/A,49,32,padding:17
+559,0x597DA0,Ich verlier immer mehr Menschliches,N/A,43,36,padding:7
+560,0x597DC8,Ich bin noch nicht bereit.,N/A,29,26,padding:3
+561,0x597DF0,Es hat nichts mit mir zu tun.,N/A,42,29,padding:13
+562,0x597E18,Das gefällt mir! Her damit!,N/A,37,27,padding:10
+563,0x597E40,"Hmph. Hab ich nicht ganz kapiert, aber",N/A,51,39,padding:12
+564,0x597E68,Nicht ich! Gib es jemand anders!,N/A,32,32,padding:0
+565,0x597E90,Es hat nichts mit mir zu tun.,N/A,36,29,padding:7
+566,0x597EB8,"%!à >!, )!Y   h 7!é f R å 7    á ç v    !! &!   b a ) V ; = [ \ #!  ,!j +!    1!M /  0   # w",N/A,126,116,padding:10
+567,0x597F2E,"8 N ï    E   • z E!° 5!@!i n q F!í       4 (! ì Z x   B â       3  =!]  I!J!K!L!M!N!O!P!Q!R!S!T!U!V!W!X!Y!Z![!\!]!^!_!  }    ü     ?!* ã  *!     G L    è +   u  g  ë - 3!ñ  $ ! >   ^   O  H  t F  C! A |  6  5 4! 2!  2 D!      Q   0!   P   k -!"" @  ó &  <!J   A!.  ô l y 9  ö 9!  '!s   {     ;!e    ~   ""! ? U  ! ò  r I ß   T B!% p ä ' /!£   .!_ 1 : K  m  G!:!C     D (  o $!   õ X S 8! d  ` W <   H!c  î  6! Ü =>ABCeKD@FGHtJfg<$_uva)?snPRSVXY[\]p/0%U^MZoh!""#y*+2,-.345671:8(W9&';`klmxEILNOQTbcdijqrwz{     0   (   L     !0 !   VO/JpNORI#Q0A'9h=#InN,$   #  0 @",N/A,683,682,padding:1
+568,0x5981E8,Zí,N/A,7,7,padding:0
+569,0x5981F1,ä,N/A,7,7,padding:0
+570,0x598208,í,N/A,7,7,padding:0
+571,0x598211,ä,N/A,7,7,padding:0
+572,0x598228,ëí,N/A,7,7,padding:0
+573,0x598231,V,N/A,7,7,padding:0
+574,0x598248,âvÜÜÜÜS\,N/A,16,16,padding:0
+575,0x59825B,äí,N/A,10,10,padding:0
+576,0x598268,VâÜäÜéudâ,N/A,16,16,padding:0
+577,0x59827A,ä|â,N/A,11,11,padding:0
+578,0x598289,äâÜVâe,N/A,14,14,padding:0
+579,0x59829A,vSÜâ,N/A,12,12,padding:0
+580,0x5982A9,éVëÜâS,N/A,14,14,padding:0
+581,0x5982B9,äâXÜ,N/A,13,13,padding:0
+582,0x5982C9,äÜëâX,N/A,14,14,padding:0
+583,0x5982D9,VxÜ,N/A,14,14,padding:0
+584,0x5982EA,VÜVS,N/A,12,12,padding:0
+585,0x5982F9,äÜÜXäí,N/A,14,14,padding:0
+586,0x59830A,äÜí,N/A,12,12,padding:0
+587,0x598319,VéâÜ,N/A,14,14,padding:0
+588,0x59832B,ë,N/A,10,10,padding:0
+589,0x598338,VäâXéf,N/A,16,16,padding:0
+590,0x59834B,S,N/A,10,10,padding:0
+591,0x598358,ïxÜe,N/A,16,16,padding:0
+592,0x598378,íÜ,N/A,16,16,padding:0
+593,0x598398,ä,N/A,7,7,padding:0
+594,0x5983B8,ää,N/A,7,7,padding:0
+595,0x5983C1,ä,N/A,7,7,padding:0
+596,0x5983D8,Zí,N/A,7,7,padding:0
+597,0x5983E1,ä,N/A,7,7,padding:0
+598,0x5983F8,í,N/A,7,7,padding:0
+599,0x598401,ä,N/A,7,7,padding:0
+600,0x598418,ëí,N/A,7,7,padding:0
+601,0x598421,V,N/A,7,7,padding:0
+602,0x598438,âvÜÜÜÜS\,N/A,16,16,padding:0
+603,0x598458,VâÜäÜéudâ,N/A,16,16,padding:0
+604,0x59846B,äí,N/A,10,10,padding:0
+605,0x598479,äâÜVâe,N/A,14,14,padding:0
+606,0x59848A,ä|â,N/A,11,11,padding:0
+607,0x598499,éVëÜâS,N/A,14,14,padding:0
+608,0x5984AA,vSÜâ,N/A,12,12,padding:0
+609,0x5984B9,äÜëâX,N/A,14,14,padding:0
+610,0x5984C9,äâXÜ,N/A,13,13,padding:0
+611,0x5984DA,VÜVS,N/A,12,12,padding:0
+612,0x5984E9,VxÜ,N/A,14,14,padding:0
+613,0x5984FA,äÜí,N/A,12,12,padding:0
+614,0x598509,äÜÜXäí,N/A,14,14,padding:0
+615,0x59851B,ë,N/A,10,10,padding:0
+616,0x598529,VéâÜ,N/A,14,14,padding:0
+617,0x59853B,S,N/A,10,10,padding:0
+618,0x598548,VäâXéf,N/A,16,16,padding:0
+619,0x598568,ïxÜe,N/A,16,16,padding:0
+620,0x598588,íÜ,N/A,16,16,padding:0
+621,0x5985A8,ä,N/A,7,7,padding:0
+622,0x5985C8,ää,N/A,7,7,padding:0
+623,0x5985D1,"ä        !""#$%'(    ""S   S ""S   ~ ""! :       `!:   : `!:   O `! î - i ò Cloud",N/A,92,92,padding:0
+624,0x598634,Barret,N/A,12,6,padding:6
+625,0x598640,Tifa,N/A,9,4,padding:5
+626,0x59864C,Aeris,N/A,12,5,padding:7
+627,0x598658,Red XIII,N/A,14,8,padding:6
+628,0x598664,Yuffie,N/A,9,6,padding:3
+629,0x598670,Cait Sith,N/A,14,9,padding:5
+630,0x59867C,Vincent,N/A,9,7,padding:2
+631,0x598688,Cid,N/A,7,3,padding:4
+632,0x598694,Choco,N/A,13,5,padding:8
+633,0x5986BE,Leer,N/A,13,4,padding:9
+634,0x5986C8,Löschen,N/A,12,7,padding:5
+635,0x5986D2,Auswählen,N/A,11,9,padding:2
+636,0x5986DC,Standard,N/A,8,8,padding:0
+637,0x5986E6,Abbrechen,N/A,10,9,padding:1
+638,0x5986F0,"ABCDEFGHIJäKLMNOPQRSTUVWXYZ,.+-öabcdefghijåklmnopqrstÜuvwxyz:;  ü0123456789   RaginLion",N/A,89,89,padding:0
+639,0x598750,Freshmake,N/A,15,9,padding:6
+640,0x598760,Square,N/A,12,6,padding:6
+641,0x598770,3Dfx,N/A,13,4,padding:9
+642,0x598780,Local,N/A,16,5,padding:11
+643,0x598790,Gold,N/A,14,4,padding:10
+644,0x5987A0,"ëìèïókmoqs+-/13uwy{}579;=áâåç?ACEGô•____acegi!#%')üJLNPR_]^      äíéîñjlnpr*,.02tvxz|468:<~àãÜ>@BDFòõ°£ö`bdfh ""$&(ßIKMOQH",N/A,199,188,padding:11
+645,0x598864,"!   ""   $   %   '   (        &4031&.      !îEx-SOLDIER",N/A,58,54,padding:4
+646,0x5988A1,X!         Z!Z!V V,N/A,23,23,padding:0
+647,0x5988BC,"à""  T   R",N/A,12,12,padding:0
+648,0x598900,C   !!/-+)%-      !öBarret,N/A,26,26,padding:0
+649,0x598920,@,N/A,2,2,padding:0
+650,0x598926,!           / /,N/A,23,22,padding:1
+651,0x598940,*,N/A,4,4,padding:0
+652,0x598988,"""!+++*'.      !9Tifa",N/A,24,20,padding:4
+653,0x5989A4,0,N/A,2,2,padding:0
+654,0x5989AA,!           0 0,N/A,23,22,padding:1
+655,0x5989C4,(,N/A,4,4,padding:0
+656,0x598A0C,#!*+-.%.      !4Aerith,N/A,26,22,padding:4
+657,0x598A28,^,N/A,2,2,padding:0
+658,0x598A2C,!           7 7,N/A,25,24,padding:1
+659,0x598A90,"$!*,+**.      !äRed",N/A,23,19,padding:4
+660,0x598AAC,P#,N/A,2,2,padding:0
+661,0x598AB2,!           1 1,N/A,23,22,padding:1
+662,0x598ACC,",   Q# 7#",N/A,12,12,padding:0
+663,0x598AF0,E,N/A,4,4,padding:0
+664,0x598B14,%!            !KYuffie,N/A,26,22,padding:4
+665,0x598B30,w$,N/A,2,2,padding:0
+666,0x598B36,!         ã ã % %,N/A,23,22,padding:1
+667,0x598B54,GL!,N/A,8,4,padding:4
+668,0x598B98,&!*+-+%/      ! Cait Seith,N/A,30,26,padding:4
+669,0x598BB4,å%,N/A,2,2,padding:0
+670,0x598BBA,!           2 2,N/A,23,22,padding:1
+671,0x598BD4,.   J   Zx;,N/A,12,12,padding:0
+672,0x598C1C,'!)*++%.      !WVincent,N/A,27,23,padding:4
+673,0x598C38,ò%,N/A,2,2,padding:0
+674,0x598C3E,!           2 2,N/A,23,22,padding:1
+675,0x598C58,0,N/A,4,4,padding:0
+676,0x598CA0,"(!,,+*&.      !_Cid",N/A,23,19,padding:4
+677,0x598CBC,i&,N/A,2,2,padding:0
+678,0x598CC2,!           / /,N/A,23,22,padding:1
+679,0x598CDC,2,N/A,4,4,padding:0
+680,0x598D24,")!,,+*&%      !",N/A,20,16,padding:4
+681,0x598D41,!  '!           $ $,N/A,28,27,padding:1
+682,0x598D60,",   *",N/A,8,8,padding:0
+683,0x598DA4,õ   *RuhdfaN      ! Sephiroth,N/A,29,29,padding:0
+684,0x598DC4,ü&(,N/A,4,4,padding:0
+685,0x598DCA,!          / /!!,N/A,23,22,padding:1
+686,0x598DE4,$ W,N/A,5,5,padding:0
+687,0x598DEC,U,N/A,1,1,padding:0
+688,0x598DF0,S,N/A,1,1,padding:0
+689,0x598DF4,7,N/A,1,1,padding:0
+690,0x598DF8,Q,N/A,1,1,padding:0
+691,0x598E08,R,N/A,1,1,padding:0
+692,0x598E0C,7,N/A,1,1,padding:0
+693,0x598E10,T,N/A,1,1,padding:0
+694,0x598E14,7,N/A,1,1,padding:0
+695,0x598ED0,"!   &   !   ""   &   !   #   &   !   $   &   !   %   &   !   &   &   !   '   &   !   (   &   !   )   &   !       &   !   *   &   !                       !               &   $   #   ""   %   #   $   #   #   '   $   #   )   $   #   %   %   #       %   #   (   #   #   $   $   #   %   $   #   *   %   #   (   ""   !                               #   #   (   $   #   #   #   #   %   #   #   &   #   #   '   #   #   )   #   #       $   #   !   $   #   *   ""   #   *       #                                       $   %   #   #   %   #   ""   #   #   !   %   #   !   #   #   #   $   #   ""   $   #   &   ""   #   '   ""   #   )   ""   !                                               !                   Q   R   S   T   U   V   W   X   Y   Z   [   \   ]   ^   `   a   d   e   f   g   h       j   k   l   m   n   o   p   q   r   s   t   u   v   w   x   y   D   E   G   H   I   J   K       q   u   Full Equipent!",N/A,925,894,padding:31
+696,0x599254,Magic Materia!,N/A,19,14,padding:5
+697,0x599268,Summon Materia!,N/A,20,15,padding:5
+698,0x59927C,Command,N/A,11,7,padding:4
+699,0x599290,Zero - AW YEAH!,N/A,27,15,padding:12
+700,0x5992A8,Feuer,N/A,13,5,padding:8
+701,0x5992B4,Kälte,N/A,11,5,padding:6
+702,0x5992C0,Blitz,N/A,11,5,padding:6
+703,0x5992CC,Erde,N/A,10,4,padding:6
+704,0x5992D8,Gift,N/A,11,4,padding:7
+705,0x5992E4,Schwerkraft,N/A,18,11,padding:7
+706,0x5992F0,Wasser,N/A,6,6,padding:0
+707,0x5992FC,Wind,N/A,9,4,padding:5
+708,0x599308,Heilig,N/A,13,6,padding:7
+709,0x599318,Soll das wirklich entfernt werden?,N/A,43,34,padding:9
+710,0x59933C,Ja!,N/A,4,3,padding:1
+711,0x599360,Einen Moment,N/A,44,12,padding:32
+712,0x599384,Sephiroth,N/A,36,13,padding:23
+713,0x5993A8,Waf.,N/A,26,4,padding:22
+714,0x5993C4,Rüs.,N/A,27,4,padding:23
+715,0x5993E0,Fähigkeitsliste,N/A,38,15,padding:23
+716,0x5993FC,Rüstungseffekt,N/A,26,14,padding:12
+717,0x599418,Prüfen,N/A,19,6,padding:13
+718,0x599434,Ordnen,N/A,27,6,padding:21
+719,0x599450,Gespeicherte Zahl   /24,N/A,44,23,padding:21
+720,0x59946C,AP,N/A,6,2,padding:4
+721,0x599488,Auf nächste Ebene,N/A,42,17,padding:25
+722,0x5994A4,MASTER,N/A,16,6,padding:10
+723,0x5994C0,Ordnen,N/A,27,6,padding:21
+724,0x5994DC,Tauschen,N/A,29,8,padding:21
+725,0x5994F8,Alles entfernen,N/A,34,15,padding:19
+726,0x599514,Wegwerfen,N/A,21,9,padding:12
+727,0x59954C,Geschwindigkeit   %HåHER,N/A,51,24,padding:27
+728,0x599568,Schutz   %HåHER,N/A,18,15,padding:3
+729,0x599584,Zauberkraft   %HåHER,N/A,32,20,padding:12
+730,0x5995A0,Glück   %HåHER,N/A,21,14,padding:7
+731,0x5995BC,MASTER,N/A,19,6,padding:13
+732,0x5995D8,Stärke,N/A,27,6,padding:21
+733,0x5995F4,Vitalität,N/A,30,9,padding:21
+734,0x599610,Zauber,N/A,24,6,padding:18
+735,0x59962C,Zbrvertdg,N/A,30,9,padding:21
+736,0x599648,Geschick,N/A,26,8,padding:18
+737,0x599664,Glück,N/A,24,5,padding:19
+738,0x599680,MAXHP,N/A,27,5,padding:22
+739,0x59969C,MAXMP,N/A,27,5,padding:22
+740,0x5996B8,MAXHP,N/A,27,5,padding:22
+741,0x5996D4,MAXMP,N/A,27,5,padding:22
+742,0x5996F0,EXP.UP,N/A,28,6,padding:22
+743,0x59970C,Gil UP,N/A,27,6,padding:21
+744,0x599728,Treffen - %,N/A,32,11,padding:21
+745,0x599744,Treffen + %,N/A,27,11,padding:16
+746,0x599760,Chocobo treffen,N/A,31,15,padding:16
+747,0x59977C,Präventivm. + %,N/A,27,15,padding:12
+748,0x599798,Fernangriff,N/A,23,11,padding:12
+749,0x5997B4,Alle angreifen,N/A,30,14,padding:16
+750,0x5997D0,Gegenangriff,N/A,25,12,padding:13
+751,0x5997EC,Alle angreifen,N/A,29,14,padding:15
+752,0x599808,Ständiger Angriff,N/A,30,17,padding:13
+753,0x599824,HP/MP-nderung,N/A,24,14,padding:10
+754,0x599840,Kaufen,N/A,19,6,padding:13
+755,0x59985E,Verkaufen,N/A,32,9,padding:23
+756,0x59987C,Beenden,N/A,27,7,padding:20
+757,0x59989A,Objekt,N/A,28,6,padding:22
+758,0x5998B8,Materia,N/A,30,7,padding:23
+759,0x5998D8,Kaufen Verkaufen Beenden,N/A,48,24,padding:24
+760,0x5998F8,Gil,N/A,10,3,padding:7
+761,0x599918,Besitz,N/A,34,6,padding:28
+762,0x599938,Ausstattung,N/A,36,11,padding:25
+763,0x599958,Gesamt,N/A,26,6,padding:20
+764,0x599978,Wieviel,N/A,32,7,padding:25
+765,0x599998,Objekt    Materia,N/A,41,17,padding:24
+766,0x5999B8,Übrige Gil,N/A,24,10,padding:14
+767,0x5999D8,Preis für Master,N/A,37,16,padding:21
+768,0x5999F8,Preis durch AP,N/A,29,14,padding:15
+769,0x599A18,Waf.,N/A,21,4,padding:17
+770,0x599A2E,Rüs.,N/A,21,4,padding:17
+771,0x599A44,Zub.,N/A,21,4,padding:17
+772,0x599A5A,Zub.,N/A,21,4,padding:17
+773,0x599A70,Stärke,N/A,23,6,padding:17
+774,0x599A86,Geschick,N/A,23,8,padding:15
+775,0x599A9C,Vitalitä,N/A,21,8,padding:13
+776,0x599AB2,Zauber,N/A,19,6,padding:13
+777,0x599AC8,Moral,N/A,20,5,padding:15
+778,0x599ADE,Glück,N/A,21,5,padding:16
+779,0x599AF4,Angreifen,N/A,25,9,padding:16
+780,0x599B0A,Angreifen %,N/A,23,11,padding:12
+781,0x599B20,Verteidigen,N/A,21,11,padding:10
+782,0x599B36,Verteidigen %,N/A,23,13,padding:10
+783,0x599B4C,Zbrangrf,N/A,16,8,padding:8
+784,0x599B62,Zbrvertdg,N/A,22,9,padding:13
+785,0x599B78,Zbrvertdg %,N/A,23,11,padding:12
+786,0x599B8E,Schlitz:,N/A,18,8,padding:10
+787,0x599BA4,Verstärkung:,N/A,25,12,padding:13
+788,0x599BBA,Keine,N/A,14,5,padding:9
+789,0x599BD0,Normal,N/A,22,6,padding:16
+790,0x599BE6,Doppelt,N/A,22,7,padding:15
+791,0x599BFC,Dreifach,N/A,22,8,padding:14
+792,0x599C14,A,N/A,16,1,padding:15
+793,0x599C16,V,N/A,1,1,padding:0
+794,0x599C18,Objektladen,N/A,11,11,padding:0
+795,0x599C40,Waffengeschäft,N/A,42,14,padding:28
+796,0x599C68,Objektladen,N/A,36,11,padding:25
+797,0x599C90,Materia-Laden,N/A,41,13,padding:28
+798,0x599CB8,Gemischtwaren,N/A,39,13,padding:26
+799,0x599CE0,Gemüseladen,N/A,37,11,padding:26
+800,0x599D08,Zubehörladen,N/A,40,12,padding:28
+801,0x599D30,Werkzeugladen,N/A,40,13,padding:27
+802,0x599D58,Souvenierladen,N/A,40,14,padding:26
+803,0x599D80,Willkommen!,N/A,36,11,padding:25
+804,0x599DAE,Was möchtest du kaufen?,N/A,57,23,padding:34
+805,0x599DDC,Wie viele willst du davon?,N/A,48,26,padding:22
+806,0x599E0A,Was möchtest du verkaufen?,N/A,45,26,padding:19
+807,0x599E38,Wie viele willst du verkaufen?,N/A,49,30,padding:19
+808,0x599E66,Danke!,N/A,21,6,padding:15
+809,0x599E94,Danke!,N/A,45,6,padding:39
+810,0x599EC2,Du hast nicht genug Geld!,N/A,64,25,padding:39
+811,0x599F4C,Guten Tag!,N/A,101,10,padding:91
+812,0x599F7A,Wie kann ich behilflich sein?,N/A,64,29,padding:35
+813,0x599FA8,Wie viele willst du davon?,N/A,42,26,padding:16
+814,0x599FD6,Hast du was zu verkaufen?,N/A,44,25,padding:19
+815,0x59A004,Wie viele willst du?,N/A,40,20,padding:20
+816,0x59A032,Vielen Dank!,N/A,37,12,padding:25
+817,0x59A060,Ihr werdet doch alle zurückkommen!,N/A,67,34,padding:33
+818,0x59A08E,Soll das ein Witz sein? Das ist nicht genug!,N/A,55,44,padding:11
+819,0x59A118,"! #     !!             4                                                           "" $             '       (       f                                                   "" '             '       (   !   Q   !   R   !   T   !   U                           ! ""     ""!      4                                                                   "" $             '       (       f                                                   # $ !   Q   !   R   !   T   !   U                                                   ! %                          ""!      #!                                          # % !   Q   !   R   !   T   !   U   !   0                                           "" )             '       (       ,       T       -       .       !       f           $ '             '       (       4       -       .       f                           "" %             '       (       T       f                                           ! %                                 #!                                          "" '             '       (       T       -       .       f                           # % !   S   !   \   !   D   !   E   !   V                                           % &     `       a       b       c       d       e                                   % *     q       r       s       t       `       a       b       c       d       e   "" %             '       -       .       f                                           # $ !   Q   !   T   !   R   !   U                                                   ! %     #!              '       4       f                                           ! %                                                                            "" )             !       '       (       T       ,       -       .       f           # % !   E   !   X   !   U   !   V   !   W                                           ! &                                                                           & ""     K!      L!                                                                  # % !   Q   !   R   !   T   !   S   !   \                                           "" ""             '                                                                   ! $     )!      $!      5!      U                                                   # ' !   V   !   W   !   U   !   X   !   Q   !   R   !   T                           "" )             !       '       )       (       T       -       .       f           ! #     $!             U                                                           ' #             '       f                                                           $ & !   Z       *       +       )       -       .                                   ( *             '       #       (       *       +       )       ,       -       .   $ #             '       f                                                           ! )                                               R       S       U           "" )             !       '       f       *       +       )       -       .           & *     L!      K!      J!      C!      O!      X!  !   Y   !   a   !   V   !   Z   ! (                                                      %!                  $ *             !       '       #       f       *       +       )       -       .   # $ !       !   !   !   Y   !   Z                                                   $ $             !       '       f                                                   ! &            &!      @!      A!      B!      C!                                  "" *             !       '       #       -       .       f   !   ^   !   [   !   a   ! )                                                                        "" )     !       '       #       -       .       f       ?       C       D!          "" (             !       '       #       -       .       *       f                   ! *                                                             f       !   ! *                                                             (!      ,!  & '     E!      S!      T!      U!      M!      N!      O!                          "" '     !       '       #       -       .       /       f                           # % !   !   !       !   Z   !   ]   !   d                                           "" '     !       '       #       -       .       f       V                           # % !   G   !   J   !   I   !   d   !   7                                           $ $     o       p       ^       _                                                   ! )                                                                        "" *                                                                       # & !   #   !   W   !       !   ^   !   [   !   7                                   ! '                                                                          & (     )!                                                                   "" (                                                                         ! &                                        V                                   # & !   Q   !   R   !   T   !   S   !   ]   !   \                                   "" '             !       '       #       -       .       f                           ! )     V       &!      +!      @!      A!      B!      C!      Q!      W!          "" *     !       '       #       f   !   ^   !   [   !   a   !   G   !   I   !   J   "" )     '!      *!              !       '       #       -       .       f           "" %             !       '       #       f                                           "" %             !       '       #       f                                           "" %             !       '       #       f                                           "" %             !       '       #       f                                           "" %             !       '       #       f                                           "" %             !       '       #       f                                           "" %             !       '       #       f                                           "" %             !       '       #       f                                           "" %             !       '       #       f                                           "" %             !       '       #       f                                           "" %             !       '       #       f                                           "" %             !       '       #       f                                           "" %             !       '       #       f                                           "" %             !       '       #                                                   R   L!  ""   %  ""   ""   ""   L!  p            ã   ã   ã   #  L!  #  ""   ""   p   ""   ""   ""   ""   ""   ""   ""   ""   ""   ""   @#  ""   ""   ""   @#  ""   ""   ""   ""   ""   ""   ""   ""   ""   ""   ""   ""   ""   ""   !  !  R   !  #  ""   ""   ""   ""   ""   ""   ""   3  +  %  #  @#  !     ã   !  !  !  !  !  !  !  ""   ""   '  %  x""  !     ã   *   ""   !  !  !  !  !  !  !  !  R   R   R   !  R   R   R   ""   ""   ""                                                                                               £   #  %  *  N  N  pf  (  .  ã9  *  é0  ""   ""   ""   ""   £   `!  ""  $  )  6  0G  ^  ('  *  Z  (  é0  ""   ""   ""   £   ~!  #  £%  *  8  N  pf  '  ,  ^  ,  ,  ""   ""   ""   @#  4%  )  ñ7  J  éb  '  -  V  ñ7  `?  ""   ""   ""      ò!  @#  4%  H*  6  ('  ,  )  .  l=  $  ã9  l=  R  Xj  x;  l=  ^  ,  X8  ""   Z  ""   ""   x""  £%  H*  ñ7  N  pf  '  ,  V  +  ñ7  ""   ""   ""   !  )  5  J  pf  (  *  ,  +  Z  ""   ""   ""   #  <,   9  N  pf  -  :  R  +  ,  ""   ""   ""   _b/ ã      8!  ~!  @#  4%  '  ,  2  ('  õ.  `?  N  x""  @#  ""   ""   ""   #  #  %  4%  2  2  2  .  ""   ""   ""   ""   ""   ""   l=  -  l=  /  0G  0G  ""   @n  ""   ""   /  +  +  x;  l=  3  !  l=  ""   `?  `?  `?  ""   l=  3  ""   HC  ""   N  0G  ""   """,N/A,8091,8000,padding:91
+820,0x59C158,`?  `?  @n  @n  Z  !   !   !   !   !   !   !   !   !   !   !   #  !   !   !   !   !       @n  !   !   !   !   !   !   !   !   !   !   !   !   $  #  0G  0G  !   0G  0G  !   !,N/A,180,180,padding:0
+821,0x59C218,"!   x""  x""  %  x""  ""  %  +  +  ñ7  3  0G  %  `?  0G      @n  ñ7          HC  !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !   !",N/A,172,172,padding:0
+822,0x59C364,"!S   S ""S   ~ !   M!""           Ü ""S !~    O ü £   S ""! ! t g!}  v   S ""~    ""S    !C!! $!C!     :   : `!:   O  é    `!y           T `!:  O ã é ° 8 ` \   9 `! •  ì J  O p K   : `!O   i `!:   ~    ~   !   S    ° : Laden",N/A,261,257,padding:4
+823,0x59C488,Wählen Sie eine Speicherdatei aus.,N/A,68,34,padding:34
+824,0x59C4B0,Wählen Sie einen Speicherblock aus.,N/A,40,35,padding:5
+825,0x59C4D8,STECKPLATZ 1,N/A,16,12,padding:4
+826,0x59C500,STECKPLATZ 2,N/A,39,12,padding:27
+827,0x59C528,Wirklich?,N/A,36,9,padding:27
+828,0x59C550,Bin am Laden. Bitte warten,N/A,57,27,padding:30
+829,0x59C578,Bin am Sichern. Bitte warten,N/A,41,29,padding:12
+830,0x59C5A0,LEER,N/A,14,4,padding:10
+831,0x59C5C8,BLOCK,N/A,40,5,padding:35
+832,0x59C5F0,Weiter?,N/A,41,7,padding:34
+833,0x59C618,/15,N/A,35,3,padding:32
+834,0x59C640,Überprüfe Spielstandsdatei,N/A,63,27,padding:36
+835,0x59C668,01,N/A,14,2,padding:12
+836,0x59C690,02,N/A,39,2,padding:37
+837,0x59C6B8,03,N/A,39,2,padding:37
+838,0x59C6E0,04,N/A,39,2,padding:37
+839,0x59C708,05,N/A,39,2,padding:37
+840,0x59C730,06,N/A,39,2,padding:37
+841,0x59C758,07,N/A,39,2,padding:37
+842,0x59C780,08,N/A,39,2,padding:37
+843,0x59C7A8,09,N/A,39,2,padding:37
+844,0x59C7D0,10,N/A,39,2,padding:37
+845,0x59C7F8,11,N/A,39,2,padding:37
+846,0x59C820,12,N/A,39,2,padding:37
+847,0x59C848,13,N/A,39,2,padding:37
+848,0x59C870,14,N/A,39,2,padding:37
+849,0x59C898,15,N/A,39,2,padding:37
+850,0x59C8C0,Gespeichert.,N/A,49,12,padding:37
+851,0x59C8E8,Speichern nicht möglich.,N/A,51,24,padding:27
+852,0x59C910,Laden nicht möglich.,N/A,35,20,padding:15
+853,0x59C938,Daten sind zerstört.,N/A,39,20,padding:19
+854,0x59C960,NEUES SPIEL,N/A,30,11,padding:19
+855,0x59C988,Wirklich speichern?,N/A,47,19,padding:28
+856,0x59C9B0,Ja,N/A,22,2,padding:20
+857,0x59C9D8,Nein,N/A,41,4,padding:37
+858,0x59CA00,Beendet.,N/A,43,8,padding:35
+859,0x59CAC6,Formatiert,N/A,75,10,padding:65
+860,0x59CB08,Formatierung nicht möglich,N/A,81,26,padding:55
+861,0x59CB4A,Nicht formatiert,N/A,55,16,padding:39
+862,0x59CB8C,Jetzt formatieren?,N/A,67,18,padding:49
+863,0x59CBCE,Memory Card wird geprüft.,N/A,72,25,padding:47
+864,0x59CC10,Keine Spielstandsdatei.,N/A,63,23,padding:40
+865,0x59CC52,Diese Memory Card ist beschädigt und kann nicht verwendet werden.,N/A,107,65,padding:42
+866,0x59CC94,Andere Memory Card einlegen.,N/A,28,28,padding:0
+867,0x59CCD6,Nicht genug Platz in der Spielstandsdatei übrig.,N/A,85,48,padding:37
+868,0x59CD18,Bitte benutzen Sie eine andere Spielstandsdatei,N/A,64,47,padding:17
+869,0x59CD5A,oder löschen Sie 1 Block gesicherter Daten.,N/A,61,43,padding:18
+870,0x59CE20,Lesen nicht möglich.,N/A,85,20,padding:65
+871,0x59CE62,Spiel beginnen?,N/A,60,15,padding:45
+872,0x59CFB0,Kann Speicherpuffer der Spielstandsdatei nicht zuordnen!,N/A,125,56,padding:69
+873,0x59CFEC,Ungültige Spielstandsdatei!,N/A,30,27,padding:3
+874,0x59D028,Spielstand 1,N/A,47,15,padding:32
+875,0x59D03C,Spielstand 2,N/A,19,15,padding:4
+876,0x59D050,Spielstand 3,N/A,19,15,padding:4
+877,0x59D064,Spielstand 4,N/A,19,15,padding:4
+878,0x59D078,Spielstand 5,N/A,19,15,padding:4
+879,0x59D08C,Spielstand 6,N/A,19,15,padding:4
+880,0x59D0A0,Spielstand 7,N/A,19,15,padding:4
+881,0x59D0B4,Spielstand 8,N/A,19,15,padding:4
+882,0x59D0C8,Spielstand 9,N/A,19,15,padding:4
+883,0x59D0DC,Spielstand 10,N/A,17,13,padding:4
+884,0x59D0F0,"!)  m t!v L!S     ""  % j G  K  :     `!e +! ë e   [!  ç V C v r  m",N/A,91,85,padding:6
+885,0x59D150,Level,N/A,5,5,padding:0
+886,0x59D158,p  @  cZ|ffW|ôòâ|ìåî|gåòìáî|íïáãìåîNâññ cZ|ffW|ôòâ|ìåî|gåòìáî|íïáãìåîNâññ Eôôá°å  Eôôá°åOôá°åEPRãNÜÜW Eôôá°åOôá°åEPRãNÜÜW,N/A,138,136,padding:2
+887,0x59D1F0,ôóòõ                  _ñï•     âïô             ôèî             õáî             áõáî    @Y     PB,N/A,135,120,padding:15
+888,0x59D26A,UéA/,N/A,8,8,padding:0
+889,0x59D273,"_      _($((($(( $,( $,(",N/A,37,37,padding:0
+890,0x59D299,ü,N/A,9,9,padding:0
+891,0x59D2A4,Üó-`,N/A,16,16,padding:0
+892,0x59D2B6,"-`Vc,9_      _#å£ñ         !4 AM }J àJ áN       %áõáîR       ""0 Q òR J uR uR uR J uR J J J J òR òR J J  !  $  '  *  -    ñ_  _    !  $  '  *  -        _      c      [      _      _",N/A,228,228,padding:0
+893,0x59D39C,ü^ ^ ^ ^ ^ ^ ^ ^ ^ ._ 3_ I_ N_ j_ z_ î_ ß_ _ _ _ _ _ _ .` B` b` g` á` Ü` ` ` ` ` ` ` %a *a Ja ^a va äa a a a a a a a .b Nb Sb mb rb òb b b b b b b b 6c Jc bc         ü,N/A,275,275,padding:0
+894,0x59D4B6,"ü      0        4    =    :    ;    ?    3    A    .    -    /    0    %   £ >   õ 2   ñ @   í ,   ã +   | 5   t <   l 9   d 1   \ 8   T 6   L 7   D B   @ C   < D   8 F             0d      !       P                                                                      $     # #   H  .   é  0             $     & !     ""     #     $     %     &   0!         $     ! å   H!         $     ! !   `!         $     ! )$  x!          $     ! )$  é!          $     ! )$  £!          $     ! )$  !          $     ! )$  !          $     ! )$  !          $     ! )$  !          $     !     !  A Hl  $       î H6  $      H (  $       H(! $       Hb  $      @ 0  $       z   $      D @#  $      H       !  ! (      `           !   !      .F  6M  ;R  CZ  J_6 Lc"" Rk  Zu  La0 Ui7 \p= \oB ]qD a}"" c{; eá! jå# mè$ pì& sï( uó* xô. wó6 {2 wñ: °6 £6 ã; dxG i{P wìI nR rã[ äB {ëf âôk ëöw ñß} îG îH ñG òL ïR í] °P S T U Y îf ñf b ô| Ü \ ` a b e l i l n m u u z z x q u z y w y { | ï  â ñ ° £ â â é è í ó £ à å è è ë í ï ï õ õ ô • £  •    ß",N/A,1702,1702,padding:0

@@ -1,0 +1,203 @@
+# Chunk 22: Strings 4400 to 4599
+# Offset range: 0x5B90FF to 0x5BA6A9
+
+0x5B90FF | g   -                                                                       !dddB
+0x5B9183 | i   -                                                                   *
+0x5B9207 | [   *                                                               3
+0x5B9288 | XXX@   !                                                           7
+0x5B930C |    *                                                           8
+0x5B938C | :::=                                                           6
+0x5B940C |    6                                                           0
+0x5B9490 |    /   !                                                   &
+0x5B9514 |    .                                                       /
+0x5B9598 |    .                                                   $QQQ?
+0x5B961B | Ö   .                                                   &   0
+0x5B9681 | üG
+0x5B968C | [v 
+0x5B9690 | D[ 
+0x5B9694 | I^)
+0x5B9699 | ü|
+0x5B96A0 |    /                                                       *222<
+0x5B9708 | ]y 
+0x5B970C | Jb 
+0x5B9710 | @W 
+0x5B9714 | =T 
+0x5B9718 | 9P 
+0x5B971C | gyK
+0x5B9724 |    /   "                                                       %   (   )   )   *   2
+0x5B9788 | `w0
+0x5B978C | Ti3
+0x5B9790 | ]q>
+0x5B9794 | UÄ6
+0x5B9798 | :Q 
+0x5B979C | 4L 
+0x5B97A0 | buF
+0x5B97A8 | sssE   -   "                                                                       %   /
+0x5B981C | _rD
+0x5B9820 | 0H 
+0x5B9824 | 6N 
+0x5B9830 | dddB   '                                                                           "   +   1KKK>KKK>
+0x5B98A4 | ]pA
+0x5B98A8 | ,E 
+0x5B98AC | Xl=
+0x5B98B7 | I   ,   $                                                                               !   !   "   )   '   /
+0x5B993F | ^   *                                                                                                   $   -222<
+0x5B99C4 |    *                                                                                                           #   (   (   -   *                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+0x5B9D6C |   ü
+0x5B9D70 |   _
+0x5B9D74 |   _
+0x5B9D78 |   _
+0x5B9D7C |   _
+0x5B9D80 |   /
+0x5B9D84 |   /
+0x5B9D89 |  '
+0x5B9D8D |  #
+0x5B9D91 |  !
+0x5B9D95 |   ü
+0x5B9D99 |   ?
+0x5B9D9E |  /
+0x5B9DA2 |  #
+0x5B9DC8 |   ! & 
+0x5B9DCF |    ! ( Hl  ! ``  ! ( H6  " @@  ! ( 
+0x5B9DF3 | (  # 
+0x5B9DF9 |  ! ! @ H(! $ ``! ! @ Hb  % @@! ! @ 
+0x5B9E1D | 0  & pa@#T   v s Ü v e r s i o n Ü i n f o     
+0x5B9E50 |   !   "       "     7   !   $                   
+0x5B9E81 | "  ! s 
+0x5B9E91 |  f 
+0x5B9E99 |  i 
+0x5B9EA1 |    |"  ! P P P P P T 
+0x5B9EB7 |  P   B ! ! c 
+0x5B9ECF |  n 
+0x5B9EE1 |  F ! f 
+0x5B9EED |  d 
+0x5B9F03 |      f i n a l @ f a n t a s y @ v i i @ i n t e r n a t i o n l @ 
+0x5B9F4B |  @ p c   J % ! f 
+0x5B9F61 |  v 
+0x5B9F6F |      R N P P     B ! ! i 
+0x5B9F95 |  n 
+0x5B9FA5 |  X ! l 
+0x5B9FB3 |  c 
+0x5B9FC9 |  @ Q Y Y W L Q Y Y X @ s q u a r e @ e n i x @ c o N L @ l t d N @ a 
+0x5BA011 |  @ r 
+0x5BA01F |  @ r 
+0x5BA031 |  N @   J ! ! o 
+0x5BA04D |  f 
+0x5BA065 |  F ! p 
+0x5BA077 |  n 
+0x5BA07F |      f i n a l @ f a n t a s y @ v i i @ i n t e r n a t i o n l @ 
+0x5BA0C7 |  @ p c   N % ! p 
+0x5BA0E3 |  v 
+0x5BA0F1 |    R N P P     d   ! v 
+0x5BA10B |  f 
+0x5BA113 |  i 
+0x5BA11B |      D $   t 
+0x5BA143 | $paddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpaddingpaddingxxpadafSdnNp   
+0x5BA221 |  (P
+0x5BA225 |      afSdnNp   
+0x5BA24B |  R
+0x5BA286 | a   
+0x5BA29C | a   
+0x5BA2B5 | a   
+0x5BA2CC | a   
+0x5BA2E7 |  |
+0x5BA306 | [         
+0x5BA312 | [ 
+0x5BA316 | [ 
+0x5BA31A | [         
+0x5BA326 | [ 
+0x5BA32A | [ 
+0x5BA32E | [         
+0x5BA33A | [ $
+0x5BA33E | [ 
+0x5BA342 | [         R
+0x5BA34E | [ X
+0x5BA352 | [ l
+0x5BA356 | [         
+0x5BA362 | [ 
+0x5BA366 | [ 
+0x5BA36A | [         ä
+0x5BA376 | [ ,
+0x5BA37A | [ 
+0x5BA37E | [         
+0x5BA38A | [ L
+0x5BA38E | [ 
+0x5BA392 | [         
+0x5BA39E | [ D
+0x5BA3A2 | [ 
+0x5BA3A6 | [         
+0x5BA3B2 | [ 8
+0x5BA3B6 | [ 
+0x5BA3BA | [         *
+0x5BA3C6 | [ 
+0x5BA3CA | [ 
+0x5BA3CF |          t
+0x5BA402 | D4S'SÜ$So(Sw,
+0x5BA41E | D8
+0x5BA43A | D    
+0x5BA445 |    /
+0x5BA457 | (S
+0x5BA462 |    /
+0x5BA46C | 0S
+0x5BA473 | 8/
+0x5BA47B | 8S
+0x5BA480 | D$
+0x5BA48C | 0/
+0x5BA49C | (S
+0x5BA4A7 |    /
+0x5BA4B1 | 0S
+0x5BA4B8 | 8/
+0x5BA4C0 | 8S
+0x5BA4C5 | D(
+0x5BA4D1 | 8/
+0x5BA4E1 | (S
+0x5BA4F2 |    /
+0x5BA4FC | 0S
+0x5BA509 | 8S
+0x5BA50F |    /
+0x5BA514 | t5
+0x5BA51C | d%
+0x5BA521 | (S
+0x5BA525 | dD$
+0x5BA52B |    /
+0x5BA530 | |=
+0x5BA535 | 0S
+0x5BA539 | |D(/
+0x5BA53E | l-
+0x5BA543 | 8S
+0x5BA556 | \)K
+0x5BA562 | ;;;;
+0x5BA56E | 8S
+0x5BA573 | 0S
+0x5BA578 | (S
+0x5BA589 | \2K
+0x5BA595 | ;;;;
+0x5BA5A1 | 8S
+0x5BA5A6 | 0S
+0x5BA5AB | (S
+0x5BA5BC | \ K
+0x5BA5C8 | ;;;;
+0x5BA5D4 | 8S
+0x5BA5D9 | 0S
+0x5BA5DE | (S
+0x5BA5EF | \;K
+0x5BA5FB | ;;;;
+0x5BA607 | 8S
+0x5BA60C | 0S
+0x5BA611 | (S
+0x5BA616 | D4
+0x5BA61A | D<
+0x5BA61E | 0S'SÜ$So(Sw,[
+0x5BA62C | D8
+0x5BA630 | D4/
+0x5BA63D |    /
+0x5BA64F | (S
+0x5BA65A |    /
+0x5BA664 | 0S
+0x5BA66B | 8/
+0x5BA673 | 8S
+0x5BA678 | D$
+0x5BA684 | 0/
+0x5BA694 | (S
+0x5BA69F |    /
+0x5BA6A9 | 0S

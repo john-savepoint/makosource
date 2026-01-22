@@ -1,0 +1,21 @@
+The data provided appears to be disassembled x86 stack frame references (register operations like `dD0`, `lD8`, `tD4`, etc.) rather than actual German menu strings. These are compiler-generated assembly instructions, not the text data we need to map.
+
+Without actual readable German text from this chunk, I cannot generate a meaningful CSV mapping to English menu items. The hex offsets point to code sections with embedded assembly operations rather than string data.
+
+To properly map German menu strings to English equivalents, I would need:
+
+1. **Actual German text strings** (readable characters, not assembly instructions)
+2. **The corresponding memory locations** where those strings are stored
+3. **Context** indicating these are menu-related strings
+
+Could you provide:
+- The actual German menu text (in readable form, not disassembled code)?
+- Or the hex dump of the string data itself (the byte content at these offsets)?
+- Or clarification on whether this chunk actually contains strings or just code?
+
+**Output:**
+
+```csv
+```
+
+(No valid mappings - source data contains assembly instructions, not menu text strings)

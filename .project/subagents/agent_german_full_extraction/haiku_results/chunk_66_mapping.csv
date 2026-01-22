@@ -1,0 +1,18 @@
+Looking at the German data provided, I can see the raw hex appears to be heavily code/binary. The German strings appear to be x86 machine code or binary data rather than plain text strings. The offsets show instruction-like patterns (register operations: `D$`, `$D`, `lD`, `LD`, etc.) which are typical of assembled x86 code.
+
+This appears to be **code section data**, not string data. The real German menu strings would need to be extracted from the actual string section of the German executable, similar to how the English reference shows decoded text strings.
+
+Without the properly decoded German menu strings (like "Gegenstand", "Magie", "Status", "Speichern", etc.), I cannot create accurate mappings.
+
+**What's needed:**
+
+1. Properly decoded German menu strings from ff7_de.exe (not raw code/binary)
+2. The actual offset where German strings start (not code section offsets)
+3. Hex-decoded text versions of the German menu items
+
+Could you provide:
+- The actual decoded German menu text (similar to how English has "Item", "Magic", "Equip", etc.)?
+- Or the location of the German string table in the executable?
+- Or a sample of what the German strings look like when properly decoded?
+
+Without properly decoded string data, this mapping cannot be completed accurately.

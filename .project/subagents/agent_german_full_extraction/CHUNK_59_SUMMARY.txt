@@ -1,0 +1,156 @@
+================================================================================
+                    CHUNK 59 GERMAN MENU STRING ANALYSIS
+                        FF7 German (ff7_de.exe)
+================================================================================
+
+CRITICAL FINDING:
+  German menu strings are NOT in chunk 59 range (0x5CEBC6-0x5CF0BC)
+  Menu items are located at offsets 0x00590C68 to 0x00590D26
+  Chunk 59 contains binary/control data, not readable menu text
+
+================================================================================
+                      GERMAN TO ENGLISH MAPPING
+================================================================================
+
+English Reference Indices 38-48 (Main Menu Items):
+
+Index 38: English "Item"
+  German Equivalent: "Objekt"
+  Offset: 0x00590C68
+  Hex Bytes: 2F 42 4A 45 4B 54
+  Status: MENU TEXT FOUND & MAPPED
+
+Index 39: English "Magic"
+  German Equivalent: "Zauber"
+  Offset: 0x00590C6F
+  Hex Bytes: 3A 41 55 42 45 52
+  Status: MENU TEXT FOUND & MAPPED
+
+Index 40: English "Materia"
+  German Equivalent: "Materia" (no translation)
+  Offset: 0x00590C83
+  Hex Bytes: 2D 41 54 45 52 49 41
+  Status: MENU TEXT FOUND & MAPPED
+
+Index 41: English "Equip"
+  German Equivalent: "Ausrüsten"
+  Offset: 0x00590C98
+  Hex Bytes: 21 55 53 52 7F 53 54 45 4E
+  Note: ü encoded as 7F
+  Status: MENU TEXT FOUND & MAPPED
+
+Index 42: English "Status"
+  German Equivalent: "Werte" (Values/Stats)
+  Offset: 0x00590CAE
+  Hex Bytes: 37 45 52 54 45
+  Note: Semantic translation - German uses "Werte" for stats/values
+  Status: MENU TEXT FOUND & MAPPED
+
+Index 43: English "Order"
+  German Equivalent: "Reihe" (Row/Sequence)
+  Offset: 0x00590CBE
+  Hex Bytes: 32 45 49 48 45
+  Note: Contextual translation - describes battle order
+  Status: MENU TEXT FOUND & MAPPED
+
+Index 44: English "Limit"
+  German Equivalent: "Limit" (no translation)
+  Offset: 0x00590CD2
+  Hex Bytes: 2C 49 4D 49 54
+  Status: MENU TEXT FOUND & MAPPED
+
+Index 45: English "Config"
+  German Equivalent: "Konfig" (abbreviated)
+  Offset: 0x00590CE6
+  Hex Bytes: 2B 4F 4E 46 49 47
+  Status: MENU TEXT FOUND & MAPPED
+
+Index 46: English "PHS"
+  German Equivalent: "PHS" (no translation)
+  Offset: 0x00590CFB
+  Hex Bytes: 30 28 33
+  Note: Acronym in both versions
+  Status: MENU TEXT FOUND & MAPPED
+
+Index 47: English "Save"
+  German Equivalent: "Speichern"
+  Offset: 0x00590D0C
+  Hex Bytes: 33 50 45 49 43 48 45 52 4E
+  Status: MENU TEXT FOUND & MAPPED
+
+Index 48: English "Quit"
+  German Equivalent: "Verlassen"
+  Offset: 0x00590D26
+  Hex Bytes: 36 45 52 4C 41 53 53 45 4E
+  Status: MENU TEXT FOUND & MAPPED
+
+================================================================================
+                          KEY OBSERVATIONS
+================================================================================
+
+1. OFFSET DELTA ANALYSIS
+   - English menu items: Located in lower memory area (0x00590C-0x00590D)
+   - Chunk 59 range: 0x5CEBC6-0x5CF0BC
+   - Delta: Chunk 59 is ~0x5C75000 bytes AFTER menu text
+   - Implication: Chunk 59 contains different data type (not menu strings)
+
+2. CHARACTER ENCODING
+   - German text uses position-based encoding (not standard ASCII)
+   - Umlauts encoded as special bytes (ü = 7F, etc.)
+   - Text requires Japanese-compatible character tables for decoding
+   - Display appears corrupted without proper charset
+
+3. SEMANTIC DIFFERENCES
+   - "Werte" (German) vs "Status" (English): Both mean character stats
+   - "Reihe" (German) vs "Order" (English): Both refer to battle positioning
+   - German translations maintain game meaning while using native terminology
+
+4. MENU COMPLETENESS
+   - All 11 core menu items successfully identified
+   - 100% mapping achieved for indices 38-48
+   - No items missing or corrupted
+
+================================================================================
+                         OUTPUT FILES
+================================================================================
+
+Primary Output: chunk_59_german_english_menu_mapping.csv
+  - Format: CSV with headers
+  - Content: Index, offset, German text, English text, English index, notes
+  - Use Case: HEXT patch generation, string replacement templates
+
+Analysis Documentation: CHUNK_59_ANALYSIS.md
+  - Detailed findings and recommendations
+  - Hex decoding reference
+  - Offset mapping verification
+  - Future localization guidance
+
+This Summary: CHUNK_59_SUMMARY.txt
+  - Human-readable overview
+  - Quick reference mapping
+  - Key observations and findings
+
+================================================================================
+                        USAGE INSTRUCTIONS
+================================================================================
+
+For HEXT Patching:
+  Use offset 0x00590Cxx with the hex byte patterns provided
+  Replace German text bytes with new German/other language text
+  Maintain byte length or use HEXT variable-length encoding
+
+For String Extraction:
+  Reference the offset mappings to extract menu text
+  Account for file layout differences between versions
+  Use proper character encoding (SJIS-based)
+
+For Localization:
+  Note semantic differences in German
+  Maintain game meaning when translating further
+  Consider cultural/linguistic context
+
+================================================================================
+Created: 2026-01-03
+Status: Analysis Complete - All Menu Items Mapped
+Next: HEXT patch generation or localization pipeline
+================================================================================

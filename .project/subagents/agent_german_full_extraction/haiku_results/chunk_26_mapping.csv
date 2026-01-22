@@ -1,0 +1,19 @@
+The German strings provided appear to be from a corrupted or non-text section of the executable. They mostly contain:
+
+- Assembly code fragments (D$, D4, D8, etc.)
+- Single/pair characters
+- Binary data
+
+This chunk (0x5BBF9D to 0x5BC72A) doesn't appear to contain menu text strings. Menu strings in FF7 are typically found in dedicated string pools with clear encoding.
+
+**To proceed with accurate mapping, I need:**
+
+1. A German string dump from the correct section of ff7_de.exe
+2. The actual decoded/decoded German menu text (Item, Magic, Equip, etc.)
+3. Confirmation of where German menu strings are stored in the German version
+
+Could you provide:
+- A properly extracted German string table with hex-decoded text?
+- Or the memory location range where German menu strings are actually stored in ff7_de.exe?
+
+The current data appears to be from a code section rather than a string pool, which is why the text is unreadable.

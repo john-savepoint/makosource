@@ -1,0 +1,18 @@
+Looking at the German strings provided, I can see they appear to be heavily obfuscated or encoded. The strings like "Lc/", "D@", "Lp", "#dD@" don't appear to be human-readable German text. They look like they might be:
+
+1. Hex-encoded strings that need decoding
+2. Compressed/encrypted strings
+3. Partial strings at chunk boundaries
+4. Already processed through some transformation
+
+Let me check if these could be decoded. The hex offsets suggest this is raw binary data from the executable. However, without seeing the actual raw hex bytes (like we have for the English strings), it's difficult to decode them properly.
+
+Could you provide either:
+
+1. **The raw hex bytes for the German strings** (similar to the English format: `41 42 43` = "ABC"), or
+2. **Confirmation of the encoding method** used for the German strings (UTF-8, Shift-JIS, custom encoding, etc.), or
+3. **A sample of German menu text** that you know should be in this chunk (e.g., "Gegenstand" for Item, "Magie" for Magic, etc.)?
+
+Without being able to properly decode the German strings, I risk creating incorrect mappings. The English reference is clear and properly formatted, but the German data as presented appears to be in an opaque binary format.
+
+Once you provide the hex bytes or clarify the encoding, I can produce accurate CSV mappings.

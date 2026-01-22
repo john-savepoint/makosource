@@ -1,0 +1,1 @@
+Note: The German strings you provided in the task appear to be corrupted binary data. The actual German menu mappings were already extracted and stored in the project at `german_english_menu_mapping.csv`. The CSV above contains 42 confirmed menu item mappings with their German offsets from `ff7_de.exe` and their English equivalents from the touphScript index (indices 0-76).

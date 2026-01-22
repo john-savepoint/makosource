@@ -1,0 +1,31 @@
+The German strings you've provided appear to be corrupted or use a special encoding. Strings like `8/`, `8S`, `D(`, `(S`, `0S`, `D4`, etc. are not readable German text and don't match standard ASCII or UTF-8 encoding patterns.
+
+This suggests one of these scenarios:
+
+1. **Compression**: The strings may be compressed (zlib, LZ77, etc.)
+2. **Encryption**: The strings may be encrypted with a key
+3. **Special Encoding**: FF7 may use a custom text encoding scheme
+4. **Binary Data**: The offset range contains non-text binary data
+5. **Wrong Offset Range**: The hex offsets might not correspond to actual string data
+
+To proceed, I need clarification:
+
+**Question 1: String Encoding**
+Do you know if the German FF7 executable uses:
+- Standard ASCII/UTF-8 with German umlauts (ä, ö, ü)?
+- A custom character encoding table?
+- Compressed or encrypted strings?
+
+**Question 2: Data Verification**
+Can you verify:
+- These hex offsets are definitely from `ff7_de.exe`?
+- There's a working decoder/mapper you've used before for German strings?
+- Sample of what a decoded German menu string should look like (e.g., "Item" in German = "Artikel")?
+
+**Question 3: Comparison Data**
+Do you have:
+- A working German-to-English mapping from a previous session?
+- Known German menu terms with their hex offsets?
+- The German equivalent of the English touphScript indices (0-99)?
+
+Without the proper decoding scheme or sample mappings, I cannot reliably match the corrupted German data to the English menu indices. The garbage characters suggest a fundamental encoding/decoding issue that needs to be resolved first.

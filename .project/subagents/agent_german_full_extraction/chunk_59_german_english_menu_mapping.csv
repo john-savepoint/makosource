@@ -1,0 +1,12 @@
+index,de_offset,de_text,en_text,en_index,notes
+38,0x590C68,Objekt,Item,38,German "Objekt" = English "Item" - hex: 2F 42 4A 45 4B 54
+39,0x590C6F,Zauber,Magic,39,German "Zauber" = English "Magic" - hex: 3A 41 55 42 45 52
+40,0x590C83,Materia,Materia,40,German "Materia" = English "Materia" - hex: 2D 41 54 45 52 49 41
+41,0x590C98,Ausrüsten,Equip,41,German "Ausrüsten" = English "Equip" - hex: 21 55 53 52 7F 53 54 45 4E
+42,0x590CAE,Werte,Status,42,German "Werte" = English "Status" (literal translation: Values) - hex: 37 45 52 54 45
+43,0x590CBE,Reihe,Order,43,German "Reihe" = English "Order" (literal translation: Row/Sequence) - hex: 32 45 49 48 45
+44,0x590CD2,Limit,Limit,44,German "Limit" = English "Limit" - hex: 2C 49 4D 49 54
+45,0x590CE6,Konfig,Config,45,German "Konfig" = English "Config" - hex: 2B 4F 4E 46 49 47
+46,0x590CFB,PHS,PHS,46,German "PHS" = English "PHS" - hex: 30 28 33
+47,0x590D0C,Speichern,Save,47,German "Speichern" = English "Save" - hex: 33 50 45 49 43 48 45 52 4E
+48,0x590D26,Verlassen,Quit,48,German "Verlassen" = English "Quit" - hex: 36 45 52 4C 41 53 53 45 4E

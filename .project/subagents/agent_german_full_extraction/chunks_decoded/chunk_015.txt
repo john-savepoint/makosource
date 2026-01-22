@@ -1,0 +1,204 @@
+# Chunk 015 - Strings 3000 to 3199
+# Total in chunk: 200
+# Format: OFFSET | DECODED_TEXT
+
+0x5D427E | TDLD\   
+0x5D4288 | TDLDì 1LD  dD$$  nó
+0x5D42B1 | H   $D"  TD"  #DD(g0ãD$Db 
+0x5D42DD | TD*  TDãD<DãD<DãD<DãD<D'   Rc-!í$D   
+0x5D431B | TDLD   qlD$,DLDì <dD8IdD4a " tD0 lD,tD8SlD8 )SdD8$Ü
+0x5D436A | lD4lD,ãD,dD,< KtD0ãD,LDwdD$$ C$Db!  TDr!  #DDY}|elé1O  õ8$DñG rz$D  /DdD@%ZdD<ñ   íD8 lD@8lD4 m !lD@ $Ü
+0x5D440A | lD<lD@!íD@a"  °4D6\õ
+0x5D4425 |  tD82SíD8lD4D$DRìP$D$ /%
+0x5D4451 | õD$
+0x5D445E | O!  u;  )  / LDãD<DãD\D)   rr3!6â$Dg   s|D$<DLDd   4D rtD$<D; '<DdD$$ pxA
+0x5D44E6 | HK!  $Dâ#  TDï#  #DD(g0e•@@dD<[dD8d ! tD4 lD<0íD0J!íD<$Ü
+0x5D453E | lD8 ãD<tD@íD</ tD<tD4 íD@íD0<õ8$D{ / $D1 :!$Ds$D$ 
+0x5D459A | õD$ %Y}£}x<dD8zH6dD4R   lD0ñ lD80tD,1 !tD8 $Ü
+0x5D45E1 | lD4lD8!lD<tD8lD8lD0tD<tD,
+0x5D4606 | 8õ6$DN $Dén / $Dà  $D$  
+0x5D4635 | õD$ X}
+0x5D464F |  rXá Xá 4DãD$Dé:  õ6$DT $D  _ $D>/ $D$ 
+0x5D469B | õD$á)   !I$D   uíD$LDLD   uíD$LD,D)@dD</ódD8Z " õD4 |D0õD<S|D<;SdD<$Ü
+0x5D470D | lD8|D0 ãD0dD0@KõD4ãD0,DdD$$ ãD$D  dD$!  &   !Ü$D   LDuíD$LD   rtD$4D,D)4dD0=ñSdD,a " íD(P p67$D!õ%'  Sõ"/xtD$íD0S tD02S2dD0$Ü
+0x5D47D8 | lD,tD$ãD$dD$4KíD(ãD$ ,DdD$$ & ,8dD4dD0s " tD, íD(tD4SíD4ì SdD4$Ü
+0x5D4843 | lD0$  / °'    
+0x5D485A |  íD(tD,8ék4  •2$D$D  é|$DT$D$ 
+0x5D4892 | õD$[,DãD$,DãD$éy@  õ1$DSp $Dp $D$D$ -
+0x5D48D5 | õD$X}ãDTDDdD@}+dD<S   õD8 lD@( tD4px;6!tD@$Ü
+0x5D491F | lD<lD@! õDDtD@õD@õD8tDDtD4@õ3$Dî
+0x5D4952 |  $DG  @dD<g£ódD8z ! dD4P lD<(íD0_H!íD<$Ü
+0x5D4995 | lD8ãD<íD<Lu}°; D6Hõ
+0x5D49B4 | / tD8 2SdD4íD0@$D\$D$ p
+0x5D49E2 | õD$(   1!$D   \DwD$LD   võD$TDLDì <dD83)dD4 " dD0 |D,dD8S|D8ì ;SdD8$Ü
+0x5D4A56 | lD4|D,ãD,dD,<KdD0ãD,LDdD$$ Y!,DãD$
+0x5D4A8E | IO
+0x5D4A95 | K&ãD$D} \D&  \D[,DãD$,DãD$éñL  õ5$DL  $DmT £3$DA$D$ 
+0x5D4AF4 | õD$X}ãDTDDdD@hL5dD<õ ! õD8 lD@(lD4.!lD@$Ü
+0x5D4B3C | lD<ãD@õDDlD@õD@p67$D!õ%'  Sõ"//  xõD8lDDlD4@/ õ4$DDs{$D  N"$DC$D$ \
+0x5D4BB1 | õD$Ü(   $!$D_   võD$TDLD\   
+0x5D4BDD | TD/TDVJTDdD$$ ./$W@dD<`.kdD8ç   õD4 lD< íD0)N!íD< $Ü
+0x5D4C33 | lD8/ lD<!íD<+  °2D68õ
+0x5D4C52 | tD82SõD4íD0@,DãD$
+0x5D4C7D | K$ TD)ôwH3!TD~ãD$D} ,D   ,Dõé%6  £3$DC7 )$Dã $Dì $D$ 
+0x5D4CE3 | õD$(   8Üf!$Da   
+0x5D4D03 | s|D$<DLD_   pdD$$DLDì VLDdD$$ X,DãD$
+0x5D4D3E | Ik
+0x5D4D46 | K#ãD$D} \D'  \D)   ò!y$$D   s|D$<DLD   rtD$4D<D; @dD<*?dD8é " dD4` tD0dD< StD<2SdD<$Ü
+0x5D4DD3 | lD8;tD0ãD0 dD0@KdD4ãD0<DdD$$ £,DãD$
+0x5D4E1B | K#"é|Q  ò9$D£  $D  lì34dD0åìdD,õ " lD(4 p67$D!õ%'  Sõ"/xdD$lD0 SdD0 SdD0$Ü
+0x5D4E98 | lD,F(  ß(})/ dD$ lD(4 $D£$D$ &
+0x5D4ED6 | õD$un7 j7 LDpD  UT $DãD\DãD<D!'   è$c-!{$DZ   
+0x5D4F30 | TDLDY   uíD$LD\D_+\Du}dD$$ ;[<dD8(çdD4s ! tD0H lD8 íD,J!íD8$Ü
+0x5D4F93 | lD4 p67$D!õ%'  Sõ"/xãD8 tD<íD8tD8tD0íD<íD,8 õ3$Dät$D  cß$Dw$D$ 
+0x5D5004 | õD$
+0x5D5010 | dX:ãD$D•
+0x5D5020 | Hi
+0x5D5027 | ãD$DãDTD&   £!$D   rtD$4DLD   s|D$<D,D)<dD8å8èdD4 " íD00 |D,íD8S|D8;SdD8$Ü
+0x5D509A | lD4|D,ãD,dD,< KíD0ãD,,DdD$$ e,X}ép[  õ9$D}M $D3 % Z$D?ì$D$ D
+0x5D5106 | õD$Ü|ßãD$DV 4D.  4DDdD@F"àdD< ! íD8  lD@0lD4/ m !lD@$Ü
+0x5D5169 | lD<ãD@íDDlD@ íD@íD8lDDlD4@/ 1$DVRS $D] <dD8ö-dD4a ! dD0£ lD8 lD,( !lD8$Ü
+0x5D51DC | lD4/ ãD8 õD8i" D8Xl" °2$DP   TDPx
+0x5D5210 | dD0lD,<V$Dyë?$D$ 
+0x5D522E | õD$2|^
+0x5D523A | ãD$DV $D"  $D~5<dD8j2dD4X " |D0D tD,|D8StD82SdD8$Ü
+0x5D528E | lD4/ p67$D!õ%'  Sõ"/x_I+ ~E+ °*     
+0x5D52CC | tD,|D0<|^
+0x5D52DF | ãD$DV dD$-  SX}
+0x5D5301 | Há!  ãD$DãD$D
+0x5D531B | dHóãD$D
+0x5D532C | H!  ãD$DãDTDéL  õ5$D&£$D  VvB$DßS$D$ 
+0x5D536D | õD$!(   73:b-!l$D   uíD$LDLD   rtD$4DLDì DdD@àõçdD<S " |D8x lD4|D@SlD@) SdD@$Ü
+0x5D53E6 | lD<lD4ãD4dD4DK/ |D8ãD4/ LD/ dD$$ ãD$D dD$*  éC!íD$!  &   Wä-!$DV   
+0x5D545B | TDLDU   s|D$<D\D_=\DdD$$ #Q[éIH  õ9$Dg$D  o,) D$DN $D$ è
+0x5D54B9 | õD$ì rQI _Q  4DãD<DãDTD!*   ?c-!v$D   
+0x5D5506 | TDLD   <Ds|D$TDV<dD8ódD4â " íD0 p67$D!õ%'  Sõ"/xlD,íD8 SlD8)S dD8$Ü
+0x5D5570 | lD4p67$D!õ%'  Sõ"/ xlD,ãD,dD,<K íD0ãD,TDdD$$ ñ$~<dD8-dD4 " dD0 tD,dD8)StD82SdD8$Ü
+0x5D55F5 | lD4 U+ ]J+ ß$tD,dD0<[é@  õ8$D $D[ äO. gDdD@9vdD<è   tD8( lD@0lD4 *!lD@$Ü
+0x5D5670 | lD<lD@!D@'  õ$.
+0x5D5689 | tD8lD4D$D£$D$ 
+0x5D56A5 | õD$=\
+0x5D56B3 | N   (é"9  •8$DN• $D  $Dòâ$D$ 
+0x5D56ED | õD$Ssï  ç  <D$DãD$KS$TD!ô#!TD~ p= U=  / $Dr è 
+0x5D5760 | 4DãDTD!ãD<D(   m&Pc-!l$D`   \DwD$LD]   qlD$,D 4D2W4DdD$$ H[et8dD4îOdD0° ! õD, lD4(íD(N!íD4$Ü
+0x5D57F4 | lD0s{ãD4õD8íD4õD4 p 6 7$D!õ%'  Sõ"/xõD,íD8íD(4õ1$DA/! $D£ $D$D$ O
+0x5D5860 | õD$
+0x5D586F | I5"  ãD,DãDTDãD$D
+0x5D588D | ñ}p
+0x5D5893 | 5!é"+  7$D+/ $DE  g$DS$D$ k
+0x5D58C8 | õD$_Y}|DdD@xdD<y   õD8 lD@8tD46!tD@/ $Ü
+0x5D590B | lD<pw6/ 7$D!õ%'  Sõ"/xlD@!õDDtD@/ õD@õD8tDDtD4@õ6$DTL $D  9$D
+0x5D5977 | $D$ !
+0x5D5980 | õD$j(   ïLd-!*$DY   LDuíD$LDX   
+0x5D59AF | TDLDì bLDdD$$ m •]#  8dD4•
+0x5D59D9 | "GdD0~ ! |D, lD4(õD( S!õD4/ $Ü
+0x5D5A07 | lD0p6/ 7$D!õ%'  Sõ"/ xãD4 |D8õD4|D4|D,õD8õD(4 5$D° $D  Q$D5 $D$ 
+0x5D5A82 | õD$üpñr v~ Uór $D
+0x5D5AA7 | H   ãD$D
+0x5D5ABC | 5!é_G  õ3$Dé$D  $D°u$D$ 
+0x5D5AEE | õD$2p(éY  ò5$D$D  . $DYs{$D$ 
+0x5D5B29 | õD$Wq  ,D1
+0x5D5B49 | H!  ãD$DãD<D!     |D$)   c^Y-!$DV   
+0x5D5B8C | TDLDS   
+0x5D5B96 | TD,D)3,DdD$$ V
+0x5D5BB6 | õNès
+0x5D5BBE |    <D}
+0x5D5BD6 | H!  ãD$DãDTD(   &g!ò$DZ   ,DqlD$LDY   
+0x5D5C0F | TD$DC g$DdD$$ &$D#  TD#  #DDéC  2$D$D  v$Då $D$ $
+0x5D5C69 | õD$ß$$é\  õ2$D•$D  8dD4-vTdD0á " õD,| tD(õD4S/ tD42SdD4$ Ü
+0x5D5CCC | lD0é.  °. õ)}4  tD(õD,8$D$D$ 
+0x5D5D07 | õD$éM  4$D. $D  M$Dü$D$ k
+0x5D5D3B | õD$ò>S
+0x5D5D56 | lQ'0
+0x5D5D62 |   #e\ s   <D$DãD$á
+0x5D5D8D |  O!  ó
+0x5D5D9C | N!  KexIexe2D9ãD$D dD$!  CQ
+0x5D5DD3 | P!  K
+0x5D5DDF | Q   0
+0x5D5DEE |   #e\v:j @j TD$DãD$1
+0x5D5E14 | ãDLDLDãD$OW"  W
+0x5D5E2E | N%"  KexIexe2D98dD4I4mdD0w   D,4 lD4(2õD(W!õD4$Ü
+0x5D5E7C | lD0lD4!D8õD4D4D,õD8õD(4s{£2$D$D  R$D$D$ l
+0x5D5ECA | õD$F.Rm
+0x5D5EDD | H   #,X/. 
+0x5D5EF6 | S/.SuSSe%?
+0x5D5F0C |    $Qe!-
+0x5D5F1D | HS"  [é,#  ò4$DvZ /#$Dá $D£k)$D$ 
+0x5D5F53 | õD${Üehg
+0x5D5F64 | I-"  Ü[a"é\>  5$DF$D  å @dD<Vr`dD8v ! íD4| lD<(dD0e !dD<$Ü
+0x5D5FBD | lD8v~ãD<õD<#& D<&  p67$D!õ%'  S õ"/xõ%4   íD4dD0@$D$D$ = 
+0x5D601D | õD$ÜejÜ[a&éNS  2$Dï$D  $D$D$ <
+0x5D6057 | õD$â<dD8Z!dD4v   õD0L lD80lD,.!lD8$Ü
+0x5D608F | lD4lD8!/ |D8'   °%,
+0x5D60AF | õD0lD,<ãD$DE wTD.  TDL.Rm
+0x5D60E6 | H   #,X/. 
+0x5D60FD | S/.SuSSe%?
+0x5D6113 |    $Qe 
+0x5D6125 | dHè[é6  ò8$D 
+0x5D613D | rz$D7  u}66$D$D$ 
+0x5D615C | õD$Üeh
+0x5D616D | I   Ü[a"éë&  2$DJ $DM O$Dj $D$ $
+0x5D61A3 | õD$^ÜejÜ[a&éL  5$D. $Dî /LDdD@è4vdD<a   õD8 lD@ D4^!D@$Ü
+0x5D6204 | lD< p67$D!õ%'  Sõ"/xlD@!D@%  ß4D6@õ
+0x5D623C | tD8 2SõD8D4D$D7W$D$ 
+0x5D6268 | õD$é4dD0qüudD,_ " õD(\ lD$õD0 SlD0)SdD0$Ü
+0x5D62A9 | lD,)  p 67$D!õ%'  Sõ"/xõ#lD$õD(/ 4Y=!eç!éJF  4$D], $Dd K$D $D$ ò 
+0x5D6323 | õD$f(   à£ °$D]   ,DqlD$LDZ   \DwD$\D_X\DdD$$ %!!   Y}|éä@  õ1$Do$D  <dD8mZÜdD4ì ! lD0 lD80íD,;I/ !íD8$Ü
+0x5D63CA | lD4p67$D!õ%'  Sõ"/xãD8D8\+  °& T u}lD0
+0x5D640A | íD,<$Dodqy$D$ 
+0x5D6422 | õD$M
+0x5D642C | |'   !ãô$Da   \Dw D$LD`   võD$TD<D;y<DdD$$ ,DãD$4dD0£cCdD,k ! íD(h lD00õD$ !õD0 $Ü
+0x5D64B1 | lD,/  ãD0õD0+ D0P
+0x5D64D0 | + °0D6Hõ
+0x5D64DB | tD82SíD(õD$4!Y}léâ#  õ4$D+$D  çL$Dp  $D$ 
+0x5D6529 | õD$ß
+0x5D6532 | l&   :^-!è$D   
+0x5D6549 | TDLD   uíD$LD,D)8dD4|dD0U " dD,0 D(dD4SD4_ SdD4$ Ü
+0x5D659E | lD0  D(ãD(dD(8/ KdD,ãD(ì ,D/. dD$$ gCeY}téER  õ4$DM] $D  $Dj=$D$ 
+0x5D660E | õD$wsT TB _<DãD<D
+0x5D6631 | t(   c-!Gx$D   
+0x5D664A | TDLD   / TDì võD$<D4dD0RMdD,~   lD(0 lD00tD$1 !tD0$Ü
+0x5D669B | lD,v~lD0!lD4tD0lD0/ lD(tD4tD$0$;P<DdD$$ +@dD<ßcdD8{ ! D4 lD<(|D0?!|D<$Ü
+0x5D6711 | lD8ãD<íD<à°$wD4|D0@<dD8S{ådD4í   õD0  lD8  íD,N!íD8$Ü
+0x5D6768 | lD4lD8! íD8g%  / õ'    
+0x5D678B | õD0íD,<ãD<D
+0x5D67A5 | dHâãD$D
+0x5D67B8 | 5!eçãD$Dí ì dD$'  Y}çãD$D dD$   8'   !$$D   
+0x5D6814 | TDLD   rtD$4D4D28dD4t6dD0t " dD, lD(dD4s{SlD4qy)SdD4$Ü
+0x5D6865 | lD0VlD(ãD( dD(8KdD,ãD(4DdD$$ MU@ 
+0x5D689B | TDdD$$  ãDLDãDTD
+0x5D68CA | (&    M$Df   4DrtD$LDe    qlD$,DTDV! TDVdD$$ å $D#  TD#  #DD(
+0x5D692C | /é68  õ1$DB $D) $D-$D$ 
+0x5D6958 | õD$N
+0x5D6964 | 5!4dD0vdD,b " lD(X D$lD0SD0_S dD0$Ü
+0x5D69A3 | lD,p67$D!õ%'  Sõ"/xÜ&  p67$D!õ%'  Ss{õ"/x°% D$lD(4/ /TDãD$LDãD$<Ds|D$2dD$$ u éC7  £2$D@ +$D $Dß$D$ 
+0x5D6A5A | õD$g)   nX!)*$D^   s|D$<DLD\    
+0x5D6A8C | TD,D)N,DdD$$ CU pdD$$DdD$$ )   y!m$Df   
+0x5D6AD4 | TDLDc   TDVvì õD$ LDì oLDdD$$  U s|D$<D/ dD$$ ãDLD$$D#  TD#  KDDãD\DS
+0x5D6B56 | Y(é81  1$D $DOO $D}t$D$  
+0x5D6B85 | õD$<dD8Bn£°dD4ì   tD0| lD8(D,Z!D8$Ü
+0x5D6BBE | lD4lD8!íD8_+  / p67$D!õ%'  Sõ"/ xß6D6Hõ
+0x5D6BFA | tD8 2StD0D,< RãD$DG 4D)  4D $Y]!ãD<DãDTDDdD@r QdD<   |D8$ lD@(lD4+!lD@$Ü
+0x5D6C7E | lD<lD@!|DDlD@|D@|D8lDDlD4@õD$.# ~!éJ  2$DpC $Dm $Dó$D$ R
+0x5D6CE3 | õD$òèp$@ t/ U @ $DãDTDs/ x x / <DãD\D'   /c-!$D[   
+0x5D6D42 | TDLDY   ,DqlD$<D;6<D/ dD$$ ô[!é'  õ5$Dõ
+0x5D6D86 | $D  p @dD<HndD8ô ! õD4 lD<8dD0&!dD<$Ü
+0x5D6DC6 | lD8ãD<õD<R." D<,"  p67$D!õ%'  Sõ"/x°(    
+0x5D6E06 | õD4dD0@$D@ $D$ 5
+0x5D6E28 | õD$e
+0x5D6E34 | / g![ésN  5$Dà$D  T/ $D\ $D$ 
+0x5D6E6F | õD$EãD\DãD\DãD\D)   v!Xé
+0x5D6E9E | $D   
+0x5D6EA6 | TDLD   LDuíD$TDV
+0x5D6EBF | DdD@CKdD<t " D8é p67$D!õ%'  Sõ"/xtD4D@ S
+0x5D6F01 | tD@ 2SdD@$Ü
+0x5D6F13 | lD<tD4ãD4dD4DKD8ãD4TDdD$$ +$De   TDi#DD[!éàX  õ2$DàÜ$D  ô$D2 $D$ 
+0x5D6F7F | õD$<dD8|dD4~   |D0t lD88tD,3 !tD8$Ü
+0x5D6FBA | lD4lD8!íD8#  p67$D!õ%'  Sõ"/
+0x5D6FE8 | xõ(/ }|D0tD,<uëpa qyëra LD$$D  UrY  !$DxãD$D
+0x5D7031 | U!)   èd8k2w!F$De   TDvõD$LDb   s|D$<D$D k$DdD$$ ô* $D!  TD!  px#DDY]!éW  õ0$DHí$D  $D\$D$ i
+0x5D70C0 | õD$
+0x5D70C8 | U!(   (X!è$D`   TDvõD$LD^   pdD$$D<D;H/$<DdD$$ g,DãD$éF>  °1$DàLv $D $D $D$ Y
+0x5D7145 | õD$á
+0x5D7151 |  _!ãD$D)   ìE!ï$D\   
+0x5D717B | TDLDY    qlD$,D$D 5$DdD$$ h

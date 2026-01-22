@@ -1,0 +1,65 @@
+# =================================================================
+# German Menu Text Patch for FF7 Steam English
+# =================================================================
+# Generated: 2026-01-03 16:35 JST
+# Session: e4b8c9f0-8bc9-4e6a-9d12-3f4a5b6c7d8e
+# Replaces English menu items (indices 38-48) with German text
+#
+# VA = FileOffset + 0x400800
+# =================================================================
+
+# [38] Objekt (Item)
+# DE: 0x00590C68, EN: 0x005192C0
+919AC0 = 2F 42 4A 45 4B 54 FF 00 00 00 00 00 00 00 00 00 00 00 00 00
+# German 'Objekt' = English 'Item'
+
+# [39] Zauber (Magic)
+# DE: 0x00590C6F, EN: 0x005192D4
+919AD4 = 3A 41 55 42 45 52 FF 00 00 00 00 00 00 00 00 00 00 00 00 00
+# German 'Zauber' = English 'Magic'
+
+# [40] Materia (Materia)
+# DE: 0x00590C83, EN: 0x005192E8
+919AE8 = 2D 41 54 45 52 49 41 FF 00 00 00 00 00 00 00 00 00 00 00 00
+# Same in both languages
+
+# [41] Ausrüsten (Equip)
+# DE: 0x00590C98, EN: 0x005192FC
+919AFC = 21 55 53 52 7F 53 54 45 4E FF 00 00 00 00 00 00 00 00 00 00
+# Contains ü-umlaut (0x7F)
+
+# [42] Werte (Status)
+# DE: 0x00590CAE, EN: 0x00519310
+919B10 = 37 45 52 54 45 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# German uses 'Werte' (values) instead of 'Status'
+
+# [43] Reihe (Order)
+# DE: 0x00590CBE, EN: 0x00519324
+919B24 = 32 45 49 48 45 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# German 'Reihe' (row/sequence)
+
+# [44] Limit (Limit)
+# DE: 0x00590CD2, EN: 0x00519338
+919B38 = 2C 49 4D 49 54 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# Same in both languages
+
+# [45] Konfig (Config)
+# DE: 0x00590CE6, EN: 0x0051934C
+919B4C = 2B 4F 4E 46 49 47 FF 00 00 00 00 00 00 00 00 00 00 00 00 00
+# German abbreviation of 'Konfiguration'
+
+# [46] PHS (PHS)
+# DE: 0x00590CFB, EN: 0x00519360
+919B60 = 30 28 33 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+# Acronym, same in both languages
+
+# [47] Speichern (Save)
+# DE: 0x00590D0C, EN: 0x00519374
+919B74 = 33 50 45 49 43 48 45 52 4E FF 00 00 00 00 00 00 00 00 00 00
+# German infinitive 'to save'
+
+# [48] Verlassen (Quit)
+# DE: 0x00590D26, EN: 0x00519388
+919B88 = 36 45 52 4C 41 53 53 45 4E FF 00 00 00 00 00 00 00 00 00 00
+# German infinitive 'to leave/quit'
+

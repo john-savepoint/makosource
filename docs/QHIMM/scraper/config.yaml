@@ -1,0 +1,250 @@
+# QHIMM Forum Scraper Configuration
+# Created: 2025-12-29 12:49:00 JST (Monday)
+# Session-ID: 5e062ad5-f6c1-44e8-bbd7-332d37b1a441
+#
+# Configuration for scraping QHIMM forums (forums.qhimm.com)
+# SMF 2.0.18 forum software
+
+base_url: "https://forums.qhimm.com/index.php"
+
+# Rate limiting - be respectful to the server
+rate_limit:
+  delay_seconds: 2.0
+  max_retries: 3
+  retry_delay: 5.0
+
+# User agent for polite scraping
+user_agent: "QHIMM-Archiver/1.0 (Educational FF7 modding research; contact: github.com/john-savepoint)"
+
+# Request timeout in seconds
+timeout: 30
+
+# FF7-related boards to scrape (priority order)
+# Note: Parent boards (65, 61, 68, 69, 48) have no direct topics - scrape child boards instead
+boards:
+  # CRITICAL priority - 7th Heaven & FFNx (have direct topics)
+  - id: 37
+    name: "7th Heaven"
+    priority: "CRITICAL"
+    category: "tools"
+
+  - id: 54
+    name: "FFNx Driver"
+    priority: "CRITICAL"
+    category: "tools"
+
+  # FF7 Tools child boards
+  - id: 40
+    name: "FF7 Tools Releases"
+    priority: "CRITICAL"
+    category: "tools"
+
+  # FF7 Graphics child boards
+  - id: 62
+    name: "FF7 Graphics WIP"
+    priority: "CRITICAL"
+    category: "graphics"
+
+  - id: 63
+    name: "FF7 Graphics Support"
+    priority: "CRITICAL"
+    category: "graphics"
+
+  # FF7 Gameplay child boards
+  - id: 72
+    name: "FF7 Gameplay WIP"
+    priority: "CRITICAL"
+    category: "gameplay"
+
+  - id: 73
+    name: "FF7 Gameplay Support"
+    priority: "CRITICAL"
+    category: "gameplay"
+
+  - id: 43
+    name: "FF7 Gameplay Releases"
+    priority: "CRITICAL"
+    category: "gameplay"
+
+  # HIGH priority
+  - id: 96
+    name: "FF7 General Discussion"
+    priority: "HIGH"
+    category: "general"
+
+  - id: 97
+    name: "FF7 Troubleshooting"
+    priority: "HIGH"
+    category: "support"
+
+  - id: 9
+    name: "FAQs and Tutorials"
+    priority: "HIGH"
+    category: "tutorials"
+
+  # FF7 Audio child boards
+  - id: 38
+    name: "FF7 Audio Releases"
+    priority: "MEDIUM"
+    category: "audio"
+
+  - id: 66
+    name: "FF7 Audio WIP"
+    priority: "MEDIUM"
+    category: "audio"
+
+  - id: 67
+    name: "FF7 Audio Support"
+    priority: "MEDIUM"
+    category: "audio"
+
+  # FF7 Other Mods child boards
+  - id: 70
+    name: "FF7 Other Mods WIP"
+    priority: "MEDIUM"
+    category: "mods"
+
+  - id: 71
+    name: "FF7 Other Mods Support"
+    priority: "MEDIUM"
+    category: "mods"
+
+  - id: 46
+    name: "FF7 Other Mods Releases"
+    priority: "MEDIUM"
+    category: "mods"
+
+  # Additional boards (added 2025-12-30)
+  - id: 48
+    name: "FF7 Tools"
+    priority: "CRITICAL"
+    category: "tools"
+
+  - id: 24
+    name: "Scripting and Reverse Engineering"
+    priority: "CRITICAL"
+    category: "technical"
+
+  - id: 28
+    name: "Troubleshooting (Misc)"
+    priority: "HIGH"
+    category: "support"
+
+  - id: 4
+    name: "General Discussion (Misc)"
+    priority: "MEDIUM"
+    category: "general"
+
+  - id: 33
+    name: "Graphical (Misc)"
+    priority: "MEDIUM"
+    category: "graphics"
+
+  - id: 1
+    name: "Announcements and site development"
+    priority: "LOW"
+    category: "meta"
+
+  - id: 11
+    name: "Team Avalanche"
+    priority: "HIGH"
+    category: "projects"
+
+  - id: 52
+    name: "Q-Gears"
+    priority: "HIGH"
+    category: "projects"
+
+  - id: 36
+    name: "FF7Voice"
+    priority: "MEDIUM"
+    category: "projects"
+
+  - id: 8
+    name: "Aali's Custom FF7/FF8 Driver"
+    priority: "CRITICAL"
+    category: "tools"
+
+  # FF7 Graphics Releases (missing from original)
+  - id: 61
+    name: "FF7 Graphics Releases"
+    priority: "CRITICAL"
+    category: "graphics"
+
+  # Speedrunning FF7
+  - id: 76
+    name: "FF7 Speedrunning"
+    priority: "LOW"
+    category: "speedrun"
+
+# Child boards (for hierarchical scraping)
+child_boards:
+  # FF7 Tools child boards
+  - id: 40
+    parent: 48
+    name: "FF7 Tools Releases"
+
+  # FF7 Graphics child boards
+  - id: 62
+    parent: 61
+    name: "FF7 Graphics WIP"
+
+  - id: 63
+    parent: 61
+    name: "FF7 Graphics Support"
+
+  # FF7 Gameplay child boards
+  - id: 72
+    parent: 68
+    name: "FF7 Gameplay WIP"
+
+  - id: 73
+    parent: 68
+    name: "FF7 Gameplay Support"
+
+  # FF7 Audio child boards
+  - id: 66
+    parent: 65
+    name: "FF7 Audio WIP"
+
+  - id: 67
+    parent: 65
+    name: "FF7 Audio Support"
+
+# SMF URL patterns
+url_patterns:
+  board: "?board={board_id}.{offset}"
+  topic: "?topic={topic_id}.{offset}"
+  # Pagination: offset increments by 50 for topics list, 20 for posts in topic
+
+# Pagination settings
+pagination:
+  topics_per_page: 20
+  posts_per_page: 20
+
+# Content extraction selectors (SMF 2.0 structure)
+selectors:
+  # Board page selectors
+  topic_list: "table.table_grid tbody tr"
+  topic_link: "td.subject a[href*='topic=']"
+  topic_replies: "td.stats"
+  topic_views: "td.stats"
+  topic_lastpost: "td.lastpost"
+
+  # Topic page selectors
+  post_container: "div.post_wrapper"
+  post_author: "div.poster h4 a"
+  post_date: "div.smalltext"
+  post_content: "div.post div.inner"
+  post_signature: "div.signature"
+
+  # Pagination
+  page_links: "div.pagelinks a.navPages"
+  current_page: "div.pagelinks strong"
+
+# Output settings
+output:
+  raw_html_dir: "../raw"
+  markdown_dir: "../markdown"
+  topics_dir: "../topics"
+  database_path: "../database/qhimm.db"

@@ -244,12 +244,14 @@ This project aims to develop a comprehensive Japanese language modification for 
 ## Key Findings & Milestones
 
 ### Character Table Breakthrough (Session 9)
+
 - First-ever accurate FF7 Japanese character table created
 - Successfully mapped all 6 Japanese font atlases (JAFONT_1 through JAFONT_6)
 - Validated using MangaOCR with 95%+ confidence
 - Complete mapping: ~2000+ unique Japanese characters extracted
 
 ### Technical Achievements
+
 - Discovered JAFONT grid structure and offset calculations
 - Reverse-engineered PlayStation TIM format integration
 - Identified character encoding mappings (Shift_JIS ↔ texture coordinates)
@@ -257,6 +259,7 @@ This project aims to develop a comprehensive Japanese language modification for 
 - Developed accurate character map in multiple formats (JSON, CSV, HTML)
 
 ### Research Coverage
+
 - FFNX architecture and C++ modification points
 - FF7 game engine documentation (Field, Battle, Menu, World Map modules)
 - PlayStation PSX color format and texture specifications
@@ -266,20 +269,25 @@ This project aims to develop a comprehensive Japanese language modification for 
 ## Critical Files for Implementation
 
 ### Character Mappings
+
 - `/Volumes/DevSSD/01_Development/Projects/experiments/ff70G-japanese-mod/assets/character_mappings/interactive_viewer/ff7_complete_character_mapping.json` - Master character mapping
 - `/Volumes/DevSSD/01_Development/Projects/experiments/ff70G-japanese-mod/docs/character_maps/JAFONT_CHARACTER_MAP.md` - Documentation
 
 ### Implementation Guides
+
 - `/Volumes/DevSSD/01_Development/Projects/experiments/ff70G-japanese-mod/docs/FFNX_JAPANESE_IMPLEMENTATION_MASTER_BIBLE.md` - Comprehensive implementation guide
 - `/Volumes/DevSSD/01_Development/Projects/experiments/ff70G-japanese-mod/archive/sharded/bible_sections/` - Detailed technical specifications
 
 ### Configuration
+
 - `/Volumes/DevSSD/01_Development/Projects/experiments/ff70G-japanese-mod/japanese-assets-extracted/FFNx-japanese.toml` - FFNX configuration template
 
 ## Development Notes
 
 ### Current Phase
+
 **Implementation Ready Phase** - All assets and code prepared for Windows build/deployment:
+
 - Character mappings: COMPLETE (JSON, CSV, HTML formats)
 - Font textures: COMPLETE (6 JAFONT PNG files)
 - Mod package structure: COMPLETE (FF7-Japanese-Mod/ directory)
@@ -288,11 +296,14 @@ This project aims to develop a comprehensive Japanese language modification for 
 - 7th Heaven mod package: READY TO BUILD (FF7-Japanese-Mod/ folder)
 
 ### Deployment Workflow (macOS to Windows)
+
 1. **Transfer phase** (on this macOS machine):
+
    - `FF7-Japanese-Mod/` directory (126MB) - ready to transfer
    - `PR737/` directory - FFNx source code ready to build
 
 2. **Build phase** (on Windows machine):
+
    - Build FFNx.dll from PR737 using Visual Studio 2022 + CMake
    - Build .iro mod file using 7-Zip: `7z a -tzip FF7-Japanese-v1.00.iro *`
 
@@ -303,6 +314,7 @@ This project aims to develop a comprehensive Japanese language modification for 
    - Launch game through 7th Heaven
 
 ### Known Constraints
+
 - JAFONT 6 has partial mapping (high-index characters may be special-purpose)
 - Multi-byte character handling requires careful offset calculation
 - Text rendering requires texture coordinate mapping
@@ -310,6 +322,7 @@ This project aims to develop a comprehensive Japanese language modification for 
 - FFNx.dll must be compiled from PR737 source (cannot use generic FFNx.dll)
 
 ### Critical Files for Implementation
+
 - **Source code**: `/Volumes/DevSSD/01_Development/Projects/experiments/ff70G-japanese-mod/PR737/src/ff7/japanese_text.cpp` (contains character width mappings and rendering logic)
 - **Mod package**: `/Volumes/DevSSD/01_Development/Projects/experiments/ff70G-japanese-mod/FF7-Japanese-Mod/` (ready to build as .iro)
 - **Asset location reference**: `/Volumes/DevSSD/01_Development/Projects/experiments/ff70G-japanese-mod/SIMPLE_INSTRUCTIONS.md` (Windows deployment guide)
@@ -317,6 +330,7 @@ This project aims to develop a comprehensive Japanese language modification for 
 ## Important Notes for Future Development
 
 ### For macOS Development (This Machine)
+
 - All research documents are in `/Volumes/DevSSD/01_Development/Projects/experiments/ff70G-japanese-mod/archive/sharded/`
 - Session handoff protocols in `.project/session_handoffs/`
 - Use CONTEXT_CHECKLIST.md in `.project/` for conversation compaction
@@ -324,7 +338,9 @@ This project aims to develop a comprehensive Japanese language modification for 
 - Game engine documentation provides reference for integration points
 
 ### For Windows Deployment
+
 **CRITICAL: DO NOT MODIFY PR737 OR FFNX WITHOUT UNDERSTANDING:**
+
 - PR737 is a frozen snapshot of FFNx with Japanese text support patches
 - FFNx is the current main branch (may have different Japanese implementation)
 - The character width arrays in `japanese_text.cpp` line 311+ are the decoder mappings
@@ -332,6 +348,7 @@ This project aims to develop a comprehensive Japanese language modification for 
 - 7th Heaven loads only .iro files, not loose directories
 
 ### Quick Windows Deployment Checklist
+
 ```
 PR737/ → Build FFNx.dll
 FF7-Japanese-Mod/ → Create FF7-Japanese-v1.00.iro with 7z
@@ -342,12 +359,14 @@ Game Launch → Test Japanese text rendering
 ```
 
 ### Known Working Assets
+
 - Font textures: `assets/character_mappings/interactive_viewer/jafont_*.json` (metadata)
 - Font PNG files: Already in `FF7-Japanese-Mod/mods/Textures/menu/`
 - Japanese dialogue: Already in `FF7-Japanese-Mod/lang-ja/`
 - Character mappings: `docs/character_maps/JAFONT_CHARACTER_MAP.md`
 
 ## Session Tracking
+
 Maintain session handoffs in `.project/session_handoffs/` directory for continuity between development sessions.
 
 ## Project Status Summary
@@ -356,3 +375,8 @@ Maintain session handoffs in `.project/session_handoffs/` directory for continui
 **Overall Status:** Implementation phase ready (awaiting Windows build/deployment)
 **Blocking Issues:** None - all prerequisites met
 **Next Major Milestone:** Windows build and 7th Heaven installation test
+
+## Important Directories
+
+**FF7 English Local Installation path:** C:\Program Files (x86)\Steam\steamapps\common\FINAL FANTASY VII
+**FF7 Japanese Local Installation path:** D:\Games\Stand-alone\FINAL FANTASY VII

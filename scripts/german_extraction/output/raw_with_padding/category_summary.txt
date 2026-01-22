@@ -1,0 +1,13 @@
+# FF7 German String Extraction Summary
+================================================================================
+
+asset: 1 entries
+binary: 68 entries
+char_struct: 87 entries
+clean: 544 entries
+developer: 5 entries
+empty: 75 entries
+ui_coords: 337 entries
+unknown: 33 entries
+
+Total: 1150 entries

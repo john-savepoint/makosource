@@ -20,6 +20,7 @@
 Community member **CosmosXIII** created [PR #737](https://github.com/julianxhokaxhiu/FFNx/pull/737) (September 2024) implementing Japanese text rendering. It is **95% complete** but has bugs blocking merge.
 
 **What PR #737 Does:**
+
 - ✅ FA-FE encoding for multi-page fonts
 - ✅ Loads all 6 jafont textures
 - ✅ Character width tables (1,536 values)
@@ -27,12 +28,14 @@ Community member **CosmosXIII** created [PR #737](https://github.com/julianxhoka
 - ✅ Works with Japanese game version (ff7_ja.exe)
 
 **What PR #737 Does NOT Do:**
+
 - ❌ Enable Japanese in English version
 - ❌ Multi-language support (FR/DE/ES)
 - ❌ Runtime language switching
 - ❌ Translation file loading
 
 **Known Bugs in PR #737:**
+
 - ❌ Colored text rendering broken
 - ❌ Character name input screen corrupted
 - ❌ Cursor alignment issues
@@ -63,30 +66,25 @@ cmake --build . --config Debug
 
 ### Key Files to Understand
 
-| File | What It Does | Why You Need It |
-|------|--------------|-----------------|
-| `src/ff7/japanese_text.cpp` | Main Japanese rendering (2,386 lines) | Where bugs are, where to extend |
-| `src/cfg.cpp` | Config parsing | Add multi-language settings here |
-| `src/common.h` | Struct definitions | Add language switching state |
-| `misc/FFNx.toml` | User configuration | Add language toggle options |
+| File                        | What It Does                          | Why You Need It                  |
+| --------------------------- | ------------------------------------- | -------------------------------- |
+| `src/ff7/japanese_text.cpp` | Main Japanese rendering (2,386 lines) | Where bugs are, where to extend  |
+| `src/cfg.cpp`               | Config parsing                        | Add multi-language settings here |
+| `src/common.h`              | Struct definitions                    | Add language switching state     |
+| `misc/FFNx.toml`            | User configuration                    | Add language toggle options      |
 
 ### Development Workflow
 
 **Phase 1.5: Fix PR #737 Bugs (Do This First)**
+
 1. Debug colored text rendering failure
 2. Fix character name input corruption
 3. Fix cursor alignment
 4. Submit fixes to PR #737
 
-**Phase 2: Extend for Multi-Language**
-5. Load FR/DE/ES fonts alongside Japanese
-6. Implement language toggle hotkey
-7. Add translation file loader
-8. Test EN↔JA↔FR↔DE↔ES switching
+**Phase 2: Extend for Multi-Language** 5. Load FR/DE/ES fonts alongside Japanese 6. Implement language toggle hotkey 7. Add translation file loader 8. Test EN↔JA↔FR↔DE↔ES switching
 
-**Phase 3: Add Furigana**
-9. Implement dual-layer text rendering
-10. Add furigana toggle hotkey
+**Phase 3: Add Furigana** 9. Implement dual-layer text rendering 10. Add furigana toggle hotkey
 
 ### Where to Start
 
@@ -135,6 +133,7 @@ cmake --build . --config Debug
 FFNx is the evolution of Aali's FF7_OpenGL driver, providing a modern, feature-rich modding platform for Final Fantasy VII and VIII (Steam 2013 and original releases).
 
 **Core Philosophy:**
+
 - Backward compatibility with existing mods
 - Modern rendering backends (DirectX 11/12, Vulkan, OpenGL)
 - Extensive modding capabilities
@@ -142,6 +141,7 @@ FFNx is the evolution of Aali's FF7_OpenGL driver, providing a modern, feature-r
 - Open source (GPLv3)
 
 **Key Statistics:**
+
 - **Language:** C++ (C++17 standard)
 - **Lines of Code:** ~92 source files in src/
 - **Dependencies:** 15+ libraries (BGFX, FFmpeg, VGMStream, SoLoud, etc.)
@@ -150,6 +150,7 @@ FFNx is the evolution of Aali's FF7_OpenGL driver, providing a modern, feature-r
 ### 1.2 For Developers
 
 This guide focuses on:
+
 - Understanding FFNx's architecture and design decisions
 - Building and compiling FFNx from source
 - Implementing new features (especially Japanese language support)
@@ -157,6 +158,7 @@ This guide focuses on:
 - Integration points with mods and tools (7th Heaven, Hext, etc.)
 
 **NOT covered in this guide:**
+
 - End-user installation (see [docs/how_to_install.md](https://github.com/julianxhokaxhiu/FFNx/blob/master/docs/how_to_install.md))
 - General modding tutorials (see 7th Heaven Developer Guide in this project)
 - Gameplay modding (see Qhimm forums)
@@ -164,6 +166,7 @@ This guide focuses on:
 ### 1.3 Prerequisites
 
 **Required Knowledge:**
+
 - Intermediate-to-advanced C++ programming
 - Understanding of graphics APIs (DirectX, Vulkan, OpenGL concepts)
 - Basic game engine architecture
@@ -171,6 +174,7 @@ This guide focuses on:
 - Windows API familiarity
 
 **Required Software:**
+
 - Visual Studio 2022 Community (with MSVC toolchain)
 - vcpkg (package manager - included in repo)
 - CMake 3.21+
@@ -178,6 +182,7 @@ This guide focuses on:
 - FF7 or FF8 PC installed (for testing)
 
 **Recommended Tools:**
+
 - RenderDoc (for graphics debugging)
 - x64dbg (for assembly debugging)
 - Cheat Engine (for memory analysis)
@@ -186,6 +191,7 @@ This guide focuses on:
 ### 1.4 Project Origins & History
 
 **Timeline:**
+
 - **2009:** Aali releases FF7_OpenGL driver
 - **2019:** Julian Xhokaxhiu creates FFNx as continuation
 - **2020:** Integration with 7th Heaven 2.3+
@@ -193,6 +199,7 @@ This guide focuses on:
 - **2025:** Active development continues with features like Japanese text support
 
 **Key Contributors:**
+
 - Julian Xhokaxhiu (TrueOdin) - Lead Developer
 - Tang-Tang Zhou (vertex2995) - 60FPS, Steam achievements
 - Jérôme Arzel (myst6re) - Tools, MINIPSF, FF8 support
@@ -239,44 +246,44 @@ FFNx acts as a **shim layer** between the game executable and Windows/Graphics A
 
 #### 2.2.1 Core Systems
 
-| Component | File(s) | Purpose |
-|-----------|---------|---------|
-| **Configuration** | `cfg.cpp`, `cfg.h` | TOML config parsing (FFNx.toml) |
-| **Common** | `common.cpp`, `common.h` | Shared utilities, game struct definitions |
-| **Logging** | `log.cpp`, `log.h` | FFNx.log file management, trace levels |
-| **Redirect** | `redirect.cpp`, `redirect.h` | File I/O redirection for mods |
-| **Patch** | `patch.cpp`, `patch.h` | Memory patching utilities |
-| **Hext** | `hext.cpp`, `hext.h` | Runtime assembly patches |
+| Component         | File(s)                      | Purpose                                   |
+| ----------------- | ---------------------------- | ----------------------------------------- |
+| **Configuration** | `cfg.cpp`, `cfg.h`           | TOML config parsing (FFNx.toml)           |
+| **Common**        | `common.cpp`, `common.h`     | Shared utilities, game struct definitions |
+| **Logging**       | `log.cpp`, `log.h`           | FFNx.log file management, trace levels    |
+| **Redirect**      | `redirect.cpp`, `redirect.h` | File I/O redirection for mods             |
+| **Patch**         | `patch.cpp`, `patch.h`       | Memory patching utilities                 |
+| **Hext**          | `hext.cpp`, `hext.h`         | Runtime assembly patches                  |
 
 #### 2.2.2 Rendering System
 
-| Component | File(s) | Purpose |
-|-----------|---------|---------|
-| **Renderer** | `renderer.cpp`, `renderer.h` | BGFX initialization and management |
-| **GL Layer** | `gl/*.cpp`, `gl/*.h` | Translates game GL calls to BGFX |
-| **Textures** | `image/` | DDS/PNG texture loading |
-| **External Textures** | `common.cpp` | Mod texture override system |
+| Component             | File(s)                      | Purpose                            |
+| --------------------- | ---------------------------- | ---------------------------------- |
+| **Renderer**          | `renderer.cpp`, `renderer.h` | BGFX initialization and management |
+| **GL Layer**          | `gl/*.cpp`, `gl/*.h`         | Translates game GL calls to BGFX   |
+| **Textures**          | `image/`                     | DDS/PNG texture loading            |
+| **External Textures** | `common.cpp`                 | Mod texture override system        |
 
 #### 2.2.3 Audio System
 
-| Component | File(s) | Purpose |
-|-----------|---------|---------|
-| **Music** | `music.cpp`, `music.h` | Music playback (OGG, MP3, MINIPSF) |
-| **Voice** | `voice.cpp`, `voice.h` | Voice acting support |
-| **Audio** | `audio.cpp`, `audio.h` | SoLoud audio engine integration |
-| **VGMStream** | `audio/vgmstream/` | Game audio format support |
-| **OpenPSF** | `audio/openpsf/` | PSX/PS2 music emulation |
+| Component     | File(s)                | Purpose                            |
+| ------------- | ---------------------- | ---------------------------------- |
+| **Music**     | `music.cpp`, `music.h` | Music playback (OGG, MP3, MINIPSF) |
+| **Voice**     | `voice.cpp`, `voice.h` | Voice acting support               |
+| **Audio**     | `audio.cpp`, `audio.h` | SoLoud audio engine integration    |
+| **VGMStream** | `audio/vgmstream/`     | Game audio format support          |
+| **OpenPSF**   | `audio/openpsf/`       | PSX/PS2 music emulation            |
 
 #### 2.2.4 Game-Specific Logic
 
-| Component | File(s) | Purpose |
-|-----------|---------|---------|
-| **FF7 Data** | `ff7_data.cpp`, `ff7.h`, `ff7_opengl.cpp` | FF7-specific hooks and structures |
-| **FF7 Externals** | `externals_102_us.h`, etc. | Game memory address mappings |
-| **FF8 Data** | `ff8_data.cpp`, `ff8.h`, `ff8_opengl.cpp` | FF8-specific hooks and structures |
-| **Field System** | `ff7/field/`, `ff8/field/` | Field rendering and scripts |
-| **Battle System** | `ff7/battle/`, `ff8/battle/` | Battle scene rendering |
-| **World Map** | `ff7/world/`, `ff8/world/` | World map rendering |
+| Component         | File(s)                                   | Purpose                           |
+| ----------------- | ----------------------------------------- | --------------------------------- |
+| **FF7 Data**      | `ff7_data.cpp`, `ff7.h`, `ff7_opengl.cpp` | FF7-specific hooks and structures |
+| **FF7 Externals** | `externals_102_us.h`, etc.                | Game memory address mappings      |
+| **FF8 Data**      | `ff8_data.cpp`, `ff8.h`, `ff8_opengl.cpp` | FF8-specific hooks and structures |
+| **Field System**  | `ff7/field/`, `ff8/field/`                | Field rendering and scripts       |
+| **Battle System** | `ff7/battle/`, `ff8/battle/`              | Battle scene rendering            |
+| **World Map**     | `ff7/world/`, `ff8/world/`                | World map rendering               |
 
 ### 2.3 Initialization Flow
 
@@ -361,11 +368,11 @@ void replace_function(uint32_t offset, void* func)
 
 **Hook Points (FF7 US 1.02 Examples):**
 
-| Function | Address | Purpose |
-|----------|---------|---------|
-| `engine_exit` | `0x40FF38` | Cleanup before exit |
-| `swirl_main_loop` | `0x40EBEB` | Battle swirl effect |
-| `load_texture` | `0x688415` | Texture loading (for override) |
+| Function               | Address    | Purpose                                  |
+| ---------------------- | ---------- | ---------------------------------------- |
+| `engine_exit`          | `0x40FF38` | Cleanup before exit                      |
+| `swirl_main_loop`      | `0x40EBEB` | Battle swirl effect                      |
+| `load_texture`         | `0x688415` | Texture loading (for override)           |
 | `draw_graphics_object` | `0x66E272` | Character rendering (for Japanese fonts) |
 
 ---
@@ -376,43 +383,293 @@ void replace_function(uint32_t offset, void* func)
 
 ```
 FFNx/
-├── .github/                # GitHub workflows (CI/CD)
-├── .vcpkg/                 # vcpkg configuration
-├── choco/                  # Chocolatey packaging
-├── docs/                   # Documentation
-│   ├── ff8/                # FF8-specific docs
-│   │   └── mods/           # FF8 modding guides
-│   └── mods/               # General modding guides
-├── misc/                   # Game data files
-│   ├── hext/               # Hext patch files
-│   │   ├── ff7/            # FF7 patches
-│   │   │   └── en/         # English version patches
-│   │   └── ff8/            # FF8 patches
-│   └── FFNx.toml           # Default configuration template
-├── src/                    # Source code (C++)
-│   ├── audio/              # Audio subsystems
-│   │   ├── memorystream/   # In-memory audio streaming
-│   │   ├── openpsf/        # PSX/PS2 music emulation
-│   │   └── vgmstream/      # Game audio format support
-│   ├── ff7/                # FF7-specific code
-│   │   ├── battle/         # Battle system
-│   │   ├── field/          # Field system
-│   │   └── world/          # World map
-│   ├── ff8/                # FF8-specific code
-│   │   ├── battle/
-│   │   ├── field/
-│   │   └── world/
-│   ├── gl/                 # OpenGL translation layer
-│   ├── image/              # Image loading (DDS, PNG)
-│   ├── imgui_club/         # ImGui extensions
-│   ├── video/              # Video playback
-│   └── [core files]        # Main driver code
-├── utils/                  # Utility scripts
-├── vcpkg/                  # Dependency manager
-├── CMakeLists.txt          # Build configuration
-├── CMakePresets.json       # Build presets
-├── README.md               # Project overview
-└── COPYING.TXT             # GPLv3 license
+├── .build/                         # Build output directory (generated)
+│   ├── CMakeFiles/                 # CMake cache and configuration
+│   ├── FFNx.dir/Release/           # Compiled object files
+│   ├── Release/                    # Release build artifacts
+│   │   ├── FFNx.dll                # Main compiled DLL
+│   │   ├── FFNx.pdb                # Debug symbols
+│   │   └── FFNx.lib                # Import library
+│   ├── bin/                        # Distributable output
+│   │   ├── ambient/                # Ambient audio config
+│   │   ├── hext/                   # Hext patches (copied)
+│   │   ├── lighting/               # Lighting config
+│   │   ├── music/                  # Music config
+│   │   ├── sfx/                    # Sound effects config
+│   │   ├── shaders/                # Compiled shaders
+│   │   ├── time/                   # Time config
+│   │   ├── vibrate/                # Vibration config
+│   │   ├── voice/                  # Voice config
+│   │   ├── FFNx.dll                # Main DLL
+│   │   ├── FFNx.toml               # Default configuration
+│   │   └── steam_api.dll           # Steam API stub
+│   ├── vcpkg_installed/            # vcpkg dependencies
+│   └── *.vcxproj                   # Visual Studio project files
+│
+├── .github/                        # GitHub configuration
+│   ├── ISSUE_TEMPLATE/             # Bug report & feature request templates
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   ├── workflows/                  # CI/CD automation
+│   │   ├── alert.ps1               # Alert scripts
+│   │   ├── build.ps1               # Build automation
+│   │   └── main-1.21.0.yml         # Main workflow
+│   ├── FUNDING.yml                 # Sponsorship info
+│   └── pull_request_template.md    # PR template
+│
+├── .vcpkg/                         # Custom vcpkg overlay
+│   ├── ports/                      # Custom port definitions
+│   │   ├── bgfx/                   # BGFX rendering library
+│   │   ├── bimg/                   # Image loading
+│   │   ├── bx/                     # Base utilities
+│   │   ├── hwinfo/                 # Hardware info
+│   │   ├── openpsf/                # PSX music emulation
+│   │   ├── soloud/                 # Audio engine
+│   │   ├── stackwalker/            # Crash dumps
+│   │   ├── steamworkssdk/          # Steam integration
+│   │   ├── tomlplusplus/           # TOML parsing
+│   │   └── vgmstream/              # Game audio formats
+│   └── versions/                   # Version baseline
+│       └── baseline.json
+│
+├── .vscode/                        # VS Code configuration
+│   ├── c_cpp_properties.json       # IntelliSense config
+│   └── launch.json                 # Debug configurations
+│
+├── docs/                           # Documentation
+│   ├── ff8/                        # FF8-specific docs
+│   │   ├── assets/                 # Documentation images
+│   │   │   ├── ff8-vram-game-flow.png
+│   │   │   └── ff8-vram-to-tex.png
+│   │   ├── mods/                   # FF8 modding guides
+│   │   │   └── external_textures.md
+│   │   ├── readme.md               # FF8 overview
+│   │   └── vram.md                 # VRAM documentation
+│   ├── mods/                       # General modding guides
+│   │   ├── assets/                 # Documentation images
+│   │   │   └── texture-speed-comparison.png
+│   │   ├── audio_engine.md         # Audio system docs
+│   │   ├── devtools.md             # DevTools overlay
+│   │   ├── direct_mode.md          # Direct mode
+│   │   ├── exe_data.md             # EXE data extraction
+│   │   ├── external_textures.md    # Texture override guide
+│   │   └── video_encoding_guide.md # Video encoding
+│   ├── faq.md                      # Frequently asked questions
+│   ├── ff7_japanese_text_fixes.md  # Japanese text documentation
+│   ├── how_to_install.md           # Installation guide
+│   ├── readme.md                   # Documentation index
+│   └── shortcuts.md                # Keyboard shortcuts
+│
+├── misc/                           # Game data files & shaders
+│   ├── hext/                       # Hext runtime patches
+│   │   ├── ff7/                    # FF7 patches by language
+│   │   │   ├── de/                 # German patches
+│   │   │   │   ├── FFNx.BATTLE.fullscreen.txt
+│   │   │   │   ├── FFNx.BATTLE.restore_modals.txt
+│   │   │   │   ├── FFNx.BATTLE.transparent_modals.txt
+│   │   │   │   ├── FFNx.FIELD.transparent_modals.txt
+│   │   │   │   ├── FFNx.MENU.cursor_vertical_center.txt
+│   │   │   │   └── FFNx._GLOBALS.txt
+│   │   │   ├── en/                 # English patches (same structure)
+│   │   │   ├── es/                 # Spanish patches
+│   │   │   └── fr/                 # French patches
+│   │   └── ff8/                    # FF8 patches by language
+│   │       ├── de/, de_nv/         # German (nv = no videos)
+│   │       ├── en/, en_nv/         # English
+│   │       ├── en_eidos/, en_eidos_nv/  # Eidos English
+│   │       ├── es/, es_nv/         # Spanish
+│   │       ├── fr/, fr_nv/         # French
+│   │       ├── it/, it_nv/         # Italian
+│   │       └── jp/, jp_nv/         # Japanese
+│   │
+│   ├── FFNx.toml                   # Main configuration template
+│   ├── FFNx.SFX.toml               # Sound effects mapping
+│   ├── FFNx.ambient.toml           # Ambient audio config
+│   ├── FFNx.lighting.toml          # Lighting engine config
+│   ├── FFNx.music.toml             # Music replacement mapping
+│   ├── FFNx.time.toml              # Time/weather config
+│   ├── FFNx.voice.toml             # Voice acting mapping
+│   ├── FFNx.vibrate.ff8.*.toml     # FF8 vibration configs
+│   │
+│   ├── FFNx.frag                   # Main fragment shader
+│   ├── FFNx.vert                   # Main vertex shader
+│   ├── FFNx.common.sh              # Shared shader code
+│   ├── FFNx.lighting.frag/vert/sh  # Lighting shaders
+│   ├── FFNx.shadowmap.frag/vert    # Shadow mapping
+│   ├── FFNx.field.shadow.frag/vert # Field shadow shaders
+│   ├── FFNx.post.frag/vert         # Post-processing
+│   ├── FFNx.blit.frag/vert         # Blit operations
+│   ├── FFNx.overlay.frag/vert      # DevTools overlay
+│   ├── FFNx.varying.*.def.sc       # Shader varying definitions
+│   ├── FFNx.pcf.sh                 # PCF shadow sampling
+│   │
+│   ├── glut_*.png                  # Color lookup tables (CLUT)
+│   │                               # (NTSC-J, EBU, SMPTE-C conversions)
+│   ├── FF7.reg                     # Registry entries for FF7
+│   ├── FF8.reg                     # Registry entries for FF8
+│   ├── FFNx.def                    # DLL export definitions
+│   └── version.rc.in               # Version resource template
+│
+├── src/                            # Source code (C++)
+│   ├── audio/                      # Audio subsystems
+│   │   ├── memorystream/           # In-memory audio streaming
+│   │   │   ├── memorystream.cpp
+│   │   │   └── memorystream.h
+│   │   ├── openpsf/                # PSX/PS2 music emulation
+│   │   │   ├── openpsf.cpp
+│   │   │   └── openpsf.h
+│   │   └── vgmstream/              # Game audio format support
+│   │       ├── vgmstream.cpp
+│   │       └── vgmstream.h
+│   │
+│   ├── ff7/                        # FF7-specific code
+│   │   ├── battle/                 # Battle system
+│   │   │   ├── animations.cpp/h    # Battle animations
+│   │   │   ├── battle.cpp          # Core battle logic
+│   │   │   ├── camera.cpp/h        # Battle camera
+│   │   │   ├── defs.h              # Battle definitions
+│   │   │   ├── effect.cpp/h        # Battle effects
+│   │   │   └── menu.cpp/h          # Battle menu
+│   │   ├── field/                  # Field system
+│   │   │   ├── background.cpp/h    # Field backgrounds
+│   │   │   ├── camera.cpp/h        # Field camera
+│   │   │   ├── defs.h              # Field definitions
+│   │   │   ├── enter.h             # Field entry
+│   │   │   ├── field.cpp           # Core field logic
+│   │   │   ├── model.cpp/h         # Character models
+│   │   │   ├── opcode.cpp/h        # Field script opcodes
+│   │   │   └── utils.h             # Field utilities
+│   │   ├── world/                  # World map
+│   │   │   ├── camera.cpp/h        # World camera
+│   │   │   ├── defs.h              # World definitions
+│   │   │   ├── player.cpp          # Player movement
+│   │   │   ├── renderer.cpp/h      # World rendering
+│   │   │   ├── utils.h             # World utilities
+│   │   │   └── world.cpp/h         # Core world logic
+│   │   ├── defs.h                  # FF7 global definitions
+│   │   ├── dsound.cpp              # DirectSound integration
+│   │   ├── file.cpp                # File I/O
+│   │   ├── graphics.cpp            # Graphics hooks
+│   │   ├── japanese_text.cpp       # ★ Japanese text rendering (PR #737)
+│   │   ├── kernel.cpp              # Kernel data
+│   │   ├── loaders.cpp             # Asset loaders
+│   │   ├── menu.cpp                # Menu system
+│   │   ├── minigames.cpp           # Minigames (Gold Saucer, etc.)
+│   │   ├── misc.cpp                # Miscellaneous
+│   │   ├── time.cpp/h              # Time system
+│   │   └── widescreen.cpp/h        # Widescreen support
+│   │
+│   ├── ff8/                        # FF8-specific code
+│   │   ├── battle/                 # Battle system
+│   │   │   ├── effects.h           # Battle effects
+│   │   │   └── stage.cpp/h         # Battle stage
+│   │   ├── field/                  # Field system
+│   │   │   ├── background.cpp/h    # Field backgrounds
+│   │   │   └── chara_one.cpp/h     # Character models
+│   │   ├── world/                  # World map
+│   │   │   ├── chara_one.cpp/h     # World characters
+│   │   │   └── wmset.cpp/h         # World map data
+│   │   ├── ambient.cpp/h           # Ambient audio
+│   │   ├── engine.cpp/h            # Core engine
+│   │   ├── file.cpp/h              # File I/O
+│   │   ├── mod.cpp/h               # Mod support
+│   │   ├── texture_packer.cpp/h    # Texture packing
+│   │   ├── uv_patch.cpp/h          # UV coordinate patching
+│   │   ├── vibration.cpp/h         # Controller vibration
+│   │   └── vram.cpp/h              # VRAM management
+│   │
+│   ├── gl/                         # OpenGL translation layer
+│   │   ├── deferred.cpp            # Deferred rendering
+│   │   ├── gl.cpp                  # GL function wrappers
+│   │   ├── special_case.cpp        # Special case handling
+│   │   └── texture.cpp             # Texture management
+│   │
+│   ├── image/                      # Image loading
+│   │   ├── image.cpp/h             # Generic image loading
+│   │   └── tim.cpp/h               # PlayStation TIM format
+│   │
+│   ├── imgui_club/                 # ImGui extensions
+│   │   └── imgui_memory_editor.h   # Memory editor widget
+│   │
+│   ├── video/                      # Video playback
+│   │   └── movies.cpp/h            # FMV playback
+│   │
+│   ├── [Core Source Files]
+│   ├── achievement.cpp/h           # Steam achievements
+│   ├── api.cpp/h                   # FFNx API
+│   ├── audio.cpp/h                 # Audio engine (SoLoud)
+│   ├── cfg.cpp/h                   # Configuration (TOML)
+│   ├── common.cpp/h                # Common utilities
+│   ├── common_imports.h            # Shared imports
+│   ├── crashdump.cpp/h             # Crash dump handling
+│   ├── exe_data.cpp/h              # EXE data extraction
+│   ├── external_mesh.cpp/h         # External mesh loading
+│   ├── externals_102_*.h           # Memory addresses by version
+│   │   ├── externals_102_us.h      #   US version (1.02)
+│   │   ├── externals_102_fr.h      #   French version
+│   │   ├── externals_102_de.h      #   German version
+│   │   └── externals_102_sp.h      #   Spanish version
+│   ├── fake_dd.cpp/h               # DirectDraw emulation
+│   ├── ff7.h                       # FF7 main header
+│   ├── ff7_data.h                  # FF7 data structures
+│   ├── ff7_opengl.cpp              # FF7 OpenGL initialization
+│   ├── ff8.h                       # FF8 main header
+│   ├── ff8_data.cpp/h              # FF8 data structures
+│   ├── ff8_opengl.cpp              # FF8 OpenGL initialization
+│   ├── field.cpp/h                 # Shared field code
+│   ├── game_cfg.cpp/h              # Game configuration
+│   ├── gamehacks.cpp/h             # Runtime game patches
+│   ├── gamepad.cpp/h               # Gamepad support
+│   ├── gl.h                        # GL definitions
+│   ├── globals.h                   # Global variables
+│   ├── hext.cpp/h                  # Hext patch loader
+│   ├── input.cpp/h                 # Input handling
+│   ├── joystick.cpp/h              # Joystick support
+│   ├── lighting.cpp/h              # Lighting engine
+│   ├── lighting_debug.cpp/h        # Lighting debug tools
+│   ├── log.cpp/h                   # Logging system
+│   ├── macro.h                     # Utility macros
+│   ├── matrix.cpp/h                # Matrix math
+│   ├── md5.cpp/h                   # MD5 hashing
+│   ├── metadata.cpp/h              # Metadata handling
+│   ├── movies.cpp/h                # Movie playback
+│   ├── music.cpp/h                 # Music system
+│   ├── overlay.cpp/h               # DevTools overlay
+│   ├── patch.cpp/h                 # Memory patching
+│   ├── redirect.cpp/h              # File I/O redirection
+│   ├── renderer.cpp/h              # BGFX renderer
+│   ├── saveload.cpp/h              # Save/load system
+│   ├── sfx.cpp/h                   # Sound effects
+│   ├── utils.cpp/h                 # General utilities
+│   ├── vibration.cpp/h             # Vibration system
+│   ├── voice.cpp/h                 # Voice acting
+│   ├── wine.h                      # Wine compatibility
+│   └── world.cpp/h                 # Shared world code
+│
+├── utils/                          # Utility scripts
+│   └── FindSteamGamePath.exe       # Steam game path finder
+│
+├── vcpkg/                          # vcpkg package manager (submodule)
+│   ├── buildtrees/                 # Build trees for packages
+│   ├── docs/                       # vcpkg documentation
+│   ├── downloads/                  # Downloaded sources
+│   ├── packages/                   # Compiled packages
+│   │   ├── bgfx_x86-windows-static/
+│   │   ├── ffmpeg_x86-windows-static/
+│   │   ├── imgui_x86-windows-static/
+│   │   ├── soloud_x86-windows-static/
+│   │   ├── vgmstream_x86-windows-static/
+│   │   └── [40+ dependency packages]
+│   └── ports/                      # Package port definitions
+│
+├── .logo/                          # Project logos
+├── .screens/                       # Screenshot assets
+├── .idea/                          # JetBrains IDE config
+├── CMakeLists.txt                  # Build configuration
+├── CMakePresets.json               # Build presets
+├── vcpkg.json                      # vcpkg manifest
+├── README.md                       # Project overview
+└── COPYING.TXT                     # GPLv3 license
 ```
 
 ### 3.2 Key Source Files
@@ -583,20 +840,20 @@ FFNx uses [vcpkg](https://vcpkg.io/) to manage all external libraries:
 
 **Dependency Purposes:**
 
-| Library | Purpose |
-|---------|---------|
-| **bgfx** | Cross-platform rendering abstraction |
-| **bimg** | Image loading (DDS support) |
-| **ffmpeg** | Video decoding with H/W acceleration |
-| **vgmstream** | Game audio format support |
-| **libpng** | PNG texture loading |
-| **tomlplusplus** | Configuration file parsing |
-| **pugixml** | Steam XML manifest parsing |
-| **soloud** | Audio playback engine |
-| **imgui** | DevTools UI |
-| **xxhash** | Fast hashing for texture caching |
-| **stackwalker** | Crash dump stack traces |
-| **mimalloc** | High-performance memory allocator |
+| Library          | Purpose                              |
+| ---------------- | ------------------------------------ |
+| **bgfx**         | Cross-platform rendering abstraction |
+| **bimg**         | Image loading (DDS support)          |
+| **ffmpeg**       | Video decoding with H/W acceleration |
+| **vgmstream**    | Game audio format support            |
+| **libpng**       | PNG texture loading                  |
+| **tomlplusplus** | Configuration file parsing           |
+| **pugixml**      | Steam XML manifest parsing           |
+| **soloud**       | Audio playback engine                |
+| **imgui**        | DevTools UI                          |
+| **xxhash**       | Fast hashing for texture caching     |
+| **stackwalker**  | Crash dump stack traces              |
+| **mimalloc**     | High-performance memory allocator    |
 
 ### 4.2 CMake Build Configuration
 
@@ -716,6 +973,14 @@ cmake --build --preset x86-Release
 REM Output: .build\bin\AF3DN.P
 ```
 
+### 4.5 Shader Compilation
+
+FFNx uses BGFX, which requires shaders to be compiled from `.sc` files into platform-specific binaries using `shaderc`.
+
+- Source shaders are in `misc/`.
+- The build process (CMake) handles this automatically via custom commands.
+- **Note:** If you modify shaders, you must rebuild the project to trigger `shaderc`.
+
 ---
 
 ## 6. JAPANESE TEXT IMPLEMENTATION
@@ -723,6 +988,7 @@ REM Output: .build\bin\AF3DN.P
 ### 6.1 Overview
 
 The Japanese text implementation in FFNx is a comprehensive system that:
+
 - Supports multi-page font textures (6 pages for ~1536 characters)
 - Uses FA-FE encoding for page markers
 - Patches character widths to prevent squashing
@@ -1016,6 +1282,7 @@ std::string find_external_texture(const char* texture_name)
 ### 7.2 DDS vs PNG
 
 **DDS (Recommended):**
+
 - 40-70% faster loading
 - Native GPU format (no conversion)
 - Supports BC7 compression
@@ -1023,6 +1290,7 @@ std::string find_external_texture(const char* texture_name)
 - Better for high-resolution textures
 
 **PNG (Fallback):**
+
 - Universal support
 - Easier to edit
 - Lossless
@@ -1330,6 +1598,7 @@ void play_voice(const char* voice_id)
 Hext is a runtime assembly patching system developed by DLPB. FFNx implements the Hext specification to allow mods to modify game code without editing the executable.
 
 **Advantages:**
+
 - No need to distribute modified EXEs
 - Multiple patches can coexist
 - Easy to enable/disable patches
@@ -1515,6 +1784,7 @@ void render_devtools()
 ```
 
 **Keyboard Shortcut:**
+
 - `Ctrl + Alt + D`: Toggle DevTools overlay
 
 ### 11.2 Trace Logging
@@ -1543,6 +1813,7 @@ ffnx_trace("Loading texture: %s (hash: %08X)\n", name, hash);
 ```
 
 **Trace Levels:**
+
 - `trace_all`: Traces ALL function calls (extremely verbose)
 - `trace_renderer`: Traces rendering calls only
 - `trace_loaders`: Traces asset loading only
@@ -1552,6 +1823,7 @@ ffnx_trace("Loading texture: %s (hash: %08X)\n", name, hash);
 FFNx is fully compatible with [RenderDoc](https://renderdoc.org/) for frame debugging:
 
 **Usage:**
+
 1. Launch RenderDoc
 2. File → Launch Application
 3. Executable: `ff7.exe` (with FFNx installed)
@@ -1599,6 +1871,7 @@ If not found → Return original game asset
 ```
 
 When launching via 7th Heaven:
+
 1. 7th Heaven injects `7thWrapperLib.dll` into `ff7.exe`
 2. `7thWrapperLib.dll` installs file I/O hooks
 3. Game loads `AF3DN.P` (which is FFNx)
@@ -1614,6 +1887,7 @@ mod_path = "mods/Textures"  # Relative to game directory
 7th Heaven extracts IRO contents to `mods/Textures/`, which FFNx then reads.
 
 **Directory Structure with 7th Heaven:**
+
 ```
 FF7/
 ├── ff7.exe
@@ -1638,18 +1912,21 @@ FF7/
 ### 13.1 Build Configurations
 
 **x86-Release:**
+
 - Optimizations: `/O2` (maximize speed)
 - Debug info: None
 - Use for: Final releases, performance testing
 - Output: Fast, small binary (~2-3 MB)
 
 **x86-Debug:**
+
 - Optimizations: `/Od` (disabled)
 - Debug info: Full (`/Zi`)
 - Use for: Active development, debugging with Visual Studio
 - Output: Large binary (~20-30 MB)
 
 **x86-RelWithDebInfo:**
+
 - Optimizations: `/O2`
 - Debug info: Full (`/Zi`)
 - Use for: Debugging release-mode bugs, profiling
@@ -1658,6 +1935,7 @@ FF7/
 ### 13.2 Debugging with Visual Studio
 
 **Setup:**
+
 ```
 1. Build with x86-Debug or x86-RelWithDebInfo
 2. Copy AF3DN.P to FF7 directory
@@ -1668,6 +1946,7 @@ FF7/
 ```
 
 **Useful Breakpoints:**
+
 - `common_load_texture()`: When texture loads
 - `gl_bind_texture_set()`: When texture binds
 - `ff7_init_hooks()`: At startup
@@ -1734,6 +2013,14 @@ For assembly-level debugging (finding addresses, understanding game code):
    - Address: 0x99DDA8 (US 1.02)
    - Expected: All bytes are 0x10
 ```
+
+### 13.5 Finding Memory Addresses
+
+Since the game executable changes between versions (1.02, Steam, etc.), never hardcode addresses.
+
+1. **Find the function signature:** Open `ff7.exe` in x64dbg. Find the function you want (e.g., `draw_char`).
+2. **Create a byte signature:** Copy the first 10-15 bytes of the function hex code (e.g., `55 8B EC 83 EC 20...`).
+3. **Scan in FFNx:** Use `AobScan` or similar patterns in C++ to find the address dynamically at runtime.
 
 ---
 
@@ -1839,7 +2126,7 @@ JMP @LoadChar
 
 **Step 4: Documentation**
 
-```markdown
+````markdown
 # docs/mods/chinese_fonts.md
 
 # Chinese Font Support
@@ -1853,19 +2140,23 @@ font_language = "zh-tw"  # Traditional Chinese
 # OR
 font_language = "zh-cn"  # Simplified Chinese
 ```
+````
 
 ## Assets Required
 
 Place the following files in `mods/Textures/menu/`:
+
 - `zhfont_1.png` through `zhfont_5.png` (Chinese characters)
 
 ## Encoding
 
 Chinese characters use F0-F4 page markers:
+
 - 0xF0 [index] = Character from zhfont_1.png
 - 0xF1 [index] = Character from zhfont_2.png
 - ... etc.
-```
+
+````
 
 ### 14.3 Adding a New Rendering Feature
 
@@ -1916,7 +2207,7 @@ void render_post_process()
     // Submit draw call
     bgfx::submit(POST_PROCESS_VIEW_ID, post_process_program);
 }
-```
+````
 
 ---
 
@@ -1925,6 +2216,7 @@ void render_post_process()
 ### 15.1 Official Resources
 
 **FFNx:**
+
 - GitHub: https://github.com/julianxhokaxhiu/FFNx
 - Documentation: https://github.com/julianxhokaxhiu/FFNx/tree/master/docs
 - Discord (Qhimm): https://discord.gg/N6M6pKS
@@ -1932,6 +2224,7 @@ void render_post_process()
 - Forums (Qhimm): http://forums.qhimm.com/index.php?topic=19970.0
 
 **Libraries:**
+
 - BGFX: https://github.com/bkaradzic/bgfx
 - FFmpeg: https://www.ffmpeg.org/
 - SoLoud: https://sol.gfxile.net/soloud/
@@ -1947,15 +2240,18 @@ void render_post_process()
 ### 15.3 Community Resources
 
 **Qhimm Forums:**
+
 - FF7 PC Modding: http://forums.qhimm.com/index.php?board=7.0
 - FF8 PC Modding: http://forums.qhimm.com/index.php?board=40.0
 - FFNx Thread: http://forums.qhimm.com/index.php?topic=19970.0
 
 **Tsunamods:**
+
 - Forum: https://forum.tsunamods.com/
 - 7th Heaven: https://7thheaven.rocks/
 
 **GitHub Repositories:**
+
 - FFNx: https://github.com/julianxhokaxhiu/FFNx
 - 7th Heaven: https://github.com/tsunamods-codes/7th-Heaven
 - Makou Reactor: https://github.com/myst6re/makoureactor
@@ -1963,30 +2259,33 @@ void render_post_process()
 ### 15.4 Development Tools
 
 **Required:**
+
 - Visual Studio 2022: https://visualstudio.microsoft.com/vs/community/
 - Git: https://git-scm.com/
 
 **Debugging:**
+
 - RenderDoc: https://renderdoc.org/
 - x64dbg: https://x64dbg.com/
 - Cheat Engine: https://cheatengine.org/
 
 **Asset Tools:**
+
 - See 7th Heaven Developer Guide Section 7.1 for complete list
 
 ### 15.5 Glossary
 
-| Term | Definition |
-|------|------------|
-| **AF3DN.P** | Original graphics driver filename (FFNx replaces this) |
-| **BGFX** | Cross-platform rendering library used by FFNx |
-| **DDS** | DirectDraw Surface texture format (recommended for FFNx) |
-| **Hext** | Runtime assembly patching system |
-| **IRO** | 7th Heaven mod archive format (ZIP-based) |
-| **SoLoud** | Audio engine used by FFNx |
-| **vcpkg** | C++ package manager used to manage dependencies |
-| **VFS** | Virtual File System (used by 7th Heaven) |
-| **VGMStream** | Library for game audio format playback |
+| Term          | Definition                                               |
+| ------------- | -------------------------------------------------------- |
+| **AF3DN.P**   | Original graphics driver filename (FFNx replaces this)   |
+| **BGFX**      | Cross-platform rendering library used by FFNx            |
+| **DDS**       | DirectDraw Surface texture format (recommended for FFNx) |
+| **Hext**      | Runtime assembly patching system                         |
+| **IRO**       | 7th Heaven mod archive format (ZIP-based)                |
+| **SoLoud**    | Audio engine used by FFNx                                |
+| **vcpkg**     | C++ package manager used to manage dependencies          |
+| **VFS**       | Virtual File System (used by 7th Heaven)                 |
+| **VGMStream** | Library for game audio format playback                   |
 
 ---
 
@@ -2042,6 +2341,7 @@ ffnx_trace("Trace message\n");             // Only if trace_* enabled
 **Document Status:** Deep Dive Complete - Production Ready for Developers
 
 **Sources:**
+
 - FFNx Official Repository (https://github.com/julianxhokaxhiu/FFNx)
 - FFNx README.md and Documentation
 - FFNX Master Bible (Project Reference)
@@ -2054,6 +2354,7 @@ ffnx_trace("Trace message\n");             // Only if trace_* enabled
 ---
 
 ★ **For questions, contributions, or support:**
+
 - FFNx GitHub Issues: https://github.com/julianxhokaxhiu/FFNx/issues
 - Qhimm Forums: http://forums.qhimm.com/index.php?topic=19970.0
 - Discord (Qhimm): https://discord.gg/N6M6pKS

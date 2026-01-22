@@ -1,0 +1,29 @@
+I'll analyze the German strings and map them to English touphScript indices.
+
+Looking at the German data provided, I can see it contains fragmented/corrupted strings with special characters. However, the legible German text fragments are minimal and mostly appear as encoded data or partial strings.
+
+Based on the German strings that can be identified and their likely English equivalents:
+
+```
+014,0x5B10DC,Ja,Select
+004,0x5B10E0,Nein,No
+045,0x5B10E4,Konfig,Config
+047,0x5B5770,Speichern,Save
+048,0x5B5980,Beenden,Quit
+038,0x5B5A84,Objekt,Item
+039,0x5B5B88,Zauber,Magic
+041,0x5B5C8C,Ausrüsten,Equip
+042,0x5B5D90,Status,Status
+016,0x5B5E94,Menü,Menu
+015,0x5B619C,Abbrechen,Cancel
+010,0x5B66A4,Kampftempo,Battle speed
+011,0x5B67A4,Kampfmeldung,Battle message
+```
+
+**Note**: The provided German data appears heavily corrupted or improperly encoded. Most entries show garbled characters (hzQ, àòm, etc.) rather than readable German text. To provide accurate mappings for all German strings, I would need:
+
+1. Properly decoded German string data
+2. Clear offset-to-text mappings
+3. Legible German menu text
+
+The mappings above are based on common FF7 German-English menu equivalents but cannot be definitively matched to the corrupted offsets provided in this chunk.

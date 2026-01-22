@@ -1,0 +1,18 @@
+**Analysis Result:**
+
+The German strings you've provided in Chunk 92 (0x5D9977 to 0x5D9E3F) **do not contain actual German menu text**. These are assembly instruction fragments and binary data, not translatable menu strings.
+
+The actual German-English menu mappings have already been comprehensively extracted and documented in:
+- `german_english_menu_mapping.csv` (52 entries)
+- Known German strings region: 0x0058FBAF - 0x005914CC
+
+**Conclusion:**
+
+Since Chunk 92 contains no recognizable German menu text (only assembly fragments), there are no mappings to output.
+
+```csv
+```
+
+If you need to map additional German menu strings, please provide:
+1. Actual German text (e.g., "Objekt", "Zauber", "Speichern")
+2. Or clarify if Chunk 92 is from a different binary or section

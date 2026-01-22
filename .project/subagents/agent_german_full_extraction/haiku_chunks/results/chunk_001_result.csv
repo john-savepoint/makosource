@@ -1,0 +1,86 @@
+75,0x59145C,TASTATUR,KEYBOARD
+76,0x591499,JOYSTICK,JOYSTICK
+214,0x594C41,Pause,Pause
+215,0x594CA0,Schlaf,Sleep
+216,0x594CB3,Gift,Poison
+217,0x594CBF,Traurigkeit,Sadness
+218,0x594CD4,Zorn,Fury
+219,0x594CDB,Verwirrung,Confusion
+220,0x594CEF,Stummheit,Silence
+221,0x594CFC,Schnell,Haste
+222,0x594D08,Langsam,Slow
+223,0x594D16,Stop,Stop
+224,0x594D48,Versteinerung,Petrify
+225,0x594D62,regen,Regen
+226,0x594D80,Reflektieren,Reflect
+227,0x594D99,Doppel,Shield
+228,0x594DA1,Schild,Berserk
+232,0x594E44,Wieviel willst du ausgeben?,How much will you raise?
+233,0x594EA4,Gil,Gil
+234,0x594EA8,Nach,After
+235,0x594EAD,Gil auf der Hand,Gil on hand
+236,0x595080,Weiter?,Keep goin'?
+289,0x59508C,Ja,Yes
+290,0x5950AA,Nein,No
+238,0x5950B8,Vorhandene Schlachtpunkte,Current Battle Points
+239,0x5950CB,Schlitzstart!,Slot start!
+240,0x5950F7,TOLL!!,GREAT!!
+241,0x595106,Ok, dann los!,Then, go for it!
+242,0x595130,Zaubersubstanz kaputt.,Magic Materia is broken.
+243,0x59514F,Aufrufsubstanz kaputt.,Summon Materia is broken.
+244,0x59516F,Support-Substanz kaputt.,Support Materia is broken.
+245,0x595193,Unabhängige Substanz kaputt.,Independent Materia is broken.
+246,0x5951AD,Befehlssubstanz kaputt.,Command Materia is broken.
+247,0x5951CA,Alle Substanz kaputt.,All Materia is broken.
+248,0x5951E3,Zubehör kaputt.,Accessory is broken.
+249,0x59520F,Objektbefehl ist versiegelt.,Item command is sealed.
+250,0x595222,Rüstzeug kaputt.,Armor is broken.
+251,0x59523E,Waffe kaputt.,Weapon is broken.
+252,0x595264,1/2 Geschwindigkeit.,1/2 speed.
+253,0x59527F,1/2 Genauigkeit.,1/2 accuracy.
+254,0x595295,Minimum,Minimum
+255,0x5952B1,Gift,Poison
+256,0x5952D1,Kröte,Toad
+257,0x5952FC,Zeit x30 Schaden.,Time x30 damage.
+258,0x59531A,5 Ebenen zurück.,Down 5 levels.
+259,0x59533A,10 Ebenen zurück.,Down 10 levels.
+260,0x59534F,1/2 HP.,1/2 HP.
+261,0x59536E,1/2 MP.,1/2 MP.
+262,0x595390,1/2 HP&MP.,1/2 HP&MP.
+263,0x5953AD,Null MP.,Zero MP.
+264,0x5953DC,Jaa! Keine Behinderung!!,Yesss! No handicapp!
+265,0x5953F8,HP wiederhergestellt.,HP restored.
+266,0x595423,Besorgt um die anderen Mitglieder?,Worried about the other members?
+267,0x595433,Ja, ein bichen,Yeah, a little
+268,0x59547A,Eigentlich nicht,Not really
+269,0x5955CA,Speichern,Save
+270,0x59563C,Reformieren,Reform
+271,0x59567B,Mitglieden in zwei Gruppen aufteilen,Split your allies into two groups.
+272,0x5956A1,Mitglieder in drei Gruppen aufteilen,Split your allies into three groups.
+273,0x5956C2,Gruppe aus zwei Personen bilden,Please make a party of two.
+274,0x5956E8,Gruppe aus drei Personen bilden,Please make a party of three.
+275,0x59570A,Auswählen mit [START]-Taste,Select with START button.
+276,0x595720,Element,Element
+328,0x595735,Effekt,Effect
+330,0x59574E,Angreifen,Attack
+331,0x59576E,Verteidigen,Defend
+332,0x595766,Halbieren,Halve
+333,0x59577A,Ungültig,Invalid
+334,0x59578F,Absorbieren,Absorb
+335,0x5957DF,Stärke,Strength
+336,0x5957FB,Geschick,Dexterity
+337,0x595813,Vitalität,Vitality
+338,0x59582A,Zauber,Magic
+339,0x59583D,Moral,Spirit
+340,0x595852,Glück,Luck
+341,0x595868,Angreifen,Attack
+342,0x595882,Angreifen %,Attack%
+343,0x59589A,Verteidigen,Defense
+344,0x5958B0,Verteidigen %,Defense%
+348,0x5958C8,Waf.,Wpn:
+349,0x5958D9,Rüs.,Arm:
+350,0x5958F0,Acc.,Acc:
+351,0x595908,Limit-Ebene,Limit level:
+352,0x595943,Wpn.,Wpn.
+279,0x5959EB,STUFE 1,LEVEL 1
+280,0x5959FF,STUFE 2,LEVEL 2

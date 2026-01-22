@@ -1,8 +1,26 @@
 # FFNx Japanese Language Implementation Project
 
 **Created:** 2025-11-24 22:10:00 JST (Monday)
-**Project Status:** Phase 0 - Research Complete, Implementation Ready
-**Platform:** macOS (Development) → Windows (Implementation)
+**Last Updated:** 2025-12-04 17:58 JST (Thursday)
+**Project Status:** Phase 1 - BREAKTHROUGH ACHIEVED - Japanese text rendering working!
+**Platform:** WSL2 (Development) + Windows (Build/Runtime)
+
+---
+
+## 🚨 CRITICAL UPDATE - 2025-11-26
+
+### MAJOR BREAKTHROUGH ACHIEVED
+
+**We have successfully:**
+1. ✅ Built FFNx PR #737 from source with custom modifications
+2. ✅ Japanese fonts loading and rendering correctly
+3. ✅ Battle text, items, kernel-based text all working in Japanese
+4. ✅ First-ever Japanese text on English `ff7_en.exe`!
+
+**Remaining Issue:**
+- ❌ Field dialogue shows garbled text (encoding interpretation issue)
+
+**For the next agent:** Read `docs/SESSION_HANDOFF_2025-11-26.md` FIRST - it contains complete context for continuing this work.
 
 ---
 
@@ -114,30 +132,30 @@ ff70G-japanese-mod/
 
 ## 📋 Project Status & Timeline
 
-### Current Status: ✅ **Ready for Phase 0**
+### Current Status: ✅ **Phase 1 - Major Progress**
 
-**What We Have:**
+**What We Have (COMPLETED):**
 - ✅ Complete research (9 sessions, 40+ findings)
-- ✅ Character mapping (1,331 characters, 100% accuracy)
+- ✅ Character mapping (1,536 characters in 6 textures)
 - ✅ Font texture assets (6 PNG + 6 TEX files)
-- ✅ Tool chain validation
-- ✅ Complete technical specification
-- ✅ Phase 0 requirements documented
+- ✅ FFNx PR #737 built from source
+- ✅ Custom LGP redirection code (flevel.lgp → jfleve.lgp)
+- ✅ Japanese kernel text working (battle, items, menus)
+- ✅ Japanese fonts loading correctly
 
-**What We Need (Phase 0 - IMMEDIATE):**
-- ⚠️ Build FFNx from source on Windows
-- ⚠️ Reverse-engineer AF3DN.P for memory addresses
-- ⚠️ Create test environment setup guide
-- ⚠️ Validate tool chain on Windows
+**What We Need (CURRENT BLOCKER):**
+- ❌ Fix field dialogue encoding interpretation
+- ⚠️ Text byte pipeline needs debugging
+- ⚠️ May need text parser hook for FA-FE encoding on English exe
 
 ### Implementation Timeline
 
 | Phase | Description | Duration | Status |
 |-------|-------------|----------|--------|
-| **Phase 0** | Research & Setup | 3-6 days | ⏳ **CURRENT** |
-| **Phase 1** | Configuration Extension | 1-2 weeks | ⏸️ Pending Phase 0 |
-| **Phase 2** | Texture Allocation Override | 1-2 weeks | ⏸️ Pending Phase 1 |
-| **Phase 3** | Assembly Hooks & Renderer | 3-4 weeks | ⏸️ Pending Phase 2 |
+| **Phase 0** | Research & Setup | 3-6 days | ✅ **COMPLETE** |
+| **Phase 1** | Core Japanese Rendering | 1-2 weeks | ⏳ **95% COMPLETE** - field text encoding issue remaining |
+| **Phase 2** | Texture Allocation Override | 1-2 weeks | ✅ Working (via PR #737) |
+| **Phase 3** | Assembly Hooks & Renderer | 3-4 weeks | ⏳ Partial - need text parser hook |
 | **Phase 4** | Advanced Features (Furigana, Language Switching) | 4-6 weeks | ⏸️ Future |
 | **Phase 5** | Polish & Distribution | 2-4 weeks | ⏸️ Future |
 | **Phase 6** | Crowdsourced Translation System | 8-10 weeks | ⏸️ Optional Future |
@@ -314,14 +332,77 @@ reference/repomix_snapshots/ (can regenerate if needed)
 
 ---
 
+## 🔨 Building FFNx from Source
+
+This project requires building FFNx PR #737 from source. For a complete step-by-step guide, see **[docs/BUILD_ENVIRONMENT_SETUP.md](docs/BUILD_ENVIRONMENT_SETUP.md)**.
+
+### Quick Start (If You're Experienced)
+
+**Prerequisites:**
+- Windows 10/11 (64-bit)
+- Visual Studio 2022 Community with C++ workload
+- CMake 3.15+ (we used portable CMake 3.27.8 at `C:\cmake-3.27.8\`)
+- Git for Windows
+- vcpkg (cloned to `C:\vcpkg\`)
+
+**Clone PR #737:**
+```batch
+cd C:\
+git clone --recursive https://github.com/julianxhokaxhiu/FFNx.git FFNx
+cd FFNx
+git fetch origin pull/737/head:pr737-japanese
+git checkout pr737-japanese
+```
+
+**Bootstrap vcpkg:**
+```batch
+cd C:\vcpkg
+.\bootstrap-vcpkg.bat
+.\vcpkg integrate install
+```
+
+**Configure and Build:**
+```batch
+cd C:\FFNx
+cmake --preset Release
+cmake --build .build --config Release
+```
+
+**Or from WSL2:**
+```bash
+powershell.exe -Command "cd C:\FFNx; C:\cmake-3.27.8\cmake-3.27.8-windows-x86_64\bin\cmake.exe --build .build --config Release"
+```
+
+**Build Output:**
+- `C:\FFNx\.build\Release\FFNx.dll`
+- Auto-copies to FF7 directories as `AF3DN.P`
+
+**Build Time:**
+- First build: 30-60 minutes (vcpkg compiles dependencies)
+- Subsequent builds: 1-3 minutes
+
+### Common Issues We Encountered
+
+1. **soloud port errors** - We had to modify `.vcpkg/ports/soloud/portfile.cmake` to remove unsupported options
+2. **mpg123 download blocked** - SourceForge/Cloudflare blocked aria2; downloaded manually from mpg123.de
+3. **Architecture mismatch** - FF7 is 32-bit, must build as x86 (Win32), not x64
+4. **FindSOLOUD.cmake architecture detection** - Fixed `Win64` vs `x64` detection
+
+See [docs/SESSION_HANDOFF_2025-11-26.md](docs/SESSION_HANDOFF_2025-11-26.md) for detailed troubleshooting notes.
+
+---
+
 ## 🔧 Tools & Dependencies
 
-**Required for Implementation:**
-- **Visual Studio** (2019 or 2022) - C++ compiler
-- **CMake** (3.15+) - Build system
+**Required for Building FFNx:**
+- **Visual Studio 2022 Community** - C++ compiler with Windows SDK
+- **CMake 3.15+** - Build system generator
+- **vcpkg** - C++ package manager (compiles dependencies from source)
 - **Git** - Version control
-- **Ghidra** - AF3DN.P disassembly
-- **x64dbg** - Dynamic analysis
+
+**Optional Tools:**
+- **Ghidra** - For reverse engineering AF3DN.P
+- **x64dbg** - Dynamic analysis/debugging
 - **Tex Tools v1.0.4.7** - TEX ↔ PNG conversion
 - **ulgp v1.2** - LGP extraction/repacking
 
@@ -348,7 +429,7 @@ reference/repomix_snapshots/ (can regenerate if needed)
 
 ---
 
-**Document Version:** 2.0.0 (Reorganized Structure)
+**Document Version:** 2.1.0 (Added Build Instructions)
 **Last Updated:** 2025-11-24 22:10:00 JST
 **Next Review:** After Phase 0 completion
 

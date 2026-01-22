@@ -1,0 +1,775 @@
+# FF7 English Strings - Standardized Format
+# Generated: 2026-01-06 10:45 JST (Tuesday)
+# Session: c5687d3e-90a9-47e8-829a-a0c6e70cd98e
+# Total strings: 767
+#
+# Format: [INDEX] OFFSET (BYTES:TEXT_LEN) | TEXT
+# ===========================================================================
+
+[    0] 0x00518370 (  30: 19) | Do you want to quit
+[    1] 0x0051838E (  30: 25) | playing Final Fantasy VII
+[    2] 0x005183AC (  30: 22) | and return to Windows?
+[    3] 0x005183D0 (   4:  3) | Yes
+[    4] 0x005183D4 (   4:  2) | No
+[    5] 0x005188A8 (  48: 12) | Window color
+[    6] 0x005188D8 (  48:  5) | Sound
+[    7] 0x00518908 (  48: 10) | Controller
+[    8] 0x00518938 (  48:  6) | Cursor
+[    9] 0x00518968 (  48:  3) | ATB
+[   10] 0x00518998 (  48: 12) | Battle speed
+[   11] 0x005189C8 (  48: 14) | Battle message
+[   12] 0x005189F8 (  48: 13) | Field message
+[   13] 0x00518A28 (  48: 12) | Camera angle
+[   14] 0x00518A58 (  48:  6) | Select
+[   15] 0x00518A88 (  48:  6) | Cancel
+[   16] 0x00518AB8 (  48:  4) | Menu
+[   17] 0x00518C08 (  48:  6) | Normal
+[   18] 0x00518C38 (  48:  9) | Customize
+[   19] 0x00518C68 (  48:  7) | Initial
+[   20] 0x00518C98 (  48:  6) | Memory
+[   21] 0x00518CC8 (  48:  6) | Active
+[   22] 0x00518CF8 (  48: 11) | Recommended
+[   23] 0x00518D28 (  48:  4) | Wait
+[   24] 0x00518D58 (  48:  4) | Auto
+[   25] 0x00518D88 (  48:  5) | Fixed
+[   26] 0x00518DE8 (  48:  4) | Slow
+[   27] 0x00518E18 (  48:  4) | Fast
+[   28] 0x00518ED8 (  48: 11) | Magic order
+[   29] 0x00518F08 (  48:  7) | restore
+[   30] 0x00518F38 (  48:  6) | attack
+[   31] 0x00518F68 (  48:  8) | indirect
+[   32] 0x00518FC8 (  48:  3) | No.
+[   33] 0x00519238 (   6: 12) | [C5][B8][B7]
+[   34] 0x0051923E (   6: 20) | [BA][C5][B8][B8][C1]
+[   35] 0x00519244 (   6: 16) | [B5][BF][C8][B8]
+[   36] 0x00519288 (  25: 24) | Set Sound & Music Volume
+[   37] 0x005192A1 (  25: 14) | Not supported.
+[   38] 0x005192C0 (  20:  4) | Item
+[   39] 0x005192D4 (  20:  5) | Magic
+[   40] 0x005192E8 (  20:  7) | Materia
+[   41] 0x005192FC (  20:  5) | Equip
+[   42] 0x00519310 (  20:  6) | Status
+[   43] 0x00519324 (  20:  5) | Order
+[   44] 0x00519338 (  20:  5) | Limit
+[   45] 0x0051934C (  20:  6) | Config
+[   46] 0x00519360 (  20:  3) | PHS
+[   47] 0x00519374 (  20:  4) | Save
+[   48] 0x00519388 (  20:  4) | Quit
+[   49] 0x0051939C (  20:  8) | Beginner
+[   50] 0x005193D8 (  20:  4) | Time
+[   51] 0x005193EC (  20:  3) | Gil
+[   52] 0x00519400 (  20: 10) | next level
+[   53] 0x00519414 (  20: 11) | Limit level
+[   54] 0x00519428 (  20:  8) | Tutorial
+[   55] 0x00519450 (  20:  8) | LEVEL UP
+[   56] 0x00519464 (  20:  4) | Fury
+[   57] 0x00519478 (  20:  7) | Sadness
+[   58] 0x005196B0 (  50: 22) | Press [CANCEL] to end.
+[   59] 0x005196E2 (  50: 30) | Press [OK] to configure a key.
+[   60] 0x00519714 (  50: 22) | Now press the new key.
+[   61] 0x00519746 (  50:  4) | [OK]
+[   62] 0x00519778 (  50:  8) | [CANCEL]
+[   63] 0x005197AA (  50:  6) | [MENU]
+[   64] 0x005197DC (  50:  8) | [SWITCH]
+[   65] 0x0051980E (  50:  8) | [PAGEUP]
+[   66] 0x00519840 (  50: 10) | [PAGEDOWN]
+[   67] 0x00519872 (  50:  8) | [CAMERA]
+[   68] 0x005198A4 (  50:  8) | [TARGET]
+[   69] 0x005198D6 (  50:  8) | [ASSIST]
+[   70] 0x00519908 (  50:  7) | [START]
+[   71] 0x0051993A (  50:  4) | [UP]
+[   72] 0x0051996C (  50:  6) | [DOWN]
+[   73] 0x0051999E (  50:  6) | [LEFT]
+[   74] 0x005199D0 (  50:  7) | [RIGHT]
+[   75] 0x00519A02 (  50:  8) | KEYBOARD
+[   76] 0x00519A34 (  50:  8) | JOYSTICK
+[   77] 0x00519FE0 (   8:  6) | ESCAPE
+[   78] 0x00519FE8 (   4:  1) | 1
+[   79] 0x00519FEC (   4:  1) | 2
+[   80] 0x00519FF0 (   4:  1) | 3
+[   81] 0x00519FF4 (   4:  1) | 4
+[   82] 0x00519FF8 (   4:  1) | 5
+[   83] 0x00519FFC (   4:  1) | 6
+[   84] 0x0051A000 (   4:  1) | 7
+[   85] 0x0051A004 (   4:  1) | 8
+[   86] 0x0051A008 (   4:  1) | 9
+[   87] 0x0051A00C (   4:  1) | 0
+[   88] 0x0051A010 (   8:  5) | MINUS
+[   89] 0x0051A018 (   8:  6) | EQUALS
+[   90] 0x0051A020 (  12: 10) | BACK SPACE
+[   91] 0x0051A02C (   4:  3) | TAB
+[   92] 0x0051A030 (   4:  1) | Q
+[   93] 0x0051A034 (   4:  1) | W
+[   94] 0x0051A038 (   4:  1) | E
+[   95] 0x0051A03C (   4:  1) | R
+[   96] 0x0051A040 (   4:  1) | T
+[   97] 0x0051A044 (   4:  1) | Y
+[   98] 0x0051A048 (   4:  1) | U
+[   99] 0x0051A04C (   4:  1) | I
+[  100] 0x0051A050 (   4:  1) | O
+[  101] 0x0051A054 (   4:  1) | P
+[  102] 0x0051A058 (  16: 12) | LEFT BRACKET
+[  103] 0x0051A068 (  16: 13) | RIGHT BRACKET
+[  104] 0x0051A078 (   8:  6) | RETURN
+[  105] 0x0051A080 (  16: 12) | LEFT CONTROL
+[  106] 0x0051A090 (   4:  1) | A
+[  107] 0x0051A094 (   4:  1) | S
+[  108] 0x0051A098 (   4:  1) | D
+[  109] 0x0051A09C (   4:  1) | F
+[  110] 0x0051A0A0 (   4:  1) | G
+[  111] 0x0051A0A4 (   4:  1) | H
+[  112] 0x0051A0A8 (   4:  1) | J
+[  113] 0x0051A0AC (   4:  1) | K
+[  114] 0x0051A0B0 (   4:  1) | L
+[  115] 0x0051A0B4 (  12:  9) | SEMICOLON
+[  116] 0x0051A0C0 (  12: 10) | APOSTROPHE
+[  117] 0x0051A0CC (   8:  5) | GRAVE
+[  118] 0x0051A0D4 (  12: 10) | LEFT SHIFT
+[  119] 0x0051A0E0 (  12: 10) | BACK SLASH
+[  120] 0x0051A0EC (   4:  1) | Z
+[  121] 0x0051A0F0 (   4:  1) | X
+[  122] 0x0051A0F4 (   4:  1) | C
+[  123] 0x0051A0F8 (   4:  1) | V
+[  124] 0x0051A0FC (   4:  1) | B
+[  125] 0x0051A100 (   4:  1) | N
+[  126] 0x0051A104 (   4:  1) | M
+[  127] 0x0051A108 (   8:  5) | COMMA
+[  128] 0x0051A110 (   8:  6) | PERIOD
+[  129] 0x0051A118 (   8:  5) | SLASH
+[  130] 0x0051A120 (  12: 11) | RIGHT SHIFT
+[  131] 0x0051A12C (  12:  8) | MULTIPLY
+[  132] 0x0051A138 (  12:  8) | LEFT ALT
+[  133] 0x0051A144 (   8:  5) | SPACE
+[  134] 0x0051A14C (  12:  9) | CAPS LOCK
+[  135] 0x0051A158 (   4:  2) | F1
+[  136] 0x0051A15C (   4:  2) | F2
+[  137] 0x0051A160 (   4:  2) | F3
+[  138] 0x0051A164 (   4:  2) | F4
+[  139] 0x0051A168 (   4:  2) | F5
+[  140] 0x0051A16C (   4:  2) | F6
+[  141] 0x0051A170 (   4:  2) | F7
+[  142] 0x0051A174 (   4:  2) | F8
+[  143] 0x0051A178 (   4:  2) | F9
+[  144] 0x0051A17C (   4:  3) | F10
+[  145] 0x0051A180 (   8:  7) | NUMLOCK
+[  146] 0x0051A188 (   8:  6) | SCROLL
+[  147] 0x0051A190 (   8:  7) | NUMPAD7
+[  148] 0x0051A198 (   8:  7) | NUMPAD8
+[  149] 0x0051A1A0 (   8:  7) | NUMPAD9
+[  150] 0x0051A1A8 (  12:  8) | SUBTRACT
+[  151] 0x0051A1B4 (   8:  7) | NUMPAD4
+[  152] 0x0051A1BC (   8:  7) | NUMPAD5
+[  153] 0x0051A1C4 (   8:  7) | NUMPAD6
+[  154] 0x0051A1CC (   4:  3) | ADD
+[  155] 0x0051A1D0 (   8:  7) | NUMPAD1
+[  156] 0x0051A1D8 (   8:  7) | NUMPAD2
+[  157] 0x0051A1E0 (   8:  7) | NUMPAD3
+[  158] 0x0051A1E8 (   8:  7) | NUMPAD0
+[  159] 0x0051A1F0 (   8:  7) | DECIMAL
+[  160] 0x0051A210 (   4:  3) | F11
+[  161] 0x0051A214 (   4:  3) | F12
+[  162] 0x0051A270 (   4:  3) | F13
+[  163] 0x0051A274 (   4:  3) | F14
+[  164] 0x0051A278 (   4:  3) | F15
+[  165] 0x0051A2C4 (   8:  4) | KANA
+[  166] 0x0051A30C (   8:  7) | CONVERT
+[  167] 0x0051A31C (  12:  9) | NOCONVERT
+[  168] 0x0051A330 (   4:  3) | YEN
+[  169] 0x0051A3AC (  16: 12) | NUMPADEQUALS
+[  170] 0x0051A3CC (  12: 10) | CIRCUMFLEX
+[  171] 0x0051A3D8 (   4:  2) | AT
+[  172] 0x0051A3DC (   8:  5) | COLON
+[  173] 0x0051A3E4 (  12:  9) | UNDERLINE
+[  174] 0x0051A3F0 (   8:  5) | KANJI
+[  175] 0x0051A3F8 (   8:  4) | STOP
+[  176] 0x0051A400 (   4:  2) | AX
+[  177] 0x0051A404 (  12:  9) | UNLABELED
+[  178] 0x0051A430 (  12: 11) | NUMPADENTER
+[  179] 0x0051A43C (  16: 13) | RIGHT CONTROL
+[  180] 0x0051A4F4 (  12: 11) | NUMPADCOMMA
+[  181] 0x0051A508 (   8:  6) | DIVIDE
+[  182] 0x0051A518 (   8:  5) | SYSRQ
+[  183] 0x0051A520 (  12:  9) | RIGHT ALT
+[  184] 0x0051A59C (   8:  4) | HOME
+[  185] 0x0051A5A4 (   4:  2) | UP
+[  186] 0x0051A5A8 (   8:  7) | PAGE UP
+[  187] 0x0051A5B8 (   8:  4) | LEFT
+[  188] 0x0051A5C8 (   8:  5) | RIGHT
+[  189] 0x0051A5D8 (   4:  3) | END
+[  190] 0x0051A5DC (   8:  4) | DOWN
+[  191] 0x0051A5E4 (  12:  9) | PAGE DOWN
+[  192] 0x0051A5F0 (   8:  6) | INSERT
+[  193] 0x0051A5F8 (   8:  6) | DELETE
+[  194] 0x0051A638 (  12:  8) | LEFT WIN
+[  195] 0x0051A644 (  12:  9) | RIGHT WIN
+[  196] 0x0051A650 (   8:  4) | APPS
+[  197] 0x0051A660 (  12:  8) | MOUSE_B1
+[  198] 0x0051A66C (  12:  8) | MOUSE_B2
+[  199] 0x0051A678 (  12:  8) | MOUSE_B3
+[  200] 0x0051A68C (   4:  2) | UP
+[  201] 0x0051A690 (   8:  4) | DOWN
+[  202] 0x0051A698 (   8:  4) | LEFT
+[  203] 0x0051A6A0 (   8:  5) | RIGHT
+[  204] 0x0051A6C8 (  12:  8) | BUTTON 1
+[  205] 0x0051A6D4 (  12:  8) | BUTTON 2
+[  206] 0x0051A6E0 (  12:  8) | BUTTON 3
+[  207] 0x0051A6EC (  12:  8) | BUTTON 4
+[  208] 0x0051A6F8 (  12:  8) | BUTTON 5
+[  209] 0x0051A704 (  12:  8) | BUTTON 6
+[  210] 0x0051A710 (  12:  8) | BUTTON 7
+[  211] 0x0051A71C (  12:  8) | BUTTON 8
+[  212] 0x0051A728 (  12:  8) | button@Y
+[  213] 0x0051A734 (  12:  9) | button@QP
+[  214] 0x0051D1E0 (   8:  5) | Pause
+[  215] 0x0051D23C (  10:  5) | Sleep
+[  216] 0x0051D246 (  10:  6) | Poison
+[  217] 0x0051D250 (  10:  7) | Sadness
+[  218] 0x0051D25A (  10:  4) | Fury
+[  219] 0x0051D264 (  10:  9) | Confusion
+[  220] 0x0051D26E (  10:  7) | Silence
+[  221] 0x0051D278 (  10:  5) | Haste
+[  222] 0x0051D282 (  10:  4) | Slow
+[  223] 0x0051D28C (  10:  4) | Stop
+[  224] 0x0051D2B4 (  10:  7) | Petrify
+[  225] 0x0051D2BE (  11:  5) | Regen
+[  226] 0x0051D2DC (  10:  7) | Reflect
+[  227] 0x0051D2F0 (  10:  6) | Shield
+[  228] 0x0051D30E (  10:  7) | Berserk
+[  229] 0x0051D318 (  10:  8) | Peerless
+[  230] 0x0051D322 (  10:  8) | Paralyze
+[  231] 0x0051D32C (  10:  8) | Darkness
+[  232] 0x0051D3A0 (  28: 24) | How much will you raise?
+[  233] 0x0051D3BC (   4:  3) | Gil
+[  234] 0x0051D3C0 (   8:  5) | After
+[  235] 0x0051D3C8 (  16: 11) | Gil on hand
+[  236] 0x0051D588 (  16: 11) | Keep goin'?
+[  237] 0x0051D598 (  24: 22) | Of course!     No way!
+[  238] 0x0051D5B0 (  22: 21) | Current Battle Points
+[  239] 0x0051D5C6 (  22: 11) | Slot start!
+[  240] 0x0051D5DC (  22:  7) | GREAT!!
+[  241] 0x0051D608 (  32: 16) | Then, go for it!
+[  242] 0x0051D628 (  32: 24) | Magic Materia is broken.
+[  243] 0x0051D648 (  32: 25) | Summon Materia is broken.
+[  244] 0x0051D668 (  32: 26) | Support Materia is broken.
+[  245] 0x0051D688 (  32: 30) | Independent Materia is broken.
+[  246] 0x0051D6A8 (  32: 26) | Command Materia is broken.
+[  247] 0x0051D6C8 (  32: 22) | All Materia is broken.
+[  248] 0x0051D6E8 (  32: 20) | Accessory is broken.
+[  249] 0x0051D708 (  32: 23) | Item command is sealed.
+[  250] 0x0051D728 (  32: 16) | Armor is broken.
+[  251] 0x0051D748 (  32: 17) | Weapon is broken.
+[  252] 0x0051D768 (  32: 10) | 1/2 speed.
+[  253] 0x0051D788 (  32: 13) | 1/2 accuracy.
+[  254] 0x0051D7A8 (  32:  7) | Minimum
+[  255] 0x0051D7C8 (  32:  6) | Poison
+[  256] 0x0051D7E8 (  32:  4) | Toad
+[  257] 0x0051D808 (  32: 16) | Time x30 damage.
+[  258] 0x0051D828 (  32: 14) | Down 5 levels.
+[  259] 0x0051D848 (  32: 15) | Down 10 levels.
+[  260] 0x0051D868 (  32:  7) | 1/2 HP.
+[  261] 0x0051D888 (  32:  7) | 1/2 MP.
+[  262] 0x0051D8A8 (  32: 10) | 1/2 HP&MP.
+[  263] 0x0051D8C8 (  32:  8) | Zero MP.
+[  264] 0x0051D8E8 (  32: 20) | Yesss! No handicapp!
+[  265] 0x0051D908 (  32: 12) | HP restored.
+[  266] 0x0051D928 (  34: 32) | Worried about the other members?
+[  267] 0x0051D94A (  34: 14) | Yeah, a little
+[  268] 0x0051D96C (  34: 10) | Not really
+[  269] 0x0051DAE0 (   8:  4) | Save
+[  270] 0x0051DB40 (  38:  6) | Reform
+[  271] 0x0051DB66 (  38: 34) | Split your allies into two groups.
+[  272] 0x0051DB8C (  38: 36) | Split your allies into three groups.
+[  273] 0x0051DBB2 (  38: 27) | Please make a party of two.
+[  274] 0x0051DBD8 (  38: 29) | Please make a party of three.
+[  275] 0x0051DBFE (  38: 25) | Select with START button.
+[  276] 0x0051DE22 (  22:  4) | Wpn.
+[  277] 0x0051DE38 (  22:  4) | Arm.
+[  278] 0x0051DE4E (  22:  4) | Acc.
+[  279] 0x0051DED8 (  36:  7) | LEVEL 1
+[  280] 0x0051DEFC (  36:  7) | LEVEL 2
+[  281] 0x0051DF20 (  36:  7) | LEVEL 3
+[  282] 0x0051DF44 (  36:  7) | LEVEL 4
+[  283] 0x0051DF68 (  36: 16) | Set BREAK LEVEL.
+[  284] 0x0051DF8C (  36:  3) | Set
+[  285] 0x0051DFB0 (  36:  5) | Check
+[  286] 0x0051DFD4 (  36: 22) | To change BREAK LEVEL,
+[  287] 0x0051DFF8 (  36: 33) | it will begin from Limit Point 0.
+[  288] 0x0051E01C (  36: 19) | Change BREAK LEVEL?
+[  289] 0x0051E040 (  36:  3) | Yes
+[  290] 0x0051E064 (  36:  2) | No
+[  291] 0x0051E088 (  36: 10) | Limit set!
+[  292] 0x0051E0AC (  36: 13) | Select LEVEL.
+[  293] 0x0051EF40 (  10:  4) | Fire
+[  294] 0x0051EF4A (  10:  3) | Ice
+[  295] 0x0051EF54 (  10:  9) | Lightning
+[  296] 0x0051EF5E (  10:  5) | Earth
+[  297] 0x0051EF68 (  10:  6) | Poison
+[  298] 0x0051EF72 (  10:  7) | Gravity
+[  299] 0x0051EF7C (  10:  5) | Water
+[  300] 0x0051EF86 (  10:  4) | Wind
+[  301] 0x0051EF90 (  10:  4) | Holy
+[  302] 0x0051EFA0 (  20:  5) | Death
+[  303] 0x0051EFB4 (  20: 10) | Near-death
+[  304] 0x0051EFC8 (  20:  5) | Sleep
+[  305] 0x0051EFDC (  20:  6) | Poison
+[  306] 0x0051EFF0 (  20:  7) | Sadness
+[  307] 0x0051F004 (  20:  4) | Fury
+[  308] 0x0051F018 (  20:  9) | Confusion
+[  309] 0x0051F02C (  20:  7) | Silence
+[  310] 0x0051F040 (  20:  5) | Haste
+[  311] 0x0051F054 (  20:  4) | Slow
+[  312] 0x0051F068 (  20:  4) | Stop
+[  313] 0x0051F07C (  20:  4) | Frog
+[  314] 0x0051F090 (  20:  5) | Small
+[  315] 0x0051F0A4 (  20:  9) | Slow-numb
+[  316] 0x0051F0B8 (  20:  7) | Petrify
+[  317] 0x0051F0CC (  20:  5) | Regen
+[  318] 0x0051F0E0 (  20:  7) | Barrier
+[  319] 0x0051F0F4 (  20:  8) | MBarrier
+[  320] 0x0051F108 (  20:  7) | Reflect
+[  321] 0x0051F130 (  20:  6) | Shield
+[  322] 0x0051F144 (  20: 14) | Death-sentence
+[  323] 0x0051F158 (  20: 10) | Manipulate
+[  324] 0x0051F16C (  20:  7) | Berserk
+[  325] 0x0051F180 (  20:  8) | Peerless
+[  326] 0x0051F194 (  20:  9) | Paralyzed
+[  327] 0x0051F1A8 (  20:  8) | Darkness
+[  328] 0x0051F1C0 (  15:  7) | Element
+[  329] 0x0051F1CF (  15:  6) | Effect
+[  330] 0x0051F1DE (  15:  6) | Attack
+[  331] 0x0051F1ED (  15:  6) | Defend
+[  332] 0x0051F1FC (  15:  5) | Halve
+[  333] 0x0051F20B (  15:  7) | Invalid
+[  334] 0x0051F21A (  15:  6) | Absorb
+[  335] 0x0051F256 (  15:  8) | Strength
+[  336] 0x0051F265 (  15:  9) | Dexterity
+[  337] 0x0051F274 (  15:  8) | Vitality
+[  338] 0x0051F283 (  15:  5) | Magic
+[  339] 0x0051F292 (  15:  6) | Spirit
+[  340] 0x0051F2A1 (  15:  4) | Luck
+[  341] 0x0051F2B0 (  15:  6) | Attack
+[  342] 0x0051F2BF (  15:  7) | Attack%
+[  343] 0x0051F2CE (  15:  7) | Defense
+[  344] 0x0051F2DD (  15:  8) | Defense%
+[  345] 0x0051F2EC (  15:  9) | Magic atk
+[  346] 0x0051F2FB (  15:  9) | Magic def
+[  347] 0x0051F30A (  15: 10) | Magic def%
+[  348] 0x0051F319 (  15:  4) | Wpn:
+[  349] 0x0051F328 (  15:  4) | Arm:
+[  350] 0x0051F337 (  15:  4) | Acc:
+[  351] 0x0051F346 (  15: 12) | Limit level:
+[  352] 0x0051F3A8 (  12:  4) | Wpn.
+[  353] 0x0051F3B4 (  12:  4) | Arm.
+[  354] 0x0051F3C0 (  12:  4) | Acc.
+[  355] 0x0051F420 (  12:  6) | Attack
+[  356] 0x0051F42C (  12:  8) | Attack %
+[  357] 0x0051F438 (  12:  7) | Defense
+[  358] 0x0051F444 (  12:  9) | Defense %
+[  359] 0x0051F450 (  12:  9) | Magic atk
+[  360] 0x0051F45C (  12:  9) | Magic def
+[  361] 0x0051F468 (  12: 10) | Magic def%
+[  362] 0x0051F474 (  12:  4) | Slot
+[  363] 0x0051F480 (  12:  6) | Growth
+[  364] 0x0051F48C (  12:  7) | Nothing
+[  365] 0x0051F498 (  12:  6) | Normal
+[  366] 0x0051F4A4 (  12:  6) | Double
+[  367] 0x0051F4B0 (  12:  6) | Triple
+[  368] 0x0051F518 (  36: 34) | Do you really want to remove this?
+[  369] 0x0051F53C (  36: 10) | I sure do!
+[  370] 0x0051F560 (  36: 10) | Wait a sec
+[  371] 0x0051F584 (  36: 25) | Sephiroth[B2][A9][A9][B3]
+[  372] 0x0051F5A8 (  20:  4) | Wpn.
+[  373] 0x0051F5BC (  20:  4) | Arm.
+[  374] 0x0051F5D0 (  20: 12) | Ability list
+[  375] 0x0051F5E4 (  20: 12) | Equip effect
+[  376] 0x0051F5F8 (  20:  5) | Check
+[  377] 0x0051F60C (  20:  7) | Arrange
+[  378] 0x0051F634 (  20:  2) | AP
+[  379] 0x0051F648 (  20: 13) | To next level
+[  380] 0x0051F65C (  20:  6) | MASTER
+[  381] 0x0051F670 (  20:  7) | Arrange
+[  382] 0x0051F684 (  20:  8) | Exchange
+[  383] 0x0051F698 (  20: 10) | Remove all
+[  384] 0x0051F6AC (  20:  5) | Trash
+[  385] 0x0051F6D4 (  20:  9) | Dexterity
+[  386] 0x0051F6E8 (  20:  5) | Cover
+[  387] 0x0051F6FC (  20:  5) | Magic
+[  388] 0x0051F710 (  20:  4) | Luck
+[  389] 0x0051F724 (  20:  6) | MASTER
+[  390] 0x0051F738 (  20:  8) | Strength
+[  391] 0x0051F74C (  20:  8) | Vitality
+[  392] 0x0051F760 (  20:  5) | Magic
+[  393] 0x0051F774 (  20:  9) | Magic def
+[  394] 0x0051F788 (  20:  9) | Dexterity
+[  395] 0x0051F79C (  20:  4) | Luck
+[  396] 0x0051F7B0 (  20:  5) | MaxHP
+[  397] 0x0051F7C4 (  20:  5) | MaxMP
+[  398] 0x0051F7D8 (  20:  7) | MaxHPUP
+[  399] 0x0051F7EC (  20:  7) | MaxMPUP
+[  400] 0x0051F800 (  20:  6) | EXP.UP
+[  401] 0x0051F814 (  20:  6) | Gil UP
+[  402] 0x0051F828 (  20: 12) | Encount Down
+[  403] 0x0051F83C (  20: 10) | Encount Up
+[  404] 0x0051F850 (  20: 13) | Meet Chocobos
+[  405] 0x0051F864 (  20: 11) | Pre-emptive
+[  406] 0x0051F878 (  20: 17) | Long range attack
+[  407] 0x0051F88C (  20: 10) | Attack all
+[  408] 0x0051F8A0 (  20: 14) | Counter attack
+[  409] 0x0051F9E8 (  20:  5) | Magic
+[  410] 0x0051F9FC (  20:  6) | Summon
+[  411] 0x0051FA10 (  20: 11) | Enemy-Skill
+[  412] 0x0051FA24 (  20: 13) | Added-Ability
+[  413] 0x0051FA38 (  20:  3) | All
+[  414] 0x0051FA4C (  20:  4) | 4x-M
+[  415] 0x0051FA60 (  20:  9) | Absorb MP
+[  416] 0x0051FA74 (  20:  9) | Absorb HP
+[  417] 0x0051FA9C (  20: 13) | Steal as well
+[  418] 0x0051FAB0 (  20:  9) | Extra cut
+[  419] 0x0051FAC4 (  20:  8) | Turbo MP
+[  420] 0x0051FAD8 (  20:  8) | Nothing.
+[  421] 0x0051FAEC (  20: 14) | Not enough MP.
+[  422] 0x0051FB68 (  12:  3) | Use
+[  423] 0x0051FB74 (  12:  7) | Arrange
+[  424] 0x0051FB80 (  12:  9) | Key Items
+[  425] 0x0051FB8C (  12:  9) | Customize
+[  426] 0x0051FB98 (  12:  5) | Field
+[  427] 0x0051FBA4 (  12:  6) | Battle
+[  428] 0x0051FBB0 (  12:  5) | Throw
+[  429] 0x0051FBBC (  12:  4) | Type
+[  430] 0x0051FBC8 (  12:  4) | Name
+[  431] 0x0051FBD4 (  12:  4) | Most
+[  432] 0x0051FBE0 (  12:  5) | Least
+[  433] 0x0051FBF0 (  34: 11) | OK! Got it!
+[  434] 0x0051FC12 (  34: 20) | I'm not sure but[A9]
+[  435] 0x0051FC34 (  34: 18) | Don't really care.
+[  436] 0x0051FC56 (  34: 14) | Heh! No sweat!
+[  437] 0x0051FC78 (  34: 26) | D-d-d-damn! My head hurts!
+[  438] 0x0051FC9A (  34: 26) | Got nuthin' to do with me!
+[  439] 0x0051FCBC (  34: 18) | Hmm, so that's it.
+[  440] 0x0051FCDE (  34: 24) | I'm not too sure but[A9]
+[  441] 0x0051FD00 (  34: 26) | I've got the wrong person.
+[  442] 0x0051FD22 (  34: 20) | This should be okay.
+[  443] 0x0051FD44 (  34: 20) | Not quite ready yet.
+[  444] 0x0051FD66 (  34: 12) | It isn't me.
+[  445] 0x0051FD88 (  34: 19) | Right, I've got it!
+[  446] 0x0051FDAA (  34: 15) | I don't get it.
+[  447] 0x0051FDCC (  34: 29) | It has nothing to do with me.
+[  448] 0x0051FDEE (  34: 24) | Cool! This should do it!
+[  449] 0x0051FE10 (  34: 21) | Nope! I don't get it!
+[  450] 0x0051FE32 (  34: 29) | Oh wow, I'm totally clueless!
+[  451] 0x0051FE54 (  34: 26) | I'm getting less human[A9]
+[  452] 0x0051FE76 (  34: 20) | I'm still not ready.
+[  453] 0x0051FE98 (  34: 29) | It has nothing to do with me.
+[  454] 0x0051FEBA (  34: 30) | Hey I like this! Lemme use it!
+[  455] 0x0051FEDC (  34: 32) | Hmph. Don't quite get it but[A9]
+[  456] 0x0051FEFE (  34: 32) | Not me! Give it to someone else!
+[  457] 0x0051FF20 (  34: 31) | It's got nothing to do with me.
+[  458] 0x005206B8 (  12:  5) | Cloud
+[  459] 0x005206C4 (  12:  6) | Barret
+[  460] 0x005206D0 (  12:  4) | Tifa
+[  461] 0x005206DC (  12:  5) | Aeris
+[  462] 0x005206E8 (  12:  8) | Red XIII
+[  463] 0x005206F4 (  12:  6) | Yuffie
+[  464] 0x00520700 (  12:  5) | 䄣呉㌀呉ｈ
+[  465] 0x0052070C (  12:  4) | 䤶䍎久ｔ
+[  466] 0x00520718 (  12:  2) | 䤣ｄ
+[  467] 0x00520724 (  12:  3) | 䠣䍏ｏ
+[  468] 0x00520748 (   8:  3) | 倳䍁ｅ
+[  469] 0x00520750 (   8:  4) | 䔤䕌䕔ÿ
+[  470] 0x00520758 (   8:  4) | 䔳䕌呃ÿ
+[  471] 0x00520760 (   8:  4) | 䔤䅆䱕ｔ
+[  472] 0x00520768 (   8:  4) | 䄣䍎䱅ÿ
+[  473] 0x00520770 (   1: 12) | [UNICODE:21]
+[  474] 0x00520771 (   1: 12) | [UNICODE:22]
+[  475] 0x00520772 (   1: 12) | [UNICODE:23]
+[  476] 0x00520773 (   1: 12) | [UNICODE:24]
+[  477] 0x00520774 (   1: 12) | [UNICODE:25]
+[  478] 0x00520775 (   1: 12) | [UNICODE:26]
+[  479] 0x00520776 (   1: 12) | [UNICODE:27]
+[  480] 0x00520777 (   1: 12) | [UNICODE:28]
+[  481] 0x00520778 (   1: 12) | [UNICODE:29]
+[  482] 0x00520779 (   1: 12) | [UNICODE:2a]
+[  483] 0x0052077A (   1: 12) | [UNICODE:2b]
+[  484] 0x0052077B (   1: 12) | [UNICODE:2c]
+[  485] 0x0052077C (   1: 12) | [UNICODE:2d]
+[  486] 0x0052077D (   1: 12) | [UNICODE:2e]
+[  487] 0x0052077E (   1: 12) | [UNICODE:2f]
+[  488] 0x0052077F (   1: 12) | [UNICODE:30]
+[  489] 0x00520780 (   1: 12) | [UNICODE:31]
+[  490] 0x00520781 (   1: 12) | [UNICODE:32]
+[  491] 0x00520782 (   1: 12) | [UNICODE:33]
+[  492] 0x00520783 (   1: 12) | [UNICODE:34]
+[  493] 0x00520784 (   1: 12) | [UNICODE:35]
+[  494] 0x00520785 (   1: 12) | [UNICODE:36]
+[  495] 0x00520786 (   1: 12) | [UNICODE:37]
+[  496] 0x00520787 (   1: 12) | [UNICODE:38]
+[  497] 0x00520788 (   1: 12) | [UNICODE:39]
+[  498] 0x00520789 (   1: 12) | [UNICODE:3a]
+[  499] 0x0052078A (   1: 12) | [UNICODE:0c]
+[  500] 0x0052078B (   1: 12) | [UNICODE:0e]
+[  501] 0x0052078C (   1: 12) | [UNICODE:0b]
+[  502] 0x0052078D (   1: 12) | [UNICODE:0d]
+[  503] 0x0052078E (   1: 12) | [UNICODE:41]
+[  504] 0x0052078F (   1: 12) | [UNICODE:42]
+[  505] 0x00520790 (   1: 12) | [UNICODE:43]
+[  506] 0x00520791 (   1: 12) | [UNICODE:44]
+[  507] 0x00520792 (   1: 12) | [UNICODE:45]
+[  508] 0x00520793 (   1: 12) | [UNICODE:46]
+[  509] 0x00520794 (   1: 12) | [UNICODE:47]
+[  510] 0x00520795 (   1: 12) | [UNICODE:48]
+[  511] 0x00520796 (   1: 12) | [UNICODE:49]
+[  512] 0x00520797 (   1: 12) | [UNICODE:4a]
+[  513] 0x00520798 (   1: 12) | [UNICODE:4b]
+[  514] 0x00520799 (   1: 12) | [UNICODE:4c]
+[  515] 0x0052079A (   1: 12) | [UNICODE:4d]
+[  516] 0x0052079B (   1: 12) | [UNICODE:4e]
+[  517] 0x0052079C (   1: 12) | [UNICODE:4f]
+[  518] 0x0052079D (   1: 12) | [UNICODE:50]
+[  519] 0x0052079E (   1: 12) | [UNICODE:51]
+[  520] 0x0052079F (   1: 12) | [UNICODE:52]
+[  521] 0x005207A0 (   1: 12) | [UNICODE:53]
+[  522] 0x005207A1 (   1: 12) | [UNICODE:54]
+[  523] 0x005207A2 (   1: 12) | [UNICODE:55]
+[  524] 0x005207A3 (   1: 12) | [UNICODE:56]
+[  525] 0x005207A4 (   1: 12) | [UNICODE:57]
+[  526] 0x005207A5 (   1: 12) | [UNICODE:58]
+[  527] 0x005207A6 (   1: 12) | [UNICODE:59]
+[  528] 0x005207A7 (   1: 12) | [UNICODE:5a]
+[  529] 0x005207A8 (   1: 12) | [UNICODE:1a]
+[  530] 0x005207A9 (   1: 12) | [UNICODE:1b]
+[  531] 0x005207AC (   1: 12) | [UNICODE:10]
+[  532] 0x005207AD (   1:  1) | 1
+[  533] 0x005207AE (   1:  1) | 2
+[  534] 0x005207AF (   1:  1) | 3
+[  535] 0x005207B0 (   1:  1) | 4
+[  536] 0x005207B1 (   1:  1) | 5
+[  537] 0x005207B2 (   1:  1) | 6
+[  538] 0x005207B3 (   1:  1) | 7
+[  539] 0x005207B4 (   1:  1) | 8
+[  540] 0x005207B5 (   1:  1) | 9
+[  541] 0x005213D8 (  20: 12) | Ability list
+[  542] 0x005213EC (  20: 12) | Equip effect
+[  543] 0x0052143C (  20:  2) | AP
+[  544] 0x00521450 (  20: 13) | To next level
+[  545] 0x00521464 (  20:  6) | MASTER
+[  546] 0x005214DC (  20:  9) | Dexterity
+[  547] 0x005214F0 (  20:  5) | Cover
+[  548] 0x00521504 (  20:  5) | Magic
+[  549] 0x00521518 (  20:  4) | Luck
+[  550] 0x0052152C (  20:  6) | MASTER
+[  551] 0x00521540 (  20:  8) | Strength
+[  552] 0x00521554 (  20:  8) | Vitality
+[  553] 0x00521568 (  20:  5) | Magic
+[  554] 0x0052157C (  20:  9) | Magic def
+[  555] 0x00521590 (  20:  9) | Dexterity
+[  556] 0x005215A4 (  20:  4) | Luck
+[  557] 0x005215B8 (  20:  5) | MaxHP
+[  558] 0x005215CC (  20:  5) | MaxMP
+[  559] 0x005215E0 (  20:  7) | MaxHPUP
+[  560] 0x005215F4 (  20:  7) | MaxMPUP
+[  561] 0x00521608 (  20:  6) | EXP.UP
+[  562] 0x0052161C (  20:  6) | Gil UP
+[  563] 0x00521630 (  20: 12) | Encount Down
+[  564] 0x00521644 (  20: 10) | Encount Up
+[  565] 0x00521658 (  20: 13) | Meet Chocobos
+[  566] 0x0052166C (  20: 11) | Pre-emptive
+[  567] 0x00521680 (  20: 17) | Long range attack
+[  568] 0x00521694 (  20: 10) | Attack all
+[  569] 0x005216A8 (  20: 14) | Counter attack
+[  570] 0x005216F8 (   2:  1) | A
+[  571] 0x005216FA (   2:  1) | D
+[  572] 0x00521700 (  20: 19) | Buy   Sell     Exit
+[  573] 0x00521714 (  20:  3) | Gil
+[  574] 0x00521728 (  20:  5) | Owned
+[  575] 0x0052173C (  20:  8) | Equipped
+[  576] 0x00521750 (  20:  5) | Total
+[  577] 0x00521764 (  20:  8) | How many
+[  578] 0x00521778 (  20: 17) | Item      Materia
+[  579] 0x0052178C (  20: 13) | Gil remaining
+[  580] 0x005217A0 (  20: 16) | Price for Master
+[  581] 0x005217B4 (  20: 16) | Price through AP
+[  582] 0x0052196A (  22:  7) | Nothing
+[  583] 0x00521980 (  22:  6) | Normal
+[  584] 0x00521996 (  22:  6) | Double
+[  585] 0x005219AC (  22:  6) | Triple
+[  586] 0x005219DC (  20: 11) | Weapon Shop
+[  587] 0x005219F0 (  20:  9) | Item Shop
+[  588] 0x00521A04 (  20: 12) | Materia Shop
+[  589] 0x00521A18 (  20: 13) | General Store
+[  590] 0x00521A2C (  20: 15) | Vegetable Store
+[  591] 0x00521A40 (  20: 14) | Accessory Shop
+[  592] 0x00521A54 (  20:  9) | Tool Shop
+[  593] 0x00521A68 (  20: 10) | Hotel Shop
+[  594] 0x00521A80 (  46:  8) | Welcome!
+[  595] 0x00521AAE (  46: 27) | What would you like to buy?
+[  596] 0x00521ADC (  46: 25) | How many would you like?!
+[  597] 0x00521B0A (  46: 29) | What would you like to sell?!
+[  598] 0x00521B38 (  46: 33) | How many would you like to sell?!
+[  599] 0x00524160 (  36:  4) | Load
+[  600] 0x00524184 (  36: 24) | Select a save data file.
+[  601] 0x005241A8 (  36: 19) | Select a save game.
+[  602] 0x00524238 (  36: 21) | Loading. Please wait.
+[  603] 0x0052425C (  36: 20) | Saving. Please wait.
+[  604] 0x00524280 (  36:  5) | EMPTY
+[  605] 0x005242A4 (  36:  4) | GAME
+[  606] 0x005242C8 (  36:  9) | Continue?
+[  607] 0x00524310 (  36: 24) | Checking Save Data File.
+[  608] 0x00524334 (  36:  2) | 01
+[  609] 0x00524358 (  36:  2) | 02
+[  610] 0x0052437C (  36:  2) | 03
+[  611] 0x005243A0 (  36:  2) | 04
+[  612] 0x005243C4 (  36:  2) | 05
+[  613] 0x005243E8 (  36:  2) | 06
+[  614] 0x0052440C (  36:  2) | 07
+[  615] 0x00524430 (  36:  2) | 08
+[  616] 0x00524454 (  36:  2) | 09
+[  617] 0x00524478 (  36:  2) | 10
+[  618] 0x0052449C (  36:  2) | 11
+[  619] 0x005244C0 (  36:  2) | 12
+[  620] 0x005244E4 (  36:  2) | 13
+[  621] 0x00524508 (  36:  2) | 14
+[  622] 0x0052452C (  36:  2) | 15
+[  623] 0x00524550 (  36:  6) | Saved.
+[  624] 0x00524574 (  36: 15) | Could not save.
+[  625] 0x00524598 (  36: 15) | Could not load.
+[  626] 0x005245BC (  36: 15) | Data is ruined.
+[  627] 0x005245E0 (  36:  8) | NEW GAME
+[  628] 0x00524604 (  36: 30) | Are you sure you want to save?
+[  629] 0x00524628 (  36:  3) | Yes
+[  630] 0x0052464C (  36:  2) | No
+[  631] 0x00524698 (  48: 10) | Completed.
+[  632] 0x00524728 (  48: 10) | Formatted.
+[  633] 0x00524758 (  48: 17) | Could not format.
+[  634] 0x00524788 (  48: 14) | Not formatted.
+[  635] 0x005247B8 (  48: 22) | Want to format it now?
+[  636] 0x005247E8 (  48: 18) | No save data file.
+[  637] 0x00524818 (  48: 18) | No save data file.
+[  638] 0x00524848 (  48: 47) | This Memory card is damaged and cannot be used.
+[  639] 0x00524878 (  48: 34) | Please insert another Memory card.
+[  640] 0x005248A8 (  48: 40) | Not enough space left on save data file.
+[  641] 0x005248D8 (  48: 27) | Use another save data file,
+[  642] 0x00524908 (  48: 31) | or erase 1 block of saved data.
+[  643] 0x00524998 (  48: 17) | Couldn't read it.
+[  644] 0x005249C8 (  48: 29) | Still want to begin the game?
+[  645] 0x00524AB8 (  48: 41) | Can not allocate save file memory buffer!
+[  646] 0x00524AE8 (  48: 18) | Invalid save file!
+[  647] 0x00524B18 (  12:  6) | Save 1
+[  648] 0x00524B24 (  12:  6) | Save 2
+[  649] 0x00524B30 (  12:  9) | 3AVE [13]
+[  650] 0x00524B3C (  12:  9) | 3AVE [14]
+[  651] 0x00524B48 (  12:  9) | 3AVE [15]
+[  652] 0x00524B54 (  12:  9) | 3AVE [16]
+[  653] 0x00524B60 (  12:  9) | 3AVE [17]
+[  654] 0x00524B6C (  12:  9) | 3AVE [18]
+[  655] 0x00524B78 (  12:  9) | 3AVE [19]
+[  656] 0x00524B84 (  12: 13) | 3AVE [11][10]
+[  657] 0x00524BF0 (   8:  5) | ,EVEL
+[  658] 0x005552C0 (  16:  9) | 00'00"000
+[  659] 0x005552D0 (  16:  9) | --'--"---
+[  660] 0x00555410 (  16: 15) | COURSE A RECORD
+[  661] 0x00555420 (  16:  9) | 00'00"000
+[  662] 0x00555430 (  16:  9) | --'--"---
+[  663] 0x005557A0 (   8:  4) | BEST
+[  664] 0x005557B0 (  12:  8) | CONTINUE
+[  665] 0x005557BC (   8:  5) | RETRY
+[  666] 0x005557C4 (   8:  4) | EXIT
+[  667] 0x005557CC (   8:  6) | OPTION
+[  668] 0x005557D4 (  12:  8) | CONTINUE
+[  669] 0x005557E0 (   8:  5) | RETRY
+[  670] 0x005557E8 (   8:  4) | EXIT
+[  671] 0x005557F0 (   8:  5) | GHOST
+[  672] 0x005557F8 (   8:  7) | SURFACE
+[  673] 0x00555800 (   4:  3) | OFF
+[  674] 0x00555804 (   8:  5) | BOARD
+[  675] 0x0055580C (   8:  6) | SLEIGH
+[  676] 0x00555814 (   8:  5) | ? ? ?
+[  677] 0x0055581C (   8:  4) | SNOW
+[  678] 0x00555824 (   8:  7) | CHECKED
+[  679] 0x0055582C (  12:  9) | TRY AGAIN
+[  680] 0x00555838 (   8:  4) | EXIT
+[  681] 0x00555848 (  12:  9) | TECHNIQUE
+[  682] 0x00555854 (   8:  4) | TIME
+[  683] 0x0055585C (   8:  7) | BALLOON
+[  684] 0x00555864 (   8:  5) | TOTAL
+[  685] 0x0055586C (   8:  4) | BEST
+[  686] 0x00555874 (  12:  8) | /30 PTS.
+[  687] 0x00555880 (  12:  8) | OSP@ptsN
+[  688] 0x0055588C (  12:  8) | OTP@ptsN
+[  689] 0x00555898 (   8:  7) | OC@ptsN
+[  690] 0x005558A0 (   8:  7) | OC@ptsN
+[  691] 0x005558AC (   8:  4) | QstN
+[  692] 0x005558B4 (   8:  4) | RndN
+[  693] 0x005558BC (   8:  4) | SrdN
+[  694] 0x005558C4 (   8:  4) | TthN
+[  695] 0x005558CC (   8:  4) | UthN
+[  696] 0x0057B2A8 (   8:  5) | TEIOH
+[  697] 0x0057B3D0 (  16: 12) | Sprint Shoes
+[  698] 0x0057B3E0 (  16:  7) | Counter
+[  699] 0x0057B3F0 (  16: 13) | Magic Counter
+[  700] 0x0057B400 (  16: 14) | Precious Watch
+[  701] 0x0057B410 (  16:  5) | Ether
+[  702] 0x0057B420 (  16: 10) | Hero Drink
+[  703] 0x0057B430 (  16: 10) | Bolt Plume
+[  704] 0x0057B440 (  16:  6) | Elixir
+[  705] 0x0057B450 (  16:  9) | Fire Fang
+[  706] 0x0057B460 (  16: 14) | Antarctic Wind
+[  707] 0x0057B470 (  16:  6) | Potion
+[  708] 0x0057B480 (  16: 12) | Phoenix Down
+[  709] 0x0057B490 (  16:  5) | Hyper
+[  710] 0x0057B4A0 (  16: 12) | Tranquilizer
+[  711] 0x0057B4B0 (  16: 10) | Cat's Bell
+[  712] 0x0057B4C0 (  16:  5) | Enemy
+[  713] 0x0057B4D0 (  16:  5) | Sneak
+[  714] 0x0057B4E0 (  16: 25) | Chocobracelet[FF][FF][FF]
+[  715] 0x0057B4F0 (  16:  5) | Swift
+[  716] 0x0057B500 (  16:  4) | Fire
+[  717] 0x0057B510 (  16: 37) | Megalixir[FF][FF][FF][FF][FF][FF][FF]
+[  718] 0x0057B520 (  16:  5) | Turbo
+[  719] 0x0057B530 (  16: 37) | Hi-Potion[FF][FF][FF][FF][FF][FF][FF]
+[  720] 0x0057B540 (  16:  3) | Ice
+[  721] 0x0057B658 (   7:  3) | SAM
+[  722] 0x0057B65F (   7:  4) | ELEN
+[  723] 0x0057B666 (   7:  5) | BLUES
+[  724] 0x0057B66D (   7:  3) | TOM
+[  725] 0x0057B674 (   7:  4) | JOHN
+[  726] 0x0057B67B (   7:  4) | GARY
+[  727] 0x0057B682 (   7:  4) | MIKE
+[  728] 0x0057B689 (   7:  5) | SANDY
+[  729] 0x0057B690 (   7:  2) | JU
+[  730] 0x0057B697 (   7:  2) | LY
+[  731] 0x0057B69E (   7:  4) | JOEL
+[  732] 0x0057B6A5 (   7:  4) | GREY
+[  733] 0x0057B6AC (   7:  6) | EDWARD
+[  734] 0x0057B6B3 (   7:  5) | JAMES
+[  735] 0x0057B6BA (   7:  6) | HARVEY
+[  736] 0x0057B6C1 (   7:  3) | DAN
+[  737] 0x0057B6C8 (   7:  4) | RUDY
+[  738] 0x0057B6CF (   7:  6) | GRAHAM
+[  739] 0x0057B6D6 (   7:  3) | FOX
+[  740] 0x0057B6DD (   7:  5) | CLIVE
+[  741] 0x0057B6E4 (   7:  4) | SEAN
+[  742] 0x0057B6EB (   7:  5) | YOUNG
+[  743] 0x0057B6F2 (   7:  5) | ROBIN
+[  744] 0x0057B6F9 (   7:  5) | DARIO
+[  745] 0x0057B700 (   7:  1) | K
+[  746] 0x0057B707 (   7:  3) | ARL
+[  747] 0x0057B70E (   7:  4) | SARA
+[  748] 0x0057B715 (   7:  5) | MARIE
+[  749] 0x0057B71C (   7:  5) | SAMMY
+[  750] 0x0057B723 (   7:  3) | LIA
+[  751] 0x0057B72A (   7:  6) | KNIGHT
+[  752] 0x0057B731 (   7:  5) | PAULA
+[  753] 0x0057B738 (   7:  3) | PAU
+[  754] 0x0057B73F (   7:  2) | LE
+[  755] 0x0057B746 (   7:  5) | PETER
+[  756] 0x0057B74D (   7:  5) | AIMEE
+[  757] 0x0057B754 (   7:  5) | TERRY
+[  758] 0x0057B75B (   7:  4) | ANDY
+[  759] 0x0057B762 (   7:  5) | NANCY
+[  760] 0x0057B769 (   7:  3) | TIM
+[  761] 0x0057B770 (   7:  5) | ROBER
+[  762] 0x0057B777 (   7:  1) | T
+[  763] 0x0057B77E (   7:  6) | GEORGE
+[  764] 0x0057B785 (   7:  5) | JENNY
+[  765] 0x0057B78C (   7:  4) | RICA
+[  766] 0x0057B793 (   7:  5) | JULIA

@@ -1,0 +1,19 @@
+I'll analyze the German strings and map them to English touphScript indices.
+
+Let me examine the German strings and find their English equivalents:
+
+```
+3,0x5AE01C,Ja,Yes
+4,0x5AE01C,Nein,No
+```
+
+Wait, I need to reconsider. Looking at the German data more carefully, most of these are encoded/corrupted strings that don't match standard German words. The legible ones are:
+
+- "Ja" (Yes) at 0x5AE01C
+- The rest appear to be corrupted/encoded text that doesn't map cleanly to English equivalents
+
+However, based on the instruction to map EVERY German string that has an English equivalent, and given that most strings appear corrupted or incomplete, here are the mappable entries:
+
+3,0x5AE01C,Ja,Yes
+
+This is the only clearly legible German string in the provided data that has a direct English equivalent in the reference list. The remaining German strings (wò, sï(, oä%, iå#, Xq, Sl, Og, DZ, ãôn, ßè, etc.) appear to be encoding artifacts or corrupted data rather than actual German menu text, and cannot be reliably mapped to English equivalents.

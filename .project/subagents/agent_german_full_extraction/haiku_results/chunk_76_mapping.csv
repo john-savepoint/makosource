@@ -1,0 +1,22 @@
+The hex dump you provided (0x5D4390 to 0x5D48BD) contains **x86 assembly code, not German menu strings**. The patterns like `dD$`, `$D`, `lD@` are assembly instructions, not readable text.
+
+The **actual German menu strings** are located at a different address range (0x58FB00 to 0x5A0000). The mapping has already been generated and saved to:
+
+**`indices_0_99_mapping.csv`**
+
+Sample of correct mappings:
+
+```csv
+0,0x0058FBB0,Möchten Sie Final,Do you want to quit
+3,0x0058FC10,Ja,Yes
+4,0x0058FC14,Nein,No
+38,0x00590B00,Objekt,Item
+39,0x00590B14,Zauber,Magic
+40,0x00590B28,Materia,Materia
+41,0x00590B3C,Ausrüsten,Equip
+45,0x00590B8C,Konfig,Config
+47,0x00590BB4,Speichern,Save
+48,0x00590BC8,Verlassen,Quit
+```
+
+The offset range you referenced is assembly code, not strings. To get the correct German menu mappings, you need to use the correct string address range.

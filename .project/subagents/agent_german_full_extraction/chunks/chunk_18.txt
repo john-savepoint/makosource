@@ -1,0 +1,203 @@
+# Chunk 18: Strings 3600 to 3799
+# Offset range: 0x5AAC08 to 0x5AE84C
+
+0x5AAC08 | )));                                                                                                                                                                                                                                               5
+0x5AAE08 |    .                                                                                                                                                                                                                                               3
+0x5AB008 | :::=                                                                                                                                                                                                                                               0
+0x5AB208 |    0                                                                                                                                                                                                                                               ,
+0x5AB40B | P   #                                                                                                                                                                                                                                           '
+0x5AB60B | m   &                                                                                                                                                                                                                                           #
+0x5AB804 |    7   &                                                                                                                                                                                                                                                   4
+0x5ABA08 |    1   '                                                                                                                                                                                                                                               -
+0x5ABC0F | J   +                                                                                                                                                                                                                                           %
+0x5ABE13 | f   .                                                                                                                                                                                                                                           3
+0x5AC018 |    /   $                                                                                                                                                                                                                                   )
+0x5AC21C | KKK>   (                                                                                                                                                                                                                               !^^^A
+0x5AC423 | R   ,                                                                                                                                                                                                                               +
+0x5AC627 | t   /                                                                                                                                                                                                                            222<
+0x5AC82B | f   '                                                                                                                                                                                                                           )
+0x5AC9FD | üE
+0x5ACA2C | QQQ?   )                                                                                                                                                                                                                           /
+0x5ACBF9 | üF
+0x5ACC33 | X   +                                                                                                                                                                                                                       "QQQ?
+0x5ACE01 | ö;
+0x5ACE10 | mä 
+0x5ACE37 | K   *                                                                                                                                                                                                                       )
+0x5ACFF5 | ßD
+0x5ACFFD | ö=
+0x5AD038 | XXX@   !                                                                                                                                                                                                                       -
+0x5AD1F1 | üE
+0x5AD23B | h   %                                                                                                                                                                                                                           -
+0x5AD3ED | üF
+0x5AD3F9 | ö:
+0x5AD418 | Yv 
+0x5AD43C |    1   '                                                                                                                                                                                                                           -
+0x5AD5F5 | ö;
+0x5AD614 | c~"
+0x5AD618 | _Ö 
+0x5AD61C | Ql 
+0x5AD620 | e}:
+0x5AD643 | S   ,                                                                                                                                                                                                                           +
+0x5AD7E9 | ßD
+0x5AD7F1 | ö<
+0x5AD808 | nä%
+0x5AD814 | `{!
+0x5AD818 | \v 
+0x5AD81C | Wq 
+0x5AD820 | Nh 
+0x5AD824 | C] 
+0x5AD847 | Ö   '                                                                                                                                                                                                                           (:::=
+0x5AD9E5 | üE
+0x5ADA10 | a|!
+0x5ADA14 | ]w 
+0x5ADA18 | Xr 
+0x5ADA1C | Tm 
+0x5ADA20 | Oh 
+0x5ADA24 | Kb 
+0x5ADA28 | =T 
+0x5ADA2C | 9P 
+0x5ADA48 |    0   %                                                                                                                                                                                                                           "   /
+0x5ADBE1 | üF
+0x5ADBED | ö;
+0x5ADC0C | c~!
+0x5ADC10 | ^y 
+0x5ADC14 | Yt 
+0x5ADC18 | Un 
+0x5ADC1C | Qi 
+0x5ADC20 | Ld 
+0x5ADC24 | G^ 
+0x5ADC28 | DZ 
+0x5ADC2C | DZ 
+0x5ADC30 | :Q 
+0x5ADC34 | CY%
+0x5ADC4F | L   ,                                                                                                                                                                                                                               )222<
+0x5ADDE1 | ßD
+0x5ADDE9 | ö<
+0x5ADE08 | dÜ!
+0x5ADE0C | _{ 
+0x5ADE10 | [u 
+0x5ADE14 | Vp 
+0x5ADE18 | Rk 
+0x5ADE1C | Me 
+0x5ADE20 | H_ 
+0x5ADE24 | E[ 
+0x5ADE28 | DZ 
+0x5ADE2C | DZ 
+0x5ADE30 | DZ 
+0x5ADE34 | BY 
+0x5ADE38 | 6N 
+0x5ADE3C | hÖP
+0x5ADE54 |    1   &                                                                                                                                                                                                                               *QQQ?
+0x5ADFDD | ßE
+0x5ADFE5 | ö=
+0x5ADFFC | oä%
+0x5AE008 | `|!
+0x5AE00C | \w 
+0x5AE010 | Xq 
+0x5AE014 | Sl 
+0x5AE018 | Og 
+0x5AE01C | Ja 
+0x5AE020 | F[ 
+0x5AE024 | DZ 
+0x5AE028 | DZ 
+0x5AE02C | DZ 
+0x5AE030 | DZ 
+0x5AE034 | DZ 
+0x5AE038 | DZ 
+0x5AE03C | =S 
+0x5AE040 | 9P 
+0x5AE05B | V   -                                                                                                                                                                                                                               !   )   3
+0x5AE1D9 | üF
+0x5AE204 | a}!
+0x5AE208 | ]x 
+0x5AE20C | Ys 
+0x5AE210 | Tm 
+0x5AE214 | Ph 
+0x5AE218 | Kc 
+0x5AE21C | F] 
+0x5AE220 | DZ 
+0x5AE224 | DZ 
+0x5AE228 | DZ 
+0x5AE22C | DZ 
+0x5AE230 | DZ 
+0x5AE234 | DZ 
+0x5AE238 | DZ 
+0x5AE23C | DZ 
+0x5AE240 | DZ 
+0x5AE244 | 9P 
+0x5AE248 | E['
+0x5AE25F | b   $                                                                                                                                                                                                                                       %   -   4
+0x5AE3D5 | üG
+0x5AE3E1 | ö;
+0x5AE400 | c~!
+0x5AE404 | ^y 
+0x5AE408 | Zt 
+0x5AE40C | Uo 
+0x5AE410 | Qi 
+0x5AE414 | Ld 
+0x5AE418 | H_ 
+0x5AE41C | DZ 
+0x5AE420 | DZ 
+0x5AE424 | DZ 
+0x5AE428 | DZ 
+0x5AE42C | DZ 
+0x5AE430 | DZ 
+0x5AE434 | DZ 
+0x5AE438 | DZ 
+0x5AE43C | DZ 
+0x5AE440 | DZ 
+0x5AE444 | DZ 
+0x5AE448 | BX 
+0x5AE44C | 7N 
+0x5AE450 | Qf5
+0x5AE460 |    ,                                                                                                                                                                                                                                                   #   '   ,   0   3   5KKK>
+0x5AE573 | GöööN
+0x5AE58F | PöööNöööN
+0x5AE5D5 | ßD
+0x5AE5DD | ö<
+0x5AE600 | _{ 
+0x5AE604 | [u 
+0x5AE608 | Wp 
+0x5AE60C | Rk 
+0x5AE610 | Nf 
+0x5AE614 | I` 
+0x5AE618 | E[ 
+0x5AE61C | DZ 
+0x5AE620 | DZ 
+0x5AE624 | DZ 
+0x5AE628 | DZ 
+0x5AE62C | DZ 
+0x5AE630 | DZ 
+0x5AE634 | DZ 
+0x5AE638 | DZ 
+0x5AE63C | DZ 
+0x5AE640 | DZ 
+0x5AE644 | DZ 
+0x5AE648 | DZ 
+0x5AE64C | DZ 
+0x5AE650 | @W 
+0x5AE654 | 6N 
+0x5AE658 | Zn?
+0x5AE664 |    0   %                                                                                                                                                                                                                                                                   !   "   "   #   #   #   #   #   #   "   "   #   '   .QQQ?
+0x5AE7D1 | ßE
+0x5AE7FC | a|!
+0x5AE800 | \w 
+0x5AE804 | Xr 
+0x5AE808 | Sl 
+0x5AE80C | Og 
+0x5AE810 | Jb 
+0x5AE814 | F\ 
+0x5AE818 | DZ 
+0x5AE81C | DZ 
+0x5AE820 | DZ 
+0x5AE824 | DZ 
+0x5AE828 | DZ 
+0x5AE82C | DZ 
+0x5AE830 | DZ 
+0x5AE834 | DZ 
+0x5AE838 | DZ 
+0x5AE83C | DZ 
+0x5AE840 | DZ 
+0x5AE844 | DZ 
+0x5AE848 | DZ 
+0x5AE84C | DZ 

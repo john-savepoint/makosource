@@ -1,0 +1,42 @@
+String Matching Report
+Generated: 2025-12-06 01:24:14
+================================================================================
+
+Total EN strings: 137
+Total JA strings: 136
+
+SKIP #20: JA not valid (Too many null bytes) at 0x0051FF5C
+SKIP #21: EN not valid (Too many null bytes) at 0x0051F35C
+WARN #43: JA much longer than EN (92 vs 7) at 0x0051F4B0
+          EN: Triple
+          JA: ムビネバババネバムビ０バババょバヤばえバババばばヤば（バりばょババ、ばババババハば９バババ９バハばゼ
+WARN #54: JA much longer than EN (11 vs 3) at 0x0051F634
+          EN: AP
+          JA: つぎのレベルまであと
+WARN #77: JA much longer than EN (13 vs 7) at 0x0051F814
+          EN: Gil UP
+          JA: エンカウントりつＤＯＷＮ
+WARN #85: JA much longer than EN (18 vs 11) at 0x0051F8B4
+          EN: Attack-All
+          JA: づくクサほクさくさこバぢササはひか
+WARN #87: JA much longer than EN (173 vs 13) at 0x0051F8DC
+          EN: HP MP change
+          JA: ムビユバババユバムビ０バババＪバめばづばマばＪバブばづばババＪバムビづばバデバみバネバそバゼバにばい
+SKIP #88: JA not valid (Too many null bytes) at 0x005205A8
+SKIP #89: EN not valid (Too many null bytes) at 0x0051F9A8
+WARN #101: JA much longer than EN (96 vs 15) at 0x0051FAEC
+          EN: Not enough MP.
+          JA: ムビょバババょバムビ０バババ・バムビゴばβばピバァバネバばピバロバネバβばババァバ０バババババハばコ
+WARN #112: JA much longer than EN (12 vs 6) at 0x0051FBE0
+          EN: Least
+          JA: そうか！　わかったぞ。
+
+Summary:
+  Matched and patched: 125
+  Skipped (invalid): 11
+  Warnings: 7
+
+WARNING: String count mismatch!
+  EN has 137 strings
+  JA has 136 strings
+  Difference: 1

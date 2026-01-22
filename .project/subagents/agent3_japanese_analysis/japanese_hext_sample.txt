@@ -1,0 +1,853 @@
+# Japanese HEXT Sample - First 50 Patches with Detailed Annotations
+#
+# Created: 2026-01-02 21:10 JST
+# Session ID: c31eb494-cb6d-474e-8432-4bc1284b2ed0
+# Source: /mnt/c/Program Files (x86)/Steam/steamapps/common/FINAL FANTASY VII/hext/ff7/ja/japanese_menu.txt
+#
+# This file shows the first 50 patches from the generated Japanese HEXT file
+# with added annotations explaining each patch in detail.
+#
+# ============================================================================
+# HEXT FORMAT EXPLANATION
+# ============================================================================
+#
+# Each patch has the format:
+#   XXXXXX = AA BB CC DD ...
+#
+# Where:
+#   XXXXXX = Virtual Address (VA) in the loaded executable
+#   AA BB CC DD = Bytes to write at that address
+#
+# VA Calculation:
+#   VA = (EN_FileOffset - 0x3B8A00) + 0x3BA000 + 0x400000
+#
+# Example for EN offset 0x518370:
+#   VA = (0x518370 - 0x3B8A00) + 0x3BA000 + 0x400000
+#      = 0x15F970 + 0x3BA000 + 0x400000
+#      = 0x919970
+#
+# ============================================================================
+# BYTE ENCODING REFERENCE
+# ============================================================================
+#
+# FF7 Encoding (DEF type):
+#   0x00 = Space
+#   0x01-0x5F = ASCII - 0x20 (e.g., 0x21 = 'A', 0x22 = 'B')
+#   0xFF = String terminator
+#   0xFA-0xFE = Multi-byte prefix for extended characters
+#
+# Japanese Characters (jafont_1):
+#   Hiragana: Various positions (e.g., あ=0x6B, い=0x6D)
+#   Katakana: Various positions (e.g., ア=0x6A, イ=0x6C)
+#   Fullwidth Latin: Positions 180-205 (Ａ-Ｚ)
+#
+# ============================================================================
+# SAMPLE PATCHES WITH ANNOTATIONS
+# ============================================================================
+
+# ============================================================
+# PATCH 1: Quit dialog line 1
+# ============================================================
+# EN: "Do you want to quit" (30 bytes)
+# JA: "ファイナルファンタジー７の" (Final Fantasy 7's)
+# Type: DEF (standard FF7 encoding)
+# Note: First line of the quit confirmation dialog
+#
+# Byte breakdown:
+#   44 = フ (katakana fu)
+#   A4 = ァ (small a)
+#   6C = イ (i)
+#   72 = ナ (na)
+#   8A = ル (ru)
+#   44 = フ (fu)
+#   A4 = ァ (small a)
+#   98 = ン (n)
+#   5E = タ (ta)
+#   16 = ジ (ji)
+#   D0 = ー (prolonged sound mark)
+#   3A = ７ (fullwidth 7)
+#   7B = の (hiragana no)
+#   FF = terminator
+#
+919970 = 44 A4 6C 72 8A 44 A4 98 5E 16 D0 3A 7B FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 2: Quit dialog line 2
+# ============================================================
+# EN: "playing Final Fantasy VII" (30 bytes)
+# JA: "プレイを終了します。" (Will end play.)
+# Type: DEF
+#
+# Byte breakdown:
+#   2D = プ (pu)
+#   8C = レ (re)
+#   6C = イ (i)
+#   9B = を (wo - object marker)
+#   FB = (extended char prefix?)
+#   DA = (part of extended)
+#   FB = (extended)
+#   D4 = (extended)
+#   57 = し (shi)
+#   7D = ま (ma)
+#   59 = す (su)
+#   3E = 。(Japanese period)
+#   FF = terminator
+#
+91998E = 2D 8C 6C 9B FB DA FB D4 57 7D 59 3E FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 3: Quit dialog line 3
+# ============================================================
+# EN: "and return to Windows?" (30 bytes)
+# JA: "よろしいですか？" (Is that okay?)
+# Type: DEF
+#
+# Byte breakdown:
+#   95 = よ (yo)
+#   8F = ろ (ro)
+#   57 = し (shi)
+#   6D = い (i)
+#   25 = で (de)
+#   59 = す (su)
+#   4B = か (ka)
+#   AF = ？ (fullwidth question mark)
+#   FF = terminator
+#
+9199AC = 95 8F 57 6D 25 59 4B AF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 4: Yes option
+# ============================================================
+# EN: "Yes" (4 bytes)
+# JA: "はい" (yes)
+# Type: DEF
+#
+# Byte breakdown:
+#   41 = は (ha)
+#   6D = い (i)
+#   FF = terminator
+#   00 = padding
+#
+9199D0 = 41 6D FF 00
+
+# ============================================================
+# PATCH 5: No option
+# ============================================================
+# EN: "No" (4 bytes)
+# JA: "いいえ" (no)
+# Type: DEF
+#
+# Byte breakdown:
+#   6D = い (i)
+#   6D = い (i)
+#   6F = え (e)
+#   FF = terminator
+#
+9199D4 = 6D 6D 6F FF
+
+# ============================================================
+# PATCH 6: Config - Window color
+# ============================================================
+# EN: "Window color" (48 bytes)
+# JA: "ウィンドウカラー" (Window color - katakana)
+# Type: DEF
+#
+# Byte breakdown:
+#   68 = ウ (u)
+#   A6 = ィ (small i)
+#   98 = ン (n)
+#   26 = ド (do)
+#   68 = ウ (u)
+#   4A = カ (ka)
+#   86 = ラ (ra)
+#   D0 = ー (prolonged mark)
+#   FF = terminator
+#
+919EA8 = 68 A6 98 26 68 4A 86 D0 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 7: Config - Sound
+# ============================================================
+# EN: "Sound" (48 bytes)
+# JA: "サウンド" (Sound - katakana)
+# Type: DEF
+#
+# Byte breakdown:
+#   54 = サ (sa)
+#   68 = ウ (u)
+#   98 = ン (n)
+#   26 = ド (do)
+#   FF = terminator
+#
+919ED8 = 54 68 98 26 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 8: Config - Controller (displayed as Keyboard in JA)
+# ============================================================
+# EN: "Controller" (48 bytes)
+# JA: "キーボード" (Keyboard)
+# Type: DEF
+# Note: JA version uses "Keyboard" instead of "Controller"
+#
+# Byte breakdown:
+#   4C = キ (ki)
+#   D0 = ー (prolonged mark)
+#   08 = ボ (bo)
+#   D0 = ー (prolonged mark)
+#   26 = ド (do)
+#   FF = terminator
+#
+919F08 = 4C D0 08 D0 26 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 9: Config - Cursor
+# ============================================================
+# EN: "Cursor" (48 bytes)
+# JA: "カーソル" (Cursor)
+# Type: DEF
+#
+# Byte breakdown:
+#   4A = カ (ka)
+#   D0 = ー (prolonged mark)
+#   5C = ソ (so)
+#   8A = ル (ru)
+#   FF = terminator
+#
+919F38 = 4A D0 5C 8A FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 10: Config - ATB
+# ============================================================
+# EN: "ATB" (48 bytes)
+# JA: "ＡＴＢ" (ATB - fullwidth)
+# Type: DEF
+# Note: Uses fullwidth Latin characters from jafont_1
+#
+# Byte breakdown:
+#   B4 = Ａ (fullwidth A, position 180)
+#   C7 = Ｔ (fullwidth T, position 199)
+#   B5 = Ｂ (fullwidth B, position 181)
+#   FF = terminator
+#
+919F68 = B4 C7 B5 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 11: Config - Battle speed
+# ============================================================
+# EN: "Battle speed" (48 bytes)
+# JA: "バトルスピード" (Battle speed)
+# Type: DEF
+#
+# Byte breakdown:
+#   00 = space (leading space for alignment?)
+#   66 = ト (to)
+#   8A = ル (ru)
+#   58 = ス (su)
+#   2B = ピ (pi)
+#   D0 = ー (prolonged mark)
+#   26 = ド (do)
+#   FF = terminator
+# Note: First byte 00 may be intentional spacing
+#
+919F98 = 00 66 8A 58 2B D0 26 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 12: Config - Battle message
+# ============================================================
+# EN: "Battle message" (48 bytes)
+# JA: "バトルメッセージ" (Battle message)
+# Type: DEF
+#
+# Byte breakdown:
+#   00 = space
+#   66 = ト (to)
+#   8A = ル (ru)
+#   82 = メ (me)
+#   9C = ッ (small tsu)
+#   5A = セ (se)
+#   D0 = ー (prolonged mark)
+#   16 = ジ (ji)
+#   FF = terminator
+#
+919FC8 = 00 66 8A 82 9C 5A D0 16 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 13: Config - Field message
+# ============================================================
+# EN: "Field message" (48 bytes)
+# JA: "フィールドメッセージ" (Field message)
+# Type: DEF
+#
+# Byte breakdown:
+#   44 = フ (fu)
+#   A6 = ィ (small i)
+#   D0 = ー (prolonged mark)
+#   8A = ル (ru)
+#   26 = ド (do)
+#   82 = メ (me)
+#   9C = ッ (small tsu)
+#   5A = セ (se)
+#   D0 = ー (prolonged mark)
+#   16 = ジ (ji)
+#   FF = terminator
+#
+919FF8 = 44 A6 D0 8A 26 82 9C 5A D0 16 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 14: Config - Camera angle
+# ============================================================
+# EN: "Camera angle" (48 bytes)
+# JA: "カメラアングル" (Camera angle)
+# Type: DEF
+#
+# Byte breakdown:
+#   4A = カ (ka)
+#   82 = メ (me)
+#   86 = ラ (ra)
+#   6A = ア (a)
+#   98 = ン (n)
+#   0E = グ (gu)
+#   8A = ル (ru)
+#   FF = terminator
+#
+91A028 = 4A 82 86 6A 98 0E 8A FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 15: Config - Normal
+# ============================================================
+# EN: "Normal" (48 bytes)
+# JA: "ノーマル" (Normal)
+# Type: DEF
+#
+# Byte breakdown:
+#   7A = ノ (no)
+#   D0 = ー (prolonged mark)
+#   7C = マ (ma)
+#   8A = ル (ru)
+#   FF = terminator
+#
+91A208 = 7A D0 7C 8A FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 16: Config - Customize
+# ============================================================
+# EN: "Customize" (48 bytes)
+# JA: "カスタム" (Custom)
+# Type: DEF
+#
+# Byte breakdown:
+#   4A = カ (ka)
+#   58 = ス (su)
+#   5E = タ (ta)
+#   80 = ム (mu)
+#   FF = terminator
+#
+91A238 = 4A 58 5E 80 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 17: Config - Initial
+# ============================================================
+# EN: "Initial" (48 bytes)
+# JA: "しょき" (initial/default - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   57 = し (shi)
+#   A3 = ょ (small yo)
+#   4D = き (ki)
+#   FF = terminator
+#
+91A268 = 57 A3 4D FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 18: Config - Memory
+# ============================================================
+# EN: "Memory" (48 bytes)
+# JA: "きおく" (memory - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   4D = き (ki)
+#   71 = お (o)
+#   4F = く (ku)
+#   FF = terminator
+#
+91A298 = 4D 71 4F FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 19: Config - Active
+# ============================================================
+# EN: "Active" (48 bytes)
+# JA: "アクティブ" (Active)
+# Type: DEF
+#
+# Byte breakdown:
+#   6A = ア (a)
+#   4E = ク (ku)
+#   64 = テ (te)
+#   A6 = ィ (small i)
+#   04 = ブ (bu)
+#   FF = terminator
+#
+91A2C8 = 6A 4E 64 A6 04 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 20: Config - Recommended
+# ============================================================
+# EN: "Recommended" (48 bytes)
+# JA: "おすすめ" (recommended - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   71 = お (o)
+#   59 = す (su)
+#   59 = す (su)
+#   83 = め (me)
+#   FF = terminator
+#
+91A2F8 = 71 59 59 83 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 21: Config - Wait
+# ============================================================
+# EN: "Wait" (48 bytes)
+# JA: "ウェイト" (Wait)
+# Type: DEF
+#
+# Byte breakdown:
+#   68 = ウ (u)
+#   AA = ェ (small e)
+#   6C = イ (i)
+#   66 = ト (to)
+#   FF = terminator
+#
+91A328 = 68 AA 6C 66 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 22: Config - Auto
+# ============================================================
+# EN: "Auto" (48 bytes)
+# JA: "オート" (Auto)
+# Type: DEF
+#
+# Byte breakdown:
+#   70 = オ (o)
+#   D0 = ー (prolonged mark)
+#   66 = ト (to)
+#   FF = terminator
+#
+91A358 = 70 D0 66 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 23: Config - Fixed
+# ============================================================
+# EN: "Fixed" (48 bytes)
+# JA: "こてい" (fixed - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   53 = こ (ko)
+#   65 = て (te)
+#   6D = い (i)
+#   FF = terminator
+#
+91A388 = 53 65 6D FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 24: Config - Slow
+# ============================================================
+# EN: "Slow" (48 bytes)
+# JA: "おそい" (slow - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   71 = お (o)
+#   5D = そ (so)
+#   6D = い (i)
+#   FF = terminator
+#
+91A3E8 = 71 5D 6D FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 25: Config - Fast
+# ============================================================
+# EN: "Fast" (48 bytes)
+# JA: "はやい" (fast - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   41 = は (ha)
+#   91 = や (ya)
+#   6D = い (i)
+#   FF = terminator
+#
+91A418 = 41 91 6D FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 26: Config - Magic order
+# ============================================================
+# EN: "Magic order" (48 bytes)
+# JA: "まほうのならびかた" (magic order - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   7D = ま (ma)
+#   49 = ほ (ho)
+#   69 = う (u)
+#   7B = の (no)
+#   73 = な (na)
+#   87 = ら (ra)
+#   03 = び (bi)
+#   4B = か (ka)
+#   5F = た (ta)
+#   FF = terminator
+#
+91A4D8 = 7D 49 69 7B 73 87 03 4B 5F FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 27: Config - restore (magic category)
+# ============================================================
+# EN: "restore" (48 bytes)
+# JA: "かいふく" (recovery/restore - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   4B = か (ka)
+#   6D = い (i)
+#   45 = ふ (fu)
+#   4F = く (ku)
+#   FF = terminator
+#
+91A508 = 4B 6D 45 4F FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 28: Config - attack (magic category)
+# ============================================================
+# EN: "attack" (48 bytes)
+# JA: "こうげき" (attack - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   53 = こ (ko)
+#   69 = う (u)
+#   11 = げ (ge)
+#   4D = き (ki)
+#   FF = terminator
+#
+91A538 = 53 69 11 4D FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 29: Config - indirect (magic category)
+# ============================================================
+# EN: "indirect" (48 bytes)
+# JA: "かんせつ" (indirect - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   4B = か (ka)
+#   99 = ん (n)
+#   5B = せ (se)
+#   63 = つ (tsu)
+#   FF = terminator
+#
+91A568 = 4B 99 5B 63 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 30: Config - No. (number label)
+# ============================================================
+# EN: "No." (48 bytes)
+# JA: "ＮＯ．" (NO. - fullwidth)
+# Type: DEF
+#
+# Byte breakdown:
+#   C1 = Ｎ (fullwidth N, position 193)
+#   C2 = Ｏ (fullwidth O, position 194)
+#   B2 = ． (fullwidth period, position 178)
+#   FF = terminator
+#
+91A5C8 = C1 C2 B2 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 31: Config - Set Sound & Music Volume
+# ============================================================
+# EN: "Set Sound & Music Volume" (25 bytes)
+# JA: "ボリュームせってい" (Volume setting)
+# Type: DEF
+#
+# Byte breakdown:
+#   08 = ボ (bo)
+#   88 = リ (ri)
+#   A0 = ュ (small yu)
+#   D0 = ー (prolonged mark)
+#   80 = ム (mu)
+#   5B = せ (se)
+#   9D = っ (small tsu)
+#   65 = て (te)
+#   6D = い (i)
+#   FF = terminator
+#
+91A888 = 08 88 A0 D0 80 5B 9D 65 6D FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 32: Config - Not supported.
+# ============================================================
+# EN: "Not supported." (25 bytes)
+# JA: "サポートされていません" (Not supported)
+# Type: DEF
+#
+# Byte breakdown:
+#   54 = サ (sa)
+#   31 = ポ (po)
+#   D0 = ー (prolonged mark)
+#   66 = ト (to)
+#   55 = さ (sa - hiragana)
+#   8D = れ (re)
+#   65 = て (te)
+#   6D = い (i)
+#   7D = ま (ma)
+#   5B = せ (se)
+#   99 = ん (n)
+#   FF = terminator
+#
+91A8A1 = 54 31 D0 66 55 8D 65 6D 7D 5B 99 FF 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 33: Menu - Item
+# ============================================================
+# EN: "Item" (20 bytes)
+# JA: "アイテム" (Item)
+# Type: DEF
+#
+# Byte breakdown:
+#   6A = ア (a)
+#   6C = イ (i)
+#   64 = テ (te)
+#   80 = ム (mu)
+#   FF = terminator
+#
+91A8C0 = 6A 6C 64 80 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 34: Menu - Magic
+# ============================================================
+# EN: "Magic" (20 bytes)
+# JA: "まほう" (magic - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   7D = ま (ma)
+#   49 = ほ (ho)
+#   69 = う (u)
+#   FF = terminator
+#
+91A8D4 = 7D 49 69 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 35: Menu - Materia
+# ============================================================
+# EN: "Materia" (20 bytes)
+# JA: "マテリア" (Materia)
+# Type: DEF
+#
+# Byte breakdown:
+#   7C = マ (ma)
+#   64 = テ (te)
+#   88 = リ (ri)
+#   6A = ア (a)
+#   FF = terminator
+#
+91A8E8 = 7C 64 88 6A FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 36: Menu - Equip
+# ============================================================
+# EN: "Equip" (20 bytes)
+# JA: "そうび" (equipment - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   5D = そ (so)
+#   69 = う (u)
+#   03 = び (bi)
+#   FF = terminator
+#
+91A8FC = 5D 69 03 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 37: Menu - Status
+# ============================================================
+# EN: "Status" (20 bytes)
+# JA: "ステータス" (Status)
+# Type: DEF
+#
+# Byte breakdown:
+#   58 = ス (su)
+#   64 = テ (te)
+#   D0 = ー (prolonged mark)
+#   5E = タ (ta)
+#   58 = ス (su)
+#   FF = terminator
+#
+91A910 = 58 64 D0 5E 58 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 38: Menu - Order
+# ============================================================
+# EN: "Order" (20 bytes)
+# JA: "たいけい" (formation - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   5F = た (ta)
+#   6D = い (i)
+#   51 = け (ke)
+#   6D = い (i)
+#   FF = terminator
+#
+91A924 = 5F 6D 51 6D FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 39: Menu - Limit
+# ============================================================
+# EN: "Limit" (20 bytes)
+# JA: "リミット" (Limit)
+# Type: DEF
+#
+# Byte breakdown:
+#   88 = リ (ri)
+#   7E = ミ (mi)
+#   9C = ッ (small tsu)
+#   66 = ト (to)
+#   FF = terminator
+#
+91A938 = 88 7E 9C 66 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 40: Menu - Config
+# ============================================================
+# EN: "Config" (20 bytes)
+# JA: "コンフィグ" (Config)
+# Type: DEF
+#
+# Byte breakdown:
+#   52 = コ (ko)
+#   98 = ン (n)
+#   44 = フ (fu)
+#   A6 = ィ (small i)
+#   0E = グ (gu)
+#   FF = terminator
+#
+91A94C = 52 98 44 A6 0E FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 41: Menu - PHS
+# ============================================================
+# EN: "PHS" (20 bytes)
+# JA: "ＰＨＳ" (PHS - fullwidth)
+# Type: DEF
+#
+# Byte breakdown:
+#   C3 = Ｐ (fullwidth P, position 195)
+#   BB = Ｈ (fullwidth H, position 187)
+#   C6 = Ｓ (fullwidth S, position 198)
+#   FF = terminator
+#
+91A960 = C3 C6 BB FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 42: Menu - Save
+# ============================================================
+# EN: "Save" (20 bytes)
+# JA: "セーブ" (Save)
+# Type: DEF
+#
+# Byte breakdown:
+#   5A = セ (se)
+#   D0 = ー (prolonged mark)
+#   04 = ブ (bu)
+#   FF = terminator
+#
+91A974 = 5A D0 04 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 43: Menu - Quit
+# ============================================================
+# EN: "Quit" (20 bytes)
+# JA: "しゅうりょう" (end/quit - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   57 = し (shi)
+#   A1 = ゅ (small yu)
+#   69 = う (u)
+#   89 = り (ri)
+#   A3 = ょ (small yo)
+#   69 = う (u)
+#   FF = terminator
+#
+91A988 = 57 A1 69 89 A3 69 FF 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 44: Menu - Time
+# ============================================================
+# EN: "Time" (20 bytes)
+# JA: "じかん" (time - hiragana)
+# Type: DEF
+#
+# Byte breakdown:
+#   17 = じ (ji)
+#   4B = か (ka)
+#   99 = ん (n)
+#   FF = terminator
+#
+91A9D8 = 17 4B 99 FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCH 45: Menu - Gil
+# ============================================================
+# EN: "Gil" (20 bytes)
+# JA: "ギル" (Gil)
+# Type: DEF
+#
+# Byte breakdown:
+#   0C = ギ (gi)
+#   8A = ル (ru)
+#   FF = terminator
+#
+91A9EC = 0C 8A FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+# ============================================================
+# PATCHES 46-50 continue with similar patterns...
+# (Truncated for readability - full file has 559 patches total)
+# ============================================================
+
+# ============================================================================
+# SPECIAL CASES EXAMPLES
+# ============================================================================
+
+# KEYBOARD REGION EXAMPLE (Index 77 - "escape")
+# These use apply_keyboard_offset() to add +0x20 to JA bytes
+# The game subtracts 0x20 before font lookup, so we pre-compensate
+#
+# JA raw bytes: B8 C6 B6 B4 C3 B8 (ＥＳＣＡＰＥ in RGB)
+# After +0x20: D8 E6 D6 D4 E3 D8
+# Game -0x20:  B8 C6 B6 B4 C3 B8 (correct lookup!)
+#
+# 91B5E0 = D8 E6 D6 D4 E3 D8 00 00
+
+# SAVE SLOT EXAMPLE (Index 649 - "Save 3")
+# These use add_save_slot_spacing() to add ideographic spaces (0x3F)
+# For cursor alignment in the save menu
+#
+# JA text: セーブ３ (Save 3)
+# With spacing: セーブ３ + 2 ideographic spaces + terminator
+
+# SHOP MENU EXAMPLE (Index 572 - "Buy Sell Exit")
+# Uses fix_shop_menu_spacing() for manual spacing
+# かう　　うる　　　でる (Buy  Sell   Exit)
+#
+# 922D00 = 4B 69 3F 3F 69 8B 3F 3F 3F 25 8B FF 00 00 00 00 00 00 00 00
+
+# ============================================================================
+# END OF SAMPLE
+# ============================================================================

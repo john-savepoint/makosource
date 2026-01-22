@@ -1,0 +1,15 @@
+The issue is clear now. The German strings you've provided (with hex offsets like 0x5D14FF) are **not** in the menu string region. The menu mapping work already completed covers offsets from 0x0058FBAF to 0x005914CC. Your chunk (0x5D14FF to 0x5D19B0) is in a completely different region of the executable - approximately **0x6E times larger** in offset.
+
+This appears to be from a different section of the ff7_de.exe binary, not the menu strings section. The corrupted-looking output ("tD4", "lD<0", "|D0", etc.) suggests:
+
+1. **Wrong decoding scheme** - These strings might not be using the touphScript encoding
+2. **Not text data** - They might be binary/resource data not meant to be decoded as text
+3. **Different language file** - This might be from a different FF7 localization file entirely
+
+**What I need to proceed:**
+
+1. **Clarify the source**: Are these strings from ff7_de.exe or a different file?
+2. **Confirm the purpose**: What menu items should be in this chunk (0x5D14FF - 0x5D19B0)?
+3. **Provide context**: Do you have a decoded/reference version of these German strings, or documentation of what chunk 67 should contain?
+
+The existing German-English mapping (51 verified entries) is already complete and comprehensive. If you need to extend it or map a different section, I'll need clearer source data or specifications about what this chunk should contain.

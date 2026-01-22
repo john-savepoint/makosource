@@ -1,0 +1,7 @@
+```csv
+index,de_offset,de_text,en_text
+```
+
+**Finding**: The German chunk (0x5CAF15-0x5CB6A9) contains encoded/binary data without readable German menu strings. No mappings can be reliably created from this dataset. The data appears to be binary-encoded menu structure or obfuscated text, not ASCII strings like the English reference file.
+
+**Recommendation**: Verify the German offset range or provide raw binary data to decode properly.

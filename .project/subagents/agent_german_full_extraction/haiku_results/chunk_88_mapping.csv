@@ -1,0 +1,12 @@
+**Result:**
+
+The German string data provided appears to be corrupted binary rather than readable text. The strings consist of machine code/assembly artifacts (register references like `D$`, `dD$`, stack frame operations like `lD,`) rather than actual menu text strings.
+
+**No mappings generated** - the German data cannot be reliably parsed as menu items.
+
+To get valid results, you would need:
+1. Properly extracted German text strings from ff7_de.exe (not the raw binary/assembly around them)
+2. A decoder that properly handles the FF7 text encoding format
+3. Verification that the offset range 0x5D836F-0x5D893A actually contains string data (not code/metadata)
+
+If you have a properly decoded list of German menu strings, I can generate the CSV mapping.

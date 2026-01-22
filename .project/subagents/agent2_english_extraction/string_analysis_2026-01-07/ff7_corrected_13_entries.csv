@@ -1,0 +1,14 @@
+index,offset,expected,csv_original,decoded,hex
+499,0x0052078A,",",[CTRL:0C],",",0C
+500,0x0052078B,.,[CTRL:0E],.,0E
+501,0x0052078C,+,[CTRL:0B],+,0B
+502,0x0052078D,-,[CTRL:0D],-,0D
+529,0x005207A8,:,[CTRL:1A],:,1A
+530,0x005207A9,;,[CTRL:1B],;,1B
+371,0x0051F584,"Sephiroth""……""",Sephiroth[B2][A9][A9][B3],"Sephiroth""……""",33 45 50 48 49 52 4F 54 48 B2 A9 A9 B3 FF 00 00 00 00 00 00 ...
+712,0x0057B4C0,Enemy Away,Enemy,Enemy Away,25 4E 45 4D 59 00 21 57 41 59 FF FF FF FF FF FF
+713,0x0057B4D0,Sneak Attack,Sneak,Sneak Attack,33 4E 45 41 4B 00 21 54 54 41 43 4B FF FF FF FF
+715,0x0057B4F0,Swift Bolt,Swift,Swift Bolt,33 57 49 46 54 00 22 4F 4C 54 FF FF FF FF FF FF
+716,0x0057B500,Fire Veil,Fire,Fire Veil,26 49 52 45 00 36 45 49 4C FF FF FF FF FF FF FF
+718,0x0057B520,Turbo Ether,Turbo,Turbo Ether,34 55 52 42 4F 00 25 54 48 45 52 FF FF FF FF FF
+720,0x0057B540,Ice Crystal,Ice,Ice Crystal,29 43 45 00 23 52 59 53 54 41 4C FF FF FF FF FF

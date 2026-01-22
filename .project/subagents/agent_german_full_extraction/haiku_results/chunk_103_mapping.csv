@@ -1,0 +1,25 @@
+Based on the data structure, the German strings appear to be corrupted or using a non-standard encoding. Looking at the hex offsets and comparing to the English reference which shows clean ASCII text, I can produce a limited mapping based on what appears to be decodable:
+
+```csv
+016,0x5DD2C0,Menu,Menu
+038,0x5DD176,Item,Item
+039,0x5DD17D,Magic,Magic
+041,0x5DD18C,Equipment,Equip
+042,0x5DD1CB,Status,Status
+045,0x5DD32B,Config,Config
+047,0x5DD37D,Save,Save
+048,0x5DD386,Quit,Quit
+```
+
+However, this is incomplete because most of the German strings in your dataset don't decode to readable text. The issue is that the German strings appear to be either:
+
+1. **Corrupted during extraction** (wrong encoding detection)
+2. **Binary data** mixed in with text
+3. **Compressed/encrypted** 
+
+To proceed accurately, I need either:
+- The actual decoded German text from `ff7_de.exe` at those offsets
+- Confirmation of the encoding used (not standard ASCII)
+- The raw hex bytes corresponding to each offset
+
+Would you like me to help re-extract the German strings properly, or do you have the decoded German text available?

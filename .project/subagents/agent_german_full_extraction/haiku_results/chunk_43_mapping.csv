@@ -1,0 +1,19 @@
+Looking at this data, I can see the German strings are heavily fragmented with assembly/binary code mixed in. The raw hex dump shows mostly instruction bytes rather than readable strings. Let me check if there's actual German text data in the extraction or if I need to parse this differently.
+
+The issue is that the data appears to be raw memory dumps with assembly instructions (like `tD$S`, `|D(S`, etc. representing x86 machine code). Without the actual decoded German strings, I cannot create an accurate mapping.
+
+Could you provide:
+
+1. **Decoded German menu strings** - The actual text extracted from those hex offsets (not the raw bytes)
+2. **Or the source file location** - If there's a German strings extraction file similar to the English reference you provided
+
+For example, do you have output like:
+```
+0x5C6A23 | Gegenstand
+0x5C6A47 | Magie
+0x5C6A70 | Ausrüstung
+```
+
+Without the decoded German text, I can only map based on the pattern of the English strings (Item, Magic, Equip, Status, etc.), but I cannot verify the German equivalents are actually in those offsets.
+
+The English reference is well-structured with decoded text like `[038] 0x005192C0 | Item` - I need the same format for German.

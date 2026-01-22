@@ -1,0 +1,26 @@
+index,offset,text,length,confidence,reason
+M001,0x591148,[O.K.],6,95,button label - boundary detection failure
+M002,0x591184,[ABBRECHEN],11,95,button label - boundary detection failure
+M003,0x5911C0,[MENÜ],6,95,button label - boundary detection failure
+M004,0x5911FC,[UMSCHALTEN],12,95,button label - boundary detection failure
+M005,0x5912B0,[KAMERA],8,95,button label - boundary detection failure
+M006,0x5912EC,[ZIEL],6,95,button label - boundary detection failure
+M007,0x591328,[HILFE],7,95,button label - boundary detection failure
+M008,0x591364,[START],7,95,button label - boundary detection failure
+M009,0x5913A0,[HERAUF],8,95,button label - boundary detection failure
+M010,0x5913DC,[UNTEN],7,95,button label - boundary detection failure
+M011,0x591418,[LINKS],7,95,button label - boundary detection failure
+M012,0x591454,[RECHT],7,95,button label - boundary detection failure
+M013,0x5956EE,Auswählen mit [START]-Taste,28,95,party management - boundary detection failure
+M014,0x5959C8,STUFE 1,7,95,limit break menu - boundary detection failure
+M015,0x597698,Chocobo treffen,15,95,materia effect - boundary detection failure
+M016,0x598634,Barret,6,95,character default name - boundary detection failure
+M017,0x598640,Tifa,4,95,character default name - boundary detection failure
+M018,0x59864C,Aeris,5,95,character default name - boundary detection failure
+M019,0x598658,Red XIII,8,95,character default name - boundary detection failure
+M020,0x598664,Yuffie,6,95,character default name - boundary detection failure
+M021,0x598670,Cait Sith,9,95,character default name - boundary detection failure
+M022,0x59867C,Vincent,7,95,character default name - boundary detection failure
+M023,0x598688,Cid,3,95,character default name - boundary detection failure
+M024,0x598694,Choco,5,95,chocobo default name - boundary detection failure
+M025,0x599760,Chocobo treffen,15,95,materia effect duplicate - boundary detection failure

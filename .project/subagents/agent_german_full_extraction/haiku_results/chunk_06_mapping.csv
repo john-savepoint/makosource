@@ -1,0 +1,1 @@
+Note: The majority of this chunk (0x58EC71 to 0x58FB00) contains binary/structural data rather than readable menu strings. Only the quit dialog strings at the end (0x58FBAF onwards) are clearly identifiable as menu text. The earlier offsets appear to be game engine structures, pointers, or encoded data rather than human-readable text strings.

@@ -1,0 +1,517 @@
+original_name,suggested_name,category,line
+sub_10001000,load_graphics_config
+sub_10001340,lookup_japanese_character
+sub_100014B0,setup_viewport_scissor
+sub_10001510,init_render_pipeline
+sub_100018C0,cleanup_graphics_resources
+sub_100019C0,return_success
+sub_100019D0,render_frame_handler
+sub_10001A40,render_overlay_to_surface
+sub_10001B20,handle_window_focus_change
+sub_10001CE0,process_render_frame
+sub_100024A0,render_frame_update
+sub_10002600,render_full_frame
+sub_10002620,setup_viewport_scaling
+sub_10002850,convert_float_rgb_to_argb
+sub_100028F0,get_palette_index_for_locale
+sub_10002970,store_buffer_in_indexed_slot
+sub_100029E0,release_entity_resources
+sub_10002B10,render_surface_to_target
+sub_10003140,convert_pixels_to_argb
+sub_100033B0,allocate_and_init_dual_mode_buffers
+sub_10003A60,process_and_render_buffers
+sub_10003AD0,copy_dual_mode_buffer_data
+sub_10003DD0,get_global_data_structure_by_id
+sub_10003E20,set_graphics_render_state
+sub_10003FF0,apply_graphics_state_flags
+sub_10004390,lookup_character_attribute
+sub_10004400,render_character_sprite
+sub_100044F0,get_character_index_by_locale
+sub_10004550,update_character_selection_state
+sub_10004660,push_character_state_to_history
+sub_10004700,pop_character_state_from_history
+sub_10004780,enable_feature_flag
+sub_100047A0,render_character_glyph_simple
+sub_10004810,render_character_run_batch
+sub_10004AE0,render_character_wrapper_type3
+sub_10004B00,render_character_run_wrapper_type3
+sub_10004B20,render_character_with_transform
+sub_10004C20,render_character_run_wrapper_type2
+sub_10004C40,render_glyph_from_character_data
+sub_10004CB0,enable_render_feature_flag
+sub_10004CD0,allocate_and_init_character_struct
+sub_10004E30,update_hires_timer
+sub_10004FA0,update_timer_normal_speed
+sub_10004FB0,update_timer_fast_speed
+sub_10005000,init_directx_device
+sub_100051A0,detect_cpu_type
+- **Suggested Name**: init_graphics_driver_main	- **Suggested Name**: dll_main_entry
+- **Suggested Name**: handle_exception_create_minidump	### Function sub_10006080 (line 12965)
+- **Suggested Name**: stub_return_zero	### Function sub_10006090 (line 12975)
+- **Suggested Name**: setup_pixel_format_descriptor	### Function sub_100060C0 (line 13005)
+- **Suggested Name**: get_graphics_capability_info	### Function sub_100060D0 (line 13015)
+- **Suggested Name**: return_not_implemented	### Function sub_100060E0 (line 13025)
+- **Suggested Name**: alloc_graphics_buffer_init_caps	### Function sub_10006190 (line 13075)
+- **Suggested Name**: stub_return_success	### Function sub_100061A0 (line 13085)
+- **Suggested Name**: validate_and_clear_output	### Function sub_100061C0 (line 13100)
+- **Suggested Name**: validate_and_clear_output_v2	### Function sub_100061E0 (line 13115)
+- **Suggested Name**: get_graphics_mode_info	### Function sub_100061F0 (line 13125)
+- **Suggested Name**: set_buffer_stride_512	### Function sub_10006200 (line 13135)
+- **Suggested Name**: init_graphics_caps_1280x960_32bit	### Function sub_10006250 (line 13185)
+- **Suggested Name**: init_color_palette_tables	
+sub_10006280,initialize_graphics_subsystem_pointers
+sub_10007010,init_character_tables_and_pointers
+sub_100070A0,read_application_path_config
+sub_10007110,init_placeholder_stub
+sub_10007120,init_graphics_driver_and_patch_engine
+sub_10008050,initialize_global_object_pointers
+sub_10008550,init_system_and_copy_data
+sub_100085D0,render_object_list
+sub_100086B0,cache_graphics_object
+sub_10008820,create_and_apply_shader_texture
+sub_10008890,init_graphics_engine_vtable
+sub_10008C30,format_string_to_buffer
+sub_10008C80,filtered_log_write
+sub_10008D10,log_last_windows_error
+sub_10008DA0,multiply_4x4_matrices
+sub_10008FB0,init_audio_video_system
+sub_10008FE0,cleanup_audio_video_system
+sub_100090C0,init_ffmpeg_playback
+sub_100093F0,get_audio_playback_position
+sub_10009410,upload_video_frame_to_gpu
+sub_10009500,render_accumulated_frames
+sub_10009580,upload_scaled_video_frame
+sub_10009670,process_video_frame_all_scales
+sub_100096C0,sync_audio_to_video
+sub_10009740,main_playback_loop
+sub_10009C60,seek_media_to_start
+sub_10009C90,get_playback_frame_count
+sub_10009CA0,install_playback_hooks_and_init
+sub_10009EE0,load_video_file_with_locale
+sub_1000A0A0,stop_video_playback
+sub_1000A0C0,activate_audio_playback
+sub_1000A0F0,cleanup_audio_playback
+sub_1000A160,playback_frame_update_loop
+sub_1000A1D0,get_audio_playback_status
+sub_1000A1F0,set_audio_volume
+sub_1000A2A0,render_audio_to_hardware_buffer
+sub_1000A3E0,load_and_init_vgmstream_track
+sub_1000A5B0,locked_audio_callback
+sub_1000A5D0,audio_worker_thread
+sub_1000A790,close_and_reset_vgmstream_track
+sub_1000A880,queue_track_crossfade
+sub_1000A910,request_audio_pause
+sub_1000A940,request_audio_resume
+sub_1000A980,is_audio_not_fading
+sub_1000A9E0,set_audio_master_volume
+sub_1000AA10,reset_audio_position
+sub_1000AA50,initiate_audio_fade_transition
+sub_1000AAD0,seek_audio_by_slider_position
+sub_1000AB30,init_audio_subsystem
+sub_1000AEF0,audio_signal_ready
+sub_1000AF40,invoke_audio_callback_2
+sub_1000AF70,invoke_audio_callback_3
+sub_1000AF80,invoke_audio_callback_4
+sub_1000AF90,invoke_audio_callback_5_conditional
+sub_1000AFB0,invoke_audio_callback_7
+sub_1000AFC0,invoke_audio_callback_8
+sub_1000AFD0,invoke_audio_callback_9
+sub_1000AFE0,invoke_audio_callback_10
+sub_1000AFF0,patch_jmp_instruction
+sub_1000B040,unpatch_jmp_instructions
+sub_1000B0A0,setup_ui_viewport_transform
+sub_1000B300,render_in_ui_viewport
+sub_1000B350,render_3d_scene_with_shader
+sub_1000B530,restore_render_state_from_context
+sub_1000B6A0,render_from_structure
+sub_1000B6D0,query_async_resources
+sub_1000B740,render_with_transform
+sub_1000B9D0,set_blend_mode
+sub_1000BBB0,render_formatted_text_jp
+sub_1000C380,init_render_frame
+sub_1000C5B0,cleanup_render_context
+sub_1000C640,create_render_surfaces
+sub_1000C750,release_render_surfaces
+sub_1000C780,compile_shader_pipeline
+sub_1000C9D0,release_compiled_shaders
+sub_1000CA10,activate_compiled_shaders
+sub_1000CAD0,build_glyph_vertex_buffer
+sub_1000CD00,create_directx_surface_from_data
+sub_1000CDB0,set_rendering_state_value
+sub_1000CE30,load_character_to_surface
+sub_1000CED0,get_glyph_from_array
+sub_1000CF70,configure_texture_rendering
+sub_1000D0D0,execute_with_setup_teardown
+sub_1000D0F0,extract_render_parameters
+sub_1000D180,init_mesh_render_state
+sub_1000D270,init_all_meshes
+sub_1000D350,render_all_meshes_at_position
+sub_1000D470,open_file_binary
+sub_1000D4F0,lookup_asset_file_metadata
+sub_1000D6F0,open_game_asset_file
+sub_1000D930,read_from_asset_file
+sub_1000D9F0,get_file_size_or_read
+sub_1000DA70,close_asset_file_metadata
+sub_1000DAC0,open_file_with_path_resolution
+sub_1000E160,validated_file_read
+sub_1000E220,file_read_exact_count
+sub_1000E2C0,validated_raw_fread
+sub_1000E310,file_write_with_allocation
+sub_1000E390,get_file_size
+sub_1000E3E0,get_file_position
+sub_1000E400,validated_file_seek
+sub_1000E470,render_scene_objects
+sub_1000EAB0,render_simple_quad
+sub_1000EB10,render_indexed_geometry
+sub_1000EB40,patch_function_calls
+sub_1000EB90,decode_color_from_table
+sub_1000EBE0,apply_graphics_op_to_all_devices
+sub_1000EC20,apply_state_to_all_devices
+sub_1000EC50,apply_graphics_op_with_flag
+sub_1000ECA0,cleanup_all_devices
+sub_1000ED10,apply_parametric_op_to_devices
+sub_1000ED80,upload_quad_vertices
+sub_1000EF70,get_character_glyph_width
+sub_1000EFD0,calculate_string_width
+sub_1000F190,render_character_glyph
+sub_1000F5C0,render_text_string
+sub_1000F7D0,render_text_block
+sub_1000FB80,patch_character_data
+sub_1000FC60,render_character_simple
+sub_1000FCC0,render_text_string_mode0
+sub_1000FCF0,render_text_string_mode1
+sub_1000FD20,render_text_string_conditional
+sub_1000FDA0,render_centered_text
+sub_1000FF60,call_external_with_mode_update
+sub_1000FF90,patch_game_pointers
+sub_10010010,render_text_conditional_mode
+sub_10010080,scan_game_data_for_content
+sub_10010110,conditional_execution_dispatcher
+sub_10010130,init_japanese_text_patches
+sub_100102C0,init_randomized_game_structure
+sub_10010350,calculate_text_dimensions
+sub_10010790,clip_text_rectangles_to_screen
+sub_10010950,render_text_with_position
+sub_10010980,clamp_and_set_register_value
+sub_100109A0,clamp_and_set_register_value_offset2
+sub_100109C0,patch_game_code_hooks
+sub_10010A90,patch_game_code_nops
+sub_10010B00,get_and_reset_game_buffer
+sub_10010B20,init_runtime_hooks_and_patches
+sub_10011030,calculate_transformed_position
+sub_10011090,lookup_character_formatting
+sub_10011130,read_input_device_state
+sub_100111A0,check_game_state
+sub_100111D0,init_bad_alloc_exception
+sub_100111E0,assign_bad_alloc_exception
+sub_10011210,fast_memory_compare
+- **Suggested Name**: stub_registry_close_key	### Function sub_100112A0 (line 22162)
+- **Suggested Name**: init_logic_error_exception	### Function sub_10011320 (line 22191)
+- **Suggested Name**: destroy_logic_error_exception	### Function sub_10011370 (line 22222)
+- **Suggested Name**: init_length_error_exception	### Function sub_10011390 (line 22240)
+- **Suggested Name**: destroy_logic_error_base	### Function sub_100113D0 (line 22269)
+- **Suggested Name**: init_out_of_range_exception	### Function sub_100113F0 (line 22287)
+- **Suggested Name**: init_out_of_range_from_exception	### Function sub_10011410 (line 22297)
+- **Suggested Name**: copy_logic_error_exception	### Function sub_10011490 (line 22360)
+- **Suggested Name**: get_array_element_1	### Function sub_100114A0 (line 22370)
+- **Suggested Name**: set_payload_pointer	### Function sub_100114B0 (line 22380)
+- **Suggested Name**: get_payload_pointer	### Function sub_100114C0 (line 22390)
+- **Suggested Name**: init_int_array_payload	### Function sub_10011540 (line 22440)
+- **Suggested Name**: copy_int_array_to_payload	### Function sub_100115A0 (line 22490)
+- **Suggested Name**: extract_int_array_from_payload	
+sub_10011600,append_string_data
+sub_10011650,copy_string_to_buffer
+sub_10011690,init_achievement_def_payload
+sub_10011700,deserialize_achievement_records
+sub_10011980,serialize_achievement_records
+sub_10011AB0,release_and_delete_object
+sub_10011B10,deserialize_achievement_names
+sub_10011C40,serialize_achievement_names
+sub_10011CC0,message_copy_constructor
+sub_10011DB0,message_assignment_operator
+sub_10011E80,message_field_copy
+sub_10011EA0,create_message_payload
+sub_10012150,message_destructor
+sub_100121B0,init_ui_rendering_context
+sub_100123A0,cleanup_ui_rendering_context
+sub_100124B0,render_ui_quads
+sub_10012790,load_ui_texture
+sub_10012870,cleanup_container_objects
+sub_10012930,render_ui_overlay_with_text_grid
+sub_10013440,init_ui_config_structure
+sub_10013650,render_ui_background_panels
+sub_10013930,cleanup_ui_object_resources
+sub_100139F0,render_character_selection_panel
+sub_100143B0,handle_input_state_change
+sub_10014540,get_performance_delta_time
+sub_100145D0,remove_linked_list_element
+sub_10014640,extract_linked_list_to_array
+sub_100146D0,map_control_code_to_index
+sub_10014D90,validate_and_store_bounded_state
+sub_10014DC0,get_game_version_code
+sub_10014E10,patch_function_pointers_for_version
+sub_10014FF0,initialize_game_engine_once
+sub_10015050,copy_wide_string_sso
+sub_10015080,convert_wide_to_multibyte_string
+sub_100150B0,get_game_install_path
+sub_10015190,process_save_file
+sub_10015270,validate_save_file_owner
+sub_100152B0,validate_save_file_metadata
+sub_10015330,enqueue_message_thread_safe
+sub_10015430,enqueue_message_thread_safe_alt
+sub_10015520,initialize_launcher_ipc
+sub_10015710,message_queue_processor_loop
+sub_10016A30,init_sprite_and_font
+sub_10016B00,filter_f10_key_press
+sub_10016B40,init_graphics_and_audio_config
+sub_10016C50,render_all_sprites
+sub_10016D30,update_sprite_visibility
+sub_10016E50,shutdown_graphics_and_cleanup
+sub_10017050,queue_integer_message
+sub_100172C0,init_character_stats
+sub_100173D0,render_game_frame
+sub_10017AC0,queue_init_message
+sub_10017BB0,resolve_menu_selection_handler
+sub_10017C90,validate_naming_screen_input
+sub_10017DE0,route_handler_by_pointer
+sub_10017FA0,ensure_handler_initialized
+sub_10017FD0,load_opening_video
+sub_10018060,load_ending_video
+sub_10018110,validate_and_sync_battle_rendering_state
+sub_10018A90,process_audio_animation_event_queue
+- **Suggested Name**: naming_screen_input_thread	### Function sub_10018F50 (line 28211)
+- **Suggested Name**: queue_processor_thread	### Function sub_100190C0 (line 28363)
+- **Suggested Name**: message_handler_thread	### Function sub_100191F0 (line 28487)
+- **Suggested Name**: ui_element_offset_lookup	### Function sub_10019230 (line 28502)
+- **Suggested Name**: character_table_offset_lookup	### Function sub_10019270 (line 28529)
+- **Suggested Name**: string_init_from_source	### Function sub_100192E0 (line 28547)
+- **Suggested Name**: string_copy_with_bounds_check	### Function sub_100193F0 (line 28612)
+- **Suggested Name**: wstring_append_wide_char	### Function sub_100194A0 (line 28686)
+- **Suggested Name**: string_iterator_init	### Function sub_100194F0 (line 28730)
+- **Suggested Name**: string_iterator_init_end	### Function sub_10019540 (line 28778)
+- **Suggested Name**: allocate_reference_holder	### Function sub_100195D0 (line 28807)
+- **Suggested Name**: vector_push_back_with_resize	### Function sub_10019630 (line 28860)
+- **Suggested Name**: ordered_tree_insert	### Function sub_10019790 (line 29013)
+- **Suggested Name**: reference_counted_object_release	### Function sub_100197D0 (line 29053)
+- **Suggested Name**: reference_counted_pointer_assign	### Function sub_10019830 (line 29109)
+- **Suggested Name**: tree_find_or_insert	### Function sub_100198D0 (line 29177)
+- **Suggested Name**: tree_complex_insert_with_strings	### Function sub_10019A20 (line 29339)
+- **Suggested Name**: resource_processing_pipeline	### Function sub_10019A80 (line 29362)
+- **Suggested Name**: tree_find_with_iterator	### Function sub_10019B10 (line 29424)
+- **Suggested Name**: tree_find_or_insert_with_byte	### Function sub_10019BB0 (line 29495)
+- **Suggested Name**: queue_dequeue_item	### Function sub_10019C40 (line 29573)
+- **Suggested Name**: queue_enqueue_item	### Function sub_10019D00 (line 29629)
+- **Suggested Name**: secondary_queue_enqueue	### Function sub_10019D90 (line 29695)
+- **Suggested Name**: message_queue_init	### Function sub_10019E00 (line 29723)
+- **Suggested Name**: linked_list_node_remove	
+sub_10019F40,copy_range_with_capacity
+sub_1001A020,resize_container_capacity
+sub_1001A0E0,copy_wide_char_range
+sub_1001A190,unknown_validation_or_check
+sub_1001A1F0,insert_element_at_position
+sub_1001A2D0,insert_element_with_iterator
+sub_1001A380,fill_uninitialized_buffer
+sub_1001A3B0,assign_range_with_validation
+sub_1001A490,rebalance_tree_node
+sub_1001A500,clear_tree_container
+sub_1001A540,init_tree_container
+sub_1001A5C0,insert_in_tree_range
+sub_1001A7A0,rebalance_global_tree_node
+sub_1001A820,init_global_tree_container
+sub_1001A8B0,insert_in_tree_range_variant2
+sub_1001AA50,delete_tree_recursive
+sub_1001AA90,clear_global_tree
+sub_1001AAE0,init_third_global_tree
+sub_1001AB70,insert_in_third_tree_range
+sub_1001AD10,erase_tree_range
+sub_1001AE10,delete_tree_with_string_cleanup
+sub_1001AE70,clear_third_global_tree
+sub_1001AEC0,initialize_list_container
+sub_1001AF50,list_element_access_handler
+sub_1001B0F0,cleanup_list_container
+sub_1001B140,resize_and_rebalance_buffer
+sub_1001B2C0,cleanup_buffer_container
+sub_1001B330,expand_buffer_capacity
+sub_1001B490,cleanup_array_container
+sub_1001B510,allocate_container_node
+sub_1001B530,dereference_container_iterator
+sub_1001B5C0,compare_container_iterators
+sub_1001B5E0,erase_string_range
+sub_1001B670,reallocate_string_storage
+sub_1001B7B0,erase_wstring_range
+sub_1001B840,reallocate_wstring_storage
+sub_1001B980,construct_container_iterator
+sub_1001BA10,vector_insert_with_reallocation
+sub_1001BC10,throw_vector_length_error
+sub_1001BC90,rb_tree_erase_and_rebalance
+sub_1001BFA0,rb_tree_copy_node_recursive
+sub_1001C050,rb_tree_find_insert_position
+sub_1001C150,rb_tree_insert_and_rebalance
+sub_1001C390,create_rb_tree_header
+sub_1001C3D0,rb_tree_find_insert_position_v2
+sub_1001C4C0,rb_tree_clear_v2
+sub_1001C5C0,rb_tree_insert_and_rebalance_v2
+sub_1001C860,rb_tree_find_insert_position_v3
+sub_1001C950,erase_map_node_with_rebalance
+sub_1001CC60,find_lower_bound_in_tree
+sub_1001CCF0,insert_and_rebalance_tree_node
+sub_1001CF90,find_or_insertion_point_bst
+sub_1001D080,erase_range_from_tree
+sub_1001D180,insert_and_rebalance_tree_node_alt
+sub_1001D420,pop_back_deque_element
+sub_1001D4A0,throw_deque_length_error
+sub_1001D520,allocate_deque_block_checked
+sub_1001D580,clear_linked_list
+sub_1001D5C0,allocate_and_init_node_triple
+sub_1001D600,increment_list_size_checked
+sub_1001D6A0,construct_length_error_exception
+sub_1001D6C0,allocate_memory_safe_divide
+sub_1001D720,allocate_word_array_checked
+sub_1001D780,recursive_linked_list_cleanup
+sub_1001D7E0,remove_and_rebalance_tree_node
+sub_1001D830,unlink_and_rebalance_node
+sub_1001D880,allocate_new_list_node
+sub_1001D940,rbtree_erase_and_rebalance
+sub_1001DC30,unlink_doubly_linked_node
+sub_1001DC80,rotate_linked_list_node
+sub_1001DCD0,unlink_list_node_with_sentinel
+sub_1001DD20,find_last_valid_node
+sub_1001DD40,remove_and_rotate_tree_node
+sub_1001DD90,allocate_rbtree_node
+sub_1001DE40,rbtree_erase_with_rebalance_alt
+sub_1001E130,unlink_node_update_sentinel
+sub_1001E180,rotate_tree_node_structure
+sub_1001E1D0,create_empty_tree_sentinel
+sub_1001E210,allocate_tree_node_with_values
+sub_1001E250,map_iterator_decrement
+sub_1001E2D0,map_iterator_increment
+sub_1001E340,skip_sentinel_nodes_forward
+sub_1001E3B0,skip_sentinel_nodes_backward
+sub_1001E430,find_rightmost_node
+sub_1001E450,insert_string_key_element
+sub_1001E500,init_iterator_to_begin
+sub_1001E520,init_payload_wrapper_type1
+sub_1001E540,init_payload_wrapper_type2
+sub_1001E560,init_payload_wrapper_type3
+sub_1001E580,init_payload_wrapper_type4
+sub_1001E5A0,copy_with_refcount_release
+sub_1001E600,compare_stored_string
+sub_1001E670,validate_transition_count
+sub_1001E6C0,relocate_buffer_contents
+sub_1001E6F0,allocate_payload_array
+sub_1001E750,bad_alloc_copy_constructor
+sub_1001E770,append_to_dynamic_string
+sub_1001E880,insert_substring_to_buffer
+sub_1001E970,create_refcounted_int_array
+sub_1001EA40,create_refcounted_wstring
+sub_1001EB10,create_refcounted_achievement
+sub_1001EBE0,create_refcounted_ingame_text
+sub_1001ECB0,create_refcounted_vertex_buffer
+sub_1001ED80,create_refcounted_texture
+sub_1001EE50,validate_and_process_buffer
+sub_1001EF00,create_refcounted_int
+sub_1001EFD0,create_refcounted_graphics_notification
+sub_1001F0A0,destroy_payload_with_buffer
+sub_1001F0E0,destroy_alt_payload_type
+sub_1001F120,destroy_double_pointer_wrapper
+sub_1001F140,destroy_multi_member_object
+sub_1001F1E0,destroy_single_member
+sub_1001F240,destroy_complex_multipart_object
+sub_1001F420,destroy_if_notnull
+sub_1001F470,delete_member_pointer
+sub_1001F480,destroy_alt_member_if_notnull
+sub_1001F4C0,call_virtual_destructor
+sub_1001F4D0,destroy_triple_pointer_wrapper
+sub_1001F4F0,destroy_triple_pointer_alt
+sub_1001F510,check_vertex_buffer_destructor_type
+sub_1001F540,invoke_stored_callback
+sub_1001F550,destroy_via_vfunc_then_delete
+sub_1001F570,check_texture_destructor_type
+sub_1001F5A0,destroy_texture_wrapper
+sub_1001F5C0,destroy_base_refcount
+sub_1001F5E0,cast_and_assign_wstring_payload
+sub_1001F660,cast_and_assign_int_payload
+sub_1001F6E0,cast_and_release_ingame_text_payload
+sub_1001F760,cast_and_release_int_array_payload
+sub_1001F7E0,cast_and_release_achievement_def_payload
+sub_1001F860,assign_payload_with_refcount
+sub_1001F8B0,init_string_container_with_params
+sub_1001F970,validate_and_copy_containers
+sub_1001FA30,replace_container_range
+sub_1001FC50,init_container_from_wide_chars
+sub_1001FDC0,process_wide_char_element
+sub_1001FE50,init_graphic_notification
+sub_100201C0,fetch_graphic_notification_messages
+sub_10020320,load_and_bind_notification_textures
+sub_100204A0,release_notification_payload_refs
+sub_100205A0,render_battle_transition_effect
+sub_10020FB0,render_ui_element_with_scale
+sub_10021220,render_ui_frame_with_border
+sub_100213C0,initialize_string_data
+sub_10021470,call_virtual_method_8
+sub_10021480,validate_string_bounds
+sub_10021530,process_string_data
+sub_100215F0,validate_string_conversion
+sub_10021760,get_registry_config_value
+sub_10021B50,set_audio_volume_config
+- **Suggested Name**: stub_registry_delete_value	- **Suggested Name**: wrapper_registry_open_key
+- **Suggested Name**: wrapper_registry_query_value	- **Suggested Name**: wrapper_registry_set_value
+sub_10022ECC,call_flsall_1
+sub_10024373,exception_constructor
+sub_10024451,exception_destructor
+sub_10024474,bad_cast_constructor
+sub_10024492,bad_cast_copy_constructor
+sub_100244AF,bad_cast_destructor
+sub_100244BA,bad_typeid_constructor
+sub_100244D8,bad_typeid_copy_constructor
+sub_100244F5,non_rtti_object_constructor
+sub_10024512,non_rtti_object_copy_constructor
+sub_1002452F,bad_typeid_destructor
+sub_1002453A,exception_destructor_with_delete
+sub_1002455B,bad_cast_destructor
+sub_10024582,bad_typeid_destructor_variant
+sub_100245A9,type_info_destructor
+sub_100245B9,type_info_destructor_with_delete
+sub_1002480B,set_global_config_value
+sub_10025E1E,get_global_pointer
+sub_10027FF9,get_config_int_safe
+sub_10028032,get_second_config_int
+sub_1002806B,get_third_config_int
+sub_100280A4,get_config_int_pointer
+sub_100280AA,get_second_config_int_pointer
+sub_100280B0,get_third_config_int_pointer
+sub_100280B6,get_global_object_pointer
+sub_1002917C,get_state_value
+sub_10029A03,get_data_buffer
+sub_10029A29,noop_function
+sub_10029E27,get_decoded_pointer
+sub_10029FE4,set_encoded_pointer_1
+sub_1002A173,set_encoded_pointer_2
+sub_1002A182,set_encoded_pointer_3
+sub_1002A1F1,set_encoded_pointer_4
+sub_1002E36B,init_flag_to_zero
+sub_1002F3FF,return_zero
+sub_100328C8,init_sse2_support
+sub_10032972,show_message_box_with_context
+sub_10034107,open_file_helper
+sub_10034FA9,get_file_handle_safe
+sub_10035EBE,throw_length_error
+sub_10035EF6,throw_out_of_range_error
+sub_10036383,bad_exception_constructor
+sub_100363A1,bad_exception_destructor
+sub_100363AC,bad_exception_destructor_with_delete
+sub_10036F39,bad_exception_copy_constructor
+sub_1003907D,parse_float_to_uint_locale
+sub_10039125,parse_float_to_uint_locale_variant
+sub_1003928C,convert_internal_float_format
+sub_1003AF37,normalize_and_round_float
+sub_1003B47B,fp_arbitrary_precision_multiply
+sub_1003C0B7,fp64_to_decimal_string
+sub_1003DE50,init_exit_handler_1
+sub_1003DE70,init_exit_handler_2
+sub_1003DE80,init_exit_handler_3
+sub_1003DEA0,init_exit_handler_4
+sub_1003DEC0,init_exit_handler_5
+sub_1003DEE0,init_exit_handler_6
+sub_1003DF00,init_exit_handler_7
+sub_1003DF20,init_exit_handler_8

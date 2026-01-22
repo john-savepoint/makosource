@@ -1,0 +1,21 @@
+I'll analyze these German strings and map them to English touphScript indices.
+
+However, I notice the German data provided is severely corrupted or improperly decoded. The strings shown are:
+- Mostly garbage characters (DZ, BX, Mb., xò0, wó6, etc.)
+- Partial or malformed text
+- Encoding artifacts
+
+This appears to be binary data that hasn't been properly decoded from the executable. Without properly decoded German menu strings, I cannot create accurate mappings.
+
+**To proceed, I need:**
+
+1. Properly decoded German strings (not the raw binary/hex output)
+2. The actual German text (e.g., "Ja", "Nein", "Speichern", etc.)
+3. Confirmation of which memory offsets correspond to which German text
+
+Could you provide:
+- A file with properly decoded German strings?
+- Or clarification on how these corrupted strings should be interpreted?
+- The source or decoding method used for the German extraction?
+
+Once I have clean German text, the mapping will be straightforward using the reference English indices provided.

@@ -1,0 +1,114 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                    FF7 German → English Menu String Mapping                   ║
+║                           touphScript Indices 38-48                            ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+ENGLISH (ff7_en.exe)                    GERMAN (ff7_de.exe)
+touphScript Index                       Extracted Strings
+─────────────────────────────────────────────────────────────────────────────────
+
+[38] 0x5192C0 ──────────────────────────> 0x590C68 "Objekt"
+     "Item"                                (2F 42 4A 45 4B 54 FF)
+     │                                     │
+     │  VA: 0x919AC0                      │  VA: 0x991468
+     │  Delta: +0x779A8 bytes             │
+     └─────────────────────────────────────┘
+
+[39] 0x5192D4 ──────────────────────────> 0x590C6F "Zauber"
+     "Magic"                               (3A 41 55 42 45 52 FF)
+     │                                     │
+     │  VA: 0x919AD4                      │  VA: 0x99146F
+     │  Delta: +0x7799B bytes             │
+     └─────────────────────────────────────┘
+
+[40] 0x5192E8 ──────────────────────────> 0x590C83 "Materia"
+     "Materia"                             (2D 41 54 45 52 49 41 FF)
+     │                                     │
+     │  VA: 0x919AE8                      │  VA: 0x991483
+     │  Delta: +0x7799B bytes             │  (Same in both languages)
+     └─────────────────────────────────────┘
+
+[41] 0x5192FC ──────────────────────────> 0x590C98 "Ausrüsten"
+     "Equip"                               (21 55 53 52 7F 53 54 45 4E FF)
+     │                                     │
+     │  VA: 0x919AFC                      │  VA: 0x991498
+     │  Delta: +0x7799C bytes             │  Contains ü-umlaut (0x7F)
+     └─────────────────────────────────────┘
+
+[42] 0x519310 ──────────────────────────> 0x590CAE "Werte"
+     "Status"                              (37 45 52 54 45 FF)
+     │                                     │
+     │  VA: 0x919B10                      │  VA: 0x9914AE
+     │  Delta: +0x7799E bytes             │  (German: "values/stats")
+     └─────────────────────────────────────┘
+
+[43] 0x519324 ──────────────────────────> 0x590CBE "Reihe"
+     "Order"                               (32 45 49 48 45 FF)
+     │                                     │
+     │  VA: 0x919B24                      │  VA: 0x9914BE
+     │  Delta: +0x7799A bytes             │  (German: "row/sequence")
+     └─────────────────────────────────────┘
+
+[44] 0x519338 ──────────────────────────> 0x590CD2 "Limit"
+     "Limit"                               (2C 49 4D 49 54 FF)
+     │                                     │
+     │  VA: 0x919B38                      │  VA: 0x9914D2
+     │  Delta: +0x7799A bytes             │  (Same in both languages)
+     └─────────────────────────────────────┘
+
+[45] 0x51934C ──────────────────────────> 0x590CE6 "Konfig"
+     "Config"                              (2B 4F 4E 46 49 47 FF)
+     │                                     │
+     │  VA: 0x919B4C                      │  VA: 0x9914E6
+     │  Delta: +0x7799A bytes             │
+     └─────────────────────────────────────┘
+
+[46] 0x519360 ──────────────────────────> 0x590CFB "PHS"
+     "PHS"                                 (30 28 33 FF)
+     │                                     │
+     │  VA: 0x919B60                      │  VA: 0x9914FB
+     │  Delta: +0x7799B bytes             │  (Acronym - same)
+     └─────────────────────────────────────┘
+
+[47] 0x519374 ──────────────────────────> 0x590D0C "Speichern"
+     "Save"                                (33 50 45 49 43 48 45 52 4E FF)
+     │                                     │
+     │  VA: 0x919B74                      │  VA: 0x99150C
+     │  Delta: +0x77998 bytes             │  (German infinitive: "to save")
+     └─────────────────────────────────────┘
+
+[48] 0x519388 ──────────────────────────> 0x590D26 "Verlassen"
+     "Quit"                                (36 45 52 4C 41 53 53 45 4E FF)
+     │                                     │
+     │  VA: 0x919B88                      │  VA: 0x991526
+     │  Delta: +0x7799E bytes             │  (German infinitive: "to leave")
+     └─────────────────────────────────────┘
+
+─────────────────────────────────────────────────────────────────────────────────
+
+ENCODING KEY:
+─────────────────────────────────────────────────────────────────────────────────
+FF7 Encoding: ASCII - 0x20
+  Example: 'O' = ASCII 0x4F → FF7 0x2F (0x4F - 0x20)
+
+Special Characters:
+  0x6A = ä (a-umlaut)    0x7A = ö (o-umlaut)
+  0x7F = ü (u-umlaut)    0x7E = ß (eszett)
+  0x00 = Space           0xFF = String terminator
+
+Virtual Address: VA = FileOffset + 0x400800
+
+─────────────────────────────────────────────────────────────────────────────────
+
+DELTA VARIANCE:
+─────────────────────────────────────────────────────────────────────────────────
+The offset delta between English and German varies from +0x77998 to +0x7799E
+because German strings have different lengths than English:
+
+  "Zauber" (6) vs "Magic" (5)         → -1 byte difference
+  "Ausrüsten" (9) vs "Equip" (5)      → -4 byte difference
+  "Speichern" (9) vs "Save" (4)       → -5 byte difference
+
+This cumulative drift explains why the delta is NOT constant across all strings.
+
+─────────────────────────────────────────────────────────────────────────────────

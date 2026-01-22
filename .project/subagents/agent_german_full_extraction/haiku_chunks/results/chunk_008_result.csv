@@ -1,0 +1,20 @@
+I need to analyze the German strings and map them to English touphScript indices. However, I notice the German strings provided are encoded/corrupted with special characters and appear to be corrupted binary data rather than readable German text.
+
+Let me examine what we have:
+- German offsets with corrupted character sequences (äB, âö:, xô-, etc.)
+- English reference list with 767 indices (0-766)
+- Task to find English equivalents for each German string
+
+The German strings appear to be corrupted or encoded in a way that makes direct text matching impossible. The character combinations (like "äB", "âö:", "xô-") don't form recognizable German words.
+
+Without readable German text, I cannot reliably map these to English equivalents. The data appears to be:
+1. Corrupted during extraction
+2. Using a special encoding that needs decoding first
+3. Containing offset pointers rather than actual strings
+
+Could you provide:
+1. The German strings in readable format (not corrupted/encoded)?
+2. Information about what encoding is being used?
+3. Or should I work with a reference file that has properly decoded German strings?
+
+Without this, any mapping would be guess work and likely incorrect.

@@ -1,0 +1,37 @@
+Looking at the German strings provided, they appear to be heavily corrupted or containing binary data. The hex values shown (like "}/", "( ", "D0", "D,", etc.) don't decode to recognizable German menu terms.
+
+However, based on the English reference provided (indices 000-090), here are the core menu strings that would typically have German translations:
+
+**Key English Menu Items:**
+- Item (038)
+- Magic (039)
+- Materia (040)
+- Equip (041)
+- Status (042)
+- Order (043)
+- Limit (044)
+- Config (045)
+- PHS (046)
+- Save (047)
+- Quit (048)
+- Window color (005)
+- Sound (006)
+- Controller (007)
+- Cursor (008)
+- ATB (009)
+- Battle speed (010)
+- Battle message (011)
+- Field message (012)
+
+**Issue**: The German hex data in your chunk 65 doesn't appear to contain properly decoded strings. The offsets and their corresponding values don't decode to German menu text.
+
+To properly complete this mapping, I need:
+
+1. **Actual decoded German menu strings** from ff7_de.exe, or
+2. **Hex bytes that decode to German text** (the current data appears corrupted)
+
+Could you provide either:
+- A dump of decoded German strings with their offsets?
+- Or verify the hex extraction method was correct?
+
+Without readable German text, I cannot generate accurate CSV mappings. Would you like me to help extract/decode the German strings properly first?

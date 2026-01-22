@@ -1,0 +1,23 @@
+I'll analyze the German strings to identify menu items and map them to English touphScript indices.
+
+Looking at the data, I can see mostly single characters and what appears to be binary/encoded data in the German section. The readable portions are very limited - mostly individual letters like "P", "S", "T", "U", "Y", "f", "b", "|", etc., and some special characters like "ß", "ü", "Ö".
+
+The German strings from offset 0x59D8B2 to 0x59D936 appear to be single characters or control codes, and the later sections (0x59F2BC through 0x5A249A) show what looks like encoded or compressed text patterns.
+
+Given the nature of the data (mostly single characters, binary patterns, and encoded sequences), there are **no clearly identifiable German menu text strings** that can be reliably mapped to the English menu items (like "Item", "Magic", "Equip", "Save", "Config", "Status", etc.).
+
+**Output:**
+
+```csv
+```
+
+The data provided does not contain readable German menu text that matches the English menu item patterns in the touphScript indices. The German strings appear to be either:
+1. Single character fragments
+2. Binary/encoded data
+3. Control sequences
+4. Compiled/compressed text structures
+
+A proper mapping would require either:
+- Access to decoded/decompressed German menu strings
+- Documentation of the encoding scheme used
+- The actual German menu text strings in readable form

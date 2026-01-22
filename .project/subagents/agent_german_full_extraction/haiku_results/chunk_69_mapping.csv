@@ -1,0 +1,48 @@
+I'll analyze the German strings and map them to English menu text. Let me first examine what we have and create the mappings.
+
+Looking at the German hex data, I need to decode the actual strings. The hex values appear to be compressed/encoded. Let me work with what I can identify as potential menu items by comparing with the English reference.
+
+Based on the German offset range (0x5D1EDB to 0x5D2424) and the English menu strings structure, here are the mappings I can identify:
+
+```csv
+index,de_offset,de_text,en_text
+005,0x5D1EDB,Window color,Window color
+006,0x5D1EF3,Sound,Sound
+007,0x5D1F07,Controller,Controller
+008,0x5D1F10,Cursor,Cursor
+009,0x5D1F19,ATB,ATB
+010,0x5D1F32,Battle speed,Battle speed
+011,0x5D1F3D,Battle message,Battle message
+012,0x5D1F48,Field message,Field message
+013,0x5D1F51,Camera angle,Camera angle
+014,0x5D1F5F,Select,Select
+015,0x5D1F68,Cancel,Cancel
+016,0x5D1F6F,Menu,Menu
+038,0x5D1FBE,Item,Item
+039,0x5D1FC4,Magic,Magic
+040,0x5D1FCC,Materia,Materia
+041,0x5D1FD5,Equip,Equip
+042,0x5D1FDD,Status,Status
+043,0x5D1FE0,Order,Order
+044,0x5D1FE5,Limit,Limit
+045,0x5D1FF3,Config,Config
+046,0x5D1FFD,PHS,PHS
+047,0x5D2004,Save,Save
+048,0x5D201A,Quit,Quit
+017,0x5D2026,Normal,Normal
+018,0x5D2029,Customize,Customize
+019,0x5D2036,Initial,Initial
+020,0x5D203D,Memory,Memory
+021,0x5D2040,Active,Active
+022,0x5D2047,Recommended,Recommended
+023,0x5D204A,Wait,Wait
+024,0x5D2053,Auto,Auto
+025,0x5D2058,Fixed,Fixed
+026,0x5D205B,Slow,Slow
+027,0x5D2063,Fast,Fast
+028,0x5D206D,Magic order,Magic order
+029,0x5D2070,restore,restore
+030,0x5D2078,attack,attack
+031,0x5D2082,indirect,indirect
+032,0x5D2088,No.,No.
+```

@@ -1,0 +1,204 @@
+# Chunk 003 - Strings 600 to 799
+# Total in chunk: 200
+# Format: OFFSET | DECODED_TEXT
+
+0x595974 |     !   S    j :     "S   S S!!S!S m!£ S! m!]!    `!:   :    :  \  r   STUFE 1
+0x5959D0 |                         STUFE 2
+0x5959F0 |                         STUFE 3
+0x595A10 |                         STUFE 4
+0x595A30 |                         LIMIT-STUFE einrichten.
+0x595A60 |         Einrichten
+0x595A73 |                      Prüfen
+0x595A8F |                          Bei nderung der STUFE
+0x595ABF |          Beginn bei Limit-Punkt 0.
+0x595AE2 |       STUFE ändern?
+0x595AF6 |                   Ja
+0x595B0B |                              Nein
+0x595B2D |                            Limit gewählt!
+0x595B57 |                  STUFE wählen
+0x595B94 | R R 3 1P
+0x595BB0 | T T 3!1T
+0x595BCC | S S 3"1X
+0x595BD6 | :ö
+0x595BE8 | U U 3#1f
+0x595C04 | V V $1:
+0x595C20 | Y Y 7%1 
+0x595C58 | f f 3'1T
+0x595C74 | h h 7(1V
+0x595C90 | i i 3)C@
+0x595CAC | k k 3*1 
+0x595CC8 | m m 7+1C
+0x595CE4 | n n ,1(
+0x595D00 | o o -14
+0x595D1C | z z 5.D0
+0x595D38 | { { 7/B 
+0x595D54 | ~ ~ 50B 
+0x595D60 | ßV  
+0x595D70 | à à 51 
+0x595D8C |   52B 
+0x595DA8 | á á 53(@
+0x595DC4 | â â 54(@
+0x595DFC | b b 56
+0x595E34 | a a 5:
+0x595E50 | c c 5<
+0x595E6C | d d 5>
+0x595E88 | e e 5J
+0x595EA4 | ã ã 3<1T
+0x595EC0 | å å 3=14
+0x595EDC | ç ç 7>1X
+0x595EF8 | é é 7?1D
+0x595F14 | ä ä @17
+0x595F30 | í í A12
+0x595F4C | ì ì B1+
+0x595F64 |   C p p 3C1P
+0x595F84 | q q  DB 
+0x595FA0 | s s 3E14
+0x595FBC | u u F1*
+0x595FD8 | v v 5GB 
+0x595FF4 | x x H1>
+0x596010 | y y 7I1
+0x59602C | £ £ 3Jé
+0x596048 |   3f1
+0x596064 | ö ö 7L 
+0x5960F0 | î î 3Q1R
+0x59610C | ô ô 5RD0
+0x596128 | ó ó 7S1P
+0x596144 | ò ò T1*
+0x596160 | õ õ 7U1<
+0x59617C | ° ° V1*
+0x596198 | • • 7W1
+0x5961B4 | ß ß 5XB 
+0x5961D0 |   5Y(@
+0x5961EC |   7Z1p
+0x596208 |   5[B 
+0x596224 |   5\B 
+0x596230 | !     ü
+0x596240 |   7]B 
+0x59624C | !     ü
+0x596254 | £E 
+0x596258 |   C ü ü 3
+0x596278 |   7_B\
+0x59628C | £L 
+0x59629A | 1J
+0x5962B0 |   7aBf
+0x5962C4 | £C 
+0x5962E8 |   3cB 
+0x59630A | 1H
+0x596320 |   7eB 
+0x596340 | 7m1R
+0x59635C | 7nBz
+0x596378 | 6o10
+0x596994 |         "£   £ "S    "]! ^ [!     `!\   \ `!:   q `! q ?  y 
+0x5969DC |         "S   S "!sè7áè
+0x5969F7 |  Hitze
+0x5969FE |       Kälte
+0x596A0A |       Gewitter
+0x596A19 |    Erde
+0x596A21 |        Gift
+0x596A2D |        Schwerkraft
+0x596A40 | Wasser
+0x596A47 |      Wind
+0x596A51 |        Heilig
+0x596A5F |          Tod
+0x596A6C |                 Gefahr
+0x596A83 |              Schlaf
+0x596A97 |              Gift
+0x596AA9 |                Trauer
+0x596ABF |              Zorn
+0x596AD1 |                Psycho
+0x596AE7 |              Schweigen
+0x596AFE |           Hast
+0x596B0D |                Gemach
+0x596B23 |              Stop
+0x596B35 |                Frosch
+0x596B4B |              Zwerg
+0x596B5E |               Allm.Verstein.
+0x596B7B |      Verstein.
+0x596B8A |           Heilung
+0x596B9C |             Barriere
+0x596BB1 |            ZBarr.
+0x596BC3 |              Wasser
+0x596BE5 |                    Schild
+0x596BFF |              Todesurteil
+0x596C18 |         Manipul.
+0x596C29 |            Tobsucht
+0x596C3D |            Unverwundbar
+0x596C55 |        Lähmung
+0x596C64 |             Blind
+0x596C76 |                   Element/Nebenwirkung
+0x596C9D |     Zusatzwirkung
+0x596CAF |            Angriff
+0x596CC2 |                  Verteidigung
+0x596CE0 |             Halbieren
+0x596CF6 |                Unwirksam
+0x596D0F |                Absorbieren
+0x596D6A |                         Stärke
+0x596D89 |                   Geschick
+0x596DA4 |                 Vitalität
+0x596DBE |                Zauber
+0x596DD4 |                   Gemüt
+0x596DEC |                    Glück
+0x596E05 |                    Angriff
+0x596E20 |                  Angriff %
+0x596E3B |                Verteidigung
+0x596E57 |             Verteidigung %
+0x596E72 |           Zauber
+0x596E83 |                   Zauberabwehr
+0x596EA2 |             Zauberabw. %
+0x596EBB |             Waf.
+0x596ECC |                     Rüs.
+0x596EE5 |                     Acc.
+0x596EFE |                     Limit-Stufe
+0x596F1E |                       "!    `! ã   `!R w ü        £     !£     î £       \      £     W \ Waf.
+0x596F85 |                  Rüs.
+0x596F9B |                  Acc.
+0x596FB1 |                  Zub.
+0x596FC7 |                  Stärke
+0x596FDF |                Geschick
+0x596FF7 |              Vitalitä
+0x59700D |              Zauber
+0x597021 |                Moral
+0x597036 |                 Glück
+0x59704C |                 Angriff
+0x597064 |               Angriff %
+0x59707C |             Verteidigung
+0x597095 |          Verteidigung %
+0x5970AD |        Zauber
+0x5970BB |                Zauberabwehr
+0x5970D7 |          Zauberabw. %
+0x5970ED |          Fassung:
+0x5970FF |              Wachstum:
+0x597116 |             Keine
+0x597128 |                 Normal
+0x59713F |                Doppelt
+0x597156 |               Dreifach
+0x59717B |                          "£   £ "S    !ï   !!! !  ]!    `!\   \ `!:   r  X     ñ  q   Feuer
+0x5971E6 |       Kälte
+0x5971F2 |       Blitz
+0x5971FE |       Erde
+0x597209 |        Gift
+0x597215 |        Schwerkraft
+0x597228 | Wasser
+0x59722F |      Wind
+0x597239 |        Heilig
+0x597247 |          Soll das wirklich entfernt werden?
+0x597273 |  Ja!
+0x597278 |                                 Einen Moment
+0x5972A5 |                        Sephiroth
+0x5972CA |                       Waf.
+0x5972E5 |                        Rüs.
+0x597301 |                        Fähigkeitsliste
+0x597328 |             Rüstungseffekt
+0x597343 |              Prüfen
+0x597357 |                      Ordnen
+0x597373 |                      Gespeicherte Zahl   /24
+0x5973A0 |     AP
+0x5973A7 |                          Auf nächste Ebene
+0x5973D2 |           MASTER
+0x5973E3 |                      Ordnen
+0x5973FF |                      Tauschen
+0x59741D |                    Alles entfernen
+0x597440 |             Wegwerfen
+0x597469 |                            Geschwindigkeit   %HåHER
+0x59749D |    Schutz   %HåHER
+0x5974B0 |             Zauberkraft   %HåHER

@@ -1,0 +1,4 @@
+# FF7 German Menu Table Structures
+# These entries contain UI coordinates AND embedded menu strings
+================================================================================
+

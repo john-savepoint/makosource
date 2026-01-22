@@ -1,0 +1,549 @@
+# FF7 German Menu Strings (Clean)
+# Total: 544 strings
+# Format: [INDEX] OFFSET | TEXT
+================================================================================
+
+[000] 0x58FBB0 | Mochten Sie Final
+[001] 0x58FBCE | Fantasy VII verlassen und
+[002] 0x58FBEC | zu Windows zuruckkehren?
+[003] 0x58FC10 | Ja
+[004] 0x58FC15 | Nein
+[006] 0x590126 | Sound
+[007] 0x59015C | Kontroller
+[008] 0x590192 | Cursor
+[009] 0x5901C8 | ATB
+[010] 0x5901FE | Kampftempo
+[011] 0x590234 | Kampfmeldung
+[012] 0x59026A | Feldmeldung
+[013] 0x5902A0 | Kamerawinkel
+[014] 0x5902D6 | Auswahlen
+[015] 0x59030C | Abbrechen
+[016] 0x590342 | Menu
+[017] 0x590378 | Fenster AUS
+[018] 0x5903AE | Pause
+[019] 0x5903E4 | Schlachthilfe
+[020] 0x59041A | Mono
+[021] 0x590450 | Stereo
+[022] 0x590486 | Breit
+[023] 0x5904BC | Normal
+[024] 0x5904F2 | Benutzerdefiniert
+[025] 0x590528 | Anfang
+[026] 0x59055E | Speicher
+[027] 0x590594 | Aktiv
+[028] 0x5905CA | Empfohlen
+[029] 0x590600 | Warten
+[030] 0x590636 | Auto
+[031] 0x59066C | Fest
+[033] 0x5906D8 | Langs.
+[034] 0x59070E | Schn.
+[035] 0x590744 | ROT
+[036] 0x59077A | GRUN
+[037] 0x5907B0 | BLAU
+[038] 0x5907E6 | Zauberfolge
+[039] 0x59081C | Heilung
+[040] 0x590852 | Angriff
+[041] 0x590888 | Indirekt
+[042] 0x5908BE | Verboten
+[043] 0x5908F4 | Typ
+[044] 0x59092A | links2
+[045] 0x590960 | rechts2
+[046] 0x590996 | links1
+[047] 0x5909CC | rechts1
+[048] 0x590A02 | Menu
+[049] 0x590A38 | Auswahlen
+[050] 0x590A6E | Abbrechen
+[051] 0x590AA4 | EXT
+[052] 0x590ADA | Hilfe
+[053] 0x590B10 | Zum Einrichten START drucken.
+[054] 0x590B46 | Zum Beenden Richtungstaste Links oder Rechts drucken.
+[055] 0x590B7C | Pause
+[059] 0x590BD0 | Ton- und Musikeinstellung
+[060] 0x590BFD | Nicht unterstutzt
+[062] 0x590C68 | Objekt
+[063] 0x590C7C | Zauber
+[064] 0x590C90 | Materia
+[065] 0x590CA4 | Ausrusten
+[066] 0x590CB8 | Werte
+[067] 0x590CCC | Reihe
+[068] 0x590CE0 | Limit
+[069] 0x590CF4 | Konfig
+[070] 0x590D08 | PHS
+[071] 0x590D1C | Speichern
+[072] 0x590D30 | Verlassen
+[073] 0x590D44 | Anfanger
+[074] 0x590D58 | Verwendung
+[075] 0x590D6C | Verwendung
+[076] 0x590D80 | Zeit
+[077] 0x590D94 | Gil
+[078] 0x590DA8 | Nachst. Lv
+[079] 0x590DBC | Limit-Stufe
+[080] 0x590DD0 | Anleitung
+[081] 0x590DE4 | Unter
+[082] 0x590DF8 | LV+1
+[083] 0x590E0C | Zorn
+[084] 0x590E20 | Traurigk.
+[085] 0x590E34 | !         n`=>ABCeKD@FGHtJfg<$_uva)?snPRSVXY[\]p/0%U^MZoh!"#y*+2,-.345671:8(W9&';`klmxEILNOQTbcdijqrwz{     !"#$%&'()*+ 0         `  `   !        np n n@ n<m b!o  o - pPS  PS PS o PS PS PS PS PS b!o - b!o b!o b!o b!o b!o     n u#o j o - PS UPS :PS o PS PS PS PS u#o u#o - u#o u#o u#o u#o u#o     )%($*     "" !"""##$$     0.  x"  \   *   !   "      e
+[089] 0x591094 | Drucken Sie auf [O.K.] um die
+[090] 0x5910D0 | Tastenbelegung zu konfigurieren.
+[091] 0x59110C | Bitte neue Taste drucken
+[093] 0x591184 | [ABBRECHEN]
+[095] 0x5911FC | [UMSCHALTEN]
+[096] 0x591238 | [BILD HOCH]
+[097] 0x591274 | [BILD HERUNTER]
+[098] 0x5912B0 | [KAMERA]
+[100] 0x591328 | [HILFE]
+[101] 0x591364 | [START]
+[102] 0x5913A0 | [HERAUF]
+[103] 0x5913DC | [UNTEN]
+[104] 0x591418 | [LINKS]
+[105] 0x591454 | [RECHT]
+[106] 0x591490 | TASTATUR
+[107] 0x5914CC | JOYSTICK
+[110] 0x594ACD | Z° ^X° OX° OX° p° OX° OX° OX° nV°
+[111] 0x594AF1 | Z° ^X° OX° OX° p° OX° et° es° au° OX° OX° OX° rX° ]° i° j° o° d° g° ol° YX° w° YX° D[° cX° YX° YX° {r° YX° YX° YX° V° D[° cX° YX° YX° {r° YX° t° os° u° YX° YX° YX° Z° $d° j° k° p° f° i° 4n° TX° TX° TX° \° hX° TX° TX° as° TX° TX° TX° JX° \° hX° TX° TX° as° TX° au° Ut° <w° TX° TX° TX°
+[114] 0x594C48 | Pause
+[117] 0x594CAC | Schlaf
+[118] 0x594CBA | Gift
+[119] 0x594CC8 | Traurigkeit
+[120] 0x594CD6 | Zorn
+[121] 0x594CE4 | Verwirrung
+[122] 0x594CF2 | Stummheit
+[123] 0x594D00 | Schnell
+[124] 0x594D0E | Langsam
+[125] 0x594D1C | Stop
+[129] 0x594D54 | Versteinerung
+[130] 0x594D62 | regen
+[133] 0x594D8C | Reflektieren
+[134] 0x594D9A | Doppel
+[135] 0x594DA8 | Schild
+[138] 0x594DD2 | Toll
+[139] 0x594DE0 | Einzigartig
+[140] 0x594DEE | Lahmung
+[141] 0x594DFC | Dunkelheit
+[148] 0x594EA4 | Gil
+[149] 0x594EA8 | Nach
+[150] 0x594EB0 | Gil auf der Hand
+[152] 0x595080 | Ja     Nein
+[153] 0x595090 | Vorhandene Schlachtpunkte
+[154] 0x5950AA | Schlitzstart!
+[156] 0x5950DE | Gewonnene Schlachtpunkte
+[157] 0x5950F8 | Ok, dann los!
+[158] 0x595117 | Zaubersubstanz kaputt.
+[159] 0x595136 | Aufrufsubstanz kaputt.
+[160] 0x595155 | Support-Substanz kaputt.
+[161] 0x595174 | Unabhangige Substanz kaputt.
+[162] 0x595193 | Befehlssubstanz kaputt.
+[163] 0x5951B2 | Alle Substanz kaputt.
+[164] 0x5951D1 | Zubehor kaputt.
+[165] 0x5951F0 | Objektbefehl ist versiegelt.
+[166] 0x59520F | Rustzeug kaputt.
+[167] 0x59522E | Waffe kaputt.
+[168] 0x59524D | 1/2 Geschwindigkeit.
+[169] 0x59526C | 1/2 Genauigkeit.
+[170] 0x59528B | Minimum
+[171] 0x5952AA | Gift
+[172] 0x5952C9 | Krote
+[173] 0x5952E8 | Zeit x30 Schaden.
+[174] 0x595307 | 5 Ebenen zuruck.
+[175] 0x595326 | 10 Ebenen zuruck.
+[176] 0x595345 | 1/2 HP.
+[177] 0x595364 | 1/2 MP.
+[178] 0x595383 | 1/2 HP&MP.
+[179] 0x5953A2 | Null MP.
+[180] 0x5953C1 | Jaa! Keine Behinderung!!
+[181] 0x5953E0 | HP wiederhergestellt.
+[182] 0x595400 | Besorgt um die anderen Mitglieder?
+[183] 0x595423 | Ja, ein bichen
+[184] 0x595446 | Eigentlich nicht
+[191] 0x595524 | "S   S "!se7ae
+[193] 0x595558 | QRSTUVWXYZ[\]^`adefgh   jklmnopqrstuvwxyDEGHIJK qu      +! e c   [!  c V B v r  l   o!a l   S Speichern
+[195] 0x595656 | Mitglieden in zwei Gruppen aufteilen
+[196] 0x59567C | Mitglieder in drei Gruppen aufteilen
+[197] 0x5956A2 | Gruppe aus zwei Personen bilden
+[198] 0x5956C8 | Gruppe aus drei Personen bilden
+[199] 0x5956EE | Auswahlen mit [START]-Taste
+[200] 0x595718 | Element
+[201] 0x59572E | Effekt
+[202] 0x595744 | Angreifen
+[203] 0x59575A | Verteidigen
+[204] 0x595770 | Halbieren
+[205] 0x595786 | Ungultig
+[206] 0x59579C | Absorbieren
+[210] 0x5957F4 | Starke
+[211] 0x59580A | Geschick
+[212] 0x595820 | Vitalitat
+[213] 0x595836 | Zauber
+[214] 0x59584C | Moral
+[215] 0x595862 | Gluck
+[216] 0x595878 | Angreifen
+[217] 0x59588E | Angreifen %
+[218] 0x5958A4 | Verteidigen
+[219] 0x5958BA | Verteidigen %
+[220] 0x5958D0 | Zbrangrf
+[221] 0x5958E6 | Zbrvertdg
+[222] 0x5958FC | Zbrvertdg %
+[223] 0x595912 | Waf.
+[224] 0x595928 | Rus.
+[225] 0x59593E | Acc.
+[226] 0x595954 | Limit-Ebene
+[229] 0x5959E8 | STUFE 2
+[230] 0x595A08 | STUFE 3
+[231] 0x595A28 | STUFE 4
+[232] 0x595A48 | LIMIT-STUFE einrichten.
+[233] 0x595A68 | Einrichten
+[234] 0x595A88 | Prufen
+[235] 0x595AA8 | Bei nderung der STUFE
+[236] 0x595AC8 | Beginn bei Limit-Punkt 0.
+[237] 0x595AE8 | STUFE andern?
+[238] 0x595B08 | Ja
+[239] 0x595B28 | Nein
+[240] 0x595B48 | Limit gewahlt!
+[241] 0x595B68 | STUFE wahlen
+[582] 0x5969F8 | Hitze
+[583] 0x596A04 | Kalte
+[584] 0x596A10 | Gewitter
+[585] 0x596A1C | Erde
+[586] 0x596A28 | Gift
+[587] 0x596A34 | Schwerkraft
+[588] 0x596A40 | Wasser
+[589] 0x596A4C | Wind
+[590] 0x596A58 | Heilig
+[591] 0x596A68 | Tod
+[592] 0x596A7C | Gefahr
+[593] 0x596A90 | Schlaf
+[594] 0x596AA4 | Gift
+[595] 0x596AB8 | Trauer
+[596] 0x596ACC | Zorn
+[597] 0x596AE0 | Psycho
+[598] 0x596AF4 | Schweigen
+[599] 0x596B08 | Hast
+[600] 0x596B1C | Gemach
+[601] 0x596B30 | Stop
+[602] 0x596B44 | Frosch
+[603] 0x596B58 | Zwerg
+[604] 0x596B6C | Allm.Verstein.
+[605] 0x596B80 | Verstein.
+[606] 0x596B94 | Heilung
+[607] 0x596BA8 | Barriere
+[608] 0x596BBC | ZBarr.
+[609] 0x596BD0 | Wasser
+[611] 0x596BF8 | Schild
+[612] 0x596C0C | Todesurteil
+[613] 0x596C20 | Manipul.
+[614] 0x596C34 | Tobsucht
+[615] 0x596C48 | Unverwundbar
+[616] 0x596C5C | Lahmung
+[617] 0x596C70 | Blind
+[618] 0x596C88 | Element/Nebenwirkung
+[619] 0x596CA1 | Zusatzwirkung
+[620] 0x596CBA | Angriff
+[621] 0x596CD3 | Verteidigung
+[622] 0x596CEC | Halbieren
+[623] 0x596D05 | Unwirksam
+[624] 0x596D1E | Absorbieren
+[628] 0x596D82 | Starke
+[629] 0x596D9B | Geschick
+[630] 0x596DB4 | Vitalitat
+[631] 0x596DCD | Zauber
+[632] 0x596DE6 | Gemut
+[633] 0x596DFF | Gluck
+[634] 0x596E18 | Angriff
+[635] 0x596E31 | Angriff %
+[636] 0x596E4A | Verteidigung
+[637] 0x596E63 | Verteidigung %
+[638] 0x596E7C | Zauber
+[639] 0x596E95 | Zauberabwehr
+[640] 0x596EAE | Zauberabw. %
+[641] 0x596EC7 | Waf.
+[642] 0x596EE0 | Rus.
+[643] 0x596EF9 | Acc.
+[644] 0x596F12 | Limit-Stufe
+[646] 0x596F96 | Rus.
+[647] 0x596FAC | Acc.
+[648] 0x596FC2 | Zub.
+[649] 0x596FD8 | Starke
+[650] 0x596FEE | Geschick
+[651] 0x597004 | Vitalita
+[652] 0x59701A | Zauber
+[653] 0x597030 | Moral
+[654] 0x597046 | Gluck
+[655] 0x59705C | Angriff
+[656] 0x597072 | Angriff %
+[657] 0x597088 | Verteidigung
+[658] 0x59709E | Verteidigung %
+[659] 0x5970B4 | Zauber
+[660] 0x5970CA | Zauberabwehr
+[661] 0x5970E0 | Zauberabw. %
+[662] 0x5970F6 | Fassung:
+[663] 0x59710C | Wachstum:
+[664] 0x597122 | Keine
+[665] 0x597138 | Normal
+[666] 0x59714E | Doppelt
+[667] 0x597164 | Dreifach
+[670] 0x5971EC | Kalte
+[671] 0x5971F8 | Blitz
+[672] 0x597204 | Erde
+[673] 0x597210 | Gift
+[674] 0x59721C | Schwerkraft
+[675] 0x597228 | Wasser
+[676] 0x597234 | Wind
+[677] 0x597240 | Heilig
+[678] 0x597250 | Soll das wirklich entfernt werden?
+[680] 0x597298 | Einen Moment
+[681] 0x5972BC | Sephiroth
+[682] 0x5972E0 | Waf.
+[683] 0x5972FC | Rus.
+[684] 0x597318 | Fahigkeitsliste
+[685] 0x597334 | Rustungseffekt
+[686] 0x597350 | Prufen
+[687] 0x59736C | Ordnen
+[688] 0x597388 | Gespeicherte Zahl   /24
+[689] 0x5973A4 | AP
+[690] 0x5973C0 | Auf nachste Ebene
+[691] 0x5973DC | MASTER
+[692] 0x5973F8 | Ordnen
+[693] 0x597414 | Tauschen
+[694] 0x597430 | Alles entfernen
+[695] 0x59744C | Wegwerfen
+[697] 0x597484 | Geschwindigkeit   %HaHER
+[698] 0x5974A0 | Schutz   %HaHER
+[699] 0x5974BC | Zauberkraft   %HaHER
+[700] 0x5974D8 | Gluck   %HaHER
+[701] 0x5974F4 | MASTER
+[702] 0x597510 | Starke
+[703] 0x59752C | Vitalitat
+[704] 0x597548 | Zauber
+[705] 0x597564 | Zbrvertdg
+[706] 0x597580 | Geschick
+[707] 0x59759C | Gluck
+[708] 0x5975B8 | MAXHP
+[709] 0x5975D4 | MAXMP
+[710] 0x5975F0 | MAXHP
+[711] 0x59760C | MAXMP
+[712] 0x597628 | EXP.UP
+[713] 0x597644 | Gil UP
+[714] 0x597660 | Treffen - %
+[715] 0x59767C | Treffen + %
+[716] 0x597698 | Chocobo treffen
+[717] 0x5976B4 | Praventivm. + %
+[718] 0x5976D0 | Fernangriff
+[719] 0x5976EC | Alle angreifen
+[720] 0x597708 | Gegenangriff
+[721] 0x597724 | Alle angreifen
+[722] 0x597740 | Standiger Angriff
+[723] 0x59775C | HP/MP-nderung
+[726] 0x597886 | Beschworen
+[727] 0x59789C | Feindtechnik
+[728] 0x5978B2 | Zusatzliche Fahigkeit
+[729] 0x5978C8 | Alle
+[730] 0x5978DE | 4x-Zber
+[731] 0x5978F4 | MP absorb.
+[732] 0x59790A | HP absorb.
+[734] 0x597936 | Auch stehl.
+[735] 0x59794C | Schlag
+[736] 0x597962 | Turbo-MP
+[737] 0x597978 | Nichts
+[738] 0x59798E | Nicht genug MP.
+[741] 0x597A1A | Ordnen
+[742] 0x597A2C | Schlusselobjekte
+[743] 0x597A3E | Allein
+[744] 0x597A50 | Feld
+[745] 0x597A62 | Schlacht
+[746] 0x597A74 | Werfen
+[747] 0x597A86 | Typ
+[748] 0x597A98 | Name
+[749] 0x597AAA | Max.
+[750] 0x597ABC | Min.
+[751] 0x597AD0 | OK! Klar!
+[752] 0x597AF8 | Ich bin nicht sicher, aber
+[753] 0x597B20 | Ist mir egal.
+[754] 0x597B48 | Heh! Heh!
+[755] 0x597B70 | V-v-verdammt! Mein Kopf!
+[756] 0x597B98 | Hat nichts mit mir zu tun!
+[757] 0x597BC0 | Hmm, das war's also.
+[758] 0x597BE8 | Ich bin nicht sicher, aber
+[759] 0x597C10 | Ich hab die falsche Person erwischt.
+[760] 0x597C38 | Das sollte ok sein.
+[761] 0x597C60 | Noch nicht ganz bereit.
+[762] 0x597C88 | Nein, ich bin es nicht.
+[763] 0x597CB0 | Ok, klar!
+[764] 0x597CD8 | Kapier ich nicht.
+[765] 0x597D00 | Hat nichts mit mir zu tun.
+[766] 0x597D28 | Cool! Das sollte ok sein!
+[767] 0x597D50 | Nee! Kapier ich nicht!
+[768] 0x597D78 | Mann, ich tapp total im Dunkeln!
+[769] 0x597DA0 | Ich verlier immer mehr Menschliches
+[770] 0x597DC8 | Ich bin noch nicht bereit.
+[771] 0x597DF0 | Es hat nichts mit mir zu tun.
+[772] 0x597E18 | Das gefallt mir! Her damit!
+[773] 0x597E40 | Hmph. Hab ich nicht ganz kapiert, aber
+[774] 0x597E68 | Nicht ich! Gib es jemand anders!
+[775] 0x597E90 | Es hat nichts mit mir zu tun.
+[934] 0x599254 | Magic Materia!
+[935] 0x599268 | Summon Materia!
+[936] 0x59927C | Command
+[937] 0x599290 | Zero - AW YEAH!
+[938] 0x5992A8 | Feuer
+[939] 0x5992B4 | Kalte
+[940] 0x5992C0 | Blitz
+[941] 0x5992CC | Erde
+[942] 0x5992D8 | Gift
+[943] 0x5992E4 | Schwerkraft
+[944] 0x5992F0 | Wasser
+[945] 0x5992FC | Wind
+[946] 0x599308 | Heilig
+[947] 0x599318 | Soll das wirklich entfernt werden?
+[949] 0x599360 | Einen Moment
+[950] 0x599384 | Sephiroth
+[951] 0x5993A8 | Waf.
+[952] 0x5993C4 | Rus.
+[953] 0x5993E0 | Fahigkeitsliste
+[954] 0x5993FC | Rustungseffekt
+[955] 0x599418 | Prufen
+[956] 0x599434 | Ordnen
+[957] 0x599450 | Gespeicherte Zahl   /24
+[958] 0x59946C | AP
+[959] 0x599488 | Auf nachste Ebene
+[960] 0x5994A4 | MASTER
+[961] 0x5994C0 | Ordnen
+[962] 0x5994DC | Tauschen
+[963] 0x5994F8 | Alles entfernen
+[964] 0x599514 | Wegwerfen
+[966] 0x59954C | Geschwindigkeit   %HaHER
+[967] 0x599568 | Schutz   %HaHER
+[968] 0x599584 | Zauberkraft   %HaHER
+[969] 0x5995A0 | Gluck   %HaHER
+[970] 0x5995BC | MASTER
+[971] 0x5995D8 | Starke
+[972] 0x5995F4 | Vitalitat
+[973] 0x599610 | Zauber
+[974] 0x59962C | Zbrvertdg
+[975] 0x599648 | Geschick
+[976] 0x599664 | Gluck
+[977] 0x599680 | MAXHP
+[978] 0x59969C | MAXMP
+[979] 0x5996B8 | MAXHP
+[980] 0x5996D4 | MAXMP
+[981] 0x5996F0 | EXP.UP
+[982] 0x59970C | Gil UP
+[983] 0x599728 | Treffen - %
+[984] 0x599744 | Treffen + %
+[985] 0x599760 | Chocobo treffen
+[986] 0x59977C | Praventivm. + %
+[987] 0x599798 | Fernangriff
+[988] 0x5997B4 | Alle angreifen
+[989] 0x5997D0 | Gegenangriff
+[990] 0x5997EC | Alle angreifen
+[991] 0x599808 | Standiger Angriff
+[992] 0x599824 | HP/MP-nderung
+[993] 0x599840 | Kaufen
+[994] 0x59985E | Verkaufen
+[995] 0x59987C | Beenden
+[996] 0x59989A | Objekt
+[997] 0x5998B8 | Materia
+[998] 0x5998D8 | Kaufen Verkaufen Beenden
+[999] 0x5998F8 | Gil
+[1000] 0x599918 | Besitz
+[1001] 0x599938 | Ausstattung
+[1002] 0x599958 | Gesamt
+[1003] 0x599978 | Wieviel
+[1004] 0x599998 | Objekt    Materia
+[1005] 0x5999B8 | Ubrige Gil
+[1006] 0x5999D8 | Preis fur Master
+[1007] 0x5999F8 | Preis durch AP
+[1008] 0x599A18 | Waf.
+[1009] 0x599A2E | Rus.
+[1010] 0x599A44 | Zub.
+[1011] 0x599A5A | Zub.
+[1012] 0x599A70 | Starke
+[1013] 0x599A86 | Geschick
+[1014] 0x599A9C | Vitalita
+[1015] 0x599AB2 | Zauber
+[1016] 0x599AC8 | Moral
+[1017] 0x599ADE | Gluck
+[1018] 0x599AF4 | Angreifen
+[1019] 0x599B0A | Angreifen %
+[1020] 0x599B20 | Verteidigen
+[1021] 0x599B36 | Verteidigen %
+[1022] 0x599B4C | Zbrangrf
+[1023] 0x599B62 | Zbrvertdg
+[1024] 0x599B78 | Zbrvertdg %
+[1025] 0x599B8E | Schlitz:
+[1026] 0x599BA4 | Verstarkung:
+[1027] 0x599BBA | Keine
+[1028] 0x599BD0 | Normal
+[1029] 0x599BE6 | Doppelt
+[1030] 0x599BFC | Dreifach
+[1033] 0x599C18 | Objektladen
+[1034] 0x599C40 | Waffengeschaft
+[1035] 0x599C68 | Objektladen
+[1036] 0x599C90 | Materia-Laden
+[1037] 0x599CB8 | Gemischtwaren
+[1038] 0x599CE0 | Gemuseladen
+[1039] 0x599D08 | Zubehorladen
+[1040] 0x599D30 | Werkzeugladen
+[1041] 0x599D58 | Souvenierladen
+[1042] 0x599D80 | Willkommen!
+[1043] 0x599DAE | Was mochtest du kaufen?
+[1044] 0x599DDC | Wie viele willst du davon?
+[1045] 0x599E0A | Was mochtest du verkaufen?
+[1046] 0x599E38 | Wie viele willst du verkaufen?
+[1047] 0x599E66 | Danke!
+[1048] 0x599E94 | Danke!
+[1049] 0x599EC2 | Du hast nicht genug Geld!
+[1051] 0x599F4C | Guten Tag!
+[1052] 0x599F7A | Wie kann ich behilflich sein?
+[1053] 0x599FA8 | Wie viele willst du davon?
+[1054] 0x599FD6 | Hast du was zu verkaufen?
+[1055] 0x59A004 | Wie viele willst du?
+[1056] 0x59A032 | Vielen Dank!
+[1057] 0x59A060 | Ihr werdet doch alle zuruckkommen!
+[1058] 0x59A08E | Soll das ein Witz sein? Das ist nicht genug!
+[1065] 0x59C488 | Wahlen Sie eine Speicherdatei aus.
+[1066] 0x59C4B0 | Wahlen Sie einen Speicherblock aus.
+[1067] 0x59C4D8 | STECKPLATZ 1
+[1068] 0x59C500 | STECKPLATZ 2
+[1069] 0x59C528 | Wirklich?
+[1070] 0x59C550 | Bin am Laden. Bitte warten
+[1071] 0x59C578 | Bin am Sichern. Bitte warten
+[1072] 0x59C5A0 | LEER
+[1073] 0x59C5C8 | BLOCK
+[1074] 0x59C5F0 | Weiter?
+[1076] 0x59C640 | Uberprufe Spielstandsdatei
+[1092] 0x59C8C0 | Gespeichert.
+[1093] 0x59C8E8 | Speichern nicht moglich.
+[1094] 0x59C910 | Laden nicht moglich.
+[1095] 0x59C938 | Daten sind zerstort.
+[1096] 0x59C960 | NEUES SPIEL
+[1097] 0x59C988 | Wirklich speichern?
+[1098] 0x59C9B0 | Ja
+[1099] 0x59C9D8 | Nein
+[1100] 0x59CA00 | Beendet.
+[1103] 0x59CAC6 | Formatiert
+[1104] 0x59CB08 | Formatierung nicht moglich
+[1105] 0x59CB4A | Nicht formatiert
+[1106] 0x59CB8C | Jetzt formatieren?
+[1107] 0x59CBCE | Memory Card wird gepruft.
+[1108] 0x59CC10 | Keine Spielstandsdatei.
+[1109] 0x59CC52 | Diese Memory Card ist beschadigt und kann nicht verwendet werden.
+[1110] 0x59CC94 | Andere Memory Card einlegen.
+[1111] 0x59CCD6 | Nicht genug Platz in der Spielstandsdatei ubrig.
+[1112] 0x59CD18 | Bitte benutzen Sie eine andere Spielstandsdatei
+[1113] 0x59CD5A | oder loschen Sie 1 Block gesicherter Daten.
+[1116] 0x59CE20 | Lesen nicht moglich.
+[1117] 0x59CE62 | Spiel beginnen?
+[1122] 0x59CFB0 | Kann Speicherpuffer der Spielstandsdatei nicht zuordnen!
+[1123] 0x59CFEC | Ungultige Spielstandsdatei!
+[1124] 0x59D028 | Spielstand 1
+[1125] 0x59D03C | Spielstand 2
+[1126] 0x59D050 | Spielstand 3
+[1127] 0x59D064 | Spielstand 4
+[1128] 0x59D078 | Spielstand 5
+[1129] 0x59D08C | Spielstand 6
+[1130] 0x59D0A0 | Spielstand 7
+[1131] 0x59D0B4 | Spielstand 8
+[1132] 0x59D0C8 | Spielstand 9
+[1133] 0x59D0DC | Spielstand 10
+[1136] 0x59D150 | Level
+[1139] 0x59D26A | UeA/
+[1142] 0x59D2A4 | Uo-`

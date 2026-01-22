@@ -1,0 +1,7 @@
+**Important Note:** This chunk has very limited clear menu item matches. The German strings in this range (0x5952AB-0x59614E) appear to be primarily battle-related descriptions and status text rather than core menu items. Only 3 definitive mappings were found:
+
+- **Speichern** (Save) → index 047
+- **Angreifen** (Attack) → index 030  
+- **Zauber** (Magic) → index 039
+
+The rest of the chunk contains descriptive text (ability effects, stat names, group formation options) that don't have direct matches in the provided English touphScript indices 0-99. Many strings appear corrupted or use non-standard encoding (note the "Ö" characters appearing as placeholders).

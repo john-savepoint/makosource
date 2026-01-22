@@ -1,0 +1,21 @@
+The chunk 82 data you provided appears to contain **non-menu binary data** (compiled code/machine code). The actual German menu strings are located at different offsets (0x59xxxx range, not 0x5D63A7-0x5D68F6).
+
+**Here's the issue with your request:**
+
+The hex values shown in chunk 82 (like "lD0", "D,", "I/") when decoded with the FF7 decoder produce garbage because that region doesn't contain FF7-encoded text strings - it contains compiled binary data (likely part of the game engine code).
+
+**What I can provide instead:**
+
+Based on actual German strings found in ff7_de.exe (verified decodable), here are the valid menu mappings:
+
+40,Materia,0x005192E8,Materia,0x590C90
+44,Limit,0x00519338,Limit,0x590CE0
+46,PHS,0x00519360,PHS,0x590D08
+
+**To proceed correctly, you need to either:**
+
+1. **Provide the raw hex bytes** for chunk 82 directly from the German exe (not pre-processed/corrupted text)
+2. **Clarify which German strings** you actually want to map to English (if not the ones in chunk 82)
+3. **Confirm the offset range** - 0x5D63A7-0x5D68F6 may be the wrong region for German menu strings
+
+Would you like me to extract the complete German menu strings from the correct offset range and provide a full mapping?

@@ -1,0 +1,23 @@
+Looking at the German strings provided, most appear to be corrupted or encoded in a way that's not directly readable. The hex offsets show patterns like "lD(", "D4S", etc., which suggest either:
+
+1. The strings are still encoded/compressed
+2. The offsets point to string references rather than the strings themselves
+3. The data needs to be extracted from the actual executable
+
+Without being able to read actual German text strings from the provided data, I cannot create accurate mappings. The provided German data appears to be either:
+- Binary/encoded data that needs decoding
+- Offset references rather than actual string content
+- Incomplete character representations
+
+To properly map German menu strings to English equivalents, I would need:
+
+1. **Decoded German strings** - The actual readable German text (not hex-encoded or corrupted)
+2. **Or** - Instructions on how to decode the provided hex data
+3. **Or** - A German language version of the touphScript index similar to the English reference provided
+
+Could you provide:
+- The decoded German menu strings (readable text)?
+- Or clarification on the encoding/format of the German data?
+- Or a reference file with German strings already extracted?
+
+This will allow me to create accurate CSV mappings between German and English menu text.

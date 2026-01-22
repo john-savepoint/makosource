@@ -1,0 +1,136 @@
+# FF7 EN-DE Regional Offset Delta Map
+# Created: 2026-01-02
+# Session: Agent 4 - EN-DE Offset Mapping
+#
+# This file documents the offset deltas between eStore English and eStore German
+# executables for different string regions.
+#
+# KEY FINDING: Unlike Japanese (constant +0xC00 delta), German has VARIABLE deltas
+# because German translations have different lengths than English, shifting subsequent
+# strings.
+
+================================================================================
+MASTER DELTA TABLE
+================================================================================
+
+## Steam EN to eStore EN
+   CONSTANT DELTA: +0xC00 (3072 bytes)
+   This delta is consistent across all regions.
+   Formula: eStore_EN_offset = Steam_EN_offset + 0xC00
+
+================================================================================
+REGIONAL ANALYSIS: eStore EN to eStore DE
+================================================================================
+
+## Region 1: Game State / Resume/Quit (Indices 0-4)
+   EN Range:  0x518F70 - 0x518FD4 (eStore)
+   DE Range:  0x58FBB8 - 0x58FC18 (estimated)
+   Delta:     ~0x76C48 (486,472 bytes)
+   Notes:     Early strings, relatively consistent delta
+
+## Region 2: Save Slot Descriptions (Indices 5-32)
+   EN Range:  0x5194A8 - 0x519BC8 (eStore)
+   DE Range:  0x5900F0 - 0x590810 (verified)
+   Delta:     0x76C48 - 0x76CB4 (varies)
+   Notes:     Config-related save descriptions
+   Anchors:
+     - SOUND      0x5194D8 -> 0x590126 (delta=0x76C4E)
+     - CURSOR     0x519538 -> 0x590192 (delta=0x76C5A)
+     - ATB        0x519568 -> 0x5901C8 (delta=0x76C60)
+
+## Region 3: Yes/No Menu Labels (Indices 33-35)
+   EN Range:  0x519E38 - 0x519E44 (eStore)
+   DE Range:  0x590BB8 - 0x590BC4 (verified)
+   Delta:     0x76D80 (486,784 bytes)
+   Notes:     Symbol-based labels, identical in both languages
+
+## Region 4: Config Menu Labels (Indices 36-57)
+   EN Range:  0x519E88 - 0x51A078 (eStore)
+   DE Range:  0x590AD0 - 0x590CC0 (estimated)
+   Delta:     ~0x76C48 to 0x76DA8 (varies)
+   Anchors:
+     - MATERIA    0x519EE8 -> 0x590C90 (delta=0x76DA8)
+     - LIMIT      0x519F38 -> 0x590CE0 (delta=0x76DA8)
+     - PHS        0x519F60 -> 0x590D08 (delta=0x76DA8)
+     - GIL        0x519FEC -> 0x590D94 (delta=0x76DA8)
+
+## Region 5: Config Help Text (Indices 58-76)
+   EN Range:  0x51A2B0 - 0x51A634 (eStore)
+   DE Range:  Varies significantly
+   Delta:     HIGHLY VARIABLE
+   Notes:     Help text is much longer in German, causing major shifts
+
+## Region 6: Keyboard Labels RGB (Indices 77-213)
+   EN Range:  0x51ABE0 - 0x51B204 (eStore)
+   DE Range:  ~0x591B80 - 0x591E50 (verified partial)
+   Delta:     0x76E5C - 0x76E60 (relatively stable)
+   Notes:     Single-character labels, mostly identical
+   Anchors:
+     - START      0x51A508 -> 0x591364 (delta=0x76E5C)
+     - JOYSTICK   0x51A634 -> 0x5914CC (delta=0x76E98)
+     - F1-F10     Consistent 0x76E5C delta
+
+## Region 7: Name Entry Characters (Indices 461-540)
+   SKIP RECOMMENDATION: These should NOT be patched
+   Notes:     Character entry grid, kept in English
+
+## Region 8: Save/Load Screen (Indices 541-599)
+   EN Range:  0x521FD8 - 0x522338 (eStore)
+   DE Range:  Varies
+   Delta:     Variable
+   Notes:     Significant German text expansion in this region
+
+## Region 9: Title/Load Screen (Indices 600-660)
+   EN Range:  0x524D60 - 0x525678 (eStore)
+   DE Range:  Varies
+   Delta:     Variable
+   Notes:     Title screen and world map text
+
+## Region 10: World Map Labels (Indices 661-686)
+   EN Range:  0x556000+ (eStore)
+   DE Range:  Variable
+   Delta:     Large, variable
+   Notes:     Location names, German names often longer
+
+## Region 11: Race/Chocobo Text (Indices 687-766)
+   SKIP RECOMMENDATION: Context-dependent
+   Notes:     Race ordinals and jockey names, often kept in English
+
+================================================================================
+DELTA HISTOGRAM
+================================================================================
+
+Frequency of observed deltas (rounded to 0x100):
+
+Delta Range       Count   Percentage
+0x76C00-0x76CFF    45      5.9%
+0x76D00-0x76DFF    89     11.6%
+0x76E00-0x76EFF   105     13.7%
+0x75C00-0x75CFF    48      6.3%
+0x760FF-0x761FF    22      2.9%
+Other/Unknown     457     59.7%
+
+================================================================================
+IMPORTANT NOTES
+================================================================================
+
+1. The delta is NOT constant because German text often has different lengths:
+   - "BATTLE SPEED" (12 chars) -> "KAMPFTEMPO" (10 chars) = SHORTER
+   - "WINDOW COLOR" (12 chars) -> "FENSTERFARBE" (12 chars) = SAME
+   - "FIELD MESSAGE" (13 chars) -> "FELDMELDUNG" (11 chars) = SHORTER
+
+2. Even when German is shorter, previous longer strings shift everything.
+
+3. The eStore exes (EN and DE) are from the same source release (Sept 2013),
+   which is why they have the same base structure. The Steam exe (Dec 2025)
+   has been updated and has a smaller size.
+
+4. For accurate German text extraction, each string should ideally be searched
+   independently rather than relying on a constant delta.
+
+5. HIGH confidence mappings (139 entries) are strings identical in both
+   languages that were found via exact byte matching.
+
+================================================================================
+END OF REGIONAL DELTA MAP
+================================================================================

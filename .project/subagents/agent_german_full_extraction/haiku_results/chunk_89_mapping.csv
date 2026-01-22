@@ -1,0 +1,25 @@
+Based on the data you've provided, the German strings appear to be in a display/debug format rather than raw binary hex. The strings like "$D", "dD$", "D4" etc. don't decode to recognizable German text using standard character encoding.
+
+**To proceed accurately, I need clarification:**
+
+1. **What is the actual source format?** Are these:
+   - Strings extracted from a hex dump (need actual hex bytes)?
+   - Already-decoded text in some proprietary format?
+   - Display output from a tool?
+
+2. **Do you have:**
+   - The raw binary German exe file?
+   - A hex dump of the actual binary data at those offsets?
+   - Or are these display strings that have already been processed?
+
+**Current situation:**
+- The English reference data shows proper hex encoding (e.g., `39 45 53 FF` for "Yes")
+- Your German data shows mixed characters that don't decode to German menu text
+- This mismatch prevents accurate mapping
+
+**Options:**
+1. If you have the raw `ff7_de.exe` file, I can extract the actual hex bytes at the specified offsets
+2. If these display strings are all you have, I'll need context about what encoding system is being used (e.g., which tool produced this output)
+3. I can create a template CSV structure if you can provide a sample of German menu translations
+
+Which approach would work best for your situation?

@@ -1,0 +1,188 @@
+# FF7 German String Regions Analysis
+
+**Created**: 2026-01-02
+**Session**: 68888497-9f38-454c-8ee5-3953fa6c7625
+**Source**: ff7_de.exe (23,819,776 bytes)
+
+## Overview
+
+The German FF7 executable contains menu and UI strings in the region from approximately `0x56F000` to `0x5A2000`. The strings are encoded using FF7's custom character encoding.
+
+## Text Encoding
+
+### Basic Encoding Rule
+```
+ASCII_character = FF7_byte + 0x20
+```
+
+**Examples:**
+- `0x26` ('&' in raw hex) → `0x46` = 'F' → FENSTERFARBE appears as &ENSTERFARBE
+- `0x33` ('3' in raw hex) → `0x53` = 'S' → SOUND appears as 3OUND
+- `0x2B` ('+' in raw hex) → `0x4B` = 'K' → KONTROLLER appears as +ONTROLLER
+
+### German Special Characters (Overrides)
+These bytes do NOT follow the +0x20 rule:
+
+| FF7 Byte | Character | Notes |
+|----------|-----------|-------|
+| 0x6A | ä | lowercase a-umlaut |
+| 0x6B | Ä | uppercase A-umlaut |
+| 0x7A | ö | lowercase o-umlaut |
+| 0x7B | Ö | uppercase O-umlaut |
+| 0x7F | ü | lowercase u-umlaut |
+| 0x80 | Ü | uppercase U-umlaut |
+| 0x7E | ß | Eszett/sharp S |
+
+### Control Characters
+| FF7 Byte | Meaning |
+|----------|---------|
+| 0x00 | Space character |
+| 0xFF | String terminator |
+
+## Memory Regions
+
+### Primary Menu Regions
+
+#### Config Menu (0x5900F0 - 0x590C00)
+- **Record Size**: 48 bytes (fixed width)
+- **Content**: Configuration menu labels
+- **Strings Found**: 51
+- **Examples**:
+  - Fensterfarbe (Window Color)
+  - Sound
+  - Controller
+  - Cursor
+  - Kampftempo (Battle Speed)
+  - Kampfmeldung (Battle Message)
+  - Kamerawinkel (Camera Angle)
+
+#### Sound Settings (0x590BC0 - 0x590E00)
+- **Content**: Audio-related settings
+- **Strings Found**: 11
+- **Examples**:
+  - Ton- und Musikeinstellung
+  - Mono
+  - Stereo
+
+#### Main Menu (0x590C00 - 0x591000)
+- **Content**: Primary menu options
+- **Strings Found**: 19
+- **Examples**:
+  - Menü
+  - Materia
+  - Speichern
+  - Limit
+
+### Item/Equipment Region (0x56F800 - 0x570800)
+- **Content**: Item and equipment names
+- **Strings Found**: 77
+- **Examples**:
+  - Heldentrank (Hero Drink)
+  - Trank (Potion)
+  - Hi-Trank (Hi-Potion)
+  - Phönix-Feder (Phoenix Down)
+  - Gegenangriff (Counter Attack)
+  - Zauberangriff (Magic Attack)
+
+### Status/Battle Messages (0x594C00 - 0x595800)
+- **Content**: Status effects, battle messages
+- **Strings Found**: 78
+- **Examples**:
+  - Schlaf (Sleep)
+  - Gift (Poison)
+  - Verwirrung (Confusion)
+  - Stummheit (Silence)
+
+### Shop Messages (0x594E00 - 0x595200)
+- **Content**: Shop interface text
+- **Strings Found**: 19
+- **Examples**:
+  - Gil
+  - Gil auf der Hand
+
+### Gold Saucer A (0x597600 - 0x599000)
+- **Content**: Gold Saucer mini-games
+- **Strings Found**: 147
+- **Examples**:
+  - Chocobo treffen
+  - Gil UP
+  - GP
+
+### Gold Saucer B (0x599000 - 0x59A000)
+- **Content**: Additional Gold Saucer text
+- **Strings Found**: 118
+
+### Save/Load (0x59C400 - 0x59E000)
+- **Content**: Save/load game interface
+- **Strings Found**: 73
+- **Examples**:
+  - Spielstandsdatei
+  - Speichern
+  - Laden
+
+### Extended Regions
+
+| Region | Address Range | Strings |
+|--------|---------------|---------|
+| Extended A | 0x591000 - 0x594C00 | 23 |
+| Extended B | 0x595200 - 0x597600 | 280 |
+| Extended C | 0x59A000 - 0x59C400 | 7 |
+| Extended D | 0x59E000 - 0x5A2000 | 14 |
+
+## String Record Structure
+
+### Fixed-Width Records (48 bytes)
+The config menu region uses 48-byte fixed records:
+
+```
+Offset    Content
+0x00-0x?? Padding (0x00 bytes)
+0x??-0x?? String data (variable length)
+0x??      Terminator (0xFF)
+0x??-0x30 Remaining padding (0x00 bytes)
+```
+
+**Example Record at 0x5900F0:**
+```
+00 00 00 00 00 00 26 45 4E 53 54 45 52 46 41 52 42 45 FF 00 00 ...
+                  F  E  N  S  T  E  R  F  A  R  B  E  [end]
+```
+
+### Sequential Strings
+Other regions use variable-length strings separated by 0xFF terminators:
+```
+[string1 bytes] FF [string2 bytes] FF [string3 bytes] FF ...
+```
+
+## Statistics Summary
+
+| Category | Count |
+|----------|-------|
+| Config/Settings | 13 |
+| Battle/Combat | 21 |
+| Menu/Navigation | 26 |
+| Save/Load | 24 |
+| Status Effects | 8 |
+| Shop/Money | 13 |
+| Items | 5 |
+| Equipment | 4 |
+| Gold Saucer | 3 |
+| Time/Date | 4 |
+| Other | 561 |
+| **Total** | **682** |
+
+## Notes for Implementation
+
+1. **Encoding Direction**: When encoding TO FF7 format, subtract 0x20 from ASCII values
+2. **German Characters**: Must be handled as special cases (not +/- 0x20)
+3. **String Termination**: Always use 0xFF to terminate strings
+4. **Fixed-Width Records**: Pad with 0x00 to maintain 48-byte alignment in config menu
+5. **Space Character**: Use 0x00 for spaces (not 0x20)
+
+## Related Files
+- `german_strings_complete.txt`: Full extraction with offsets and hex
+- `german_strings_by_category.txt`: Organized by functional category
+- `extract_german_complete.py`: Extraction script
+
+---
+*Generated by Agent 1 for the FF7OG Japanese Project*

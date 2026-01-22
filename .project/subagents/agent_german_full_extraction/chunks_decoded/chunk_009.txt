@@ -1,0 +1,204 @@
+# Chunk 009 - Strings 1800 to 1999
+# Total in chunk: 200
+# Format: OFFSET | DECODED_TEXT
+
+0x5AF824 | pàW
+0x5AF830 | .G 
+0x5AF834 | ^qD
+0x5AF838 | ^^^AãSg8
+0x5AF84C | 8P 
+0x5AF850 | :Q 
+0x5AF854 | >T 
+0x5AF858 | DZ 
+0x5AF85C | DZ 
+0x5AF860 | DZ 
+0x5AF864 | DZ 
+0x5AF868 | DZ 
+0x5AF86C | DZ 
+0x5AF870 | DZ 
+0x5AF874 | DZ 
+0x5AF878 | DZ 
+0x5AF87C | DZ 
+0x5AF880 | CY 
+0x5AF884 | 9P 
+0x5AF888 | uçZ
+0x5AF890 | xèd
+0x5AF894 | ßè
+0x5AF898 | :::=   *                                                                                                                                                                                                                                                                                                                                               #   ,sssEwwwF   +KKK>ãj^bqà_
+0x5AFA38 | tå]
+0x5AFA3C | sf
+0x5AFA54 | hzL
+0x5AFA58 | 6M 
+0x5AFA5C | AW 
+0x5AFA60 | DZ 
+0x5AFA64 | DZ 
+0x5AFA68 | DZ 
+0x5AFA6C | DZ 
+0x5AFA70 | DZ 
+0x5AFA74 | DZ 
+0x5AFA78 | DZ 
+0x5AFA7C | DZ 
+0x5AFA80 | DZ 
+0x5AFA84 | >U 
+0x5AFA88 | yè`
+0x5AFA94 | °â
+0x5AFA98 | ôå
+0x5AFA9C | c   /   $                                                                                                                                                                                                                                                                                                                                               !   !       !   (   2ée   %   0a^iiiC   +^^^Aîëöv
+0x5AFC40 | ñß~
+0x5AFC44 | piiiCöè
+0x5AFC5C | H^-
+0x5AFC60 | <R 
+0x5AFC64 | CZ 
+0x5AFC68 | DZ 
+0x5AFC6C | DZ 
+0x5AFC70 | DZ 
+0x5AFC74 | DZ 
+0x5AFC78 | DZ 
+0x5AFC7C | DZ 
+0x5AFC80 | DZ 
+0x5AFC84 | E[ 
+0x5AFC88 | =S 
+0x5AFC8C | >U 
+0x5AFC90 | \oB
+0x5AFCA0 | )));                                                                                                                                                                                                                                                                                                                                                                       )   %           $   $   !       !   *:::=àö
+0x5AFE4C | õ   .   3ÜnU
+0x5AFE64 | 9P 
+0x5AFE68 | :Q 
+0x5AFE6C | CY 
+0x5AFE70 | DZ 
+0x5AFE74 | DZ 
+0x5AFE78 | DZ 
+0x5AFE7C | DZ 
+0x5AFE80 | DZ 
+0x5AFE84 | DZ 
+0x5AFE88 | DZ 
+0x5AFE8C | DZ 
+0x5AFE90 | <R 
+0x5AFE94 | Mb0
+0x5AFEA8 | ó   *                                                                                                                                                                                                                                                                                                                                                                                                               *:::=ë)));       )iiiCï
+0x5B006C | ;Q 
+0x5B0070 | 7O 
+0x5B0074 | BX 
+0x5B0078 | DZ 
+0x5B007C | DZ 
+0x5B0080 | DZ 
+0x5B0084 | DZ 
+0x5B0088 | DZ 
+0x5B008C | DZ 
+0x5B0090 | DZ 
+0x5B0094 | >T 
+0x5B0098 | Sg2
+0x5B009C | ç°nò
+0x5B00A4 |    /   $                                                                                                                                                                                                                                                                                                                                                                                                                   *   5   0   %           %   0BBB>óö
+0x5B0274 | I^&
+0x5B0278 | 8P 
+0x5B027C | AX 
+0x5B0280 | CY 
+0x5B0284 | DZ 
+0x5B0288 | DZ 
+0x5B028C | DZ 
+0x5B0290 | DZ 
+0x5B0294 | DZ 
+0x5B0298 | @W 
+0x5B029C | 9P 
+0x5B02A0 | 7O 
+0x5B02A4 | Ui6
+0x5B02A8 | Y   0   *                                                                                                                                                                                                                                                                                                                                                                                                                                               *:::=zâòl
+0x5B047C | G]+
+0x5B0480 | <S 
+0x5B0484 | 9P 
+0x5B0488 | AX 
+0x5B048C | DZ 
+0x5B0490 | DZ 
+0x5B0494 | DZ 
+0x5B0498 | DZ 
+0x5B049C | DZ 
+0x5B04A0 | DZ 
+0x5B04A4 | @W 
+0x5B04A8 | I_)
+0x5B04AC | dvI
+0x5B04B0 | °   1   *   "                                                                                                                                                                                                                                                                                                                                                                                                                                           )   3ôâòl
+0x5B0688 | J`(
+0x5B068C | :Q 
+0x5B0690 | AW 
+0x5B0694 | AW 
+0x5B0698 | =T 
+0x5B069C | CY 
+0x5B06A0 | DZ 
+0x5B06A4 | CY 
+0x5B06A8 | I_%
+0x5B06AC | oR
+0x5B06B0 | ?U 
+0x5B06B4 | K`1
+0x5B06B8 | õ}
+0x5B06BC | òàààG   *       !                                                                                                                                                                                                                                                                                                                                                                                                                                       *   1Rãô
+0x5B0890 | F\,
+0x5B0894 | Wk6
+0x5B0898 | nQ
+0x5B089C | <S 
+0x5B08A0 | 7N 
+0x5B08A4 | 7N 
+0x5B08A8 | E[%
+0x5B08BC | tå^
+0x5B08C0 | {íh
+0x5B08C4 | S)));nnnD   *                                                                                                                                                                                                                                                                                                                                                                                                                                           #   )   4~
+0x5B0A9C | öå
+0x5B0AA8 | =T 
+0x5B0AAC | :Q 
+0x5B0ABC | ïßz
+0x5B0AC8 | i   -                                                                                                                                                                                                                                                                                                                                                                                                                                                   (   1OmàààGáño
+0x5B0CB0 | {ëf
+0x5B0CB8 | ëõõõLõü
+0x5B0CCC | J_6
+0x5B0CD0 | ç°q
+0x5B0CD4 | s   /   +   $                                                                                                                                                                                                                                                                                                                                                                                                                                               "   *   &   "   -Ys   /|
+0x5B0ED4 | Ym;
+0x5B0ED8 | ó£\   2   ,   #                                                                                                                                                                                                                                                                                                                                                                                                                                                       #   (   .XXX@dwwwF   +^^^Aäóü}
+0x5B10DC | hzQ
+0x5B10E0 | àòm
+0x5B10E4 | T   )                                                                                                                                                                                                                                                                                                                                                                                                                                                               !   %   ,222<QQQ?   !   !   )   3~
+0x5B12F0 |    3                                                                                                                                                                                                                                                                                                                                                                                                                                                                               !                   (   .   .   5Yâ   -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   #   (   -   "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+0x5B4AF8 | H   `      ! @      b                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             !   '   -   1   4   7   4   1   -   '   !                                                                                                                                                                                                               "   -dddBtuiiiC   -   #                                                                                                                                                                                                   -O
+0x5B5770 | P   -                                                                                                                                                                                       %   0ô
+0x5B5878 |    0   &                                                                                                                                                                           (^^^A
+0x5B5980 | dddB   (                                                                                                                                                                   &dddB
+0x5B5A84 | iiiC   '                                                                                                                                                               1
+0x5B5B88 | iiiC   (                                                                                                                                                       .£
+0x5B5C8C | àààG   (                                                                                                                                               $S
+0x5B5D90 | dddB   '                                                                                                                                           .
+0x5B5E94 | 222<   $                                                                                                                                   "äääI
+0x5B5F98 |    /                                                                                                                                   (å
+0x5B609C | í   -                                                                                                                               /
+0x5B619C | öööN   $                                                                                                                           4
+0x5B63A0 | O   "                                                                                                                       8
+0x5B66A4 | KKK>   !                                                                                                                   0
+0x5B67A4 | sssE   !                                                                                                                   *ô
+0x5B68A4 | nnnD   *                                                                                                                   #V
+0x5B69A4 | £T
+0x5B6AAC | à   /   "                                                                                                           'g
+0x5B6B98 | üZ
+0x5B6B9C | £R
+0x5B6BA0 | ôM
+0x5B6C98 | öU
+0x5B6C9C | õN
+0x5B6CA0 | íßE
+0x5B6CA4 | ã;
+0x5B6CAC | ó   -                                                                                                           $wwwF
+0x5B6D98 | °P
+0x5B6D9C | ïH
+0x5B6DA0 | é@
+0x5B6DA4 | á£8
+0x5B6DA8 | tï'
+0x5B6DAC | á?
+0x5B6DB0 | õ   +                                                                                                           +]
+0x5B6E94 | •Q
+0x5B6E98 | óJ
+0x5B6E9C | äC
+0x5B6EA0 | âö;
+0x5B6EA8 | tñ)
+0x5B6EAC | hâ"
+0x5B6EB0 | £i
+0x5B6EB8 | sssE   (                                                                                                           ,^
+0x5B6F8C | üZ
+0x5B6F94 | ôL
+0x5B6F98 | íßE

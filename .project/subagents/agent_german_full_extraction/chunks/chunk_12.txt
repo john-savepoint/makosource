@@ -1,0 +1,203 @@
+# Chunk 12: Strings 2400 to 2599
+# Offset range: 0x597793 to 0x5987ED
+
+0x597793 |  $!C!  
+0x59779D | "C!
+0x5977A1 |  D 
+0x5977A7 |  } : 
+0x5977AF |      5"S   S 
+0x5977BD | "T 
+0x5977C3 |  $!
+0x5977C7 | !|!
+0x5977CB |  @ 
+0x5977CF | !    `!i   i `!:   ~ 
+0x5977E9 |  ~ 
+0x5977EF |    ~ `!
+0x5977F9 |  2 Ö \ O - 
+0x597805 |  W     *!:   : `!: 
+0x597819 |  S 
+0x597821 |  S 0 
+0x59782C |     O 
+0x597837 |  O w!
+0x597847 |  8 
+0x59784B |    \ 8 
+0x597855 |  \     Z \ 
+0x597865 |  `!R w ü 
+0x59786F |  Zauber
+0x597877 |                Beschwören
+0x597891 |            Feindtechnik
+0x5978A9 |          ZusätÖliche Fähigkeit
+0x5978C8 | Alle
+0x5978CD |                  4x-Zber
+0x5978E6 |               MP absorb.
+0x5978FF |            HP absorb.
+0x597921 |                      Auch stehl.
+0x597942 |           Schlag
+0x597953 |                Turbo-MP
+0x59796B |              Nichts
+0x59797F |                Nicht genug MP.
+0x5979B5 | "S   
+0x5979BD | "2!
+0x5979C1 | !K 
+0x5979C9 | !K 
+0x5979D1 | !  
+0x5979D5 |  S     `!r   r `!:   
+0x5979EB |  `!
+0x5979F1 |  6 Ä \ 
+0x5979F9 |  6 g \ 
+0x597A01 |    Ä : Verwenden
+0x597A12 |         Ordnen
+0x597A21 |            SchlüsselobÄekte
+0x597A3D |  Allein
+0x597A45 |            Feld
+0x597A55 |              Schlacht
+0x597A6B |          Werfen
+0x597A7B |            Typ
+0x597A8A |               Name
+0x597A9D |              Max.
+0x597AAF |              Min.
+0x597AC1 |                OK! Klar!
+0x597ADA |                               Ich bin nicht sicher, aber
+0x597B14 |             Ist mir egal.
+0x597B2E |                           Heh! Heh!
+0x597B52 |                               V-v-verdammt! Mein Kopf!
+0x597B89 |                Hat nichts mit mir Öu tun!
+0x597BB3 |              Hmm, das wär's also.
+0x597BD5 |                    Ich bin nicht sicher, aber
+0x597C04 |             Ich hab die falsche Person erwischt.
+0x597C35 |    Das sollte ok sein.
+0x597C4C |                     Noch nicht ganÖ bereit.
+0x597C78 |                 Nein, ich bin es nicht.
+0x597CA0 |                 Ok, klar!
+0x597CBA |                               Kapier ich nicht.
+0x597CEA |                       Hat nichts mit mir Öu tun.
+0x597D1B |              Cool! Das sollte ok sein!
+0x597D42 |               Nee! Kapier ich nicht!
+0x597D67 |                  Mann, ich tapp total im Dunkeln!
+0x597D99 |        Ich verlier immer mehr Menschliches
+0x597DC5 |    Ich bin noch nicht bereit.
+0x597DE3 |              Es hat nichts mit mir Öu tun.
+0x597E0E |           Das gefällt mir! Her damit!
+0x597E34 |             Hmph. Hab ich nicht ganÖ kapiert, aber
+0x597E68 | Nicht ich! Gib es Äemand anders!
+0x597E89 |        Es hat nichts mit mir Öu tun.
+0x597EAE |           %!
+0x597EBB |  >!, )!Y 
+0x597EC7 |  h 7!
+0x597ECD |  f R 
+0x597ED3 |  7 
+0x597EDF |  v 
+0x597EE7 |  !!
+0x597EEB |  &!
+0x597EF3 |  b a ) V ; = [ \ #!
+0x597F09 |  ,!Ä +!
+0x597F15 |  Ü 1!M / 
+0x597F1F |  0 
+0x597F25 |  # w 
+0x597F2D |  8 N 
+0x597F39 |  E 
+0x597F41 |  Ö E!
+0x597F47 |  5!@!i n q F!
+0x597F61 |  4 (!
+0x597F69 |  Z x 
+0x597F71 |  B 
+0x597F7F |  3 
+0x597F83 |  =!] 
+0x597F89 |  I!J!K!L!M!N!O!P!Q!R!S!T!U!V!W!X!Y!Z![!\!]!^!_!
+0x597FBB |  } 
+0x597FC3 |  ü 
+0x597FCD |  ?!* 
+0x597FD5 |  *!
+0x597FE1 |  G L 
+0x597FED |  + 
+0x597FF3 |  u 
+0x597FF7 |  g 
+0x597FFD |  - 3!
+0x598005 |  $ ! > 
+0x59800F |  ^ 
+0x598015 |  O 
+0x598019 |  H 
+0x59801D |  t F 
+0x598023 |  C!
+0x598027 |  A | 
+0x59802D |  6 
+0x598031 |  5 4!
+0x598037 |  2!
+0x59803D |  2 D!
+0x59804D |  Q 
+0x598053 |  0!
+0x59805B |  P 
+0x598061 |  k -!" @ 
+0x59806D |  & 
+0x598071 |  <!J 
+0x598079 |  A!. 
+0x598081 |  l y 9 
+0x598089 |  ö 9!
+0x598091 |  '!s 
+0x598099 |  { 
+0x5980A3 |  ;!e 
+0x5980AD |  ~ 
+0x5980B3 |  "!
+0x5980B7 |  ? U  !
+0x5980C3 |  r I ß 
+0x5980CD |  T B!% p ä ' /!
+0x5980E1 |  .!_ 1 : K 
+0x5980ED |  m 
+0x5980F1 |  G!:!C 
+0x5980FF |  D ( 
+0x598105 |  o $!
+0x598111 |  X S 8!
+0x598119 |  d 
+0x59811D |  ` W < 
+0x598127 |  H!c 
+0x598131 |  6!
+0x598137 |  =>ABCeKD@FGHtJfg<$_uva)?snPRSVXY[\]p/0%U^MZoh!"#y*+2,-.345671:8(W9&';`klmxEILNOQTbcdiÄqrwÖ{     0   (   L     
+0x5981A7 | !0 !   
+0x5981B1 | O/JpNOR
+0x5981C1 | A'9h=
+0x5981C9 | InN,$   #  0 @ 
+0x598252 | S\
+0x598273 | ud
+0x59829C | vS
+0x5982F2 | VS
+0x598442 | S\
+0x598463 | ud
+0x5984AC | vS
+0x5984E2 | VS
+0x5985D9 |         !"#$%'(    
+0x5985ED | "S   S 
+0x5985F5 | "S   ~ 
+0x598601 |  : 
+0x598607 |      `!:   : `!:   O `!
+0x598621 |  - i 
+0x598627 |  Cloud
+0x59862E |       Barret
+0x59863B |      Tifa
+0x598645 |        Aeris
+0x598652 |       Red XIII
+0x598661 |    Yuffie
+0x59866B |      Cait Sith
+0x59867A |   Vincent
+0x598684 |     Cid
+0x59868C |         Choco
+0x5986B5 |          Leer
+0x5986C3 |      Löschen
+0x5986D0 |   Auswählen
+0x5986DC | Standard
+0x5986E5 |  Abbrechen
+0x5986F0 | ABCDEFGHIJäKLMNOPQRST
+0x598706 | UVWXYZ,.+-öabcdefghiÄ
+0x59871C | klmnopqrst
+0x598727 | uvwxyÖ:;  ü0123456789
+0x59873D |    RaginLion
+0x59874A |       Freshmake
+0x59875A |       Square
+0x598767 |          3Dfx
+0x598775 |            Local
+0x598786 |           Gold
+0x5987AA | kmoqs+-/13uwy{}579;=Ü
+0x5987C3 | ?ACEG
+0x5987CD | ____
+0x5987D2 | acegi!#%')
+0x5987E1 | JLNPR
+0x5987ED | _]^

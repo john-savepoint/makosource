@@ -1,0 +1,23 @@
+The German chunk 32 data provided contains primarily encoded or binary data that doesn't decode to readable German menu text. The strings appear to be in a proprietary encoding (possibly touphScript or similar) rather than plain text.
+
+Without the actual decoded German strings or their raw binary hex values, I cannot reliably map them to English touphScript indices. The provided text representations (like "D4", "n$", "w$K", etc.) don't correspond to recognizable German menu terms.
+
+To proceed with accurate mapping, I would need either:
+
+1. **Raw hex bytes** for chunk 32 from ff7_de.exe
+2. **Decoded German text** (actual German words like "Menü", "Elemente", "Magie", etc.)
+3. **A reference mapping** between German and English offsets
+
+**Current Status:**
+
+```text
+Chunk 32 (0x5BFB45-0x5C00CA): Cannot decode to German text
+- Data appears to be in proprietary encoding
+- No recognizable German menu terms found in provided text representation
+- Unable to create English-German mapping without decoded strings
+```
+
+Would you like me to:
+- Attempt to extract the actual hex bytes from the German exe file directly?
+- Work with a different chunk that has more readable data?
+- Use a different analysis approach?

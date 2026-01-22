@@ -1,0 +1,15 @@
+Done. I've created a CSV mapping file with 45 German menu strings mapped to their English equivalents using touphScript indices.
+
+The file is saved at:
+```
+/home/johnzealanddoyle/projects/ff7OG_japanese/.project/subagents/agent_german_full_extraction/german_english_menu_mapping.csv
+```
+
+The mapping includes:
+- **Menu navigation**: Select, Cancel, Menu, Config, Status, Order, Limit, PHS, Save, Quit
+- **Battle options**: Battle speed, Battle message, Magic order, restore, attack, indirect
+- **Settings**: Window color, Sound, Controller, Cursor, ATB, Camera angle
+- **Control labels**: Keyboard controls, joystick buttons, and directional inputs
+- **Economic/Game data**: Time, Gil, Level indicators
+
+All entries match the indexed offsets from the English touphScript reference data provided.

@@ -1,0 +1,11 @@
+```csv
+```
+
+**Note:** The German strings in this chunk appear to be encoded, compressed, or binary menu structure data rather than readable text strings. The offsets you provided don't contain decodable German menu text that can be mapped to the English touphScript indices. 
+
+To successfully create a mapping, I would need:
+1. The actual German menu text decoded (if this chunk uses FF7's special text encoding)
+2. A different chunk containing readable German strings
+3. The character encoding/font table used by the German version
+
+Would you like me to help decode the encoding scheme, or do you have a different German string dump with readable text?

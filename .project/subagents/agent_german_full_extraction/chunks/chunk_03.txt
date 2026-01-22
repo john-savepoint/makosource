@@ -1,0 +1,203 @@
+# Chunk 3: Strings 600 to 799
+# Offset range: 0x58BC1C to 0x58D1BA
+
+0x58BC1C | )   9       
+0x58BC29 |    0G  ?       
+0x58BC3C | .   <       
+0x58BC49 |    P8  @       3   .   <       
+0x58BC69 |    0G  A       6   &   (       
+0x58BC89 |    0G  B           *   
+0x58BCA9 |    0G  =       9   (   
+0x58BCC9 |    0G  D       8   -   
+0x58BCE9 |    0G  E       
+0x58BCFC | '   
+0x58BD09 |    0G  F           -   
+0x58BD29 |    0G  G       0   .   
+0x58BD49 |    P8  C       
+0x58BD5C | *   :       
+0x58BD69 |    P8  I       
+0x58BD7C | *   ;       
+0x58BD89 |    0G  J       
+0x58BD9C | *   ;       
+0x58BDA9 |    0G  K       
+0x58BDBC | (   6       
+0x58BDC9 |    P8  L       
+0x58BDDC | *   
+0x58BDE4 |      !  pf  M           -   
+0x58BE04 |      !  P`  N       
+0x58BE1C | -   +        !  P`  I       
+0x58BE3C | *   ;       
+0x58BE49 |    0G  P       
+0x58BE5C | *   ;       
+0x58BE69 |    0G  Q       
+0x58BE7C | (   6       
+0x58BE89 |    P8  R       
+0x58BE9C | *   
+0x58BEA4 |      !  pf  S           *   
+0x58BEC4 |      !  P`  T           *   
+0x58BEE4 |      !  P`  U       9   *   
+0x58BF04 |      !  P`  V       9   *   
+0x58BF24 |      !  P`  W       .   *   !        !  P`  X       "   *   !        !  P`  O       
+0x58BF7C | *   +        !  P`  O       -   )   #       
+0x58BFAD | 7  [       '   +   
+0x58BFC4 |      !  P8  \       
+0x58BFDC | )   
+0x58BFE4 |      !  
+0x58BFED | 7  ]       
+0x58BFFC | +            !  
+0x58C00D | 7  Z       "   )   #       
+0x58C02D | 7  _       
+0x58C03C | +   0       
+0x58C049 |    P`  `       
+0x58C05C | )   4       
+0x58C069 |    P`  a       
+0x58C07C | +   ;       
+0x58C089 |    P8  b       4   +   ;       
+0x58C0A9 |    P8  c       6   +   ;       
+0x58C0CD | ^  d       6   +   )       
+0x58C0ED | ^  e       ,   *   #       
+0x58C109 |    P`  ^       9   ,   '       
+0x58C129 |    0G  g       /   -   
+0x58C149 |    0G  h       ;   ,   
+0x58C16D | 7  i       7   +   
+0x58C189 |    0G  Ä       
+0x58C19C | (   
+0x58C1A9 |    0G  k       
+0x58C1BC | ,   $       
+0x58C1CD | ^  l       
+0x58C1DC | +   .       
+0x58C1E9 |    P`  m       
+0x58C1FC | *   ;       
+0x58C209 |    P`  n       
+0x58C21C | (   ;       
+0x58C229 |    P8  o       
+0x58C23C | &   $       
+0x58C249 |    0G  p       
+0x58C25C | &   
+0x58C269 |    0G  q       
+0x58C27C | -   
+0x58C28D | ^  r       #   (   $       
+0x58C2A9 |    0G  0       #   ,   $       
+0x58C2CD | ^  t       
+0x58C2DC | &   .       
+0x58C2E9 |    P`  u       
+0x58C2FC | -   ;       
+0x58C309 |    P`  v       9   &   9       
+0x58C329 |    0G  f       
+0x58C33C | %   .        !  pf  x       2   %   $        !  pf  y       
+0x58C37C | %   
+0x58C384 |      !  pf  Ö       2   %   
+0x58C3A4 |      !  pf  {       
+0x58C3BC | %   
+0x58C3C4 |      !  pf  |       2   %   
+0x58C3E4 |      !  pf  }       
+0x58C3FC | %   %        !  pf  ~       2   %   /        !  pf  Ü       
+0x58C43C | %   2        !  pf  
+0x58C451 |        2   %   2        !  pf  w       2   %   2       
+0x58C48D | ^  w       4   &   ;       
+0x58C4AD | ^  
+0x58C4B1 |        4   &   ;       
+0x58C4CD | ^  
+0x58C4DC | &   
+0x58C4E9 |    P8  
+0x58C4FC | &           
+0x58C509 |    0G  0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+0x58C864 | *     
+0x58C86E |     # 
+0x58C87E |     , 
+0x58C886 |     # 
+0x58C892 | & '   
+0x58C89C | &   
+0x58C8A4 | .     # .   
+0x58C8BA |   "   
+0x58C8D6 |     & 
+0x58C90A | % 
+0x58C912 | # 
+0x58C916 |   % # 
+0x58C91E |   % % 
+0x58C926 |   ' 
+0x58C92E |   %   
+0x58C936 |   " 
+0x58C93E |   $ 
+0x58C946 |     # 
+0x58C94E |   % 
+0x58C956 |   " 
+0x58C95E |   & 
+0x58C966 |   " 
+0x58C96E |   % 
+0x58C974 | &   ' 
+0x58C97E |   (   "   * 
+0x58C98E |   " 
+0x58C994 | .   $ & '   
+0x58C9A2 | $ 
+0x58C9A6 |   & $ 
+0x58C9C6 |   ! 
+0x58C9CE |   , & 
+0x58C9D6 |   ( " 
+0x58C9DE |   , 
+0x58C9E6 |   / " 
+0x58C9EE |   / " &   , 
+0x58C9FC | &   ( " &   , & &   . " 
+0x58CA16 |   , $ 
+0x58CA1E |   ,   
+0x58CA26 |   , ' 
+0x58CA2E |   1 " 
+0x58CA36 |   , 
+0x58CA3E |   , " 
+0x58CA46 |   , " )   
+0x58CA52 | " )   
+0x58CA5A | " 
+0x58CA6A | " 
+0x58CA72 | ' 
+0x58CA82 | $ 
+0x58CA8A | " 
+0x58CA92 | & &   
+0x58CA9A | " &   
+0x58CAA4 | &   
+0x58CAAA | " &   
+0x58CAB2 | " 
+0x58CAC2 | " 
+0x58CACA | & 
+0x58CACE |   HIJ >;# ;>= &32 #;3 CB" (.- .(" CDB IH' HJE I', DJ8 I,- >#% 4;< ?<@ @<; ?=< ?;= GC! HCG CED CHE =;: 9;= HG* ?@; 0@? @$? $ A )'* 623 '(, )(' &%# &#3 43; 325 $/  -,( !() 341 H*' 652 :9= 563 9:; >%& 43K 1@0 $1K 1$@ 4K1 342 K/$ K0+ 0K1 K31 +/K ?$A ?AF I8J >2= 2<= *G) 0A8 F0? 0/+ /07 A0F /.  ./-  BA B N  .M DAB )G! <24 &2> 708 8I7 L." "BL "!C !"( D8A I-7 7-/ N M MLN LBN .LM JDE hli nÄk lÄi hnm ekf nem dlm kdf fb` ec` da` ad` bf` ce` `fd f`e dkl ken _gh i_h Ä_i _Äg nhg Älk Äng lhm dm` me` XP] PY] UQP OSV QSR UOV S^V ^ST ^TU V^U XRO RYQ ]WX W]Y XZ] W[] Y\] \Y] ZX] [W] YRW QYP XOP RXW OUP SQT SOR QUT Z   ]   ]   I   }   
+0x58CD3D |    }   I   L   I   
+0x58CD51 |    L   
+0x58CD59 |    }   
+0x58CD65 |    p   p   `   p   m   p   
+0x58CD81 |    p   `   m   p   ]   Z   Z   Z   ]   G   ]   Z   G   m   ]   [   ]   G   m   I   
+0x58CDD5 |    ,   
+0x58CDDD |    }   
+0x58CDE5 |    T   
+0x58CDED |    R   R   
+0x58CDF9 |    }   T   L   
+0x58CE09 |    T   }   L   n   
+0x58CE1D |    ß   Z   
+0x58CE29 |    n   `   G   m   `   Z   G   L   }   w   ;   }   L   Z   n   K   T   R   }   F   R   T   R   ö   T   ö   p   h   m   Z   K   ;   L   
+0x58CEB1 |    Z   `   G   m   
+0x58CEC5 |    Z   I   ,   
+0x58CED5 |    I   
+0x58CEE9 |    }   
+0x58CEF1 |    L   w   ö   h   p   m   G   `   ß   
+0x58CF19 |    m   
+0x58CF25 |    R   Z   K   Z   ;   w   L   w   ;   L   w   ;   
+0x58CF59 |    ;   w   }   I   ,   I   
+0x58CF79 |    T   R   R   F   ö   R   T   R   ö   R   
+0x58CFA5 |    T   R   
+0x58CFB5 |    L   T   h   ö   T   F   W   F   T   R   T   
+0x58CFE5 |    R   
+0x58CFF6 |   T   ö   h   
+0x58D00E |   ]   [   ]   I   L   L   L   
+0x58D02D |    L   K   n   m   F   h   [   W   F   T   F   h   W   h   F   [   h   F   W   h   p   p   p   h   m   p   p   h   @   @   
+0x58D0A9 |    @   @   
+0x58D0B5 |    m   h   p   m   n   ß   
+0x58D0D1 |    L   
+0x58D0D9 |    I   L   I   [   F   [   [   ]   [   
+0x58D101 |    @   @   @   @   
+0x58D115 |    p   ß   
+0x58D121 |    ß   p   
+0x58D12D |    m   [   h   ]   m   [   [   m   h   
+0x58D16D |    @   
+0x58D175 |    @   
+0x58D181 |    ]   m   G   t   ß   
+0x58D19E |   YY  KK  ß   G   
+0x58D1B1 |    RR  
+0x58D1BA |   RR  

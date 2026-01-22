@@ -1,0 +1,34 @@
+# Key Japanese Text/Naming Screen Functions for Pass 2 Analysis
+# Format: function_address start_line end_line
+
+# Naming Screen Core
+sub_10001340 8976 9099
+sub_10019110 24226 24671
+sub_10016CE0 22450 22620
+
+# Character Table/Lookup
+sub_10019230 24803 24825
+sub_100191F0 24710 24802
+
+# Text Rendering Core
+sub_1000F190 15113 15224
+sub_1000F5C0 15467 15488
+sub_1000EFD0 15038 15062
+sub_1000B9D0 12307 12357
+
+# Text Dimensions/Formatting
+sub_1000EB90 16491 16585
+sub_1000EC60 16586 16593
+sub_1000EE40 16709 16734
+
+# Font/Locale Initialization
+sub_10016A30 22195 22279
+sub_10007010 13959 13984
+sub_10007120 14008 14678
+sub_10010B20 16129 16141
+
+# Character Glyph Rendering
+sub_10004AE0 12296 12300
+sub_10004B00 12302 12306
+sub_10004B20 12308 12357
+sub_1000B740 12690 13194

@@ -1,0 +1,764 @@
+# FF7 English vs German String Comparison
+# Generated: 2026-01-03 13:22:02 JST
+#
+# Format: [INDEX] EN_TEXT | DE_TEXT
+# ====================================================================================================
+
+[000] Do you want to quit | Möchten Sie Final 
+[001] playing Final Fantasy VII | Fantasy VII verlassen und
+[002] and return to Windows[1F] | zu Windows zurückkehren[1F]
+[003] Yes | Ja
+[004] No |  Nei
+[005] Window color | N  Fensterfarbe
+[006] Sound |               Sound
+[007] Controller |                     Kontroller
+[008] Cursor |                           Cursor
+[009] ATB |                                 ATB
+[010] Battle speed |                                       Kampftempo
+[011] Battle message | 
+[012] Field message | fmeldung
+[013] Camera angle |   Feldmeldung
+[014] Select |         Kamerawinkel
+[015] Cancel |               Auswählen
+[016] Menu |                     Abbrechen
+[017] Normal |         Stereo
+[018] Customize |               Breit
+[019] Initial |                     Normal
+[020] Memory |                           Benutzerdefiniert
+[021] Active |                                 Anfang
+[022] Recommended |                                       Speicher
+[023] Wait |                                             Akti
+[024] Auto | v
+[025] Fixed |   Empfohlen
+[026] Slow |               Auto
+[027] Fast |                     Fest
+[028] Magic order |                                             ROT
+[029] restore |                                                 
+[030] attack |   GRN
+[031] indirect |         BLAU
+[032] No[0E] |                     Heilung
+[033] [C5][B8][B7] |       
+[034] [BA][C5][B8][B8][C1] |       
+[035] [B5][BF][C8][B8] |       
+[036] Set Sound [06] Music Volume |                   Hilfe
+[037] Not supported[0E] |                          
+[038] Item |                 Zum 
+[039] Magic | Einrichten [B2]START[B3] d
+[040] Materia | rücken[0E]
+[041] Equip |           Zum Beende
+[042] Status | n Richtungstaste Lin
+[043] Order | ks oder Rechts drück
+[044] Limit | en[0E]
+[045] Config |                     
+[046] PHS |                     
+[047] Save |     [C5][B8][B7]
+[048] Quit | 
+[049] Beginner | ikeinstellung
+[050] Time |                     
+[051] Gil |         [80][02]S   S [80][02][AD][01]
+[052] next level |     `[01][1A]   [1A] `[01][D6]  [01][02] 
+[053] Limit level | [02][01][01][02] [01] [02][02] [01][02][01]   
+[054] Tutorial | Objekt
+[055] LEVEL UP | Materia
+[056] Fury | Ausrüsten
+[057] Sadness | Werte
+[058] Press [CANCEL] to end[0E] | [A0][BE] [9B]o [0D] p[E8]  [E7] [90][D1] [E0][CA] [9F][BB] [D6][9D] [E0][9B] [90][93] [90][D1] b[01]
+[059] Press [OK] to configure a key[0E] | ö [0D] b[01]ö b[01]ö b[01]ö b[01]ö b[01]ö     [FD]n u[03]ö j[C0] o[81] [F6][0D] 
+[060] Now press the new key[0E] | [AD][EB] [E7] [1A][D2] [A5][CB] [90][BD] [90][9E] [EF][9B] [F6][93] u[03]ö u[03]ö [F6][0D] u[03]ö u[03]
+[061] [OK] | ö u[03]ö u[03]ö u[03]ö     [09][05][08][04][0A]     [02][02] [01][02][02][02][03][03][04][04]   [A0][8C]  [10][0E]  
+[062] [CANCEL] | x[02]  \   [0A]   [01]   [02]   [B4]          [BB][C3]
+[063] [MENU] | 
+[064] [SWITCH] | [08]   t   start[20]of[20]menu[20]systemAAA[0A]    end[20]of[20]menu[20]sy
+[065] [PAGEUP] | stemAAA[0A]  Mit [ABBRECHEN] beenden[0E]
+[066] [PAGEDOWN] |                     Drücken Sie auf [O[0E]K[0E]] um die
+[067] [CAMERA] |                               Tastenbelegung zu ko
+[068] [TARGET] | nfigurieren[0E]
+[069] [ASSIST] |  Taste drücken[A9]
+[070] [START] | [O[0E]K[0E]]
+[071] [UP] |           [ABBRECHEN]
+[072] [DOWN] |                     [MEN]
+[073] [LEFT] |                               [UMSCHALTEN]
+[074] [RIGHT] |                                         [BILD HOCH
+[075] KEYBOARD | ]
+[076] JOYSTICK | [BILD HERUNTER]
+[077] ESCAPE   | [F0]%[99] [F8]%[99] 
+[078] 1    |  &[99] 
+[079] 2    | [08]&[99] 
+[080] 3    | [10]&[99] 
+[081] 4    | [18]&[99] 
+[082] 5    |  &[99] 
+[083] 6    | (&[99] 
+[084] 7    | 0&[99] 
+[085] 8    | 8&[99] 
+[086] 9    | @&[99] 
+[087] 0    | L&[99] 
+[088] MINUS    | X&[99] `&[99] 
+[089] EQUALS   | h&[99] p&[99] 
+[090] BACK SPACE   | x&[99] [80]&[99] [88]&[99] 
+[091] TAB  | [90]&[99] 
+[092] Q    | [98]&[99] 
+[093] W    | [A0]&[99] 
+[094] E    | [AC]&[99] 
+[095] R    | [B8]&[99] 
+[096] T    | [C0]&[99] 
+[097] Y    | [C8]&[99] 
+[098] U    | [D4]&[99] 
+[099] I    | [E0]&[99] 
+[100] O    | [EC]&[99] 
+[101] P    | [F4]&[99] 
+[102] LEFT BRACKET     | [FC]&[99] [04]'[99] [0C]'[99] [14]'[99] 
+[103] RIGHT BRACKET    | [1C]'[99] $'[99] ,'[99] 4'[99] 
+[104] RETURN   | @'[99] L'[99] 
+[105] LEFT CONTROL     | X'[99] d'[99] p'[99] |'[99] 
+[106] A    | [88]'[99] 
+[107] S    | [94]'[99] 
+[108] D    | [A0]'[99] 
+[109] F    | [AC]'[99] 
+[110] G    | [C8]   
+[111] H    | K   
+[112] J    |     
+[113] K    | [C8]   
+[114] L    | d   
+[115] SEMICOLON    | @   [C8]   }   
+[116] APOSTROPHE   | [10]   [C8]   [96]   
+[117] GRAVE    | [80]   [C8]   
+[118] LEFT SHIFT   | [AF]   [04]   [C8]   
+[119] BACK SLASH   | [C8]   [08]   [C8]   
+[120] Z    | [E1]   
+[121] X    | [01]   
+[122] C    | [C8]   
+[123] V    | [FA]   
+[124] B    | [02]   
+[125] N    | [C8]   
+[126] M    | [13][01]  
+[127] COMMA    |  [01]  [C8]   
+[128] PERIOD   | ,[01]   [08]  
+[129] SLASH    | [C8]   E[01]  
+[130] RIGHT SHIFT  |  [10]  [C8]   ^[01]  
+[131] MULTIPLY     |  @  [C8]   w[01]  
+[132] LEFT ALT     |  [80]  [C8]   [90][01]  
+[133] SPACE    |     [90][01]  
+[134] CAPS LOCK    | K       [90][01]  
+[135] F1   | d   
+[136] F2   | @   
+[137] F3   | [90][01]  
+[138] F4   | }   
+[139] F5   | [10]   
+[140] F6   | [90][01]  
+[141] F7   | [96]   
+[142] F8   | [80]   
+[143] F9   | [90][01]  
+[144] F10  | [AF]   
+[145] NUMLOCK  | [04]   [90][01]  
+[146] SCROLL   | [C8]   [08]   
+[147] NUMPAD7  | [90][01]  [E1]   
+[148] NUMPAD8  | [01]   [90][01]  
+[149] NUMPAD9  | [FA]   [02]   
+[150] SUBTRACT     | [90][01]  [13][01]   [01]  
+[151] NUMPAD4  | [90][01]  ,[01]  
+[152] NUMPAD5  |  [08]  [90][01]  
+[153] NUMPAD6  | E[01]   [10]  
+[154] ADD  | [90][01]  
+[155] NUMPAD1  | ^[01]   @  
+[156] NUMPAD2  | [90][01]  w[01]  
+[157] NUMPAD3  |  [80]  [90][01]  
+[158] NUMPAD0  | [90][01]      
+[159] DECIMAL  | [07][07][05][07][06][07][04][07]
+[160] F11  | [08][0B]  
+[161] F12  |     
+[162] F13  | APOS
+[163] F14  | TROP
+[164] F15  | HE  
+[165] KANA     | LINKE ST
+[166] CONVERT  |     #   
+[167] NOCONVERT    | C   V   B   
+[168] YEN  | KOMM
+[169] NUMPADEQUALS     | NUM. 7  NUM. 8  
+[170] CIRCUMFLEX   | NUM. 4  NUM.
+[171] AT   |  5  
+[172] COLON    | NUM. 6  
+[173] UNDERLINE    | PLUS    NUM.
+[174] KANJI    |  1  NUM.
+[175] STOP     |  2  NUM.
+[176] AX   |  3  
+[177] UNLABELED    | NUM. 0  NUM.
+[178] NUMPADENTER  | F11 F12 KEIN
+[179] RIGHT CONTROL    | ES  KEINES  KEIN
+[180] NUMPADCOMMA  | KEINES  KEIN
+[181] DIVIDE   | ES  KEIN
+[182] SYSRQ    | ES  KEIN
+[183] RIGHT ALT    | ES  KEINES  
+[184] HOME     | KEINES  
+[185] UP   | KEIN
+[186] PAGE UP  | ES  KEIN
+[187] LEFT     | ES  KEIN
+[188] RIGHT    | ES  NUMP
+[189] END  |     
+[190] DOWN     | KEINES  
+[191] PAGE DOWN    | KEINES  CIRC
+[192] INSERT   | UMFLEX  
+[193] DELETE   | AT  COLO
+[194] LEFT WIN     | KEINES  KEIN
+[195] RIGHT WIN    | ES  KEINES  
+[196] APPS     | NUM. ENT
+[197] MOUSE_B1     | TE STRG KEIN
+[198] MOUSE_B2     | ES  KEINES  
+[199] MOUSE_B3     | KEINES  KEIN
+[200] UP   | ES  
+[201] DOWN     | KEINES  
+[202] LEFT     | KEINES  
+[203] RIGHT    | KEINES  
+[204] BUTTON 1     | KEINES  KEIN
+[205] BUTTON 2     | ES  KEINES  
+[206] BUTTON 3     | KEINES  KEIN
+[207] BUTTON 4     | ES  KEINES  
+[208] BUTTON 5     | KEINES  KEIN
+[209] BUTTON 6     | ES  KEINES  
+[210] BUTTON 7     | NUM. KOMMA  
+[211] BUTTON 8     | KEINES  GETE
+[212] button[20]Y     | ilt keines  
+[213] button[20]QP    | prtN[20]scrn   
+[214] Pause | [CD][CC][CC]^[CD][CC][CC]^
+[215] Sleep |     [CD][CC][CC]^[CD][CC]
+[216] Poison | [CC]^[CD][CC][CC]^    
+[217] Sadness |           
+[218] Fury |       mX 
+[219] Confusion | [C5]\ [96]i [AF]j
+[220] Silence |  [19]n [09]d 
+[221] Haste | [B2]f [8C]k OX
+[222] Slow |  Aw OX 
+[223] Stop | 
+[224] Petrify | ^X OX OX
+[225] Regen |  [F7]p OX 
+[226] Reflect | OX rX [D7]]
+[227] Shield | [85]o [C0]d g
+[228] Berserk |  cX YX 
+[229] Peerless | YX {r YX
+[230] Paralyze |  YX YX 
+[231] Darkness | [FB]V D[ cX
+[232] How much will you raise[1F] | TX TX TX JX [C0]\ hX TX 
+[233] Gil | TX 
+[234] After | s TX 
+[235] Gil on hand | u t [1C]w TX 
+[236] Keep goin[07][1F] |           Toll
+[237] Of course[01]     No way[01] |         Einzigartig
+[238] Current Battle Points | hmung
+[239] Slot start[01] | 
+[240] GREAT[01][01] |           
+[241] Then[0C] go for it[01] |         [04]       [80]  [80][80] [80][80]  [80][80] `[80][80]
+[242] Magic Materia is broken[0E] |  [80][80][80] [80]`[80] [80] [80][80][80] [80]Rr `hpx[19]IY     
+[243] Summon Materia is broken[0E] | Wieviel willst du ausgeben[1F]
+[244] Support Materia is broken[0E] | Nach
+[245] Independent Materia is broken[0E] | [02][05][04][03][01][02][04] [01][03][05][02][04] [05][01][01][02][04] [02][01][03][05][04] [02][01][05][04][02][03]
+[246] Command Materia is broken[0E] | [02][04][03][02][01][04] [05][02][01][03][02][04][01][02][05]  `    [20]  `  
+[247] All Materia is broken[0E] |   [A0] [20] [A0] ` [A0]     [20] `    [20]  `  
+[248] Accessory is broken[0E] |   [A0] [20] [A0] ` [A0]     ` `    [20]  `  
+[249] Item command is sealed[0E] |   [A0] [20] [A0] ` [A0]            `  [80]  
+[250] Armor is broken[0E] |   [C0] ` [C0] [80] [C0]     `      `  [80]  
+[251] Weapon is broken[0E] |   [C0] ` [C0] [80] [C0]     [80]      `  [80]  
+[252] [11][0F][12] speed[0E] |   [C0] ` [C0] [80] [C0]     [02][04][08][10]    [01][02][02][02][02][01][01][01]
+[253] [11][0F][12] accuracy[0E] | [01][01][01][01][01][01][01][01][01] [02][02][02] [01][01][01][01][01][01][01][01][01][01]        
+[254] Minimum |         [01][01] [02][02] [01][01][01][01][01][01][01][01][01][01][01][01][01] [02][02]  
+[255] Poison | [01][01][01][01][01][01][01][01]                [01][01][01]  [02] [02]
+[256] Toad |  [01][01][01][01][01][01][01][01][01][01][01]  [02] [02]  [01][01][01][01][01]        
+[257] Time x[13][10] damage[0E] |         [01][01][01][01]   [02]    [01][01][01][01][02][03][04][05][06][07][09][08]
+[258] Down [15] levels[0E] | [09][09][08] [0D][0A][0B][09]      [01][0C]Weiter[1F]
+[259] Down [11][10] levels[0E] | ein
+[260] [11][0F][12] HP[0E] | e
+[261] [11][0F][12] MP[0E] | [01][01]
+[262] [11][0F][12] HP[06]MP[0E] | Schlachtpunkte
+[263] Zero MP[0E] |                [B2]Zaubersubstanz k
+[264] Yesss[01] No handicapp[01] | aputt[0E][B3]
+[265] HP restored[0E] | putt[0E][B3]
+[266] Worried about the other members[1F] | aputt[0E][B3]
+[267] Yeah[0C] a little | kaputt[0E][B3]
+[268] Not really | 
+[269] Save |       [B2][11]
+[270] Reform |    [B2][11][0F][12] HP[06]MP[0E][B3]
+[271] Split your allies into two groups[0E] | l MP[0E][B3]
+[272] Split your allies into three groups[0E] |  Behinderung[01][01][B3]
+[273] Please make a party of two[0E] | llt[0E][B3]
+[274] Please make a party of three[0E] | itglieder[1F]
+[275] Select with START button[0E] |         Eigentlich nicht
+[276] Wpn[0E] | n zwei Gruppen aufteil
+[277] Arm[0E] | en
+[278] Acc[0E] |  Gruppen aufteilen
+[279] LEVEL [11] | Element
+[280] LEVEL [12] |         Angreifen
+[281] LEVEL [13] | digen
+[282] LEVEL [14] |   Ungültig
+[283] Set BREAK LEVEL[0E] |           
+[284] Set |                   
+[285] Check |     Stärke
+[286] To change BREAK LEVEL[0C] |             Vitalität
+[287] it will begin from Limit Point [10][0E] | uber
+[288] Change BREAK LEVEL[1F] |       Glück
+[289] Yes | n
+[290] No | Verteidigen
+[291] Limit set[01] |         Zbrangrf
+[292] Select LEVEL[0E] | tdg
+[293] Fire | 
+[294] Ice | 
+[295] Lightning | 
+[296] Earth | 
+[297] Poison | 
+[298] Gravity | 
+[299] Water | 
+[300] Wind | 
+[301] Holy | 
+[302] Death | 
+[303] Near[0D]death | 
+[304] Sleep | 
+[305] Poison | 
+[306] Sadness | 
+[307] Fury | 
+[308] Confusion | 
+[309] Silence | 
+[310] Haste | 
+[311] Slow | 
+[312] Stop | 
+[313] Frog | 
+[314] Small | 
+[315] Slow[0D]numb | 
+[316] Petrify | 
+[317] Regen | 
+[318] Barrier | 
+[319] MBarrier | 
+[320] Reflect | 
+[321] Shield | 
+[322] Death[0D]sentence | 
+[323] Manipulate |     [80][02]    [80][02]S   [A3] 
+[324] Berserk | [80][02]][01][A3] ^ [[01][B2]     `[01]\ 
+[325] Peerless |   \ `[01][1A]   q `[01][9F] q [1F] 
+[326] Paralyzed | [9E] y 
+[327] Darkness |   S [80][02][AD][01]s[17][A1]
+[328] Element |     Kälte
+[329] Effect |  Gewitter
+[330] Attack | de
+[331] Defend |        Schwerkr
+[332] Halve | aft
+[333] Invalid |  Wind
+[334] Absorb | ilig
+[335] Strength | 
+[336] Dexterity | ift
+[337] Vitality |     Trauer
+[338] Magic |          Zorn
+[339] Spirit |               P
+[340] Luck | sycho
+[341] Attack |     Schweigen
+[342] Attack[05] |          Hast
+[343] Defense |               G
+[344] Defense[05] | emach
+[345] Magic atk |     Stop
+[346] Magic def |          Frosch
+[347] Magic def[05] | 
+[348] Wpn[1A] | werg
+[349] Arm[1A] |     Allm[0E]Verste
+[350] Acc[1A] | in[0E]
+[351] Limit level[1A] | in[0E]
+[352] Wpn[0E] |             
+[353] Arm[0E] |     Schild
+[354] Acc[0E] |             
+[355] Attack | ung
+[356] Attack [05] |     Blind
+[357] Defense |             
+[358] Defense [05] |     Element[0F]
+[359] Magic atk | Nebenwirkung
+[360] Magic def | 
+[361] Magic def[05] | irkung
+[362] Slot |       Angrif
+[363] Growth | f
+[364] Nothing |        Verte
+[365] Normal | idigung
+[366] Double |         Halb
+[367] Triple | ieren
+[368] Do you really want to remove this[1F] |                  
+[369] I sure do[01] |       Stärke
+[370] Wait a sec | ick
+[371] Sephiroth[B2][A9][A9][B3] |          Zauber
+[372] Wpn[0E] | müt
+[373] Arm[0E] |    Glück
+[374] Ability list |         Angriff
+[375] Equip effect |              Angriff
+[376] Check |  [05]
+[377] Arrange | rteidigung
+[378] AP |         Zauber
+[379] To next level |              Zaubera
+[380] MASTER | bwehr
+[381] Arrange | uberabw[0E] [05]
+[382] Exchange |    Waf[0E]
+[383] Remove all |         Rüs[0E]
+[384] Trash |              Acc[0E]
+[385] Dexterity | mit[0D]Stufe
+[386] Cover |             [80][02][E0][01]    
+[387] Magic | `[01][F0]  [AD] [FD] `[01]R w ü [A0] 
+[388] Luck |            [92][01]     
+[389] MASTER |         \     [C9]  
+[390] Strength |     W \ Waf[0E]
+[391] Vitality |           Rüs[0E]
+[392] Magic |             Acc[0E]
+[393] Magic def |               Zub[0E]
+[394] Dexterity |                 Stär
+[395] Luck | ke
+[396] MaxHP | schick
+[397] MaxMP | Vitalitä
+[398] MaxHPUP |   Zauber
+[399] MaxMPUP |     Moral
+[400] EXP[0E]UP |       Glück
+[401] Gil UP |         Angriff
+[402] Encount Down |           Angriff [05]
+[403] Encount Up |             Verteidi
+[404] Meet Chocobos | gung
+[405] Pre[0D]emptive | digung [05]
+[406] Long range attack | er
+[407] Attack all | uberabwehr
+[408] Counter attack | Zauberabw[0E] [05]
+[409] Magic | Wasser
+[410] Summon |     Heilig
+[411] Enemy[0D]Skill | Soll das wirklich en
+[412] Added[0D]Ability | tfernt werden[1F]
+[413] All |                     
+[414] [14]x[0D]M |             Einen Mo
+[415] Absorb MP | ment
+[416] Absorb HP |         Sephiroth[B2][A9][A9]
+[417] Steal as well |     Waf[0E]
+[418] Extra cut |             Rüs[0E]
+[419] Turbo MP |                     
+[420] Nothing[0E] | Fähigkeitsliste
+[421] Not enough MP[0E] |         Rüstungseffe
+[422] Use |             
+[423] Arrange |             
+[424] Key Items | Auf nächste 
+[425] Customize | Ebene
+[426] Field |     MASTER
+[427] Battle |             
+[428] Throw |         Ordn
+[429] Type | en
+[430] Name |             
+[431] Most | Tauschen
+[432] Least |             
+[433] OK[01] Got it[01] | Alles entfernen
+[434] I[07]m not sure but[A9] | fen
+[435] Don[07]t really care[0E] |                 Geschwindigkeit   
+[436] Heh[01] No sweat[01] | [05]HHER
+[437] D[0D]d[0D]d[0D]damn[01] My head hurts[01] |     Zauberkraft   [05]HHER
+[438] Got nuthin[07] to do with me[01] | ück   [05]HHER
+[439] Hmm[0C] so that[07]s it[0E] |                     Stärke
+[440] I[07]m not too sure but[A9] |               Vitalität
+[441] I[07]ve got the wrong person[0E] |         Zauber
+[442] This should be okay[0E] |   Zbrvertdg
+[443] Not quite ready yet[0E] | hick
+[444] It isn[07]t me[0E] |                   MAXHP
+[445] Right[0C] I[07]ve got it[01] |             MAXMP
+[446] I don[07]t get it[0E] |       MAXHP
+[447] It has nothing to do with me[0E] | MAXMP
+[448] Cool[01] This should do it[01] | 
+[449] Nope[01] I don[07]t get it[01] |                 Treffen [0D] [05]
+[450] Oh wow[0C] I[07]m totally clueless[01] |           Treffen [0B] [05]
+[451] I[07]m getting less human[A9] |     Chocobo treffen
+[452] I[07]m still not ready[0E] | äventivm[0E] [0B] [05]
+[453] It has nothing to do with me[0E] | iff
+[454] Hey I like this[01] Lemme use it[01] | 
+[455] Hmph[0E] Don[07]t quite get it but[A9] |         Alle angreifen
+[456] Not me[01] Give it to someone else[01] |   Ständiger Angriff
+[457] It[07]s got nothing to do with me[0E] | P[0D]nderung
+[458] Cloud | [09] V [1B] [1D] [ \ 
+[459] Barret | [03][01][8A] [F1] [0C][01]j [0B][01]
+[460] Tifa | [87] [9C] [E5]  [11][01]M 
+[461] Aeris | [0F] [D6] [10] [9B] [C9] [03] 
+[462] Red XIII | w [FA] 
+[463] Yuffie | [F9] [C2] [98] E [AE] [FC] 
+[464] 䄣呉㌀呉ｈ | wZĥvĕĠ
+[465] 䤶䍎久ｔ | INQĦl·
+[466] 䤣ｄ | ºË²
+[467] 䠣䍏ｏ | Ĉ©m:Xu
+[468] 倳䍁ｅ | ÅĩĪī
+[469] 䔤䕌䕔ÿ | ĬĭĮį
+[470] 䔳䕌呃ÿ | İıĲĳ
+[471] 䔤䅆䱕ｔ | ĴĵĶķ
+[472] 䄣䍎䱅ÿ | ĸĹĺĻ
+[473] [UNICODE:21] | [UNICODE:3c]
+[474] [UNICODE:22] | [UNICODE:01]
+[475] [UNICODE:23] | [UNICODE:3d]
+[476] [UNICODE:24] | [UNICODE:01]
+[477] [UNICODE:25] | [UNICODE:3e]
+[478] [UNICODE:26] | [UNICODE:01]
+[479] [UNICODE:27] | [UNICODE:3f]
+[480] [UNICODE:28] | [UNICODE:01]
+[481] [UNICODE:29] | [UNICODE:95]
+[482] [UNICODE:2a] | [UNICODE:00]
+[483] [UNICODE:2b] | [UNICODE:a4]
+[484] [UNICODE:2c] | [UNICODE:00]
+[485] [UNICODE:2d] | [UNICODE:5d]
+[486] [UNICODE:2e] | [UNICODE:00]
+[487] [UNICODE:2f] | [UNICODE:d2]
+[488] [UNICODE:30] | [UNICODE:00]
+[489] [UNICODE:31] | [UNICODE:f7]
+[490] [UNICODE:32] | [UNICODE:00]
+[491] [UNICODE:33] | [UNICODE:ab]
+[492] [UNICODE:34] | [UNICODE:00]
+[493] [UNICODE:35] | [UNICODE:7f]
+[494] [UNICODE:36] | [UNICODE:00]
+[495] [UNICODE:37] | [UNICODE:f8]
+[496] [UNICODE:38] | [UNICODE:00]
+[497] [UNICODE:39] | [UNICODE:c8]
+[498] [UNICODE:3a] | [UNICODE:00]
+[499] [UNICODE:0c] | [UNICODE:9f]
+[500] [UNICODE:0e] | [UNICODE:00]
+[501] [UNICODE:0b] | [UNICODE:a7]
+[502] [UNICODE:0d] | [UNICODE:00]
+[503] [UNICODE:41] | [UNICODE:1f]
+[504] [UNICODE:42] | [UNICODE:01]
+[505] [UNICODE:43] | [UNICODE:0a]
+[506] [UNICODE:44] | [UNICODE:00]
+[507] [UNICODE:45] | [UNICODE:64]
+[508] [UNICODE:46] | [UNICODE:00]
+[509] [UNICODE:47] | [UNICODE:bf]
+[510] [UNICODE:48] | [UNICODE:00]
+[511] [UNICODE:49] | [UNICODE:0a]
+[512] [UNICODE:4a] | [UNICODE:01]
+[513] [UNICODE:4b] | [UNICODE:86]
+[514] [UNICODE:4c] | [UNICODE:00]
+[515] [UNICODE:4d] | [UNICODE:96]
+[516] [UNICODE:4e] | [UNICODE:00]
+[517] [UNICODE:4f] | [UNICODE:a3]
+[518] [UNICODE:50] | [UNICODE:00]
+[519] [UNICODE:51] | [UNICODE:91]
+[520] [UNICODE:52] | [UNICODE:00]
+[521] [UNICODE:53] | [UNICODE:fe]
+[522] [UNICODE:54] | [UNICODE:00]
+[523] [UNICODE:55] | [UNICODE:27]
+[524] [UNICODE:56] | [UNICODE:00]
+[525] [UNICODE:57] | [UNICODE:2c]
+[526] [UNICODE:58] | [UNICODE:00]
+[527] [UNICODE:59] | [UNICODE:7b]
+[528] [UNICODE:5a] | [UNICODE:00]
+[529] [UNICODE:1a] | [UNICODE:9e]
+[530] [UNICODE:1b] | [UNICODE:00]
+[531] [UNICODE:10] | [UNICODE:69]
+[532] [11] |  
+[533] [12] | [0B]
+[534] [13] |  
+[535] [14] | [B9]
+[536] [15] |  
+[537] [16] | [8F]
+[538] [17] |  
+[539] [18] | u
+[540] [19] |  
+[541] Ability list |     [07][01][09][0A][0B][0B][05][0E]      [01]W
+[542] Equip effect | Vincent
+[543] AP | 
+[544] To next level | 
+[545] MASTER | [0B][0A][06][0E]      [01]_Cid
+[546] Dexterity | 
+[547] Cover |   [01] 
+[548] Magic | [FE][07][01]         [8C] [8C] [04] [04] 
+[549] Luck |     
+[550] MASTER | 
+[551] Strength | 
+[552] Vitality | 
+[553] Magic | [0A]RuhdfaN      [01] Seph
+[554] Magic def | iroth
+[555] Dexterity |      [0F] [0F][CC][01][CC][01]    
+[556] Luck | [B6][E3][04] W
+[557] MaxHP | Q
+[558] MaxMP | [17]
+[559] MaxHPUP | 
+[560] MaxMPUP | 
+[561] EXP[0E]UP | 
+[562] Gil UP | 
+[563] Encount Down | 
+[564] Encount Up | 
+[565] Meet Chocobos | 
+[566] Pre[0D]emptive | 
+[567] Long range attack |                 [01]   
+[568] Attack all | [06]   [01]   [02]   [06]   [01]   
+[569] Counter attack | [03]   [06]   [01]   [04]   [06]   
+[570] A | [01] 
+[571] D |   
+[572] Buy   Sell     Exit | [06]   [01]   [0A]   [06]   [01]   
+[573] Gil |                     
+[574] Owned | [01]               [06]   
+[575] Equipped | [04]   [03]   [02]   [05]   [03]   
+[576] Total | [04]   [03]   [03]   [07]   [04]   
+[577] How many | [03]   [09]   [04]   [03]   [05]   
+[578] Item      Materia | [05]   [03]       [05]   [03]   
+[579] Gil remaining | [08]   [03]   [03]   [04]   [04]   
+[580] Price for Master | [03]   [05]   [04]   [03]   [0A]   
+[581] Price through AP | [05]   [03]   [08]   [02]   [01]   
+[582] Nothing |   \   ]   ^   `   a   
+[583] Normal | d   e   f   g   h     
+[584] Double |   j   k   l   m   n   
+[585] Triple | o   p   q   r   s   t 
+[586] Weapon Shop | E   G   H   I   J   
+[587] Item Shop | K       q   u   Full
+[588] Materia Shop |  Equipent[01]
+[589] General Store | c Materia[01]
+[590] Vegetable Store | on Materia[01]
+[591] Accessory Shop | and
+[592] Tool Shop |  [0D] AW YEAH[01]
+[593] Hotel Shop | Feuer
+[594] Welcome[01] | Blitz
+[595] What would you like to buy[1F] | t
+[596] How many would you like[1F][01] |  das wirklich entfernt werden[1F]
+[597] What would you like to sell[1F][01] |                       Einen Moment
+[598] How many would you like to sell[1F][01] |             Sephiroth[B2][A9][A9][B3]
+[599] Load |                     [02] [05]             
+[600] Select a save data file[0E] | [01]       [07]       [03]       f           
+[601] Select a save game[0E] |                                 [02] [05] 
+[602] Loading[0E] Please wait[0E] |     [03]       f                       
+[603] Saving[0E] Please wait[0E] |                     [02] [05]             
+[604] EMPTY | [01]       [07]       [03]       f           
+[605] GAME |                                 [02] [05] 
+[606] Continue[1F] |             [01]       [07]       [03]       
+[607] Checking Save Data File[0E] |         R   L[01]  [02]   [DC][05]  [02]   [02]   [02]   
+[608] [10][11] | L[01]  p   [96]   [96]   [96]            [E8][03]  
+[609] [10][12] | L[01]  [E8][03]  [02]   [02]   p   [02]   [02]   [02]   [02]   
+[610] [10][13] | [02]   [02]   [02]   [02]   [02]   [02]   [20][03]  [02]   [02]   
+[611] [10][14] | [02]   [20][03]  [02]   [02]   [02]   [02]   [02]   [02]   [02]   
+[612] [10][15] | [02]   [02]   [02]   [02]   [02]   [02]   [02]   [F4][01]  [F4][01]  
+[613] [10][16] | R   [90][01]  [E8][03]  [02]   [02]   [02]   [02]   [02]   [02]   
+[614] [10][17] | [02]   [88][13]  [B8][0B]  [DC][05]  [E8][03]  [20][03]  [90][01]  [FA]      
+[615] [10][18] | [F4][01]  [F4][01]  [F4][01]  [F4][01]  [F4][01]  [F4][01]  [F4][01]  [02]   [02]   
+[616] [10][19] | [D0][07]  [DC][05]  x[02]  [90][01]  [C8]      [0A]   [02]   [F4][01]  
+[617] [11][10] | [F4][01]  [F4][01]  [F4][01]  [F4][01]  [F4][01]  [F4][01]  [F4][01]  R   R   
+[618] [11][11] | R   [F4][01]  R   R   R   [02]   [02]   [02]       
+[619] [11][12] |                                     
+[620] [11][13] |                                     
+[621] [11][14] |                    [E8][03]  [DC][05]  [F0][0A]  [E0]N  
+[622] [11][15] | [E0]N  pf  [98][08]  [D8][0E]  [19]  [F0][0A]  [10]  [02]   [02]   
+[623] Saved[0E] | [02]   [02]      `[01]  [EE][02]  [B0][04]  [C4][09]  [A8][16]  [10]G  
+[624] Could not save[0E] | [80]^  [08][07]  [8C][0A]  [98]Z  [98][08]  [10]  [02]   [02]   [02]   
+[625] Could not load[0E] |    ~[01]  [B6][03]  [05]  [8C][0A]  [9C][18]  [E0]N  pf  [D0][07]  
+[626] Data is ruined[0E] | [E4][0C]  [80]^  [80][0C]  [E4][0C]  [02]   [02]   [02]   [20][03]  [14][05]  
+[627] NEW GAME | [C4][09]  [17]  [F8]J  b  [D0][07]  [AC][0D]  [B0]V  [17]  `[1F]  
+[628] Are you sure you want to save[1F] | [02]   [02]   [02]   [8C]   [01]  [20][03]  [14][05]  H[0A]  [A8][16]  
+[629] Yes | [08][07]  [80][0C]  [C4][09]  [D8][0E]  l[1D]  [B0][04]  [19]  l[1D]  [C8]R  
+[630] No | Xj  x[1B]  l[1D]  [80]^  [80][0C]  X[18]  [02]   [98]Z  [02]   
+[631] Completed[0E] | [B8][0B]  [17]  [02]   [02]   [02]   [F4][01]  [09]  [7C][15]  [F8]J  pf  [FC][08]  [F0][0A]  
+[632] Formatted[0E] | [20][03]  [14][05]  [D0][07]  [80][0C]  [C0][12]  [08][07]  [0E]  `[1F]  [E0]N  x[02]  [20][03]  [02]   
+[633] Could not format[0E] | [02]   [02]   [E8][03]  [B6][03]  [DC][05]  [14][05]  [C0][12]  [C0][12]  [C0][12]  [D8][0E]  [02]   [02]   
+[634] Not formatted[0E] | [02]   [02]   [02]   [02]   l[1D]  [AC][0D]  l[1D]  [A0][0F]  [10]G  [10]G  [02]   [20]n  
+[635] Want to format it now[1F] | [02]   [02]   [A0][0F]  [B8][0B]  [B8][0B]  x[1B]  l[1D]  [88][13]  [F4][01]  l[1D]  [02]   `[1F]  
+[636] No save data file[0E] | `[1F]  `[1F]  [02]   l[1D]  [88][13]  [02]   HC  [02]   [E0]N  [10]G  [02]   [02]   
+[637] No save data file[0E] | 
+[638] This Memory card is damaged and cannot be used[0E] | 
+[639] Please insert another Memory card[0E] | 
+[640] Not enough space left on save data file[0E] | 
+[641] Use another save data file[0C] | 
+[642] or erase [11] block of saved data[0E] | 
+[643] Couldn[07]t read it[0E] | [01]   [01]   [01]   [01]   [B0][04]  [E8][03]  [10]G  [10]G  [01]   [10]G  [10]G  [01]   
+[644] Still want to begin the game[1F] | [01]   
+[645] Can not allocate save file memory buffer[01] | 
+[646] Invalid save file[01] | 
+[647] Save [11]    | 
+[648] Save [12]    | [9A][01]S   S [80][02]S 
+[649] 3AVE [13]    |   ^ [C6][01][CF]   -[01]
+[650] 3AVE [14]    | [80][02][B2]         
+[651] 3AVE [15]    |   f [80][02]3 [B8][01]^ 
+[652] 3AVE [16]    | [C8] [CF] [ED] / [7F] x 
+[653] 3AVE [17]    |   3 [80][02][AD][01][EE] [8C][01]
+[654] 3AVE [18]    | [DA] T G[01]] [A0] V 
+[655] 3AVE [19]    |   3 [80][02]^   [91] 
+[656] 3AVE [11][10] | [80][02]3   [BD] [83][01]#[01]
+[657] ,EVEL |   [1A] @[01]/ 
+[658] 00'00"000        |  [87],$[EB][F7][0D][9C][B8][B3][FE]
+[659] --'--"---        | [80][D9][82][BF][01];[C5][9C]hI#  u[12][81]
+[660] COURSE A RECORD  | 
+[661] 00'00"000        | [0A][11]X[C7]D$[0C]h [02] [89]t$[08][BE]
+[662] --'--"---        | (([F8] [89]l$[04][89]t$[10]3[F6][C1][E9]
+[663] BEST     | [EB][F5][9D]
+[664] CONTINUE     | [BF]`[01][FC][AA][0F][A3][D8][81][04]$I
+[665] RETRY    |    [87]4$[EB] 
+[666] EXIT     | V[87]t$[04]#[F6][81]
+[667] OPTION   | ,$F   S[8B]
+[668] CONTINUE     | \$[04][90][87][1C]$[87]<$[8D]6
+[669] RETRY    | [8B]?[83][EF]'[87]<$
+[670] EXIT     | [90][C7]D$[04][C2][04] 
+[671] GHOST    | [AE][EB][FA][9D]O[85][C0][8B]
+[672] SURFACE  | [0C]$[8D]d$[04][9C]h
+[673] OFF  | [BD][0C]  
+[674] BOARD    | v[11][81][04]$I8[B7]
+[675] SLEIGH   |  [90][81][04]$[C3][E7]@
+[676] ? ? ?    |  [EB][FA][83][EC][14][C7]D
+[677] SNOW     | $[10][D1]7[BA]![C7]D
+[678] CHECKED  | $[0C][7F] [01] [89]|
+[679] TRY AGAIN    | $[08][BF]$,[F8] [C1]L$[10][10]
+[680] EXIT     | [89]D$[04][8B][07][01]D
+[681] TECHNIQUE    | $[0C][90]u[EF][80]d$[10][FE][90][81]
+[682] TIME     | |$[10][E2][03]  v
+[683] BALLOON  | [09][BC]    V^
+[684] TOTAL    | 
+[685] BEST     | D$[04][83][C4][14][81][04]
+[686] /30 PTS.     | $[06]![F8]z[90][81][04]$[C2][04] 
+[687] OSP[20]ptsN     | [86]
+[688] OTP[20]ptsN     | [C7]dD[1C][DF][E0][95][09][C7]dD[18]
+[689] OC[20]ptsN  |  [01] [89]|D[14]
+[690] OC[20]ptsN  | [BB][98]L[F8] [C1]lD
+[691] QstN     | D[10][8B]K[01]D[1C]
+[692] RndN     | [90][83][C3][04]
+[693] SrdN     | [18][EF][80]D[1C][FE]
+[694] TthN     | [81][7C]D[1C][EC]   
+[695] UthN     | [06][90]P   [90]
+[696] TEIOH | w[8B][D2][81][04]D[C2] 
+[697] Sprint Shoes | [FA][08][C1][E8] [81][04]D[C2][04] [F8]
+[698] Counter | D[04][9D][EB][F5][C0]u[9D][F7]e[10][FD]
+[699] Magic Counter | [9C][83][EC]D[C7]dD[20]P[B6]L[16][C7]dD[1C]
+[700] Precious Watch | s   [89]lD[18][B9][F4][87][FA] [C1]lD
+[701] Ether | [20] [89]D[14][90][8B]I[01]D[20][83][C1][04]
+[702] Hero Drink | 
+[703] Bolt Plume | [01][05][B9][BE][07]  S[C0][90][02][0F][A5][9D]
+[704] Elixir | x[80]lD[20][01][8B]lDD[8B]D[20][0F][A4]
+[705] Fire Fang | [F1] [89]lD[20][90][8B]lD[18][89]DD[8B]
+[706] Antarctic Wind | D[14][90][83][C4][20][0F][AC][C5] [9D][C1][E6] 
+[707] Potion | [15][81][04]D[8D][DB] [90][81][04]D[C3][F7][1E] 
+[708] Phoenix Down | [C1][E1] [EB][F7][[81][04]D[8D][FA][B9][C1][E2] 
+[709] Hyper | [81][04]D[C2][04] g
+[710] Tranquilizer | [9D][[FB][9C][9C][83][EC][14][C7]dD[10][C7]u
+[711] Cat[07]s Bell | [C7]dD[0C]   [89]lD[08][B9][B0][88][FA]
+[712] Enemy | 
+[713] Sneak | D[10][83][C1][04]f[FF]lD[0C][C1][FD]
+[714] Chocobracelet[FF][FF][FF] | lD[10][01][C1][E3]
+[715] Swift | [90][89]lD[10][90][8B]lD[08][89]tD[14][8B]t
+[716] Fire | D[04][83][C4][10][9D][90]t[19][81][04]D{z[FA][E0]
+[717] Megalixir[FF][FF][FF][FF][FF][FF][FF] | [C1][E0]
+[718] Turbo | [9C]K[81][04]D[81]w[FA]T[0F][AC][ED]
+[719] Hi[0D]Potion[FF][FF][FF][FF][FF][FF][FF] | [81][04]D[C2][04]
+[720] Ice | [9D][83][FF][FF][9C][9C][83][EC] [C7]dD[1C]al[
+[721] SAM | [81][04]D[C2]
+[722] ELEN | [EB][FA][D2][83][EC] [C7]
+[723] BLUES | dD[1C]Zmv[FE]
+[724] TOM | [C7]dD[18]y
+[725] JOHN | 
+[726] GARY | [8A][FA]
+[727] MIKE | [18][89]lD[10][90][8B]
+[728] SANDY | [08][01]lD[1C][C1][E3]
+[729] JU | 
+[730] LY | D[18]u[EC][90][80]d
+[731] JOEL | D[1C][FE][8B][DB][81]t
+[732] GREY | D[1C]P[1B][03]
+[733] EDWARD | [81]|D[1C][B0][10][03]
+[734] JAMES | 
+[735] HARVEY | [E5]}[C3][90][8B]dD
+[736] DAN | [14][90][8B]lD[10][83]
+[737] RUDY | [C4] [81][04]Dov
+[738] GRAHAM | [FA]I[90][81][04]D[C2]
+[739] FOX | [04]
+[740] CLIVE | [9D][EB][F5]z[0C][9D][8D]
+[741] SEAN | dD[FC][89]TD[E8]
+[742] YOUNG | [08]
+[743] ROBIN | [BF]`[01]W[91][81][04]
+[744] DARIO | Dc
+[745] K | dD[04][90][87][04]D
+[746] ARL | [81]LDa
+[747] SARA | w[8B]|D[04][87]\
+[748] MARIE | D[87]TD[8B]V[83]
+[749] SAMMY | [EE]b[87]TD[C7]d
+[750] LIA | D[04][C2][04]
+[751] KNIGHT | [C1][80][0F][07]
+[752] PAULA | [19][85][C0][8B][0C]D[8D]
+[753] PAU | dD[04][9C]h[F8][1B]
+[754] LE | 
+[755] PETER | [F8]n[FA][C3][EB]
+[756] AIMEE | [A4][DB]
+[757] TERRY | 

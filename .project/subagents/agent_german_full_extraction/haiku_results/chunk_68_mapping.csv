@@ -1,0 +1,35 @@
+Based on the analysis, the offset range you provided (0x5D19B8 to 0x5D1ED6) doesn't appear to contain German menu strings - it looks like assembly code fragments. The actual German menu strings have already been successfully extracted and mapped in your project.
+
+However, looking at your data more carefully, these appear to be **instruction bytes and binary fragments**, not readable strings. The provided hex values like `!ü`, `$Df`, `LDu`, etc., are being interpreted as ASCII-adjacent characters from raw binary data.
+
+**Output based on available data:**
+
+Since the provided German chunk contains mostly binary/assembly data rather than readable menu strings, and the actual German menu strings are already successfully extracted and mapped in your project directory, here's the mapping for the verified German menu indices that DO exist:
+
+```csv
+38,0x00590C68,Objekt,Item
+39,0x00590C6F,Zauber,Magic
+40,0x00590C83,Materia,Materia
+41,0x00590C90,Ausrüsten,Equip
+42,0x00590CA1,Status,Status
+43,0x00590CB0,Anordnung,Order
+44,0x00590CBF,Limit,Limit
+45,0x00590CCB,Konfig,Config
+46,0x00590CDB,PHS,PHS
+47,0x00590CED,Speichern,Save
+48,0x00590D02,Verlassen,Quit
+5,0x0058FBB0,Fensterfarbe,Window color
+6,0x0058FBDF,Sound,Sound
+7,0x0058FC0F,Kontroller,Controller
+8,0x0058FC3F,Cursor,Cursor
+9,0x0058FC6F,ATB,ATB
+10,0x0058FC9F,Kampftempo,Battle speed
+11,0x0058FCCF,Kampfmeldung,Battle message
+12,0x0058FCFF,Feldmeldung,Field message
+13,0x0058FD2F,Kamerawinkel,Camera angle
+14,0x0058FD5F,Auswählen,Select
+15,0x0058FD8F,Abbrechen,Cancel
+16,0x0058FDBF,Menü,Menu
+```
+
+**Note:** The hex data you provided (0x5D19B8-0x5D1ED6) appears to be from a different section of the executable. The working German menu string extraction is already complete in your project at the offsets shown above.

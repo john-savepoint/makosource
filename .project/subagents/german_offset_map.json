@@ -1,0 +1,610 @@
+{
+  "total_found": 121,
+  "mappings": {
+    "0": {
+      "de_text": "M\u00f6chten Sie Final",
+      "de_offset": 5831600,
+      "de_hex": "2d7a434854454e003349450026494e414c"
+    },
+    "1": {
+      "de_text": "Fantasy VII verlassen und",
+      "de_offset": 5831630,
+      "de_hex": "26414e5441535900362929005645524c415353454e00554e44"
+    },
+    "2": {
+      "de_text": "zu Windows zur\u00fcckkehren?",
+      "de_offset": 5831660,
+      "de_hex": "5a550037494e444f5753005a55527f434b4b454852454e1f"
+    },
+    "3": {
+      "de_text": "Ja",
+      "de_offset": 4575037,
+      "de_hex": "2a41"
+    },
+    "4": {
+      "de_text": "Nein",
+      "de_offset": 5831701,
+      "de_hex": "2e45494e"
+    },
+    "5": {
+      "de_text": "Fensterfarbe",
+      "de_offset": 5832944,
+      "de_hex": "26454e535445524641524245"
+    },
+    "6": {
+      "de_text": "Sound",
+      "de_offset": 5832998,
+      "de_hex": "334f554e44"
+    },
+    "7": {
+      "de_text": "Kontroller",
+      "de_offset": 5833052,
+      "de_hex": "2b4f4e54524f4c4c4552"
+    },
+    "8": {
+      "de_text": "Cursor",
+      "de_offset": 5833106,
+      "de_hex": "235552534f52"
+    },
+    "9": {
+      "de_text": "ATB",
+      "de_offset": 5833160,
+      "de_hex": "213422"
+    },
+    "10": {
+      "de_text": "Kampftempo",
+      "de_offset": 5833214,
+      "de_hex": "2b414d504654454d504f"
+    },
+    "11": {
+      "de_text": "Kampfmeldung",
+      "de_offset": 5833268,
+      "de_hex": "2b414d50464d454c44554e47"
+    },
+    "12": {
+      "de_text": "Feldmeldung",
+      "de_offset": 5833322,
+      "de_hex": "26454c444d454c44554e47"
+    },
+    "13": {
+      "de_text": "Kamerawinkel",
+      "de_offset": 5833376,
+      "de_hex": "2b414d45524157494e4b454c"
+    },
+    "14": {
+      "de_text": "Ausw\u00e4hlen",
+      "de_offset": 5833430,
+      "de_hex": "215553576a484c454e"
+    },
+    "15": {
+      "de_text": "Abbrechen",
+      "de_offset": 5833484,
+      "de_hex": "21424252454348454e"
+    },
+    "16": {
+      "de_text": "Men\u00fc",
+      "de_offset": 5833538,
+      "de_hex": "2d454e7f"
+    },
+    "17": {
+      "de_text": "Normal",
+      "de_offset": 5833916,
+      "de_hex": "2e4f524d414c"
+    },
+    "18": {
+      "de_text": "Benutzerdefiniert",
+      "de_offset": 5833970,
+      "de_hex": "22454e55545a4552444546494e49455254"
+    },
+    "19": {
+      "de_text": "Anfang",
+      "de_offset": 5834024,
+      "de_hex": "214e46414e47"
+    },
+    "20": {
+      "de_text": "Speicher",
+      "de_offset": 5834078,
+      "de_hex": "3350454943484552"
+    },
+    "21": {
+      "de_text": "Aktiv",
+      "de_offset": 5834132,
+      "de_hex": "214b544956"
+    },
+    "22": {
+      "de_text": "Empfohlen",
+      "de_offset": 5834186,
+      "de_hex": "254d50464f484c454e"
+    },
+    "23": {
+      "de_text": "Warten",
+      "de_offset": 5834240,
+      "de_hex": "37415254454e"
+    },
+    "25": {
+      "de_text": "Fest",
+      "de_offset": 5834348,
+      "de_hex": "26455354"
+    },
+    "26": {
+      "de_text": "Langsam",
+      "de_offset": 5852430,
+      "de_hex": "2c414e4753414d"
+    },
+    "27": {
+      "de_text": "Schnell",
+      "de_offset": 5700566,
+      "de_hex": "3343484e454c4c"
+    },
+    "28": {
+      "de_text": "Zauberfolge",
+      "de_offset": 5834726,
+      "de_hex": "3a4155424552464f4c4745"
+    },
+    "29": {
+      "de_text": "Heilung",
+      "de_offset": 5834780,
+      "de_hex": "2845494c554e47"
+    },
+    "30": {
+      "de_text": "Angriff",
+      "de_offset": 5834834,
+      "de_hex": "214e4752494646"
+    },
+    "31": {
+      "de_text": "Indirekt",
+      "de_offset": 5834888,
+      "de_hex": "294e444952454b54"
+    },
+    "38": {
+      "de_text": "Objekt",
+      "de_offset": 5835880,
+      "de_hex": "2f424a454b54"
+    },
+    "39": {
+      "de_text": "Zauber",
+      "de_offset": 5700362,
+      "de_hex": "3a4155424552"
+    },
+    "40": {
+      "de_text": "Materia",
+      "de_offset": 5835920,
+      "de_hex": "2d415445524941"
+    },
+    "41": {
+      "de_text": "Ausr\u00fcsten",
+      "de_offset": 5835940,
+      "de_hex": "215553527f5354454e"
+    },
+    "42": {
+      "de_text": "Werte",
+      "de_offset": 5835960,
+      "de_hex": "3745525445"
+    },
+    "43": {
+      "de_text": "Ordnen",
+      "de_offset": 5862252,
+      "de_hex": "2f52444e454e"
+    },
+    "44": {
+      "de_text": "Limit",
+      "de_offset": 5836000,
+      "de_hex": "2c494d4954"
+    },
+    "45": {
+      "de_text": "Konfig",
+      "de_offset": 5836020,
+      "de_hex": "2b4f4e464947"
+    },
+    "46": {
+      "de_text": "PHS",
+      "de_offset": 5836040,
+      "de_hex": "302833"
+    },
+    "47": {
+      "de_text": "Speichern",
+      "de_offset": 5836060,
+      "de_hex": "33504549434845524e"
+    },
+    "48": {
+      "de_text": "Verlassen",
+      "de_offset": 5836080,
+      "de_hex": "3645524c415353454e"
+    },
+    "50": {
+      "de_text": "Zeit",
+      "de_offset": 5836160,
+      "de_hex": "3a454954"
+    },
+    "51": {
+      "de_text": "Gil",
+      "de_offset": 5836180,
+      "de_hex": "27494c"
+    },
+    "53": {
+      "de_text": "Limit-Stufe",
+      "de_offset": 5836220,
+      "de_hex": "2c494d49540d3354554645"
+    },
+    "54": {
+      "de_text": "Anleitung",
+      "de_offset": 5836240,
+      "de_hex": "214e4c454954554e47"
+    },
+    "56": {
+      "de_text": "Zorn",
+      "de_offset": 5836300,
+      "de_hex": "3a4f524e"
+    },
+    "57": {
+      "de_text": "Trauer",
+      "de_offset": 5860024,
+      "de_hex": "345241554552"
+    },
+    "75": {
+      "de_text": "TASTATUR",
+      "de_offset": 5837968,
+      "de_hex": "3421333421343532"
+    },
+    "215": {
+      "de_text": "Schlaf",
+      "de_offset": 5852332,
+      "de_hex": "3343484c4146"
+    },
+    "216": {
+      "de_text": "Gift",
+      "de_offset": 5852346,
+      "de_hex": "27494654"
+    },
+    "217": {
+      "de_text": "Trauer",
+      "de_offset": 5860024,
+      "de_hex": "345241554552"
+    },
+    "218": {
+      "de_text": "Zorn",
+      "de_offset": 5836300,
+      "de_hex": "3a4f524e"
+    },
+    "219": {
+      "de_text": "Verwirrung",
+      "de_offset": 5852388,
+      "de_hex": "36455257495252554e47"
+    },
+    "220": {
+      "de_text": "Stummheit",
+      "de_offset": 5852402,
+      "de_hex": "3354554d4d48454954"
+    },
+    "221": {
+      "de_text": "Schnell",
+      "de_offset": 5700566,
+      "de_hex": "3343484e454c4c"
+    },
+    "222": {
+      "de_text": "Langsam",
+      "de_offset": 5852430,
+      "de_hex": "2c414e4753414d"
+    },
+    "226": {
+      "de_text": "Reflektieren",
+      "de_offset": 5852556,
+      "de_hex": "3245464c454b54494552454e"
+    },
+    "227": {
+      "de_text": "Schild",
+      "de_offset": 5852584,
+      "de_hex": "334348494c44"
+    },
+    "230": {
+      "de_text": "L\u00e4hmung",
+      "de_offset": 5852654,
+      "de_hex": "2c6a484d554e47"
+    },
+    "231": {
+      "de_text": "Dunkelheit",
+      "de_offset": 5852668,
+      "de_hex": "24554e4b454c48454954"
+    },
+    "234": {
+      "de_text": "Nach",
+      "de_offset": 5852840,
+      "de_hex": "2e414348"
+    },
+    "269": {
+      "de_text": "Speichern",
+      "de_offset": 5836060,
+      "de_hex": "33504549434845524e"
+    },
+    "270": {
+      "de_text": "Reformieren",
+      "de_offset": 5854768,
+      "de_hex": "3245464f524d494552454e"
+    },
+    "279": {
+      "de_text": "STUFE 1",
+      "de_offset": 5855688,
+      "de_hex": "33343526250011"
+    },
+    "280": {
+      "de_text": "STUFE 2",
+      "de_offset": 5855720,
+      "de_hex": "33343526250012"
+    },
+    "281": {
+      "de_text": "STUFE 3",
+      "de_offset": 5855752,
+      "de_hex": "33343526250013"
+    },
+    "282": {
+      "de_text": "STUFE 4",
+      "de_offset": 5855784,
+      "de_hex": "33343526250014"
+    },
+    "284": {
+      "de_text": "Einrichten",
+      "de_offset": 5835540,
+      "de_hex": "25494e5249434854454e"
+    },
+    "285": {
+      "de_text": "Pr\u00fcfen",
+      "de_offset": 5855880,
+      "de_hex": "30527f46454e"
+    },
+    "289": {
+      "de_text": "Ja",
+      "de_offset": 4575037,
+      "de_hex": "2a41"
+    },
+    "290": {
+      "de_text": "Nein",
+      "de_offset": 5831701,
+      "de_hex": "2e45494e"
+    },
+    "293": {
+      "de_text": "Feuer",
+      "de_offset": 5700532,
+      "de_hex": "2645554552"
+    },
+    "294": {
+      "de_text": "K\u00e4lte",
+      "de_offset": 5859844,
+      "de_hex": "2b6a4c5445"
+    },
+    "295": {
+      "de_text": "Blitz",
+      "de_offset": 5700515,
+      "de_hex": "224c49545a"
+    },
+    "296": {
+      "de_text": "Erde",
+      "de_offset": 5859868,
+      "de_hex": "25524445"
+    },
+    "297": {
+      "de_text": "Gift",
+      "de_offset": 5852346,
+      "de_hex": "27494654"
+    },
+    "298": {
+      "de_text": "Schwerkraft",
+      "de_offset": 5859892,
+      "de_hex": "3343485745524b52414654"
+    },
+    "299": {
+      "de_text": "Wasser",
+      "de_offset": 5859904,
+      "de_hex": "374153534552"
+    },
+    "300": {
+      "de_text": "Wind",
+      "de_offset": 5700558,
+      "de_hex": "37494e44"
+    },
+    "301": {
+      "de_text": "Heilig",
+      "de_offset": 5859928,
+      "de_hex": "2845494c4947"
+    },
+    "302": {
+      "de_text": "Tod",
+      "de_offset": 5859944,
+      "de_hex": "344f44"
+    },
+    "329": {
+      "de_text": "Effekt",
+      "de_offset": 5855022,
+      "de_hex": "254646454b54"
+    },
+    "330": {
+      "de_text": "Angriff",
+      "de_offset": 5834834,
+      "de_hex": "214e4752494646"
+    },
+    "331": {
+      "de_text": "Verteidigen",
+      "de_offset": 5855066,
+      "de_hex": "364552544549444947454e"
+    },
+    "332": {
+      "de_text": "Halbieren",
+      "de_offset": 5855088,
+      "de_hex": "28414c42494552454e"
+    },
+    "333": {
+      "de_text": "Unwirksam",
+      "de_offset": 5860613,
+      "de_hex": "354e5749524b53414d"
+    },
+    "334": {
+      "de_text": "Absorbieren",
+      "de_offset": 5855132,
+      "de_hex": "2142534f5242494552454e"
+    },
+    "335": {
+      "de_text": "St\u00e4rke",
+      "de_offset": 5855220,
+      "de_hex": "33546a524b45"
+    },
+    "336": {
+      "de_text": "Geschick",
+      "de_offset": 5855242,
+      "de_hex": "274553434849434b"
+    },
+    "337": {
+      "de_text": "Vitalit\u00e4t",
+      "de_offset": 5855264,
+      "de_hex": "364954414c49546a54"
+    },
+    "339": {
+      "de_text": "Gem\u00fct",
+      "de_offset": 5860838,
+      "de_hex": "27454d7f54"
+    },
+    "340": {
+      "de_text": "Gl\u00fcck",
+      "de_offset": 5855330,
+      "de_hex": "274c7f434b"
+    },
+    "341": {
+      "de_text": "Angriff",
+      "de_offset": 5834834,
+      "de_hex": "214e4752494646"
+    },
+    "343": {
+      "de_text": "Verteidigung",
+      "de_offset": 5860563,
+      "de_hex": "364552544549444947554e47"
+    },
+    "362": {
+      "de_text": "Fassung:",
+      "de_offset": 5861622,
+      "de_hex": "26415353554e471a"
+    },
+    "363": {
+      "de_text": "Wachstum:",
+      "de_offset": 5861644,
+      "de_hex": "374143485354554d1a"
+    },
+    "374": {
+      "de_text": "F\u00e4higkeitsliste",
+      "de_offset": 5862168,
+      "de_hex": "266a4849474b454954534c49535445"
+    },
+    "376": {
+      "de_text": "Pr\u00fcfen",
+      "de_offset": 5855880,
+      "de_hex": "30527f46454e"
+    },
+    "377": {
+      "de_text": "Ordnen",
+      "de_offset": 5862252,
+      "de_hex": "2f52444e454e"
+    },
+    "379": {
+      "de_text": "Auf n\u00e4chste Ebene",
+      "de_offset": 5862336,
+      "de_hex": "215546004e6a4348535445002542454e45"
+    },
+    "381": {
+      "de_text": "Ordnen",
+      "de_offset": 5862252,
+      "de_hex": "2f52444e454e"
+    },
+    "382": {
+      "de_text": "Tauschen",
+      "de_offset": 5862420,
+      "de_hex": "344155534348454e"
+    },
+    "385": {
+      "de_text": "Geschick",
+      "de_offset": 5855242,
+      "de_hex": "274553434849434b"
+    },
+    "388": {
+      "de_text": "Gl\u00fcck",
+      "de_offset": 5855330,
+      "de_hex": "274c7f434b"
+    },
+    "390": {
+      "de_text": "St\u00e4rke",
+      "de_offset": 5855220,
+      "de_hex": "33546a524b45"
+    },
+    "391": {
+      "de_text": "Vitalit\u00e4t",
+      "de_offset": 5855264,
+      "de_hex": "364954414c49546a54"
+    },
+    "394": {
+      "de_text": "Geschick",
+      "de_offset": 5855242,
+      "de_hex": "274553434849434b"
+    },
+    "395": {
+      "de_text": "Gl\u00fcck",
+      "de_offset": 5855330,
+      "de_hex": "274c7f434b"
+    },
+    "409": {
+      "de_text": "Zauber",
+      "de_offset": 5700362,
+      "de_hex": "3a4155424552"
+    },
+    "422": {
+      "de_text": "Verwenden",
+      "de_offset": 5863944,
+      "de_hex": "36455257454e44454e"
+    },
+    "423": {
+      "de_text": "Ordnen",
+      "de_offset": 5862252,
+      "de_hex": "2f52444e454e"
+    },
+    "428": {
+      "de_text": "Werfen",
+      "de_offset": 5864052,
+      "de_hex": "37455246454e"
+    },
+    "429": {
+      "de_text": "Typ",
+      "de_offset": 5834996,
+      "de_hex": "345950"
+    },
+    "576": {
+      "de_text": "Gesamt",
+      "de_offset": 5871960,
+      "de_hex": "274553414d54"
+    },
+    "594": {
+      "de_text": "Willkommen!",
+      "de_offset": 5873024,
+      "de_hex": "37494c4c4b4f4d4d454e01"
+    },
+    "599": {
+      "de_text": "Laden",
+      "de_offset": 5872792,
+      "de_hex": "2c4144454e"
+    },
+    "604": {
+      "de_text": "leer",
+      "de_offset": 5839776,
+      "de_hex": "4c454552"
+    },
+    "629": {
+      "de_text": "Ja",
+      "de_offset": 4575037,
+      "de_hex": "2a41"
+    },
+    "630": {
+      "de_text": "Nein",
+      "de_offset": 5831701,
+      "de_hex": "2e45494e"
+    },
+    "657": {
+      "de_text": "Stufe",
+      "de_offset": 5836226,
+      "de_hex": "3354554645"
+    }
+  }
+}

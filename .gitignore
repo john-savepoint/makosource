@@ -496,3 +496,143 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,linux,windows,python,node,visualstudiocode,vim,git,ssh
 # Git Lock Prevention System Installed
+
+# ============================================
+# Comprehensive .gitignore additions
+# ============================================
+
+# === Node.js & Package Managers ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# === Build outputs ===
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+.vite/
+*.tsbuildinfo
+
+# === Environment & Config ===
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# === IDE & Editor ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# === Logs ===
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === OS Files ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# === Testing & Coverage ===
+coverage/
+.nyc_output/
+*.lcov
+.cache-loader/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+
+# === Rust ===
+target/
+Cargo.lock
+**/*.rs.bk
+
+# === Temporary & Cache ===
+*.tmp
+*.temp
+*.cache
+.cache/
+tmp/
+temp/
+
+# === Custom: Directories named "off" ===
+**/off/
+
+# === Custom: Claude data ===
+.claude/
+.claude/data/sessions/
+.claude/paste-cache/
+*/data/sessions/*
+
+# === Custom: Large dependencies ===
+vendor/
+bower_components/
+jspm_packages/
+
+# === Database ===
+*.db
+*.sqlite
+*.sqlite3
+
+# === Compiled binaries ===
+*.exe
+*.dll
+*.so
+*.dylib
+
+# === Archives (optional - uncomment if needed) ===
+# *.zip
+# *.tar.gz
+# *.rar
+# *.7z
+*.project/session_handoffs
+*.project/cc_sessions
+*.project/session-transcripts
+*tmp
+.claude/plugins/marketplaces/
+.claude/plugins/cache/
+plugins/marketplaces/
+plugins/cache/

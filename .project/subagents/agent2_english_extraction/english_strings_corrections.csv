@@ -1,0 +1,83 @@
+index,offset,text,length,confidence,reason
+E464,0x520700,Cait Sith,10,95,naming screen - CORRECTED from UNICODE garbage
+E465,0x52070C,Vincent,8,95,naming screen - CORRECTED from UNICODE garbage
+E466,0x520718,Cid,4,95,naming screen - CORRECTED from UNICODE garbage
+E467,0x520724,Choco,6,95,naming screen - CORRECTED from UNICODE garbage
+E468,0x520748,Space,6,95,naming screen - CORRECTED from UNICODE garbage
+E469,0x520750,Delete,7,95,naming screen - CORRECTED from UNICODE garbage
+E470,0x520758,Select,7,95,naming screen - CORRECTED from UNICODE garbage
+E471,0x520760,Default,8,95,naming screen - CORRECTED from UNICODE garbage
+E472,0x520768,Cancel,7,95,naming screen - CORRECTED from UNICODE garbage
+E473,0x520770,A,1,90,naming char palette - CORRECTED
+E474,0x520771,B,1,90,naming char palette - CORRECTED
+E475,0x520772,C,1,90,naming char palette - CORRECTED
+E476,0x520773,D,1,90,naming char palette - CORRECTED
+E477,0x520774,E,1,90,naming char palette - CORRECTED
+E478,0x520775,F,1,90,naming char palette - CORRECTED
+E479,0x520776,G,1,90,naming char palette - CORRECTED
+E480,0x520777,H,1,90,naming char palette - CORRECTED
+E481,0x520778,I,1,90,naming char palette - CORRECTED
+E482,0x520779,J,1,90,naming char palette - CORRECTED
+E483,0x52077A,K,1,90,naming char palette - CORRECTED
+E484,0x52077B,L,1,90,naming char palette - CORRECTED
+E485,0x52077C,M,1,90,naming char palette - CORRECTED
+E486,0x52077D,N,1,90,naming char palette - CORRECTED
+E487,0x52077E,O,1,90,naming char palette - CORRECTED
+E488,0x52077F,P,1,90,naming char palette - CORRECTED
+E489,0x520780,Q,1,90,naming char palette - CORRECTED
+E490,0x520781,R,1,90,naming char palette - CORRECTED
+E491,0x520782,S,1,90,naming char palette - CORRECTED
+E492,0x520783,T,1,90,naming char palette - CORRECTED
+E493,0x520784,U,1,90,naming char palette - CORRECTED
+E494,0x520785,V,1,90,naming char palette - CORRECTED
+E495,0x520786,W,1,90,naming char palette - CORRECTED
+E496,0x520787,X,1,90,naming char palette - CORRECTED
+E497,0x520788,Y,1,90,naming char palette - CORRECTED
+E498,0x520789,Z,1,90,naming char palette - CORRECTED
+E503,0x52078E,a,1,90,naming char palette - CORRECTED
+E504,0x52078F,b,1,90,naming char palette - CORRECTED
+E505,0x520790,c,1,90,naming char palette - CORRECTED
+E506,0x520791,d,1,90,naming char palette - CORRECTED
+E507,0x520792,e,1,90,naming char palette - CORRECTED
+E508,0x520793,f,1,90,naming char palette - CORRECTED
+E509,0x520794,g,1,90,naming char palette - CORRECTED
+E510,0x520795,h,1,90,naming char palette - CORRECTED
+E511,0x520796,i,1,90,naming char palette - CORRECTED
+E512,0x520797,j,1,90,naming char palette - CORRECTED
+E513,0x520798,k,1,90,naming char palette - CORRECTED
+E514,0x520799,l,1,90,naming char palette - CORRECTED
+E515,0x52079A,m,1,90,naming char palette - CORRECTED
+E516,0x52079B,n,1,90,naming char palette - CORRECTED
+E517,0x52079C,o,1,90,naming char palette - CORRECTED
+E518,0x52079D,p,1,90,naming char palette - CORRECTED
+E519,0x52079E,q,1,90,naming char palette - CORRECTED
+E520,0x52079F,r,1,90,naming char palette - CORRECTED
+E521,0x5207A0,s,1,90,naming char palette - CORRECTED
+E522,0x5207A1,t,1,90,naming char palette - CORRECTED
+E523,0x5207A2,u,1,90,naming char palette - CORRECTED
+E524,0x5207A3,v,1,90,naming char palette - CORRECTED
+E525,0x5207A4,w,1,90,naming char palette - CORRECTED
+E526,0x5207A5,x,1,90,naming char palette - CORRECTED
+E527,0x5207A6,y,1,90,naming char palette - CORRECTED
+E528,0x5207A7,z,1,90,naming char palette - CORRECTED
+E649,0x524B30,Save 3,12,95,save slot - CORRECTED from '3AVE'
+E650,0x524B3C,Save 4,12,95,save slot - CORRECTED from '3AVE'
+E651,0x524B48,Save 5,12,95,save slot - CORRECTED from '3AVE'
+E652,0x524B54,Save 6,12,95,save slot - CORRECTED from '3AVE'
+E653,0x524B60,Save 7,12,95,save slot - CORRECTED from '3AVE'
+E654,0x524B6C,Save 8,12,95,save slot - CORRECTED from '3AVE'
+E655,0x524B78,Save 9,12,95,save slot - CORRECTED from '3AVE'
+E656,0x524B84,Save 10,12,95,save slot - CORRECTED from '3AVE'
+E657,0x524BF0,Level,8,95,"save slot label - CORRECTED from ',EVEL'"
+E687,0x555880,/30 PTS.,12,95,chocobo racing - CORRECTED from 'OSP@ptsN'
+E688,0x55588C,/40 PTS.,12,95,chocobo racing - CORRECTED from 'OTP@ptsN'
+E689,0x555898,/# PTS.,8,95,chocobo racing - CORRECTED from FF7 garbage
+E690,0x5558A0,/# PTS.,8,95,chocobo racing - CORRECTED from FF7 garbage
+E691,0x5558AC,1ST.,8,95,chocobo racing - CORRECTED from 'QstN'
+E692,0x5558B4,2ND.,8,95,chocobo racing - CORRECTED from 'RndN'
+E693,0x5558BC,3RD.,8,95,chocobo racing - CORRECTED from 'SrdN'
+E694,0x5558C4,4TH.,8,95,chocobo racing - CORRECTED from 'TthN'
+E695,0x5558CC,5TH.,8,95,chocobo racing - CORRECTED from 'UthN'
+EXCLUDE_033,0x519238,[BINARY_DATA],6,0,"NOFF_TERM - NOT TEXT, EXCLUDE"
+EXCLUDE_034,0x51923E,[BINARY_DATA],6,0,"NOFF_TERM - NOT TEXT, EXCLUDE"
+EXCLUDE_035,0x519244,[BINARY_DATA],6,0,"NOFF_TERM - NOT TEXT, EXCLUDE"

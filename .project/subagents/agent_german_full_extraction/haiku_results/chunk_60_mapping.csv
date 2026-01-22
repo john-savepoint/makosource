@@ -1,0 +1,16 @@
+**ISSUE IDENTIFIED**: The German strings provided are not in readable text format. The data shows encoded/obfuscated content (e.g., "dD0", "lD,ü !", "D(") rather than actual German text strings.
+
+**What I need to proceed**:
+
+1. **Raw hex bytes** instead of the decoded format - Can you provide the German strings as raw hex (like the English reference: `33 4F 55 4E 44 FF` = "SOUND")?
+
+2. **Verification**: Are these strings confirmed to be from chunk 60 of the German exe, or could they be from a different section (possibly compressed or in a different encoding)?
+
+3. **Alternative**: Do you have a German string dump file (like a `.txt` or `.csv` export) that shows the actual German menu text with their offsets?
+
+Without readable German text to work with, I cannot create an accurate mapping to English menu indices. The English reference is clear (touphScript indices 0-99 with readable text), but the German side appears to be corrupted or in an unsupported format.
+
+Would you like me to:
+- Wait for properly decoded German strings?
+- Attempt to decode the current format if you can explain the encoding scheme?
+- Use a different source for German text strings?

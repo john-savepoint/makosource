@@ -1,0 +1,807 @@
+# FF7 German Clean Sequential String Extraction
+# Source: /mnt/d/Games/Stand-alone/FINAL FANTASY VII/ff7_de.exe
+# Start offset: 0x58FBB0
+# Total extracted: 800
+# Format: [INDEX] OFFSET | TEXT
+================================================================================
+
+[  0] 0x58FBB0 | Möchten Sie Final
+[  1] 0x58FBC3 | Fantasy VII verlassen und
+[  2] 0x58FBE8 | zu Windows zurückkehren?
+[  3] 0x58FC13 | Nein
+[  4] 0x58FC1A | @c  ^c              `      `  `a      `a  `a                     0  @a      0a  @a          _  `        `      _  0a            `        0a      _  0a          `        `  _                  `  _        _                     `      `         `  `          `        ``         `  `          _        _  _      ``            _  _      ``  _      ``            _  _        ``      ``  _            ``      _  ``      ``  _            ``        `      _  ``            `      _  `      _  ``        $ $ $ $ $ $ $% 0% <% H% T% `% l% x% ã% ñ% % % % % % % % % âíïãNõèì   àáòòåNõèì   õèÜáNõèì    åáòèõéNõèì  òåãNõèì ÜèNõèì    ëåõâNõèì    àèîôNõèì    âèãïNõèì    ñâíïãNõèì  ñâåÜèNõèì   âéïâïNõèì   âíïãíNõèì àáòòåíNõèì õèÜáíNõèì  åáòèõéíNõèì    òåãíNõèì   ÜèíNõèì  ëåõâíNõèì  àèîôíNõèì  âèãïíNõèì  ñâíïãíNõèì    ñâåÜèíNõèì âéïâïíNõèì ôÜïîõáéNõèì  ôÜïîõáíNõèì  ôÜïîõàéNõèì  ôÜïîõàíNõèì  àõí•èîáéNõèì àõí•èîáíNõèì àõí•èîàéNõèì àõí•èîàíNõèì àõí•èîâéNõèì àõí•èîâíNõèì àõí•èîãéNõèì àõí•èîãíNõèì ôÜïîõéNõèì    ôÜïîõíNõèì    àõí•èîéNõèì   àõí•èîíNõèì   àôõåòNõèì  Fensterfarbe
+[  5] 0x590AE0 | Zum Einrichten START drücken.
+[  6] 0x590B30 | Zum Beenden Richtungstaste Links oder Rechts drücken.
+[  7] 0x590B7C | Pause
+[  8] 0x590BC9 | Ton- und Musikeinstellung
+[  9] 0x590BEA | Nicht unterstützt
+[ 10] 0x590C68 | Objekt
+[ 11] 0x590C6F | Zauber
+[ 12] 0x590C83 | Materia
+[ 13] 0x590C98 | Ausrüsten
+[ 14] 0x590CAE | Werte
+[ 15] 0x590CE6 | Konfig
+[ 16] 0x590D0C | Speichern
+[ 17] 0x590D26 | Verlassen
+[ 18] 0x590D3A | Anfänger
+[ 19] 0x590D4D | Verwendung
+[ 20] 0x590D63 | Verwendung
+[ 21] 0x590D77 | Zeit
+[ 22] 0x590D98 | Nächst. Lv
+[ 23] 0x590DB3 | Limit-Stufe
+[ 24] 0x590DC8 | Anleitung
+[ 25] 0x590DDA | Unter
+[ 26] 0x590E11 | Traurigk.
+[ 27] 0x590FEB | !  cy         !   "   $   %   &   '   (   t   start@of@menu@systemAAA*    end@of@menu@systemAAA*  Mit [ABBRECHEN] beenden.
+[ 28] 0x591071 | Drücken Sie auf [O.K.] um die
+[ 29] 0x5910B2 | Tastenbelegung zu konfigurieren.
+[ 30] 0x5910F1 | Bitte neue Taste drücken
+[ 31] 0x5914D5 | £@ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ $A 0A 4A 8A <A @A DA HA LA PA TA XA \A `A pA tA xA |A A ãA éA íA ñA £A A A A A A A A A A A A A A A A A A A A A A $B ,B 4B <B DB LB TB \B dB lB xB B éB ñB õB £B B B B B B B B B B B B B B B B B B B $C ,C 4C <C DC LC TC \C dC lC tC |C ãC íC õC C C C C C C C C C C C C C C C C C $D ,D <D DD LD XD \D dD pD xD D ãD ñD £D D D D D D D D D D D D D D D D  E (E 0E 8E @E HE PE XE `E hE pE |E ãE íE õE E E E E E E E E E E E E E E E E  F (F 0F 8F @F HF PF XF `F lF xF F éF ñF £F F F F F F F F F F F F F F F $G ,G 4G <G DG LG TG `G lG xG ãG ñG G G G G G    k   @      ã   `         0                  $         (         !         "      3!   !     L!   (     e!   0     ~!   `     •!        !   @  !  k   @   !  ã   `   !     0   !        !     $   !     (   !     !   !     "   !  3!   !  !  L!   (  !  e!   0  !  ~!   `  !  •!     !  !   @  ''%'&'$'#' '!'"'('    )'%&$'"# !(+          "S   S "!    `!:   : `! keines  esc Q   R   S   T   U   V   W   X   Y   P      apostrophe  rcktaste   tab q   w   e   r   t   z   u   i   o   p      K   eingabe linke@strg  a   s   d   f   g   h   j   k   l         ~   linker@shift    C   y   x   c   v   b   n   m   komma   punkt   minus   rechter@shift   mal alt leertaste   caps    fQ  fR  fS  fT  fU  fV  fW  fX  fY  fQP numlock scroll  numN@W  numN@X  numN@Y  minus   numN@T  numN@U  numN@V  plus    numN@Q  numN@R  numN@S  numN@P  numN@entf   keines  keines  keines  fQQ fQR keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  fQS fQT fQU keines  keines  keines  keines  keines  keines  keines  keines  keines  kana    keines  keines  keines  keines  keines  keines  keines  keines  convert keines  noconvert   keines  yen keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  numpadequals    keines  keines  circumflex  at  colon   underline   kanji   stop    ax  unlabeled   keines  keines  keines  keines  numN@enter  rechte@strg keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  numN@komma  keines  geteilt keines  prtN@scrn   alt@gr  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  keines  pos@Q   hoch    bN@hoch keines  links   keines  rechts  keines  ende    herunter    bN@runter   einfg   entf    keines  keines  keines  keines  keines  keines  keines  linker@win  rechter@win apps    keines  mousebQ    mousebR    mousebS    keines  hoch    runter  links   rechtes keines  keines  keines  keines  button@Q    button@R    button@S    button@T    button@U    button@V    button@W    button@X    button@Y    button@QP   keines  EôÜÜWèîñõNâÜç  EôÜÜWèîñõNâÜç
+[ 32] 0x594ACD | Z° ^X° OX° OX° p° OX° OX° OX° nV°
+[ 33] 0x594AF1 | Z° ^X° OX° OX° p° OX° ët° és° äu° OX° OX° OX° rX° ]° i° j° o° d° g° ol° YX° w° YX° D[° cX° YX° YX° {r° YX° YX° YX° V° D[° cX° YX° YX° {r° YX° t° òs° u° YX° YX° YX° Z° $d° j° k° p° f° i° 4n° TX° TX° TX° \° hX° TX° TX° âs° TX° TX° TX° JX° \° hX° TX° TX° âs° TX° åu° Üt° <w° TX° TX° TX°
+[ 34] 0x594C41 | Pause
+[ 35] 0x594CA0 | Schlaf
+[ 36] 0x594CB3 | Gift
+[ 37] 0x594CBF | Traurigkeit
+[ 38] 0x594CD4 | Zorn
+[ 39] 0x594CDB | Verwirrung
+[ 40] 0x594CEF | Stummheit
+[ 41] 0x594CFC | Schnell
+[ 42] 0x594D08 | Langsam
+[ 43] 0x594D16 | Stop
+[ 44] 0x594D48 | Versteinerung
+[ 45] 0x594D62 | regen
+[ 46] 0x594D80 | Reflektieren
+[ 47] 0x594D99 | Doppel
+[ 48] 0x594DA1 | Schild
+[ 49] 0x594DD7 | Einzigartig
+[ 50] 0x594DEC | Lähmung
+[ 51] 0x594DF6 | Dunkelheit
+[ 52] 0x594E44 | $             `  `   Rrò `hpx9IY     Wieviel willst du ausgeben?
+[ 53] 0x594EA4 | Gil
+[ 54] 0x594EA8 | Nach
+[ 55] 0x594EAD | Gil auf der Hand
+[ 56] 0x595080 | Ja     Nein
+[ 57] 0x59508C | Vorhandene Schlachtpunkte
+[ 58] 0x5950AA | Schlitzstart!
+[ 59] 0x5950CB | Gewonnene Schlachtpunkte
+[ 60] 0x5950F7 | Ok, dann los!
+[ 61] 0x595106 | Zaubersubstanz kaputt.
+[ 62] 0x595130 | Aufrufsubstanz kaputt.
+[ 63] 0x59514F | Support-Substanz kaputt.
+[ 64] 0x595170 | Unabhängige Substanz kaputt.
+[ 65] 0x595193 | Befehlssubstanz kaputt.
+[ 66] 0x5951AD | Alle Substanz kaputt.
+[ 67] 0x5951CA | Zubehör kaputt.
+[ 68] 0x5951E3 | Objektbefehl ist versiegelt.
+[ 69] 0x59520F | Rüstzeug kaputt.
+[ 70] 0x595222 | Waffe kaputt.
+[ 71] 0x59523E | 1/2 Geschwindigkeit.
+[ 72] 0x595264 | 1/2 Genauigkeit.
+[ 73] 0x59527F | Minimum
+[ 74] 0x5952D1 | Zeit x30 Schaden.
+[ 75] 0x5952FC | 5 Ebenen zurück.
+[ 76] 0x59531A | 10 Ebenen zurück.
+[ 77] 0x5953AD | Jaa! Keine Behinderung!!
+[ 78] 0x5953DC | HP wiederhergestellt.
+[ 79] 0x5953F8 | Besorgt um die anderen Mitglieder?
+[ 80] 0x595423 | Ja, ein bichen
+[ 81] 0x595433 | Eigentlich nicht
+[ 82] 0x595558 | QRSTUVWXYZ[\]^`adefgh   jklmnopqrstuvwxyDEGHIJK qu      +! ë c   [!  ç V B v r  l   o!å l   S Speichern
+[ 83] 0x5955CA | !)  m t!v L!S     "  % j G  K  :     `!e !   S    j : Eôôá°åOôá°åEPRãNÜÜW     Reformieren
+[ 84] 0x59563C | Mitglieden in zwei Gruppen aufteilen
+[ 85] 0x59567B | Mitglieder in drei Gruppen aufteilen
+[ 86] 0x5956A1 | Gruppe aus zwei Personen bilden
+[ 87] 0x5956C2 | Gruppe aus drei Personen bilden
+[ 88] 0x5956E8 | Auswählen mit [START]-Taste
+[ 89] 0x59570A | Element
+[ 90] 0x595720 | Effekt
+[ 91] 0x595735 | Angreifen
+[ 92] 0x59574E | Verteidigen
+[ 93] 0x595766 | Halbieren
+[ 94] 0x59577A | Ungültig
+[ 95] 0x59578F | Absorbieren
+[ 96] 0x5957FB | Geschick
+[ 97] 0x595813 | Vitalität
+[ 98] 0x59582A | Zauber
+[ 99] 0x595868 | Angreifen
+[100] 0x595882 | Angreifen %
+[101] 0x59589A | Verteidigen
+[102] 0x5958B0 | Verteidigen %
+[103] 0x5958C8 | Zbrangrf
+[104] 0x5958D9 | Zbrvertdg
+[105] 0x5958F0 | Zbrvertdg %
+[106] 0x595943 | Limit-Ebene
+[107] 0x595A30 | LIMIT-STUFE einrichten.
+[108] 0x595A60 | Einrichten
+[109] 0x595A8F | Bei nderung der STUFE
+[110] 0x595ABF | Beginn bei Limit-Punkt 0.
+[111] 0x595AE2 | STUFE ändern?
+[112] 0x595B57 | STUFE wählen
+[113] 0x595B94 | R R 3 1P
+[114] 0x595BB0 | T T 3!1T
+[115] 0x595BCC | S S 3"1X
+[116] 0x595BD6 | :ö
+[117] 0x595BE8 | U U 3#1f
+[118] 0x595C58 | f f 3'1T
+[119] 0x595C74 | h h 7(1V
+[120] 0x595C90 | i i 3)C@
+[121] 0x595CC8 | m m 7+1C
+[122] 0x595D1C | z z 5.D0
+[123] 0x595D5D | ü
+[124] 0x595D60 | ßV
+[125] 0x595DB1 | ü
+[126] 0x595DFC | b b 56
+[127] 0x595E34 | a a 5:
+[128] 0x595E50 | c c 5<
+[129] 0x595E6C | d d 5>
+[130] 0x595E88 | e e 5J
+[131] 0x595EA4 | ã ã 3<1T
+[132] 0x595EDC | ç ç 7>1X
+[133] 0x595EF8 | é é 7?1D
+[134] 0x595F30 | í í A12
+[135] 0x595F4C | ì ì B1+
+[136] 0x595F61 | G
+[137] 0x595F64 | C p p 3C1P
+[138] 0x595F84 | q q  DB
+[139] 0x595FA0 | s s 3E14
+[140] 0x595FBC | u u F1*
+[141] 0x595FD8 | v v 5GB
+[142] 0x595FF4 | x x H1>
+[143] 0x596010 | y y 7I1
+[144] 0x596064 | ö ö 7L
+[145] 0x5960F0 | î î 3Q1R
+[146] 0x59610C | ô ô 5RD0
+[147] 0x596128 | ó ó 7S1P
+[148] 0x596144 | ò ò T1*
+[149] 0x596160 | õ õ 7U1<
+[150] 0x5961B4 | ß ß 5XB
+[151] 0x5961EC | 7Z1p
+[152] 0x596254 | £E
+[153] 0x596258 | C ü ü 3
+[154] 0x596270 | ã
+[155] 0x59628C | £L
+[156] 0x59629A | 1J
+[157] 0x5962A8 | ã
+[158] 0x5962B0 | 7aBf
+[159] 0x5962C4 | £C
+[160] 0x5962E0 | ã
+[161] 0x5962E8 | 3cB
+[162] 0x59630A | 1H
+[163] 0x596318 | ã
+[164] 0x596320 | 7eB
+[165] 0x596340 | 7m1R
+[166] 0x596350 | ã
+[167] 0x59635C | 7nBz
+[168] 0x5969F7 | Hitze
+[169] 0x5969FE | Kälte
+[170] 0x596A0A | Gewitter
+[171] 0x596A19 | Erde
+[172] 0x596A21 | Gift
+[173] 0x596A2D | Schwerkraft
+[174] 0x596A40 | Wasser
+[175] 0x596A47 | Wind
+[176] 0x596A51 | Heilig
+[177] 0x596A83 | Schlaf
+[178] 0x596AE7 | Schweigen
+[179] 0x596B5E | Allm.Verstein.
+[180] 0x596B7B | Verstein.
+[181] 0x596B8A | Heilung
+[182] 0x596B9C | Barriere
+[183] 0x596BC3 | Wasser
+[184] 0x596BFF | Todesurteil
+[185] 0x596C18 | Manipul.
+[186] 0x596C29 | Tobsucht
+[187] 0x596C3D | Unverwundbar
+[188] 0x596C55 | Lähmung
+[189] 0x596C76 | Element/Nebenwirkung
+[190] 0x596C9D | Zusatzwirkung
+[191] 0x596CAF | Angriff
+[192] 0x596CC2 | Verteidigung
+[193] 0x596CE0 | Halbieren
+[194] 0x596CF6 | Unwirksam
+[195] 0x596D0F | Absorbieren
+[196] 0x596D89 | Geschick
+[197] 0x596DA4 | Vitalität
+[198] 0x596E3B | Verteidigung
+[199] 0x596E57 | Verteidigung %
+[200] 0x596E72 | Zauber
+[201] 0x596E83 | Zauberabwehr
+[202] 0x596EA2 | Zauberabw. %
+[203] 0x596EFE | Limit-Stufe
+[204] 0x596FDF | Geschick
+[205] 0x596FF7 | Vitalitä
+[206] 0x59700D | Zauber
+[207] 0x59704C | Angriff
+[208] 0x597064 | Angriff %
+[209] 0x59707C | Verteidigung
+[210] 0x597095 | Verteidigung %
+[211] 0x5970AD | Zauber
+[212] 0x5970BB | Zauberabwehr
+[213] 0x5970D7 | Zauberabw. %
+[214] 0x5970ED | Fassung:
+[215] 0x5970FF | Wachstum:
+[216] 0x59713F | Doppelt
+[217] 0x597156 | Dreifach
+[218] 0x5971E6 | Kälte
+[219] 0x5971F2 | Blitz
+[220] 0x5971FE | Erde
+[221] 0x597209 | Gift
+[222] 0x597215 | Schwerkraft
+[223] 0x597228 | Wasser
+[224] 0x59722F | Wind
+[225] 0x597239 | Heilig
+[226] 0x597247 | Soll das wirklich entfernt werden?
+[227] 0x597273 | Ja!
+[228] 0x597301 | Fähigkeitsliste
+[229] 0x597328 | Rüstungseffekt
+[230] 0x597343 | Prüfen
+[231] 0x597373 | Gespeicherte Zahl   /24
+[232] 0x5973A0 | AP
+[233] 0x5973A7 | Auf nächste Ebene
+[234] 0x5973D2 | MASTER
+[235] 0x59741D | Alles entfernen
+[236] 0x597440 | Wegwerfen
+[237] 0x597469 | Geschwindigkeit   %HåHER
+[238] 0x59749D | Schutz   %HåHER
+[239] 0x5974B0 | Zauberkraft   %HåHER
+[240] 0x5974D1 | Glück   %HåHER
+[241] 0x5974E7 | MASTER
+[242] 0x597517 | Vitalität
+[243] 0x59754F | Zbrvertdg
+[244] 0x59756E | Geschick
+[245] 0x597688 | Chocobo treffen
+[246] 0x5976A8 | Präventivm. + %
+[247] 0x5976C4 | Fernangriff
+[248] 0x5976DC | Alle angreifen
+[249] 0x5976FB | Gegenangriff
+[250] 0x597715 | Alle angreifen
+[251] 0x597733 | Ständiger Angriff
+[252] 0x597752 | HP/MP-nderung
+[253] 0x597877 | Beschwören
+[254] 0x597891 | Feindtechnik
+[255] 0x5978A9 | Zusätzliche Fähigkeit
+[256] 0x5978C8 | Alle
+[257] 0x5978E6 | MP absorb.
+[258] 0x5978FF | HP absorb.
+[259] 0x597942 | Schlag
+[260] 0x597953 | Turbo-MP
+[261] 0x59796B | Nichts
+[262] 0x59797F | Nicht genug MP.
+[263] 0x597A12 | Ordnen
+[264] 0x597A21 | Schlüsselobjekte
+[265] 0x597A3D | Allein
+[266] 0x597A55 | Schlacht
+[267] 0x597A6B | Werfen
+[268] 0x597ADA | Ich bin nicht sicher, aber
+[269] 0x597B14 | Ist mir egal.
+[270] 0x597B52 | V-v-verdammt! Mein Kopf!
+[271] 0x597B89 | Hat nichts mit mir zu tun!
+[272] 0x597BB3 | Hmm, das wär's also.
+[273] 0x597BD5 | Ich bin nicht sicher, aber
+[274] 0x597C04 | Ich hab die falsche Person erwischt.
+[275] 0x597C35 | Das sollte ok sein.
+[276] 0x597C4C | Noch nicht ganz bereit.
+[277] 0x597C78 | Nein, ich bin es nicht.
+[278] 0x597CEA | Hat nichts mit mir zu tun.
+[279] 0x597D1B | Cool! Das sollte ok sein!
+[280] 0x597D42 | Nee! Kapier ich nicht!
+[281] 0x597D67 | Mann, ich tapp total im Dunkeln!
+[282] 0x597D99 | Ich verlier immer mehr Menschliches
+[283] 0x597DC5 | Ich bin noch nicht bereit.
+[284] 0x597DE3 | Es hat nichts mit mir zu tun.
+[285] 0x597E0E | Das gefällt mir! Her damit!
+[286] 0x597E34 | Hmph. Hab ich nicht ganz kapiert, aber
+[287] 0x597E68 | Nicht ich! Gib es jemand anders!
+[288] 0x597E89 | Es hat nichts mit mir zu tun.
+[289] 0x5981E8 | Zí
+[290] 0x5981F1 | ä
+[291] 0x598208 | í
+[292] 0x598211 | ä
+[293] 0x598228 | ëí
+[294] 0x598231 | V
+[295] 0x598248 | âvÜÜÜÜS\
+[296] 0x59825B | äí
+[297] 0x598268 | VâÜäÜéudâ
+[298] 0x59827A | ä|â
+[299] 0x598289 | äâÜVâe
+[300] 0x59829A | vSÜâ
+[301] 0x5982A9 | éVëÜâS
+[302] 0x5982B9 | äâXÜ
+[303] 0x5982C9 | äÜëâX
+[304] 0x5982D9 | VxÜ
+[305] 0x5982EA | VÜVS
+[306] 0x5982F9 | äÜÜXäí
+[307] 0x59830A | äÜí
+[308] 0x598319 | VéâÜ
+[309] 0x59832B | ë
+[310] 0x598338 | VäâXéf
+[311] 0x59834B | S
+[312] 0x598358 | ïxÜe
+[313] 0x598378 | íÜ
+[314] 0x598398 | ä
+[315] 0x5983B8 | ää
+[316] 0x5983C1 | ä
+[317] 0x5983D8 | Zí
+[318] 0x5983E1 | ä
+[319] 0x5983F8 | í
+[320] 0x598401 | ä
+[321] 0x598418 | ëí
+[322] 0x598421 | V
+[323] 0x598438 | âvÜÜÜÜS\
+[324] 0x598458 | VâÜäÜéudâ
+[325] 0x59846B | äí
+[326] 0x598479 | äâÜVâe
+[327] 0x59848A | ä|â
+[328] 0x598499 | éVëÜâS
+[329] 0x5984AA | vSÜâ
+[330] 0x5984B9 | äÜëâX
+[331] 0x5984C9 | äâXÜ
+[332] 0x5984DA | VÜVS
+[333] 0x5984E9 | VxÜ
+[334] 0x5984FA | äÜí
+[335] 0x598509 | äÜÜXäí
+[336] 0x59851B | ë
+[337] 0x598529 | VéâÜ
+[338] 0x59853B | S
+[339] 0x598548 | VäâXéf
+[340] 0x598568 | ïxÜe
+[341] 0x598588 | íÜ
+[342] 0x5985A8 | ä
+[343] 0x5985C8 | ää
+[344] 0x59862E | Barret
+[345] 0x59863B | Tifa
+[346] 0x598645 | Aeris
+[347] 0x598652 | Red XIII
+[348] 0x598661 | Yuffie
+[349] 0x59866B | Cait Sith
+[350] 0x59867A | Vincent
+[351] 0x598684 | Cid
+[352] 0x59868C | Choco
+[353] 0x5986B5 | Leer
+[354] 0x5986C3 | Löschen
+[355] 0x5986D0 | Auswählen
+[356] 0x5986DC | Standard
+[357] 0x5986E5 | Abbrechen
+[358] 0x5986F0 | ABCDEFGHIJäKLMNOPQRSTUVWXYZ,.+-öabcdefghijåklmnopqrstÜuvwxyz:;  ü0123456789   RaginLion
+[359] 0x59874A | Freshmake
+[360] 0x59875A | Square
+[361] 0x598775 | Local
+[362] 0x598795 | ëìèïókmoqs+-/13uwy{}579;=áâåç?ACEGô•____acegi!#%')üJLNPR_]^      äíéîñjlnpr*,.02tvxz|468:<~àãÜ>@BDFòõ°£ö`bdfh "$&(ßIKMOQH
+[363] 0x598900 | C   !!/-+)%-      !öBarret
+[364] 0x598AAC | P#
+[365] 0x598B30 | w$
+[366] 0x598B94 | &!*+-+%/      ! Cait Seith
+[367] 0x598BB4 | å%
+[368] 0x598C38 | ò%
+[369] 0x598CBC | i&
+[370] 0x598DA4 | õ   *RuhdfaN      ! Sephiroth
+[371] 0x598DE4 | $ W
+[372] 0x598DEC | U
+[373] 0x598DF0 | S
+[374] 0x598DF8 | Q
+[375] 0x598E08 | R
+[376] 0x598E10 | T
+[377] 0x59924F | Magic Materia!
+[378] 0x599263 | Summon Materia!
+[379] 0x599278 | Command
+[380] 0x599284 | Zero - AW YEAH!
+[381] 0x5992A0 | Feuer
+[382] 0x5992AE | Kälte
+[383] 0x5992BA | Blitz
+[384] 0x5992C6 | Erde
+[385] 0x5992D1 | Gift
+[386] 0x5992DD | Schwerkraft
+[387] 0x5992F0 | Wasser
+[388] 0x5992F7 | Wind
+[389] 0x599301 | Heilig
+[390] 0x59930F | Soll das wirklich entfernt werden?
+[391] 0x59933B | Ja!
+[392] 0x5993C9 | Fähigkeitsliste
+[393] 0x5993F0 | Rüstungseffekt
+[394] 0x59940B | Prüfen
+[395] 0x59943B | Gespeicherte Zahl   /24
+[396] 0x599468 | AP
+[397] 0x59946F | Auf nächste Ebene
+[398] 0x59949A | MASTER
+[399] 0x5994E5 | Alles entfernen
+[400] 0x599508 | Wegwerfen
+[401] 0x599531 | Geschwindigkeit   %HåHER
+[402] 0x599565 | Schutz   %HåHER
+[403] 0x599578 | Zauberkraft   %HåHER
+[404] 0x599599 | Glück   %HåHER
+[405] 0x5995AF | MASTER
+[406] 0x5995DF | Vitalität
+[407] 0x599617 | Zbrvertdg
+[408] 0x599636 | Geschick
+[409] 0x599750 | Chocobo treffen
+[410] 0x599770 | Präventivm. + %
+[411] 0x59978C | Fernangriff
+[412] 0x5997A4 | Alle angreifen
+[413] 0x5997C3 | Gegenangriff
+[414] 0x5997DD | Alle angreifen
+[415] 0x5997FB | Ständiger Angriff
+[416] 0x59981A | HP/MP-nderung
+[417] 0x599833 | Kaufen
+[418] 0x5998C0 | Kaufen Verkaufen Beenden
+[419] 0x5998F1 | Gil
+[420] 0x59991F | Ausstattung
+[421] 0x599980 | Objekt    Materia
+[422] 0x5999AA | Übrige Gil
+[423] 0x5999C3 | Preis für Master
+[424] 0x5999E9 | Preis durch AP
+[425] 0x599A77 | Geschick
+[426] 0x599A8F | Vitalitä
+[427] 0x599AA5 | Zauber
+[428] 0x599AE4 | Angreifen
+[429] 0x599AFE | Angreifen %
+[430] 0x599B16 | Verteidigen
+[431] 0x599B2C | Verteidigen %
+[432] 0x599B44 | Zbrangrf
+[433] 0x599B55 | Zbrvertdg
+[434] 0x599B6C | Zbrvertdg %
+[435] 0x599B84 | Schlitz:
+[436] 0x599B97 | Verstärkung:
+[437] 0x599BB1 | Keine
+[438] 0x599BD7 | Doppelt
+[439] 0x599BEE | Dreifach
+[440] 0x599C16 | V
+[441] 0x599C18 | Objektladen
+[442] 0x599C24 | Waffengeschäft
+[443] 0x599C4F | Objektladen
+[444] 0x599C9E | Gemischtwaren
+[445] 0x599CEC | Zubehörladen
+[446] 0x599D15 | Werkzeugladen
+[447] 0x599D3E | Souvenierladen
+[448] 0x599D8C | Was möchtest du kaufen?
+[449] 0x599DC6 | Wie viele willst du davon?
+[450] 0x599DF7 | Was möchtest du verkaufen?
+[451] 0x599E25 | Wie viele willst du verkaufen?
+[452] 0x599E9B | Du hast nicht genug Geld!
+[453] 0x599F57 | Wie kann ich behilflich sein?
+[454] 0x599F98 | Wie viele willst du davon?
+[455] 0x599FC3 | Hast du was zu verkaufen?
+[456] 0x599FF0 | Wie viele willst du?
+[457] 0x59A03F | Ihr werdet doch alle zurückkommen!
+[458] 0x59A083 | Soll das ein Witz sein? Das ist nicht genug!
+[459] 0x59C466 | Wählen Sie eine Speicherdatei aus.
+[460] 0x59C4AB | Wählen Sie einen Speicherblock aus.
+[461] 0x59C4D4 | STECKPLATZ 1
+[462] 0x59C532 | Bin am Laden. Bitte warten
+[463] 0x59C56C | Bin am Sichern. Bitte warten
+[464] 0x59C61C | Überprüfe Spielstandsdatei
+[465] 0x59C8CD | Speichern nicht möglich.
+[466] 0x59C901 | Laden nicht möglich.
+[467] 0x59C925 | Daten sind zerstört.
+[468] 0x59C94D | NEUES SPIEL
+[469] 0x59C96C | Wirklich speichern?
+[470] 0x59CBE8 | Keine Spielstandsdatei.
+[471] 0x59CC28 | Diese Memory Card ist beschädigt und kann nicht verwendet werden.
+[472] 0x59CC94 | Andere Memory Card einlegen.
+[473] 0x59CCB1 | Nicht genug Platz in der Spielstandsdatei übrig.
+[474] 0x59CD07 | Bitte benutzen Sie eine andere Spielstandsdatei
+[475] 0x59CD48 | oder löschen Sie 1 Block gesicherter Daten.
+[476] 0x59CF6B | Kann Speicherpuffer der Spielstandsdatei nicht zuordnen!
+[477] 0x59CFE9 | Ungültige Spielstandsdatei!
+[478] 0x59D038 | Spielstand 2
+[479] 0x59D04C | Spielstand 3
+[480] 0x59D060 | Spielstand 4
+[481] 0x59D074 | Spielstand 5
+[482] 0x59D088 | Spielstand 6
+[483] 0x59D09C | Spielstand 7
+[484] 0x59D0B0 | Spielstand 8
+[485] 0x59D0C4 | Spielstand 9
+[486] 0x59D0D8 | Spielstand 10
+[487] 0x59D150 | Level
+[488] 0x59D156 | p  @  cZ|ffW|ôòâ|ìåî|gåòìáî|íïáãìåîNâññ cZ|ffW|ôòâ|ìåî|gåòìáî|íïáãìåîNâññ Eôôá°å  Eôôá°åOôá°åEPRãNÜÜW Eôôá°åOôá°åEPRãNÜÜW
+[489] 0x59D26A | UéA/
+[490] 0x59D39C | ü^ ^ ^ ^ ^ ^ ^ ^ ^ ._ 3_ I_ N_ j_ z_ î_ ß_ _ _ _ _ _ _ .` B` b` g` á` Ü` ` ` ` ` ` ` %a *a Ja ^a va äa a a a a a a a .b Nb Sb mb rb òb b b b b b b b 6c Jc bc         ü
+[491] 0x5A224D | ñ
+[492] 0x5A225D | X_
+[493] 0x5A3898 | ü
+[494] 0x5A3983 | ü
+[495] 0x5A39AE | ü
+[496] 0x5A4280 | ü
+[497] 0x5A4284 | ü
+[498] 0x5A4288 | ü
+[499] 0x5A8DD4 | ü
+[500] 0x5A91D8 | ß
+[501] 0x5A91DC | õ
+[502] 0x5A93D4 | ö
+[503] 0x5A93D8 | ö
+[504] 0x5A93DC | ö
+[505] 0x5A93E0 | ï
+[506] 0x5A95C8 | ß
+[507] 0x5A95E4 | è
+[508] 0x5A97C8 | ü
+[509] 0x5A97E0 | ò
+[510] 0x5A97E4 | ó
+[511] 0x5A97E8 | é
+[512] 0x5A99E0 | ë
+[513] 0x5A99E4 | î
+[514] 0x5A99EC | õ
+[515] 0x5A9BC8 | ü
+[516] 0x5A9BD0 | ß
+[517] 0x5A9BD8 | ï
+[518] 0x5A9BE4 | é
+[519] 0x5A9BE8 | è
+[520] 0x5A9DC4 | ü
+[521] 0x5A9DCC | ö
+[522] 0x5A9DD4 | ô
+[523] 0x5A9DD8 | í
+[524] 0x5A9DDC | ë
+[525] 0x5A9DEC | Ü
+[526] 0x5A9FC8 | ö
+[527] 0x5A9FE0 | è
+[528] 0x5A9FEC | z
+[529] 0x5A9FF0 | à
+[530] 0x5AA1C0 | ß
+[531] 0x5AA1D0 | ô
+[532] 0x5AA1D4 | ì
+[533] 0x5AA1E0 | â
+[534] 0x5AA1E4 | ä
+[535] 0x5AA1F0 | u
+[536] 0x5AA3BC | ß
+[537] 0x5AA3CC | õ
+[538] 0x5AA3D0 | ò
+[539] 0x5AA3D4 | ñ
+[540] 0x5AA3D8 | ç
+[541] 0x5AA3DC | ä
+[542] 0x5AA3E0 | è
+[543] 0x5AA3E4 | à
+[544] 0x5AA3E8 | å
+[545] 0x5AA5B8 | ü
+[546] 0x5AA5C0 | ö
+[547] 0x5AA5CC | ô
+[548] 0x5AA5D0 | ñ
+[549] 0x5AA5D4 | î
+[550] 0x5AA5D8 | ë
+[551] 0x5AA5DC | é
+[552] 0x5AA5E0 | Ü
+[553] 0x5AA5E4 | ã
+[554] 0x5AA5EC | í
+[555] 0x5AA5F4 | ë
+[556] 0x5AA7B8 | ß
+[557] 0x5AA7C8 | ô
+[558] 0x5AA7CC | ó
+[559] 0x5AA7D0 | î
+[560] 0x5AA7D4 | ë
+[561] 0x5AA7D8 | è
+[562] 0x5AA7DC | ç
+[563] 0x5AA7E0 | ã
+[564] 0x5AA7E4 | à
+[565] 0x5AA7EC | w
+[566] 0x5AA7F0 | Ü
+[567] 0x5AA7F4 | ô
+[568] 0x5AA7F8 | õ
+[569] 0x5AA9B4 | ß
+[570] 0x5AA9C4 | õ
+[571] 0x5AA9C8 | ó
+[572] 0x5AA9CC | ï
+[573] 0x5AA9D0 | í
+[574] 0x5AA9D4 | ä
+[575] 0x5AA9D8 | ç
+[576] 0x5AA9DC | å
+[577] 0x5AA9E0 | à
+[578] 0x5AA9EC | y
+[579] 0x5AA9F0 | q
+[580] 0x5AA9F4 | õ
+[581] 0x5AA9F8 | ç
+[582] 0x5AABB0 | ü
+[583] 0x5AABB8 | ö
+[584] 0x5AABC4 | ò
+[585] 0x5AABC8 | ñ
+[586] 0x5AABCC | ì
+[587] 0x5AABD0 | ä
+[588] 0x5AABD4 | é
+[589] 0x5AABD8 | Ü
+[590] 0x5AABDC | â
+[591] 0x5AABE8 | y
+[592] 0x5AABEC | v
+[593] 0x5AABF0 | s
+[594] 0x5AABF4 | o
+[595] 0x5AADB4 | ö
+[596] 0x5AADC0 | ô
+[597] 0x5AADC4 | ñ
+[598] 0x5AADC8 | î
+[599] 0x5AADCC | ë
+[600] 0x5AADD0 | é
+[601] 0x5AADD4 | Ü
+[602] 0x5AADD8 | ã
+[603] 0x5AADDC | á
+[604] 0x5AADE8 | x
+[605] 0x5AADEC | t
+[606] 0x5AADF0 | q
+[607] 0x5AADF4 | k
+[608] 0x5AADF8 | o
+[609] 0x5AAFA4 | ß
+[610] 0x5AAFAC | ß
+[611] 0x5AAFBC | ô
+[612] 0x5AAFC0 | ó
+[613] 0x5AAFC4 | ï
+[614] 0x5AAFC8 | í
+[615] 0x5AAFCC | è
+[616] 0x5AAFD0 | ç
+[617] 0x5AAFD4 | ã
+[618] 0x5AAFD8 | à
+[619] 0x5AAFE4 | x
+[620] 0x5AAFE8 | u
+[621] 0x5AAFEC | r
+[622] 0x5AAFF0 | l
+[623] 0x5AAFF4 | h
+[624] 0x5AAFF8 | h
+[625] 0x5AAFFC | ü
+[626] 0x5AB1A4 | ö
+[627] 0x5AB1A8 | ß
+[628] 0x5AB1B8 | õ
+[629] 0x5AB1BC | ò
+[630] 0x5AB1C0 | ï
+[631] 0x5AB1C4 | ì
+[632] 0x5AB1C8 | ä
+[633] 0x5AB1CC | ç
+[634] 0x5AB1D0 | å
+[635] 0x5AB1D4 | à
+[636] 0x5AB1E0 | y
+[637] 0x5AB1E4 | v
+[638] 0x5AB1E8 | s
+[639] 0x5AB1EC | m
+[640] 0x5AB1F0 | à
+[641] 0x5AB1FC | ã
+[642] 0x5AB3AC | ö
+[643] 0x5AB3B8 | ò
+[644] 0x5AB3BC | ñ
+[645] 0x5AB3C0 | ì
+[646] 0x5AB3C4 | ä
+[647] 0x5AB3C8 | é
+[648] 0x5AB3CC | Ü
+[649] 0x5AB3D0 | â
+[650] 0x5AB3E0 | w
+[651] 0x5AB3E4 | t
+[652] 0x5AB3E8 | q
+[653] 0x5AB3EC | i
+[654] 0x5AB3F0 | å
+[655] 0x5AB3F8 | ü
+[656] 0x5AB3FC | õ
+[657] 0x5AB5A8 | õ
+[658] 0x5AB5B4 | ô
+[659] 0x5AB5B8 | ó
+[660] 0x5AB5BC | î
+[661] 0x5AB5C0 | ë
+[662] 0x5AB5C4 | è
+[663] 0x5AB5C8 | Ü
+[664] 0x5AB5CC | ã
+[665] 0x5AB5D0 | á
+[666] 0x5AB5DC | x
+[667] 0x5AB5E0 | u
+[668] 0x5AB5E4 | r
+[669] 0x5AB5E8 | o
+[670] 0x5AB5EC | l
+[671] 0x5AB5F0 | a
+[672] 0x5AB5F4 | è
+[673] 0x5AB7A8 | ò
+[674] 0x5AB7B0 | ô
+[675] 0x5AB7B4 | ó
+[676] 0x5AB7B8 | ï
+[677] 0x5AB7BC | í
+[678] 0x5AB7C0 | è
+[679] 0x5AB7C4 | ç
+[680] 0x5AB7C8 | ã
+[681] 0x5AB7CC | à
+[682] 0x5AB7D8 | y
+[683] 0x5AB7DC | v
+[684] 0x5AB7E0 | s
+[685] 0x5AB7E4 | p
+[686] 0x5AB7E8 | l
+[687] 0x5AB7EC | i
+[688] 0x5AB7F0 | f
+[689] 0x5AB7F8 | T
+[690] 0x5AB9A8 | ô
+[691] 0x5AB9B0 | ò
+[692] 0x5AB9B4 | ï
+[693] 0x5AB9B8 | ì
+[694] 0x5AB9BC | ä
+[695] 0x5AB9C0 | ç
+[696] 0x5AB9C4 | å
+[697] 0x5AB9C8 | à
+[698] 0x5AB9D4 | z
+[699] 0x5AB9D8 | w
+[700] 0x5AB9DC | t
+[701] 0x5AB9E0 | p
+[702] 0x5AB9E4 | m
+[703] 0x5AB9E8 | j
+[704] 0x5AB9EC | g
+[705] 0x5AB9F0 | d
+[706] 0x5AB9FC | üY
+[707] 0x5ABBA4 | ò
+[708] 0x5ABBAC | ò
+[709] 0x5ABBB0 | ñ
+[710] 0x5ABBB4 | ì
+[711] 0x5ABBB8 | ë
+[712] 0x5ABBBC | é
+[713] 0x5ABBC0 | Ü
+[714] 0x5ABBC4 | ã
+[715] 0x5ABBD0 | z
+[716] 0x5ABBD4 | w
+[717] 0x5ABBD8 | u
+[718] 0x5ABBDC | q
+[719] 0x5ABBE0 | n
+[720] 0x5ABBE4 | k
+[721] 0x5ABBE8 | h
+[722] 0x5ABBEC | d
+[723] 0x5ABBF0 | a
+[724] 0x5ABBF8 | W
+[725] 0x5ABBFC | öS
+[726] 0x5ABC00 | óG
+[727] 0x5ABC04 | í
+[728] 0x5ABD94 | ß
+[729] 0x5ABD9C | ô
+[730] 0x5ABDA8 | ô
+[731] 0x5ABDAC | ó
+[732] 0x5ABDB0 | î
+[733] 0x5ABDB4 | í
+[734] 0x5ABDB8 | è
+[735] 0x5ABDBC | Ü
+[736] 0x5ABDC0 | ã
+[737] 0x5ABDC4 | á
+[738] 0x5ABDD0 | y
+[739] 0x5ABDD4 | u
+[740] 0x5ABDD8 | r
+[741] 0x5ABDDC | o
+[742] 0x5ABDE0 | l
+[743] 0x5ABDE4 | h
+[744] 0x5ABDE8 | e
+[745] 0x5ABDEC | b
+[746] 0x5ABDF8 | ã
+[747] 0x5ABE00 | ñG
+[748] 0x5ABE04 | ü^
+[749] 0x5ABE08 | ì
+[750] 0x5ABF94 | ß
+[751] 0x5ABFA4 | õ
+[752] 0x5ABFA8 | ó
+[753] 0x5ABFAC | ï
+[754] 0x5ABFB0 | í
+[755] 0x5ABFB4 | ä
+[756] 0x5ABFB8 | ç
+[757] 0x5ABFBC | å
+[758] 0x5ABFC0 | à
+[759] 0x5ABFCC | y
+[760] 0x5ABFD0 | v
+[761] 0x5ABFD4 | r
+[762] 0x5ABFD8 | o
+[763] 0x5ABFDC | m
+[764] 0x5ABFE0 | i
+[765] 0x5ABFE4 | f
+[766] 0x5ABFE8 | c
+[767] 0x5ABFF4 | W
+[768] 0x5ABFF8 | j
+[769] 0x5AC000 | z
+[770] 0x5AC004 | ë@
+[771] 0x5AC008 | °S
+[772] 0x5AC00C | Ü
+[773] 0x5AC190 | ß
+[774] 0x5AC1A4 | ò
+[775] 0x5AC1A8 | ñ
+[776] 0x5AC1AC | ì
+[777] 0x5AC1B0 | ä
+[778] 0x5AC1B4 | é
+[779] 0x5AC1B8 | å
+[780] 0x5AC1BC | â
+[781] 0x5AC1C8 | y
+[782] 0x5AC1CC | w
+[783] 0x5AC1D0 | s
+[784] 0x5AC1D4 | p
+[785] 0x5AC1D8 | n
+[786] 0x5AC1DC | j
+[787] 0x5AC1E0 | g
+[788] 0x5AC1E4 | c
+[789] 0x5AC1E8 | a
+[790] 0x5AC1F0 | üZ
+[791] 0x5AC1F4 | öT
+[792] 0x5AC1F8 | a
+[793] 0x5AC208 | à
+[794] 0x5AC20C | èA
+[795] 0x5AC210 | u
+[796] 0x5AC38C | ü
+[797] 0x5AC394 | ö
+[798] 0x5AC3A0 | ô
+[799] 0x5AC3A4 | ñ

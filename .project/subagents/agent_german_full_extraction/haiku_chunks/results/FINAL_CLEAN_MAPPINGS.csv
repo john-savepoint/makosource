@@ -1,0 +1,212 @@
+# FF7 German String Mappings - FINAL CLEAN
+# Format: english_index,german_offset,german_text,english_text
+# Total: 208 mappings
+#
+0,0x0058FBB0,Möchten Sie Final,Do you want to quit
+3,0x0058FC05,Ja,0x005183D0
+4,0x0058FC14,Nein,No
+5,0x5D8AA8,Fensterfarbe,Window color
+6,0x5B9E50,Sound,Sound
+7,0x5D8B08,Regler,Controller
+8,0x5D8B38,Cursor,Cursor
+9,0x5D1F19,ATB,ATB
+11,0x5D8BC8,Kampfnachricht,Battle message
+12,0x5D8BF8,Feldnachricht,Field message
+13,0x5D8C28,Kamerawinkel,Camera angle
+17,0x5D8D08,Normal,Normal
+18,0x5D8D38,Anpassen,Customize
+19,0x5D8D68,Ausgangswert,Initial
+20,0x5D8D98,Speicher,Memory
+21,0x5D8DC8,Aktiv,Active
+22,0x5D8DF8,Empfohlen,Recommended
+23,0x5D8E28,Warten,Wait
+24,0x5D8E58,Automatisch,Auto
+25,0x5D8E88,Fixiert,Fixed
+26,0x5D8EE8,Langsam,Slow
+27,0x5D8F18,Schnell,Fast
+28,0x589441,Zauberfolge,Magic order
+29,0x589465,Wiederherstellen,restore
+30,0x589485,Angriff,attack
+31,0x5894A5,Indirekt,indirect
+32,0x5D2088,No.,No.
+40,0x5D9098,Materia,Materia
+41,0x5D90AC,Ausrüsten,Equip
+43,0x5D90D4,Grenze,Limit
+44,0x5D90E8,Einstellung,Config
+45,0x5CDC86,Konfiguration,Config
+46,0x5D9110,Speichern,Save
+49,0x00590D3A,Anfänger,Beginner
+50,0x00590D77,Zeit,Time
+51,0x00590D85,Gil,0x005193EC
+58,0x00591058,Mit [ABBRECHEN] beenden.,Press [CANCEL] to end.
+59,0x005910A4,[O.K.] um die Tastenbelegung zu konfigurieren.,Press [OK] to configure a key.
+60,0x005910F1,Bitte neue Taste drücken,Now press the new key.
+61,0x5DA476,[OK],[OK]
+62,0x5DA4A8,[ABBRECHEN],[CANCEL]
+63,0x5DA4DA,[MENÜ],[MENU]
+64,0x5DA50C,[WECHSEL],[SWITCH]
+65,0x5DA53E,[SEITEAUF],[PAGEUP]
+66,0x5DA570,[SEITEAB],[PAGEDOWN]
+67,0x5DA5A2,[KAMERA],[CAMERA]
+68,0x5DA5D4,[ZIEL],[TARGET]
+69,0x5DA606,[HILFE],[ASSIST]
+70,0x5DA638,[START],[START]
+71,0x5DA66A,[AUF],[UP]
+72,0x5DA69C,[AB],[DOWN]
+73,0x5DA6CE,[LINKS],[LEFT]
+74,0x5DA700,[RECHTS],[RIGHT]
+75,0x5DA732,TASTATUR,KEYBOARD
+76,0x5DA764,JOYSTICK,JOYSTICK
+214,0x594C41,Pause,Pause
+215,0x594CA0,Schlaf,Sleep
+216,0x594CB3,Gift,Poison
+217,0x594CBF,Traurigkeit,Sadness
+218,0x594CD4,Zorn,Fury
+219,0x594CDB,Verwirrung,Confusion
+220,0x594CEF,Stummheit,Silence
+221,0x594CFC,Schnell,Haste
+222,0x594D08,Langsam,Slow
+223,0x594D16,Stop,Stop
+224,0x594D48,Versteinerung,Petrify
+225,0x594D62,regen,Regen
+226,0x594D80,Reflektieren,Reflect
+227,0x594D99,Doppel,Shield
+228,0x594DA1,Schild,Berserk
+232,0x594E44,Wieviel willst du ausgeben?,How much will you raise?
+233,0x5998F1,Gil,Gil
+234,0x594EA8,Nach,After
+235,0x594EAD,Gil auf der Hand,Gil on hand
+236,0x595080,Weiter?,Keep goin'?
+238,0x5950B8,Vorhandene Schlachtpunkte,Current Battle Points
+239,0x5950CB,Schlitzstart!,Slot start!
+240,0x5950F7,TOLL!!,GREAT!!
+242,0x595130,Zaubersubstanz kaputt.,Magic Materia is broken.
+243,0x59514F,Aufrufsubstanz kaputt.,Summon Materia is broken.
+244,0x59516F,Support-Substanz kaputt.,Support Materia is broken.
+245,0x595193,Unabhängige Substanz kaputt.,Independent Materia is broken.
+246,0x5951AD,Befehlssubstanz kaputt.,Command Materia is broken.
+247,0x5951CA,Alle Substanz kaputt.,All Materia is broken.
+248,0x5951E3,Zubehör kaputt.,Accessory is broken.
+249,0x59520F,Objektbefehl ist versiegelt.,Item command is sealed.
+250,0x595222,Rüstzeug kaputt.,Armor is broken.
+251,0x59523E,Waffe kaputt.,Weapon is broken.
+252,0x595264,1/2 Geschwindigkeit.,1/2 speed.
+253,0x59527F,1/2 Genauigkeit.,1/2 accuracy.
+254,0x595295,Minimum,Minimum
+255,0x5952B1,Gift,Poison
+256,0x5952D1,Kröte,Toad
+257,0x5952FC,Zeit x30 Schaden.,Time x30 damage.
+258,0x59531A,5 Ebenen zurück.,Down 5 levels.
+259,0x59533A,10 Ebenen zurück.,Down 10 levels.
+260,0x59534F,1/2 HP.,1/2 HP.
+261,0x59536E,1/2 MP.,1/2 MP.
+262,0x595390,1/2 HP&MP.,1/2 HP&MP.
+263,0x5953AD,Null MP.,Zero MP.
+264,0x5953DC,Jaa! Keine Behinderung!!,Yesss! No handicapp!
+265,0x5953F8,HP wiederhergestellt.,HP restored.
+266,0x595423,Besorgt um die anderen Mitglieder?,Worried about the other members?
+268,0x59547A,Eigentlich nicht,Not really
+270,0x5DE61B,Reform,Reform
+271,0x59567B,Mitglieden in zwei Gruppen aufteilen,Split your allies into two groups.
+272,0x5956A1,Mitglieder in drei Gruppen aufteilen,Split your allies into three groups.
+273,0x5956C2,Gruppe aus zwei Personen bilden,Please make a party of two.
+274,0x5956E8,Gruppe aus drei Personen bilden,Please make a party of three.
+275,0x59570A,Auswählen mit [START]-Taste,Select with START button.
+276,0x5DE62A,Wpn.,Wpn.
+277,0x5DE6C6,Arm.,Arm.
+278,0x5DE702,Acc.,Acc.
+279,0x5959EB,STUFE 1,LEVEL 1
+280,0x5959FF,STUFE 2,LEVEL 2
+289,0x5DFB0C,Iâ,No
+290,0x5950AA,Nein,No
+293,0x5DE7AB,Feuer,Fire
+294,0x5DE835,Eis,Ice
+295,0x5DE853,Blitz,Lightning
+296,0x5DE879,Erde,Earth
+297,0x5992D1,Gift,Poison
+298,0x5992DD,Schwerkraft,Gravity
+299,0x5992F0,Wasser,Water
+300,0x5992F7,Wind,Wind
+301,0x599301,Heilig,Holy
+305,0x5DE910,Gift,Poison
+306,0x5DE98F,Trauer,Sadness
+307,0x5DEA19,Wut,Fury
+308,0x5DEA68,Verwirrung,Confusion
+309,0x5DEA6F,Stille,Silence
+310,0x5DEAC7,Hast,Haste
+311,0x5DEAD6,Langsam,Slow
+312,0x5DEAE9,Stopp,Stop
+328,0x595735,Effekt,Effect
+330,0x59574E,Angreifen,Attack
+331,0x59576E,Verteidigen,Defend
+332,0x595766,Halbieren,Halve
+333,0x59577A,Ungültig,Invalid
+334,0x59578F,Absorbieren,Absorb
+335,0x5DEB1D,Stärke,Strength
+336,0x5DEB59,Geschicklichkeit,Dexterity
+337,0x5DEB6C,Vitalität,Vitality
+338,0x5DEB94,Magie,Magic
+339,0x5DEBAD,Geist,Spirit
+340,0x5DEBB4,Glück,Luck
+341,0x595868,Angreifen,Attack
+342,0x595882,Angreifen %,Attack%
+343,0x59589A,Verteidigen,Defense
+344,0x5958B0,Verteidigen %,Defense%
+348,0x5958C8,Waf.,Wpn:
+349,0x5958D9,Rüs.,Arm:
+350,0x5958F0,Acc.,Acc:
+351,0x595908,Limit-Ebene,Limit level:
+352,0x595943,Wpn.,Wpn.
+368,0x59930F,Soll das wirklich entfernt werden?,Do you really want to remove this?
+369,0x59933B,Ja!,I sure do!
+371,0x59936D,Sephiroth,Sephiroth[B2][A9][A9][B3]
+372,0x599392,Waf.,Wpn.
+373,0x5993AD,Rüs.,Arm.
+374,0x5993C9,Fähigkeitsliste,Ability list
+375,0x5993F0,Rüstungseffekt,Equip effect
+376,0x59940B,Prüfen,Check
+377,0x59941F,Ordnen,Arrange
+378,0x599468,AP,AP
+379,0x59946F,Auf nächste Ebene,To next level
+380,0x59949A,MASTER,MASTER
+381,0x5994AB,Ordnen,Arrange
+382,0x5994C7,Tauschen,Exchange
+383,0x5994E5,Alles entfernen,Remove all
+384,0x599508,Wegwerfen,Trash
+396,0x59966A,MAXHP,MaxHP
+397,0x599686,MAXMP,MaxMP
+400,0x5996DA,EXP.UP,EXP.UP
+401,0x5996F7,Gil UP,Gil UP
+405,0x599770,Präventivm. + %,Pre-emptive
+406,0x59978C,Fernangriff,Long range attack
+407,0x5997A4,Alle angreifen,Attack all
+408,0x5997C3,Gegenangriff,Counter attack
+412,0x5978A9,Zusätzliche Fähigkeit,Added-Ability
+413,0x5978C8,Alle,All
+414,0x5978CD,4x-Zber,4x-M
+415,0x5978E6,MP absorb.,Absorb MP
+416,0x5978FF,HP absorb.,Absorb HP
+417,0x597921,Auch stehl.,Steal as well
+418,0x597942,Schlag,Extra cut
+419,0x597953,Turbo-MP,Turbo MP
+420,0x59796B,Nichts,Nothing.
+421,0x59797F,Nicht genug MP.,Not enough MP.
+422,0x599833,Kaufen,Use
+423,0x599847,Verkaufen,Arrange
+424,0x597A21,Schlüsselobjekte,Key Items
+425,0x597A3D,Allein,Customize
+426,0x597A45,Feld,Field
+427,0x597A55,Schlacht,Battle
+428,0x597A6B,Werfen,Throw
+429,0x597A7B,Typ,Type
+430,0x597A8A,Name,Name
+431,0x597A9D,Max.,Most
+432,0x597AAF,Min.,Least
+433,0x597AC1,OK! Klar!,OK! Got it!
+458,0x5985D1,Cloud,Cloud
+459,0x59862E,Barret,Barret
+460,0x59863B,Tifa,Tifa
+461,0x598645,Aeris,Aeris
+462,0x598652,Red XIII,Red XIII
+463,0x598661,Yuffie,Yuffie
+575,0x5998FC,Besitz,Owned

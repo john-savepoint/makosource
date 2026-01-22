@@ -1,0 +1,21 @@
+The issue is that the German hex data you've provided appears to be garbled or uses a non-standard encoding. The hex bytes don't correspond to readable ASCII or UTF-8 characters - they're showing control characters and corrupted data.
+
+To properly map German menu strings to English indices, I need:
+
+1. **Properly decoded German strings** - Can you provide the German menu text in readable form? (e.g., "Artikel", "Magie", "Ausrüstung", etc.)
+
+2. **Or the raw German EXE file** - So I can extract the strings directly using the same methodology as the English reference
+
+3. **Or a hex dump that shows readable strings** - The current dump appears to have encoding/corruption issues
+
+Could you provide either:
+- A list of German menu terms you want mapped to English indices?
+- Or the actual German EXE file path so I can extract the strings?
+- Or clarification on how the hex data should be decoded?
+
+Without readable German text, I cannot reliably create the mapping CSV. The current hex dump shows what appears to be:
+- Control characters (0x00, special bytes)
+- Possibly encrypted or compressed data
+- Or a character encoding issue in the dump itself
+
+Would you like me to try a different approach?

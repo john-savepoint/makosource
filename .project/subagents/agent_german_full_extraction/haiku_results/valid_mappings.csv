@@ -1,0 +1,351 @@
+0,0x0058FBAF,Möchten Sie Final Fantasy VII verlassen und zu Windows zurückkehren?,0x00518370,Do you want to quit playing Final Fantasy VII and return to Windows?
+0,0x0058FBAF,Möchten Sie Final Fantasy VII verlassen und zu Windows zurückkehren?,Do you want to quit playing Final Fantasy VII and return to Windows?
+0,0x0058FBB0,Möchten Sie Final,Do you want to quit
+3,0x0058FC05,Ja,0x005183D0,Yes
+3,0x0058FC05,Ja,Yes
+3,0x0058FC10,Ja,Yes
+4,0x0058FC13,Nein,0x005183D4,No
+4,0x0058FC13,Nein,No
+4,0x0058FC14,Nein,No
+005,0x5D1EDB,Window color,Window color
+5,0x005188A8,Fensterfarbe,Window color
+5,0x0058FBB0,Fensterfarbe,Window color
+5,0x005900EE,Fensterfarbe,0x005188A8,Window color
+5,0x005900EE,Fensterfarbe,Window color
+5,0x589201,Fensterfarbe,Window color
+5,0x5B9E1D,Fensterfarbe,Window color
+5,0x5D8AA8,Fensterfarbe,Window color
+006,0x5D1EF3,Sound,Sound
+6,0x005188D8,Ton,Sound
+6,0x0058FBDF,Sound,Sound
+6,0x005900FD,Sound,0x005188D8,Sound
+6,0x005900FD,Sound,Sound
+6,0x589221,Sound,Sound
+6,0x590126,Sound,Sound
+6,0x5B9E50,Sound,Sound
+6,0x5D8AD8,Ton,Sound
+007,0x5D1F07,Controller,Controller
+7,0x00518908,Controller,Controller
+7,0x0058FC0F,Kontroller,Controller
+7,0x0059012C,Kontroller,0x00518908,Controller
+7,0x0059012C,Kontroller,Controller
+7,0x589241,Steuerung,Controller
+7,0x5B9EA1,Kontroller,Controller
+7,0x5D8B08,Regler,Controller
+008,0x5D1F10,Cursor,Cursor
+8,0x00518938,Cursor,Cursor
+8,0x0058FC3F,Cursor,Cursor
+8,0x00590167,Cursor,0x00518938,Cursor
+8,0x00590167,Cursor,Cursor
+8,0x589254,Cursor,Cursor
+8,0x590192,Cursor,Cursor
+8,0x5B9E81,Cursor,Cursor
+8,0x5D8B38,Cursor,Cursor
+009,0x5D1F19,ATB,ATB
+9,0x0058FC6F,ATB,ATB
+9,0x00590199,ATB,0x00518968,ATB
+9,0x00590199,ATB,ATB
+9,0x589265,ATB,ATB
+9,0x5901C8,ATB,ATB
+9,0x5B9E99,ATB,ATB
+9,0x5D8B68,ATB,ATB
+010,0x5D1F32,Battle speed,Battle speed
+10,0x0058FC9F,Kampftempo,Battle speed
+10,0x005901CC,Kampftempo,0x00518998,Battle speed
+10,0x005901CC,Kampftempo,Battle speed
+10,0x589274,Kampfgeschwindigkeit,Battle speed
+10,0x5B9F03,Kampftempo,Battle speed
+10,0x5D8B98,Kampfgeschwindigkeit,Battle speed
+011,0x5D1F3D,Battle message,Battle message
+11,0x0058FCCF,Kampfmeldung,Battle message
+11,0x00590209,Kampfmeldung,0x005189C8,Battle message
+11,0x00590209,Kampfmeldung,Battle message
+11,0x589285,Kampfmitteilung,Battle message
+11,0x5B9F4B,Kampfmeldung,Battle message
+11,0x5D8BC8,Kampfnachricht,Battle message
+012,0x5D1F48,Field message,Field message
+12,0x0058FCFF,Feldmeldung,Field message
+12,0x00590241,Feldmeldung,0x005189F8,Field message
+12,0x00590241,Feldmeldung,Field message
+12,0x5892A5,Feldmitteilung,Field message
+12,0x5B9F61,Feldmeldung,Field message
+12,0x5D8BF8,Feldnachricht,Field message
+013,0x5D1F51,Camera angle,Camera angle
+13,0x0058FD2F,Kamerawinkel,Camera angle
+13,0x00590276,Kamerawinkel,0x00518A28,Camera angle
+13,0x00590276,Kamerawinkel,Camera angle
+13,0x5892C5,Kamerawinkel,Camera angle
+13,0x5B9F95,Kamerawinkel,Camera angle
+13,0x5D8C28,Kamerawinkel,Camera angle
+014,0x5D1F5F,Select,Select
+14,0x0058FD5F,Auswählen,Select
+14,0x005902AD,Auswählen,0x00518A58,Select
+14,0x005902AD,Auswählen,Select
+14,0x5892E1,Auswählen,Select
+14,0x5BA011,Auswählen,Select
+14,0x5D8C58,Auswählen,Select
+015,0x5D1F68,Cancel,Cancel
+15,0x0058FD8F,Abbrechen,Cancel
+15,0x005902E0,Abbrechen,0x00518A88,Cancel
+15,0x005902E0,Abbrechen,Cancel
+15,0x589305,Abbrechen,Cancel
+15,0x5BA01F,Abbrechen,Cancel
+15,0x5D8C88,Abbrechen,Cancel
+016,0x5D1F6F,Menu,Menu
+016,0x5DD2C0,Menu,Menu
+16,0x00518AB8,Menü,Menu
+16,0x0058FDBF,Menü,Menu
+16,0x00590316,Menü,0x00518AB8,Menu
+16,0x00590316,Menü,Menu
+16,0x589321,Menü,Menu
+16,0x5BA031,Menü,Menu
+16,0x5D8CB8,Menü,Menu
+017,0x5D2026,Normal,Normal
+17,0x589341,Normal,Normal
+17,0x5904BC,Normal,Normal
+17,0x5D8D08,Normal,Normal
+018,0x5D2029,Customize,Customize
+18,0x589365,Anpassen,Customize
+18,0x5D8D38,Anpassen,Customize
+019,0x5D2036,Initial,Initial
+19,0x589385,Anfang,Initial
+19,0x5D8D68,Ausgangswert,Initial
+020,0x5D203D,Memory,Memory
+20,0x5893A5,Speicher,Memory
+20,0x5D8D98,Speicher,Memory
+021,0x5D2040,Active,Active
+21,0x5893C5,Aktiv,Active
+21,0x5D8DC8,Aktiv,Active
+022,0x5D2047,Recommended,Recommended
+22,0x5893E5,Empfohlen,Recommended
+22,0x5D8DF8,Empfohlen,Recommended
+023,0x5D204A,Wait,Wait
+23,0x5893F4,Warten,Wait
+23,0x5D8E28,Warten,Wait
+024,0x5D2053,Auto,Auto
+24,0x00590607,Auto,0x00518D58,Auto
+24,0x00590607,Auto,Auto
+24,0x589405,Auto,Auto
+24,0x590636,Auto,Auto
+24,0x5D8E58,Automatisch,Auto
+025,0x5D2058,Fixed,Fixed
+25,0x0059063B,Fest,0x00518D88,Fixed
+25,0x0059063B,Fest,Fixed
+25,0x589414,Fest,Fixed
+25,0x5D8E88,Fixiert,Fixed
+026,0x5D205B,Slow,Slow
+26,0x589425,Langsam,Slow
+26,0x5D8EE8,Langsam,Slow
+027,0x5D2063,Fast,Fast
+27,0x589434,Schnell,Fast
+27,0x5D8F18,Schnell,Fast
+028,0x5D206D,Magic order,Magic order
+28,0x589441,Zauberfolge,Magic order
+029,0x5D2070,restore,restore
+29,0x005907F2,Heilung,0x00518F08,restore
+29,0x005907F2,Heilung,restore
+29,0x589465,Wiederherstellen,restore
+030,0x5D2078,attack,attack
+30,0x00590824,Angriff,0x00518F38,attack
+30,0x00590824,Angriff,attack
+30,0x589485,Angriff,attack
+031,0x5D2082,indirect,indirect
+31,0x0059085A,Indirekt,0x00518F68,indirect
+31,0x0059085A,Indirekt,indirect
+31,0x5894A5,Indirekt,indirect
+032,0x5D2088,No.,No.
+038,0x5D1FBE,Item,Item
+038,0x5DD176,Item,Item
+038,0x5DE5F1,Gegenstand,Item
+38,0x00590B00,Objekt,Item
+38,0x00590C68,Objekt,0x005192C0,Item
+38,0x00590C68,Objekt,Item
+38,0x5192C0,Item,Item
+38,0x5892A5,Gegenstand,Item
+38,0x590C68,Objekt,Item
+38,0x599980,Objekt,Item
+38,0x5CDC61,Gegenstand,Item
+38,0x5D9070,Objekt,Item
+039,0x5D1FC4,Magic,Magic
+039,0x5DD17D,Magic,Magic
+039,0x5DE612,Zauber,Magic
+39,0x00590B14,Zauber,Magic
+39,0x00590C6F,Zauber,0x005192D4,Magic
+39,0x00590C6F,Zauber,Magic
+39,0x5192D4,Magie,Magic
+39,0x5892C5,Magie,Magic
+39,0x590C6F,Zauber,Magic
+39,0x590C72,Zauber,Magic
+39,0x5CDC69,Magie,Magic
+39,0x5D9084,Zauber,Magic
+040,0x5D1FCC,Materia,Materia
+040,0x5DE620,Materia,Materia
+40,0x00590B28,Materia,Materia
+40,0x00590C83,Materia,0x005192E8,Materia
+40,0x00590C83,Materia,Materia
+40,0x5192E8,Materia,Materia
+40,0x5892E1,Material,Materia
+40,0x590C7A,Materia,Materia
+40,0x590C83,Materia,Materia
+40,0x590C90,Materia,Materia
+40,0x599263,Magic Materia,Materia
+40,0x5998A1,Materia,Materia
+40,0x5CDC6D,Materia,Materia
+40,0x5D9098,Materia,Materia
+041,0x5D1FD5,Equip,Equip
+041,0x5DD18C,Equipment,Equip
+041,0x5DE638,Ausrüsten,Equip
+41,0x00590B3C,Ausrüsten,Equip
+41,0x00590C90,Ausrüsten,Equip
+41,0x00590C98,Ausrüsten,0x005192FC,Equip
+41,0x00590C98,Ausrüsten,Equip
+41,0x5192FC,Ausrüstung,Equip
+41,0x589305,Rüstung,Equip
+41,0x590C84,Ausrüsten,Equip
+41,0x590C98,Ausrüsten,Equip
+41,0x59991F,Ausstattung,Equip
+41,0x5CDC71,Ausrüstung,Equip
+41,0x5D90AC,Ausrüsten,Equip
+042,0x5D1FDD,Status,Status
+042,0x5DD1CB,Status,Status
+042,0x5DE657,Status,Status
+42,0x00519324,Status,Status
+42,0x00590CA1,Status,Status
+42,0x589321,Status,Status
+42,0x590C8E,Werte,Status
+42,0x590CAE,Werte,Status
+42,0x5CDC75,Status,Status
+42,0x5D90C0,Befehl,Order
+043,0x5D1FE0,Order,Order
+043,0x5DE665,Reihenfolge,Order
+43,0x00519338,Reihenfolge,Order
+43,0x00590CB0,Anordnung,Order
+43,0x589341,Reihenfolge,Order
+43,0x590C96,Reihe,Order
+43,0x590CBE,Reihe,Order
+43,0x59941F,Ordnen,Order
+43,0x5CDC7A,Reihenfolge,Order
+43,0x5D90D4,Grenze,Limit
+044,0x5D1FE5,Limit,Limit
+044,0x5DE669,Limit,Limit
+44,0x0051934C,Limit,Limit
+44,0x00590CBF,Limit,Limit
+44,0x00590CD2,Limit,0x00519338,Limit
+44,0x00590CD2,Limit,Limit
+44,0x589365,Limit,Limit
+44,0x590CA0,Limit,Limit
+44,0x590CD2,Limit,Limit
+44,0x590CE0,Limit,Limit
+44,0x5CDC7E,Limit,Limit
+44,0x5D90E8,Einstellung,Config
+045,0x5D1FF3,Config,Config
+045,0x5DD32B,Config,Config
+045,0x5DE691,Konfig,Config
+45,0x00519360,Konfiguration,Config
+45,0x00590B8C,Konfig,Config
+45,0x00590CCB,Konfig,Config
+45,0x00590CE6,Konfig,0x0051934C,Config
+45,0x00590CE6,Konfig,Config
+45,0x589385,Einstellung,Config
+45,0x590CAA,Konfig,Config
+45,0x590CE6,Konfig,Config
+45,0x5CDC86,Konfiguration,Config
+45,0x5D90FC,PHS,PHS
+046,0x5D1FFD,PHS,PHS
+046,0x5DE6A1,PHS,PHS
+46,0x00519374,Speichern,Save
+46,0x00590CDB,PHS,PHS
+46,0x00590CFB,PHS,0x00519360,PHS
+46,0x00590CFB,PHS,PHS
+46,0x5893A5,PHS,PHS
+46,0x590CB4,PHS,PHS
+46,0x590CFB,PHS,PHS
+46,0x590D08,PHS,PHS
+46,0x5CDC8E,PHS,PHS
+46,0x5D9110,Speichern,Save
+047,0x5D2004,Save,Save
+047,0x5DD37D,Save,Save
+047,0x5DE6B1,Speichern,Save
+47,0x00519388,Beenden,Quit
+47,0x00590BB4,Speichern,Save
+47,0x00590CED,Speichern,Save
+47,0x00590D0C,Speichern,0x00519374,Save
+47,0x00590D0C,Speichern,Save
+47,0x5893C5,Speichern,Save
+47,0x590CBE,Speichern,Save
+47,0x590D0C,Speichern,Save
+47,0x5CDC92,Speichern,Save
+47,0x5D9124,Beenden,Quit
+048,0x5D201A,Quit,Quit
+048,0x5DD386,Quit,Quit
+048,0x5DE6C6,Verlassen,Quit
+48,0x00590BC8,Verlassen,Quit
+48,0x00590D02,Verlassen,Quit
+48,0x00590D26,Verlassen,0x00519388,Quit
+48,0x00590D26,Verlassen,Quit
+48,0x5893E5,Beenden,Quit
+48,0x590CC8,Verlassen,Quit
+48,0x590D26,Verlassen,Quit
+48,0x599868,Beenden,Quit
+48,0x5CDC9B,Beenden,Quit
+49,0x00590D3A,Anfänger,0x0051939C,Beginner
+49,0x00590D3A,Anfänger,Beginner
+50,0x00590D77,Zeit,0x005193D8,Time
+50,0x00590D77,Zeit,Time
+51,0x00590D85,Gil,0x005193EC,Gil
+51,0x00590D85,Gil,Gil
+51,0x5998F1,Gil,Gil
+58,0x00591058,Mit [ABBRECHEN] beenden.,0x005196B0,Press [CANCEL] to end.
+58,0x00591058,Mit [ABBRECHEN] beenden.,Press [CANCEL] to end.
+59,0x005910A4,[O.K.] um die Tastenbelegung zu konfigurieren.,0x005196E2,Press [OK] to configure a key.
+59,0x005910A4,[O.K.] um die Tastenbelegung zu konfigurieren.,Press [OK] to configure a key.
+60,0x005910F1,Bitte neue Taste drücken,0x00519714,Now press the new key.
+60,0x005910F1,Bitte neue Taste drücken,Now press the new key.
+61,0x00591126,[O.K.],0x00519746,[OK]
+61,0x00591126,[O.K.],[OK]
+61,0x5DA476,[OK],[OK]
+62,0x00591159,[ABBRECHEN],0x00519778,[CANCEL]
+62,0x00591159,[ABBRECHEN],[CANCEL]
+62,0x5DA4A8,[ABBRECHEN],[CANCEL]
+63,0x00591190,[MENÜ],0x005197AA,[MENU]
+63,0x00591190,[MENÜ],[MENU]
+63,0x5DA4DA,[MENÜ],[MENU]
+64,0x005911D2,[UMSCHALTEN],0x005197DC,[SWITCH]
+64,0x005911D2,[UMSCHALTEN],[SWITCH]
+64,0x5DA50C,[WECHSEL],[SWITCH]
+65,0x00591238,[BILD HOCH],0x0051980E,[PAGEUP]
+65,0x00591238,[BILD HOCH],[PAGEUP]
+65,0x5DA53E,[SEITEAUF],[PAGEUP]
+66,0x00591274,[BILD HERUNTER],0x00519840,[PAGEDOWN]
+66,0x00591274,[BILD HERUNTER],[PAGEDOWN]
+66,0x5DA570,[SEITEAB],[PAGEDOWN]
+67,0x005912B0,[KAMERA],0x00519872,[CAMERA]
+67,0x005912B0,[KAMERA],[CAMERA]
+67,0x5DA5A2,[KAMERA],[CAMERA]
+68,0x005912EC,[ZIEL],0x005198A4,[TARGET]
+68,0x005912EC,[ZIEL],[TARGET]
+68,0x5DA5D4,[ZIEL],[TARGET]
+69,0x00591328,[HILFE],0x005198D6,[ASSIST]
+69,0x00591328,[HILFE],[ASSIST]
+69,0x5DA606,[HILFE],[ASSIST]
+70,0x00591364,[START],0x00519908,[START]
+70,0x00591364,[START],[START]
+70,0x5DA638,[START],[START]
+71,0x005913A0,[HERAUF],0x0051993A,[UP]
+71,0x005913A0,[HERAUF],[UP]
+71,0x5DA66A,[AUF],[UP]
+72,0x005913DC,[UNTEN],0x0051996C,[DOWN]
+72,0x005913DC,[UNTEN],[DOWN]
+72,0x5DA69C,[AB],[DOWN]
+73,0x00591418,[LINKS],0x0051999E,[LEFT]
+73,0x00591418,[LINKS],[LEFT]
+73,0x5DA6CE,[LINKS],[LEFT]
+74,0x00591454,[RECHT],0x005199D0,[RIGHT]
+74,0x00591454,[RECHT],[RIGHT]
+74,0x5DA700,[RECHTS],[RIGHT]
+75,0x00591490,TASTATUR,0x00519A02,KEYBOARD
+75,0x00591490,TASTATUR,KEYBOARD
+75,0x5DA732,TASTATUR,KEYBOARD
+76,0x005914CC,JOYSTICK,0x00519A34,JOYSTICK
+76,0x005914CC,JOYSTICK,JOYSTICK
+76,0x5DA764,JOYSTICK,JOYSTICK
