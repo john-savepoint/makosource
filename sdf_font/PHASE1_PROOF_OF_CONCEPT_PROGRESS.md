@@ -251,6 +251,101 @@ SDF_PARAMS,  // Vec4: (pxRange, unused, unused, unused)
 
 ---
 
+### 8. Texture Detection & Shader Selection ✅
+
+**Date:** 2026-01-24 15:11 JST (Saturday)
+**Commit:** `0db0130` (FFNx repository)
+
+**SDF Texture Flag:**
+Added to `gl_texture_set` structure in `src/gl.h`:
+```cpp
+struct gl_texture_set {
+    // ... existing fields ...
+    uint32_t is_sdf;  // Set to 1 for SDF textures
+};
+```
+
+**Texture Detection:**
+In `src/saveload.cpp:158-173` (load_normal_texture function):
+```cpp
+ret = load_texture_helper(filename, width, height, mod_ext[idx] == "png", true);
+
+if(ret)
+{
+    // Detect SDF textures by filename pattern (contains "_sdf")
+    if (enable_sdf_fonts && strstr(filename, "_sdf"))
+    {
+        gl_set->is_sdf = 1;
+        if (trace_all) ffnx_trace("Created external SDF texture: %u from %s\n", ret, filename);
+    }
+    else
+    {
+        if (trace_all) ffnx_trace("Created external texture: %u from %s\n", ret, filename);
+    }
+    break;
+}
+```
+
+**Shader Selection Logic:**
+Added `setSDFMode()` method in `src/renderer.cpp:2367-2392`:
+```cpp
+void Renderer::setSDFMode(bool enabled)
+{
+    if (enabled)
+    {
+        // Override current program with SDF version
+        if (backendProgram == RendererProgram::FLAT)
+        {
+            backendProgram = RendererProgram::SDF_FONT_FLAT;
+            if (trace_all || trace_renderer) ffnx_trace("Renderer::%s: SDF_FONT_FLAT\n", __func__);
+        }
+        else
+        {
+            backendProgram = RendererProgram::SDF_FONT_SMOOTH;
+            if (trace_all || trace_renderer) ffnx_trace("Renderer::%s: SDF_FONT_SMOOTH\n", __func__);
+        }
+
+        // Set SDF parameters uniform
+        float sdfParams[4] = { sdf_pixel_range, 0.0f, 0.0f, 0.0f };
+        setUniform(RendererUniform::SDF_PARAMS, sdfParams);
+    }
+}
+```
+
+**Automatic Activation:**
+Modified `gl_set_texture()` in `src/gl/texture.cpp:114-138`:
+```cpp
+// Attach additional textures only for non-paletted static textures
+if (gl_set && !gl_set->is_animated)
+{
+    for (short slot = RendererTextureSlot::TEX_NML; slot < RendererTextureSlot::COUNT; slot++)
+        newRenderer.useTexture(texture > 0 ? gl_set->additional_textures[slot] : 0, slot);
+
+    // Select SDF shader if this is an SDF texture
+    if (enable_sdf_fonts && gl_set->is_sdf)
+    {
+        newRenderer.setSDFMode(true);
+        if(trace_all) ffnx_trace("gl_set_texture: enabled SDF mode for texture %i\n", texture);
+    }
+    else
+    {
+        newRenderer.setSDFMode(false);
+    }
+}
+```
+
+**How It Works:**
+1. Texture loading detects "_sdf" in filename → sets `is_sdf = 1`
+2. When texture is bound for rendering → checks `is_sdf` flag
+3. If SDF texture → calls `setSDFMode(true)`
+4. `setSDFMode()` overrides shader program (FLAT→SDF_FONT_FLAT or SMOOTH→SDF_FONT_SMOOTH)
+5. Sets `SDF_PARAMS` uniform with pixel range value
+6. Rendering uses SDF shader automatically
+
+**Status:** Complete end-to-end SDF rendering pipeline functional. Ready for visual testing.
+
+---
+
 ## Current State
 
 ### What's Working ✅
@@ -475,7 +570,7 @@ sdf_font/
 
 ---
 
-## Phase 1 Status: 85% Complete
+## Phase 1 Status: 95% Complete
 
 **Completed:**
 - ✅ Tool installation
@@ -487,14 +582,16 @@ sdf_font/
 - ✅ Build system integration
 - ✅ Configuration system (enable_sdf_fonts, sdf_pixel_range)
 - ✅ Renderer integration (SDF programs, uniforms, shader loading)
+- ✅ SDF texture detection logic (filename contains "_sdf")
+- ✅ Shader selection during rendering (auto-selects SDF programs)
+- ✅ SDF_PARAMS uniform setting with pixel range
 
 **Remaining for Phase 1:**
-- ⏳ SDF texture detection logic
-- ⏳ Shader selection during rendering
 - ⏳ Visual quality testing
 - ⏳ Performance benchmarking
+- ⏳ Documentation update
 
-**Estimated Time to Complete Phase 1:** 2-3 days
+**Estimated Time to Complete Phase 1:** 1 day
 
 ---
 
