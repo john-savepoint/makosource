@@ -102,6 +102,85 @@ gl_FragColor = vec4(v_color0.rgb, v_color0.a * opacity);
 
 ---
 
+### 5. SDF Vertex Shader ✅
+
+**File:** `/mnt/c/FFNx/misc/FFNx.sdf.vert`
+
+**Implementation:**
+```glsl
+$input a_position, a_color0, a_texcoord0
+$output v_color0, v_texcoord0
+
+#include <bgfx/bgfx_shader.sh>
+
+void main() {
+    gl_Position = mul(u_modelViewProj, a_position);
+    v_color0 = a_color0;
+    v_texcoord0 = a_texcoord0;
+}
+```
+
+**Features:**
+- Standard vertex transformation using bgfx model-view-projection matrix
+- Passes through vertex color and texture coordinates
+- Minimal overhead (3 instructions)
+
+---
+
+### 6. Shader Compilation ✅
+
+**Date:** 2026-01-24 12:29 JST (Saturday)
+
+**Process:**
+1. Located bgfx shaderc compiler: `.build/vcpkg_installed/x86-windows-static/tools/bgfx/shadercRelease.exe`
+2. Used existing varying definitions: `FFNx.varying.smooth.def.sc` and `FFNx.varying.flat.def.sc`
+3. Compiled for 4 platforms × 2 shader types × 2 varyings = 16 binaries
+
+**Platforms:**
+- **OpenGL** (GLSL 120): Smallest binaries (307-500 bytes)
+- **Direct3D 11/12** (HLSL 5.0): Medium binaries (762-886 bytes)
+- **Vulkan** (SPIR-V): Largest binaries (1.2-1.6KB)
+
+**Build System Integration:**
+- Updated `CMakeLists.txt` line 196: Added `"FFNx.sdf"` to `FFNX_SHADERS` list
+- Shaders now auto-compile during FFNx build process
+- Output directory: `.build/bin/shaders/`
+
+**Compilation Issues Encountered:**
+1. **Initial vertex shader error** (FIXED):
+   - Error: `too many parameters to 'vec4' constructor`
+   - Cause: `a_position` already vec4, was wrapping in another vec4
+   - Fix: Changed `vec4(a_position, 1.0)` → `a_position`
+
+**Verification:**
+```bash
+$ ls -lh .build/bin/shaders/FFNx.sdf.*
+FFNx.sdf.flat.d3d11.frag    886 bytes
+FFNx.sdf.flat.d3d11.vert    762 bytes
+FFNx.sdf.flat.d3d12.frag    886 bytes
+FFNx.sdf.flat.d3d12.vert    762 bytes
+FFNx.sdf.flat.gl.frag       498 bytes
+FFNx.sdf.flat.gl.vert       307 bytes
+FFNx.sdf.flat.vk.frag      1.6K
+FFNx.sdf.flat.vk.vert      1.2K
+FFNx.sdf.smooth.d3d11.frag  886 bytes
+FFNx.sdf.smooth.d3d11.vert  762 bytes
+FFNx.sdf.smooth.d3d12.frag  886 bytes
+FFNx.sdf.smooth.d3d12.vert  762 bytes
+FFNx.sdf.smooth.gl.frag     500 bytes
+FFNx.sdf.smooth.gl.vert     309 bytes
+FFNx.sdf.smooth.vk.frag    1.6K
+FFNx.sdf.smooth.vk.vert    1.2K
+Total: ~15KB (all 16 binaries)
+```
+
+**Git Commit:**
+- Repository: `/mnt/c/FFNx` (feature/sdf-font-shader branch)
+- Commit: `769a551`
+- Message: "feat(shaders): add SDF vertex shader and integrate into build system"
+
+---
+
 ## Current State
 
 ### What's Working ✅
@@ -172,11 +251,21 @@ gl_FragColor = vec4(v_color0.rgb, v_color0.a * opacity);
 
 ## Next Steps (Week 2 of Phase 1)
 
-### Priority 1: Shader Compilation
-```bash
-# Compile SDF shader with bgfx shaderc
-cd /mnt/c/FFNx
-shaderc -f misc/FFNx.sdf.frag -o bin/shaders/dx11/FFNx_sdf_frag.bin --type f --platform windows -i misc --varyingdef misc/varying.def.sc
+### Priority 1: Shader Compilation ✅ COMPLETED
+**Date:** 2026-01-24 12:29 JST (Saturday)
+**Status:** All shaders compiled successfully
+
+**Completed Work:**
+- ✅ Created FFNx.sdf.vert (vertex shader)
+- ✅ Compiled for all platforms: OpenGL, Direct3D 11/12, Vulkan
+- ✅ Both varying definitions: smooth and flat
+- ✅ Integrated into CMakeLists.txt build system
+- ✅ Generated 16 shader binaries (2 shaders × 2 varyings × 4 platforms)
+
+**Shader Binaries Generated:**
+```
+FFNx.sdf.{smooth,flat}.{gl,d3d11,d3d12,vk}.{frag,vert}
+Total size: ~15KB (all binaries combined)
 ```
 
 ### Priority 2: FFNx Integration
@@ -316,21 +405,23 @@ sdf_font/
 
 ---
 
-## Phase 1 Status: 60% Complete
+## Phase 1 Status: 75% Complete
 
 **Completed:**
 - ✅ Tool installation
 - ✅ SDF generation pipeline
 - ✅ Fragment shader code
+- ✅ Vertex shader code
 - ✅ Test assets created
+- ✅ Shader compilation (all platforms)
+- ✅ Build system integration
 
 **Remaining for Phase 1:**
-- ⏳ Shader compilation
-- ⏳ FFNx code integration
+- ⏳ FFNx code integration (renderer, texture loader, config)
 - ⏳ Visual quality testing
 - ⏳ Performance benchmarking
 
-**Estimated Time to Complete Phase 1:** 1 week
+**Estimated Time to Complete Phase 1:** 4-5 days
 
 ---
 
