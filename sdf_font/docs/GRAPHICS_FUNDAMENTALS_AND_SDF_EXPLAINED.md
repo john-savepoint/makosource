@@ -33,18 +33,27 @@ When you see anything on your screen in a 3D game, your computer goes through se
 
 ### The Graphics Pipeline Flow
 
-```mermaid
-graph LR
-    A[3D Model Data] --> B[Vertex Shader]
-    B --> C[Rasterizer]
-    C --> D[Fragment Shader]
-    D --> E[Screen Pixels]
+![Graphics Pipeline](https://mermaid.ink/img/pako:eNqNkE1rAjEQhu_5FYPeFgO7flVzKFRX24IF6delFJzuzmgwbiSJaPvri1mRehB6GQh5nyeTV0opCluxXioBYPDb7oICMmsBwMbuixW6cLwCWIWNmeEXGa-A0XgSUkpxDsHsOcYKg97nxKCr7S4Aa2NUkzLuMbd8cHZNqtnOhn3unI5yr8uwUu3toVVYY51qpmX3BrNLm19hSe6kY-YuZWcd83CQpld11O9laXqp2zpbkPdn33HBs4-GGfWvrzcYpNTlS5_dhYvf8p_1ugVy7_p6bbopO20RfXcfjUWSdHJ4siUZyDFgkoh3ckEX5FswPiK-Ba90CDtHftH4VErFpiM_ivwxTwd4iZUlibifv8Hc2aXDTQ3UZUZiHIln9IGc_onxB3TlHh3BVBtTA6e6IpFHYupwuaEq_O-VSWReCkdUwVwfyPgkEVNdoYHHDS6pJuoWT1WAlLcwinMcZx7nRPwCsrXXUg)
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#fff4e1
-    style E fill:#e1ffe1
+```mermaid
+flowchart LR
+    classDef input fill:#e1f5ff,stroke:#2196f3,stroke-width:2px,color:#0d47a1
+    classDef shader fill:#fff4e1,stroke:#ff9800,stroke-width:2px,color:#e65100
+    classDef process fill:#ffe1f5,stroke:#e91e63,stroke-width:2px,color:#880e4f
+    classDef output fill:#e1ffe1,stroke:#4caf50,stroke-width:2px,color:#2e7d32
+
+    A["`**3D Model Data**
+Vertices, Colors, Textures`"]:::input
+    B["`**Vertex Shader**
+GPU Program`"]:::shader
+    C["`**Rasterizer**
+Hardware Fill`"]:::process
+    D["`**Fragment Shader**
+GPU Program`"]:::shader
+    E["`**Screen Pixels**
+Final Image`"]:::output
+
+    A --> B --> C --> D --> E
 ```
 
 **Step-by-step breakdown:**
@@ -355,20 +364,28 @@ Row 5: 064 096 112 120 120 112 096 064
 
 #### Benefit 1: Resolution Independence
 
-```mermaid
-graph TD
-    subgraph "SDF at Any Scale"
-    S[64×64 SDF Texture] --> S1[Render at 16×16<br/>Sharp edges]
-    S --> S2[Render at 64×64<br/>Sharp edges]
-    S --> S3[Render at 256×256<br/>Sharp edges]
-    S --> S4[Render at 1024×1024<br/>Sharp edges]
-    end
+![SDF Resolution Independence](https://mermaid.ink/img/pako:eNqNj7FqwzAQhnc9xRFvJoJIlh2qoZPJ1KnOVgpRpVNsotrBUoj7HB289G38Jn2SkjikbqEly8HP3ffdHaWU6Ka21VYSAKfemkOQgG5HAKxrjrpUbTi1AMrw6h7UCzovwSrnkVBKyXUI1vl5TDvlfY4WvLFr7MBWzskImU2tnfvQNjuUEWd3mU0ukR4rE0rJ991cN65pZbQwYqnYL51WDr9tFtnVJrSy6eJPG8elSTg564qn2SaOMzH0mYAiX8Eau3BoMY5JXvmgao2wqtAZyFVQm9mzlHJ8ZMTZmX_E2mALLBt6lsUxKUrV7gHNFj18frxfsNPBI8Wn1Lj8BiqZUjzNhp6nt2wTP25ccDH0p_o_OaJA6T0UbBr4NCTTIMgXhXGtlQ)
 
-    style S fill:#e1f5ff
-    style S1 fill:#e1ffe1
-    style S2 fill:#e1ffe1
-    style S3 fill:#e1ffe1
-    style S4 fill:#e1ffe1
+```mermaid
+flowchart TD
+    classDef sdfTex fill:#e1f5ff,stroke:#2196f3,stroke-width:2px,color:#0d47a1
+    classDef scale fill:#e1ffe1,stroke:#4caf50,stroke-width:2px,color:#2e7d32
+
+    S["`**64×64 SDF Texture**
+Distance Field Data`"]:::sdfTex
+    S1["`**Render 16×16**
+Sharp edges ✓`"]:::scale
+    S2["`**Render 64×64**
+Sharp edges ✓`"]:::scale
+    S3["`**Render 256×256**
+Sharp edges ✓`"]:::scale
+    S4["`**Render 1024×1024**
+Sharp edges ✓`"]:::scale
+
+    S --> S1
+    S --> S2
+    S --> S3
+    S --> S4
 ```
 
 **How it works:**
@@ -440,36 +457,60 @@ All of these effects are **calculated in real-time** by changing a few lines of 
 
 ### Complete Pipeline Diagram
 
+![Complete SDF Implementation Pipeline](https://mermaid.ink/img/pako:eNqFVE1zmzAQvfMrdpKbJjjmw07CoTPGHueStqmd5NLJODKsgEaWGEk09i_pD-of64CITRLccAC0eu-t9i2s67pOIgUrssgB4HQnKxMB8mcHgHH5kuRUmXoLIDcbfkPXyHUEjHKNjuu6zh4Ed7MGlnCq9QwZlDnV6AErOI9OGUMPvTNtlHzG6JSFYRCM26X7UqQmj_xye5ZILlV0moz9S_-yR87fy7GwK8euLofDo3I4HnnDYY9c0Mqhx0aM7eV872rMgqNywzS8oJ7T6OlqnSla5nDbVPvz5ImQ5hW8CCZao4GpQmoKKQh5OnlsSPU1sdjvqsgKQTnMpTCEOL8ok8KsvEEpMmcc_v0zDmFdmA0tn04eoyiyph5U_Ual3JlcCihFtjJypVM2KHdNuh5G0DAMarOq-2bRIiPkNd1yNofFdfyBjSLtq9nv1OxHsMxpigqmclMWvKfu2NY9n3_bDurUTNE691zRbIPCtPxOcv9ADd5Sf6OqLXtAZXD7X6I94zpjW9ANLCHEsUc8RgkbSotJIS4EVQVqQpzrm_NZMPO85u6fP1T8mYoPIkfcCjpuBREsKmGKDcICRYqqqNvQNWt6MAtuJE3r9HV77nBrKoWdpMGBY4ttIXBfcklTQhwj4fr2Hh4Wk6_9PHu0N24S4txKXdRd1PCjomk_03r1roW1w5QnFacGNcwKbahIUPcrjBqFZaIQBXyvTFnVnV3mVJVNsR9Ye3snHrjuF5j49mF3YxuMbSvi4M3KIuPQsQ43q6kNTi1yGtrHqE0RgDuYI6YaCmHkoN6yv0Qcgju415jCeteEg_5w2H4KZsexnRSHQTZio8_m4nt2ZwxeseFnY_A9-3XqsSG7-HzqOf8AmvHIPA)
+
 ```mermaid
-graph TD
-    subgraph "Phase 1: Asset Creation"
-    A1[Original Font<br/>jafont_1.png<br/>64×64 bitmap] --> A2[python png_to_sdf.py]
-    A2 --> A3[test_char_sdf.png<br/>64×64 SDF RGB]
+flowchart TD
+    classDef phase1 fill:#ffe1e1,stroke:#f44336,stroke-width:2px,color:#c62828
+    classDef phase2 fill:#fff4e1,stroke:#ff9800,stroke-width:2px,color:#e65100
+    classDef phase3 fill:#e1f5ff,stroke:#2196f3,stroke-width:2px,color:#0d47a1
+
+    subgraph Phase1["`**Phase 1: Asset Creation**`"]
+        A1["`**Original Font**
+jafont_1.png
+64×64 bitmap`"]:::phase1
+        A2["`**python png_to_sdf.py**`"]:::phase1
+        A3["`**test_char_sdf.png**
+64×64 SDF RGB`"]:::phase1
     end
 
-    subgraph "Phase 2: Shader Compilation"
-    B1[FFNx.sdf.frag<br/>Fragment Shader] --> B2[bgfx shaderc<br/>Compiler]
-    B3[FFNx.sdf.vert<br/>Vertex Shader] --> B2
-    B2 --> B4[Compiled Binaries<br/>GL/D3D11/D3D12/Vulkan]
+    subgraph Phase2["`**Phase 2: Shader Compilation**`"]
+        B1["`**FFNx.sdf.frag**
+Fragment Shader`"]:::phase2
+        B3["`**FFNx.sdf.vert**
+Vertex Shader`"]:::phase2
+        B2["`**bgfx shaderc**
+Compiler`"]:::phase2
+        B4["`**Compiled Binaries**
+GL/D3D11/D3D12/Vulkan`"]:::phase2
     end
 
-    subgraph "Phase 3: Runtime Rendering"
-    C1[FFNx Loads<br/>SDF Texture] --> C2[Texture Upload<br/>to GPU VRAM]
-    C2 --> C3[Vertex Shader<br/>Positions Quad]
-    C3 --> C4[Fragment Shader<br/>Calculates Distances]
-    C4 --> C5[Screen Output<br/>Sharp Text]
+    subgraph Phase3["`**Phase 3: Runtime Rendering**`"]
+        C1["`**FFNx Loads**
+SDF Texture`"]:::phase3
+        C2["`**Texture Upload**
+to GPU VRAM`"]:::phase3
+        C3["`**Vertex Shader**
+Positions Quad`"]:::phase3
+        C4["`**Fragment Shader**
+Calculates Distances`"]:::phase3
+        C5["`**Screen Output**
+Sharp Text`"]:::phase3
     end
+
+    A1 --> A2 --> A3
+    B1 --> B2
+    B3 --> B2
+    B2 --> B4
+    C1 --> C2 --> C3 --> C4 --> C5
 
     A3 -.Feeds into.-> C1
     B4 -.Used by.-> C3
     B4 -.Used by.-> C4
 
-    style A1 fill:#ffe1e1
-    style A3 fill:#e1f5ff
-    style B1 fill:#fff4e1
-    style B3 fill:#fff4e1
-    style B4 fill:#e1ffe1
-    style C5 fill:#e1ffe1
+    style Phase1 fill:#fff5f5,stroke:#f44336,stroke-width:2px
+    style Phase2 fill:#fff9f0,stroke:#ff9800,stroke-width:2px
+    style Phase3 fill:#f0f7ff,stroke:#2196f3,stroke-width:2px
 ```
 
 ### Step-by-Step Implementation
@@ -749,28 +790,53 @@ graph LR
 
 ### The Big Picture
 
+![Implementation Summary](https://mermaid.ink/img/pako:eNp1kk9vozAQxe_-FKNGe7FKN0AgCYeV2qTZy_5TUu1ltWoNjAOqYyPbNM23X2GTFKTNzU_M_Hgzb4IgIIWSvN5nBECwk2ptBiheCQAX6lhUTNvuE0BlD-Iby1GYDDgTBkkQBORSBE9rV1YIZswaOTRa5QIPwGshsgnnGGJ4a6xWr5hN-GwWx2kvg2Nd2iqLmvfbQgmls0mRRotoMeYZJVpbK9kDMeQJ5xdgFC5THl8FTsvZnIVjYKGRWSwvBvlsaJAvF9PpVR6mSTidjnkaTSvshz0-wM0KxpPruAjnZRyNcby1rcazuxgTnlxwyyKa59dxKQvzJSOOd__n5oXSXz4MSslmM4e8tgfWAFfSGpKLVusTHCuUYAomsHy5-ZtlWZ-fgzw4yK5PgFKyUvINtQWrYLfeAFf6wKzvO-fkf78KXeuq3_WTUoJS0sj9s1XPpuR3zekMM70v01M9rk_Jw6IRbFexErVxQ_14v-toHedDcc32_6HEnqIOTS26_JWmlNwLAY1gthvFkDCFvJZM19i5sUyMMY6zdpitS51SssXz5EEtS2xQligt2VVMN8AsMHny-_Uofy2e9OiXtHGJU0p-tlbUEgE5x8Ia3-DvwddH4_qvQh0_m4qV6ni9Jx73LJNP8Ht7_x0Me6vlftzgLweC4As8-ANw71U4FNFQxH3aTq37tIYiHoi1ez-GQxENRUz-AbhHZD4)
+
 ```mermaid
-graph TD
-    A[Problem:<br/>FF7 bitmap fonts<br/>blurry when scaled] --> B[Solution:<br/>Convert to SDF format]
+flowchart TD
+    classDef problem fill:#ffe1e1,stroke:#f44336,stroke-width:2px,color:#c62828
+    classDef solution fill:#e1f5ff,stroke:#2196f3,stroke-width:2px,color:#0d47a1
+    classDef created fill:#fff4e1,stroke:#ff9800,stroke-width:2px,color:#e65100
+    classDef result fill:#e1ffe1,stroke:#4caf50,stroke-width:2px,color:#2e7d32
+    classDef future fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px,color:#6a1b9a
 
-    B --> C1[Created Tool:<br/>png_to_sdf.py<br/>Converts bitmaps to SDF]
-    B --> C2[Created Shaders:<br/>FFNx.sdf.vert<br/>FFNx.sdf.frag]
-    B --> C3[Compiled for:<br/>All platforms<br/>16 binaries total]
+    A["`**Problem**
+FF7 bitmap fonts
+blurry when scaled`"]:::problem
+    B["`**Solution**
+Convert to SDF format`"]:::solution
 
-    C1 --> D[Result:<br/>Resolution-independent<br/>Sharp at any scale]
+    C1["`**Created Tool**
+png_to_sdf.py
+Converts bitmaps to SDF`"]:::created
+    C2["`**Created Shaders**
+FFNx.sdf.vert
+FFNx.sdf.frag`"]:::created
+    C3["`**Compiled for**
+All platforms
+16 binaries total`"]:::created
+
+    D["`**Result**
+Resolution-independent
+Sharp at any scale`"]:::result
+
+    E1["`**Future**
+Outline effects`"]:::future
+    E2["`**Future**
+Glow/shadow effects`"]:::future
+    E3["`**Future**
+95% VRAM savings`"]:::future
+
+    A --> B
+    B --> C1
+    B --> C2
+    B --> C3
+    C1 --> D
     C2 --> D
     C3 --> D
-
-    D --> E1[Future:<br/>Outline effects]
-    D --> E2[Future:<br/>Glow/shadow effects]
-    D --> E3[Future:<br/>95% VRAM savings]
-
-    style A fill:#ffe1e1
-    style B fill:#e1f5ff
-    style D fill:#e1ffe1
-    style E1 fill:#fff4e1
-    style E2 fill:#fff4e1
-    style E3 fill:#fff4e1
+    D --> E1
+    D --> E2
+    D --> E3
 ```
 
 ### In Simple Terms
