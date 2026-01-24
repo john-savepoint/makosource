@@ -17,17 +17,22 @@ def clean_font_texture(input_path, output_path):
     
     # Separate channels
     r, g, b, a = img_array[:,:,0], img_array[:,:,1], img_array[:,:,2], img_array[:,:,3]
-    
-    # Create clean version: white where there's any opacity, transparent elsewhere
-    # Use a threshold to determine what counts as "content"
-    content_mask = a > 128  # Pixels with >50% opacity are considered content
-    
-    # Create new image: pure white with original alpha
+
+    # Remove drop shadows: only keep bright pixels (the main glyph, not the shadow)
+    # Drop shadows are typically dark/gray, main glyphs are bright/white
+    brightness = (r.astype(float) + g.astype(float) + b.astype(float)) / 3.0
+
+    # Keep only pixels that are:
+    # 1. Bright (brightness > 200) - the main white glyph
+    # 2. AND have opacity > 128 - actually visible
+    is_main_glyph = (brightness > 200) & (a > 128)
+
+    # Create new image: pure white glyphs only, transparent elsewhere
     clean = np.zeros_like(img_array)
-    clean[:,:,0] = np.where(content_mask, 255, 0)  # R
-    clean[:,:,1] = np.where(content_mask, 255, 0)  # G
-    clean[:,:,2] = np.where(content_mask, 255, 0)  # B
-    clean[:,:,3] = np.where(content_mask, 255, 0)  # A - full opacity where there's content
+    clean[:,:,0] = np.where(is_main_glyph, 255, 0)  # R
+    clean[:,:,1] = np.where(is_main_glyph, 255, 0)  # G
+    clean[:,:,2] = np.where(is_main_glyph, 255, 0)  # B
+    clean[:,:,3] = np.where(is_main_glyph, 255, 0)  # A - full opacity for main glyph only
     
     # Save
     clean_img = Image.fromarray(clean.astype(np.uint8), mode='RGBA')
