@@ -181,6 +181,76 @@ Total: ~15KB (all 16 binaries)
 
 ---
 
+### 7. FFNx Renderer Integration ✅
+
+**Date:** 2026-01-24 14:45 JST (Saturday)
+**Commit:** `7565dd1` (FFNx repository)
+
+**Configuration System:**
+Added to `src/cfg.h` and `src/cfg.cpp`:
+```cpp
+extern bool enable_sdf_fonts;    // Toggle SDF rendering (default: false)
+extern float sdf_pixel_range;    // Distance field spread (default: 4.0)
+```
+
+**Renderer Programs:**
+Added to `RendererProgram` enum in `src/renderer.h`:
+```cpp
+enum RendererProgram {
+    FLAT = 0,
+    SMOOTH,
+    // ... existing programs ...
+    SDF_FONT_FLAT,      // SDF rendering with flat interpolation
+    SDF_FONT_SMOOTH,    // SDF rendering with smooth interpolation
+    COUNT
+};
+```
+
+**Shader Uniforms:**
+Added to `RendererUniform` enum:
+```cpp
+SDF_PARAMS,  // Vec4: (pxRange, unused, unused, unused)
+```
+
+**Shader Loading:**
+- Added shader paths: `vertexSdfPathFlat`, `fragmentSdfPathFlat`, `vertexSdfPathSmooth`, `fragmentSdfPathSmooth`
+- Auto-compiles for all platforms (GL, D3D11, D3D12, Vulkan)
+- Integrated into `updateRendererShaderPaths()` function
+- Programs created during renderer initialization
+
+**Integration Points:**
+1. **Config parsing** (`src/cfg.cpp:261-263`):
+   ```cpp
+   enable_sdf_fonts = config["enable_sdf_fonts"].value_or(false);
+   sdf_pixel_range = config["sdf_pixel_range"].value_or(4.0);
+   ```
+
+2. **Shader path setup** (`src/renderer.cpp:287-289`):
+   ```cpp
+   vertexSdfPathFlat += ".flat" + shaderSuffix + ".vert";
+   fragmentSdfPathFlat += ".flat" + shaderSuffix + ".frag";
+   vertexSdfPathSmooth += ".smooth" + shaderSuffix + ".vert";
+   fragmentSdfPathSmooth += ".smooth" + shaderSuffix + ".frag";
+   ```
+
+3. **Program creation** (`src/renderer.cpp:1012-1023`):
+   ```cpp
+   backendProgramHandles[RendererProgram::SDF_FONT_FLAT] = bgfx::createProgram(
+       getShader(vertexSdfPathFlat.c_str()),
+       getShader(fragmentSdfPathFlat.c_str()),
+       true
+   );
+   ```
+
+4. **Uniform creation** (`src/renderer.cpp:1085`):
+   ```cpp
+   bgfxUniformHandles[RendererUniform::SDF_PARAMS] = createUniform("SDFParams", bgfx::UniformType::Vec4);
+   ```
+
+**Status:** Core renderer integration complete. SDF shaders load automatically during FFNx initialization.
+
+---
+
 ## Current State
 
 ### What's Working ✅
@@ -405,7 +475,7 @@ sdf_font/
 
 ---
 
-## Phase 1 Status: 75% Complete
+## Phase 1 Status: 85% Complete
 
 **Completed:**
 - ✅ Tool installation
@@ -415,13 +485,16 @@ sdf_font/
 - ✅ Test assets created
 - ✅ Shader compilation (all platforms)
 - ✅ Build system integration
+- ✅ Configuration system (enable_sdf_fonts, sdf_pixel_range)
+- ✅ Renderer integration (SDF programs, uniforms, shader loading)
 
 **Remaining for Phase 1:**
-- ⏳ FFNx code integration (renderer, texture loader, config)
+- ⏳ SDF texture detection logic
+- ⏳ Shader selection during rendering
 - ⏳ Visual quality testing
 - ⏳ Performance benchmarking
 
-**Estimated Time to Complete Phase 1:** 4-5 days
+**Estimated Time to Complete Phase 1:** 2-3 days
 
 ---
 
