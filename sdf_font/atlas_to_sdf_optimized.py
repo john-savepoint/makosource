@@ -22,9 +22,11 @@ def bitmap_to_sdf_single(img_array, distance_range):
     
     # Combine
     sdf = dist_inside - dist_outside
-    
+
     # Normalize to [0, 1] with distance range
-    sdf_normalized = 0.5 + (sdf / (2.0 * distance_range))
+    # Use the full distance range for normalization to get proper gradient
+    # This allows values to reach 255 deep inside glyphs
+    sdf_normalized = 0.5 + (sdf / distance_range)
     sdf_normalized = np.clip(sdf_normalized, 0.0, 1.0)
     
     return sdf_normalized
