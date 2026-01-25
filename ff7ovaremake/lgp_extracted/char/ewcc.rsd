@@ -1,0 +1,10 @@
+@RSD940102
+# Output by SGI RSD fileset library libRsdObj.
+PLY=EWCD.PLY
+MAT=EWCD.MAT
+GRP=EWCD.GRP
+# Texture files
+NTEX=3
+TEX[0]=EWCE.TIM
+TEX[1]=EWCF.TIM
+TEX[2]=EWDA.TIM

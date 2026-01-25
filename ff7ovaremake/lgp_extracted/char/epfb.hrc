@@ -1,0 +1,148 @@
+:HEADER_BLOCK 2
+:SKELETON nibl_sk
+:BONES 29
+
+hara
+root
+7.864864
+1 EPFC
+
+mune
+hara
+11.017257
+1 EPFE
+
+kubi
+mune
+5.7083597
+2 EPGA EPGC
+
+lashi0f
+hara
+14.006548
+0 
+
+lashi1f
+lashi0f
+14.962262
+1 EPGE
+
+lashi2f
+lashi1f
+31.00856
+1 EPHA
+
+rashi0f
+hara
+14.006548
+0 
+
+rashi1f
+rashi0f
+14.962262
+1 EPHC
+
+rashi2f
+rashi1f
+31.00856
+1 EPHE
+
+lashi0b
+root
+11.778915
+0 
+
+lashi1b
+lashi0b
+23.670856
+1 EPIA
+
+lashi2b
+lashi1b
+33.205933
+1 EPIC
+
+lashi0m
+root
+8.135253
+0 
+
+lashi1m
+lashi0m
+18.979324
+1 EPIE
+
+lashi2m
+lashi1m
+31.776976
+1 EPJA
+
+lo0
+root
+12.40036
+1 EPJC
+
+lo1
+lo0
+17.291925
+1 EPJE
+
+lo3
+lo1
+33.06966
+1 EQAA
+
+lo4
+lo3
+33.495033
+1 EQAC
+
+rashi0b
+root
+11.778915
+0 
+
+rashi1b
+rashi0b
+23.670856
+1 EQAE
+
+rashi2b
+rashi1b
+33.205933
+1 EQBA
+
+rashi0m
+root
+8.135253
+0 
+
+rashi1m
+rashi0m
+18.979324
+1 EQBC
+
+rashi2m
+rashi1m
+31.776976
+1 EQBE
+
+ro0
+root
+12.40036
+0 
+
+ro1
+ro0
+17.291925
+1 EQCA
+
+ro3
+ro1
+33.06966
+1 EQCC
+
+ro4
+ro3
+33.495033
+1 EQCE

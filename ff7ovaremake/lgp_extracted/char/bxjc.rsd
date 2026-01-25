@@ -1,0 +1,8 @@
+@RSD940102
+# Output by SGI RSD fileset library libRsdObj.
+PLY=BXJD.PLY
+MAT=BXJD.MAT
+GRP=BXJD.GRP
+# Texture files
+NTEX=1
+TEX[0]=BXJE.TIM

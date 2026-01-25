@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON muki1_sk
+:BONES 21
+
+hip
+root
+2.8599215
+1 DNJF
+
+chest
+hip
+5.7836814
+1 DOAB
+
+head
+chest
+9.077351
+1 DOAD
+
+l_chest
+hip
+4.7899904
+0 
+
+l_collar
+l_chest
+4.123446
+0 
+
+l_uparm
+l_collar
+5.114334
+1 DOBC
+
+l_foarm
+l_uparm
+3.3142996
+1 DOBE
+
+l_hand
+l_foarm
+2.5375004
+1 DOCA
+
+r_chest
+hip
+4.7899904
+0 
+
+r_collar
+r_chest
+4.123446
+0 
+
+r_uparm
+r_collar
+5.114334
+1 DOCC
+
+r_foarm
+r_uparm
+3.3142996
+1 DOCE
+
+r_hand
+r_foarm
+2.5375004
+1 DODA
+
+l_hip
+root
+2.3976195
+0 
+
+l_femur
+l_hip
+5.4078875
+1 DODC
+
+l_tibia
+l_femur
+7.013056
+1 DODE
+
+l_foot
+l_tibia
+6.6927505
+1 DOEA
+
+r_hip
+root
+2.3976195
+0 
+
+r_femur
+r_hip
+5.4078875
+1 DOEC
+
+r_tibia
+r_femur
+7.013056
+1 DOEE
+
+r_foot
+r_tibia
+6.6927505
+1 DOFA

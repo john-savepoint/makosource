@@ -51,11 +51,16 @@ def bitmap_to_sdf(image_path, output_path, distance_range=4):
     # (True MSDF would compute different directions per channel)
     sdf_rgb = np.stack([sdf_normalized] * 3, axis=2)
 
+    # Add alpha channel (fully opaque where there's content)
+    # Use the distance field to determine alpha: inside = opaque, outside = transparent
+    alpha = (sdf_normalized > 0.5).astype(np.float32)
+    sdf_rgba = np.dstack([sdf_rgb, alpha])
+
     # Convert to 8-bit
-    sdf_uint8 = (sdf_rgb * 255).astype(np.uint8)
+    sdf_uint8 = (sdf_rgba * 255).astype(np.uint8)
 
     # Create output image
-    sdf_image = Image.fromarray(sdf_uint8, mode='RGB')
+    sdf_image = Image.fromarray(sdf_uint8, mode='RGBA')
 
     # Save
     sdf_image.save(output_path)
@@ -63,7 +68,7 @@ def bitmap_to_sdf(image_path, output_path, distance_range=4):
     print(f"✅ SDF generated: {output_path}")
     print(f"   Input size: {width}×{height}")
     print(f"   Distance range: {distance_range} pixels")
-    print(f"   Output format: RGB (3-channel SDF)")
+    print(f"   Output format: RGBA (3-channel SDF + alpha)")
 
     return sdf_image
 

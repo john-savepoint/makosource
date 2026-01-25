@@ -1,0 +1,118 @@
+:HEADER_BLOCK 2
+:SKELETON cloudup_sk
+:BONES 23
+
+hip
+root
+1.5617981
+1 CLGE
+
+chest
+hip
+6.537364
+1 CLHA
+
+head
+chest
+5.841418
+2 CLHC CLHE
+
+l_chest
+hip
+5.6482143
+0 
+
+l_collar
+l_chest
+2.3888946
+0 
+
+l_uparm
+l_collar
+5.320362
+1 CLIC
+
+l_foarm
+l_uparm
+4.69833
+1 CLIE
+
+l_hand
+l_foarm
+3.411476
+1 CLJA
+
+r_chest
+hip
+5.6482143
+0 
+
+r_collar
+r_chest
+2.3888946
+0 
+
+r_uparm
+r_collar
+5.320362
+1 CLJC
+
+r_foarm
+r_uparm
+4.69833
+1 CLJE
+
+r_hand
+r_foarm
+3.411476
+1 CMAA
+
+l_hip
+root
+1.4973702
+0 
+
+l_femur
+l_hip
+11.103575
+1 CMAC
+
+l_tibia
+l_femur
+10.121129
+1 CMAE
+
+l_foot
+l_tibia
+3.1046724
+1 CMBA
+
+l_toes
+l_foot
+4.8748355
+1 CMBC
+
+r_hip
+root
+1.4973702
+0 
+
+r_femur
+r_hip
+11.103575
+1 CMBE
+
+r_tibia
+r_femur
+10.121129
+1 CMCA
+
+r_foot
+r_tibia
+3.1046724
+1 CMCC
+
+r_toes
+r_foot
+4.8748355
+1 CMCE

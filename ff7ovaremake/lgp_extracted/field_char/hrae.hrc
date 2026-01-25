@@ -1,0 +1,33 @@
+:HEADER_BLOCK 2
+:SKELETON triflag_sk
+:BONES 6
+
+bone_1
+root
+12.875
+0 
+
+bone_2
+root
+4.764509
+1 HRAF
+
+bone_3
+bone_2
+4.6173754
+1 HRBB
+
+bone_4
+bone_3
+4.5504417
+1 HRBD
+
+bone_5
+bone_4
+4.5557566
+1 HRBF
+
+bone_6
+bone_5
+3.6535282
+1 HRCB

@@ -1,0 +1,88 @@
+:HEADER_BLOCK 2
+:SKELETON guid2_sk
+:BONES 17
+
+atama
+root
+7.595412
+1 BCDA
+
+non1
+atama
+15.252684
+0 
+
+hige
+non1
+8.038475
+1 BCDC
+
+kalada
+root
+13.226121
+1 BCDE
+
+non2
+kalada
+4.8004355
+0 
+
+l_momo
+non2
+4.4227476
+0 
+
+l_asi
+l_momo
+3.6235876
+1 BCEA
+
+non3
+kalada
+4.8004355
+0 
+
+r_momo
+non3
+4.4227476
+0 
+
+r_asi
+r_momo
+3.6235876
+1 BCEC
+
+l_kata
+root
+8.154848
+0 
+
+l_ude
+l_kata
+8.006317
+1 BCEE
+
+l_te
+l_ude
+4.014099
+1 BCFA
+
+r_kata
+root
+8.154848
+0 
+
+r_ude
+r_kata
+8.006317
+1 BCFC
+
+r_te
+r_ude
+2.3616211
+1 BCFE
+
+tue
+r_ude
+12.319189
+1 BCGA

@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON zacks_sk
+:BONES 21
+
+hip
+root
+1.7457236
+1 EJDD
+
+chest
+hip
+4.35991
+2 EJDF EJEB
+
+head
+chest
+6.8333898
+1 EJED
+
+l_chest
+hip
+4.1348233
+0 
+
+l_collar
+l_chest
+2.30646
+0 
+
+l_uparm
+l_collar
+2.38332
+1 EJFC
+
+l_foarm
+l_uparm
+4.606489
+1 EJFE
+
+l_hand
+l_foarm
+2.5993977
+1 EJGA
+
+r_chest
+hip
+4.1348233
+0 
+
+r_collar
+r_chest
+2.30646
+0 
+
+r_uparm
+r_collar
+2.38332
+1 EJGC
+
+r_foarm
+r_uparm
+4.606489
+1 EJGE
+
+r_hand
+r_foarm
+2.5993977
+1 EJHA
+
+l_hip
+root
+1.961564
+0 
+
+l_femur
+l_hip
+5.830908
+1 EJHC
+
+l_tibia
+l_femur
+6.549399
+1 EJHE
+
+l_foot
+l_tibia
+6.905876
+1 EJIA
+
+r_hip
+root
+1.961564
+0 
+
+r_femur
+r_hip
+5.830908
+1 EJIC
+
+r_tibia
+r_femur
+6.549399
+1 EJIE
+
+r_foot
+r_tibia
+6.905876
+1 EJJA

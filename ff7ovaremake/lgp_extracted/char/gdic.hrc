@@ -1,0 +1,48 @@
+:HEADER_BLOCK 2
+:SKELETON bat_st
+:BONES 9
+
+chest
+root
+3.0159097
+1 GDID
+
+non1
+root
+3.319724
+0 
+
+l_hane1
+non1
+5.3289623
+1 GDIF
+
+l_hane2
+l_hane1
+6.281354
+1 GDJB
+
+non2
+root
+3.319724
+0 
+
+r_hane1
+non2
+5.3289623
+1 GDJD
+
+r_hane2
+r_hane1
+6.281354
+1 GDJF
+
+o_1
+root
+1.3093148
+1 GEAB
+
+o_2
+o_1
+4.4871473
+1 GEAD

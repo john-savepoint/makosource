@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON godoo_sk
+:BONES 21
+
+hip
+root
+2.8599215
+1 HGJE
+
+chest
+hip
+5.7836814
+1 HHAA
+
+head
+chest
+9.077351
+1 HHAC
+
+l_chest
+hip
+4.7899904
+0 
+
+l_collar
+l_chest
+4.123446
+0 
+
+l_uparm
+l_collar
+5.114334
+1 HHAE
+
+l_foarm
+l_uparm
+3.3142996
+1 HHBA
+
+l_hand
+l_foarm
+2.5375004
+1 HHBC
+
+r_chest
+hip
+4.7899904
+0 
+
+r_collar
+r_chest
+4.123446
+0 
+
+r_uparm
+r_collar
+5.114334
+1 HHBE
+
+r_foarm
+r_uparm
+3.3142996
+1 HHCA
+
+r_hand
+r_foarm
+2.5375004
+1 HHCC
+
+l_hip
+root
+2.3976195
+0 
+
+l_femur
+l_hip
+5.4078875
+1 HHCE
+
+l_tibia
+l_femur
+7.013056
+1 HHDA
+
+l_foot
+l_tibia
+6.6927505
+1 HHDC
+
+r_hip
+root
+2.3976195
+0 
+
+r_femur
+r_hip
+5.4078875
+1 HHDE
+
+r_tibia
+r_femur
+7.013056
+1 HHEA
+
+r_foot
+r_tibia
+6.6927505
+1 HHEC

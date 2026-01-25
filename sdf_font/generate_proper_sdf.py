@@ -37,8 +37,19 @@ def generate_sdf_for_char(alpha_channel, spread):
     # Normalize to 0-1 range
     # 0.5 = exactly on the edge
     # 0.0 = far outside (spread distance away)
-    # 1.0 = far inside (spread distance away)
+    # 1.0 = inside the glyph (quickly reaches max)
+
+    # For clean font rendering, we want:
+    # - Smooth gradient OUTSIDE (for anti-aliasing)
+    # - Quick saturation INSIDE (solid fill, not rings)
     sdf_normalized = 0.5 + (sdf / spread)
+
+    # Clamp inside values more aggressively to avoid "onion rings"
+    # Outside can have full gradient, inside should saturate quickly
+    sdf_normalized = np.where(sdf > 0,
+                              np.clip(0.5 + (sdf / (spread * 0.5)), 0.5, 1.0),  # Inside: saturate faster
+                              np.clip(0.5 + (sdf / spread), 0.0, 0.5))           # Outside: normal gradient
+
     sdf_normalized = np.clip(sdf_normalized, 0.0, 1.0)
     
     return sdf_normalized

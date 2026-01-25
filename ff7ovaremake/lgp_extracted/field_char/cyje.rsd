@@ -1,0 +1,10 @@
+@RSD940102
+# Output by SGI RSD fileset library libRsdObj.
+PLY=CYJF.PLY
+MAT=CYJF.MAT
+GRP=CYJF.GRP
+# Texture files
+NTEX=3
+TEX[0]=CZAA.TIM
+TEX[1]=CZAB.TIM
+TEX[2]=CZAC.TIM

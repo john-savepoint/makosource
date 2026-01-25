@@ -1,0 +1,13 @@
+:HEADER_BLOCK 2
+:SKELETON planet_sk
+:BONES 2
+
+bone_pl
+root
+5.0
+1 GWAB
+
+born_ei
+root
+10.0
+2 GWAD GWAF

@@ -1,0 +1,10 @@
+@RSD940102
+# Output by SGI RSD fileset library libRsdObj.
+PLY=EBFA.PLY
+MAT=EBFA.MAT
+GRP=EBFA.GRP
+# Texture files
+NTEX=3
+TEX[0]=EBFB.TIM
+TEX[1]=EBFC.TIM
+TEX[2]=EBFD.TIM

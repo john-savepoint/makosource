@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON utma2_sk
+:BONES 21
+
+hip
+root
+2.3047545
+1 HFFC
+
+chest
+hip
+6.990337
+1 HFFE
+
+head
+chest
+8.619702
+1 HFGA
+
+l_chest
+hip
+6.952268
+0 
+
+l_collar
+l_chest
+2.546216
+0 
+
+l_uparm
+l_collar
+2.6135197
+1 HFGF
+
+l_foarm
+l_uparm
+4.934101
+1 HFHB
+
+l_hand
+l_foarm
+2.29624
+1 HFHD
+
+r_chest
+hip
+6.95246
+0 
+
+r_collar
+r_chest
+2.546216
+0 
+
+r_uparm
+r_collar
+2.6135197
+1 HFHF
+
+r_foarm
+r_uparm
+4.934101
+1 HFIB
+
+r_hand
+r_foarm
+2.29624
+1 HFID
+
+l_hip
+root
+1.8584324
+0 
+
+l_femur
+l_hip
+4.932025
+1 HFIF
+
+l_tibia
+l_femur
+5.313644
+1 HFJB
+
+l_foot
+l_tibia
+6.752769
+1 HFJD
+
+r_hip
+root
+1.8587294
+0 
+
+r_femur
+r_hip
+4.932025
+1 HFJF
+
+r_tibia
+r_femur
+5.313644
+1 HGAB
+
+r_foot
+r_tibia
+6.752769
+1 HGAD

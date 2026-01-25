@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON guard_sk
+:BONES 21
+
+hip
+root
+1.9823732
+1 AZHF
+
+chest
+hip
+6.0594044
+1 AZIB
+
+head
+chest
+6.5
+1 AZID
+
+l_chest
+hip
+4.2116046
+0 
+
+l_collar
+l_chest
+3.1122992
+0 
+
+l_uparm
+l_collar
+3.288001
+1 AZJC
+
+l_foarm
+l_uparm
+4.002572
+1 AZJE
+
+l_hand
+l_foarm
+1.8377732
+1 BAAA
+
+r_chest
+hip
+4.2116055
+0 
+
+r_collar
+r_chest
+3.1122992
+0 
+
+r_uparm
+r_collar
+3.288001
+1 BAAC
+
+r_foarm
+r_uparm
+4.002572
+1 BAAE
+
+r_hand
+r_foarm
+1.8377732
+1 BABA
+
+l_hip
+root
+1.7659688
+0 
+
+l_femur
+l_hip
+5.1914024
+1 BABC
+
+l_tibia
+l_femur
+6.3109665
+1 BABE
+
+l_foot
+l_tibia
+4.2203574
+1 BACA
+
+r_hip
+root
+1.7659705
+0 
+
+r_femur
+r_hip
+5.1914024
+1 BACC
+
+r_tibia
+r_femur
+6.3109665
+1 BACE
+
+r_foot
+r_tibia
+4.2203574
+1 BADA

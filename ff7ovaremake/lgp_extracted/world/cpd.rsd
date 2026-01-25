@@ -1,0 +1,8 @@
+@RSD940102
+# Created by PS-EDitor
+PLY=CPE.PLY
+MAT=CPE.MAT
+GRP=CPE.GRP
+# Number of TIM(Texture) Files
+NTEX=1
+TEX[0]=CQA.TIM

@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON woman_sk
+:BONES 21
+
+hip
+root
+2.68229
+1 FLAD
+
+chest
+hip
+4.741249
+1 FLAF
+
+head
+chest
+6.558428
+1 FLBB
+
+l_chest
+hip
+4.352219
+0 
+
+l_collar
+l_chest
+1.7724016
+0 
+
+l_uparm
+l_collar
+3.0416613
+1 FLCA
+
+l_foarm
+l_uparm
+4.414483
+1 FLCC
+
+l_hand
+l_foarm
+2.0339174
+1 FLCE
+
+r_chest
+hip
+4.352219
+0 
+
+r_collar
+r_chest
+1.7724016
+0 
+
+r_uparm
+r_collar
+3.0416613
+1 FLDA
+
+r_foarm
+r_uparm
+4.414483
+1 FLDC
+
+r_hand
+r_foarm
+2.0339174
+1 FLDE
+
+l_hip
+root
+1.0674062
+0 
+
+l_femur
+l_hip
+5.317889
+1 FLEA
+
+l_tibia
+l_femur
+5.5232496
+1 FLEC
+
+l_foot
+l_tibia
+5.9504294
+1 FLEE
+
+r_hip
+root
+1.0674062
+0 
+
+r_femur
+r_hip
+5.317889
+1 FLFA
+
+r_tibia
+r_femur
+5.5232496
+1 FLFC
+
+r_foot
+r_tibia
+5.9504294
+1 FLFE

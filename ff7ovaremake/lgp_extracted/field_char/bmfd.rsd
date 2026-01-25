@@ -1,0 +1,10 @@
+@RSD940102
+# Output by SGI RSD fileset library libRsdObj.
+PLY=BMFE.PLY
+MAT=BMFE.MAT
+GRP=BMFE.GRP
+# Texture files
+NTEX=3
+TEX[0]=BMFF.TIM
+TEX[1]=BMGA.TIM
+TEX[2]=BMGB.TIM

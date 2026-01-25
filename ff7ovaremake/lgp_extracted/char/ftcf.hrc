@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON fmw2_sk
+:BONES 21
+
+hip
+root
+2.3047545
+0 
+
+chest
+hip
+6.990337
+1 FTDA
+
+head
+chest
+8.619702
+1 FTDC
+
+l_chest
+hip
+6.952268
+0 
+
+l_collar
+l_chest
+2.546216
+0 
+
+l_uparm
+l_collar
+2.6135197
+1 FTEB
+
+l_foarm
+l_uparm
+4.934101
+1 FTED
+
+l_hand
+l_foarm
+2.29624
+1 FTEF
+
+r_chest
+hip
+6.95246
+0 
+
+r_collar
+r_chest
+2.546216
+0 
+
+r_uparm
+r_collar
+2.6135197
+1 FTFB
+
+r_foarm
+r_uparm
+4.934101
+1 FTFD
+
+r_hand
+r_foarm
+2.29624
+1 FTFF
+
+l_hip
+root
+1.8584324
+0 
+
+l_femur
+l_hip
+4.932025
+1 FTGB
+
+l_tibia
+l_femur
+5.313644
+1 FTGD
+
+l_foot
+l_tibia
+6.752769
+1 FTGF
+
+r_hip
+root
+1.8587294
+0 
+
+r_femur
+r_hip
+4.932025
+1 FTHB
+
+r_tibia
+r_femur
+5.313644
+1 FTHD
+
+r_foot
+r_tibia
+6.752769
+1 FTHF

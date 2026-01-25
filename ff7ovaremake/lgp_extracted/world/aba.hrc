@@ -1,0 +1,128 @@
+:HEADER_BLOCK 2
+:SKELETON buggy_sk
+:BONES 25
+
+body
+root
+10.0
+2 ABB ABD
+
+be
+root
+17.872658
+0 
+
+engine
+be
+5.3654957
+1 ACA
+
+bl1
+root
+14.334134
+0 
+
+l_t1
+bl1
+5.62766
+1 ACC
+
+bl2
+root
+8.684859
+0 
+
+l_t2
+bl2
+5.62766
+1 ACE
+
+bl3
+root
+8.616301
+0 
+
+l_t3
+bl3
+5.62766
+1 ADB
+
+bl4
+root
+14.24719
+0 
+
+l_t4
+bl4
+5.62766
+1 ADD
+
+bp
+root
+30.005169
+0 
+
+prop
+bp
+8.765777
+1 AEA
+
+ppl
+prop
+8.479582
+0 
+
+l_prop
+ppl
+5.783476
+1 AEC
+
+ppr
+prop
+8.482838
+0 
+
+r_prop
+ppr
+5.783476
+1 AEE
+
+br1
+root
+14.334134
+0 
+
+r_t1
+br1
+5.62766
+1 AFB
+
+br2
+root
+8.684859
+0 
+
+r_t2
+br2
+5.62766
+1 AFD
+
+br3
+root
+8.616301
+0 
+
+r_t3
+br3
+5.62766
+1 AGA
+
+br4
+root
+14.24719
+0 
+
+r_t4
+br4
+5.62766
+1 AGC

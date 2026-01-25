@@ -1,0 +1,8 @@
+@RSD940102
+# created by Meditor on Thu Sep 19 15:29:18 1996
+PLY=ECAB.PLY
+MAT=ECAB.MAT
+GRP=ECAB.GRP
+# Number of TIM (Texture) Files
+NTEX=1
+TEX[0]=ECAC.TIM

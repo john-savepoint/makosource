@@ -1,0 +1,138 @@
+:HEADER_BLOCK 2
+:SKELETON kaitei_sk
+:BONES 27
+
+kosi
+root
+6.2818375
+3 FHAB FHAD FHAF
+
+m_femur
+kosi
+7.043279
+0 
+
+m_tibia
+m_femur
+12.7432
+1 FHBB
+
+m_foot
+m_tibia
+14.128943
+1 FHBD
+
+kalada
+root
+20.84855
+1 FHBF
+
+non6
+kalada
+1.4351029
+0 
+
+jyoin1
+non6
+26.334698
+1 FHCB
+
+jyoin2
+jyoin1
+3.314804
+1 FHCD
+
+jyoin3
+jyoin2
+26.9412
+1 FHCF
+
+non3
+jyoin3
+5.326634
+0 
+
+l_kata
+non3
+32.19852
+1 FHDB
+
+l_ude
+l_kata
+32.782745
+1 FHDD
+
+l_yubi
+l_ude
+16.061783
+1 FHDF
+
+l_yubi1
+l_ude
+15.619484
+1 FHEB
+
+non4
+jyoin3
+5.326634
+0 
+
+r_kata
+non4
+32.19852
+1 FHED
+
+r_ude
+r_kata
+32.782745
+1 FHEF
+
+r_yubi
+r_ude
+15.619484
+1 FHFB
+
+r_yubi1
+r_ude
+16.061783
+1 FHFD
+
+non1
+root
+6.786153
+0 
+
+l_femur
+non1
+7.0432734
+0 
+
+l_tibia
+l_femur
+12.7432
+1 FHFF
+
+l_foot
+l_tibia
+14.128943
+1 FHGB
+
+non2
+root
+6.786153
+0 
+
+r_femur
+non2
+7.0432725
+0 
+
+r_tibia
+r_femur
+12.7432
+1 FHGD
+
+r_foot
+r_tibia
+14.128943
+1 FHGF

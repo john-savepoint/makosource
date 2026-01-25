@@ -1,0 +1,13 @@
+:HEADER_BLOCK 2
+:SKELETON kao_sk
+:BONES 2
+
+bone_1
+root
+12.692575
+2 HKEB HKEE
+
+bone_2
+bone_1
+9.329111
+1 HKFB

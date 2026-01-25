@@ -1,0 +1,7 @@
+@RSD940102
+# created by Meditor on Wed Nov 13 08:52:38 1996
+PLY=BNE.PLY
+MAT=BNE.MAT
+GRP=BNE.GRP
+# Number of TIM (Texture) Files
+NTEX=0

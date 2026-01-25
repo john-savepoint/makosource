@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON rkt_w_sk
+:BONES 21
+
+hip
+root
+2.68229
+1 GYDD
+
+chest
+hip
+4.741249
+1 GYDF
+
+head
+chest
+6.558428
+1 GYEB
+
+l_chest
+hip
+4.352219
+0 
+
+l_collar
+l_chest
+1.7724016
+0 
+
+l_uparm
+l_collar
+3.0416613
+1 GYFA
+
+l_foarm
+l_uparm
+4.414483
+1 GYFC
+
+l_hand
+l_foarm
+2.0339174
+1 GYFE
+
+r_chest
+hip
+4.352219
+0 
+
+r_collar
+r_chest
+1.7724016
+0 
+
+r_uparm
+r_collar
+3.0416613
+1 GYGA
+
+r_foarm
+r_uparm
+4.414483
+1 GYGC
+
+r_hand
+r_foarm
+2.0339174
+1 GYGE
+
+l_hip
+root
+1.0674062
+0 
+
+l_femur
+l_hip
+5.317889
+1 GYHA
+
+l_tibia
+l_femur
+5.5232496
+1 GYHC
+
+l_foot
+l_tibia
+5.9504294
+1 GYHE
+
+r_hip
+root
+1.0674062
+0 
+
+r_femur
+r_hip
+5.317889
+1 GYIA
+
+r_tibia
+r_femur
+5.5232496
+1 GYIC
+
+r_foot
+r_tibia
+5.9504294
+1 GYIE

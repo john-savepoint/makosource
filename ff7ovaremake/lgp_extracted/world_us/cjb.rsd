@@ -1,0 +1,7 @@
+@RSD940102
+# created by Meditor on Thu Dec 05 07:53:22 1996
+PLY=CJC.PLY
+MAT=CJC.MAT
+GRP=CJC.GRP
+# Number of TIM (Texture) Files
+NTEX=0

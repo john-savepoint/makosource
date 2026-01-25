@@ -1,0 +1,7 @@
+@RSD940102
+# Output by SGI RSD fileset library libRsdObj.
+PLY=EZDA.PLY
+MAT=EZDA.MAT
+GRP=EZDA.GRP
+# Texture files
+NTEX=0

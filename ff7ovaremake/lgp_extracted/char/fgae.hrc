@@ -1,0 +1,63 @@
+:HEADER_BLOCK 2
+:SKELETON fish2_sk
+:BONES 12
+
+bone_11
+root
+5.9675503
+0 
+
+bone_12
+bone_11
+8.860457
+1 FGAF
+
+bone_5
+root
+17.36731
+1 FGBB
+
+bone_4
+bone_5
+15.754291
+1 FGBD
+
+bone_3
+bone_4
+17.078598
+1 FGBF
+
+bone_2
+bone_3
+16.249302
+1 FGCB
+
+bone_1
+bone_2
+10.479099
+1 FGCD
+
+bone_6
+root
+10.709299
+1 FGCF
+
+bone_7
+bone_6
+10.509001
+1 FGDB
+
+bone_8
+bone_7
+10.7281
+1 FGDD
+
+bone_9
+root
+5.9675503
+0 
+
+bone_10
+bone_9
+8.860457
+1 FGDF

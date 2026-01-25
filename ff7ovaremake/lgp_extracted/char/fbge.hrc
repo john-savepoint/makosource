@@ -1,0 +1,88 @@
+:HEADER_BLOCK 2
+:SKELETON r_ketcy_sk
+:BONES 17
+
+dchest
+root
+9.535749
+1 FBGF
+
+dl_chest
+dchest
+6.46704
+0 
+
+dl_colla
+dl_chest
+2.0349512
+0 
+
+dl_uparm
+dl_colla
+15.936046
+1 FBHB
+
+dr_chest
+dchest
+6.46704
+0 
+
+dr_colla
+dr_chest
+2.0349512
+0 
+
+bone_16
+dr_colla
+7.8219543
+1 FBHD
+
+bone_17
+bone_16
+5.0704746
+1 FBHF
+
+bone_18
+bone_17
+3.0436168
+1 FBIB
+
+non01
+dchest
+7.2813115
+0 
+
+head
+non01
+5.9827423
+1 FBID
+
+dl_hip
+root
+4.6003513
+0 
+
+dl_femur
+dl_hip
+4.468447
+1 FBJA
+
+dl_foot
+dl_femur
+15.062583
+1 FBJC
+
+dr_hip
+root
+4.6003513
+0 
+
+dr_femur
+dr_hip
+4.468447
+1 FBJE
+
+dr_foot
+dr_femur
+15.062583
+1 FCAA

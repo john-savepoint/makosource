@@ -1,0 +1,118 @@
+:HEADER_BLOCK 2
+:SKELETON sefiro3_sk
+:BONES 23
+
+hip
+root
+1.6143456
+1 BGJD
+
+chest
+hip
+5.073813
+1 BGJF
+
+head
+chest
+4.5480328
+1 BHAB
+
+non_1
+head
+5.7248783
+0 
+
+kami
+non_1
+14.583745
+1 BHBA
+
+l_chest
+hip
+4.7595735
+0 
+
+l_collar
+l_chest
+2.3108385
+0 
+
+l_uparm
+l_collar
+3.4343264
+1 BHBC
+
+l_foarm
+l_uparm
+4.8168325
+1 BHBE
+
+l_hand
+l_foarm
+2.2786036
+2 BHCA BHCC
+
+r_chest
+hip
+4.7595735
+0 
+
+r_collar
+r_chest
+2.3108385
+0 
+
+r_uparm
+r_collar
+3.4343264
+1 BHCE
+
+r_foarm
+r_uparm
+4.8168325
+1 BHDA
+
+r_hand
+r_foarm
+2.2786036
+1 BHDC
+
+l_hip
+root
+1.8991876
+0 
+
+l_femur
+l_hip
+7.0923777
+1 BHDE
+
+l_tibia
+l_femur
+7.99837
+1 BHEA
+
+l_foot
+l_tibia
+6.756432
+1 BHEC
+
+r_hip
+root
+1.8991876
+0 
+
+r_femur
+r_hip
+7.0923777
+1 BHEE
+
+r_tibia
+r_femur
+7.99837
+1 BHFA
+
+r_foot
+r_tibia
+6.756432
+1 BHFC

@@ -1,0 +1,118 @@
+:HEADER_BLOCK 2
+:SKELETON ifarna_sk
+:BONES 23
+
+hip
+root
+2.68229
+1 CQAA
+
+chest
+hip
+4.741249
+1 CQAC
+
+head
+chest
+6.558428
+1 CQAE
+
+non_1
+head
+5.6017165
+0 
+
+kami
+non_1
+12.843401
+1 CQBD
+
+l_chest
+hip
+4.352219
+0 
+
+l_collar
+l_chest
+1.7724016
+0 
+
+l_uparm
+l_collar
+3.0416613
+1 CQBF
+
+l_foarm
+l_uparm
+4.414483
+1 CQCB
+
+l_hand
+l_foarm
+2.0339174
+1 CQCD
+
+r_chest
+hip
+4.352219
+0 
+
+r_collar
+r_chest
+1.7724016
+0 
+
+r_uparm
+r_collar
+3.0416613
+1 CQCF
+
+r_foarm
+r_uparm
+4.414483
+1 CQDB
+
+r_hand
+r_foarm
+2.0339174
+1 CQDD
+
+l_hip
+root
+1.0674062
+0 
+
+l_femur
+l_hip
+5.317889
+1 CQDF
+
+l_tibia
+l_femur
+5.5232496
+1 CQEB
+
+l_foot
+l_tibia
+5.9504294
+1 CQED
+
+r_hip
+root
+1.0674062
+0 
+
+r_femur
+r_hip
+5.317889
+1 CQEF
+
+r_tibia
+r_femur
+5.5232496
+1 CQFB
+
+r_foot
+r_tibia
+5.9504294
+1 CQFD

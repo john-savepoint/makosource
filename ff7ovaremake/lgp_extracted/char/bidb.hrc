@@ -1,0 +1,123 @@
+:HEADER_BLOCK 2
+:SKELETON tifa15_sk
+:BONES 24
+
+hip
+root
+3.915372
+1 BIDC
+
+chest
+hip
+4.551412
+1 BIDE
+
+head
+chest
+4.2346687
+1 BIEA
+
+non_1
+head
+5.1962347
+0 
+
+kami
+non_1
+12.106115
+1 BIEF
+
+l_chest
+hip
+4.340109
+0 
+
+l_collar
+l_chest
+1.9638
+0 
+
+l_uparm
+l_collar
+3.0545702
+1 BIFB
+
+armer
+l_uparm
+1.261581
+0 
+
+l_foarm
+l_uparm
+4.4145
+1 BIFD
+
+l_hand
+l_foarm
+2.0339005
+1 BIFF
+
+r_chest
+hip
+4.340109
+0 
+
+r_collar
+r_chest
+1.9638
+0 
+
+r_uparm
+r_collar
+3.0545702
+1 BIGB
+
+r_foarm
+r_uparm
+4.4145
+1 BIGD
+
+r_hand
+r_foarm
+2.0339005
+1 BIGF
+
+l_hip
+root
+1.4322096
+0 
+
+l_femur
+l_hip
+3.9151783
+1 BIHB
+
+l_tibia
+l_femur
+5.510311
+1 BIHD
+
+l_foot
+l_tibia
+5.9114537
+1 BIHF
+
+r_hip
+root
+1.4322096
+0 
+
+r_femur
+r_hip
+3.9151783
+1 BIIB
+
+r_tibia
+r_femur
+5.510311
+1 BIID
+
+r_foot
+r_tibia
+5.9114537
+1 BIIF

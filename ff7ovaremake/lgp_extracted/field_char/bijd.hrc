@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON yvin_sk
+:BONES 21
+
+hip
+root
+2.2306004
+1 BIJE
+
+chest
+hip
+7.1736255
+1 BJAA
+
+head
+chest
+11.87068
+1 BJAC
+
+l_chest
+hip
+7.2551928
+0 
+
+l_collar
+l_chest
+1.98394
+0 
+
+l_uparm
+l_collar
+3.8067684
+1 BJBB
+
+l_foarm
+l_uparm
+5.6942005
+1 BJBD
+
+l_hand
+l_foarm
+2.5835743
+1 BJBF
+
+r_chest
+hip
+7.2551928
+0 
+
+r_collar
+r_chest
+1.98394
+0 
+
+r_uparm
+r_collar
+3.8067684
+1 BJCB
+
+r_foarm
+r_uparm
+5.6942005
+1 BJCD
+
+r_hand
+r_foarm
+2.5835743
+1 BJCF
+
+l_hip
+root
+2.05208
+0 
+
+l_femur
+l_hip
+6.6737413
+1 BJDB
+
+l_tibia
+l_femur
+6.673741
+1 BJDD
+
+l_foot
+l_tibia
+7.64419
+1 BJDF
+
+r_hip
+root
+2.05208
+0 
+
+r_femur
+r_hip
+6.6737413
+1 BJEB
+
+r_tibia
+r_femur
+6.673741
+1 BJED
+
+r_foot
+r_tibia
+7.64419
+1 BJEF

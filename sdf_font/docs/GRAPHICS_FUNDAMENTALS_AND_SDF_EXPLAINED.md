@@ -33,8 +33,6 @@ When you see anything on your screen in a 3D game, your computer goes through se
 
 ### The Graphics Pipeline Flow
 
-![Graphics Pipeline](https://mermaid.ink/img/pako:eNqNkE1rAjEQhu_5FYPeFgO7flVzKFRX24IF6delFJzuzmgwbiSJaPvri1mRehB6GQh5nyeTV0opCluxXioBYPDb7oICMmsBwMbuixW6cLwCWIWNmeEXGa-A0XgSUkpxDsHsOcYKg97nxKCr7S4Aa2NUkzLuMbd8cHZNqtnOhn3unI5yr8uwUu3toVVYY51qpmX3BrNLm19hSe6kY-YuZWcd83CQpld11O9laXqp2zpbkPdn33HBs4-GGfWvrzcYpNTlS5_dhYvf8p_1ugVy7_p6bbopO20RfXcfjUWSdHJ4siUZyDFgkoh3ckEX5FswPiK-Ba90CDtHftH4VErFpiM_ivwxTwd4iZUlibifv8Hc2aXDTQ3UZUZiHIln9IGc_onxB3TlHh3BVBtTA6e6IpFHYupwuaEq_O-VSWReCkdUwVwfyPgkEVNdoYHHDS6pJuoWT1WAlLcwinMcZx7nRPwCsrXXUg)
-
 ```mermaid
 flowchart LR
     classDef input fill:#e1f5ff,stroke:#2196f3,stroke-width:2px,color:#0d47a1

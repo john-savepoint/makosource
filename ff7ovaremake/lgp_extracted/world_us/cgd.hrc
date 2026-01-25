@@ -1,0 +1,33 @@
+:HEADER_BLOCK 2
+:SKELETON highwind_sk
+:BONES 6
+
+bone_1
+root
+13.40453
+2 CGE CHB
+
+bone_2
+bone_1
+30.42047
+0 
+
+bone_3
+root
+9.659179
+0 
+
+bone_4
+bone_3
+5.5411854
+1 CHD
+
+bone_5
+root
+9.659181
+0 
+
+bone_6
+bone_5
+5.5411854
+1 CIA

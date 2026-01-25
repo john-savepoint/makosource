@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON woman9_sk
+:BONES 21
+
+hip
+root
+2.68229
+1 DQAF
+
+chest
+hip
+4.741249
+1 DQBB
+
+head
+chest
+6.558428
+1 DQBD
+
+non_1
+hip
+4.352219
+0 
+
+l_collar
+non_1
+1.7724016
+0 
+
+l_uparm
+l_collar
+3.0416613
+1 DQCC
+
+l_foarm
+l_uparm
+4.414483
+1 DQCE
+
+l_hand
+l_foarm
+2.0339174
+1 DQDA
+
+non_2
+hip
+4.352219
+0 
+
+r_collar
+non_2
+1.7724016
+0 
+
+r_uparm
+r_collar
+3.0416613
+1 DQDC
+
+r_foarm
+r_uparm
+4.414483
+1 DQDE
+
+r_hand
+r_foarm
+2.0339174
+1 DQEA
+
+l_hip
+root
+1.0674062
+0 
+
+l_femur
+l_hip
+5.317889
+1 DQEC
+
+l_tibia
+l_femur
+5.5232496
+1 DQEE
+
+l_foot
+l_tibia
+5.9504294
+1 DQFA
+
+r_hip
+root
+1.0674062
+0 
+
+r_femur
+r_hip
+5.317889
+1 DQFC
+
+r_tibia
+r_femur
+5.5232496
+1 DQFE
+
+r_foot
+r_tibia
+5.9504294
+1 DQGA

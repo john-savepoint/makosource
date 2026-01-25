@@ -1,0 +1,103 @@
+:HEADER_BLOCK 2
+:SKELETON mogrif_sk
+:BONES 20
+
+mune
+root
+8.860231
+1 GLJE
+
+atama
+mune
+6.823366
+1 GMAA
+
+l_mimi1
+atama
+2.8904328
+0 
+
+l_mimi2
+l_mimi1
+3.3963647
+1 GMAC
+
+r_mimi1
+atama
+2.890432
+0 
+
+r_mimi2
+r_mimi1
+3.3963647
+1 GMAE
+
+l_momo
+root
+3.802654
+0 
+
+l_asi
+l_momo
+3.221953
+1 GMBA
+
+non1
+root
+8.152174
+0 
+
+l_ude1
+non1
+2.899151
+1 GMBC
+
+l_ude2
+l_ude1
+3.911939
+1 GMBE
+
+non2
+root
+8.739458
+0 
+
+l_hane
+non2
+8.032587
+1 GMCA
+
+non3
+root
+8.739457
+0 
+
+r_hane
+non3
+8.032588
+1 GMCC
+
+non4
+root
+8.152174
+0 
+
+r_ude1
+non4
+2.899151
+1 GMCE
+
+r_ude2
+r_ude1
+3.9119396
+1 GMDA
+
+r_momo
+root
+3.802652
+0 
+
+r_asi
+r_momo
+3.221953
+1 GMDC

@@ -1,0 +1,148 @@
+:HEADER_BLOCK 2
+:SKELETON chair_sk
+:BONES 29
+
+hip
+root
+1.7457236
+1 HTJF
+
+chest
+hip
+4.35991
+1 HUAB
+
+head
+chest
+6.8333898
+1 HUAD
+
+l_chest
+hip
+4.1348233
+0 
+
+l_collar
+l_chest
+2.30646
+0 
+
+l_uparm
+l_collar
+2.38332
+1 HUBC
+
+l_foarm
+l_uparm
+4.606489
+1 HUBE
+
+l_hand
+l_foarm
+2.5993977
+1 HUCA
+
+r_chest
+hip
+4.1348233
+0 
+
+r_collar
+r_chest
+2.30646
+0 
+
+r_uparm
+r_collar
+2.3833208
+1 HUCC
+
+r_foarm
+r_uparm
+4.606491
+1 HUCE
+
+r_hand
+r_foarm
+2.599397
+1 HUDA
+
+l_hip
+root
+1.961564
+0 
+
+l_femur
+l_hip
+5.830908
+1 HUDC
+
+l_tibia
+l_femur
+6.549399
+1 HUDE
+
+non10
+root
+3.2528818
+0 
+
+non11
+non10
+2.0
+2 HUEA HUEC
+
+non12
+non11
+9.953612
+0 
+
+l_asi
+non12
+4.188322
+1 HUEE
+
+l_taya
+l_asi
+1.2262015
+1 HUFA
+
+non13
+non11
+9.953612
+0 
+
+r_asi
+non13
+4.188322
+1 HUFC
+
+r_taya
+r_asi
+1.2262009
+1 HUFE
+
+taia_m
+non11
+8.69142
+2 HUGA HUGC
+
+r_hip
+root
+1.961564
+0 
+
+r_femur
+r_hip
+5.830907
+1 HUGE
+
+r_tibia
+r_femur
+6.5493994
+1 HUHA
+
+r_foot
+r_tibia
+6.905876
+1 HUHC

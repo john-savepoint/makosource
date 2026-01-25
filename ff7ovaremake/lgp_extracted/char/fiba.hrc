@@ -1,0 +1,123 @@
+:HEADER_BLOCK 2
+:SKELETON maru_st
+:BONES 24
+
+o_1
+root
+37.968452
+1 FIBB
+
+chest
+o_1
+70.27411
+1 FIBD
+
+head
+chest
+10.38134
+3 FIBF FICB FICD
+
+none1
+head
+2.8193655
+0 
+
+ago
+none1
+16.269402
+1 FICF
+
+none2
+chest
+11.982176
+0 
+
+l_hire1
+none2
+35.449577
+1 FIDB
+
+l_hire2
+l_hire1
+50.157646
+1 FIDD
+
+none6
+chest
+11.982167
+0 
+
+r_hire1
+none6
+35.449577
+1 FIDF
+
+r_hire2
+r_hire1
+50.157646
+1 FIEB
+
+none11
+root
+24.098469
+0 
+
+l_hand2
+none11
+67.023544
+1 FIED
+
+l_hand4
+l_hand2
+74.82413
+1 FIEF
+
+none12
+root
+44.159107
+0 
+
+hire1
+none12
+34.967228
+1 FIFB
+
+hire3
+hire1
+73.81333
+1 FIFD
+
+none13
+root
+23.419458
+0 
+
+r_hand2
+none13
+67.023544
+1 FIFF
+
+r_hand4
+r_hand2
+74.82413
+1 FIGB
+
+o_2
+root
+31.01649
+1 FIGD
+
+o_3
+o_2
+31.016495
+1 FIGF
+
+o_4
+o_3
+32.08602
+1 FIHB
+
+o_7
+o_4
+128.34412
+1 FIHD

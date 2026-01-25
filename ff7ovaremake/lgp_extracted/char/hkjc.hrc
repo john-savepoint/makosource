@@ -1,0 +1,133 @@
+:HEADER_BLOCK 2
+:SKELETON demon_sk
+:BONES 26
+
+body
+root
+53.20746
+0 
+
+none1
+body
+44.609524
+0 
+
+r_foarm
+none1
+31.66738
+1 HKJD
+
+r_hand
+r_foarm
+9.287434
+1 HKJF
+
+none7
+r_hand
+8.3570385
+0 
+
+r_fin3
+none7
+12.73856
+1 HLAB
+
+none8
+r_hand
+3.0499456
+0 
+
+r_fin2
+none8
+15.181957
+1 HLAD
+
+none9
+r_hand
+3.0191362
+0 
+
+r_fin1
+none9
+15.181957
+1 HLAF
+
+none2
+body
+55.39983
+0 
+
+l_foarm
+none2
+31.66738
+1 HLBB
+
+l_hand
+l_foarm
+9.287434
+1 HLBD
+
+none4
+l_hand
+8.357038
+0 
+
+l_fin3
+none4
+12.73856
+1 HLBF
+
+none5
+l_hand
+3.0499449
+0 
+
+l_fin2
+none5
+15.181957
+1 HLCB
+
+none6
+l_hand
+3.0191355
+0 
+
+l_fin1
+none6
+15.181957
+1 HLCD
+
+none3
+body
+21.458843
+0 
+
+chest
+none3
+28.15316
+2 HLCF HLDB
+
+none10
+chest
+7.433423
+0 
+
+kubi1
+none10
+12.50502
+1 HLDD
+
+kubi2
+kubi1
+13.125824
+1 HLDF
+
+head
+kubi2
+7.924141
+2 HLEB HLED
+
+ago
+head
+10.315906
+1 HLEF

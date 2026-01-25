@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON man_sk
+:BONES 21
+
+hip
+root
+1.7457236
+1 CCBD
+
+chest
+hip
+4.35991
+1 CCBF
+
+head
+chest
+6.8333898
+1 CCCB
+
+l_cst
+hip
+4.1348233
+0 
+
+l_col
+l_cst
+2.30646
+0 
+
+l_uparm
+l_col
+2.38332
+1 CCDA
+
+l_foarm
+l_uparm
+4.606489
+1 CCDC
+
+l_hnd
+l_foarm
+2.5993977
+1 CCDE
+
+r_cst
+hip
+4.1348233
+0 
+
+r_col
+r_cst
+2.30646
+0 
+
+r_uparm
+r_col
+2.38332
+1 CCEA
+
+r_foarm
+r_uparm
+4.606489
+1 CCEC
+
+r_hnd
+r_foarm
+2.5993977
+1 CCEE
+
+l_hip
+root
+1.961564
+0 
+
+l_fmr
+l_hip
+5.830908
+1 CCFA
+
+l_tba
+l_fmr
+6.549399
+1 CCFC
+
+l_fot
+l_tba
+6.905876
+1 CCFE
+
+r_hip
+root
+1.961564
+0 
+
+r_fmr
+r_hip
+5.830908
+1 CCGA
+
+r_tba
+r_fmr
+6.549399
+1 CCGC
+
+r_fot
+r_tba
+6.905876
+1 CCGE

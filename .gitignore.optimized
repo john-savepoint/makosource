@@ -1,0 +1,119 @@
+# FF7 Japanese Mod Project - Optimized .gitignore
+# Created: 2026-01-24 19:10 JST
+# Replaced 10,634-line bloated version with efficient patterns
+
+# ============================================================================
+# PROJECT-SPECIFIC IGNORES
+# ============================================================================
+
+# External repositories (cloned for reference)
+FFNx/
+PR737/
+
+# Extracted game assets (use directory patterns, not individual files!)
+ff7ovaremake/lgp_extracted/
+japanese-assets-extracted/raw-files/
+FF7-Japanese-Mod/lang-ja/
+FF7-Japanese-Mod/mods/
+assets/fonts/
+
+# Build artifacts
+*.iro
+build/
+dist/
+
+# ============================================================================
+# CLAUDE CODE
+# ============================================================================
+
+# Claude ephemeral data (session files can be huge)
+.claude/data/sessions/
+.claude/logs/
+.claude/cache/
+
+# ============================================================================
+# LANGUAGE-SPECIFIC
+# ============================================================================
+
+### Python ###
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.Python
+env/
+venv/
+.venv/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+### Node.js ###
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+.env
+.env.local
+
+### C/C++ ###
+*.o
+*.a
+*.obj
+*.lib
+*.exe
+*.out
+
+# ============================================================================
+# OPERATING SYSTEMS
+# ============================================================================
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+*.icloud
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+### Linux ###
+*~
+.directory
+.Trash-*
+
+# ============================================================================
+# EDITORS & IDEs
+# ============================================================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ============================================================================
+# MISC
+# ============================================================================
+
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z

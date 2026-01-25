@@ -1,0 +1,10 @@
+@RSD940102
+# Output by SGI RSD fileset library libRsdObj.
+PLY=AEID.PLY
+MAT=AEID.MAT
+GRP=AEID.GRP
+# Texture files
+NTEX=3
+TEX[0]=AEIE.TIM
+TEX[1]=AEIF.TIM
+TEX[2]=AEJA.TIM

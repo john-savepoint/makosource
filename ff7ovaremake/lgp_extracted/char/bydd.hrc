@@ -1,0 +1,13 @@
+:HEADER_BLOCK 2
+:SKELETON trb_mety_sk
+:BONES 2
+
+bone_1
+root
+11.358212
+2 BYDE BYEB
+
+bone_2
+bone_1
+5.337368
+2 BYED BYFA

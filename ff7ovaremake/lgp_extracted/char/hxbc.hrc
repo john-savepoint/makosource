@@ -1,0 +1,138 @@
+:HEADER_BLOCK 2
+:SKELETON robo_sk
+:BONES 27
+
+chest
+root
+20.365095
+2 HXBD HXBF
+
+head
+chest
+9.354317
+2 HXCB HXCD
+
+non1
+root
+13.745758
+1 HXCF
+
+l_hip
+non1
+12.531696
+0 
+
+l_femur
+l_hip
+24.052011
+1 HXDB
+
+l_tibia
+l_femur
+28.2776
+1 HXDD
+
+l_foot
+l_tibia
+22.080791
+1 HXDF
+
+r_hip
+non1
+12.531696
+0 
+
+r_femur
+r_hip
+24.052011
+1 HXEB
+
+r_tibia
+r_femur
+28.2776
+1 HXED
+
+r_foot
+r_tibia
+22.080791
+1 HXEF
+
+non2
+root
+22.768658
+0 
+
+l_coiiar
+non2
+18.68447
+0 
+
+l_uparm
+l_coiiar
+19.32735
+1 HXFB
+
+l_foarm
+l_uparm
+32.944145
+1 HXFD
+
+l_hand
+l_foarm
+21.832155
+1 HXFF
+
+non5
+l_uparm
+6.7500167
+0 
+
+l_bhand
+non5
+40.593246
+1 HXGB
+
+non3
+root
+22.768658
+0 
+
+r_collar
+non3
+18.68447
+0 
+
+r_uparm
+r_collar
+19.32735
+1 HXGD
+
+non6
+r_uparm
+6.7500167
+0 
+
+r_bhand
+non6
+40.593246
+1 HXGF
+
+r_foarm
+r_uparm
+32.944145
+1 HXHB
+
+r_hand
+r_foarm
+21.832155
+1 HXHD
+
+non4
+root
+26.922152
+0 
+
+tobila
+non4
+7.8493595
+1 HXHF

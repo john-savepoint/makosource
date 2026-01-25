@@ -1,0 +1,103 @@
+:HEADER_BLOCK 2
+:SKELETON dragon_sk
+:BONES 20
+
+chest
+root
+15.971101
+1 FZCD
+
+haed
+chest
+10.560558
+1 FZCF
+
+l_chest
+chest
+5.6515374
+0 
+
+l_collar
+l_chest
+3.5294304
+0 
+
+l_uparm
+l_collar
+3.9121532
+1 FZDB
+
+l_foarm
+l_uparm
+7.813811
+1 FZDD
+
+non2
+chest
+9.090592
+0 
+
+l_wing
+non2
+31.140882
+1 FZDF
+
+non3
+chest
+9.089704
+0 
+
+r_wing
+non3
+31.140882
+1 FZEB
+
+r_chest
+chest
+5.6381
+0 
+
+r_collar
+r_chest
+3.5294304
+0 
+
+r_uparm
+r_collar
+3.9121532
+1 FZED
+
+r_foarm
+r_uparm
+7.813811
+1 FZEF
+
+l_hip
+root
+10.110421
+0 
+
+l_femur
+l_hip
+13.038291
+1 FZFB
+
+non1
+root
+9.145844
+0 
+
+tail
+non1
+11.156534
+1 FZFD
+
+r_hip
+root
+10.093596
+0 
+
+r_femur
+r_hip
+13.038291
+1 FZFF

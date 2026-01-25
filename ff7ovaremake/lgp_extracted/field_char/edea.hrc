@@ -1,0 +1,118 @@
+:HEADER_BLOCK 2
+:SKELETON onna_sk
+:BONES 23
+
+hip
+root
+2.5
+1 EDEB
+
+chest
+hip
+4.018633
+1 EDED
+
+head
+chest
+4.5
+1 EDEF
+
+none1
+head
+4.9774346
+0 
+
+hair
+none1
+7.0
+1 EDFE
+
+l_chest
+hip
+2.070262
+0 
+
+l_collar
+l_chest
+3.6326816
+1 EDGA
+
+l_uparm
+l_collar
+2.6108885
+0 
+
+l_foarm
+l_uparm
+4.3386164
+0 
+
+l_hand
+l_foarm
+2.0785122
+1 EDGC
+
+r_chest
+hip
+2.070262
+0 
+
+r_collar
+r_chest
+3.6326816
+1 EDGE
+
+r_uparm
+r_collar
+2.6108885
+0 
+
+r_foarm
+r_uparm
+4.3386164
+0 
+
+r_hand
+r_foarm
+2.0785122
+1 EDHA
+
+l_hip
+root
+0.9999999
+0 
+
+l_femur
+l_hip
+5.0
+1 EDHC
+
+l_tibia
+l_femur
+5.5
+1 EDHE
+
+l_foot
+l_tibia
+7.154611
+1 EDIA
+
+r_hip
+root
+1.0000001
+0 
+
+r_femur
+r_hip
+5.0
+1 EDIC
+
+r_tibia
+r_femur
+5.5
+1 EDIE
+
+r_foot
+r_tibia
+7.154611
+1 EDJA

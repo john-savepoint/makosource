@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON cfman_sk
+:BONES 21
+
+hip
+root
+2.8599215
+1 EWBE
+
+chest
+hip
+5.7836814
+1 EWCA
+
+head
+chest
+9.077351
+1 EWCC
+
+l_chest
+hip
+4.7899904
+0 
+
+l_collar
+l_chest
+4.123446
+0 
+
+l_uparm
+l_collar
+5.114334
+1 EWDB
+
+l_foarm
+l_uparm
+3.3142996
+1 EWDD
+
+l_hand
+l_foarm
+2.5375004
+1 EWDF
+
+r_chest
+hip
+4.7899904
+0 
+
+r_collar
+r_chest
+4.123446
+0 
+
+r_uparm
+r_collar
+5.114334
+1 EWEB
+
+r_foarm
+r_uparm
+3.3142996
+1 EWED
+
+r_hand
+r_foarm
+2.5375004
+1 EWEF
+
+l_hip
+root
+2.3976195
+0 
+
+l_femur
+l_hip
+5.4078875
+1 EWFB
+
+l_tibia
+l_femur
+7.013056
+1 EWFD
+
+l_foot
+l_tibia
+6.6927505
+1 EWFF
+
+r_hip
+root
+2.3976195
+0 
+
+r_femur
+r_hip
+5.4078875
+1 EWGB
+
+r_tibia
+r_femur
+7.013056
+1 EWGD
+
+r_foot
+r_tibia
+6.6927505
+1 EWGF

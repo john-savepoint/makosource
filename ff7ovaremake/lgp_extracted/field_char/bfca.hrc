@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON fatman_sk
+:BONES 21
+
+hip
+root
+2.3047545
+1 BFCB
+
+chest
+hip
+6.990337
+1 BFCD
+
+head
+chest
+8.619702
+1 BFCF
+
+l_chest
+hip
+6.952268
+0 
+
+l_collar
+l_chest
+2.546216
+0 
+
+l_uparm
+l_collar
+2.6135197
+1 BFDE
+
+l_foarm
+l_uparm
+4.934101
+1 BFEA
+
+l_hand
+l_foarm
+2.29624
+1 BFEC
+
+r_chest
+hip
+6.95246
+0 
+
+r_collar
+r_chest
+2.546216
+0 
+
+r_uparm
+r_collar
+2.6135197
+1 BFEE
+
+r_foarm
+r_uparm
+4.934101
+1 BFFA
+
+r_hand
+r_foarm
+2.29624
+1 BFFC
+
+l_hip
+root
+1.8584324
+0 
+
+l_femur
+l_hip
+4.932025
+1 BFFE
+
+l_tibia
+l_femur
+5.313644
+1 BFGA
+
+l_foot
+l_tibia
+6.752769
+1 BFGC
+
+r_hip
+root
+1.8587294
+0 
+
+r_femur
+r_hip
+4.932025
+1 BFGE
+
+r_tibia
+r_femur
+5.313644
+1 BFHA
+
+r_foot
+r_tibia
+6.752769
+1 BFHC

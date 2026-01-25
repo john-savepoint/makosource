@@ -1,0 +1,123 @@
+:HEADER_BLOCK 2
+:SKELETON r_yufi_sk
+:BONES 24
+
+hip
+root
+2.9662
+1 FEEB
+
+chest
+hip
+4.0621967
+1 FEED
+
+head
+chest
+5.017107
+1 FEEF
+
+joint
+head
+3.5236073
+0 
+
+ribon_a
+joint
+8.52051
+1 FEFE
+
+ribon_b
+joint
+8.52051
+1 FEGA
+
+l_chest
+hip
+3.6312532
+0 
+
+l_collar
+l_chest
+1.5474058
+0 
+
+l_uparm
+l_collar
+2.4212666
+1 FEGC
+
+l_foarm
+l_uparm
+3.715201
+1 FEGE
+
+l_hand
+l_foarm
+1.7117512
+1 FEHA
+
+r_chest
+hip
+3.6312532
+0 
+
+r_collar
+r_chest
+1.5474058
+0 
+
+r_uparm
+r_collar
+2.4212666
+1 FEHC
+
+r_foarm
+r_uparm
+3.715201
+1 FEHE
+
+r_hand
+r_foarm
+1.7117512
+1 FEIA
+
+l_hip
+root
+1.0896072
+0 
+
+l_femur
+l_hip
+2.7468305
+1 FEIC
+
+l_tibia
+l_femur
+6.936207
+1 FEIE
+
+l_foot
+l_tibia
+4.778434
+1 FEJA
+
+r_hip
+root
+1.0896072
+0 
+
+r_femur
+r_hip
+2.7468305
+1 FEJC
+
+r_tibia
+r_femur
+6.936207
+1 FEJE
+
+r_foot
+r_tibia
+4.778434
+1 FFAA

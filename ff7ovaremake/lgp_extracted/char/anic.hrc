@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON sd_rudo_sk
+:BONES 21
+
+hip
+root
+3.0189934
+1 ANID
+
+chest
+hip
+8.859113
+1 ANIF
+
+head
+chest
+7.451559
+1 ANJB
+
+l_chest
+hip
+6.0387583
+0 
+
+l_collar
+l_chest
+2.8108306
+0 
+
+l_uparm
+l_collar
+3.3142488
+1 ANJD
+
+l_foarm
+l_uparm
+5.0044565
+1 ANJF
+
+l_hand
+l_foarm
+2.4848528
+1 AOAB
+
+r_chest
+hip
+6.0387583
+0 
+
+r_collar
+r_chest
+2.8108306
+0 
+
+r_uparm
+r_collar
+3.3142488
+1 AOAD
+
+r_foarm
+r_uparm
+5.0044565
+1 AOAF
+
+r_hand
+r_foarm
+2.4848528
+1 AOBB
+
+l_hip
+root
+1.9693906
+0 
+
+l_femur
+l_hip
+5.979149
+1 AOBD
+
+l_tibia
+l_femur
+6.467282
+1 AOBF
+
+l_foot
+l_tibia
+5.2212133
+1 AOCB
+
+r_hip
+root
+1.9693906
+0 
+
+r_femur
+r_hip
+5.979149
+1 AOCD
+
+r_tibia
+r_femur
+6.467282
+1 AOCF
+
+r_foot
+r_tibia
+5.2212133
+1 AODB

@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON dio_st
+:BONES 21
+
+hip
+root
+2.8599215
+1 GAJD
+
+chest
+hip
+5.7836814
+1 GAJF
+
+head
+chest
+9.077351
+1 GBAB
+
+l_chest
+hip
+4.7899904
+0 
+
+l_collar
+l_chest
+4.123446
+0 
+
+l_uparm
+l_collar
+5.114334
+1 GBBA
+
+l_foarm
+l_uparm
+3.3142996
+1 GBBC
+
+l_hand
+l_foarm
+2.5375004
+1 GBBE
+
+r_chest
+hip
+4.7899904
+0 
+
+r_collar
+r_chest
+4.123446
+0 
+
+r_uparm
+r_collar
+5.114334
+1 GBCA
+
+r_foarm
+r_uparm
+3.3142996
+1 GBCC
+
+r_hand
+r_foarm
+2.5375004
+1 GBCE
+
+l_hip
+root
+2.3976195
+0 
+
+l_femur
+l_hip
+5.4078875
+1 GBDA
+
+l_tibia
+l_femur
+7.013056
+1 GBDC
+
+l_foot
+l_tibia
+6.6927505
+1 GBDE
+
+r_hip
+root
+2.3976195
+0 
+
+r_femur
+r_hip
+5.4078875
+1 GBEA
+
+r_tibia
+r_femur
+7.013056
+1 GBEC
+
+r_foot
+r_tibia
+6.6927505
+1 GBEE

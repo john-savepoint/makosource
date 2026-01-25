@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON child_sk
+:BONES 21
+
+hip
+root
+2.0004506
+1 CGDB
+
+chest
+hip
+4.2541695
+1 CGDD
+
+head
+chest
+9.0376
+1 CGDF
+
+l_chest
+hip
+3.80646
+0 
+
+l_collar
+l_chest
+1.6597986
+0 
+
+l_uparm
+l_collar
+2.1872406
+1 CGEE
+
+l_foarm
+l_uparm
+3.42763
+1 CGFA
+
+l_hand
+l_foarm
+1.5692201
+1 CGFC
+
+r_chest
+hip
+3.80646
+0 
+
+r_collar
+r_chest
+1.6597986
+0 
+
+r_uparm
+r_collar
+2.1872406
+1 CGFE
+
+r_foarm
+r_uparm
+3.42763
+1 CGGA
+
+r_hand
+r_foarm
+1.5692201
+1 CGGC
+
+l_hip
+root
+1.0160058
+0 
+
+l_femur
+l_hip
+3.11963
+1 CGGE
+
+l_tibia
+l_femur
+2.295791
+1 CGHA
+
+l_foot
+l_tibia
+6.1594915
+1 CGHC
+
+r_hip
+root
+1.0160058
+0 
+
+r_femur
+r_hip
+3.11963
+1 CGHE
+
+r_tibia
+r_femur
+2.295791
+1 CGIA
+
+r_foot
+r_tibia
+6.1594915
+1 CGIC

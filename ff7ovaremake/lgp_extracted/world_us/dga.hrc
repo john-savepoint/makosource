@@ -1,0 +1,38 @@
+:HEADER_BLOCK 2
+:SKELETON sbmrn_sk
+:BONES 7
+
+bone_2
+root
+10.05709
+1 DGB
+
+bone_1
+bone_2
+20.306046
+1 DGD
+
+bone_3
+root
+8.271426
+1 DHA
+
+bone_4
+bone_3
+7.4156785
+0 
+
+bone_5
+bone_4
+20.086231
+1 DHC
+
+bone_6
+bone_3
+7.4156795
+0 
+
+bone_7
+bone_6
+20.086231
+1 DHE

@@ -1,0 +1,7 @@
+@RSD940102
+# Output by SGI RSD fileset library libRsdObj.
+PLY=EEFF.PLY
+MAT=EEFF.MAT
+GRP=EEFF.GRP
+# Texture files
+NTEX=0

@@ -1,0 +1,10 @@
+@RSD940102
+# Output by SGI RSD fileset library libRsdObj.
+PLY=BODA.PLY
+MAT=BODA.MAT
+GRP=BODA.GRP
+# Texture files
+NTEX=3
+TEX[0]=BODB.TIM
+TEX[1]=BODC.TIM
+TEX[2]=BODD.TIM

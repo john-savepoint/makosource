@@ -1,0 +1,78 @@
+:HEADER_BLOCK 2
+:SKELETON sd_bic_sk
+:BONES 15
+
+foot
+root
+21.955591
+2 BZDB BZDD
+
+chest
+foot
+24.22545
+1 BZDF
+
+head
+chest
+9.681962
+1 BZEB
+
+l_collar
+chest
+16.918049
+0 
+
+l_uparm
+l_collar
+10.062657
+1 BZED
+
+l_elbow
+l_uparm
+3.7124965
+1 BZEF
+
+l_elbow2
+l_elbow
+3.311566
+0 
+
+l_foarm
+l_elbow2
+12.35128
+1 BZFB
+
+l_hand
+l_foarm
+13.667908
+1 BZFD
+
+r_collar
+chest
+16.918049
+0 
+
+r_uparm
+r_collar
+10.062657
+1 BZFF
+
+r_elbow
+r_uparm
+3.7124965
+1 BZGB
+
+r_elbow2
+r_elbow
+3.311566
+0 
+
+r_foarm
+r_elbow2
+12.35128
+1 BZGD
+
+r_hand
+r_foarm
+13.667908
+1 BZGF

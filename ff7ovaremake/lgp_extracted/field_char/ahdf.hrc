@@ -1,0 +1,123 @@
+:HEADER_BLOCK 2
+:SKELETON pyufi_sk
+:BONES 24
+
+hip
+root
+2.9662
+1 AHEA
+
+chest
+hip
+4.0621967
+2 AHEC AHEE
+
+head
+chest
+5.017107
+1 AHFA
+
+joint
+head
+3.5236073
+0 
+
+ribon_a
+joint
+8.52051
+1 AHFF
+
+ribon_b
+joint
+8.52051
+1 AHGB
+
+l_chest
+hip
+3.6312532
+0 
+
+l_collar
+l_chest
+1.5474058
+0 
+
+l_uparm
+l_collar
+2.4212666
+1 AHGD
+
+l_foarm
+l_uparm
+3.715201
+1 AHGF
+
+l_hand
+l_foarm
+1.7117512
+0 
+
+r_chest
+hip
+3.6312532
+0 
+
+r_collar
+r_chest
+1.5474058
+0 
+
+r_uparm
+r_collar
+2.4212666
+1 AHHB
+
+r_foarm
+r_uparm
+3.715201
+1 AHHD
+
+r_hand
+r_foarm
+1.7117512
+1 AHHF
+
+l_hip
+root
+1.0896072
+0 
+
+l_femur
+l_hip
+2.7468305
+1 AHIB
+
+l_tibia
+l_femur
+6.936207
+1 AHID
+
+l_foot
+l_tibia
+4.778434
+1 AHIF
+
+r_hip
+root
+1.0896072
+0 
+
+r_femur
+r_hip
+2.7468305
+1 AHJB
+
+r_tibia
+r_femur
+6.936207
+1 AHJD
+
+r_foot
+r_tibia
+4.778434
+1 AHJF

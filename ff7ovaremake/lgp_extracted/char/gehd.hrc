@@ -1,0 +1,108 @@
+:HEADER_BLOCK 2
+:SKELETON semusi_st
+:BONES 21
+
+hip
+root
+1.7783536
+1 GEHE
+
+chest
+hip
+8.138082
+1 GEIA
+
+head
+chest
+3.4286344
+1 GEIC
+
+non1
+hip
+6.0468683
+0 
+
+r_collar
+non1
+3.2192438
+0 
+
+r_uparm
+r_collar
+5.4862194
+1 GEJB
+
+r_foarm
+r_uparm
+8.508704
+1 GEJD
+
+r_hand
+r_foarm
+2.122362
+1 GEJF
+
+non2
+hip
+6.0468683
+0 
+
+l_collar
+non2
+3.2192438
+0 
+
+l_uparm
+l_collar
+5.4862194
+1 GFAB
+
+l_foarm
+l_uparm
+8.508704
+1 GFAD
+
+l_hand
+l_foarm
+2.122362
+1 GFAF
+
+l_hip
+root
+1.6370047
+0 
+
+l_femur
+l_hip
+5.385395
+1 GFBB
+
+l_tibia
+l_femur
+5.146657
+1 GFBD
+
+l_foot
+l_tibia
+6.125145
+1 GFBF
+
+r_hip
+root
+1.6370047
+0 
+
+r_femur
+r_hip
+5.385395
+1 GFCB
+
+r_tibia
+r_femur
+5.146657
+1 GFCD
+
+r_foot
+r_tibia
+6.125145
+1 GFCF

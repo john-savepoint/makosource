@@ -1,0 +1,143 @@
+:HEADER_BLOCK 2
+:SKELETON cat_st
+:BONES 28
+
+dou1
+root
+2.2675066
+1 BDGB
+
+kubi
+dou1
+1.1134344
+1 BDGD
+
+atama
+kubi
+1.1344409
+1 BDGF
+
+ago
+atama
+0.53741646
+1 BDHB
+
+non1
+dou1
+1.2736075
+0 
+
+l_kata
+non1
+1.8491424
+1 BDHD
+
+l_ude
+l_kata
+1.1812595
+1 BDHF
+
+l_te
+l_ude
+0.9942694
+1 BDIB
+
+l_teyubi
+l_te
+0.657738
+1 BDID
+
+non2
+dou1
+1.2736075
+0 
+
+r_kata
+non2
+1.8491424
+1 BDIF
+
+r_ude
+r_kata
+1.1812595
+1 BDJB
+
+r_te
+r_ude
+0.9942694
+1 BDJD
+
+r_teyubi
+r_te
+0.657738
+1 BDJF
+
+dou2
+root
+2.1889465
+1 BEAB
+
+o1
+dou2
+1.7572258
+1 BEAD
+
+o2
+o1
+1.7446432
+1 BEAF
+
+o3
+o2
+2.1336608
+1 BEBB
+
+non3
+root
+2.101099
+0 
+
+l_momo
+non3
+1.8376971
+1 BEBD
+
+l_sune
+l_momo
+1.1076641
+1 BEBF
+
+l_asi
+l_sune
+1.3255043
+1 BECB
+
+l_asiyub
+l_asi
+0.6300863
+1 BECD
+
+non4
+root
+2.101099
+0 
+
+r_momo
+non4
+1.8376971
+1 BECF
+
+r_sune
+r_momo
+1.1076641
+1 BEDB
+
+r_asi
+r_sune
+1.3255043
+1 BEDD
+
+r_asiyub
+r_asi
+0.6300863
+1 BEDF
