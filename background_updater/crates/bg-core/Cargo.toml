@@ -1,0 +1,18 @@
+[package]
+name = "bg-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+bg-formats = { workspace = true }
+image.workspace = true
+color_quant.workspace = true
+thiserror.workspace = true
+anyhow.workspace = true
+
+# FF7 toolkit dependencies (relative paths)
+ff7-archive = { path = "../../../../tools/ff7-toolkit/crates/ff7-archive" }
+ff7-compression = { path = "../../../../tools/ff7-toolkit/crates/ff7-compression" }
+ff7-texture = { path = "../../../../tools/ff7-toolkit/crates/ff7-texture" }

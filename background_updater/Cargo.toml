@@ -1,0 +1,32 @@
+[workspace]
+members = [
+    "crates/bg-core",
+    "crates/bg-cli",
+    "crates/bg-formats",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["John Zealand-Doyle"]
+license = "MIT"
+repository = "https://github.com/ff7-toolkit/background-updater"
+
+[workspace.dependencies]
+# External dependencies
+image = "0.25"
+ddsfile = "0.5"
+color_quant = "1.1"
+clap = { version = "4.4", features = ["derive"] }
+thiserror = "1.0"
+anyhow = "1.0"
+
+# Internal workspace crates
+bg-core = { path = "crates/bg-core" }
+bg-formats = { path = "crates/bg-formats" }
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

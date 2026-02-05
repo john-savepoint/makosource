@@ -1,0 +1,3967 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+The content has been processed where security check has been disabled.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Security check has been disabled - content may contain sensitive information
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.github/
+  workflows/
+    build.ps1
+    main.yml
+misc/
+  version.rc.in
+src/
+  export.cpp
+  export.h
+  file.cpp
+  file.h
+  gl.cpp
+  import.cpp
+  import.h
+  layers.cpp
+  layers.h
+  palettes.cpp
+  palettes.h
+  palmer_gl.h
+  palmer.cpp
+  palmer.h
+  section.cpp
+  section.h
+  util_menu.cpp
+.gitignore
+.vsconfig
+CMakeLists.txt
+CMakePresets.json
+COPYING.txt
+README.md
+vcpkg.json
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path=".github/workflows/build.ps1">
+#*****************************************************************************#
+#    Copyright (C) 2014 Aali132                                               #
+#    Copyright (C) 2024 Julian Xhokaxhiu                                      #
+#                                                                             #
+#    This file is part of Palmer                                              #
+#                                                                             #
+#    Palmer is free software: you can redistribute it and\or modify           #
+#    it under the terms of the GNU General Public License as published by     #
+#    the Free Software Foundation, either version 3 of the License            #
+#                                                                             #
+#    Palmer is distributed in the hope that it will be useful,                #
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of           #
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the            #
+#    GNU General Public License for more details.                             #
+#*****************************************************************************#
+
+Set-StrictMode -Version Latest
+
+if ($env:_BUILD_BRANCH -eq "refs/heads/master" -Or $env:_BUILD_BRANCH -eq "refs/tags/canary")
+{
+  $env:_IS_BUILD_CANARY = "true"
+  $env:_IS_GITHUB_RELEASE = "true"
+}
+elseif ($env:_BUILD_BRANCH -like "refs/tags/*")
+{
+  $env:_CHANGELOG_VERSION = $env:_BUILD_VERSION.Substring(0,$env:_BUILD_VERSION.LastIndexOf('.')).Replace('.','')
+  $env:_BUILD_VERSION = $env:_BUILD_VERSION.Substring(0,$env:_BUILD_VERSION.LastIndexOf('.')) + ".0"
+  $env:_IS_GITHUB_RELEASE = "true"
+}
+$env:_RELEASE_VERSION = "v${env:_BUILD_VERSION}"
+
+$vcpkgRoot = "C:\vcpkg"
+$vcpkgBaseline = [string](jq --arg baseline "builtin-baseline" -r '.[$baseline]' vcpkg.json)
+$vcpkgOriginUrl = &"git" -C $vcpkgRoot remote get-url origin
+$vcpkgBranchName = &"git" -C $vcpkgRoot branch --show-current
+
+$releasePath = [string](jq -r '.configurePresets[0].binaryDir' CMakePresets.json).Replace('${sourceDir}/', '')
+
+Write-Output "--------------------------------------------------"
+Write-Output "BUILD CONFIGURATION: $env:_RELEASE_CONFIGURATION"
+Write-Output "RELEASE VERSION: $env:_RELEASE_VERSION"
+Write-Output "VCPKG ORIGIN: $vcpkgOriginUrl"
+Write-Output "VCPKG BRANCH: $vcpkgBranchName"
+Write-Output "VCPKG BASELINE: $vcpkgBaseline"
+Write-Output "--------------------------------------------------"
+
+Write-Output "_BUILD_VERSION=${env:_BUILD_VERSION}" >> ${env:GITHUB_ENV}
+Write-Output "_RELEASE_VERSION=${env:_RELEASE_VERSION}" >> ${env:GITHUB_ENV}
+Write-Output "_IS_BUILD_CANARY=${env:_IS_BUILD_CANARY}" >> ${env:GITHUB_ENV}
+Write-Output "_IS_GITHUB_RELEASE=${env:_IS_GITHUB_RELEASE}" >> ${env:GITHUB_ENV}
+Write-Output "_CHANGELOG_VERSION=${env:_CHANGELOG_VERSION}" >> ${env:GITHUB_ENV}
+
+# Install CMake
+Write-Output "Installing cmake v${env:_WINGET_CMAKE}..."
+winget install Kitware.CMake --version ${env:_WINGET_CMAKE} --silent --accept-source-agreements --accept-package-agreements --disable-interactivity | out-null
+cmake --version
+
+# Install Powershell
+Write-Output "Installing powershell v${env:_WINGET_POWERSHELL}..."
+winget install Microsoft.PowerShell --version ${env:_WINGET_POWERSHELL} --silent --accept-source-agreements --accept-package-agreements --disable-interactivity | out-null
+pwsh --version
+
+# Install Visual Studio Enterprise
+Write-Output "Installing VisualStudio 2022 Enterprise v${env:_WINGET_VS2022}..."
+winget install Microsoft.VisualStudio.2022.Enterprise --version ${env:_WINGET_VS2022} --silent --accept-source-agreements --accept-package-agreements --disable-interactivity | out-null
+
+# Load vcvarsall environment for x86
+$vcvarspath = &"${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -prerelease -latest -property InstallationPath
+cmd.exe /c "call `"$vcvarspath\VC\Auxiliary\Build\vcvarsall.bat`" x86 && set > %temp%\vcvars.txt"
+Get-Content "$env:temp\vcvars.txt" | Foreach-Object {
+  if ($_ -match "^(.*?)=(.*)$") {
+    Set-Content "env:\$($matches[1])" $matches[2]
+  }
+}
+
+# Unset VCPKG_ROOT if set
+[Environment]::SetEnvironmentVariable('VCPKG_ROOT','')
+
+# Add Github Packages registry
+nuget sources add -Name github -Source "https://nuget.pkg.github.com/${env:GITHUB_REPOSITORY_OWNER}/index.json" -Username ${env:GITHUB_REPOSITORY_OWNER} -Password ${env:GITHUB_PACKAGES_PAT} -StorePasswordInClearText
+nuget setApiKey ${env:GITHUB_PACKAGES_PAT} -Source "https://nuget.pkg.github.com/${env:GITHUB_REPOSITORY_OWNER}/index.json"
+nuget sources list
+
+# Vcpkg setup
+git -C $vcpkgRoot pull --all
+git -C $vcpkgRoot checkout $vcpkgBaseline
+git -C $vcpkgRoot clean -fxd
+
+cmd.exe /c "call $vcpkgRoot\bootstrap-vcpkg.bat"
+
+vcpkg integrate install
+
+# Start the build
+cmake --preset "${env:_RELEASE_CONFIGURATION}" -D_EXE_VERSION="$env:_BUILD_VERSION"
+cmake --build --preset "${env:_RELEASE_CONFIGURATION}"
+
+# Start the packaging
+mkdir .dist\pkg\Palmer | Out-Null
+Copy-Item -R "$releasePath\bin\*" .dist\pkg\Palmer
+
+7z a ".\.dist\${env:_RELEASE_NAME}-${env:_RELEASE_VERSION}.zip" ".\.dist\pkg\Palmer\*"
+</file>
+
+<file path=".github/workflows/main.yml">
+name: Palmer
+
+run-name: 0.8.${{ github.run_number }}
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - master
+    tags:
+    - "*"
+  pull_request:
+    branches:
+    - master
+
+env:
+  _IS_BUILD_CANARY: false
+  _IS_GITHUB_RELEASE: false
+  _RELEASE_NAME: Palmer
+  _RELEASE_VERSION: v0
+  _RELEASE_CONFIGURATION: Release
+  _BUILD_BRANCH: "${{ github.ref }}"
+  _BUILD_VERSION: "0.8.${{ github.run_number }}"
+  _CHANGELOG_VERSION: "0"
+  # GIT: Fix reporting from stderr to stdout
+  GIT_REDIRECT_STDERR: 2>&1
+  # Tools versions
+  _WINGET_CMAKE: 3.28.3
+  _WINGET_POWERSHELL: 7.4.1
+  _WINGET_VS2022: 17.8.6
+
+jobs:
+  Palmer:
+    runs-on: windows-latest
+    timeout-minutes: 1440
+    strategy:
+      max-parallel: 1
+    steps:
+    - name: Set Git Config
+      run: |
+        git config --global core.autocrlf false
+        git config --global core.filemode false
+        git config --global core.longpaths true
+    - name: Checkout
+      uses: actions/checkout@v4.1.0
+    - name: Install WinGet
+      uses: Cyberboss/install-winget@v1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Build
+      run: ".github/workflows/build.ps1"
+      shell: pwsh
+      env:
+        GITHUB_PACKAGES_PAT: ${{ secrets.GITHUB_TOKEN }}
+    - name: Publish PR artifacts
+      if: env._IS_GITHUB_RELEASE == 'false' && success()
+      uses: actions/upload-artifact@v4.0.0
+      with:
+        name: "${{ env._RELEASE_NAME }}-${{ env._RELEASE_VERSION }}"
+        path: ".dist/*.zip"
+    - name: Publish Canary release
+      uses: ncipollo/release-action@v1
+      if: env._IS_GITHUB_RELEASE == 'true' && env._IS_BUILD_CANARY == 'true' && success()
+      with:
+        artifacts: ".dist/*.zip"
+        allowUpdates: true
+        generateReleaseNotes: true
+        prerelease: true
+        removeArtifacts: true
+        tag: canary
+        name: "${{ env._RELEASE_NAME }}-${{ env._RELEASE_VERSION }}"
+        body: |
+          This is a canary build. Please be aware it may be prone to crashing and is NOT tested by anyone. Use this build AT YOUR OWN RISK!
+    - name: Publish Stable release
+      uses: ncipollo/release-action@v1
+      if: env._IS_GITHUB_RELEASE == 'true' && env._IS_BUILD_CANARY == 'false' && success()
+      with:
+        artifacts: ".dist/*.zip"
+        generateReleaseNotes: true
+        makeLatest: true
+        removeArtifacts: true
+        name: "${{ env._RELEASE_NAME }}-${{ env._RELEASE_VERSION }}"
+</file>
+
+<file path="misc/version.rc.in">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#include <windows.h>
+
+#define VER_FILEVERSION             @_EXE_RCVERSION@
+#define VER_FILEVERSION_STR         "@_EXE_RCSTRVERSION@\0"
+
+#define VER_PRODUCTVERSION          @_EXE_RCVERSION@
+#define VER_PRODUCTVERSION_STR      "@_EXE_RCSTRVERSION@\0"
+
+#define VER_INTERNALNAME            "@RELEASE_NAME@"
+#define VER_PRODUCTNAME             "@RELEASE_NAME@"
+#define VER_ORIGINALFILENAME        "@RELEASE_NAME@.exe"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     VER_FILEVERSION
+PRODUCTVERSION  VER_PRODUCTVERSION
+FILEOS          VOS__WINDOWS32
+FILETYPE        VFT_APP
+FILESUBTYPE     VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName",      "Julian Xhokaxhiu"
+            VALUE "FileDescription",  "FF7 Field background editor"
+            VALUE "FileVersion",      VER_FILEVERSION_STR
+            VALUE "InternalName",     VER_INTERNALNAME
+            VALUE "LegalCopyright",   "GPLv3"
+            VALUE "LegalTrademarks1", ""
+            VALUE "LegalTrademarks2", ""
+            VALUE "OriginalFilename", VER_ORIGINALFILENAME
+            VALUE "ProductName",      VER_PRODUCTNAME
+            VALUE "ProductVersion",   VER_PRODUCTVERSION_STR
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        /* The following line should only be modified for localized versions.     */
+        /* It consists of any number of WORD,WORD pairs, with each pair           */
+        /* describing a language,codepage combination supported by the file.      */
+        /*                                                                        */
+        /* For example, a file might have values "0x409,1252" indicating that it  */
+        /* supports English language (0x409) in the Windows ANSI codepage (1252). */
+
+        VALUE "Translation", 0x409, 1252
+
+    END
+END
+</file>
+
+<file path="src/export.cpp">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#include <stdio.h>
+#include <libpng16/png.h>
+#include <direct.h>
+
+#include "palmer.h"
+
+void make_path(char *name)
+{
+	char *next = name;
+
+	while((next = strchr(next, '/')))
+	{
+		char tmp[128];
+
+		while(next[0] == '/') next++;
+
+		strncpy(tmp, name, next - name);
+		tmp[next - name] = 0;
+
+		mkdir(tmp);
+	}
+}
+
+bool write_png(char *filename, uint32_t width, uint32_t height, char *data)
+{
+	uint32_t y;
+	png_bytepp rowptrs;
+	FILE *f;
+	png_infop info_ptr;
+	png_structp png_ptr;
+
+	if(fopen_s(&f, filename, "wb"))
+	{
+		printf("couldn't open file %s for writing: %s", filename, _strerror(NULL));
+		return false;
+	}
+
+	png_ptr = png_create_write_struct(PNG_LIBPNG_VER_STRING, (png_voidp)0, 0, 0);
+
+	if(!png_ptr)
+	{
+		fclose(f);
+		return false;
+	}
+
+	info_ptr = png_create_info_struct(png_ptr);
+
+	if(!info_ptr)
+	{
+		png_destroy_write_struct(&png_ptr, (png_infopp)NULL);
+		fclose(f);
+		return false;
+	}
+
+	png_init_io(png_ptr, f);
+
+	png_set_compression_level(png_ptr, 1);
+
+	png_set_IHDR(png_ptr, info_ptr, width, height, 8, PNG_COLOR_TYPE_RGB_ALPHA, PNG_INTERLACE_NONE, PNG_COMPRESSION_TYPE_DEFAULT, PNG_FILTER_TYPE_DEFAULT);
+
+	rowptrs = (png_bytepp)malloc(height * 4);
+
+	for(y = 0; y < height; y++) rowptrs[y] = (png_bytep)&data[y * width * 4];
+
+	png_set_rows(png_ptr, info_ptr, rowptrs);
+
+	png_write_png(png_ptr, info_ptr, 0, NULL);
+
+	png_destroy_write_struct(&png_ptr, &info_ptr);
+
+	free(rowptrs);
+
+	fclose(f);
+
+	return true;
+}
+
+bool export_png(char *name, bool fullpath)
+{
+	int i, j, k, l, m;
+	int extents[4];
+	int width, height;
+	char drive[_MAX_DRIVE];
+	char dir[_MAX_DIR];
+
+	if(fullpath) _splitpath(name, drive, dir, 0, 0);
+
+	extents[0] = 0;
+	extents[1] = 0;
+	extents[2] = 0;
+	extents[3] = 0;
+
+	for(i = 0; i < EXPORT_LAYERS; i++)
+	{
+		if(state.export_extents[i][0] < extents[0]) extents[0] = state.export_extents[i][0];
+		if(state.export_extents[i][1] > extents[1]) extents[1] = state.export_extents[i][1];
+		if(state.export_extents[i][2] < extents[2]) extents[2] = state.export_extents[i][2];
+		if(state.export_extents[i][3] > extents[3]) extents[3] = state.export_extents[i][3];
+	}
+
+	width = extents[1] - extents[0];
+	height = extents[3] - extents[2];
+
+	for(i = 0; i < EXPORT_LAYERS; i++)
+	{
+		uint32_t *pixels;
+		char filename[4096];
+
+		if(!state.export_layers[i]) continue;
+
+		pixels = (uint32_t*)calloc(width * height, 4);
+
+		for(j = 0; j < width / 16; j++)
+		{
+			for(k = 0; k < height / 16; k++)
+			{
+				uint32_t x = 64 + (j * 16 + extents[0]) / 16;
+				uint32_t y = 64 + (k * 16 + extents[2]) / 16;
+				struct layer_tile *tile = state.export_layers[i][x * 128 + y];
+				uint32_t page, palette_index, src_x, src_y;
+
+				if(!tile) continue;
+
+				palette_index = tile->palette_index;
+
+				if(tile->fx_page)
+				{
+					page = tile->fx_page;
+					src_x = tile->fx_source_x;
+					src_y = tile->fx_source_y;
+				}
+				else
+				{
+					page = tile->source_page;
+					src_x = tile->source_x;
+					src_y = tile->source_y;
+				}
+
+				if(state.layers[page].type == 1 && tile->palette_index >= state.palettes_num) continue;
+
+				for(l = 0; l < state.export_tile_size; l++)
+				{
+					for(m = 0; m < state.export_tile_size; m++)
+					{
+						uint32_t color;
+
+						if(state.layers[page].type == 1)
+						{
+							uint8_t pixel = ((uint8_t *)state.layers[page].data)[src_x + l + (src_y + m) * 256];
+							uint16_t pal_color = state.palettes[palette_index][pixel];
+
+							if(state.colorkey[palette_index] && pixel == 0) color = 0;
+							else
+							{
+								if(!pal_color) pal_color = state.palettes[palette_index][0];
+
+								color = ((pal_color & 0x001F) * 255) / 31;
+								color |= ((((pal_color & 0x03E0) >> 5) * 255) / 31) << 8;
+								color |= ((((pal_color & 0x7C00) >> 10) * 255) / 31) << 16;
+								color |= 255 << 24; // - (((pal_color & 0x8000) >> 15) * 255);
+							}
+						}
+
+						if(state.layers[page].type == 2)
+						{
+							uint16_t pal_color = ((uint16_t *)state.layers[page].data)[src_x + l + (src_y + m) * 256];
+
+							if(pal_color == 0) color = 0;
+							else
+							{
+								color = (((pal_color & 0xF800) >> 11) * 255) / 31;
+								color |= ((((pal_color & 0x07E0) >> 5) * 255) / 63) << 8;
+								color |= ((((pal_color & 0x001F) >> 0) * 255) / 31) << 16;
+								color |= 255 << 24;
+							}
+						}
+
+						pixels[j * 16 + l + (k * 16 + m) * width] = color;
+					}
+				}
+			}
+		}
+
+		if(fullpath) sprintf(filename, "%s/%s/%s_%i_%08i.png", drive, dir, state.name, state.current_layer, i);
+		else
+		{
+			sprintf(filename, "%s_batch", state.name);
+			mkdir(filename);
+			sprintf(filename, "%s_batch/%s_%i_%08i.png", state.name, state.name, state.current_layer, i);
+		}
+
+		if(!write_png(filename, width, height, (char *)pixels))
+		{
+			std::ostringstream tmp;
+			tmp << "Couldn't write PNG: " << filename;
+
+			MessageBoxA(0, tmp.str().c_str(), "Error", MB_ICONERROR | MB_OK);
+			free(pixels);
+			return false;
+		}
+
+		free(pixels);
+	}
+
+	return true;
+}
+</file>
+
+<file path="src/export.h">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#pragma once
+
+#include "palmer.h"
+
+bool write_png(char *filename, uint32_t width, uint32_t height, char *data);
+bool export_png(char *name, bool fullpath);
+</file>
+
+<file path="src/file.cpp">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#include <malloc.h>
+#include <stdio.h>
+#include <sys/stat.h>
+
+#include <gl/freeglut.h>
+#include <stdlib.h>
+
+#include "palmer.h"
+#include "section.h"
+#include "layers.h"
+#include "palettes.h"
+#include "import.h"
+
+void *old_buffer = 0;
+uint32_t old_buffer_end;
+
+void *malloc_read(FILE *f, int size)
+{
+	char *ret = (char*)malloc(size);
+	char *data = ret;
+	int res;
+
+	do
+	{
+		res = fread(data, 1, size, f);
+		if(res != 0)
+		{
+			size -= res;
+			data += res;
+		}
+		else return ret;
+	} while(size);
+
+	return ret;
+}
+
+uint32_t unpack_lzs(uint32_t source, uint32_t dest, uint32_t real_source_end)
+{
+	uint32_t bit_counter;
+	uint32_t source_end;
+	uint32_t dest_start;
+	uint32_t block_byte;
+	uint32_t v7;
+	uint32_t v8;
+	uint32_t reference_out_end;
+	uint32_t reference_in;
+
+	bit_counter = 0;
+	source_end = source + *(uint32_t *)source + 3;
+	source += 4;
+	dest_start = dest;
+
+	if(source_end > real_source_end)
+	{
+		MessageBoxA(0, "LZS decompression would overflow, not doing that.", "Error", MB_ICONERROR | MB_OK);
+		return 0;
+	}
+
+	while(1)
+	{
+		if(!bit_counter)
+		{
+			bit_counter = 8;
+			if(source >= source_end) return dest - dest_start;
+			block_byte = *(uint8_t *)source++;
+		}
+
+		if(!(block_byte & 1)) break;
+
+		if(source >= source_end) return dest - dest_start;
+
+		*(uint8_t *)dest++ = *(uint8_t *)source++;
+
+LABEL_17:
+		block_byte >>= 1;
+		--bit_counter;
+	}
+
+	if(source < (unsigned int)source_end)
+	{
+		v7 = *(uint8_t *)source++;
+		v8 = *(uint8_t *)source++;
+		v7 |= 16 * (uint8_t)(v8 & 0xF0);
+		reference_out_end = dest + (v8 & 0xF) + 3;
+		reference_in = dest - ((dest - dest_start - (v7 - 4078)) & 0xFFF);
+
+		while(reference_in < dest_start)
+		{
+			*(uint8_t *)dest++ = 0;
+			++reference_in;
+		}
+
+		while(dest < reference_out_end) *(uint8_t *)dest++ = *(uint8_t *)reference_in++;
+
+		goto LABEL_17;
+	}
+
+	return dest - dest_start;
+}
+
+void parse_field_file(void *buffer, uint32_t buffer_end)
+{
+	struct field_header *header = (struct field_header *)buffer;
+	uint32_t section3_iterator;
+	uint32_t section8_iterator;
+	uint32_t section3_size;
+	uint32_t section8_size;
+	uint32_t i;
+
+	section3_iterator = header->section3 + (uint32_t)buffer;
+	section8_iterator = header->section8 + (uint32_t)buffer;
+
+	if(section3_iterator < (uint32_t)buffer || section3_iterator > buffer_end || section8_iterator < (uint32_t)buffer || section8_iterator > buffer_end)
+	{
+		MessageBoxA(0, "Bad sections, not going to read this file.", "Error", MB_ICONERROR | MB_OK);
+		return;
+	}
+
+	section3_size = section_read<uint32_t>(&section3_iterator);
+	section8_size = section_read<uint32_t>(&section8_iterator);
+
+	if(section3_iterator + section3_size - 4 > buffer_end || section8_iterator + section8_size - 4 > buffer_end)
+	{
+		MessageBoxA(0, "Bad sections, not going to read this file.", "Error", MB_ICONERROR | MB_OK);
+		return;
+	}
+
+	if(old_buffer) free(old_buffer);
+
+	old_buffer = buffer;
+	old_buffer_end = buffer_end;
+
+	for(i = 0; i < EXPORT_LAYERS; i++)
+	{
+		if(state.export_layers[i]) free(state.export_layers[i]);
+	}
+
+	for(i = 0; i < FF7_LAYERS; i++)
+	{
+		glDeleteTextures(PALETTES, state.layers[i].textures);
+		if(state.layers[i].imported_data) free(state.layers[i].imported_data);
+	}
+
+	memset(&state, 0, sizeof(state));
+	state.scale = 1;
+
+	read_palettes(section3_iterator, section3_size);
+	if(state.palettes_ok) read_layers(section8_iterator, section8_size);
+
+	state.dirty_menu = true;
+
+	redraw();
+}
+
+void read_field_file(char *file)
+{
+	struct stat s;
+	FILE *f;
+	int size;
+	void *buffer;
+	struct field_header *header;
+
+	if(stat(file, &s))
+	{
+		MessageBoxA(0, "Couldn't find file!", "Error", MB_ICONERROR | MB_OK);
+		return;
+	}
+
+	size = s.st_size;
+
+	if(size > 0x2000000)
+	{
+		MessageBoxA(0, "Cowardly refusing to open file larger than 32MB.", "Error", MB_ICONERROR | MB_OK);
+		return;
+	}
+
+	f = fopen(file, "rb");
+
+	if(!f)
+	{
+		MessageBoxA(0, "Couldn't open file!", "Error", MB_ICONERROR | MB_OK);
+		return;
+	}
+
+	buffer = malloc_read(f, size);
+
+	header = (struct field_header *)buffer;
+
+	if(header->unknown != 0 || header->sections != 9 || header->section0 != 0x2A)
+	{
+		void *buffer2;
+
+		size *= 10;
+		buffer2 = malloc(size);
+		if(!(size = unpack_lzs((uint32_t)buffer, (uint32_t)buffer2, (uint32_t)buffer + size / 10)))
+		{
+			free(buffer2);
+		}
+		else
+		{
+			free(buffer);
+			buffer = buffer2;
+
+			header = (struct field_header *)buffer;
+		}
+
+		if(header->unknown != 0 || header->sections != 9 || header->section0 != 0x2A)
+		{
+			uint32_t ret = MessageBoxA(0, "This doesn't look like a field file. Open anyway?", "Warning", MB_ICONWARNING | MB_OKCANCEL);
+
+			if(ret != IDCANCEL) parse_field_file(buffer, (uint32_t)buffer + size);
+			else free(buffer);
+		}
+		else parse_field_file(buffer, (uint32_t)buffer + size);
+	}
+	else parse_field_file(buffer, (uint32_t)buffer + size);
+
+	if(state.palettes_ok && state.layers_ok)
+	{
+		char title[4096];
+
+		_splitpath(file, 0, 0, state.name, 0);
+
+		sprintf(title, "Palmer - FF7 Field Background Editor (%s)", state.name);
+
+		glutSetWindowTitle(title);
+	}
+
+	fclose(f);
+
+	return;
+}
+</file>
+
+<file path="src/file.h">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#pragma once
+
+void read_field_file(char *file);
+</file>
+
+<file path="src/gl.cpp">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#include <windows.h>
+#include <gl/glew.h>
+
+#include "palmer.h"
+#include "layers.h"
+#include "palettes.h"
+#include "layers.h"
+
+extern bool no_blend_equation;
+
+void gl_init()
+{
+	glewInit();
+
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_ONE, GL_ZERO);
+	glEnable(GL_ALPHA_TEST);
+	glAlphaFunc(GL_GREATER, 0.0f);
+	glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LEQUAL);
+	glEnable(GL_TEXTURE_2D);
+	glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+	glClearDepth(1.0f);
+}
+
+void export_tile(struct layer_tile *tile, int size, uint32_t layer)
+{
+	int tile_x, tile_y;
+	int x, y;
+	uint32_t i = 0;
+
+	tile_x = tile->x + abs(tile->x % 16);
+	tile_y = tile->y + abs(tile->y % 16);
+
+	x = 64 + (tile_x / 16);
+	y = 64 + (tile_y / 16);
+
+	if(x >= 128 || y >= 128 || x < 0 || y < 0) return;
+
+	if(layer == 2) i += NORMAL_LAYERS / 2;
+
+	if(tile->anim_group) i += NORMAL_LAYERS + (tile->anim_group + tile->anim_bitmask * 64) * (ANIMATION_LAYERS / (64 * 256));
+	if(tile->fx_page) i += ANIMATION_LAYERS;
+
+	for(; i < EXPORT_LAYERS; i++)
+	{
+		if(!state.export_layers[i]) state.export_layers[i] = (layer_tile**)calloc(128 * 128, sizeof(*state.export_layers));
+
+		if(!state.export_layers[i][x * 128 + y])
+		{
+			state.export_layers[i][x * 128 + y] = tile;
+			if(tile_x < state.export_extents[i][0]) state.export_extents[i][0] = tile_x;
+			if(tile_x + size > state.export_extents[i][1]) state.export_extents[i][1] = tile_x + size;
+			if(tile_y < state.export_extents[i][2]) state.export_extents[i][2] = tile_y;
+			if(tile_y + size > state.export_extents[i][3]) state.export_extents[i][3] = tile_y + size;
+			return;
+		}
+	}
+
+	MessageBoxA(0, "Overflow", "Error", MB_ICONERROR | MB_OK);
+}
+
+void render_layer(struct layer_tile *tiles, uint32_t num, uint32_t tile_size, uint32_t layer)
+{
+	uint32_t pass, i;
+
+	state.export_tile_size = tile_size;
+
+	for(pass = 0; pass < 2; pass++)
+	{
+		for(i = 0; i < num; i++)
+		{
+			struct layer_tile *tile = &tiles[i];
+			float x1 = (float)tile->x;
+			float x2 = (float)tile->x + tile_size;
+			float y1 = (float)tile->y;
+			float y2 = (float)tile->y + tile_size;
+			float u1 = tile->source_x / 256.0f;
+			float u2 = (tile->source_x + tile_size) / 256.0f;
+			float v1 = tile->source_y / 256.0f;
+			float v2 = (tile->source_y + tile_size) / 256.0f;
+			uint32_t page = tile->source_page;
+			float z;
+
+			if(!no_blend_equation) glBlendEquation(GL_FUNC_ADD);
+			glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+			glBlendFunc(GL_ONE, GL_ZERO);
+			glDepthMask(GL_TRUE);
+
+			if(tile->use_fx_page)
+			{
+				if(pass == 0) continue;
+
+				u1 = tile->fx_source_x / 256.0f;
+				u2 = (tile->fx_source_x + tile_size) / 256.0f;
+				v1 = tile->fx_source_y / 256.0f;
+				v2 = (tile->fx_source_y + tile_size) / 256.0f;
+
+				page = tile->fx_page;
+
+				if(page >= 42) continue;
+
+				switch(tile->blend_mode)
+				{
+					case 0:
+						glColor4f(1.0f, 1.0f, 1.0f, 0.5f);
+						glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+						glDepthMask(GL_FALSE);
+						if(layer < 3 && state.layers[page].type == 1 && page < 0x18) MessageBoxA(0, "Wrong page for blend mode 0\n", "Glitch", MB_ICONWARNING | MB_OK);
+						break;
+					case 1:
+						glBlendFunc(GL_ONE, GL_ONE);
+						glDepthMask(GL_FALSE);
+						if(layer < 3 && state.layers[page].type == 1 && page < 0xF || page >= 0x18) MessageBoxA(0, "Wrong page for blend mode 1\n", "Glitch", MB_ICONWARNING | MB_OK);
+						break;
+					case 2:
+						if(!no_blend_equation) glBlendEquation(GL_FUNC_REVERSE_SUBTRACT);
+						glBlendFunc(GL_ONE, GL_ONE);
+						glDepthMask(GL_FALSE);
+						break;
+					case 3:
+						glColor4f(1.0f, 1.0f, 1.0f, 0.25f);
+						glBlendFunc(GL_SRC_ALPHA, GL_ONE);
+						glDepthMask(GL_FALSE);
+						break;
+					default:
+						MessageBoxA(0, "Unknown blend mode\n", "Glitch", MB_ICONWARNING | MB_OK);
+				}
+			}
+			else if(pass == 1) continue;
+
+			if(page >= 42) continue;
+
+			if(tile->anim_group >= 64) tile->anim_group = 0;
+
+			export_tile(tile, tile_size, layer);
+
+			if(tile->anim_group)
+			{
+				if(tile->anim_bitmask) state.used_anim_state[tile->anim_group] |= tile->anim_bitmask;
+				if(!(state.anim_state[tile->anim_group] & tile->anim_bitmask)) continue;
+			}
+
+			if(layer == 1) z = 0.999999f;
+			else z = (float)(tile->fixed_z / 10000000.0);
+
+			if(state.layers[page].type == 1)
+			{
+				if(tile->palette_index >= state.palettes_num) continue;
+				glBindTexture(GL_TEXTURE_2D, state.layers[page].textures[tile->palette_index]);
+			}
+			else glBindTexture(GL_TEXTURE_2D, state.layers[page].textures[0]);
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+			glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+			glBegin(GL_QUADS);
+			glTexCoord2f(u1, v1); glVertex3f(x1, y1, z);
+			glTexCoord2f(u2, v1); glVertex3f(x2, y1, z);
+			glTexCoord2f(u2, v2); glVertex3f(x2, y2, z);
+			glTexCoord2f(u1, v2); glVertex3f(x1, y2, z);
+			glEnd();
+		}
+	}
+}
+
+void gl_render_scene()
+{
+	uint32_t i;
+
+	if(!state.first_pass_done)
+	{
+		render_layer(state.layer1_tiles, state.layer1_tiles_num, 16, 1);
+		render_layer(state.layer2_tiles, state.layer2_tiles_num, 16, 2);
+		render_layer(state.layer3_tiles, state.layer3_tiles_num, 32, 3);
+		render_layer(state.layer4_tiles, state.layer4_tiles_num, 32, 4);
+
+		glDepthMask(GL_TRUE);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+		state.first_pass_done = true;
+	}
+
+	for(i = 0; i < EXPORT_LAYERS; i++)
+	{
+		if(state.export_layers[i]) free(state.export_layers[i]);
+	}
+
+	memset(state.export_layers, 0, sizeof(state.export_layers));
+	memset(state.export_extents, 0, sizeof(state.export_extents));
+
+	if(state.current_layer == 0)
+	{
+		render_layer(state.layer1_tiles, state.layer1_tiles_num, 16, 1);
+		render_layer(state.layer2_tiles, state.layer2_tiles_num, 16, 2);
+	}
+
+	else if(state.current_layer == 1) render_layer(state.layer3_tiles, state.layer3_tiles_num, 32, 3);
+	else if(state.current_layer == 2) render_layer(state.layer4_tiles, state.layer4_tiles_num, 32, 4);
+}
+</file>
+
+<file path="src/import.cpp">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#include <stdio.h>
+#include <libpng16/png.h>
+#include <direct.h>
+
+#include "palmer.h"
+#include "export.h"
+
+uint32_t *read_png(char *filename, uint32_t *_width, uint32_t *_height)
+{
+	png_bytepp rowptrs;
+	FILE *f;
+	png_infop info_ptr;
+	png_structp png_ptr;
+	uint32_t width;
+	uint32_t height;
+	uint32_t *data;
+	uint32_t y;
+	uint32_t color_type;
+
+	if(fopen_s(&f, filename, "rb")) return 0;
+
+	png_ptr = png_create_read_struct(PNG_LIBPNG_VER_STRING, (png_voidp)0, 0, 0);
+
+	if(!png_ptr)
+	{
+		fclose(f);
+		return 0;
+	}
+
+	info_ptr = png_create_info_struct(png_ptr);
+
+	if(!info_ptr)
+	{
+		png_destroy_read_struct(&png_ptr, (png_infopp)NULL, (png_infopp)NULL);
+		fclose(f);
+		return 0;
+	}
+
+	png_init_io(png_ptr, f);
+
+	png_read_png(png_ptr, info_ptr, 0, NULL);
+
+	if(png_get_bit_depth(png_ptr, info_ptr) != 8) return 0;
+
+	color_type = png_get_color_type(png_ptr, info_ptr);
+
+	if(color_type != PNG_COLOR_TYPE_RGB && color_type != PNG_COLOR_TYPE_RGB_ALPHA) return 0;
+
+	rowptrs = png_get_rows(png_ptr, info_ptr);
+
+	width = png_get_image_width(png_ptr, info_ptr);
+	*_width = width;
+	height = png_get_image_height(png_ptr, info_ptr);
+	*_height = height;
+
+	data = (uint32_t*)malloc(width * height * 4);
+
+	if(color_type == PNG_COLOR_TYPE_RGB)
+	{
+		uint32_t x;
+
+		for(y = 0; y < height; y++)
+		{
+			uint32_t o = (uint32_t)rowptrs[y];
+
+			for(x = 0; x < width; x++)
+			{
+				uint32_t r = (*(uint8_t *)o++);
+				uint32_t g = (*(uint8_t *)o++);
+				uint32_t b = (*(uint8_t *)o++);
+
+				data[y * width + x] = r | g << 8 | b << 16 | 0xFF000000;
+			}
+		}
+	}
+
+	else for(y = 0; y < height; y++) memcpy(&data[y * width], rowptrs[y], width * 4);
+
+	png_destroy_read_struct(&png_ptr, &info_ptr, (png_infopp)NULL);
+
+	fclose(f);
+
+	return data;
+}
+
+bool import_png(char *name, bool fullpath)
+{
+	int i, j, k, l, m;
+	int extents[4];
+	uint32_t width, height;
+	int org_width, org_height;
+	int tilefact_x = 0;
+	int tilefact_y = 0;
+	char drive[_MAX_DRIVE];
+	char dir[_MAX_DIR];
+
+	if(fullpath) _splitpath(name, drive, dir, 0, 0);
+
+	extents[0] = 0;
+	extents[1] = 0;
+	extents[2] = 0;
+	extents[3] = 0;
+
+	for(i = 0; i < EXPORT_LAYERS; i++)
+	{
+		if(state.export_extents[i][0] < extents[0]) extents[0] = state.export_extents[i][0];
+		if(state.export_extents[i][1] > extents[1]) extents[1] = state.export_extents[i][1];
+		if(state.export_extents[i][2] < extents[2]) extents[2] = state.export_extents[i][2];
+		if(state.export_extents[i][3] > extents[3]) extents[3] = state.export_extents[i][3];
+	}
+
+	org_width = extents[1] - extents[0];
+	org_height = extents[3] - extents[2];
+
+	for(i = 0; i < EXPORT_LAYERS; i++)
+	{
+		uint32_t *pixels;
+		char filename[4096];
+
+		if(!state.export_layers[i]) continue;
+
+		if(fullpath) sprintf(filename, "%s/%s/%s_%i_%08i.png", drive, dir, state.name, state.current_layer, i);
+		else sprintf(filename, "%s_batch/%s_%i_%08i.png", state.name, state.name, state.current_layer, i);
+
+		if(!(pixels = (uint32_t *)read_png(filename, &width, &height)))
+		{
+			std::ostringstream tmp;
+			tmp << "Missing image: " << filename;
+
+			MessageBoxA(0, tmp.str().c_str(), "Error", MB_ICONERROR | MB_OK);
+
+			return false;
+		}
+
+		if(tilefact_x == 0 && tilefact_y == 0)
+		{
+			tilefact_x = width / org_width;
+			tilefact_y = height / org_height;
+
+			for(l = 0; l < 42; l++)
+			{
+				if(state.layers[l].present)
+				{
+					if(state.layers[l].imported_data) continue;
+
+					state.layers[l].imported_width = 256 * tilefact_x;
+					state.layers[l].imported_height = 256 * tilefact_y;
+				}
+			}
+		}
+
+		if((tilefact_x * org_width != width) || (tilefact_y * org_height != height))
+		{
+			std::ostringstream tmp;
+
+			tmp << "Imported image \"" << filename << "\" is " << width << "x" << height << "pixels, expected " << tilefact_x * org_width << "x" << tilefact_y * org_height << ".";
+
+			MessageBoxA(0, tmp.str().c_str(), "Error", MB_ICONERROR | MB_OK);
+
+			return false;
+		}
+
+		for(j = 0; j < width / (16 * tilefact_x); j++)
+		{
+			for(k = 0; k < height / (16 * tilefact_y); k++)
+			{
+				uint32_t x = 64 + (j * 16 + extents[0]) / 16;
+				uint32_t y = 64 + (k * 16 + extents[2]) / 16;
+				struct layer_tile *tile = state.export_layers[i][x * 128 + y];
+				uint32_t page, src_x, src_y;
+
+				if(!tile) continue;
+
+				if(tile->fx_page)
+				{
+					page = tile->fx_page;
+					src_x = tile->fx_source_x;
+					src_y = tile->fx_source_y;
+				}
+				else
+				{
+					page = tile->source_page;
+					src_x = tile->source_x;
+					src_y = tile->source_y;
+				}
+
+				if(state.layers[page].imported_width != 256 * tilefact_x || state.layers[page].imported_height != 256 * tilefact_y)
+				{
+					MessageBoxA(0, "Imported data conflicts with previous import.\nRe-open field file to clear all imports.", "Error", MB_ICONERROR | MB_OK);
+					continue;
+				}
+
+				for(l = 0; l < state.export_tile_size * tilefact_x; l++)
+				{
+					for(m = 0; m < state.export_tile_size * tilefact_y; m++)
+					{
+						uint32_t color = pixels[j * (16 * tilefact_x) + l + (k * (16 * tilefact_y) + m) * width];
+
+						if(!state.layers[page].imported_data) state.layers[page].imported_data = (uint32_t*)calloc(256 * tilefact_x * 256 * tilefact_y, 4);
+						state.layers[page].imported_data[(src_x * tilefact_x) + l + ((src_y * tilefact_y) + m) * (256 * tilefact_y)] = color;
+					}
+				}
+			}
+		}
+
+		free(pixels);
+	}
+
+	for(l = 0; l < FF7_LAYERS; l++)
+	{
+		for(m = 0; m < PALETTES; m++)
+		{
+			glBindTexture(GL_TEXTURE_2D, state.layers[l].textures[m]);
+			glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, state.layers[l].imported_width, state.layers[l].imported_height, 0, GL_RGBA, GL_UNSIGNED_BYTE, state.layers[l].imported_data);
+		}
+	}
+
+	return true;
+}
+
+void write_imported_layers(char *name, bool fullpath)
+{
+	uint32_t i;
+	char drive[_MAX_DRIVE];
+	char dir[_MAX_DIR];
+	bool found_imported_layer = false;
+
+	if(fullpath) _splitpath(name, drive, dir, 0, 0);
+
+	for(i = 0; i < FF7_LAYERS; i++)
+	{
+		uint32_t width = state.layers[i].imported_width;
+		uint32_t height = state.layers[i].imported_height;
+
+		if(!state.layers[i].present) continue;
+
+		if(state.layers[i].imported_data)
+		{
+			char filename[1024];
+
+			found_imported_layer = true;
+
+			if(fullpath) sprintf(filename, "%s/%s/%s_%02i_00.png", drive, dir, state.name, i);
+			else
+			{
+				mkdir("output");
+				sprintf(filename, "output/%s", state.name);
+				mkdir(filename);
+				sprintf(filename, "output/%s/%s_%02i_00.png", state.name, state.name, i);
+			}
+
+			write_png(filename, width, height, (char *)state.layers[i].imported_data);
+		}
+	}
+
+	std::ostringstream tmp;
+
+	if(!found_imported_layer) tmp << "You haven't imported anything yet";
+	else tmp << "Place PNG files in mods/<modpath>/field/" << state.name << "/";
+
+	if(fullpath) MessageBoxA(0, tmp.str().c_str(), "Warning", MB_ICONWARNING | MB_OK);
+}
+</file>
+
+<file path="src/import.h">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#pragma once
+
+bool import_png(char *name, bool fullpath);
+void write_imported_layers(char *name, bool fullpath);
+</file>
+
+<file path="src/layers.cpp">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#include <string.h>
+#include <windows.h>
+#include <gl/gl.h>
+#include <assert.h>
+
+#include "palmer.h"
+#include "section.h"
+#include "palettes.h"
+#include "layers.h"
+
+struct section8_header
+{
+	uint16_t unused1;
+	uint16_t unknown1;
+	uint8_t layer1_present;
+	char unused2[7];
+	char colorkey[20];
+	uint16_t unused3;
+	uint16_t unused4;
+	char unused5[4];
+	uint16_t width;
+	uint16_t height;
+	uint16_t layer1_tiles;
+	uint16_t unknown3;
+	uint16_t unused6;
+	uint16_t unused7;
+};
+
+struct layer2_header
+{
+	uint16_t width;
+	uint16_t height;
+	uint16_t layer2_tiles;
+	uint16_t unknown1;
+	uint16_t unknown2;
+	uint16_t layer2_start_page;
+	uint16_t layer2_end_page;
+	uint16_t unknown5;
+	uint16_t unknown6;
+	uint16_t unknown7;
+	uint16_t unknown8;
+	uint16_t unused1;
+	uint16_t unused2;
+};
+
+struct layer3_header
+{
+	uint16_t width;
+	uint16_t height;
+	uint16_t layer3_tiles;
+	uint16_t unknown1;
+	uint16_t layer3_start_page;
+	uint16_t layer3_end_page;
+	uint16_t unknown4;
+	uint16_t unknown5;
+	uint16_t unused1;
+	uint16_t unused2;
+};
+
+void read_layers(uint32_t iterator, uint32_t size)
+{
+	uint32_t i;
+	uint32_t section_end = iterator + size;
+	struct section8_header header;
+	struct layer2_header layer2_header;
+	struct layer3_header layer3_header;
+	struct layer3_header layer4_header;
+	uint8_t *tmp;
+
+	section_read_bytes(&iterator, &header, sizeof(header));
+
+	if(!header.layer1_present) MessageBoxA(0, "Layer 1 not present!", "Error", MB_ICONERROR | MB_OK);
+
+	state.layer1_width = header.width;
+	state.layer1_height = header.height;
+	state.layer1_tiles_num = header.layer1_tiles;
+	memcpy(state.colorkey, header.colorkey, 20);
+
+	state.layer1_tiles = (struct layer_tile *)iterator;
+	iterator += state.layer1_tiles_num * sizeof(*state.layer1_tiles);
+
+	state.layer2_present = section_read<uint8_t>(&iterator);
+
+	if(state.layer2_present)
+	{
+		section_read_bytes(&iterator, &layer2_header, sizeof(layer2_header));
+		state.layer2_width = layer2_header.width;
+		state.layer2_height = layer2_header.height;
+		state.layer2_tiles_num = layer2_header.layer2_tiles;
+		state.layer2_tiles = (struct layer_tile *)iterator;
+		iterator += state.layer2_tiles_num * sizeof(*state.layer2_tiles);
+	}
+	else state.layer2_tiles_num = 0;
+
+	state.layer3_present = section_read<uint8_t>(&iterator);
+
+	if(state.layer3_present)
+	{
+		state.parallax_back = true;
+		section_read_bytes(&iterator, &layer3_header, sizeof(layer3_header));
+		state.layer3_width = layer3_header.width;
+		state.layer3_height = layer3_header.height;
+		state.layer3_tiles_num = layer3_header.layer3_tiles;
+		state.layer3_tiles = (struct layer_tile *)iterator;
+		iterator += state.layer3_tiles_num * sizeof(*state.layer3_tiles);
+	}
+	else
+	{
+		state.layer3_tiles_num = 0;
+		state.parallax_back = false;
+	}
+
+	state.layer4_present = section_read<uint8_t>(&iterator);
+
+	if(state.layer4_present)
+	{
+		state.parallax_front = true;
+		section_read_bytes(&iterator, &layer4_header, sizeof(layer4_header));
+		state.layer4_width = layer4_header.width;
+		state.layer4_height = layer4_header.height;
+		state.layer4_tiles_num = layer4_header.layer3_tiles;
+		state.layer4_tiles = (struct layer_tile *)iterator;
+		iterator += state.layer4_tiles_num * sizeof(*state.layer4_tiles);
+	}
+	else
+	{
+		state.layer4_tiles_num = 0;
+		state.parallax_front = false;
+	}
+
+	iterator += 7;
+
+	tmp = (uint8_t*)malloc(256 * 256 * 4);
+
+	for(i = 0; i < 42; i++)
+	{
+		state.layers[i].present = section_read<uint16_t>(&iterator);
+
+		if(!state.layers[i].present) continue;
+
+		state.layers[i].unknown1 = section_read<uint16_t>(&iterator);
+		state.layers[i].type = section_read<uint16_t>(&iterator);
+
+		if(state.layers[i].type == 1)
+		{
+			uint32_t j, k;
+
+			state.layers[i].data = (void *)iterator;
+			iterator += 256 * 256;
+
+			glGenTextures(20, state.layers[i].textures);
+
+			for(k = 0; k < state.palettes_num; k++)
+			{
+				for(j = 0; j < 256 * 256; j++)
+				{
+					uint8_t pixel = ((uint8_t *)state.layers[i].data)[j];
+					uint16_t color = state.palettes[k][pixel];
+
+					if(!color) color = state.palettes[k][0];
+
+					tmp[j * 4 + 0] = ((color & 0x001F) * 255) / 31;
+					tmp[j * 4 + 1] = (((color & 0x03E0) >> 5) * 255) / 31;
+					tmp[j * 4 + 2] = (((color & 0x7C00) >> 10) * 255) / 31;
+					tmp[j * 4 + 3] = 255; // - (((color & 0x8000) >> 15) * 255);
+
+					if(state.colorkey[k] && pixel == 0) tmp[j * 4 + 3] = 0;
+				}
+
+				glBindTexture(GL_TEXTURE_2D, state.layers[i].textures[k]);
+				glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 256, 256, 0, GL_RGBA, GL_UNSIGNED_BYTE, tmp);
+			}
+		}
+
+		if(state.layers[i].type == 2)
+		{
+			uint32_t j;
+
+			state.layers[i].data = (void *)iterator;
+			iterator += 256 * 256 * 2;
+
+			for(j = 0; j < 256 * 256; j++)
+			{
+				uint16_t color = ((uint16_t *)state.layers[i].data)[j];
+				tmp[j * 4 + 0] = (((color & 0xF800) >> 11) * 255) / 31;
+				tmp[j * 4 + 1] = (((color & 0x07E0) >> 5) * 255) / 63;
+				tmp[j * 4 + 2] = (((color & 0x001F) >> 0) * 255) / 31;
+				tmp[j * 4 + 3] = 255;
+
+				if(color == 0) tmp[j * 4 + 3] = 0;
+			}
+
+			glGenTextures(1, state.layers[i].textures);
+			glBindTexture(GL_TEXTURE_2D, state.layers[i].textures[0]);
+			glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, 256, 256, 0, GL_RGBA, GL_UNSIGNED_BYTE, tmp);
+		}
+	}
+
+	free(tmp);
+
+	if(strncmp("END", (char *)iterator, 3)) MessageBoxA(0, "Didn't hit end tag in background section.", "Warning", MB_ICONWARNING | MB_OK);
+
+	iterator += 3;
+
+	if(iterator == section_end) state.layers_ok = true;
+	else
+	{
+		MessageBoxA(0, "Read past end of background section.", "Error", MB_ICONERROR | MB_OK);
+		state.layers_ok = false;
+	}
+}
+</file>
+
+<file path="src/layers.h">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#pragma once
+
+#include "palmer.h"
+
+void read_layers(uint32_t iterator, uint32_t size);
+</file>
+
+<file path="src/palettes.cpp">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#include <windows.h>
+
+#include "palmer.h"
+#include "section.h"
+
+#pragma pack(1)
+
+struct section3_header
+{
+	uint32_t size;
+	uint16_t unknown1;
+	uint16_t unknown2;
+	uint16_t palette_colors;
+	uint16_t palettes;
+};
+
+void read_palettes(uint32_t iterator, uint32_t size)
+{
+	uint32_t i;
+	uint32_t section_end = iterator + size;
+	struct section3_header header;
+
+	section_read_bytes(&iterator, &header, sizeof(header));
+
+	state.palettes_num = header.palettes;
+	state.palette_colors = header.palette_colors;
+
+	for(i = 0; i < header.palettes; i++)
+	{
+		state.palettes[i] = (uint16_t *)iterator;
+		iterator += header.palette_colors * 2;
+	}
+
+	if(iterator == section_end) state.palettes_ok = true;
+	else
+	{
+		MessageBoxA(0, "Read past end of palette section.", "Error", MB_ICONERROR | MB_OK);
+		state.palettes_ok = false;
+	}
+}
+</file>
+
+<file path="src/palettes.h">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#pragma once
+
+#include "palmer.h"
+
+void read_palettes(uint32_t iterator, uint32_t size);
+</file>
+
+<file path="src/palmer_gl.h">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#pragma once
+
+#include "palmer.h"
+
+void gl_init();
+void gl_render_scene();
+</file>
+
+<file path="src/palmer.cpp">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#include <windows.h>
+#include <gl/glew.h>
+#include <gl/freeglut.h>
+#include <stdio.h>
+#include <sys/stat.h>
+
+#include "palmer.h"
+#include "palmer_gl.h"
+#include "file.h"
+#include "export.h"
+#include "import.h"
+
+volatile bool dialog = false;
+
+bool no_blend_equation = false;
+
+int mouse_x, mouse_y;
+bool mouse_scroll;
+
+struct field_state state;
+
+HKEY ff7_regkey;
+char filename[4096];
+uint32_t filename_length = sizeof(filename);
+char basedir[4096];
+DWORD basedir_length = sizeof(basedir);
+
+#pragma pack(1)
+
+void redraw()
+{
+	glutPostRedisplay();
+}
+
+void main_display_cb(void)
+{
+	glDepthMask(GL_TRUE);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+	glLoadIdentity();
+	glScalef((float)state.scale, (float)state.scale, 1.0f);
+	glTranslatef((float)state.x_offset, (float)state.y_offset, 0.0f);
+
+	if(state.palettes_ok && state.layers_ok) gl_render_scene();
+
+	if(state.dirty_menu) rebuild_util_menu();
+
+	state.dirty_menu = false;
+
+	glutSwapBuffers();
+}
+
+void main_reshape_cb(int width, int height)
+{
+	int x = width / 2, y = height / 2;
+
+	glViewport(0, 0, width, height);
+
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	glOrtho(-x, width - x, height - y, -y, 1.0, -1.0);
+	glMatrixMode(GL_MODELVIEW);
+}
+
+void mouse_button_cb(int button, int state, int x, int y)
+{
+	if(button != GLUT_MIDDLE_BUTTON) return;
+
+	mouse_x = x;
+	mouse_y = y;
+
+	mouse_scroll = (state == GLUT_DOWN);
+}
+
+void mouse_move_cb(int x, int y)
+{
+	if(mouse_scroll)
+	{
+		state.x_offset += mouse_x - x;
+		state.y_offset += mouse_y - y;
+
+		mouse_x = x;
+		mouse_y = y;
+
+		redraw();
+	}
+}
+
+void mouse_zoom_cb(int wheel, int direction, int x, int y)
+{
+	if(direction == 1)
+	{
+		if(state.scale < 128) state.scale *= 2;
+	}
+	else if(state.scale > 1) state.scale /= 2;
+
+	redraw();
+}
+
+void main_menu_cb(int entry)
+{
+	if(dialog) return;
+
+	switch(entry)
+	{
+		OPENFILENAMEA ofn;
+		int i;
+
+		case 0:
+			memset(&ofn, 0, sizeof(ofn));
+			ofn.lStructSize = sizeof(ofn);
+			ofn.lpstrFile = filename;
+			ofn.nMaxFile = sizeof(filename);
+			ofn.lpstrInitialDir = basedir;
+			dialog = true;
+			if(GetOpenFileName(&ofn)) read_field_file(ofn.lpstrFile);
+			dialog = false;
+			break;
+		case 1:
+			memset(&ofn, 0, sizeof(ofn));
+			ofn.lStructSize = sizeof(ofn);
+			ofn.lpstrFile = filename;
+			ofn.nMaxFile = sizeof(filename);
+			ofn.lpstrInitialDir = basedir;
+			dialog = true;
+			if(GetSaveFileName(&ofn)) write_imported_layers(ofn.lpstrFile, true);
+			dialog = false;
+			break;
+		case 2:
+			memset(&ofn, 0, sizeof(ofn));
+			ofn.lStructSize = sizeof(ofn);
+			ofn.lpstrFile = filename;
+			ofn.nMaxFile = sizeof(filename);
+			ofn.lpstrInitialDir = basedir;
+			dialog = true;
+			if(GetOpenFileName(&ofn))
+			{
+				uint32_t saved_layer = state.current_layer;
+
+				state.current_layer = 0;
+				gl_render_scene();
+				if(!import_png(ofn.lpstrFile, true)) MessageBoxA(0, "Import failed. (Normal layer)", "Error", MB_ICONERROR | MB_OK);
+
+				state.current_layer = 1;
+				gl_render_scene();
+				if(!import_png(ofn.lpstrFile, true)) MessageBoxA(0, "Import failed. (Parallax background layer)", "Error", MB_ICONERROR | MB_OK);
+
+				state.current_layer = 2;
+				gl_render_scene();
+				if(!import_png(ofn.lpstrFile, true)) MessageBoxA(0, "Import failed. (Parallax foreground layer)", "Error", MB_ICONERROR | MB_OK);
+
+				state.current_layer = saved_layer;
+			}
+			dialog = false;
+			break;
+		case 3:
+			memset(&ofn, 0, sizeof(ofn));
+			ofn.lStructSize = sizeof(ofn);
+			ofn.lpstrFile = filename;
+			ofn.nMaxFile = sizeof(filename);
+			ofn.lpstrInitialDir = basedir;
+			dialog = true;
+			if(GetSaveFileName(&ofn))
+			{
+				uint32_t saved_layer = state.current_layer;
+
+				state.current_layer = 0;
+				gl_render_scene();
+				export_png(ofn.lpstrFile, true);
+
+				state.current_layer = 1;
+				gl_render_scene();
+				export_png(ofn.lpstrFile, true);
+
+				state.current_layer = 2;
+				gl_render_scene();
+				export_png(ofn.lpstrFile, true);
+
+				state.current_layer = saved_layer;
+			}
+			dialog = false;
+			break;
+		case 6:
+			dialog = true;
+			for(i = 1; i < __argc; i++)
+			{
+				read_field_file(__argv[i]);
+
+				if(state.palettes_ok && state.layers_ok)
+				{
+					uint32_t saved_layer = state.current_layer;
+
+					state.current_layer = 0;
+					gl_render_scene();
+					if(!export_png(__argv[i], false))
+					{
+						std::ostringstream tmp;
+
+						tmp << "Export failed for " << __argv[i] << ". (Normal layer)";
+
+						MessageBoxA(0, tmp.str().c_str(), "Error", MB_ICONERROR | MB_OK);
+						break;
+					}
+
+					state.current_layer = 1;
+					gl_render_scene();
+					if(!export_png(__argv[i], false))
+					{
+						std::ostringstream tmp;
+
+						tmp << "Export failed for " << __argv[i] << ". (Parallax background layer)";
+
+						MessageBoxA(0, tmp.str().c_str(), "Error", MB_ICONERROR | MB_OK);
+						break;
+					}
+
+					state.current_layer = 2;
+					gl_render_scene();
+					if(!export_png(__argv[i], false))
+					{
+						std::ostringstream tmp;
+
+						tmp << "Export failed for " << __argv[i] << ". (Parallax foreground layer)";
+
+						MessageBoxA(0, tmp.str().c_str(), "Error", MB_ICONERROR | MB_OK);
+						break;
+					}
+
+					state.current_layer = saved_layer;
+
+
+				}
+			}
+
+			if(__argc == 1) MessageBoxA(0, "No filenames specified on command line", "Error", MB_ICONERROR | MB_OK);
+
+			dialog = false;
+			break;
+		case 7:
+			dialog = true;
+			for(i = 1; i < __argc; i++)
+			{
+				read_field_file(__argv[i]);
+
+				if(state.palettes_ok && state.layers_ok)
+				{
+					uint32_t saved_layer = state.current_layer;
+
+					state.current_layer = 0;
+					gl_render_scene();
+					if(!import_png(__argv[i], false))
+					{
+						std::ostringstream tmp;
+
+						tmp << "Export failed for " << __argv[i] << ". (Normal layer)";
+
+						MessageBoxA(0, tmp.str().c_str(), "Error", MB_ICONERROR | MB_OK);
+						break;
+					}
+
+					write_imported_layers(__argv[i], false);
+
+					state.current_layer = 1;
+					gl_render_scene();
+					if(!import_png(__argv[i], false))
+					{
+						std::ostringstream tmp;
+
+						tmp << "Export failed for " << __argv[i] << ". (Parallax background layer)";
+
+						MessageBoxA(0, tmp.str().c_str(), "Error", MB_ICONERROR | MB_OK);
+						break;
+					}
+
+					write_imported_layers(__argv[i], false);
+
+					state.current_layer = 2;
+					gl_render_scene();
+					if(!import_png(__argv[i], false))
+					{
+						std::ostringstream tmp;
+
+						tmp << "Export failed for " << __argv[i] << ". (Parallax foreground layer)";
+
+						MessageBoxA(0, tmp.str().c_str(), "Error", MB_ICONERROR | MB_OK);
+						break;
+					}
+
+					write_imported_layers(__argv[i], false);
+
+					state.current_layer = saved_layer;
+				}
+			}
+
+			if(__argc == 1) MessageBoxA(0, "No filenames specified on command line", "Error", MB_ICONERROR | MB_OK);
+
+			dialog = false;
+			break;
+	}
+}
+
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
+{
+	RegOpenKeyEx(HKEY_LOCAL_MACHINE, R"(SOFTWARE\Square Soft, Inc.\Final Fantasy VII)", 0, KEY_QUERY_VALUE | KEY_WOW64_32KEY, &ff7_regkey);
+	RegQueryValueEx(ff7_regkey, "AppPath", 0, 0, (LPBYTE)basedir, &basedir_length);
+	basedir[sizeof(basedir) - 1] = 0;
+
+	glutInit(&__argc, __argv);
+
+	glutInitWindowSize(640, 480);
+
+	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH);
+
+	glutCreateWindow("Palmer - FF7 Field Background Editor");
+
+	gl_init();
+
+	glutDisplayFunc(main_display_cb);
+	glutReshapeFunc(main_reshape_cb);
+	glutMouseFunc(mouse_button_cb);
+	glutMotionFunc(mouse_move_cb);
+	glutMouseWheelFunc(mouse_zoom_cb);
+
+	glutCreateMenu(main_menu_cb);
+	glutAddMenuEntry("Open Field File", 0);
+	glutAddMenuEntry("Export PNG Files", 3);
+	glutAddMenuEntry("Import PNG Files", 2);
+	glutAddMenuEntry("Write Modpath Textures", 1);
+	glutAddMenuEntry("Batch Export", 6);
+	glutAddMenuEntry("Batch Import", 7);
+
+	glutAttachMenu(GLUT_LEFT_BUTTON);
+
+	if(!glewIsSupported("GL_VERSION_1_2"))
+	{
+		no_blend_equation = true;
+		MessageBoxA(0, "No support for subtractive blending, some effects will be missing.", "Warning", MB_ICONWARNING | MB_OK);
+	}
+
+	glutMainLoop();
+}
+</file>
+
+<file path="src/palmer.h">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#pragma once
+
+#include <cstdint>
+#include <sstream>
+#include <windows.h>
+#include <gl/gl.h>
+#include <stdlib.h>
+
+#pragma pack(1)
+
+#define true 1
+#define false 0
+
+#define NORMAL_LAYERS 256
+#define ANIMATION_LAYERS (64 * 256 * 4)
+#define ADDITIVE_LAYERS ANIMATION_LAYERS
+
+#define EXPORT_LAYERS NORMAL_LAYERS + ANIMATION_LAYERS + ADDITIVE_LAYERS
+
+#define PALETTES 20
+#define FF7_LAYERS 42
+
+void redraw();
+void rebuild_util_menu(void);
+
+struct field_header
+{
+	uint16_t unknown;
+	uint32_t sections;
+	uint32_t section0;
+	uint32_t section1;
+	uint32_t section2;
+	uint32_t section3;
+	uint32_t section4;
+	uint32_t section5;
+	uint32_t section6;
+	uint32_t section7;
+	uint32_t section8;
+};
+
+struct layer
+{
+	uint16_t present;
+	uint16_t unknown1;
+	uint16_t type;
+	void *data;
+	GLuint textures[PALETTES];
+	uint32_t imported_width;
+	uint32_t imported_height;
+	uint32_t *imported_data;
+};
+
+struct layer_tile
+{
+	short x;
+	short y;
+	uint16_t unknown1;
+	uint16_t unknown2;
+	uint16_t source_x;
+	uint16_t source_y;
+	uint16_t fx_source_x;
+	uint16_t fx_source_y;
+	uint16_t tile_size_x;
+	uint16_t tile_size_y;
+	uint16_t palette_index;
+	uint16_t flags;
+	uint8_t anim_group;
+	uint8_t anim_bitmask;
+	uint8_t use_fx_page;
+	uint8_t unused1;
+	uint16_t blend_mode;
+	uint16_t source_page;
+	uint16_t fx_page;
+	uint16_t unknown4;
+	uint32_t fixed_z;
+	uint32_t fixed_u;
+	uint32_t fixed_v;
+	uint16_t unused2;
+	uint16_t unused3;
+};
+
+struct field_state
+{
+	uint32_t layer1_width;
+	uint32_t layer1_height;
+	uint32_t layer1_tiles_num;
+	struct layer_tile *layer1_tiles;
+	uint32_t layer2_width;
+	uint32_t layer2_height;
+	bool layer2_present;
+	uint32_t layer2_tiles_num;
+	struct layer_tile *layer2_tiles;
+	uint32_t layer3_width;
+	uint32_t layer3_height;
+	bool layer3_present;
+	uint32_t layer3_tiles_num;
+	struct layer_tile *layer3_tiles;
+	uint32_t layer4_width;
+	uint32_t layer4_height;
+	bool layer4_present;
+	uint32_t layer4_tiles_num;
+	struct layer_tile *layer4_tiles;
+	char colorkey[PALETTES];
+	struct layer layers[FF7_LAYERS];
+	bool parallax_back;
+	bool parallax_front;
+	volatile bool layers_ok ;
+	uint16_t *palettes[PALETTES];
+	uint32_t palettes_num;
+	uint32_t palette_colors;
+	volatile bool palettes_ok;
+	int current_layer;
+	uint32_t used_anim_state[64];
+	uint32_t anim_state[64];
+	int x_offset;
+	int y_offset;
+	int scale;
+	char name[_MAX_FNAME];
+	bool dirty_menu;
+	bool first_pass_done;
+	struct layer_tile **export_layers[EXPORT_LAYERS];
+	int export_extents[EXPORT_LAYERS][4];
+	int export_tile_size;
+};
+
+extern struct field_state state;
+
+extern volatile bool dialog;
+</file>
+
+<file path="src/section.cpp">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#include "palmer.h"
+
+void section_read_bytes(uint32_t *iterator, void *dest, uint32_t bytes)
+{
+	memcpy(dest, (void *)*iterator, bytes);
+	*iterator += bytes;
+}
+</file>
+
+<file path="src/section.h">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#pragma once
+
+#include "palmer.h"
+
+void section_read_bytes(uint32_t *iterator, void *dest, uint32_t bytes);
+
+template <class T>
+T section_read(uint32_t *iterator)
+{
+  T ret;
+
+  section_read_bytes(iterator, &ret, sizeof(ret));
+
+  return ret;
+}
+</file>
+
+<file path="src/util_menu.cpp">
+/****************************************************************************/
+//    Copyright (C) 2014 Aali132                                            //
+//    Copyright (C) 2024 Julian Xhokaxhiu                                   //
+//                                                                          //
+//    This file is part of Palmer                                           //
+//                                                                          //
+//    Palmer is free software: you can redistribute it and/or modify        //
+//    it under the terms of the GNU General Public License as published by  //
+//    the Free Software Foundation, either version 3 of the License         //
+//                                                                          //
+//    Palmer is distributed in the hope that it will be useful,             //
+//    but WITHOUT ANY WARRANTY; without even the implied warranty of        //
+//    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         //
+//    GNU General Public License for more details.                          //
+/****************************************************************************/
+
+#include <gl/freeglut.h>
+#include <stdio.h>
+
+#include "palmer.h"
+
+int util_menu;
+
+void util_menu_cb(int entry)
+{
+	if(dialog) return;
+}
+
+void layer_menu_cb(int entry)
+{
+	if(dialog) return;
+
+	if(entry == -1) return;
+
+	state.current_layer = entry;
+	state.dirty_menu = true;
+}
+
+void anim_menu_cb(int entry)
+{
+	char tmp[1024];
+
+	if(dialog) return;
+
+	if(entry == -1) return;
+
+	state.anim_state[entry / 8] ^= (1 << (entry % 8));
+
+	sprintf(tmp, "State %i - %s", entry % 8 + 1, (state.anim_state[entry / 8] & (1 << (entry % 8))) ? "On" : "Off");
+
+	glutChangeToMenuEntry(entry % 8 + 1, tmp, entry);
+}
+
+int layer_menu;
+int anim_menu[7];
+int anim_menus[64];
+
+void rebuild_util_menu(void)
+{
+	uint32_t i;
+	uint32_t j;
+	uint32_t x;
+	char tmp[1024];
+
+	if(util_menu == 0)
+	{
+		util_menu = glutCreateMenu(layer_menu_cb);
+		glutAttachMenu(GLUT_RIGHT_BUTTON);
+
+		layer_menu = glutCreateMenu(layer_menu_cb);
+		glutAddMenuEntry("Normal Layer", 0);
+		glutAddMenuEntry("dummy", -1);
+		glutAddMenuEntry("dummy", -1);
+
+		glutSetMenu(util_menu);
+		glutAddSubMenu("Layers", layer_menu);
+
+		for(x = 0; x < 7; x++)
+		{
+			anim_menu[x] = glutCreateMenu(anim_menu_cb);
+
+			for(i = x * 10 + 1; i < (x + 1) * 10 + 1 && i < 64; i++)
+			{
+				anim_menus[i] = glutCreateMenu(anim_menu_cb);
+
+				for(j = 0; j < 8; j++) glutAddMenuEntry("dummy", -1);
+
+				glutSetMenu(anim_menu[x]);
+				glutAddSubMenu("dummy", anim_menus[i]);
+			}
+
+			glutSetMenu(util_menu);
+			sprintf(tmp, "Animations %i-%i", x * 10 + 1, (x + 1) * 10);
+			glutAddSubMenu(tmp, anim_menu[x]);
+		}
+	}
+
+	glutSetMenu(layer_menu);
+
+	if(state.parallax_back && state.layer3_tiles_num) glutChangeToMenuEntry(2, "Parallax background layer", 1);
+	else glutChangeToMenuEntry(2, "Unused", -1);
+
+	if(state.parallax_front && state.layer4_tiles_num) glutChangeToMenuEntry(3, "Parallax foreground layer", 2);
+	else glutChangeToMenuEntry(3, "Unused", -1);
+
+	for(x = 0; x < 7; x++)
+	{
+		glutSetMenu(anim_menu[x]);
+
+		for(i = x * 10 + 1; i < (x + 1) * 10 + 1 && i < 64; i++)
+		{
+			if(state.used_anim_state[i])
+			{
+				sprintf(tmp, "Group %i", i);
+				glutChangeToSubMenu(i - 10 * x, tmp, anim_menus[i]);
+
+				glutSetMenu(anim_menus[i]);
+
+				for(j = 0; j < 8; j++)
+				{
+					if(state.used_anim_state[i] & (1 << j))
+					{
+						sprintf(tmp, "State %i - %s", j + 1, state.anim_state[i] & (1 << j) ? "On" : "Off");
+						glutChangeToMenuEntry(j + 1, tmp, i * 8 + j);
+					}
+					else glutChangeToMenuEntry(j + 1, "Unused", -1);
+				}
+
+				glutSetMenu(anim_menu[x]);
+			}
+
+			else glutChangeToMenuEntry(i - 10 * x, "Unused", -1);
+		}
+	}
+}
+</file>
+
+<file path=".gitignore">
+## C++ Ignore file
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+## Ignore Visual Studio temporary files, build results, and
+## files generated by popular Visual Studio add-ons.
+##
+## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Mono auto generated files
+mono_crash.*
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+# Uncomment if you have tasks that create the project's static files in wwwroot
+#wwwroot/
+
+# Visual Studio 2017 auto generated files
+Generated\ Files/
+
+# MSTest test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Build Results of an ATL Project
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
+
+# Benchmark Results
+BenchmarkDotNet.Artifacts/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# StyleCop
+StyleCopReport.xml
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Chutzpah Test files
+_Chutzpah*
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Visual Studio Trace Files
+*.e2e
+
+# TFS 2012 Local Workspace
+$tf/
+
+# Guidance Automation Toolkit
+*.gpState
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# TeamCity is a build add-in
+_TeamCity*
+
+# DotCover is a Code Coverage Tool
+*.dotCover
+
+# AxoCover is a Code Coverage Tool
+.axoCover/*
+!.axoCover/settings.json
+
+# Coverlet is a free, cross platform Code Coverage Tool
+coverage*[.json, .xml, .info]
+
+# Visual Studio code coverage results
+*.coverage
+*.coveragexml
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+nCrunchTemp_*
+
+# MightyMoose
+*.mm.*
+AutoTest.Net/
+
+# Web workbench (sass)
+.sass-cache/
+
+# Installshield output folder
+[Ee]xpress/
+
+# DocProject is a documentation generator add-in
+DocProject/buildhelp/
+DocProject/Help/*.HxT
+DocProject/Help/*.HxC
+DocProject/Help/*.hhc
+DocProject/Help/*.hhk
+DocProject/Help/*.hhp
+DocProject/Help/Html2
+DocProject/Help/html
+
+# Click-Once directory
+publish/
+
+# Publish Web Output
+*.[Pp]ublish.xml
+*.azurePubxml
+# Note: Comment the next line if you want to checkin your web deploy settings,
+# but database connection strings (with potential passwords) will be unencrypted
+*.pubxml
+*.publishproj
+
+# Microsoft Azure Web App publish settings. Comment the next line if you want to
+# checkin your Azure Web App publish settings, but sensitive information contained
+# in these scripts will be unencrypted
+PublishScripts/
+
+# NuGet Packages
+*.nupkg
+# NuGet Symbol Packages
+*.snupkg
+# The packages folder can be ignored because of Package Restore
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/[Pp]ackages/repositories.config
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.props
+*.nuget.targets
+
+# Microsoft Azure Build Output
+csx/
+*.build.csdef
+
+# Microsoft Azure Emulator
+ecf/
+rcf/
+
+# Windows Store app package directories and files
+AppPackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+_pkginfo.txt
+*.appx
+*.appxbundle
+*.appxupload
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+*.[Cc]ache
+# but keep track of directories ending in .cache
+!?*.[Cc]ache/
+
+# Others
+ClientBin/
+~$*
+*~
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pfx
+*.publishsettings
+orleans.codegen.cs
+
+# Including strong name files can present a security risk
+# (https://github.com/github/gitignore/pull/2483#issue-259490424)
+#*.snk
+
+# Since there are multiple workflows, uncomment next line to ignore bower_components
+# (https://github.com/github/gitignore/pull/1529#issuecomment-104372622)
+#bower_components/
+
+# RIA/Silverlight projects
+Generated_Code/
+
+# Backup & report files from converting an old project file
+# to a newer Visual Studio version. Backup files are not needed,
+# because we have git ;-)
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+ServiceFabricBackup/
+*.rptproj.bak
+
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
+# Business Intelligence projects
+*.rdl.data
+*.bim.layout
+*.bim_*.settings
+*.rptproj.rsuser
+*- [Bb]ackup.rdl
+*- [Bb]ackup ([0-9]).rdl
+*- [Bb]ackup ([0-9][0-9]).rdl
+
+# Microsoft Fakes
+FakesAssemblies/
+
+# GhostDoc plugin setting file
+*.GhostDoc.xml
+
+# Node.js Tools for Visual Studio
+.ntvs_analysis.dat
+node_modules/
+
+# Visual Studio 6 build log
+*.plg
+
+# Visual Studio 6 workspace options file
+*.opt
+
+# Visual Studio 6 auto-generated workspace file (contains which files were open etc.)
+*.vbw
+
+# Visual Studio LightSwitch build output
+**/*.HTMLClient/GeneratedArtifacts
+**/*.DesktopClient/GeneratedArtifacts
+**/*.DesktopClient/ModelManifest.xml
+**/*.Server/GeneratedArtifacts
+**/*.Server/ModelManifest.xml
+_Pvt_Extensions
+
+# Paket dependency manager
+.paket/paket.exe
+paket-files/
+
+# FAKE - F# Make
+.fake/
+
+# CodeRush personal settings
+.cr/personal
+
+# Python Tools for Visual Studio (PTVS)
+__pycache__/
+*.pyc
+
+# Cake - Uncomment if you are using it
+# tools/**
+# !tools/packages.config
+
+# Tabs Studio
+*.tss
+
+# Telerik's JustMock configuration file
+*.jmconfig
+
+# BizTalk build output
+*.btp.cs
+*.btm.cs
+*.odx.cs
+*.xsd.cs
+
+# OpenCover UI analysis results
+OpenCover/
+
+# Azure Stream Analytics local run output
+ASALocalRun/
+
+# MSBuild Binary and Structured Log
+*.binlog
+
+# NVidia Nsight GPU debugger configuration file
+*.nvuser
+
+# MFractors (Xamarin productivity tool) working folder
+.mfractor/
+
+# Local History for Visual Studio
+.localhistory/
+
+# BeatPulse healthcheck temp database
+healthchecksdb
+
+# Backup folder for Package Reference Convert tool in Visual Studio 2017
+MigrationBackup/
+
+# Ionide (cross platform F# VS Code tools) working folder
+.ionide/
+
+## Custom section
+
+# Build directory
+.build
+
+# Clion
+cmake-build*/
+
+# vcpkg
+!make.exe
+vcpkg_installed/
+</file>
+
+<file path=".vsconfig">
+{
+  "version": "1.0",
+  "components": [
+    "Microsoft.VisualStudio.Component.CoreEditor",
+    "Microsoft.VisualStudio.Workload.CoreEditor",
+    "Microsoft.Net.Component.4.8.SDK",
+    "Microsoft.Net.Component.4.7.2.TargetingPack",
+    "Microsoft.Net.ComponentGroup.DevelopmentPrerequisites",
+    "Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions",
+    "Microsoft.VisualStudio.Component.Roslyn.Compiler",
+    "Microsoft.Component.MSBuild",
+    "Microsoft.VisualStudio.Component.Roslyn.LanguageServices",
+    "Microsoft.VisualStudio.Component.TextTemplating",
+    "Microsoft.VisualStudio.Component.NuGet",
+    "Microsoft.VisualStudio.Component.SQL.CLR",
+    "Microsoft.Component.ClickOnce",
+    "Microsoft.VisualStudio.Component.ManagedDesktop.Core",
+    "Microsoft.NetCore.Component.Runtime.6.0",
+    "Microsoft.NetCore.Component.SDK",
+    "Microsoft.VisualStudio.Component.FSharp",
+    "Microsoft.ComponentGroup.ClickOnce.Publish",
+    "Microsoft.NetCore.Component.DevelopmentTools",
+    "Microsoft.Net.Component.4.8.TargetingPack",
+    "Microsoft.Net.ComponentGroup.4.8.DeveloperTools",
+    "Microsoft.VisualStudio.Component.DiagnosticTools",
+    "Microsoft.VisualStudio.Component.EntityFramework",
+    "Microsoft.VisualStudio.Component.Debugger.JustInTime",
+    "Microsoft.VisualStudio.Component.IntelliCode",
+    "Microsoft.Net.Component.4.6.2.TargetingPack",
+    "Microsoft.Net.Component.4.7.TargetingPack",
+    "Microsoft.Net.Component.4.7.1.TargetingPack",
+    "Microsoft.VisualStudio.Component.VC.CoreIde",
+    "Microsoft.VisualStudio.Component.Windows10SDK",
+    "Microsoft.VisualStudio.Component.VC.Tools.x86.x64",
+    "Microsoft.VisualStudio.Component.Graphics.Tools",
+    "Microsoft.VisualStudio.Component.VC.DiagnosticTools",
+    "Microsoft.VisualStudio.Component.Windows10SDK.19041",
+    "Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites",
+    "Microsoft.ComponentGroup.Blend",
+    "Microsoft.VisualStudio.ComponentGroup.MSIX.Packaging",
+    "Microsoft.VisualStudio.Workload.ManagedDesktop",
+    "Microsoft.VisualStudio.Component.VC.Redist.14.Latest",
+    "Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core",
+    "Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.CMake",
+    "Microsoft.VisualStudio.Component.VC.CMake.Project",
+    "Microsoft.VisualStudio.Component.VC.ATL",
+    "Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest",
+    "Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest",
+    "Microsoft.VisualStudio.Component.VC.ASAN",
+    "Microsoft.VisualStudio.Component.Windows10SDK.20348",
+    "Microsoft.VisualStudio.Workload.NativeDesktop",
+    "Microsoft.Net.ComponentGroup.TargetingPacks.Common",
+    "Microsoft.Net.Component.4.6.TargetingPack",
+    "Microsoft.Net.Component.4.6.1.TargetingPack"
+  ]
+}
+</file>
+
+<file path="CMakeLists.txt">
+#*****************************************************************************#
+#    Copyright (C) 2014 Aali132                                               #
+#    Copyright (C) 2024 Julian Xhokaxhiu                                      #
+#                                                                             #
+#    This file is part of Palmer                                              #
+#                                                                             #
+#    Palmer is free software: you can redistribute it and/or modify           #
+#    it under the terms of the GNU General Public License as published by     #
+#    the Free Software Foundation, either version 3 of the License            #
+#                                                                             #
+#    Palmer is distributed in the hope that it will be useful,                #
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of           #
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the            #
+#    GNU General Public License for more details.                             #
+#*****************************************************************************#
+
+cmake_minimum_required(VERSION 3.25)
+cmake_policy(SET CMP0091 NEW)
+
+if(NOT DEFINED CMAKE_BUILD_TYPE)
+  message(FATAL_ERROR "CMAKE_BUILD_TYPE must be set to continue building with cmake. \nExample: Add -DCMAKE_BUILD_TYPE=Release to your cmake command line.")
+endif()
+if (NOT DEFINED _EXE_VERSION OR NOT _EXE_VERSION)
+  message(FATAL_ERROR "_EXE_VERSION must be set to continue building with cmake. \nExample: Add -D_EXE_VERSION=devel to your cmake command line.")
+endif ()
+
+set(VCPKG_INSTALL_OPTIONS "--clean-after-build" "--x-use-aria2")
+
+set(CMAKE_SHARED_LINKER_FLAGS
+  "${CMAKE_SHARED_LINKER_FLAGS} /NODEFAULTLIB:MSVCRT /NODEFAULTLIB:MSVCRTD /DEBUG:FULL /FORCE:MULTIPLE /IGNORE:4006,4075,4099,4217"
+)
+
+# Currently missing by default, port bug?
+set(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH};${CMAKE_BINARY_DIR}/vcpkg_installed/x86-windows-static/share/freeglut")
+
+if(CMAKE_BUILD_TYPE MATCHES Debug)
+  set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreadedDebug")
+  set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} /NODEFAULTLIB:LIBCMT")
+else()
+  set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded")
+  set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} /NODEFAULTLIB:LIBCMTD")
+endif()
+
+project(Palmer)
+
+find_package(FreeGLUT CONFIG REQUIRED)
+find_package(GLEW CONFIG REQUIRED)
+find_package(libpng CONFIG REQUIRED)
+find_package(mimalloc CONFIG REQUIRED)
+
+set(RELEASE_NAME "Palmer")
+
+if (_EXE_VERSION STREQUAL "devel" OR _EXE_VERSION MATCHES "-" )
+    set(_EXE_RCVERSION "0,0,0,0")
+    set(_EXE_RCSTRVERSION "0.0.0.0")
+else()
+    string(REPLACE "." "," _EXE_RCVERSION ${_EXE_VERSION})
+    set(_EXE_RCSTRVERSION ${_EXE_VERSION})
+endif()
+
+# Include all the source code files
+file(GLOB_RECURSE source_files "${CMAKE_SOURCE_DIR}/src/*.cpp")
+
+configure_file(misc/version.rc.in ${CMAKE_CURRENT_BINARY_DIR}/version.rc @ONLY)
+
+add_executable(${RELEASE_NAME} WIN32 ${source_files} ${CMAKE_CURRENT_BINARY_DIR}/version.rc)
+target_include_directories(
+  ${RELEASE_NAME}
+  PRIVATE "${CMAKE_SOURCE_DIR}/src"
+)
+target_link_libraries(
+	${RELEASE_NAME}
+	dbghelp
+  mimalloc-static
+  png_static
+	FreeGLUT::freeglut_static
+	GLEW::glew_s
+)
+target_compile_options(
+	${RELEASE_NAME}
+	PRIVATE /DVERSION="${_EXE_VERSION}"
+	PRIVATE /D_CRT_SECURE_NO_WARNINGS
+  PRIVATE /DNOMINMAX
+  PRIVATE /Zc:strictStrings-
+  PRIVATE /Zc:__cplusplus
+  PRIVATE /Qpar
+  PRIVATE /MP
+)
+target_compile_features(${RELEASE_NAME}
+  PRIVATE cxx_std_20
+)
+target_link_options(${RELEASE_NAME} PRIVATE /PDBALTPATH:${RELEASE_NAME}.pdb)
+
+# INSTALL
+add_custom_command(
+  TARGET ${RELEASE_NAME}
+  POST_BUILD
+  # ensure bin directory exists
+  COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_BINARY_DIR}/bin
+  # License
+  COMMAND ${CMAKE_COMMAND} -E copy
+          ${CMAKE_CURRENT_SOURCE_DIR}/COPYING.txt
+          ${CMAKE_BINARY_DIR}/bin
+  # .exe
+  COMMAND ${CMAKE_COMMAND} -E copy
+          ${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_BUILD_TYPE}/${RELEASE_NAME}.exe
+          ${CMAKE_BINARY_DIR}/bin
+)
+
+if(CMAKE_BUILD_TYPE MATCHES Debug OR CMAKE_BUILD_TYPE MATCHES RelWithDebInfo)
+add_custom_command(
+  TARGET ${RELEASE_NAME}
+  POST_BUILD
+  # ensure bin directory exists
+  COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_BINARY_DIR}/bin
+  # .pdb
+  COMMAND ${CMAKE_COMMAND} -E copy
+          ${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_BUILD_TYPE}/${RELEASE_NAME}.pdb
+          ${CMAKE_BINARY_DIR}/bin
+)
+endif()
+
+# CPU INFO
+add_custom_command(
+  TARGET ${RELEASE_NAME}
+  PRE_BUILD
+  # Get CPU info
+  COMMAND
+    ${CMAKE_BINARY_DIR}/vcpkg_installed/x86-windows-static/tools/cpuinfo/cpu-info
+  # Get CPU ISA supported instructions
+  COMMAND
+    ${CMAKE_BINARY_DIR}/vcpkg_installed/x86-windows-static/tools/cpuinfo/isa-info
+)
+</file>
+
+<file path="CMakePresets.json">
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 25,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Visual Studio 17 2022",
+      "architecture": {
+        "value": "win32",
+        "strategy": "set"
+      },
+      "toolset": {
+        "value": "host=x86",
+        "strategy": "set"
+      },
+      "environment": {
+        "VCPKG_ROOT": "C:/vcpkg",
+        "VCPKG_BINARY_SOURCES": "clear;nuget,github,readwrite"
+      },
+      "binaryDir": "${sourceDir}/.build",
+      "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+      "cacheVariables": {
+        "_EXE_VERSION": "devel",
+        "CMAKE_C_COMPILER": "cl",
+        "VCPKG_TARGET_TRIPLET": "x86-windows-static"
+      }
+    },
+    {
+      "name": "Release",
+      "inherits": "base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "RelWithDebInfo",
+      "inherits": "base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo"
+      }
+    },
+    {
+      "name": "Debug",
+      "inherits": "base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "MinSizeRel",
+      "inherits": "base",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "MinSizeRel"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "Release",
+      "displayName": "Default",
+      "configurePreset": "Release",
+      "configuration": "Release"
+    },
+    {
+      "name": "RelWithDebInfo",
+      "displayName": "Default",
+      "configurePreset": "RelWithDebInfo",
+      "configuration": "RelWithDebInfo"
+    },
+    {
+      "name": "Debug",
+      "displayName": "Default",
+      "configurePreset": "Debug",
+      "configuration": "Debug"
+    },
+    {
+      "name": "MinSizeRel",
+      "displayName": "Default",
+      "configurePreset": "MinSizeRel",
+      "configuration": "MinSizeRel"
+    }
+  ],
+  "vendor": {
+    "microsoft.com/VisualStudioSettings/CMake/1.0": {
+      "hostOS": "Windows",
+      "intelliSenseMode": "windows-msvc-x64"
+    }
+  }
+}
+</file>
+
+<file path="COPYING.txt">
+GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            Preamble
+
+  The GNU General Public License is a free, copyleft license for
+software and other kinds of works.
+
+  The licenses for most software and other practical works are designed
+to take away your freedom to share and change the works.  By contrast,
+the GNU General Public License is intended to guarantee your freedom to
+share and change all versions of a program--to make sure it remains free
+software for all its users.  We, the Free Software Foundation, use the
+GNU General Public License for most of our software; it applies also to
+any other work released this way by its authors.  You can apply it to
+your programs, too.
+
+  When we speak of free software, we are referring to freedom, not
+price.  Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+them if you wish), that you receive source code or can get it if you
+want it, that you can change the software or use pieces of it in new
+free programs, and that you know you can do these things.
+
+  To protect your rights, we need to prevent others from denying you
+these rights or asking you to surrender the rights.  Therefore, you have
+certain responsibilities if you distribute copies of the software, or if
+you modify it: responsibilities to respect the freedom of others.
+
+  For example, if you distribute copies of such a program, whether
+gratis or for a fee, you must pass on to the recipients the same
+freedoms that you received.  You must make sure that they, too, receive
+or can get the source code.  And you must show them these terms so they
+know their rights.
+
+  Developers that use the GNU GPL protect your rights with two steps:
+(1) assert copyright on the software, and (2) offer you this License
+giving you legal permission to copy, distribute and/or modify it.
+
+  For the developers' and authors' protection, the GPL clearly explains
+that there is no warranty for this free software.  For both users' and
+authors' sake, the GPL requires that modified versions be marked as
+changed, so that their problems will not be attributed erroneously to
+authors of previous versions.
+
+  Some devices are designed to deny users access to install or run
+modified versions of the software inside them, although the manufacturer
+can do so.  This is fundamentally incompatible with the aim of
+protecting users' freedom to change the software.  The systematic
+pattern of such abuse occurs in the area of products for individuals to
+use, which is precisely where it is most unacceptable.  Therefore, we
+have designed this version of the GPL to prohibit the practice for those
+products.  If such problems arise substantially in other domains, we
+stand ready to extend this provision to those domains in future versions
+of the GPL, as needed to protect the freedom of users.
+
+  Finally, every program is threatened constantly by software patents.
+States should not allow patents to restrict development and use of
+software on general-purpose computers, but in those that do, we wish to
+avoid the special danger that patents applied to a free program could
+make it effectively proprietary.  To prevent this, the GPL assures that
+patents cannot be used to render the program non-free.
+
+  The precise terms and conditions for copying, distribution and
+modification follow.
+
+                       TERMS AND CONDITIONS
+
+  0. Definitions.
+
+  "This License" refers to version 3 of the GNU General Public License.
+
+  "Copyright" also means copyright-like laws that apply to other kinds of
+works, such as semiconductor masks.
+
+  "The Program" refers to any copyrightable work licensed under this
+License.  Each licensee is addressed as "you".  "Licensees" and
+"recipients" may be individuals or organizations.
+
+  To "modify" a work means to copy from or adapt all or part of the work
+in a fashion requiring copyright permission, other than the making of an
+exact copy.  The resulting work is called a "modified version" of the
+earlier work or a work "based on" the earlier work.
+
+  A "covered work" means either the unmodified Program or a work based
+on the Program.
+
+  To "propagate" a work means to do anything with it that, without
+permission, would make you directly or secondarily liable for
+infringement under applicable copyright law, except executing it on a
+computer or modifying a private copy.  Propagation includes copying,
+distribution (with or without modification), making available to the
+public, and in some countries other activities as well.
+
+  To "convey" a work means any kind of propagation that enables other
+parties to make or receive copies.  Mere interaction with a user through
+a computer network, with no transfer of a copy, is not conveying.
+
+  An interactive user interface displays "Appropriate Legal Notices"
+to the extent that it includes a convenient and prominently visible
+feature that (1) displays an appropriate copyright notice, and (2)
+tells the user that there is no warranty for the work (except to the
+extent that warranties are provided), that licensees may convey the
+work under this License, and how to view a copy of this License.  If
+the interface presents a list of user commands or options, such as a
+menu, a prominent item in the list meets this criterion.
+
+  1. Source Code.
+
+  The "source code" for a work means the preferred form of the work
+for making modifications to it.  "Object code" means any non-source
+form of a work.
+
+  A "Standard Interface" means an interface that either is an official
+standard defined by a recognized standards body, or, in the case of
+interfaces specified for a particular programming language, one that
+is widely used among developers working in that language.
+
+  The "System Libraries" of an executable work include anything, other
+than the work as a whole, that (a) is included in the normal form of
+packaging a Major Component, but which is not part of that Major
+Component, and (b) serves only to enable use of the work with that
+Major Component, or to implement a Standard Interface for which an
+implementation is available to the public in source code form.  A
+"Major Component", in this context, means a major essential component
+(kernel, window system, and so on) of the specific operating system
+(if any) on which the executable work runs, or a compiler used to
+produce the work, or an object code interpreter used to run it.
+
+  The "Corresponding Source" for a work in object code form means all
+the source code needed to generate, install, and (for an executable
+work) run the object code and to modify the work, including scripts to
+control those activities.  However, it does not include the work's
+System Libraries, or general-purpose tools or generally available free
+programs which are used unmodified in performing those activities but
+which are not part of the work.  For example, Corresponding Source
+includes interface definition files associated with source files for
+the work, and the source code for shared libraries and dynamically
+linked subprograms that the work is specifically designed to require,
+such as by intimate data communication or control flow between those
+subprograms and other parts of the work.
+
+  The Corresponding Source need not include anything that users
+can regenerate automatically from other parts of the Corresponding
+Source.
+
+  The Corresponding Source for a work in source code form is that
+same work.
+
+  2. Basic Permissions.
+
+  All rights granted under this License are granted for the term of
+copyright on the Program, and are irrevocable provided the stated
+conditions are met.  This License explicitly affirms your unlimited
+permission to run the unmodified Program.  The output from running a
+covered work is covered by this License only if the output, given its
+content, constitutes a covered work.  This License acknowledges your
+rights of fair use or other equivalent, as provided by copyright law.
+
+  You may make, run and propagate covered works that you do not
+convey, without conditions so long as your license otherwise remains
+in force.  You may convey covered works to others for the sole purpose
+of having them make modifications exclusively for you, or provide you
+with facilities for running those works, provided that you comply with
+the terms of this License in conveying all material for which you do
+not control copyright.  Those thus making or running the covered works
+for you must do so exclusively on your behalf, under your direction
+and control, on terms that prohibit them from making any copies of
+your copyrighted material outside their relationship with you.
+
+  Conveying under any other circumstances is permitted solely under
+the conditions stated below.  Sublicensing is not allowed; section 10
+makes it unnecessary.
+
+  3. Protecting Users' Legal Rights From Anti-Circumvention Law.
+
+  No covered work shall be deemed part of an effective technological
+measure under any applicable law fulfilling obligations under article
+11 of the WIPO copyright treaty adopted on 20 December 1996, or
+similar laws prohibiting or restricting circumvention of such
+measures.
+
+  When you convey a covered work, you waive any legal power to forbid
+circumvention of technological measures to the extent such circumvention
+is effected by exercising rights under this License with respect to
+the covered work, and you disclaim any intention to limit operation or
+modification of the work as a means of enforcing, against the work's
+users, your or third parties' legal rights to forbid circumvention of
+technological measures.
+
+  4. Conveying Verbatim Copies.
+
+  You may convey verbatim copies of the Program's source code as you
+receive it, in any medium, provided that you conspicuously and
+appropriately publish on each copy an appropriate copyright notice;
+keep intact all notices stating that this License and any
+non-permissive terms added in accord with section 7 apply to the code;
+keep intact all notices of the absence of any warranty; and give all
+recipients a copy of this License along with the Program.
+
+  You may charge any price or no price for each copy that you convey,
+and you may offer support or warranty protection for a fee.
+
+  5. Conveying Modified Source Versions.
+
+  You may convey a work based on the Program, or the modifications to
+produce it from the Program, in the form of source code under the
+terms of section 4, provided that you also meet all of these conditions:
+
+    a) The work must carry prominent notices stating that you modified
+    it, and giving a relevant date.
+
+    b) The work must carry prominent notices stating that it is
+    released under this License and any conditions added under section
+    7.  This requirement modifies the requirement in section 4 to
+    "keep intact all notices".
+
+    c) You must license the entire work, as a whole, under this
+    License to anyone who comes into possession of a copy.  This
+    License will therefore apply, along with any applicable section 7
+    additional terms, to the whole of the work, and all its parts,
+    regardless of how they are packaged.  This License gives no
+    permission to license the work in any other way, but it does not
+    invalidate such permission if you have separately received it.
+
+    d) If the work has interactive user interfaces, each must display
+    Appropriate Legal Notices; however, if the Program has interactive
+    interfaces that do not display Appropriate Legal Notices, your
+    work need not make them do so.
+
+  A compilation of a covered work with other separate and independent
+works, which are not by their nature extensions of the covered work,
+and which are not combined with it such as to form a larger program,
+in or on a volume of a storage or distribution medium, is called an
+"aggregate" if the compilation and its resulting copyright are not
+used to limit the access or legal rights of the compilation's users
+beyond what the individual works permit.  Inclusion of a covered work
+in an aggregate does not cause this License to apply to the other
+parts of the aggregate.
+
+  6. Conveying Non-Source Forms.
+
+  You may convey a covered work in object code form under the terms
+of sections 4 and 5, provided that you also convey the
+machine-readable Corresponding Source under the terms of this License,
+in one of these ways:
+
+    a) Convey the object code in, or embodied in, a physical product
+    (including a physical distribution medium), accompanied by the
+    Corresponding Source fixed on a durable physical medium
+    customarily used for software interchange.
+
+    b) Convey the object code in, or embodied in, a physical product
+    (including a physical distribution medium), accompanied by a
+    written offer, valid for at least three years and valid for as
+    long as you offer spare parts or customer support for that product
+    model, to give anyone who possesses the object code either (1) a
+    copy of the Corresponding Source for all the software in the
+    product that is covered by this License, on a durable physical
+    medium customarily used for software interchange, for a price no
+    more than your reasonable cost of physically performing this
+    conveying of source, or (2) access to copy the
+    Corresponding Source from a network server at no charge.
+
+    c) Convey individual copies of the object code with a copy of the
+    written offer to provide the Corresponding Source.  This
+    alternative is allowed only occasionally and noncommercially, and
+    only if you received the object code with such an offer, in accord
+    with subsection 6b.
+
+    d) Convey the object code by offering access from a designated
+    place (gratis or for a charge), and offer equivalent access to the
+    Corresponding Source in the same way through the same place at no
+    further charge.  You need not require recipients to copy the
+    Corresponding Source along with the object code.  If the place to
+    copy the object code is a network server, the Corresponding Source
+    may be on a different server (operated by you or a third party)
+    that supports equivalent copying facilities, provided you maintain
+    clear directions next to the object code saying where to find the
+    Corresponding Source.  Regardless of what server hosts the
+    Corresponding Source, you remain obligated to ensure that it is
+    available for as long as needed to satisfy these requirements.
+
+    e) Convey the object code using peer-to-peer transmission, provided
+    you inform other peers where the object code and Corresponding
+    Source of the work are being offered to the general public at no
+    charge under subsection 6d.
+
+  A separable portion of the object code, whose source code is excluded
+from the Corresponding Source as a System Library, need not be
+included in conveying the object code work.
+
+  A "User Product" is either (1) a "consumer product", which means any
+tangible personal property which is normally used for personal, family,
+or household purposes, or (2) anything designed or sold for incorporation
+into a dwelling.  In determining whether a product is a consumer product,
+doubtful cases shall be resolved in favor of coverage.  For a particular
+product received by a particular user, "normally used" refers to a
+typical or common use of that class of product, regardless of the status
+of the particular user or of the way in which the particular user
+actually uses, or expects or is expected to use, the product.  A product
+is a consumer product regardless of whether the product has substantial
+commercial, industrial or non-consumer uses, unless such uses represent
+the only significant mode of use of the product.
+
+  "Installation Information" for a User Product means any methods,
+procedures, authorization keys, or other information required to install
+and execute modified versions of a covered work in that User Product from
+a modified version of its Corresponding Source.  The information must
+suffice to ensure that the continued functioning of the modified object
+code is in no case prevented or interfered with solely because
+modification has been made.
+
+  If you convey an object code work under this section in, or with, or
+specifically for use in, a User Product, and the conveying occurs as
+part of a transaction in which the right of possession and use of the
+User Product is transferred to the recipient in perpetuity or for a
+fixed term (regardless of how the transaction is characterized), the
+Corresponding Source conveyed under this section must be accompanied
+by the Installation Information.  But this requirement does not apply
+if neither you nor any third party retains the ability to install
+modified object code on the User Product (for example, the work has
+been installed in ROM).
+
+  The requirement to provide Installation Information does not include a
+requirement to continue to provide support service, warranty, or updates
+for a work that has been modified or installed by the recipient, or for
+the User Product in which it has been modified or installed.  Access to a
+network may be denied when the modification itself materially and
+adversely affects the operation of the network or violates the rules and
+protocols for communication across the network.
+
+  Corresponding Source conveyed, and Installation Information provided,
+in accord with this section must be in a format that is publicly
+documented (and with an implementation available to the public in
+source code form), and must require no special password or key for
+unpacking, reading or copying.
+
+  7. Additional Terms.
+
+  "Additional permissions" are terms that supplement the terms of this
+License by making exceptions from one or more of its conditions.
+Additional permissions that are applicable to the entire Program shall
+be treated as though they were included in this License, to the extent
+that they are valid under applicable law.  If additional permissions
+apply only to part of the Program, that part may be used separately
+under those permissions, but the entire Program remains governed by
+this License without regard to the additional permissions.
+
+  When you convey a copy of a covered work, you may at your option
+remove any additional permissions from that copy, or from any part of
+it.  (Additional permissions may be written to require their own
+removal in certain cases when you modify the work.)  You may place
+additional permissions on material, added by you to a covered work,
+for which you have or can give appropriate copyright permission.
+
+  Notwithstanding any other provision of this License, for material you
+add to a covered work, you may (if authorized by the copyright holders of
+that material) supplement the terms of this License with terms:
+
+    a) Disclaiming warranty or limiting liability differently from the
+    terms of sections 15 and 16 of this License; or
+
+    b) Requiring preservation of specified reasonable legal notices or
+    author attributions in that material or in the Appropriate Legal
+    Notices displayed by works containing it; or
+
+    c) Prohibiting misrepresentation of the origin of that material, or
+    requiring that modified versions of such material be marked in
+    reasonable ways as different from the original version; or
+
+    d) Limiting the use for publicity purposes of names of licensors or
+    authors of the material; or
+
+    e) Declining to grant rights under trademark law for use of some
+    trade names, trademarks, or service marks; or
+
+    f) Requiring indemnification of licensors and authors of that
+    material by anyone who conveys the material (or modified versions of
+    it) with contractual assumptions of liability to the recipient, for
+    any liability that these contractual assumptions directly impose on
+    those licensors and authors.
+
+  All other non-permissive additional terms are considered "further
+restrictions" within the meaning of section 10.  If the Program as you
+received it, or any part of it, contains a notice stating that it is
+governed by this License along with a term that is a further
+restriction, you may remove that term.  If a license document contains
+a further restriction but permits relicensing or conveying under this
+License, you may add to a covered work material governed by the terms
+of that license document, provided that the further restriction does
+not survive such relicensing or conveying.
+
+  If you add terms to a covered work in accord with this section, you
+must place, in the relevant source files, a statement of the
+additional terms that apply to those files, or a notice indicating
+where to find the applicable terms.
+
+  Additional terms, permissive or non-permissive, may be stated in the
+form of a separately written license, or stated as exceptions;
+the above requirements apply either way.
+
+  8. Termination.
+
+  You may not propagate or modify a covered work except as expressly
+provided under this License.  Any attempt otherwise to propagate or
+modify it is void, and will automatically terminate your rights under
+this License (including any patent licenses granted under the third
+paragraph of section 11).
+
+  However, if you cease all violation of this License, then your
+license from a particular copyright holder is reinstated (a)
+provisionally, unless and until the copyright holder explicitly and
+finally terminates your license, and (b) permanently, if the copyright
+holder fails to notify you of the violation by some reasonable means
+prior to 60 days after the cessation.
+
+  Moreover, your license from a particular copyright holder is
+reinstated permanently if the copyright holder notifies you of the
+violation by some reasonable means, this is the first time you have
+received notice of violation of this License (for any work) from that
+copyright holder, and you cure the violation prior to 30 days after
+your receipt of the notice.
+
+  Termination of your rights under this section does not terminate the
+licenses of parties who have received copies or rights from you under
+this License.  If your rights have been terminated and not permanently
+reinstated, you do not qualify to receive new licenses for the same
+material under section 10.
+
+  9. Acceptance Not Required for Having Copies.
+
+  You are not required to accept this License in order to receive or
+run a copy of the Program.  Ancillary propagation of a covered work
+occurring solely as a consequence of using peer-to-peer transmission
+to receive a copy likewise does not require acceptance.  However,
+nothing other than this License grants you permission to propagate or
+modify any covered work.  These actions infringe copyright if you do
+not accept this License.  Therefore, by modifying or propagating a
+covered work, you indicate your acceptance of this License to do so.
+
+  10. Automatic Licensing of Downstream Recipients.
+
+  Each time you convey a covered work, the recipient automatically
+receives a license from the original licensors, to run, modify and
+propagate that work, subject to this License.  You are not responsible
+for enforcing compliance by third parties with this License.
+
+  An "entity transaction" is a transaction transferring control of an
+organization, or substantially all assets of one, or subdividing an
+organization, or merging organizations.  If propagation of a covered
+work results from an entity transaction, each party to that
+transaction who receives a copy of the work also receives whatever
+licenses to the work the party's predecessor in interest had or could
+give under the previous paragraph, plus a right to possession of the
+Corresponding Source of the work from the predecessor in interest, if
+the predecessor has it or can get it with reasonable efforts.
+
+  You may not impose any further restrictions on the exercise of the
+rights granted or affirmed under this License.  For example, you may
+not impose a license fee, royalty, or other charge for exercise of
+rights granted under this License, and you may not initiate litigation
+(including a cross-claim or counterclaim in a lawsuit) alleging that
+any patent claim is infringed by making, using, selling, offering for
+sale, or importing the Program or any portion of it.
+
+  11. Patents.
+
+  A "contributor" is a copyright holder who authorizes use under this
+License of the Program or a work on which the Program is based.  The
+work thus licensed is called the contributor's "contributor version".
+
+  A contributor's "essential patent claims" are all patent claims
+owned or controlled by the contributor, whether already acquired or
+hereafter acquired, that would be infringed by some manner, permitted
+by this License, of making, using, or selling its contributor version,
+but do not include claims that would be infringed only as a
+consequence of further modification of the contributor version.  For
+purposes of this definition, "control" includes the right to grant
+patent sublicenses in a manner consistent with the requirements of
+this License.
+
+  Each contributor grants you a non-exclusive, worldwide, royalty-free
+patent license under the contributor's essential patent claims, to
+make, use, sell, offer for sale, import and otherwise run, modify and
+propagate the contents of its contributor version.
+
+  In the following three paragraphs, a "patent license" is any express
+agreement or commitment, however denominated, not to enforce a patent
+(such as an express permission to practice a patent or covenant not to
+sue for patent infringement).  To "grant" such a patent license to a
+party means to make such an agreement or commitment not to enforce a
+patent against the party.
+
+  If you convey a covered work, knowingly relying on a patent license,
+and the Corresponding Source of the work is not available for anyone
+to copy, free of charge and under the terms of this License, through a
+publicly available network server or other readily accessible means,
+then you must either (1) cause the Corresponding Source to be so
+available, or (2) arrange to deprive yourself of the benefit of the
+patent license for this particular work, or (3) arrange, in a manner
+consistent with the requirements of this License, to extend the patent
+license to downstream recipients.  "Knowingly relying" means you have
+actual knowledge that, but for the patent license, your conveying the
+covered work in a country, or your recipient's use of the covered work
+in a country, would infringe one or more identifiable patents in that
+country that you have reason to believe are valid.
+
+  If, pursuant to or in connection with a single transaction or
+arrangement, you convey, or propagate by procuring conveyance of, a
+covered work, and grant a patent license to some of the parties
+receiving the covered work authorizing them to use, propagate, modify
+or convey a specific copy of the covered work, then the patent license
+you grant is automatically extended to all recipients of the covered
+work and works based on it.
+
+  A patent license is "discriminatory" if it does not include within
+the scope of its coverage, prohibits the exercise of, or is
+conditioned on the non-exercise of one or more of the rights that are
+specifically granted under this License.  You may not convey a covered
+work if you are a party to an arrangement with a third party that is
+in the business of distributing software, under which you make payment
+to the third party based on the extent of your activity of conveying
+the work, and under which the third party grants, to any of the
+parties who would receive the covered work from you, a discriminatory
+patent license (a) in connection with copies of the covered work
+conveyed by you (or copies made from those copies), or (b) primarily
+for and in connection with specific products or compilations that
+contain the covered work, unless you entered into that arrangement,
+or that patent license was granted, prior to 28 March 2007.
+
+  Nothing in this License shall be construed as excluding or limiting
+any implied license or other defenses to infringement that may
+otherwise be available to you under applicable patent law.
+
+  12. No Surrender of Others' Freedom.
+
+  If conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot convey a
+covered work so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you may
+not convey it at all.  For example, if you agree to terms that obligate you
+to collect a royalty for further conveying from those to whom you convey
+the Program, the only way you could satisfy both those terms and this
+License would be to refrain entirely from conveying the Program.
+
+  13. Use with the GNU Affero General Public License.
+
+  Notwithstanding any other provision of this License, you have
+permission to link or combine any covered work with a work licensed
+under version 3 of the GNU Affero General Public License into a single
+combined work, and to convey the resulting work.  The terms of this
+License will continue to apply to the part which is the covered work,
+but the special requirements of the GNU Affero General Public License,
+section 13, concerning interaction through a network will apply to the
+combination as such.
+
+  14. Revised Versions of this License.
+
+  The Free Software Foundation may publish revised and/or new versions of
+the GNU General Public License from time to time.  Such new versions will
+be similar in spirit to the present version, but may differ in detail to
+address new problems or concerns.
+
+  Each version is given a distinguishing version number.  If the
+Program specifies that a certain numbered version of the GNU General
+Public License "or any later version" applies to it, you have the
+option of following the terms and conditions either of that numbered
+version or of any later version published by the Free Software
+Foundation.  If the Program does not specify a version number of the
+GNU General Public License, you may choose any version ever published
+by the Free Software Foundation.
+
+  If the Program specifies that a proxy can decide which future
+versions of the GNU General Public License can be used, that proxy's
+public statement of acceptance of a version permanently authorizes you
+to choose that version for the Program.
+
+  Later license versions may give you additional or different
+permissions.  However, no additional obligations are imposed on any
+author or copyright holder as a result of your choosing to follow a
+later version.
+
+  15. Disclaimer of Warranty.
+
+  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY
+OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
+ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+  16. Limitation of Liability.
+
+  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
+THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
+
+  17. Interpretation of Sections 15 and 16.
+
+  If the disclaimer of warranty and limitation of liability provided
+above cannot be given local legal effect according to their terms,
+reviewing courts shall apply local law that most closely approximates
+an absolute waiver of all civil liability in connection with the
+Program, unless a warranty or assumption of liability accompanies a
+copy of the Program in return for a fee.
+
+                     END OF TERMS AND CONDITIONS
+
+            How to Apply These Terms to Your New Programs
+
+  If you develop a new program, and you want it to be of the greatest
+possible use to the public, the best way to achieve this is to make it
+free software which everyone can redistribute and change under these terms.
+
+  To do so, attach the following notices to the program.  It is safest
+to attach them to the start of each source file to most effectively
+state the exclusion of warranty; and each file should have at least
+the "copyright" line and a pointer to where the full notice is found.
+
+    <one line to give the program's name and a brief idea of what it does.>
+    Copyright (C) <year>  <name of author>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+Also add information on how to contact you by electronic and paper mail.
+
+  If the program does terminal interaction, make it output a short
+notice like this when it starts in an interactive mode:
+
+    <program>  Copyright (C) <year>  <name of author>
+    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c' for details.
+
+The hypothetical commands `show w' and `show c' should show the appropriate
+parts of the General Public License.  Of course, your program's commands
+might be different; for a GUI interface, you would use an "about box".
+
+  You should also get your employer (if you work as a programmer) or school,
+if any, to sign a "copyright disclaimer" for the program, if necessary.
+For more information on this, and how to apply and follow the GNU GPL, see
+<https://www.gnu.org/licenses/>.
+
+  The GNU General Public License does not permit incorporating your program
+into proprietary programs.  If your program is a subroutine library, you
+may consider it more useful to permit linking proprietary applications with
+the library.  If this is what you want to do, use the GNU Lesser General
+Public License instead of this License.  But first, please read
+<https://www.gnu.org/licenses/why-not-lgpl.html>.
+</file>
+
+<file path="README.md">
+# Palmer
+
+FF7 Field Background Editor
+
+Initial source code release by Aali132.
+
+## Tech Stack
+If you're curious to know it, Palmer is made with:
+- C++ code base
+- Latest MSVC available on [Visual Studio 2022 Community Edition](https://visualstudio.microsoft.com/vs/features/cplusplus/)
+- [CMake](https://cmake.org/)
+- [libpng](http://www.libpng.org/pub/png/libpng.html)
+- [glew](http://glew.sourceforge.net/)
+- [FreeGLUT](http://freeglut.sourceforge.net/)
+
+## How to build
+
+Available build profiles:
+
+- x86-Release ( default, the same used to release artifacts in this Github page )
+- x86-RelWithDebInfo ( used while developing to better debug some issues )
+- x86-MinSizeRel
+- x86-Debug ( prefer it if you want to use a debugger attached to the game )
+
+Once the project is build you can find the output in this path: `.build/bin`
+
+### Preparation
+
+> **Please note:**
+>
+> Palmer will now use vcpkg as a package manager to resolve dependencies. Failing to follow these steps will fail your builds.
+
+0. Clone the [vcpkg](https://vcpkg.io) project in the root folder of your `C:` drive ( `git clone https://github.com/Microsoft/vcpkg.git` )
+1. Go inside the `C:\vcpkg` folder and double click `bootstrap-vcpkg.bat`
+2. Open a `cmd` window in `C:\vcpkg` and run the following command: `vcpkg integrate install`
+
+### OPTIONAL: NuGet
+
+> **Please note:**
+>
+> This step is completely optional but you can make use of it if you prefer to use your own Github Free package registry plan.
+
+0. Make sure you have [NuGet CLI installed](https://learn.microsoft.com/en-us/nuget/install-nuget-client-tools?tabs=windows#install-nugetexe).
+1. [Create a Personal Access token ( classic )](https://github.com/settings/tokens/new) with the `write:packages` permission.
+2. Open a `cmd` window and run the following command ( replace `YOUR_GITHUB_USERNAME` and `YOUR_GITHUB_PAT` accordingly ):
+```pwsh
+nuget sources add -Name github -Source "https://nuget.pkg.github.com/YOUR_GITHUB_USERNAME/index.json" -Username YOUR_GITHUB_USERNAME -Password YOUR_GITHUB_PAT -StorePasswordInClearText
+```
+
+### Visual Studio
+
+> **Please note:**
+>
+> By default Visual Studio will pick the **x86-Release** build configuration, but you can choose any other profile available.
+
+0. Download the the latest [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) installer
+1. Run the installer and import this [.vsconfig](.vsconfig) file in the installer to pick the required components to build this project
+2. Once installed, open this repository **as a folder** in Visual Studio 2019 and click the build button.
+
+### Visual Studio Code
+
+0. **REQUIRED!** Follow up the steps to install Visual Studio, which will also install the MSVC toolchain
+1. Download and install the latest [Visual Studio Code](https://code.visualstudio.com/) release
+2. Install the following extensions:
+   - https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
+   - https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools
+3. Open this repository as a folder in Visual Studio code
+4. Choose as build profile in the status bar `CMake: [Release]` ( or one of the aforementioned profiles )
+5. Click the button on the status bar `Build`
+
+## Auto-Formatting
+
+### CMake Files
+
+0. **REQUIRED!** Install [Python](https://www.python.org/)
+1. Install [cmake-format](https://github.com/cheshirekow/cmake_format#installation) and make sure the binary is available in your PATH environment variable
+2. **OPTIONAL!** Integrate it [in your own IDE](https://github.com/cheshirekow/cmake_format#integrations) ( eg. for Visual Studio Code use [the relative extension](https://marketplace.visualstudio.com/items?itemName=cheshirekow.cmake-format) )
+
+## License
+
+Palmer is released under GPLv3 license, and you can get a copy of the license here: [COPYING.txt](COPYING.txt)
+
+If you paid for it, remember to ask for a refund to the person who sold you a copy. Make also sure you get a copy of the source code if you got it as a binary only.
+
+If the person who gave you a copy will refuse to give you the source code, report it here: https://www.gnu.org/licenses/gpl-violation.html
+
+All rights belong to their respective owners.
+</file>
+
+<file path="vcpkg.json">
+{
+  "name": "palmer",
+  "version": "0.8.0",
+  "builtin-baseline": "898b728edc5e0d12b50015f9cd18247c4257a3eb",
+  "dependencies": [
+    "freeglut",
+    "glew",
+    "libpng",
+    {
+      "name": "mimalloc",
+      "default-features": false,
+      "features": [
+        "override",
+        "secure"
+      ]
+    },
+    {
+      "name": "cpuinfo",
+      "default-features": false,
+      "features": [
+        "tools"
+      ]
+    }
+  ],
+  "overrides": [
+    {
+      "name": "freeglut",
+      "version": "3.4.0",
+      "port-version": 1
+    },
+    {
+      "name": "glew",
+      "version": "2.2.0",
+      "port-version": 3
+    },
+    {
+      "name": "libpng",
+      "version": "1.6.43",
+      "port-version": 0
+    },
+    {
+      "name": "mimalloc",
+      "version": "2.1.2",
+      "port-version": 1
+    },
+    {
+      "name": "cpuinfo",
+      "version": "2022-07-19",
+      "port-version": 3
+    }
+  ]
+}
+</file>
+
+</files>
