@@ -1,5 +1,6 @@
 # FF7 Japanese Mod Project - Optimized .gitignore
 # Created: 2026-01-24 19:10 JST
+# Updated: 2026-01-25 22:50 JST
 # Replaced 10,634-line bloated version with efficient patterns
 
 # ============================================================================
@@ -16,6 +17,17 @@ japanese-assets-extracted/raw-files/
 FF7-Japanese-Mod/lang-ja/
 FF7-Japanese-Mod/mods/
 assets/fonts/
+
+# Working directories (development artifacts)
+char_portrait_dbox/
+font_sdf_converter/
+
+# Font development artifacts (test images, debug outputs)
+sdf_font/*.png
+sdf_font/*_test.*
+sdf_font/*_debug.*
+sdf_font/compare_*
+sdf_font/skeleton*
 
 # Build artifacts
 *.iro

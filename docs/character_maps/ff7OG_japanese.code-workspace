@@ -4,28 +4,19 @@
       "path": "../.."
     },
     {
-      "path": "../../../.."
-    },
-    {
       "path": "../../../tools"
     },
     {
       "path": "../../../../.claude"
     },
     {
-      "path": "../../../DJ Studio Playlist naming"
-    },
-    {
-      "path": "../../../discord translator"
-    },
-    {
-      "path": "../../../flatmates"
-    },
-    {
-      "path": "../../../../.tmux"
-    },
-    {
       "path": "../../../zhu_li"
+    },
+    {
+      "path": "../../../ragaumuffin"
+    },
+    {
+      "path": "../../../politicalclaims"
     }
   ],
   "settings": {
