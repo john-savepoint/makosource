@@ -189,45 +189,74 @@ ff7/workingdir/data/
 
 ## What Needs To Be Done Next
 
+### CRITICAL: SCOPE IS THE ENTIRETY OF FFNx
+
+This is NOT just about Japanese/language support. The task is porting **ALL of FFNx** to the 2026 binary. FFNx provides:
+
+- **Complete graphics rendering replacement** (OpenGL/Vulkan pipeline replacing DirectDraw)
+- **Audio replacement** (VGMStream, custom music/SFX playback)
+- **Movie/FMV playback** (custom video handling)
+- **Widescreen support** (16:9, 16:10 aspect ratios)
+- **Texture replacement/upscaling system** (the entire mod texture pipeline)
+- **Achievement system**
+- **Voice acting support** (Echo-S integration)
+- **Field background upscaling/replacement**
+- **Battle model replacement**
+- **Save data handling**
+- **7th Heaven mod loading** (.iro overlay filesystem — the backbone of ALL FF7 mods)
+- **SDF font rendering**
+- **Gamepad support enhancements**
+- **Steam/eStore integration**
+- **And hundreds of individual hooks** across field, battle, menu, world map, minigames
+
+This is 20 years of work by hundreds of developers. Every single hook needs to be mapped from the old 32-bit addresses to the new 64-bit binary.
+
 ### Immediate (IDA Pro work)
 
 1. **Understand the dispatch mechanism** — The `mov cl, 82h; retn` pattern in gfx_drv stubs suggests a central dispatcher. Find it. This is how the original game code calls into the BaseEngine.
 
 2. **Find the main game loop** — Locate `WinMain` equivalent, the module dispatch (field/battle/menu/world), and the frame update cycle.
 
-3. **Map the text rendering pipeline** — Find where `jafont_%d.tim` gets loaded, where character widths are computed, and where glyphs are drawn. Cross-reference from the font strings.
+3. **Map ALL game module entry points** — Field module, battle module, menu module, world map module, minigames (chocobo, condor, highway, snowboard, submarine, coaster). FFNx hooks into every one of these.
 
-4. **Map the file loading system** — How `lang-ja/kernel/kernel.bin` and `field/jfleve.lgp` get loaded. The `data/` and `lang-ja/` strings at `0x141649300` and `0x141649348` are the starting points.
+4. **Map the file loading system** — LGP loading, kernel loading, mod overlay system. The `data/` and `lang-*` strings at `0x141649300`+ are starting points.
 
-5. **Investigate the obfuscated shim functions** — Some WinAPI shims (LoadLibraryA, etc.) point to encrypted data. Determine if this is DRM, anti-tamper, or just unanalyzed code.
+5. **Map the rendering pipeline end-to-end** — From texture load through draw calls to present. This is the core of FFNx.
+
+6. **Map the audio pipeline** — DirectSound shims (16 entries), acmStream (6 entries), MIDI system. FFNx replaces all of this.
+
+7. **Investigate the obfuscated shim functions** — Some WinAPI shims (LoadLibraryA, etc.) point to encrypted data. Determine if this is DRM, anti-tamper, or unanalyzed code.
 
 ### Strategy (FFNx port approach)
 
 **Most viable injection path: SDL2.dll proxy**
 - Game imports 11 SDL2 functions
 - Create proxy DLL that forwards calls to real SDL2
-- On load, pattern-scan for the shim table and hook gfx_drv functions
+- On load, pattern-scan for the shim table and hook ALL shim functions
 - This gives us the same hook points FFNx uses, just in a 64-bit context
 
 **Alternative: Shim table patching**
-- The shim table at `0x1416D20B8` contains function pointers
-- If we can modify these in memory, we can redirect gfx_drv calls to our code
-- This is essentially what FFNx does with the original AF3DN.P
+- The shim table at `0x1416D20B8` contains ALL 203 function pointers
+- Modify these in memory to redirect to FFNx implementations
+- This is essentially what FFNx does with the original AF3DN.P but broader
 
 ### Architecture Vision (Unified Modding)
 
-The goal is NOT just "make FFNx work." It's a unified modding layer:
+The goal is a unified modding layer that replaces the fragmented old system:
 ```
 FFVII.exe (one 64-bit binary, all 5 languages)
     ↓ SDL2.dll proxy injection
-FFNx64.dll (new unified mod driver)
-    ↓ hooks gfx_drv_* via shim table
-    ↓ intercepts text/font pipeline
-    ↓ provides mod API (7th Heaven compatible)
+FFNx64.dll (new unified mod driver — FULL FFNx port)
+    ↓ hooks ALL 203 shim table entries
+    ↓ replaces graphics pipeline (gfx_drv_*)
+    ↓ replaces audio pipeline (IDirectSound*, acmStream*)
+    ↓ replaces video pipeline (fw_movie_*)
+    ↓ provides complete mod API (7th Heaven compatible)
+    ↓ .iro overlay filesystem for all mod loading
 ff7/workingdir/data/ + mods/ overlay
 ```
 
-This eliminates the old pattern of separate executables per language and separate mods per language.
+This eliminates separate executables per language and gives the entire modding community a single target.
 
 ---
 
