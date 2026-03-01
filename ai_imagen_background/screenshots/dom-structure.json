@@ -1,0 +1,366 @@
+{
+  "containers": [
+    {
+      "tag": "DIV",
+      "className": "z-[50] container h-full grid grid-cols-[1fr_auto]  gap-0 md:gap-2 items-center relative px-2 md:px-0",
+      "childCount": 2,
+      "innerHTML_preview": "<a class=\"gap-1.5 inline-grid grid-flow-col content-center text-ellipsis overflow-hidden whitespace-nowrap font-medium transition hover:not-disabled:not-active:brightness-60 focus-visible:not-disabled:not-active:brightness-60 [&amp;&gt;svg]:h-full flex w-full items-center justify-center animate-slide-in-up text-sm font-medium text-font-primary-reverted h-full hover:no-underline hover:opacity-100\" href=\"/pricing?type=private\"><div class=\"flex xl:hidden flex-row flex-wrap items-center justify-cent"
+    },
+    {
+      "tag": "A",
+      "className": "gap-1.5 inline-grid grid-flow-col content-center text-ellipsis overflow-hidden whitespace-nowrap font-medium transition hover:not-disabled:not-active:brightness-60 focus-visible:not-disabled:not-activ",
+      "childCount": 2,
+      "innerHTML_preview": "<div class=\"flex xl:hidden flex-row flex-wrap items-center justify-center gap-1\"><span class=\"text-xxs flex items-center gap-1\"><span class=\"font-bold\">50% OFF</span> <span class=\"font-bold\">100 FREE GENS ON KLING 3.0</span></span><p class=\"w-fit rounded-4xl flex items-center px-3 py-1.5 relative h-[22px] md:h-[26px] rounded-2xl bg-[radial-gradient(circle_at_center,#F920D1_0%,#ED1572_100%)] shadow-[0_4px_10px_0_rgba(0,0,0,0.20),0_2px_0_0_#AC074E] !opacity-100 hover:!opacity-100  text-xxs! py-0.5"
+    },
+    {
+      "tag": "BUTTON",
+      "className": "size-5 md:size-7 absolute right-2 md:static grid justify-center items-center interactive-tap z-10 transition text-font-primary-reverted rounded-lg",
+      "childCount": 1,
+      "innerHTML_preview": "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" class=\"transition\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3.81246 3.81246C4.00772 3.6172 4.32431 3.6172 4.51957 3.81246L9.99935 9.29224L15.4791 3.81246C15.6744 3.6172 15.991 3.6172 16.1862 3.81246C16.3815 4.00772 16.3815 4.32431 16.1862 4.51957L10.7065 9.99935L16.1862 15.4791C16.3815 15.6744 16.3815 15.991 16.1862 16.1862C15.991 16.3815 15.6744 16.3815 15.4791 16.1862L9.99935 10.7065L4.51957 16.1862C4.32431 16.3815 4.00772 16.3815 3.8124"
+    },
+    {
+      "tag": "NAV",
+      "className": "grid grid-cols-[1fr_auto] md:grid-cols-[auto_1fr_auto] pr-4 h-full items-center relative pl-4",
+      "childCount": 3,
+      "innerHTML_preview": "<a title=\"Higgsfield AI \u2013 AI Video &amp; Image Generation Platform\" data-layout-track=\"{&quot;event_type&quot;:&quot;navigation_item_clicked&quot;,&quot;event_properties&quot;:{&quot;env&quot;:&quot;production&quot;,&quot;navigation_item&quot;:&quot;Motions&quot;,&quot;current_page&quot;:&quot;Motions page&quot;}}\" class=\"shrink-0 grid grid-flow-col-dense items-center gap-2 mr-2 transition hover:text-primary active:opacity-60 justify-start\" href=\"/\"><svg width=\"80\" height=\"80\" viewBox=\"0 0 80 80"
+    },
+    {
+      "tag": "A",
+      "className": "shrink-0 grid grid-flow-col-dense items-center gap-2 mr-2 transition hover:text-primary active:opacity-60 justify-start",
+      "childCount": 2,
+      "innerHTML_preview": "<svg width=\"80\" height=\"80\" viewBox=\"0 0 80 80\" class=\"size-8\"><rect width=\"80\" height=\"80\" rx=\"16\" fill=\"currentColor\"></rect><path d=\"M64.2786 39.6003L64.2323 39.0943C63.7939 34.2383 60.6336 25.102 51.8677 25.102C45.3627 25.102 40.4487 31.5229 36.112 37.1838C32.6515 41.7173 29.6533 45.6063 26.3542 45.6063C25.4773 45.5146 24.3472 45.0772 23.6555 44.0877C23.0326 43.1898 22.8712 42.0393 23.1939 40.6585C23.7011 38.4722 26.6081 36.447 29.6758 34.2838C31.3594 33.1333 33.09 31.9135 34.2895 30.7399C37"
+    },
+    {
+      "tag": "DIV",
+      "className": "hidden h-full md:grid grid-flow-col-dense items-center auto-cols-min overflow-x-auto hide-scrollbar",
+      "childCount": 12,
+      "innerHTML_preview": "<a title=\"Explore presets and examples for AI video &amp; image generation on Higgsfield\" data-layout-track=\"{&quot;event_type&quot;:&quot;navigation_item_clicked&quot;,&quot;event_properties&quot;:{&quot;env&quot;:&quot;production&quot;,&quot;navigation_item&quot;:&quot;Motions&quot;,&quot;current_page&quot;:&quot;Motions page&quot;}}\" data-header-active-on=\"/\" class=\"py-1 px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center whitespace-nowrap transition group-hover:bg"
+    },
+    {
+      "tag": "A",
+      "className": "py-1 px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center whitespace-nowrap transition group-hover:bg-neutral-surface text-text-secondary data-[active=\"true\"]:text-text-prim",
+      "childCount": 0,
+      "innerHTML_preview": "Explore"
+    },
+    {
+      "tag": "BUTTON",
+      "className": "p-0 md:py-1 md:px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center transition group-hover:bg-surface-primary focus:bg-surface-primary text-font-secondary data-[active=\"true",
+      "childCount": 1,
+      "innerHTML_preview": "Image<span class=\"rounded-sm text-caption-s whitespace-nowrap font-medium bg-primary-10 text-primary px-1\">New</span>"
+    },
+    {
+      "tag": "BUTTON",
+      "className": "p-0 md:py-1 md:px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center transition group-hover:bg-surface-primary focus:bg-surface-primary text-font-secondary data-[active=\"true",
+      "childCount": 0,
+      "innerHTML_preview": "Video"
+    },
+    {
+      "tag": "BUTTON",
+      "className": "p-0 md:py-1 md:px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center transition group-hover:bg-surface-primary focus:bg-surface-primary text-font-secondary data-[active=\"true",
+      "childCount": 0,
+      "innerHTML_preview": "Edit"
+    },
+    {
+      "tag": "BUTTON",
+      "className": "p-0 md:py-1 md:px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center transition group-hover:bg-surface-primary focus:bg-surface-primary text-font-secondary data-[active=\"true",
+      "childCount": 1,
+      "innerHTML_preview": "Character<span class=\"rounded-sm text-caption-s whitespace-nowrap font-medium bg-primary-10 text-primary px-1\">Soul ID</span>"
+    },
+    {
+      "tag": "BUTTON",
+      "className": "p-0 md:py-1 md:px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center transition group-hover:bg-surface-primary focus:bg-surface-primary text-font-secondary data-[active=\"true",
+      "childCount": 0,
+      "innerHTML_preview": "Contests"
+    },
+    {
+      "tag": "A",
+      "className": "py-1 px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center whitespace-nowrap transition group-hover:bg-neutral-surface text-text-secondary data-[active=\"true\"]:text-text-prim",
+      "childCount": 0,
+      "innerHTML_preview": "Vibe Motion"
+    },
+    {
+      "tag": "A",
+      "className": "py-1 px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center whitespace-nowrap transition group-hover:bg-neutral-surface text-text-secondary data-[active=\"true\"]:text-text-prim",
+      "childCount": 1,
+      "innerHTML_preview": "Cinema Studio<span class=\"rounded-sm text-caption-s font-medium whitespace-nowrap bg-primary-10 text-primary px-1\">2.0</span>"
+    },
+    {
+      "tag": "A",
+      "className": "py-1 px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center whitespace-nowrap transition group-hover:bg-neutral-surface text-text-secondary data-[active=\"true\"]:text-text-prim",
+      "childCount": 0,
+      "innerHTML_preview": "AI Influencer"
+    },
+    {
+      "tag": "A",
+      "className": "py-1 px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center whitespace-nowrap transition group-hover:bg-neutral-surface text-text-secondary data-[active=\"true\"]:text-text-prim",
+      "childCount": 0,
+      "innerHTML_preview": "Apps"
+    },
+    {
+      "tag": "A",
+      "className": "py-1 px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center whitespace-nowrap transition group-hover:bg-neutral-surface text-text-secondary data-[active=\"true\"]:text-text-prim",
+      "childCount": 0,
+      "innerHTML_preview": "Assist"
+    },
+    {
+      "tag": "A",
+      "className": "py-1 px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center whitespace-nowrap transition group-hover:bg-neutral-surface text-text-secondary data-[active=\"true\"]:text-text-prim",
+      "childCount": 0,
+      "innerHTML_preview": "Community"
+    },
+    {
+      "tag": "DIV",
+      "className": "shrink-0 grid grid-flow-col-dense items-center",
+      "childCount": 1,
+      "innerHTML_preview": "<div class=\"items-center grid grid-flow-col-dense\"><a title=\"View Higgsfield AI pricing plans and subscription options\" data-layout-track=\"{&quot;event_type&quot;:&quot;navigation_item_clicked&quot;,&quot;event_properties&quot;:{&quot;env&quot;:&quot;production&quot;,&quot;navigation_item&quot;:&quot;Pricing&quot;,&quot;current_page&quot;:&quot;Motions page&quot;}}\" data-header-active-on=\"/pricing/**\" class=\"py-1 px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center whi"
+    },
+    {
+      "tag": "DIV",
+      "className": "items-center grid grid-flow-col-dense",
+      "childCount": 3,
+      "innerHTML_preview": "<a title=\"View Higgsfield AI pricing plans and subscription options\" data-layout-track=\"{&quot;event_type&quot;:&quot;navigation_item_clicked&quot;,&quot;event_properties&quot;:{&quot;env&quot;:&quot;production&quot;,&quot;navigation_item&quot;:&quot;Pricing&quot;,&quot;current_page&quot;:&quot;Motions page&quot;}}\" data-header-active-on=\"/pricing/**\" class=\"py-1 px-3 rounded-xl text-body-s font-medium grid gap-1.5 grid-flow-col items-center whitespace-nowrap transition group-hover:bg-neutral-su"
+    }
+  ],
+  "images": [
+    {
+      "src": "https://higgsfield.ai/cdn-cgi/image/fit=scale-down,format=webp,onerror=redirect,width=64,quality=85/",
+      "alt": "Folder icon",
+      "parentTag": "DIV",
+      "parentClass": "grid justify-center items-center size-6",
+      "grandparentTag": "A",
+      "grandparentClass": "button button-sm button-primary relative items-center justify-center gap-1! pl-2! pr-3! border borde"
+    },
+    {
+      "src": "https://higgsfield.ai/cdn-cgi/image/fit=scale-down,format=webp,onerror=redirect,width=1920,quality=8",
+      "alt": "user profile",
+      "parentTag": "DIV",
+      "parentClass": "absolute grid justify-center items-center overflow-hidden rounded-full",
+      "grandparentTag": "DIV",
+      "grandparentClass": "relative"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Faux-",
+      "alt": "flower loader",
+      "parentTag": "DIV",
+      "parentClass": "size-full flex justify-center items-center",
+      "grandparentTag": "DIV",
+      "grandparentClass": "fixed top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-50"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Fuser",
+      "alt": "A straight-on medium shot captures a handmade jellyfish-shaped lamp sitting on a light green tabletop, against a cluttered indoor background. The lamp features a textured blue fabric shade with intricate patterns and dangling, translucent strands resembling seaweed, embellished with colorful sequins and faux pearls. It emits a soft, cool blue glow that highlights its wavy, organic shapes. The base combines blue and green textured materials, lending a natural, oceanic aesthetic. The environment includes various small objects and decorations, creating a busy, personal workspace atmosphere. The lighting is even, with a focus on the lamp's illumination, setting a whimsical and creative mood.\nHEX VALUES: [\"#1c3633\", \"#0f2221\", \"#051111\", \"#9cd2c2\", \"#8db4a3\", \"#3a5142\", \"#709284\", \"#50715d\", \"#09bad2\", \"#14a3b4\", \"#0c838f\", \"#0a5d5e\", \"#1ad0e2\", \"#55d0d9\", \"#cbe3d8\"]",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative overflow-hidden z-1",
+      "grandparentTag": "ASIDE",
+      "grandparentClass": "relative group"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2ol7oe51mr4n9.cloudfront.net%2Fano",
+      "alt": "zhanay's profile picture",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative size-7 rounded-full overflow-hidden",
+      "grandparentTag": "A",
+      "grandparentClass": "items-center transition hover:text-font-brand grid grid-cols-[1.75rem_1fr] gap-2"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Fuser",
+      "alt": "A high-angle, full-body fashion editorial photograph of a young adult South Asian woman with medium brown skin and exceptionally long, thick dark hair tumbling naturally out behind her head, lying face-down with her arms flat at her sides on a large vintage-inspired, intricately patterned rug that evokes a painterly staged backdrop: oversized ornate floral motifs and a palette of dusty blush, taupe, sage, and cream. She wears a plush blush pink faux-fur cropped jacket layered atop a shiny, ruched, delicate peach-pink slip-dress, its wavy hem trimmed with white tulle ruffles, and creamy-taupe over-the-knee cossack boots. The scene is brightly illuminated by broad, directional daylight from the right, creating sculpted light blooming on the plush pile of the jacket and deep, translucent dimension to her lustrous extended hair, contrasted by diffuse deep shadows curving over the rug and body. Styling accents are artisanal: subtly tousled waves with Hellenic perfection, gently layered blush to highlight cheeks, and a delicate glass ring encircling her index finger. The full overhead composition is centered with her body diagonally placed for asymmetry, crisp focus throughout, and slight analog-style film halation for tactile texture, golden light, and a gently haunting, painterly mood that reimagines languid domesticity as an opulent staged fashion moment. Dominant colors: muted pink, blush, taupe, cream, mottled green, brown, brushed silver, and luminous white. Minimal film grain, shallow optical vignette, and soft rolling contrast for a softly surreal, sumptuous analog look.",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative overflow-hidden z-1",
+      "grandparentTag": "ASIDE",
+      "grandparentClass": "relative group"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fstatic.higgsfield.ai%2Fprofile%2Fav",
+      "alt": "young_drill's profile picture",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative size-7 rounded-full overflow-hidden",
+      "grandparentTag": "A",
+      "grandparentClass": "items-center transition hover:text-font-brand grid grid-cols-[1.75rem_1fr] gap-2"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Fuser",
+      "alt": "A straight-on, recumbent close-up of a young woman with lustrous, porcelain skin, her head turned delicately towards camera as her hand rest gently atop her collarbone, providing a subtle framing of the face. Her sharp, angular black dress is rendered in a slick matte satin, contrasting against luminous, translucent peony petals and a burned iridescent resin overlay that pools asymmetrically across her chest, creating a captivating duality between fashion and organic fantasy elements. Her makeup is artistic, with warm, rose-gold shimmer pressed on high points of her cheeks and collarbone, complemented by soft gloss lips and subtle smoke-gray shadow at the eyes. Hair is sleek, brushed out and splayed with dynamic tension. She appears atop a plush, minimal platform in a cyclorama studio, with an ethereal airbrushed cloud background and floating refractive light leaks, producing a faint, soft bloom. Light is diffuse, split-lit with an amber key and deep teal rim, casting low, fluid luminous shadows. The polarized palette contrasts shell pink and peachy skin tones against nightfall blue and cool gray. The symmetrical composition, with notably shallow DOF on her features and resin overlay, is polished; digital high-resolution editorial photography, enhanced with diffusion glows, iridescent overlay compositing, negative-space gradients, and iridescent filter effects. Mood is dreamy, intimate, and contemplative.\nHEX VALUES: ['#0b100c', '#180e05', '#ddcae3', '#d4b9d1', '#e0a6bb', '#c38377', '#040807', '#d59499', '#1e2716', '#c0644a', '#81492a', '#bb734f', '#854415', '#4b2e14', '#a65d34']",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative overflow-hidden z-1",
+      "grandparentTag": "ASIDE",
+      "grandparentClass": "relative group"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd20rwh69pn04qo.cloudfront.net%2Fano",
+      "alt": "wer's profile picture",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative size-7 rounded-full overflow-hidden",
+      "grandparentTag": "A",
+      "grandparentClass": "items-center transition hover:text-font-brand grid grid-cols-[1.75rem_1fr] gap-2"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Fuser",
+      "alt": "A straight-on medium shot features a young woman with light skin and long brown hair, standing outdoors beside a weathered black car. The woman is dressed in a white cropped top and blue denim jeans, leaning slightly to her left. Natural sunlight from the upper left casts a bright, diffused glow, creating lens flare and soft highlights around her silhouette. The background is dense with green foliage, suggesting an overgrown, possibly abandoned area. A Web-like pattern of sunbeams and light scatter are noticeable, adding a dreamy, ethereal quality to the image. The overall atmosphere is a mix of romantic and rustic, with the bright daylight contrasting against the overgrown and slightly neglected environment.\nHEX VALUES: [\"#4a494c\", \"#5e5d60\", \"#373439\", \"#797978\", \"#232227\", \"#b1a8a4\", \"#959192\", \"#975162\", \"#8b2e43\", \"#825e53\", \"#68212c\", \"#cfc9c3\", \"#f2f0ed\", \"#a3727c\", \"#61403d\"]",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative overflow-hidden z-1",
+      "grandparentTag": "ASIDE",
+      "grandparentClass": "relative group"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fstatic.higgsfield.ai%2Fprofile%2Fav",
+      "alt": "qwerty_322's profile picture",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative size-7 rounded-full overflow-hidden",
+      "grandparentTag": "A",
+      "grandparentClass": "items-center transition hover:text-font-brand grid grid-cols-[1.75rem_1fr] gap-2"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Fuser",
+      "alt": "A close-up shot captures a young Caucasian woman with closed eyes, framed slightly off-center with a focus on her face. Her short, platinum blonde hair falls in an uneven fringe over her forehead. She has smooth, pale skin with a glossy, dewy texture, and wears distinctive mustard-yellow glossy lipstick. Her facial features are soft, with a faint green eyeshadow accenting her eyelids. Her left hand lightly touches her face, showcasing short, natural nails. The image has a soft quality with a slightly blurred effect, featuring a muted pastel color palette dominated by pale yellows, pinks, and off-whites. Captured in diffused, natural light, it creates a serene and dreamy atmosphere, likely taken with a medium-length lens that minimizes distortion. The overall mood is modern and avant-garde, with a soft, artistic aesthetic.\nHEX VALUES: [\"#c7ae9c\", \"#ceb7a4\", \"#c0a593\", \"#d5c1ae\", \"#b99d8a\", \"#decbba\", \"#b0927e\", \"#a58571\", \"#9a7861\", \"#e9d8ca\", \"#8b6751\"]",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative overflow-hidden z-1",
+      "grandparentTag": "ASIDE",
+      "grandparentClass": "relative group"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fstatic.higgsfield.ai%2Fprofile%2Fav",
+      "alt": "qwerty_322's profile picture",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative size-7 rounded-full overflow-hidden",
+      "grandparentTag": "A",
+      "grandparentClass": "items-center transition hover:text-font-brand grid grid-cols-[1.75rem_1fr] gap-2"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Fuser",
+      "alt": "A low-angle full-body shot captures a young adult female-presenting subject, approximately in her early 20s, with extremely pale, porcelain skin and very light, platinum-blond hair\u2014features suggesting a Northern European or albino appearance\u2014standing statuesque on a rocky foreground. She wears sculpted metallic armor-like adornments: a reflective, contoured metal bra with hammered texture and tiny pendant chains, articulated forearm pieces and ornate metal gloves encrusted with filigree, and oversized, high-shine silver trousers that read like liquid metal or laminated vinyl, their surfaces creased with deep specular highlights and sharp fold lines; additional chains and dangling jewelry drape across her hips and torso, adding a fine, beaded texture against bare skin. A small dark tattoo is visible on her left ribcage. The setting is a brooding coastal scene with a massive, curling ocean wave frozen behind her\u2014the surf rendered with smooth, photographic motion that softens toward the horizon\u2014against a dark, almost monochrome sky. Lighting is dramatic and highly specular: strong high-key rim light from above and slightly behind creates bright highlights on the glossy metals and hair, producing crisp specular reflections and subtle subsurface scattering on the skin at the cheeks and shoulders; shadows are cool and diffuse with soft falloff, and there are faint bloom/halation effects around the brightest edges. Dominant colors are metallic silver, slate gray, and desaturated cool blues, with skin and hair registering as pale creams and near-white highlights. Framing is heroic and centered, shot from a low, slightly wide-angle perspective that emphasizes leg length and the imposing stance, with a moderately deep focus that keeps both subject and the near wave detail relatively sharp while allowing the distant sea to soften; there is minimal motion blur and no significant chromatic aberration, though post-processed glow and clarity enhancements are evident. The image quality suggests high-resolution digital capture heavily retouched or composited\u2014likely a modern digital editorial or CGI-assisted fashion photograph\u2014with visible digital sharpening, smooth skin retouching, and subtle noise reduction that gives an almost hyperreal finish. At the bottom center, a small stylized mark resembling the letters \"JP\" is visible as a signature or logo. The overall mood is otherworldly and commanding\u2014icy, futuristic, and elegiac with a stylized, cinematic tension between organic vulnerability and gleaming, armor-like adornment.\nHEX VALUES: [\"#171a1e\", \"#202226\", \"#292b2f\", \"#3d4045\", \"#323539\", \"#4b4e53\", \"#5b6065\", \"#6c7278\", \"#7d8288\", \"#0c0d0f\", \"#8d9399\", \"#adb4ba\", \"#9ea5ab\"]",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative overflow-hidden z-1",
+      "grandparentTag": "ASIDE",
+      "grandparentClass": "relative group"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd20rwh69pn04qo.cloudfront.net%2Fano",
+      "alt": "wer's profile picture",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative size-7 rounded-full overflow-hidden",
+      "grandparentTag": "A",
+      "grandparentClass": "items-center transition hover:text-font-brand grid grid-cols-[1.75rem_1fr] gap-2"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Fuser",
+      "alt": "A low-angle medium shot captures a young adult Caucasian woman standing in a snowy mountainous landscape. She is wearing a textured ensemble featuring a brown cable-knit jacket over a faux fur coat, with form-fitting leggings and fluffy knee-high boots, all in matching earthy tones. A cream knitted cap and oversized sunglasses complete the look. She stands confidently, one hand on her hip, exuding a sense of fashion-forward poise. The background displays a snow-dusted mountain under a clear, vibrant blue sky. The lighting is bright, likely natural sunlight, creating sharp, crisp highlights and shadows. The scene's color palette includes warm browns and creams, contrasted by the cool whites and blues of the snow and sky. The image has a high-resolution quality, likely captured with a modern digital camera, conveying a dynamic and adventurous mood.\nHEX VALUES: [\"#232123\", \"#e6e4e6\", \"#d9d3d4\", \"#7396be\", \"#4f7dad\", \"#4b3833\", \"#99b2d6\", \"#a96c3e\", \"#c58b5e\", \"#d2bfb5\", \"#7e492a\", \"#dcac89\", \"#b2a29c\", \"#9d8476\", \"#7a6355\"]",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative overflow-hidden z-1",
+      "grandparentTag": "ASIDE",
+      "grandparentClass": "relative group"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd20rwh69pn04qo.cloudfront.net%2Fano",
+      "alt": "wer's profile picture",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative size-7 rounded-full overflow-hidden",
+      "grandparentTag": "A",
+      "grandparentClass": "items-center transition hover:text-font-brand grid grid-cols-[1.75rem_1fr] gap-2"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Fuser",
+      "alt": "A high-angle shot captures the view of an open notebook placed on a wooden table, with a focus on a black ink sketch of a man's face on the right page. The left page features a weekly planner with handwritten notes in black ink, dated from February 24 to March 2. A yellow plastic pen rests across the notebook, introducing a splash of color. Above the notebook, a clear plastic cup containing a green beverage is partially filled, with its lid on. The bottom part of the image reveals the photographer's lap, wearing light blue denim jeans, a leather belt, and a black Calvin Klein waistband visible above the beltline. A pair of white earphones rests on the lap, with their cord extending out of the frame. The overall lighting is soft and even, with natural light from a nearby window illuminating the scene from the top left, creating a casual, relaxed atmosphere.\nHEX VALUES: [\"#d8dad8\", \"#613e21\", \"#916e4a\", \"#7a5635\", \"#64656a\", \"#9e815d\", \"#c2c0bb\", \"#3c3c42\", \"#211f24\", \"#cfcfcc\", \"#100a0b\", \"#aeaba7\", \"#8f8f8d\", \"#dfe6eb\"]",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative overflow-hidden z-1",
+      "grandparentTag": "ASIDE",
+      "grandparentClass": "relative group"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd20rwh69pn04qo.cloudfront.net%2Fano",
+      "alt": "jighit's profile picture",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative size-7 rounded-full overflow-hidden",
+      "grandparentTag": "A",
+      "grandparentClass": "items-center transition hover:text-font-brand grid grid-cols-[1.75rem_1fr] gap-2"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Fuser",
+      "alt": "Full body shot of a young man in his early 20s standing slouched with arms crossed, wearing a fitted white t-shirt under oversized tan khaki canvas shorts, high white socks, black sneakers, and a neutral beanie. His expression is deadpan, with a slightly indifferent gaze. The photo is set in a cramped urban alley against green construction fencing with weathered signage, with tall glass and metal framed buildings in the background. The image emulates a lo-fi 2000s digicam with harsh direct on-camera flash, hard shadows, and uniform bright exposure throughout. The color palette features soft neutrals and desaturated skin tones, slightly cool, lo-fi editorial. ",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative overflow-hidden z-1",
+      "grandparentTag": "ASIDE",
+      "grandparentClass": "relative group"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd20rwh69pn04qo.cloudfront.net%2Fano",
+      "alt": "wer's profile picture",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative size-7 rounded-full overflow-hidden",
+      "grandparentTag": "A",
+      "grandparentClass": "items-center transition hover:text-font-brand grid grid-cols-[1.75rem_1fr] gap-2"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Fuser",
+      "alt": "Medium full shot of a skinny young white man with long blonde hair, standing slouched on a clay tennis court, holding sunglasses in his left hand. He wears a white ribbed tank top, shiny loafers with white crew socks, and oversized pale green shorts accented with mint and lilac, styled in a bored, deadpan fashion pose. The geometric white court markings on the clay offer a retro, mundane, editorial background. Lighting is harsh direct on-camera flash with a flat, edge-to-edge exposure typical of a lo-fi digicam snapshot, featuring pastel and earthy neutrals with a pastel pop for the shorts, digital grain, and a gentle flash washout in the image style.",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative overflow-hidden z-1",
+      "grandparentTag": "ASIDE",
+      "grandparentClass": "relative group"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2ol7oe51mr4n9.cloudfront.net%2Fano",
+      "alt": "zhanay's profile picture",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative size-7 rounded-full overflow-hidden",
+      "grandparentTag": "A",
+      "grandparentClass": "items-center transition hover:text-font-brand grid grid-cols-[1.75rem_1fr] gap-2"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Fuser",
+      "alt": "A medium shot captures a young Asian woman in a stylized outfit, standing against a textured, weathered wall. She wears a form-fitted, light denim corset with dark accents and oversized metallic grommets, paired with a short, matching denim skirt. Her ensemble includes dramatic, oversized hoop earrings and a chunky necklace. Her arms are draped in a brown faux fur jacket with voluminous sleeves. She carries a small, cream-colored handbag with decorative holes and a dangling key charm. Her stockings are lace-trimmed, complementing her knee-high, black heeled boots. The setting features an urban, distressed wall with visible cracks and wires. The image employs natural daylight, creating a warm, muted color palette that enhances the bohemian, fashion-forward mood and commemorates an offbeat, eclectic style.\nHEX VALUES: [\"#d2cbb3\", \"#dcd6be\", \"#c8bfa5\", \"#978a76\", \"#b9af96\", \"#a99c86\", \"#433b35\", \"#8d7760\", \"#0e0d10\", \"#79614d\", \"#282423\", \"#654e3d\", \"#717169\", \"#575751\", \"#e5e2d1\"]",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative overflow-hidden z-1",
+      "grandparentTag": "ASIDE",
+      "grandparentClass": "relative group"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fstatic.higgsfield.ai%2Fprofile%2Fav",
+      "alt": "qwerty_322's profile picture",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative size-7 rounded-full overflow-hidden",
+      "grandparentTag": "A",
+      "grandparentClass": "items-center transition hover:text-font-brand grid grid-cols-[1.75rem_1fr] gap-2"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Fuser",
+      "alt": "A straight-on, eye-level medium shot frames two young women reclining outdoors before a traditional, off-white wood-paneled home in what appears to be a contemporary documentary fashion photograph. The young woman on the left\u2014a fair-skinned Caucasian with long brown curly hair in soft loose waves\u2014wears a pale yellow polka-dot tank top and a textured gray skirt, her relaxed posture propped slightly above her companion, with hands quietly at her sides. Her subtle, natural makeup and neutral expression pair with the minimalist styling. To her right, a young East Asian woman with matte, smooth skin and long black hair wears a pale, muted purple dress in a crisp fabric, gazing thoughtfully off-camera while supporting her head with a hand, her body at ease and limbs arranged in a restful pose. The background is a minimal expanse of classic home siding, featuring a simple window and a flush-glazed glass door, which frame the young women with calm symmetry. The natural light is soft and even, with diffuse illumination and gentle specular highlights, lending a subtle, contemplative atmosphere to the composition. Dominant colors include off-whites and muted pastels, grays, and browns (with referenced HEX values #f1f2f5, #a09f96, #716e63, #e3e4e3, #d1aeb3, and #92918a). Modern digital photography is indicated by a high level of detail, clean deep focus, and subtle dynamic range, establishing a serene, reflective, and slightly nostalgic mood consistent with editorial fashion work or personal portraiture.",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative overflow-hidden z-1",
+      "grandparentTag": "ASIDE",
+      "grandparentClass": "relative group"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fstatic.higgsfield.ai%2Fprofile%2Fav",
+      "alt": "young_drill's profile picture",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative size-7 rounded-full overflow-hidden",
+      "grandparentTag": "A",
+      "grandparentClass": "items-center transition hover:text-font-brand grid grid-cols-[1.75rem_1fr] gap-2"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Fuser",
+      "alt": "Close-up overhead shot of a young woman, showing only the lower half of her body. She wears a monochromatic pastel blue outfit: a knit sleeveless top paired with a matching flowing skirt, and textured wedged mules. She holds a small brown leather crossbody bag with metallic eyelets in one hand and a tea cup in the other. The background is a mundane coarse gray asphalt street surface. Shot with harsh direct on-camera flash for a lo-fi digicam look, creating a slightly washed-out, high-key effect with minimal shadows. The color palette uses muted slate grays, camel beige, and cream highlights paired with pale blue, fitting a soft, stylish, candid editorial mood focusing on everyday elegance and tactility.",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative overflow-hidden z-1",
+      "grandparentTag": "ASIDE",
+      "grandparentClass": "relative group"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd2ol7oe51mr4n9.cloudfront.net%2Fano",
+      "alt": "zhanay's profile picture",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative size-7 rounded-full overflow-hidden",
+      "grandparentTag": "A",
+      "grandparentClass": "items-center transition hover:text-font-brand grid grid-cols-[1.75rem_1fr] gap-2"
+    },
+    {
+      "src": "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fdqv0cqkoy5oj7.cloudfront.net%2Fuser",
+      "alt": "Slightly high-angle medium shot of a young man in his 20s crouching on a concrete sidewalk next to a parked maroon car, holding a food container in one hand and chopsticks in the other, caught mid-bite. He wears camo jeans and a black long-sleeve top layered under a studded leather jacket, paired with brown leather footwear. The expression is nonchalant and deadpan. The setting includes rough-textured paving, a stone building facade with large tiles, and a reflective window. Lived-in, urban vibe. Shot on early 2000s digicam with hard on-camera flash and high-key flat exposure, visible hard shadows, uniform brightness across the whole scene. Muted neutral and gray tones, desaturated palette, lo-fi candid fashion editorial mood.",
+      "parentTag": "FIGURE",
+      "parentClass": "group relative overflow-hidden z-1",
+      "grandparentTag": "ASIDE",
+      "grandparentClass": "relative group"
+    }
+  ]
+}
