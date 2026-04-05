@@ -49,8 +49,16 @@ import signal
 import sys
 import time
 from pathlib import Path
+from typing import Optional
 
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeout
+
+# Import article processor for batch processing
+try:
+    from article_processor import parse_article, generate_prompts, extract_sections
+    ARTICLE_PROCESSOR_AVAILABLE = True
+except ImportError:
+    ARTICLE_PROCESSOR_AVAILABLE = False
 
 # Persistent profile directory — stores cookies/session across runs
 PROFILE_DIR = Path(__file__).parent / ".chrome_profile"
@@ -398,6 +406,286 @@ def click_generate(page, times: int = 4, interval: float = 1.0):
             break
 
 
+def download_image(page, output_dir: str, filename: str, timeout: int = 60000) -> Optional[str]:
+    """
+    Download a generated image from Higgsfield.
+
+    Uses Playwright's expect_download to capture the file when clicking
+    on the generated image or download button.
+
+    Args:
+        page: Playwright page object
+        output_dir: Directory to save the image
+        filename: Output filename (e.g., "candidate_001.png")
+        timeout: Download timeout in milliseconds
+
+    Returns:
+        Path to downloaded file, or None if download failed
+    """
+    output_path = Path(output_dir)
+    output_path.mkdir(parents=True, exist_ok=True)
+    final_path = output_path / filename
+
+    print(f"  Attempting download to: {final_path}")
+
+    try:
+        # Try to trigger download by clicking on generated image
+        with page.expect_download(timeout=timeout) as download_info:
+            # Click on the generated image (usually in a gallery or result area)
+            # TODO: May need to adjust selector based on actual UI
+            clicked = page.evaluate("""
+                () => {
+                    // Try to find generated image container
+                    const imgContainers = document.querySelectorAll('[class*="image"], [class*="result"], [class*="gallery"]');
+                    for (const container of imgContainers) {
+                        const img = container.querySelector('img');
+                        if (img && img.src) {
+                            img.click();
+                            return { clicked: true, method: 'image_click' };
+                        }
+                    }
+
+                    // Fallback: look for download button
+                    const buttons = [...document.querySelectorAll('button')];
+                    const dlBtn = buttons.find(b =>
+                        b.textContent.toLowerCase().includes('download') ||
+                        b.getAttribute('aria-label')?.toLowerCase().includes('download')
+                    );
+                    if (dlBtn) {
+                        dlBtn.click();
+                        return { clicked: true, method: 'download_button' };
+                    }
+
+                    return { clicked: false };
+                }
+            """)
+
+            if not clicked.get("clicked"):
+                print("  [ERROR] Could not trigger download - no image or download button found")
+                return None
+
+        download = download_info.value
+        download.save_as(str(final_path))
+        print(f"  [OK] Downloaded: {final_path}")
+        return str(final_path)
+
+    except PlaywrightTimeout:
+        print("  [ERROR] Download timed out")
+        return None
+    except Exception as e:
+        print(f"  [ERROR] Download failed: {e}")
+        return None
+
+
+def get_existing_candidate_count(output_dir: str) -> int:
+    """Count existing candidate files in output directory."""
+    path = Path(output_dir)
+    if not path.exists():
+        return 0
+
+    candidates = list(path.glob("candidate_*.png"))
+    return len(candidates)
+
+
+def run_article_processing(playwright, args):
+    """
+    Process an article end-to-end: parse content, generate prompts,
+    and download images/videos to staging area.
+
+    This is the main workflow when --article is provided.
+    """
+    if not ARTICLE_PROCESSOR_AVAILABLE:
+        print("[ERROR] article_processor module not available.")
+        print("       Ensure article_processor.py is in the same directory.")
+        sys.exit(1)
+
+    if not PROFILE_DIR.exists():
+        print("[ERROR] No saved session found. Run with --login first.")
+        sys.exit(1)
+
+    article_path = Path(args.article).resolve()
+    if not article_path.exists():
+        print(f"[ERROR] Article not found: {article_path}")
+        sys.exit(1)
+
+    # Parse article and generate prompts
+    print("=" * 60)
+    print("ARTICLE PROCESSING MODE")
+    print("=" * 60)
+    print(f"Article: {article_path.name}")
+
+    article = parse_article(str(article_path))
+    print(f"  Title: {article['title']}")
+    print(f"  Slug: {article['slug']}")
+    print(f"  Sections: {len(article['sections'])}")
+
+    # Determine style guide path
+    style_guide_path = None
+    # Style guide is in the custard-for-brains project
+    style_guide_candidates = [
+        Path("/home/johnzealanddoyle/projects/custard-for-brains/src/content/images/STYLE-GUIDE.md"),
+        Path(args.style_guide) if args.style_guide else None,
+    ]
+    for sg_path in style_guide_candidates:
+        if sg_path and sg_path.exists():
+            style_guide_path = str(sg_path)
+            print(f"  Style guide: {sg_path}")
+            break
+
+    prompts = generate_prompts(article, style_guide_path)
+
+    # Set up staging directory
+    output_base = Path(args.output_dir) / article["slug"]
+    output_base.mkdir(parents=True, exist_ok=True)
+
+    print(f"\nOutput directory: {output_base}")
+
+    # Create browser context
+    context = create_browser(playwright, headless=False)
+    page = context.pages[0] if context.pages else context.new_page()
+
+    try:
+        # Navigate and verify logged in
+        print(f"\nNavigating to {HIGGSFIELD_URL}...")
+        navigate_safely(page, HIGGSFIELD_URL)
+        time.sleep(3)
+
+        print("Checking login status...")
+        if not wait_for_logged_in(page):
+            print("[ERROR] Not logged in. Run with --login first.")
+            context.close()
+            sys.exit(1)
+        print("  [OK] Logged in")
+
+        # Step 1: Ensure unlimited toggle is ON
+        print("\nStep 1: Checking unlimited toggle...")
+        ensure_unlimited_toggle(page)
+
+        # Step 2: Generate hero image
+        print("\n" + "=" * 60)
+        print("HERO IMAGE GENERATION")
+        print("=" * 60)
+
+        hero_dir = output_base / "hero"
+        hero_dir.mkdir(parents=True, exist_ok=True)
+
+        print(f"\nPrompt: {prompts['hero'][:100]}...")
+        enter_prompt(page, prompts["hero"])
+
+        print(f"\nClicking Generate {args.clicks} times...")
+        click_generate(page, times=args.clicks, interval=args.interval)
+
+        # Download hero candidates
+        print("\nDownloading hero images...")
+        existing_count = get_existing_candidate_count(str(hero_dir))
+        for i in range(args.clicks):
+            candidate_num = existing_count + i + 1
+            filename = f"candidate_{candidate_num:03d}.png"
+            time.sleep(3)  # Wait between downloads
+            result = download_image(page, str(hero_dir), filename)
+            if not result:
+                print(f"  [WARN] Could not download candidate {candidate_num}")
+
+        print(f"\n  Hero images saved to: {hero_dir}")
+
+        # Step 3: Generate section illustrations (DEFAULT behavior)
+        if not args.hero_only:
+            print("\n" + "=" * 60)
+            print("SECTION ILLUSTRATION GENERATION")
+            print("=" * 60)
+
+            sections_dir = output_base / "sections"
+            sections_dir.mkdir(parents=True, exist_ok=True)
+
+            for idx, section in enumerate(prompts["sections"], 1):
+                section_name = section["title"].lower().replace(" ", "-").replace("?", "")[:30]
+                section_dir = sections_dir / section_name
+                section_dir.mkdir(parents=True, exist_ok=True)
+
+                print(f"\n[{idx}/{len(prompts['sections'])}] {section['title']}")
+                print(f"  Prompt: {section['prompt'][:80]}...")
+
+                # Navigate fresh for each section
+                navigate_safely(page, HIGGSFIELD_URL)
+                time.sleep(2)
+                ensure_unlimited_toggle(page)
+
+                enter_prompt(page, section["prompt"])
+                click_generate(page, times=args.clicks, interval=args.interval)
+
+                # Download section candidates
+                existing = get_existing_candidate_count(str(section_dir))
+                for i in range(args.clicks):
+                    candidate_num = existing + i + 1
+                    filename = f"candidate_{candidate_num:03d}.png"
+                    time.sleep(3)
+                    result = download_image(page, str(section_dir), filename)
+                    if not result:
+                        print(f"    [WARN] Could not download candidate {candidate_num}")
+
+                print(f"  Section images saved to: {section_dir}")
+        else:
+            print("\n[INFO] Skipping section illustrations (--hero-only flag set)")
+
+        # Step 4: Generate video (if requested)
+        if args.include_video:
+            print("\n" + "=" * 60)
+            print("VIDEO GENERATION")
+            print("=" * 60)
+
+            try:
+                from generate_videos import generate_video as generate_video_impl
+
+                # Use first hero candidate as reference
+                hero_candidates = sorted((output_base / "hero").glob("candidate_*.png"))
+                if hero_candidates:
+                    reference_image = str(hero_candidates[0])
+                    video_dir = output_base / "video"
+                    video_dir.mkdir(parents=True, exist_ok=True)
+
+                    print(f"\nReference image: {hero_candidates[0].name}")
+                    print(f"Prompt: {prompts['video'][:80]}...")
+
+                    result = generate_video_impl(
+                        page=page,
+                        reference_image=reference_image,
+                        prompt=prompts["video"],
+                        output_dir=str(video_dir)
+                    )
+
+                    if result:
+                        print(f"  Video saved to: {result}")
+                    else:
+                        print("  [WARN] Video generation failed - check Higgsfield UI")
+                else:
+                    print("  [WARN] No hero candidates available for video reference")
+
+            except ImportError:
+                print("[WARN] generate_videos module not available, skipping video")
+
+        print("\n" + "=" * 60)
+        print("ARTICLE PROCESSING COMPLETE")
+        print("=" * 60)
+        print(f"Output: {output_base}")
+        print(f"  Hero images: {len(list((output_base / 'hero').glob('candidate_*.png')))}")
+        if not args.hero_only:
+            print(f"  Section directories: {len(list(sections_dir.iterdir())) if sections_dir.exists() else 0}")
+        if args.include_video:
+            print(f"  Videos: {len(list((output_base / 'video').glob('candidate_*.mp4')))}")
+        print("\nThe browser will stay open for manual review. Close when done.")
+
+        try:
+            page.wait_for_event("close", timeout=0)
+        except Exception:
+            pass
+
+    finally:
+        try:
+            context.close()
+        except Exception:
+            pass
+
+
 def run_generation(playwright, args):
     """Main generation workflow."""
     print("=" * 60)
@@ -482,6 +770,15 @@ Examples:
 
   # Prompt only, no image upload
   python generate_images.py --prompt "a serene japanese garden at sunset"
+
+  # Process an article (hero + sections + video)
+  python generate_images.py --article /path/to/article.md --output-dir ./downloads/higgsfield
+
+  # Process article with video included
+  python generate_images.py --article /path/to/article.md --include-video
+
+  # Quick hero-only test (skip sections and video)
+  python generate_images.py --article /path/to/article.md --hero-only
         """,
     )
 
@@ -514,16 +811,48 @@ Examples:
         default=1.0,
         help="Seconds between Generate clicks (default: 1.0)",
     )
+    # Article batch processing arguments
+    parser.add_argument(
+        "--article", "-a",
+        type=str,
+        default=None,
+        help="Path to article markdown file for batch processing",
+    )
+    parser.add_argument(
+        "--output-dir", "-o",
+        type=str,
+        default="/home/johnzealanddoyle/projects/custard-for-brains/downloads/higgsfield/",
+        help="Staging directory for downloaded images (default: custard-for-brains/downloads/higgsfield/)",
+    )
+    parser.add_argument(
+        "--hero-only",
+        action="store_true",
+        help="Skip section illustrations and video (for quick hero testing)",
+    )
+    parser.add_argument(
+        "--include-video",
+        action="store_true",
+        help="Enable video generation (requires hero image first)",
+    )
+    parser.add_argument(
+        "--style-guide",
+        type=str,
+        default=None,
+        help="Path to STYLE-GUIDE.md (default: auto-detect from project)",
+    )
 
     args = parser.parse_args()
 
     with sync_playwright() as playwright:
         if args.login:
             login_mode(playwright)
+        elif args.article:
+            # Article batch processing mode
+            run_article_processing(playwright, args)
         else:
             if not args.prompt and not args.image:
                 parser.print_help()
-                print("\n[ERROR] Provide at least --prompt or --image, or use --login")
+                print("\n[ERROR] Provide at least --prompt or --image, or use --article, or use --login")
                 sys.exit(1)
             run_generation(playwright, args)
 
