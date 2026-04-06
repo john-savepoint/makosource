@@ -406,17 +406,131 @@ def click_generate(page, times: int = 4, interval: float = 1.0):
             break
 
 
-def download_image(page, output_dir: str, filename: str, timeout: int = 60000) -> Optional[str]:
+def select_aspect_ratio(page, aspect_ratio: str = "16:9"):
+    """
+    Select the aspect ratio for image generation.
+
+    Args:
+        page: Playwright page object
+        aspect_ratio: One of "1:1", "3:4", "4:3", "16:9", "9:16", "21:9", etc.
+
+    Returns:
+        True if selection successful, False otherwise
+    """
+    # Map common aspect ratios to button text
+    ratio_map = {
+        "1:1": "1:1",
+        "square": "1:1",
+        "3:4": "3:4",
+        "4:3": "4:3",
+        "16:9": "16:9",
+        "landscape": "16:9",
+        "9:16": "9:16",
+        "portrait": "9:16",
+        "21:9": "21:9",
+        "ultrawide": "21:9",
+    }
+
+    target_text = ratio_map.get(aspect_ratio, aspect_ratio)
+
+    result = page.evaluate(f"""
+        () => {{
+            // Find aspect ratio button - it's usually a button with the ratio text
+            const buttons = [...document.querySelectorAll('button')];
+            const aspectBtn = buttons.find(b => b.textContent.trim() === '{target_text}');
+            if (aspectBtn) {{
+                aspectBtn.click();
+                return {{ success: true }};
+            }}
+
+            // Fallback: look for dropdown/select with aspect ratio options
+            const selects = document.querySelectorAll('select');
+            for (const sel of selects) {{
+                const options = [...sel.options];
+                for (const opt of options) {{
+                    if (opt.textContent.includes('{target_text}') || opt.value === '{target_text}') {{
+                        sel.value = opt.value;
+                        sel.dispatchEvent(new Event('change', {{ bubbles: true }}));
+                        return {{ success: true }};
+                    }}
+                }}
+            }}
+
+            return {{ success: false }};
+        }}
+    """)
+
+    if result.get("success"):
+        print(f"  [OK] Aspect ratio set to {target_text}")
+        return True
+    print(f"  [WARN] Could not set aspect ratio to {target_text}")
+    return False
+
+
+def select_model(page, model: str = "NanoBanana2"):
+    """
+    Select the AI model for generation.
+
+    Args:
+        page: Playwright page object
+        model: Model name (e.g., "NanoBanana2", "NanoBanana")
+
+    Returns:
+        True if selection successful, False otherwise
+    """
+    result = page.evaluate(f"""
+        () => {{
+            // Model selector: #image-form > fieldset > div > div.h-9... > button
+            const modelSelector = '#image-form fieldset button[aria-haspopup]';
+            const modelBtn = document.querySelector(modelSelector);
+            if (!modelBtn) {{
+                // Try alternative selector
+                const buttons = [...document.querySelectorAll('button')];
+                for (const btn of buttons) {{
+                    if (btn.textContent.includes('{model}') ||
+                        btn.getAttribute('aria-label')?.includes('{model}')) {{
+                        btn.click();
+                        return {{ success: true, method: 'text_match' }};
+                    }}
+                }}
+                return {{ success: false }};
+            }}
+
+            modelBtn.click();
+
+            // Wait for dropdown and click the model option
+            setTimeout(() => {{
+                const options = document.querySelectorAll('[role="option"], [role="menuitem"]');
+                for (const opt of options) {{
+                    if (opt.textContent.includes('{model}')) {{
+                        opt.click();
+                        return {{ success: true }};
+                    }}
+                }}
+            }}, 500);
+
+            return {{ success: true, clicked: true }};
+        }}
+    """)
+
+    if result.get("success"):
+        print(f"  [OK] Model selected: {model}")
+        return True
+    print(f"  [WARN] Could not select model {model}")
+    return False
+
+
+def download_image(page, output_dir: str, filename: str, image_index: int = 1, timeout: int = 60000) -> Optional[str]:
     """
     Download a generated image from Higgsfield.
 
-    Uses Playwright's expect_download to capture the file when clicking
-    on the generated image or download button.
+    Uses the soul-feed-scroll container to find generated images and click to download.
 
     Args:
         page: Playwright page object
         output_dir: Directory to save the image
         filename: Output filename (e.g., "candidate_001.png")
+        image_index: 1-based index of the image in the feed (default 1)
         timeout: Download timeout in milliseconds
 
     Returns:
@@ -429,35 +543,47 @@ def download_image(page, output_dir: str, filename: str, timeout: int = 60000) -
     print(f"  Attempting download to: {final_path}")
 
     try:
-        # Try to trigger download by clicking on generated image
+        # Try to trigger download by clicking on generated image in soul-feed-scroll
         with page.expect_download(timeout=timeout) as download_info:
-            # Click on the generated image (usually in a gallery or result area)
-            # TODO: May need to adjust selector based on actual UI
-            clicked = page.evaluate("""
-                () => {
-                    // Try to find generated image container
-                    const imgContainers = document.querySelectorAll('[class*="image"], [class*="result"], [class*="gallery"]');
-                    for (const container of imgContainers) {
-                        const img = container.querySelector('img');
-                        if (img && img.src) {
-                            img.click();
-                            return { clicked: true, method: 'image_click' };
-                        }
-                    }
+            # Click on the generated image using Higgsfield's actual DOM structure
+            # Images are in: #soul-feed-scroll > div > div:nth-child(N)
+            clicked = page.evaluate(f"""
+                () => {{
+                    // Higgsfield's actual image container selector
+                    const selector = '#soul-feed-scroll > div > div:nth-child({image_index})';
+                    const imageCard = document.querySelector(selector);
 
-                    // Fallback: look for download button
+                    if (imageCard) {{
+                        // First click to select/focus the image
+                        imageCard.click();
+
+                        // Wait a moment for any modal or action menu
+                        return {{ clicked: true, method: 'soul_feed_click', selector: selector }};
+                    }}
+
+                    // Fallback: try react-aria button for download
+                    const ariaButtons = document.querySelectorAll('[id^="react-aria"]');
+                    for (const btn of ariaButtons) {{
+                        if (btn.textContent?.toLowerCase().includes('download') ||
+                            btn.getAttribute('aria-label')?.toLowerCase().includes('download')) {{
+                            btn.click();
+                            return {{ clicked: true, method: 'aria_button' }};
+                        }}
+                    }}
+
+                    // Fallback: look for download button in page
                     const buttons = [...document.querySelectorAll('button')];
                     const dlBtn = buttons.find(b =>
                         b.textContent.toLowerCase().includes('download') ||
                         b.getAttribute('aria-label')?.toLowerCase().includes('download')
                     );
-                    if (dlBtn) {
+                    if (dlBtn) {{
                         dlBtn.click();
-                        return { clicked: true, method: 'download_button' };
-                    }
+                        return {{ clicked: true, method: 'download_button' }};
+                    }}
 
-                    return { clicked: false };
-                }
+                    return {{ clicked: false, reason: 'no_elements_found' }};
+                }}
             """)
 
             if not clicked.get("clicked"):
@@ -561,6 +687,14 @@ def run_article_processing(playwright, args):
         print("\nStep 1: Checking unlimited toggle...")
         ensure_unlimited_toggle(page)
 
+        # Step 1b: Select model (default NanoBanana2)
+        print("\nStep 1b: Selecting model...")
+        select_model(page, args.model)
+
+        # Step 1c: Set aspect ratio (default 16:9)
+        print("\nStep 1c: Setting aspect ratio...")
+        select_aspect_ratio(page, args.aspect_ratio)
+
         # Step 2: Generate hero image
         print("\n" + "=" * 60)
         print("HERO IMAGE GENERATION")
@@ -581,8 +715,10 @@ def run_article_processing(playwright, args):
         for i in range(args.clicks):
             candidate_num = existing_count + i + 1
             filename = f"candidate_{candidate_num:03d}.png"
-            time.sleep(3)  # Wait between downloads
-            result = download_image(page, str(hero_dir), filename)
+            # image_index is 1-based position in the feed
+            image_index = i + 1
+            time.sleep(2)  # Wait between downloads
+            result = download_image(page, str(hero_dir), filename, image_index=image_index)
             if not result:
                 print(f"  [WARN] Could not download candidate {candidate_num}")
 
@@ -618,8 +754,9 @@ def run_article_processing(playwright, args):
                 for i in range(args.clicks):
                     candidate_num = existing + i + 1
                     filename = f"candidate_{candidate_num:03d}.png"
-                    time.sleep(3)
-                    result = download_image(page, str(section_dir), filename)
+                    image_index = i + 1
+                    time.sleep(2)
+                    result = download_image(page, str(section_dir), filename, image_index=image_index)
                     if not result:
                         print(f"    [WARN] Could not download candidate {candidate_num}")
 
@@ -839,6 +976,19 @@ Examples:
         type=str,
         default=None,
         help="Path to STYLE-GUIDE.md (default: auto-detect from project)",
+    )
+    parser.add_argument(
+        "--aspect-ratio", "-ar",
+        type=str,
+        default="16:9",
+        choices=["1:1", "3:4", "4:3", "16:9", "9:16", "21:9"],
+        help="Aspect ratio for generated images (default: 16:9)",
+    )
+    parser.add_argument(
+        "--model", "-m",
+        type=str,
+        default="NanoBanana2",
+        help="Model to use for generation (default: NanoBanana2)",
     )
 
     args = parser.parse_args()
