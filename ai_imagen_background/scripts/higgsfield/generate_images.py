@@ -84,8 +84,8 @@ signal.signal(signal.SIGTERM, lambda *_: (_cleanup(), sys.exit(143)))
 signal.signal(signal.SIGINT, lambda *_: (_cleanup(), sys.exit(130)))
 
 
-def create_browser(playwright, headless=False):
-    """Launch Chrome with persistent profile directory."""
+def create_browser(playwright, headless=False, downloads_dir: str = None):
+    """Launch Chrome with persistent profile directory and optional downloads folder."""
     global _active_context
 
     # Remove stale lock files that cause ERR_NETWORK_CHANGED
@@ -94,15 +94,21 @@ def create_browser(playwright, headless=False):
         if lock_path.exists() or lock_path.is_symlink():
             lock_path.unlink(missing_ok=True)
 
-    context = playwright.chromium.launch_persistent_context(
-        user_data_dir=str(PROFILE_DIR),
-        channel="chrome",
-        headless=headless,
-        viewport={"width": 1280, "height": 800},
-        args=[
-            "--disable-blink-features=AutomationControlled",
-        ],
-    )
+    context_args = {
+        "user_data_dir": str(PROFILE_DIR),
+        "channel": "chrome",
+        "headless": headless,
+        "viewport": {"width": 1280, "height": 800},
+        "args": ["--disable-blink-features=AutomationControlled"],
+        "accept_downloads": True,
+    }
+
+    # Set downloads directory if specified
+    if downloads_dir:
+        Path(downloads_dir).mkdir(parents=True, exist_ok=True)
+        context_args["downloads_path"] = downloads_dir
+
+    context = playwright.chromium.launch_persistent_context(**context_args)
     _active_context = context
     return context
 
@@ -520,11 +526,134 @@ def select_model(page, model: str = "NanoBanana2"):
     return False
 
 
+def wait_for_generation(page, timeout: int = 120):
+    """
+    Wait for image generation to complete.
+
+    Polls for images appearing in #soul-feed-scroll.
+
+    Args:
+        page: Playwright page object
+        timeout: Maximum wait time in seconds
+
+    Returns:
+        Number of images found, or 0 on timeout
+    """
+    print("  Waiting for generation to complete...")
+    start_time = time.time()
+
+    while time.time() - start_time < timeout:
+        # Check for images in the feed
+        count = page.evaluate("""
+            () => {
+                const feed = document.querySelector('#soul-feed-scroll');
+                if (!feed) return 0;
+                const items = feed.querySelectorAll(':scope > div > div');
+                return items.length;
+            }
+        """)
+
+        if count > 0:
+            print(f"  [OK] {count} image(s) generated")
+            return count
+
+        time.sleep(2)
+
+    print("  [WARN] Generation timeout - no images found")
+    return 0
+
+
+def select_image(page, image_index: int = 1):
+    """
+    Select/click on a generated image in the feed.
+
+    Args:
+        page: Playwright page object
+        image_index: 1-based index of the image to select
+
+    Returns:
+        True if selection successful, False otherwise
+    """
+    result = page.evaluate(f"""
+        () => {{
+            const selector = '#soul-feed-scroll > div > div:nth-child({image_index})';
+            const imageCard = document.querySelector(selector);
+            if (imageCard) {{
+                imageCard.click();
+                return {{ success: true }};
+            }}
+            return {{ success: false }};
+        }}
+    """)
+
+    if result.get("success"):
+        print(f"  [OK] Selected image {image_index}")
+        time.sleep(0.5)  # Wait for selection animation
+        return True
+
+    print(f"  [WARN] Could not select image {image_index}")
+    return False
+
+
+def click_download_button(page):
+    """
+    Click the download button in the floating bottom bar.
+
+    The download button is the 6th button in the bottom toolbar:
+    #main > div > div > div.absolute.bottom-6... > button:nth-child(6)
+
+    Args:
+        page: Playwright page object
+
+    Returns:
+        True if download initiated, False otherwise
+    """
+    result = page.evaluate("""
+        () => {
+            // Download button selector from user
+            const selector = '#main > div > div > div.absolute.bottom-6.flex.items-center.h-14.px-1\\.5.gap-1.rounded-2xl.fixed\\! > button:nth-child(6)';
+            let dlBtn = document.querySelector(selector);
+
+            // Fallback: look for button with download icon or text
+            if (!dlBtn) {
+                const buttons = [...document.querySelectorAll('button')];
+                dlBtn = buttons.find(b => {
+                    const text = b.textContent?.toLowerCase() || '';
+                    const aria = b.getAttribute('aria-label')?.toLowerCase() || '';
+                    return text.includes('download') || aria.includes('download');
+                });
+            }
+
+            // Fallback: look for download icon (arrow down)
+            if (!dlBtn) {
+                dlBtn = document.querySelector('button[aria-label*="download" i]');
+            }
+
+            if (dlBtn) {
+                dlBtn.click();
+                return { success: true };
+            }
+
+            return { success: false };
+        }
+    """)
+
+    if result.get("success"):
+        print("  [OK] Clicked download button")
+        return True
+
+    print("  [WARN] Could not find download button")
+    return False
+
+
 def download_image(page, output_dir: str, filename: str, image_index: int = 1, timeout: int = 60000) -> Optional[str]:
     """
     Download a generated image from Higgsfield.
 
-    Uses the soul-feed-scroll container to find generated images and click to download.
+    Workflow:
+    1. Select image in feed (#soul-feed-scroll)
+    2. Click download button in bottom toolbar
+    3. Wait for download to complete
 
     Args:
         page: Playwright page object
@@ -540,56 +669,23 @@ def download_image(page, output_dir: str, filename: str, image_index: int = 1, t
     output_path.mkdir(parents=True, exist_ok=True)
     final_path = output_path / filename
 
-    print(f"  Attempting download to: {final_path}")
+    print(f"  Downloading image {image_index} to: {final_path}")
 
     try:
-        # Try to trigger download by clicking on generated image in soul-feed-scroll
+        # Step 1: Select the image
+        if not select_image(page, image_index):
+            print(f"  [ERROR] Could not select image {image_index}")
+            return None
+
+        time.sleep(0.5)  # Wait for selection state
+
+        # Step 2: Start download listener and click download button
         with page.expect_download(timeout=timeout) as download_info:
-            # Click on the generated image using Higgsfield's actual DOM structure
-            # Images are in: #soul-feed-scroll > div > div:nth-child(N)
-            clicked = page.evaluate(f"""
-                () => {{
-                    // Higgsfield's actual image container selector
-                    const selector = '#soul-feed-scroll > div > div:nth-child({image_index})';
-                    const imageCard = document.querySelector(selector);
-
-                    if (imageCard) {{
-                        // First click to select/focus the image
-                        imageCard.click();
-
-                        // Wait a moment for any modal or action menu
-                        return {{ clicked: true, method: 'soul_feed_click', selector: selector }};
-                    }}
-
-                    // Fallback: try react-aria button for download
-                    const ariaButtons = document.querySelectorAll('[id^="react-aria"]');
-                    for (const btn of ariaButtons) {{
-                        if (btn.textContent?.toLowerCase().includes('download') ||
-                            btn.getAttribute('aria-label')?.toLowerCase().includes('download')) {{
-                            btn.click();
-                            return {{ clicked: true, method: 'aria_button' }};
-                        }}
-                    }}
-
-                    // Fallback: look for download button in page
-                    const buttons = [...document.querySelectorAll('button')];
-                    const dlBtn = buttons.find(b =>
-                        b.textContent.toLowerCase().includes('download') ||
-                        b.getAttribute('aria-label')?.toLowerCase().includes('download')
-                    );
-                    if (dlBtn) {{
-                        dlBtn.click();
-                        return {{ clicked: true, method: 'download_button' }};
-                    }}
-
-                    return {{ clicked: false, reason: 'no_elements_found' }};
-                }}
-            """)
-
-            if not clicked.get("clicked"):
-                print("  [ERROR] Could not trigger download - no image or download button found")
+            if not click_download_button(page):
+                print("  [ERROR] Could not click download button")
                 return None
 
+        # Step 3: Save download to final path
         download = download_info.value
         download.save_as(str(final_path))
         print(f"  [OK] Downloaded: {final_path}")
@@ -599,6 +695,8 @@ def download_image(page, output_dir: str, filename: str, image_index: int = 1, t
         print("  [ERROR] Download timed out")
         return None
     except Exception as e:
+        print(f"  [ERROR] Download failed: {e}")
+        return None
         print(f"  [ERROR] Download failed: {e}")
         return None
 
@@ -709,6 +807,13 @@ def run_article_processing(playwright, args):
         print(f"\nClicking Generate {args.clicks} times...")
         click_generate(page, times=args.clicks, interval=args.interval)
 
+        # Wait for generation to complete
+        image_count = wait_for_generation(page, timeout=120)
+        if image_count == 0:
+            print("[ERROR] No images generated, skipping downloads")
+            context.close()
+            sys.exit(1)
+
         # Download hero candidates
         print("\nDownloading hero images...")
         existing_count = get_existing_candidate_count(str(hero_dir))
@@ -748,6 +853,12 @@ def run_article_processing(playwright, args):
 
                 enter_prompt(page, section["prompt"])
                 click_generate(page, times=args.clicks, interval=args.interval)
+
+                # Wait for generation to complete
+                image_count = wait_for_generation(page, timeout=120)
+                if image_count == 0:
+                    print(f"    [WARN] No images generated for section {idx}")
+                    continue
 
                 # Download section candidates
                 existing = get_existing_candidate_count(str(section_dir))
