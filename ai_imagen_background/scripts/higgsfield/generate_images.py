@@ -347,9 +347,8 @@ def click_generate(page, times: int = 4, interval: float = 1.0):
     """
     Click the Generate button multiple times with a delay between clicks.
 
-    The Generate button's accessible name is "Generate N" where N is the
-    credit cost. Uses JS click as primary method since the button's text
-    content is dynamically rendered and Playwright selectors can time out.
+    The Generate button has id "hf:image-form-submit" and displays "Generate N"
+    where N is the credit cost. Uses JS click as primary method.
     """
     # Wait for page to be interactive after prompt entry
     time.sleep(2)
@@ -358,15 +357,23 @@ def click_generate(page, times: int = 4, interval: float = 1.0):
         try:
             clicked = page.evaluate("""
                 () => {
-                    const btns = [...document.querySelectorAll('button')];
-                    // Try "Generate" first, fall back to submit button
-                    let gen = btns.find(b => b.textContent.includes('Generate'));
+                    // Primary selector: #hf:image-form-submit
+                    let gen = document.querySelector('#hf\\\\:image-form-submit');
+
+                    // Fallback: find by Generate text
+                    if (!gen) {
+                        const btns = [...document.querySelectorAll('button')];
+                        gen = btns.find(b => b.textContent.includes('Generate'));
+                    }
+
+                    // Fallback: submit button
                     if (!gen) gen = document.querySelector('button[type="submit"]');
                     if (!gen) gen = document.querySelector('aside button');
+
                     if (!gen) return {
                         success: false,
                         reason: 'not_found',
-                        debug: btns.slice(-10).map(b => b.textContent.trim().substring(0, 40))
+                        debug: [...document.querySelectorAll('button')].slice(-10).map(b => b.textContent.trim().substring(0, 40))
                     };
                     if (gen.disabled) return { success: false, reason: 'disabled' };
                     gen.scrollIntoView({ block: 'nearest' });
