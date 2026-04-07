@@ -698,7 +698,7 @@ def click_download_button(page):
 
 
 """
-Temporary clean download_image function.
+Download images from Higgsfield using network response interception + canvas fallback.
 """
 import base64
 import time
@@ -783,14 +783,17 @@ def click_download_button(page):
     return False
 
 
+
+
 def download_image(page, output_dir: str, filename: str, image_index: int = 1, timeout: int = 60000) -> Optional[str]:
     """
     Download a generated image from Higgsfield.
 
     Workflow:
     1. Select image in feed (#soul-feed-scroll)
-    2. Intercept image network response after clicking download
-    3. Fallback: extract image from page DOM via canvas
+    2. Intercept image network response after clicking download button
+    3. Fallback: extract via canvas + data URL from page DOM
+    4. Tertiary fallback: fetch image URL directly
 
     Args:
         page: Playwright page object
@@ -802,6 +805,7 @@ def download_image(page, output_dir: str, filename: str, image_index: int = 1, t
     Returns:
         Path to downloaded file, or None if download failed
     """
+    import base64, urllib.request, ssl
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
     final_path = output_path / filename
@@ -817,36 +821,41 @@ def download_image(page, output_dir: str, filename: str, image_index: int = 1, t
         time.sleep(1.0)  # Wait for selection + modal to fully render
 
         # Step 2: Intercept image responses
-        img_data = None
-        pending_response = [None]  # Using list to allow nonlocal assignment
+        captured = [None]  # [url, bytes]
 
-        def handle_response(response):
-            content_type = response.headers.get("content-type", "")
-            url = response.url
-            if "image" in content_type or any(url.endswith(ext) for ext in (".png", ".jpg", ".jpeg", ".webp")):
-                pending_response[0] = response.body()
+        def on_response(response):
+            if captured[0] is not None:
+                return
+            ct = response.headers.get("content-type", "") or ""
+            url = response.url.lower()
+            if "image" in ct or any(url.endswith(ext) for ext in (".png", ".jpg", ".jpeg", ".webp", ".avif", ".gif")):
+                captured[0] = response.url
+                captured.append(response.body())
 
-        page.on("response", handle_response)
+        page.on("response", on_response)
 
         # Step 3: Click download button
         if not click_download_button(page):
-            page.remove_listener("response", handle_response)
+            page.remove_listener("response", on_response)
             print("  [ERROR] Could not click download button")
             return None
 
-        # Step 4: Wait for image response (5 second max)
+        # Step 4: Wait for image response (15s for generation)
         start_time = time.time()
-        while pending_response[0] is None and (time.time() - start_time) < 5:
-            time.sleep(0.3)
+        while captured[0] is None and (time.time() - start_time) < 15:
+            time.sleep(0.5)
 
-        page.remove_listener("response", handle_response)
-        img_data = pending_response[0]
+        page.remove_listener("response", on_response)
 
-        # Step 5: If no network response, extract from page DOM via canvas
-        if not img_data:
-            img_data = page.evaluate("""
+        img_bytes = captured[1] if len(captured) > 1 else None
+        img_url = captured[0] if captured[0] else None
+
+        # Step 5: Fallback — extract from page DOM via canvas
+        if not img_bytes:
+            print("  [INFO] No network response, trying DOM extraction...")
+            dom_result = page.evaluate("""
                 () => {
-                    // Find the largest (displayed) image on page
+                    // Find largest img with complete load
                     const imgs = [...document.querySelectorAll('img')];
                     let best = null;
                     for (const img of imgs) {
@@ -857,35 +866,51 @@ def download_image(page, output_dir: str, filename: str, image_index: int = 1, t
                         }
                     }
                     if (!best) return null;
-
-                    // Try canvas extraction (works for any img)
+                    // Try canvas
                     try {
-                        const canvas = document.createElement('canvas');
-                        canvas.width = best.naturalWidth;
-                        canvas.height = best.naturalHeight;
-                        const ctx = canvas.getContext('2d');
-                        ctx.drawImage(best, 0, 0);
-                        return canvas.toDataURL('image/png').split(',')[1];
-                    } catch(e) {
-                        return null;
-                    }
+                        const c = document.createElement('canvas');
+                        c.width = best.naturalWidth; c.height = best.naturalHeight;
+                        c.getContext('2d').drawImage(best, 0, 0);
+                        return { type: 'canvas', data: c.toDataURL('image/png').split(',')[1] };
+                    } catch(e) {}
+                    // Return src URL for tertiary fallback
+                    return { type: 'url', url: best.src };
                 }
             """)
-            if img_data:
-                img_data = base64.b64decode(img_data)
-            else:
-                print("  [ERROR] Could not extract image from DOM or network")
-                return None
+            if dom_result:
+                if isinstance(dom_result, dict):
+                    if dom_result.get('type') == 'canvas':
+                        img_bytes = base64.b64decode(dom_result['data'])
+                    elif dom_result.get('type') == 'url':
+                        img_url = dom_result.get('url')
+                        print(f"  [INFO] Using image URL: {img_url[:80]}...")
+                elif isinstance(dom_result, str):
+                    img_bytes = base64.b64decode(dom_result)
 
-        # Step 6: Save image
-        with open(final_path, "wb") as f:
-            f.write(img_data)
-        print(f"  [OK] Downloaded: {final_path}")
-        return str(final_path)
+        # Step 6: Tertiary — fetch image URL directly
+        if not img_bytes and img_url:
+            print(f"  [INFO] Fetching image from URL...")
+            try:
+                ctx = ssl.create_default_context()
+                req = urllib.request.Request(img_url, headers={'User-Agent': 'Mozilla/5.0'})
+                with urllib.request.urlopen(req, context=ctx, timeout=30) as resp:
+                    img_bytes = resp.read()
+            except Exception as e:
+                print(f"  [WARN] URL fetch failed: {e}")
+
+        if img_bytes:
+            with open(final_path, "wb") as f:
+                f.write(img_bytes)
+            print(f"  [OK] Downloaded: {final_path}")
+            return str(final_path)
+
+        print("  [ERROR] Could not get image data")
+        return None
 
     except Exception as e:
         print(f"  [ERROR] Download failed: {e}")
         return None
+
 
 def get_existing_candidate_count(output_dir: str) -> int:
     """Count existing candidate files in output directory."""
