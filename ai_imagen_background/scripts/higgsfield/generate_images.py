@@ -622,29 +622,62 @@ def click_download_button(page):
             // Use partial class match on the toolbar container to avoid brittle Tailwind arbitrary values
             const container = document.querySelector('[class*="bottom-6"][class*="fixed"]');
             const buttons = container ? container.querySelectorAll('button') : document.querySelectorAll('#main button');
-            const dlBtn = buttons[5]; // 0-indexed: 6th button
+            let dlBtn = buttons[5]; // 0-indexed: 6th button
 
-            // Fallback: look for button with download icon or text
+            // Find ALL fixed/absolute positioned elements that could be the toolbar
+            const toolbars = [...document.querySelectorAll('*')].filter(el => {
+                const style = window.getComputedStyle(el);
+                return (style.position === 'fixed' || style.position === 'absolute') && el.querySelector('button');
+            }).map(el => ({ tag: el.tagName, classes: el.className.slice(0, 80), id: el.id, buttonCount: el.querySelectorAll('button').length, buttonLabels: [...el.querySelectorAll('button')].map(b => b.getAttribute('aria-label') || b.textContent?.trim().slice(0, 20)) }));
+
+            // Try clicking the bottom-4 overlay directly — it's the modal
+            // Use a different approach: scan ALL buttons in page, look for one
+            // that has a download icon (SVG arrow-down) inside it
+            const allButtons = [...document.querySelectorAll('button')];
+            const svgArrowDown = (btn) => {
+                return btn.querySelector('svg') && btn.textContent?.trim() === '';
+            };
+            dlBtn = allButtons.find(b => {
+                const text = b.textContent?.trim().toLowerCase();
+                const aria = (b.getAttribute('aria-label') || '').toLowerCase();
+                const hasSvg = !!b.querySelector('svg');
+                return text.includes('download') || aria.includes('download') || (hasSvg && text === '');
+            });
+
+            // Final fallback: look for the bottom-4 modal and click its 6th button directly
             if (!dlBtn) {
-                const buttons = [...document.querySelectorAll('button')];
-                dlBtn = buttons.find(b => {
-                    const text = b.textContent?.toLowerCase() || '';
-                    const aria = b.getAttribute('aria-label')?.toLowerCase() || '';
-                    return text.includes('download') || aria.includes('download');
-                });
+                const modal = document.querySelector('[class*="bottom-4"][class*="left-4"]');
+                if (modal) {
+                    const modalBtns = [...modal.querySelectorAll('button')];
+                    if (modalBtns.length > 0) {
+                        console.log('Modal buttons:', modalBtns.length, modalBtns.map(b => b.getAttribute('aria-label') || b.textContent?.trim().slice(0, 20)));
+                    }
+                    // Find the rightmost button (likely download — often last in action bar)
+                    dlBtn = modalBtns[modalBtns.length - 1];
+                }
             }
 
-            // Fallback: look for download icon (arrow down)
+            // Diagnostic: return info about what was found
             if (!dlBtn) {
-                dlBtn = document.querySelector('button[aria-label*="download" i]');
+                const allBtns = [...document.querySelectorAll('button')];
+                const modal = document.querySelector('[class*="bottom-4"][class*="left-4"]');
+                const modalBtns = modal ? [...modal.querySelectorAll('button')].map(b => b.getAttribute('aria-label') || b.textContent?.trim().slice(0, 20)) : [];
+                return {
+                    success: false,
+                    debug: {
+                        containerFound: !!container,
+                        containerClasses: container ? container.className.slice(0, 100) : null,
+                        buttonsInContainer: buttons.length,
+                        allButtonsCount: allBtns.length,
+                        buttonAriaLabels: allBtns.map(b => b.getAttribute('aria-label') || b.textContent?.trim().slice(0, 30)).slice(0, 12),
+                        toolbars: toolbars.slice(0, 5),
+                        modalButtons: modalBtns
+                    }
+                };
             }
 
-            if (dlBtn) {
-                dlBtn.click();
-                return { success: true };
-            }
-
-            return { success: false };
+            dlBtn.click();
+            return { success: true };
         }
     """)
 
@@ -652,7 +685,101 @@ def click_download_button(page):
         print("  [OK] Clicked download button")
         return True
 
-    print("  [WARN] Could not find download button")
+    debug = result.get("debug", {})
+    print(f"  [WARN] Could not find download button: containerFound={debug.get('containerFound')}, containerClasses={debug.get('containerClasses')}, buttonsInContainer={debug.get('buttonsInContainer')}, allButtonsCount={debug.get('allButtonsCount')}")
+    if debug.get("buttonAriaLabels"):
+        print(f"       Buttons: {debug['buttonAriaLabels']}")
+    if debug.get("toolbars"):
+        for i, tb in enumerate(debug['toolbars']):
+            print(f"       Toolbar[{i}]: {tb['tag']} classes={tb['classes']} buttons={tb['buttonCount']} labels={tb['buttonLabels']}")
+    if debug.get("modalButtons"):
+        print(f"       Modal buttons: {debug['modalButtons']}")
+    return False
+
+
+"""
+Temporary clean download_image function.
+"""
+import base64
+import time
+from pathlib import Path
+from typing import Optional
+
+
+def click_download_button(page):
+    """
+    Click the download button in the floating bottom bar.
+
+    Uses attribute selectors to find the toolbar container (bottom-4, fixed),
+    then falls back to scanning all page buttons for download text/icon.
+
+    Args:
+        page: Playwright page object
+
+    Returns:
+        True if download initiated, False otherwise
+    """
+    result = page.evaluate("""
+        () => {
+            // Primary: find bottom toolbar via partial class match
+            const container = document.querySelector('[class*="bottom-4"][class*="fixed"]');
+            const buttons = container ? [...container.querySelectorAll('button')] : [];
+            let dlBtn = buttons[5]; // 0-indexed: 6th button
+
+            // Fallback 1: button with download text or aria-label
+            if (!dlBtn) {
+                dlBtn = [...document.querySelectorAll('button')].find(b => {
+                    const t = (b.textContent || '').trim().toLowerCase();
+                    const a = (b.getAttribute('aria-label') || '').toLowerCase();
+                    return t.includes('download') || a.includes('download');
+                });
+            }
+
+            // Fallback 2: button with download SVG icon (arrow-down)
+            if (!dlBtn) {
+                dlBtn = [...document.querySelectorAll('button')].find(b =>
+                    b.querySelector('svg') && !b.textContent.trim()
+                );
+            }
+
+            // Fallback 3: last button in bottom-4 modal (likely download)
+            if (!dlBtn) {
+                const modal = document.querySelector('[class*="bottom-4"][class*="left-4"]');
+                if (modal) {
+                    const modalBtns = [...modal.querySelectorAll('button')];
+                    dlBtn = modalBtns[modalBtns.length - 1];
+                }
+            }
+
+            // Diagnostic: return info about what was found
+            if (!dlBtn) {
+                const allBtns = [...document.querySelectorAll('button')];
+                const modal = document.querySelector('[class*="bottom-4"][class*="left-4"]');
+                const modalBtns = modal ? [...modal.querySelectorAll('button')] : [];
+                return {
+                    success: false,
+                    debug: {
+                        containerFound: !!container,
+                        buttonsInContainer: buttons.length,
+                        allButtonsCount: allBtns.length,
+                        modalButtons: modalBtns.map(b => b.getAttribute('aria-label') || b.textContent.trim().slice(0, 20))
+                    }
+                };
+            }
+
+            dlBtn.click();
+            return { success: true };
+        }
+    """)
+
+    if result.get("success"):
+        print("  [OK] Clicked download button")
+        return True
+
+    debug = result.get("debug", {})
+    print(f"  [WARN] Could not find download button: containerFound={debug.get('containerFound')}, buttonsInContainer={debug.get('buttonsInContainer')}, allButtonsCount={debug.get('allButtonsCount')}")
+    if debug.get("modalButtons"):
+        print(f"       Modal buttons: {debug['modalButtons']}")
     return False
 
 
@@ -662,8 +789,8 @@ def download_image(page, output_dir: str, filename: str, image_index: int = 1, t
 
     Workflow:
     1. Select image in feed (#soul-feed-scroll)
-    2. Click download button in bottom toolbar
-    3. Wait for download to complete
+    2. Intercept image network response after clicking download
+    3. Fallback: extract image from page DOM via canvas
 
     Args:
         page: Playwright page object
@@ -687,27 +814,78 @@ def download_image(page, output_dir: str, filename: str, image_index: int = 1, t
             print(f"  [ERROR] Could not select image {image_index}")
             return None
 
-        time.sleep(0.5)  # Wait for selection state
+        time.sleep(1.0)  # Wait for selection + modal to fully render
 
-        # Step 2: Start download listener and click download button
-        with page.expect_download(timeout=timeout) as download_info:
-            if not click_download_button(page):
-                print("  [ERROR] Could not click download button")
+        # Step 2: Intercept image responses
+        img_data = None
+        pending_response = [None]  # Using list to allow nonlocal assignment
+
+        def handle_response(response):
+            content_type = response.headers.get("content-type", "")
+            url = response.url
+            if "image" in content_type or any(url.endswith(ext) for ext in (".png", ".jpg", ".jpeg", ".webp")):
+                pending_response[0] = response.body()
+
+        page.on("response", handle_response)
+
+        # Step 3: Click download button
+        if not click_download_button(page):
+            page.remove_listener("response", handle_response)
+            print("  [ERROR] Could not click download button")
+            return None
+
+        # Step 4: Wait for image response (5 second max)
+        start_time = time.time()
+        while pending_response[0] is None and (time.time() - start_time) < 5:
+            time.sleep(0.3)
+
+        page.remove_listener("response", handle_response)
+        img_data = pending_response[0]
+
+        # Step 5: If no network response, extract from page DOM via canvas
+        if not img_data:
+            img_data = page.evaluate("""
+                () => {
+                    // Find the largest (displayed) image on page
+                    const imgs = [...document.querySelectorAll('img')];
+                    let best = null;
+                    for (const img of imgs) {
+                        if (img.complete && img.naturalWidth > 100) {
+                            if (!best || img.naturalWidth > best.naturalWidth) {
+                                best = img;
+                            }
+                        }
+                    }
+                    if (!best) return null;
+
+                    // Try canvas extraction (works for any img)
+                    try {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = best.naturalWidth;
+                        canvas.height = best.naturalHeight;
+                        const ctx = canvas.getContext('2d');
+                        ctx.drawImage(best, 0, 0);
+                        return canvas.toDataURL('image/png').split(',')[1];
+                    } catch(e) {
+                        return null;
+                    }
+                }
+            """)
+            if img_data:
+                img_data = base64.b64decode(img_data)
+            else:
+                print("  [ERROR] Could not extract image from DOM or network")
                 return None
 
-        # Step 3: Save download to final path
-        download = download_info.value
-        download.save_as(str(final_path))
+        # Step 6: Save image
+        with open(final_path, "wb") as f:
+            f.write(img_data)
         print(f"  [OK] Downloaded: {final_path}")
         return str(final_path)
 
-    except PlaywrightTimeout:
-        print("  [ERROR] Download timed out")
-        return None
     except Exception as e:
         print(f"  [ERROR] Download failed: {e}")
         return None
-
 
 def get_existing_candidate_count(output_dir: str) -> int:
     """Count existing candidate files in output directory."""
