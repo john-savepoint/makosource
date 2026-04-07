@@ -606,8 +606,9 @@ def click_download_button(page):
     """
     Click the download button in the floating bottom bar.
 
-    The download button is the 6th button in the bottom toolbar:
-    #main > div > div > div.absolute.bottom-6... > button:nth-child(6)
+    The download button is the 6th button in the bottom toolbar bar (index 5).
+    Uses attribute selectors to find the toolbar container, avoiding brittle
+    Tailwind arbitrary-value CSS class selectors.
 
     Args:
         page: Playwright page object
@@ -617,9 +618,11 @@ def click_download_button(page):
     """
     result = page.evaluate("""
         () => {
-            // Download button selector from user
-            const selector = '#main > div > div > div.absolute.bottom-6.flex.items-center.h-14.px-1\\.5.gap-1.rounded-2xl.fixed\\! > button:nth-child(6)';
-            let dlBtn = document.querySelector(selector);
+            // Download button: 6th button in bottom toolbar bar (5 preceding buttons + download)
+            // Use partial class match on the toolbar container to avoid brittle Tailwind arbitrary values
+            const container = document.querySelector('[class*="bottom-6"][class*="fixed"]');
+            const buttons = container ? container.querySelectorAll('button') : document.querySelectorAll('#main button');
+            const dlBtn = buttons[5]; // 0-indexed: 6th button
 
             // Fallback: look for button with download icon or text
             if (!dlBtn) {
@@ -702,8 +705,6 @@ def download_image(page, output_dir: str, filename: str, image_index: int = 1, t
         print("  [ERROR] Download timed out")
         return None
     except Exception as e:
-        print(f"  [ERROR] Download failed: {e}")
-        return None
         print(f"  [ERROR] Download failed: {e}")
         return None
 
