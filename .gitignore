@@ -188,3 +188,8 @@ repomix-*.md
 # Junk/test files (manual cleanup; never recreate)
 test-retry.txt
 remianing issues.txt
+
+# QHIMM raw data (3GB+ Discord exports + SQLite DB — RAG dataset, not versioned)
+docs/QHIMM/discord_exports/
+docs/QHIMM/database/
+docs/QHIMM/raw/
