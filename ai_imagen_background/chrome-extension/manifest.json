@@ -1,13 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "Higgsfield Multi-Select",
-  "version": "1.0.0",
-  "description": "Adds shift-click range selection to the Higgsfield AI image grid",
+  "name": "Higgsfield Power Tools",
+  "version": "1.1.0",
+  "description": "Multi-select, keyboard shortcuts, and unlimited prompt for Higgsfield AI",
   "content_scripts": [
     {
       "matches": ["https://higgsfield.ai/*", "https://www.higgsfield.ai/*"],
       "js": ["content.js"],
       "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["inject.js"],
+      "matches": ["https://higgsfield.ai/*", "https://www.higgsfield.ai/*"]
     }
   ],
   "icons": {

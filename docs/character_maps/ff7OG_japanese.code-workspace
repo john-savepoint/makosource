@@ -10,46 +10,139 @@
       "path": "../../../../.claude"
     },
     {
-      "path": "../../../zhu_li"
-    },
-    {
-      "path": "../../../ragaumuffin"
+      "path": "../../../../skills"
     },
     {
       "path": "../../../politicalclaims"
     },
     {
-      "path": "../../../seek"
-    },
-    {
-      "path": "../../../award-winning-website"
-    },
-    {
-      "path": "../../../website-extraction-toolkit"
-    },
-    {
-      "path": "../../../canva_job_interview"
-    },
-    {
-      "path": "../../../../openclaw"
-    },
-    {
-      "path": "../../../dannik"
+      "path": "../../../custard-for-brains"
     },
     {
       "path": "../../../youtube_videos"
     },
     {
+      "path": "../../../sp-auth"
+    },
+    {
+      "path": "../../../wp-astro-pipeline"
+    },
+    {
+      "path": "../../../anti_left_extension"
+    },
+    {
+      "path": "../../../PKM"
+    },
+    {
+      "path": "../../../agi"
+    },
+    {
+      "path": "../../../jzd-astro-migration"
+    },
+    {
       "path": "../../../state_heirarchy"
+    },
+    {
+      "path": "../../../dannik"
+    },
+    {
+      "path": "../../../johnzealanddoyle_dev"
+    },
+    {
+      "path": "../../../website-extraction-toolkit"
+    },
+    {
+      "path": "../../../award-winning-website"
+    },
+    {
+      "path": "../../../astro_packages"
+    },
+    {
+      "path": "../../../ragaumuffin"
+    },
+    {
+      "path": "../../../graffico-rebuild"
+    },
+    {
+      "path": "../../../drive_cleanup"
+    },
+    {
+      "path": "../../../DJ Studio Playlist naming"
+    },
+    {
+      "path": "../../../DiscordChatExporter"
+    },
+    {
+      "path": "../../../claude migrating"
+    },
+    {
+      "path": "../../../flatmates"
+    },
+    {
+      "path": "../../../mixcloud-views-booster"
+    },
+    {
+      "path": "../../../ragauffin"
+    },
+    {
+      "path": "../../../../personal"
     },
     {
       "path": "../../../../ovh_vps6_sg01"
     },
     {
-      "path": "../../../sp-auth"
+      "path": "../../../../dedicated_wsl_optimisaton_dir_for_ai"
+    },
+    {
+      "path": "../../../../homepage-config"
+    },
+    {
+      "path": "../../../../openclaw"
+    },
+    {
+      "path": "../../../../.tmux"
+    },
+    {
+      "path": "../../../dave_sayre"
+    },
+    {
+      "path": "../../../../pentest"
+    },
+    {
+      "path": "../../../deobfuscation"
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "johnzealanddoyle"
+    "liveServer.settings.multiRootWorkspaceName": "skills",
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#f03db9",
+      "activityBar.background": "#f03db9",
+      "activityBar.foreground": "#15202b",
+      "activityBar.inactiveForeground": "#15202b99",
+      "activityBarBadge.background": "#405907",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "commandCenter.border": "#e7e7e799",
+      "editorGroup.border": "#f03db9",
+      "panel.border": "#f03db9",
+      "sash.hoverBorder": "#f03db9",
+      "sideBar.border": "#f03db9",
+      "statusBar.background": "#e812a6",
+      "statusBar.border": "#e812a6",
+      "statusBar.debuggingBackground": "#12e854",
+      "statusBar.debuggingBorder": "#12e854",
+      "statusBar.debuggingForeground": "#15202b",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#f03db9",
+      "statusBarItem.remoteBackground": "#e812a6",
+      "statusBarItem.remoteForeground": "#e7e7e7",
+      "tab.activeBorder": "#f03db9",
+      "titleBar.activeBackground": "#e812a6",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.border": "#e812a6",
+      "titleBar.inactiveBackground": "#e812a699",
+      "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.remoteColor": "#e812a6",
+    "dotnet.defaultSolution": "disable"
   }
 }

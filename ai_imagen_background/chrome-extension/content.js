@@ -1,14 +1,21 @@
 /**
- * Higgsfield Multi-Select — Shift-click range selection + keyboard shortcuts
+ * Higgsfield Power Tools — Multi-select, keyboard shortcuts, prompt unlimiter
  *
  * Created: 2026-02-24 16:38 JST
- * Modified: 2026-02-24 20:20 JST
+ * Modified: 2026-03-17 22:40 JST
  * Session: d1f76181-4684-4828-834c-65b55aadf8cd
  *
  * Features:
  *   1. Shift+click: select all visible images between last click and current
  *   2. Delete key: click the Delete button (works in grid and picture viewer)
  *   3. Enter key: confirm the "Yes, delete forever" dialog
+ *   4. Unlimited prompt: bypasses 15,000 char limit
+ *      - inject.js (MAIN world, document_start) suppresses the validation
+ *      - Exposes window.hfSetPrompt(text) for programmatic use
+ *   5. Ctrl+Shift+D: bulk delete all visible failed/NSFW generations
+ *      - Finds delete buttons in card footers inside #soul-feed-scroll
+ *      - Clicks each → confirms "Yes, delete forever" → waits → repeats
+ *      - Also callable from console: window.hfBulkDelete()
  *
  * DOM structure (as of 2026-02-24):
  *   Card: div[@container group ...][data-asset-id]
@@ -24,11 +31,11 @@
  *
  *   Bottom action bar (when images selected):
  *     div[data-ignore-marquee].fixed! containing: "N selected", Download, etc.
- *     Delete is an ICON-ONLY button (trash SVG, no text) — identified by
- *     its SVG path starting with "M4.75 6.5L5.72041 20.32"
+ *     Delete: .menu-item.menu-item-danger (Radix context menu)
  *
- *   Picture viewer:
- *     div[role="dialog"].fixed.z-101 with "Asset showcase"
+ *   Prompt editor (Lexical):
+ *     div#hf\:tour-image-prompt[data-lexical-editor][contenteditable]
+ *     Limit enforced in form submit handler, not the editor itself.
  */
 
 (function () {
@@ -83,20 +90,13 @@
 
   // ─── Delete confirmation detection ────────────────────────────────
 
-  /**
-   * Find the visible "Yes, delete forever" confirmation button.
-   * The Radix dialog has: form.dialog-actions > button[type="submit"]
-   */
   function findDeleteConfirmButton() {
     const btn = document.querySelector(
       'div[role="dialog"][data-state="open"] form.dialog-actions button[type="submit"]'
     );
     if (btn && btn.offsetParent !== null) return btn;
 
-    // Fallback: find by button text content
-    const buttons = document.querySelectorAll(
-      'div[role="dialog"] button'
-    );
+    const buttons = document.querySelectorAll('div[role="dialog"] button');
     for (const b of buttons) {
       if (
         b.textContent.trim().toLowerCase().includes("delete forever") &&
@@ -108,68 +108,33 @@
     return null;
   }
 
-  /**
-   * Check if a delete confirmation dialog is currently open.
-   */
   function isDeleteDialogOpen() {
     return findDeleteConfirmButton() !== null;
   }
 
   // ─── Delete button detection ──────────────────────────────────────
 
-  /**
-   * Find the Delete action in the UI. Higgsfield uses multiple patterns:
-   *   1. Radix context menu: div.menu-item.menu-item-danger (right-click menu)
-   *   2. Text-based button: button with text "Delete"
-   *   3. Icon-only toolbar button: trash SVG in bottom action bar
-   */
   function findDeleteButton() {
-    // Method 1: Radix context menu item with danger class (the actual delete)
-    const menuItem = document.querySelector(
-      ".menu-item.menu-item-danger"
-    );
+    const menuItem = document.querySelector(".menu-item.menu-item-danger");
     if (menuItem && menuItem.offsetParent !== null) return menuItem;
 
-    // Method 2: any visible element with "Delete" text in a menu/dialog
     const allEls = document.querySelectorAll(
       '[role="menuitem"], [role="option"], .menu-item, button'
     );
     for (const el of allEls) {
-      const text = el.textContent.trim();
-      if (text === "Delete" && el.offsetParent !== null) {
+      if (el.textContent.trim() === "Delete" && el.offsetParent !== null) {
         return el;
       }
     }
 
-    // Method 3: trash icon button in the selection toolbar
-    const toolbar = document.querySelector(
-      'div[data-ignore-marquee="true"]'
-    );
+    const toolbar = document.querySelector('div[data-ignore-marquee="true"]');
     if (toolbar) {
-      const toolbarBtns = toolbar.querySelectorAll("button");
-      for (const btn of toolbarBtns) {
+      for (const btn of toolbar.querySelectorAll("button")) {
         if (btn.textContent.trim() === "" && btn.querySelector("svg")) {
-          const paths = btn.querySelectorAll("svg path");
-          for (const p of paths) {
+          for (const p of btn.querySelectorAll("svg path")) {
             const d = p.getAttribute("d") || "";
-            if (d.includes("20.32") || d.includes("6.5H21")) {
-              return btn;
-            }
+            if (d.includes("20.32") || d.includes("6.5H21")) return btn;
           }
-        }
-      }
-    }
-
-    // Method 4: broader search for trash icon in any visible button
-    const buttons = document.querySelectorAll("button");
-    for (const btn of buttons) {
-      if (btn.offsetParent === null) continue;
-      if (btn.textContent.trim() !== "") continue;
-      const paths = btn.querySelectorAll("svg path");
-      for (const p of paths) {
-        const d = p.getAttribute("d") || "";
-        if (d.includes("5.72041") && d.includes("20.32")) {
-          return btn;
         }
       }
     }
@@ -177,35 +142,20 @@
     return null;
   }
 
-  /**
-   * Check if any images are currently selected.
-   * Detects by: checkbox aria-checked state OR presence of the selection toolbar.
-   */
   function hasSelectedImages() {
-    // Check toolbar presence (most reliable — the toolbar shows "N selected")
-    const toolbar = document.querySelector(
-      'div[data-ignore-marquee="true"]'
-    );
+    const toolbar = document.querySelector('div[data-ignore-marquee="true"]');
     if (toolbar && toolbar.offsetParent !== null) return true;
-
-    // Fallback: check checkbox states
-    const cards = getVisibleCards();
-    return cards.some((c) => isChecked(c));
+    return getVisibleCards().some((c) => isChecked(c));
   }
 
-  /**
-   * Check if the picture viewer dialog is open.
-   */
   function isPictureViewerOpen() {
-    const dialogs = document.querySelectorAll('div[role="dialog"]');
-    for (const d of dialogs) {
+    for (const d of document.querySelectorAll('div[role="dialog"]')) {
       if (
-        d.textContent.includes("Asset showcase") ||
-        d.textContent.includes("Overview")
+        (d.textContent.includes("Asset showcase") ||
+          d.textContent.includes("Overview")) &&
+        (d.offsetParent !== null || d.style.display !== "none")
       ) {
-        if (d.offsetParent !== null || d.style.display !== "none") {
-          return true;
-        }
+        return true;
       }
     }
     return false;
@@ -232,7 +182,6 @@
       event.stopImmediatePropagation();
 
       const cards = sortCardsByPosition(getVisibleCards());
-
       const anchorIdx = cards.findIndex(
         (c) => c.getAttribute("data-asset-id") === lastClickedAssetId
       );
@@ -263,62 +212,286 @@
   // ─── Keyboard handler ─────────────────────────────────────────────
 
   function handleKeyDown(event) {
-    // Ignore if user is typing in an input/textarea
     const tag = event.target.tagName;
-    if (tag === "INPUT" || tag === "TEXTAREA" || event.target.isContentEditable) {
+    if (tag === "INPUT" || tag === "TEXTAREA" || event.target.isContentEditable)
       return;
-    }
 
     if (event.key === "Delete" || event.key === "Backspace") {
-      // If delete confirmation dialog is open, confirm it
       if (isDeleteDialogOpen()) {
         event.preventDefault();
-        const confirmBtn = findDeleteConfirmButton();
-        if (confirmBtn) {
-          simulateClick(confirmBtn);
-          log("Confirmed delete via keyboard");
-        }
+        const btn = findDeleteConfirmButton();
+        if (btn) { simulateClick(btn); log("Confirmed delete via keyboard"); }
         return;
       }
-
-      // If images are selected or picture viewer is open, click Delete
       if (hasSelectedImages() || isPictureViewerOpen()) {
-        const deleteBtn = findDeleteButton();
-        if (deleteBtn) {
-          event.preventDefault();
-          simulateClick(deleteBtn);
-          log("Triggered delete via keyboard");
-        }
+        const btn = findDeleteButton();
+        if (btn) { event.preventDefault(); simulateClick(btn); log("Triggered delete via keyboard"); }
       }
     }
 
-    if (event.key === "Enter") {
-      // If delete confirmation dialog is open, confirm it
-      if (isDeleteDialogOpen()) {
-        event.preventDefault();
-        const confirmBtn = findDeleteConfirmButton();
-        if (confirmBtn) {
-          simulateClick(confirmBtn);
-          log("Confirmed delete via Enter");
-        }
-      }
+    if (event.key === "Enter" && isDeleteDialogOpen()) {
+      event.preventDefault();
+      const btn = findDeleteConfirmButton();
+      if (btn) { simulateClick(btn); log("Confirmed delete via Enter"); }
     }
   }
 
   // ─── Logging ──────────────────────────────────────────────────────
 
+  let _toastContainer = null;
+
+  function showToast(msg) {
+    if (!_toastContainer) {
+      _toastContainer = document.createElement("div");
+      _toastContainer.style.cssText =
+        "position:fixed;top:12px;right:12px;z-index:99999;display:flex;flex-direction:column;gap:6px;pointer-events:none;";
+      document.documentElement.appendChild(_toastContainer);
+    }
+    const toast = document.createElement("div");
+    toast.textContent = "[HF] " + msg;
+    toast.style.cssText =
+      "background:#1a1a2e;color:#f920d1;border:1px solid #f920d1;padding:8px 14px;" +
+      "border-radius:8px;font-size:12px;font-family:monospace;max-width:400px;" +
+      "box-shadow:0 4px 12px rgba(0,0,0,0.5);opacity:1;transition:opacity 0.3s;pointer-events:none;";
+    _toastContainer.appendChild(toast);
+    setTimeout(function () {
+      toast.style.opacity = "0";
+      setTimeout(function () { toast.remove(); }, 300);
+    }, 4000);
+  }
+
   function log(msg) {
     console.log(
-      "%c[HF Multi-Select]%c " + msg,
+      "%c[HF Power Tools]%c " + msg,
       "color: #f920d1; font-weight: bold",
       "color: inherit"
     );
+    showToast(msg);
   }
+
+  // ─── Prompt unlimiter ───────────────────────────────────────────
+  // Inject the bypass script into the page's MAIN world via a <script> tag.
+  // This is necessary because content scripts run in an isolated world and
+  // can't access the page's React fiber tree or Zustand stores.
+
+  function injectMainWorldScript() {
+    const script = document.createElement("script");
+    script.src = chrome.runtime.getURL("inject.js");
+    (document.head || document.documentElement).appendChild(script);
+    script.onload = function () {
+      script.remove();
+      log("inject.js loaded into page context");
+    };
+  }
+
+  injectMainWorldScript();
+
+  window.hfSetPrompt = function (text) {
+    const editor =
+      document.getElementById("hf:tour-image-prompt") ||
+      document.querySelector('[data-lexical-editor="true"]');
+    if (!editor) { log("Prompt editor not found"); return 0; }
+    editor.focus();
+    document.execCommand("selectAll");
+    document.execCommand("delete");
+    document.execCommand("insertText", false, text);
+    const len = editor.textContent.length;
+    log("Prompt set: " + len.toLocaleString() + " chars");
+    return len;
+  };
+
+  // ─── Bulk delete ─────────────────────────────────────────────────
+  //
+  // Finds all individual card delete buttons (the trash/delete button in each
+  // card's footer overlay), clicks each one, confirms the "Yes, delete forever"
+  // modal, waits for it to close, then moves to the next card.
+  //
+  // Trigger: Ctrl+Shift+D
+  //
+  // The delete buttons live inside each card's footer section:
+  //   section > footer > ... > button.button.button-md.button-primary
+  // with a semi-transparent white background (bg-[#FFFFFF1F]).
+
+  function sleep(ms) {
+    return new Promise(function (resolve) { setTimeout(resolve, ms); });
+  }
+
+  function waitForDeleteDialog(timeoutMs) {
+    return new Promise(function (resolve) {
+      var elapsed = 0;
+      var interval = 100;
+      var check = setInterval(function () {
+        elapsed += interval;
+        if (findDeleteConfirmButton()) {
+          clearInterval(check);
+          resolve(true);
+        } else if (elapsed >= timeoutMs) {
+          clearInterval(check);
+          resolve(false);
+        }
+      }, interval);
+    });
+  }
+
+  function waitForDialogClose(timeoutMs) {
+    return new Promise(function (resolve) {
+      var elapsed = 0;
+      var interval = 100;
+      var check = setInterval(function () {
+        elapsed += interval;
+        if (!isDeleteDialogOpen()) {
+          clearInterval(check);
+          resolve(true);
+        } else if (elapsed >= timeoutMs) {
+          clearInterval(check);
+          resolve(false);
+        }
+      }, interval);
+    });
+  }
+
+  function findCardDeleteButtons() {
+    // Strategy 1: The exact selector pattern from the card footer
+    // These are the delete buttons inside each generation card's overlay/footer
+    var buttons = [];
+
+    // Look for buttons with the specific Tailwind classes the user identified
+    var candidates = document.querySelectorAll(
+      'button.button.button-md.button-primary'
+    );
+    for (var i = 0; i < candidates.length; i++) {
+      var btn = candidates[i];
+      // Must be inside a section > footer structure (card footer, not main page)
+      var footer = btn.closest("footer");
+      if (!footer) continue;
+      var section = footer.closest("section");
+      if (!section) continue;
+
+      // Must be inside #soul-feed-scroll (the feed area, not nav/header)
+      if (!btn.closest("#soul-feed-scroll")) continue;
+
+      // Check it looks like a delete button:
+      // - has a trash icon (svg), or
+      // - has short/no text content (icon-only button), or
+      // - has bg-[#FFFFFF1F] class
+      var text = btn.textContent.trim();
+      var isIconButton = text === "" || btn.querySelector("svg");
+      var hasDeleteClass = btn.className.indexOf("FFFFFF1F") !== -1;
+      var looksLikeDelete = btn.querySelector('svg path[d*="M6"], svg path[d*="delete"]');
+
+      if (isIconButton || hasDeleteClass || looksLikeDelete) {
+        buttons.push(btn);
+      }
+    }
+
+    // Strategy 2: broader search — any button in a card footer that triggers deletion
+    if (buttons.length === 0) {
+      var feedScroll = document.getElementById("soul-feed-scroll");
+      if (feedScroll) {
+        var allFooterBtns = feedScroll.querySelectorAll("section footer button");
+        for (var j = 0; j < allFooterBtns.length; j++) {
+          var b = allFooterBtns[j];
+          // Skip "Recreate" and other labeled buttons
+          var btnText = b.textContent.trim().toLowerCase();
+          if (btnText === "recreate" || btnText === "download" || btnText.length > 20) continue;
+          // Icon-only buttons or buttons with delete-like styling
+          if (b.querySelector("svg") && btnText === "") {
+            buttons.push(b);
+          }
+        }
+      }
+    }
+
+    return buttons;
+  }
+
+  var _bulkDeleteRunning = false;
+
+  async function bulkDeleteAll() {
+    if (_bulkDeleteRunning) {
+      log("Bulk delete already running");
+      return;
+    }
+    _bulkDeleteRunning = true;
+
+    var deleteButtons = findCardDeleteButtons();
+    if (deleteButtons.length === 0) {
+      log("No delete buttons found on visible cards");
+      _bulkDeleteRunning = false;
+      return;
+    }
+
+    log("Bulk delete: found " + deleteButtons.length + " cards to delete");
+
+    var deleted = 0;
+    // Process one at a time since each deletion removes the card from DOM
+    // and we need to re-query after each deletion
+    while (true) {
+      // Re-query each iteration since DOM changes after each delete
+      var btns = findCardDeleteButtons();
+      if (btns.length === 0) break;
+
+      var btn = btns[0];
+
+      // Scroll the button into view
+      btn.scrollIntoView({ block: "center", behavior: "smooth" });
+      await sleep(300);
+
+      // Click the delete button on the card
+      simulateClick(btn);
+
+      // Wait for the confirmation dialog to appear
+      var dialogAppeared = await waitForDeleteDialog(3000);
+      if (!dialogAppeared) {
+        log("Delete dialog didn't appear, skipping...");
+        // The button might not have been a delete button — remove it from consideration
+        btn.setAttribute("data-hf-skip", "true");
+        await sleep(200);
+        continue;
+      }
+
+      await sleep(200);
+
+      // Click "Yes, delete forever"
+      var confirmBtn = findDeleteConfirmButton();
+      if (confirmBtn) {
+        simulateClick(confirmBtn);
+        deleted++;
+        log("Deleted " + deleted + " / " + (deleted + btns.length - 1) + "...");
+      } else {
+        log("Confirm button not found, stopping");
+        break;
+      }
+
+      // Wait for dialog to close before proceeding
+      var closed = await waitForDialogClose(5000);
+      if (!closed) {
+        log("Dialog didn't close, stopping");
+        break;
+      }
+
+      // Small delay for DOM to settle after deletion
+      await sleep(500);
+    }
+
+    log("Bulk delete complete: " + deleted + " cards deleted");
+    _bulkDeleteRunning = false;
+  }
+
+  // Expose globally so it can be called from console too
+  window.hfBulkDelete = bulkDeleteAll;
 
   // ─── Init ─────────────────────────────────────────────────────────
 
   document.addEventListener("click", handleClick, true);
   document.addEventListener("keydown", handleKeyDown, true);
+  document.addEventListener("keydown", function (event) {
+    // Ctrl+Shift+D — bulk delete all visible card delete buttons
+    if (event.ctrlKey && event.shiftKey && event.key === "D") {
+      event.preventDefault();
+      bulkDeleteAll();
+    }
+  }, true);
 
-  log("Loaded — shift+click to range-select, Delete/Enter for quick delete");
+  log("Loaded — shift+click, Delete/Enter, Ctrl+Shift+D bulk delete, unlimited prompt");
 })();

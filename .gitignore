@@ -24,6 +24,9 @@ font_sdf_converter/
 font_sdf_converter */
 video_title_charportrait/
 
+# Chrome profile data (generated cache, never commit)
+ai_imagen_background/scripts/higgsfield/.chrome_profile/
+
 # Background updater artifacts
 background_updater/output/
 background_updater/*_output/
@@ -164,3 +167,24 @@ temp/
 *.rar
 *.7z
 FFNx-PR737 (reference only)
+
+# Phase A cleanup 2026-04-26 — exclude binary churn and build artifacts
+# Chrome browser profile cache from Higgsfield Playwright automation
+ai_imagen_background/scripts/higgsfield/.chrome_profile/
+
+# Packaged 7th Heaven mod (build artifact, regenerable from FF7-Japanese-Mod/)
+*.iro
+
+# Auto-generated extraction reports (regenerable from scripts/)
+*_auto.txt
+*_auto.report.txt
+
+# Session export transcripts (preserved separately in archive/sessions/)
+conversation-*.txt
+
+# Repomix code-flatten exports (regenerable from live source)
+repomix-*.md
+
+# Junk/test files (manual cleanup; never recreate)
+test-retry.txt
+remianing issues.txt
