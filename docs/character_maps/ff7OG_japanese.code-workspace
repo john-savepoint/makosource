@@ -55,9 +55,6 @@
       "path": "../../../award-winning-website"
     },
     {
-      "path": "../../../astro_packages"
-    },
-    {
       "path": "../../../ragaumuffin"
     },
     {
@@ -67,19 +64,7 @@
       "path": "../../../drive_cleanup"
     },
     {
-      "path": "../../../DJ Studio Playlist naming"
-    },
-    {
-      "path": "../../../DiscordChatExporter"
-    },
-    {
-      "path": "../../../claude migrating"
-    },
-    {
       "path": "../../../flatmates"
-    },
-    {
-      "path": "../../../mixcloud-views-booster"
     },
     {
       "path": "../../../ragauffin"
@@ -92,12 +77,6 @@
     },
     {
       "path": "../../../../dedicated_wsl_optimisaton_dir_for_ai"
-    },
-    {
-      "path": "../../../../homepage-config"
-    },
-    {
-      "path": "../../../../openclaw"
     },
     {
       "path": "../../../../.tmux"
@@ -114,6 +93,134 @@
   ],
   "settings": {
     "liveServer.settings.multiRootWorkspaceName": "skills",
+
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/.git/lfs/**": true,
+      "**/node_modules/**": true,
+      "**/.pnpm-store/**": true,
+      "**/.yarn/cache/**": true,
+      "**/.next/**": true,
+      "**/.nuxt/**": true,
+      "**/.astro/**": true,
+      "**/.svelte-kit/**": true,
+      "**/.turbo/**": true,
+      "**/.cache/**": true,
+      "**/.parcel-cache/**": true,
+      "**/dist/**": true,
+      "**/build/**": true,
+      "**/out/**": true,
+      "**/coverage/**": true,
+      "**/.venv/**": true,
+      "**/__pycache__/**": true,
+      "**/.mypy_cache/**": true,
+      "**/.pytest_cache/**": true,
+      "**/.ruff_cache/**": true,
+      "**/target/**": true,
+      "**/.gradle/**": true,
+      "**/.vscode-server/**": true,
+      "**/.ralph/**": true,
+      "**/.archive/**": true,
+      "**/.backup/**": true,
+      "**/font_sdf_converter/mahou-sdf/node_modules/**": true,
+      "**/FF7 2026/**": true,
+      "**/.gitignore.backup-*": true,
+      "**/*.log": true
+    },
+
+    "files.exclude": {
+      "**/.git": false,
+      "**/node_modules": true,
+      "**/.next": true,
+      "**/.astro": true,
+      "**/.turbo": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.venv": true,
+      "**/__pycache__": true,
+      "**/.mypy_cache": true,
+      "**/.pytest_cache": true,
+      "**/.ruff_cache": true,
+      "**/coverage": true,
+      "**/.DS_Store": true
+    },
+
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/.git": true,
+      "**/.next": true,
+      "**/.astro": true,
+      "**/.turbo": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/out": true,
+      "**/.venv": true,
+      "**/coverage": true,
+      "**/*.lock": true,
+      "**/package-lock.json": true,
+      "**/pnpm-lock.yaml": true,
+      "**/yarn.lock": true,
+      "**/.gitignore.backup-*": true,
+      "**/.gitignore.old-*": true
+    },
+
+    "search.followSymlinks": false,
+    "search.useIgnoreFiles": true,
+    "search.useGlobalIgnoreFiles": true,
+    "search.useParentIgnoreFiles": true,
+    "search.smartCase": true,
+    "search.maxResults": 20000,
+
+    "git.autorefresh": false,
+    "git.autofetch": false,
+    "git.fetchOnPull": false,
+    "git.decorations.enabled": true,
+    "git.untrackedChanges": "separate",
+    "git.scanRepositories": [],
+    "git.repositoryScanMaxDepth": 1,
+    "git.detectSubmodules": false,
+    "git.showProgress": false,
+    "git.statusLimit": 1000,
+    "git.openRepositoryInParentFolders": "never",
+
+    "scm.diffDecorations": "gutter",
+    "scm.diffDecorationsGutterPattern": { "added": false, "modified": true },
+    "scm.alwaysShowRepositories": false,
+
+    "explorer.autoReveal": false,
+    "explorer.decorations.badges": true,
+    "explorer.decorations.colors": true,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+      "*.ts": "${capture}.js, ${capture}.d.ts.map, ${capture}.d.ts, ${capture}.js.map",
+      "*.tsx": "${capture}.ts, ${capture}.js, ${capture}.test.ts, ${capture}.test.tsx",
+      "package.json": "package-lock.json, pnpm-lock.yaml, yarn.lock, .npmrc, .nvmrc, bun.lockb, .yarnrc.yml",
+      ".gitignore": ".gitignore.backup-*, .gitignore.old-*, .gitignore.optimized, .gitattributes",
+      "tsconfig.json": "tsconfig.*.json, tsconfig*.json",
+      "astro.config.*": "tsconfig.json, *.config.*, .env*"
+    },
+
+    "typescript.tsserver.watchOptions": {
+      "watchFile": "useFsEventsOnParentDirectory",
+      "watchDirectory": "useFsEvents",
+      "fallbackPolling": "dynamicPriority"
+    },
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "typescript.tsserver.maxTsServerMemory": 4096,
+    "typescript.tsserver.experimental.useVsCodeWatcher": false,
+
+    "telemetry.telemetryLevel": "error",
+    "extensions.experimental.affinity": {
+      "vscode.git": 1,
+      "eamodio.gitlens": 1,
+      "GitHub.copilot": 2,
+      "GitHub.copilot-chat": 2
+    },
+
+    "workbench.iconTheme": "material-icon-theme",
+
     "workbench.colorCustomizations": {
       "activityBar.activeBackground": "#f03db9",
       "activityBar.background": "#f03db9",
