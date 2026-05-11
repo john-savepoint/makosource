@@ -4,31 +4,252 @@
       "path": "../.."
     },
     {
-      "path": "../../../.."
-    },
-    {
       "path": "../../../tools"
     },
     {
       "path": "../../../../.claude"
     },
     {
-      "path": "../../../DJ Studio Playlist naming"
+      "path": "../../../../skills"
     },
     {
-      "path": "../../../discord translator"
+      "path": "../../../politicalclaims"
+    },
+    {
+      "path": "../../../custard-for-brains"
+    },
+    {
+      "path": "../../../youtube_videos"
+    },
+    {
+      "path": "../../../sp-auth"
+    },
+    {
+      "path": "../../../wp-astro-pipeline"
+    },
+    {
+      "path": "../../../anti_left_extension"
+    },
+    {
+      "path": "../../../PKM"
+    },
+    {
+      "path": "../../../agi"
+    },
+    {
+      "path": "../../../jzd-astro-migration"
+    },
+    {
+      "path": "../../../state_heirarchy"
+    },
+    {
+      "path": "../../../dannik"
+    },
+    {
+      "path": "../../../johnzealanddoyle_dev"
+    },
+    {
+      "path": "../../../website-extraction-toolkit"
+    },
+    {
+      "path": "../../../award-winning-website"
+    },
+    {
+      "path": "../../../ragaumuffin"
+    },
+    {
+      "path": "../../../graffico-rebuild"
+    },
+    {
+      "path": "../../../drive_cleanup"
     },
     {
       "path": "../../../flatmates"
     },
     {
+      "path": "../../../ragauffin"
+    },
+    {
+      "path": "../../../../personal"
+    },
+    {
+      "path": "../../../../ovh_vps6_sg01"
+    },
+    {
+      "path": "../../../../dedicated_wsl_optimisaton_dir_for_ai"
+    },
+    {
       "path": "../../../../.tmux"
     },
     {
-      "path": "../../../zhu_li"
+      "path": "../../../dave_sayre"
+    },
+    {
+      "path": "../../../../pentest"
+    },
+    {
+      "path": "../../../deobfuscation"
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "johnzealanddoyle"
+    "liveServer.settings.multiRootWorkspaceName": "skills",
+
+    "files.watcherExclude": {
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/.git/lfs/**": true,
+      "**/node_modules/**": true,
+      "**/.pnpm-store/**": true,
+      "**/.yarn/cache/**": true,
+      "**/.next/**": true,
+      "**/.nuxt/**": true,
+      "**/.astro/**": true,
+      "**/.svelte-kit/**": true,
+      "**/.turbo/**": true,
+      "**/.cache/**": true,
+      "**/.parcel-cache/**": true,
+      "**/dist/**": true,
+      "**/build/**": true,
+      "**/out/**": true,
+      "**/coverage/**": true,
+      "**/.venv/**": true,
+      "**/__pycache__/**": true,
+      "**/.mypy_cache/**": true,
+      "**/.pytest_cache/**": true,
+      "**/.ruff_cache/**": true,
+      "**/target/**": true,
+      "**/.gradle/**": true,
+      "**/.vscode-server/**": true,
+      "**/.ralph/**": true,
+      "**/.archive/**": true,
+      "**/.backup/**": true,
+      "**/font_sdf_converter/mahou-sdf/node_modules/**": true,
+      "**/FF7 2026/**": true,
+      "**/.gitignore.backup-*": true,
+      "**/*.log": true
+    },
+
+    "files.exclude": {
+      "**/.git": false,
+      "**/node_modules": true,
+      "**/.next": true,
+      "**/.astro": true,
+      "**/.turbo": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.venv": true,
+      "**/__pycache__": true,
+      "**/.mypy_cache": true,
+      "**/.pytest_cache": true,
+      "**/.ruff_cache": true,
+      "**/coverage": true,
+      "**/.DS_Store": true
+    },
+
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/.git": true,
+      "**/.next": true,
+      "**/.astro": true,
+      "**/.turbo": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/out": true,
+      "**/.venv": true,
+      "**/coverage": true,
+      "**/*.lock": true,
+      "**/package-lock.json": true,
+      "**/pnpm-lock.yaml": true,
+      "**/yarn.lock": true,
+      "**/.gitignore.backup-*": true,
+      "**/.gitignore.old-*": true
+    },
+
+    "search.followSymlinks": false,
+    "search.useIgnoreFiles": true,
+    "search.useGlobalIgnoreFiles": true,
+    "search.useParentIgnoreFiles": true,
+    "search.smartCase": true,
+    "search.maxResults": 20000,
+
+    "git.autorefresh": false,
+    "git.autofetch": false,
+    "git.fetchOnPull": false,
+    "git.decorations.enabled": true,
+    "git.untrackedChanges": "separate",
+    "git.scanRepositories": [],
+    "git.repositoryScanMaxDepth": 1,
+    "git.detectSubmodules": false,
+    "git.showProgress": false,
+    "git.statusLimit": 1000,
+    "git.openRepositoryInParentFolders": "never",
+
+    "scm.diffDecorations": "gutter",
+    "scm.diffDecorationsGutterPattern": { "added": false, "modified": true },
+    "scm.alwaysShowRepositories": false,
+
+    "explorer.autoReveal": false,
+    "explorer.decorations.badges": true,
+    "explorer.decorations.colors": true,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+      "*.ts": "${capture}.js, ${capture}.d.ts.map, ${capture}.d.ts, ${capture}.js.map",
+      "*.tsx": "${capture}.ts, ${capture}.js, ${capture}.test.ts, ${capture}.test.tsx",
+      "package.json": "package-lock.json, pnpm-lock.yaml, yarn.lock, .npmrc, .nvmrc, bun.lockb, .yarnrc.yml",
+      ".gitignore": ".gitignore.backup-*, .gitignore.old-*, .gitignore.optimized, .gitattributes",
+      "tsconfig.json": "tsconfig.*.json, tsconfig*.json",
+      "astro.config.*": "tsconfig.json, *.config.*, .env*"
+    },
+
+    "typescript.tsserver.watchOptions": {
+      "watchFile": "useFsEventsOnParentDirectory",
+      "watchDirectory": "useFsEvents",
+      "fallbackPolling": "dynamicPriority"
+    },
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "typescript.tsserver.maxTsServerMemory": 4096,
+    "typescript.tsserver.experimental.useVsCodeWatcher": false,
+
+    "telemetry.telemetryLevel": "error",
+    "extensions.experimental.affinity": {
+      "vscode.git": 1,
+      "eamodio.gitlens": 1,
+      "GitHub.copilot": 2,
+      "GitHub.copilot-chat": 2
+    },
+
+    "workbench.iconTheme": "material-icon-theme",
+
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#f03db9",
+      "activityBar.background": "#f03db9",
+      "activityBar.foreground": "#15202b",
+      "activityBar.inactiveForeground": "#15202b99",
+      "activityBarBadge.background": "#405907",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "commandCenter.border": "#e7e7e799",
+      "editorGroup.border": "#f03db9",
+      "panel.border": "#f03db9",
+      "sash.hoverBorder": "#f03db9",
+      "sideBar.border": "#f03db9",
+      "statusBar.background": "#e812a6",
+      "statusBar.border": "#e812a6",
+      "statusBar.debuggingBackground": "#12e854",
+      "statusBar.debuggingBorder": "#12e854",
+      "statusBar.debuggingForeground": "#15202b",
+      "statusBar.foreground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#f03db9",
+      "statusBarItem.remoteBackground": "#e812a6",
+      "statusBarItem.remoteForeground": "#e7e7e7",
+      "tab.activeBorder": "#f03db9",
+      "titleBar.activeBackground": "#e812a6",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.border": "#e812a6",
+      "titleBar.inactiveBackground": "#e812a699",
+      "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.remoteColor": "#e812a6",
+    "dotnet.defaultSolution": "disable"
   }
 }

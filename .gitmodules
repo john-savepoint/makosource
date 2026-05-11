@@ -1,0 +1,30 @@
+[submodule "FFNx-PR737 (reference only)"]
+	path = FFNx-PR737 (reference only)
+	url = https://github.com/julianxhokaxhiu/FFNx.git
+[submodule "font_sdf_converter/mahou-sdf"]
+	path = font_sdf_converter/mahou-sdf
+	url = https://github.com/john-savepoint/mahou-sdf.git
+[submodule "background_updater"]
+	path = background_updater
+	url = https://github.com/john-savepoint/ff7-asset-pipeline.git
+[submodule "FF7-Japanese-Mod"]
+	path = FF7-Japanese-Mod
+	url = https://github.com/john-savepoint/ff7-japanese-mod.git
+[submodule "ai_imagen_background"]
+	path = ai_imagen_background
+	url = https://github.com/john-savepoint/higgsfield-automation.git
+[submodule "ffnx-features"]
+	path = ffnx-features
+	url = https://github.com/john-savepoint/ffnx-features.git
+[submodule "ff7-modding-research"]
+	path = ff7-modding-research
+	url = https://github.com/john-savepoint/ff7-modding-research.git
+[submodule "ff7-localization-tooling"]
+	path = ff7-localization-tooling
+	url = https://github.com/john-savepoint/ff7-localization-tooling.git
+[submodule "japanese-assets-extracted"]
+	path = japanese-assets-extracted
+	url = https://github.com/john-savepoint/ff7-game-assets.git
+[submodule "docs/QHIMM"]
+	path = docs/QHIMM
+	url = https://github.com/john-savepoint/ff7-community-corpus.git

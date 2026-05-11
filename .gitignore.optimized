@@ -1,6 +1,6 @@
 # FF7 Japanese Mod Project - Optimized .gitignore
 # Created: 2026-01-24 19:10 JST
-# Updated: 2026-01-26 22:12 JST
+# Updated: 2026-01-25 22:50 JST
 # Replaced 10,634-line bloated version with efficient patterns
 
 # ============================================================================
@@ -19,43 +19,15 @@ FF7-Japanese-Mod/mods/
 assets/fonts/
 
 # Working directories (development artifacts)
-# Allow submodule pointers within these dirs (extracted to own repos in 2026-05-11 split)
 char_portrait_dbox/
-font_sdf_converter/*
-!font_sdf_converter/mahou-sdf
-video_title_charportrait/
-
-# Chrome profile data (generated cache, never commit)
-ai_imagen_background/scripts/higgsfield/.chrome_profile/
-
-# Background updater artifacts
-background_updater/output/
-background_updater/*_output/
-background_updater/test_*.png
-background_updater/test_*.dds
-background_updater/*.bin
-background_updater/*.dat
+font_sdf_converter/
 
 # Font development artifacts (test images, debug outputs)
 sdf_font/*.png
-sdf_font/*.bmp
-sdf_font/*.tiff
-sdf_font/*.rgba
-sdf_font/*.svg
 sdf_font/*_test.*
 sdf_font/*_debug.*
 sdf_font/compare_*
 sdf_font/skeleton*
-sdf_font/test*
-sdf_font/works.*
-
-# Generated charset files (can be regenerated)
-sdf_font/jafont_*_charset.txt
-
-# Project/session management (Claude Code artifacts)
-**/.project/
-**/session-transcripts/
-**/session_handoffs/
 
 # Build artifacts
 *.iro
@@ -105,16 +77,6 @@ yarn-error.log*
 *.lib
 *.exe
 *.out
-
-### Rust ###
-# Build artifacts
-**/target/
-*.rs.bk
-*.pdb
-
-# Cargo.lock: Commit for binary crates, ignore for libraries
-# background_updater is a binary, so its Cargo.lock IS committed
-!background_updater/Cargo.lock
 
 # ============================================================================
 # OPERATING SYSTEMS
@@ -167,34 +129,3 @@ temp/
 *.tar.gz
 *.rar
 *.7z
-FFNx-PR737 (reference only)
-
-# Phase A cleanup 2026-04-26 — exclude binary churn and build artifacts
-# Chrome browser profile cache from Higgsfield Playwright automation
-ai_imagen_background/scripts/higgsfield/.chrome_profile/
-
-# Packaged 7th Heaven mod (build artifact, regenerable from FF7-Japanese-Mod/)
-*.iro
-
-# Auto-generated extraction reports (regenerable from scripts/)
-*_auto.txt
-*_auto.report.txt
-
-# Session export transcripts (preserved separately in archive/sessions/)
-conversation-*.txt
-
-# Repomix code-flatten exports (regenerable from live source)
-repomix-*.md
-
-# Junk/test files (manual cleanup; never recreate)
-test-retry.txt
-remianing issues.txt
-
-# QHIMM raw data (3GB+ Discord exports + SQLite DB — RAG dataset, not versioned)
-docs/QHIMM/discord_exports/
-docs/QHIMM/database/
-docs/QHIMM/raw/
-
-# Session JSONL exports — keep on disk for reference, do not version
-archive/sessions/*.jsonl
-archive/sessions/*-session-data/
