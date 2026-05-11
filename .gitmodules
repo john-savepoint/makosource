@@ -4,3 +4,6 @@
 [submodule "background_updater"]
 	path = background_updater
 	url = https://github.com/john-savepoint/ff7-asset-pipeline.git
+[submodule "FF7-Japanese-Mod"]
+	path = FF7-Japanese-Mod
+	url = https://github.com/john-savepoint/ff7-japanese-mod.git
