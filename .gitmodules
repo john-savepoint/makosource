@@ -1,3 +1,6 @@
 [submodule "font_sdf_converter/mahou-sdf"]
 	path = font_sdf_converter/mahou-sdf
 	url = https://github.com/john-savepoint/mahou-sdf.git
+[submodule "background_updater"]
+	path = background_updater
+	url = https://github.com/john-savepoint/ff7-asset-pipeline.git
