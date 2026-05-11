@@ -7,3 +7,6 @@
 [submodule "FF7-Japanese-Mod"]
 	path = FF7-Japanese-Mod
 	url = https://github.com/john-savepoint/ff7-japanese-mod.git
+[submodule "ai_imagen_background"]
+	path = ai_imagen_background
+	url = https://github.com/john-savepoint/higgsfield-automation.git
