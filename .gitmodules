@@ -1,3 +1,6 @@
+[submodule "FFNx-PR737 (reference only)"]
+	path = FFNx-PR737 (reference only)
+	url = https://github.com/julianxhokaxhiu/FFNx.git
 [submodule "font_sdf_converter/mahou-sdf"]
 	path = font_sdf_converter/mahou-sdf
 	url = https://github.com/john-savepoint/mahou-sdf.git
