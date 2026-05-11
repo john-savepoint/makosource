@@ -10,3 +10,6 @@
 [submodule "ai_imagen_background"]
 	path = ai_imagen_background
 	url = https://github.com/john-savepoint/higgsfield-automation.git
+[submodule "ffnx-features"]
+	path = ffnx-features
+	url = https://github.com/john-savepoint/ffnx-features.git
