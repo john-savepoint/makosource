@@ -193,3 +193,7 @@ remianing issues.txt
 docs/QHIMM/discord_exports/
 docs/QHIMM/database/
 docs/QHIMM/raw/
+
+# Session JSONL exports — keep on disk for reference, do not version
+archive/sessions/*.jsonl
+archive/sessions/*-session-data/
