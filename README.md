@@ -12,12 +12,14 @@
 ### MAJOR BREAKTHROUGH ACHIEVED
 
 **We have successfully:**
+
 1. ✅ Built FFNx PR #737 from source with custom modifications
 2. ✅ Japanese fonts loading and rendering correctly
 3. ✅ Battle text, items, kernel-based text all working in Japanese
 4. ✅ First-ever Japanese text on English `ff7_en.exe`!
 
 **Remaining Issue:**
+
 - ❌ Field dialogue shows garbled text (encoding interpretation issue)
 
 **For the next agent:** Read `docs/SESSION_HANDOFF_2025-11-26.md` FIRST - it contains complete context for continuing this work.
@@ -29,6 +31,7 @@
 This project implements native Japanese text rendering support for Final Fantasy VII PC (1998) using the FFNx graphics driver. The goal is to create a language-learning edition that allows players to switch between languages (English, Japanese, and potentially others) to aid in language acquisition.
 
 **Key Features:**
+
 - Multi-page Japanese font system (6 texture pages, ~2,300 characters)
 - FA-FE character encoding support
 - Runtime language switching (future - Phase 2)
@@ -123,6 +126,7 @@ ff70G-japanese-mod/
 ### For Implementers (Starting Phase 0)
 
 **Essential reading order:**
+
 1. [docs/IMPLEMENTATION_READINESS_ASSESSMENT.md](docs/IMPLEMENTATION_READINESS_ASSESSMENT.md) - What we need
 2. [docs/IMPLEMENTATION_VERIFICATION_CHECKLIST.md](docs/IMPLEMENTATION_VERIFICATION_CHECKLIST.md) - Validation questions
 3. [docs/FFNX_JAPANESE_IMPLEMENTATION_MASTER_BIBLE.md](docs/FFNX_JAPANESE_IMPLEMENTATION_MASTER_BIBLE.md) - Complete spec
@@ -135,6 +139,7 @@ ff70G-japanese-mod/
 ### Current Status: ✅ **Phase 1 - Major Progress**
 
 **What We Have (COMPLETED):**
+
 - ✅ Complete research (9 sessions, 40+ findings)
 - ✅ Character mapping (1,536 characters in 6 textures)
 - ✅ Font texture assets (6 PNG + 6 TEX files)
@@ -144,23 +149,25 @@ ff70G-japanese-mod/
 - ✅ Japanese fonts loading correctly
 
 **What We Need (CURRENT BLOCKER):**
+
 - ❌ Fix field dialogue encoding interpretation
 - ⚠️ Text byte pipeline needs debugging
 - ⚠️ May need text parser hook for FA-FE encoding on English exe
 
 ### Implementation Timeline
 
-| Phase | Description | Duration | Status |
-|-------|-------------|----------|--------|
-| **Phase 0** | Research & Setup | 3-6 days | ✅ **COMPLETE** |
-| **Phase 1** | Core Japanese Rendering | 1-2 weeks | ⏳ **95% COMPLETE** - field text encoding issue remaining |
-| **Phase 2** | Texture Allocation Override | 1-2 weeks | ✅ Working (via PR #737) |
-| **Phase 3** | Assembly Hooks & Renderer | 3-4 weeks | ⏳ Partial - need text parser hook |
-| **Phase 4** | Advanced Features (Furigana, Language Switching) | 4-6 weeks | ⏸️ Future |
-| **Phase 5** | Polish & Distribution | 2-4 weeks | ⏸️ Future |
-| **Phase 6** | Crowdsourced Translation System | 8-10 weeks | ⏸️ Optional Future |
+| Phase       | Description                                      | Duration   | Status                                                    |
+| ----------- | ------------------------------------------------ | ---------- | --------------------------------------------------------- |
+| **Phase 0** | Research & Setup                                 | 3-6 days   | ✅ **COMPLETE**                                           |
+| **Phase 1** | Core Japanese Rendering                          | 1-2 weeks  | ⏳ **95% COMPLETE** - field text encoding issue remaining |
+| **Phase 2** | Texture Allocation Override                      | 1-2 weeks  | ✅ Working (via PR #737)                                  |
+| **Phase 3** | Assembly Hooks & Renderer                        | 3-4 weeks  | ⏳ Partial - need text parser hook                        |
+| **Phase 4** | Advanced Features (Furigana, Language Switching) | 4-6 weeks  | ⏸️ Future                                                 |
+| **Phase 5** | Polish & Distribution                            | 2-4 weeks  | ⏸️ Future                                                 |
+| **Phase 6** | Crowdsourced Translation System                  | 8-10 weeks | ⏸️ Optional Future                                        |
 
 **Total Estimated Timeline:**
+
 - **Core Implementation** (Phase 0-3): 10-14 weeks
 - **With Advanced Features** (Phase 0-5): 14-22 weeks
 - **Complete System** (Phase 0-6): 22-32 weeks
@@ -172,6 +179,7 @@ ff70G-japanese-mod/
 ### For Windows Transfer (Essential)
 
 **MUST transfer these:**
+
 ```
 docs/FFNX_JAPANESE_IMPLEMENTATION_MASTER_BIBLE.md
 docs/IMPLEMENTATION_READINESS_ASSESSMENT.md
@@ -210,35 +218,35 @@ reference/repomix_snapshots/ (can regenerate if needed)
 
 ### Core Documents
 
-| Document | Purpose | Read Time |
-|----------|---------|-----------|
-| [DOCUMENTATION_MAP.md](DOCUMENTATION_MAP.md) | Navigation guide | 5 min |
-| [docs/README.md](docs/README.md) | Docs directory guide | 5 min |
-| [docs/reference/BEGINNER_GUIDE.md](docs/reference/BEGINNER_GUIDE.md) | Beginner-friendly intro | 10 min |
-| [docs/PROJECT_OVERVIEW.md](docs/PROJECT_OVERVIEW.md) | Complete architecture | 30 min |
+| Document                                                             | Purpose                 | Read Time |
+| -------------------------------------------------------------------- | ----------------------- | --------- |
+| [DOCUMENTATION_MAP.md](DOCUMENTATION_MAP.md)                         | Navigation guide        | 5 min     |
+| [docs/README.md](docs/README.md)                                     | Docs directory guide    | 5 min     |
+| [docs/reference/BEGINNER_GUIDE.md](docs/reference/BEGINNER_GUIDE.md) | Beginner-friendly intro | 10 min    |
+| [docs/PROJECT_OVERVIEW.md](docs/PROJECT_OVERVIEW.md)                 | Complete architecture   | 30 min    |
 
 ### Implementation Documents (Phase 0+)
 
-| Document | Purpose | Audience |
-|----------|---------|----------|
-| [docs/IMPLEMENTATION_READINESS_ASSESSMENT.md](docs/IMPLEMENTATION_READINESS_ASSESSMENT.md) | Phase 0 requirements | Implementers |
-| [docs/IMPLEMENTATION_VERIFICATION_CHECKLIST.md](docs/IMPLEMENTATION_VERIFICATION_CHECKLIST.md) | Verification questions | Implementers, QA |
+| Document                                                                                               | Purpose                 | Audience         |
+| ------------------------------------------------------------------------------------------------------ | ----------------------- | ---------------- |
+| [docs/IMPLEMENTATION_READINESS_ASSESSMENT.md](docs/IMPLEMENTATION_READINESS_ASSESSMENT.md)             | Phase 0 requirements    | Implementers     |
+| [docs/IMPLEMENTATION_VERIFICATION_CHECKLIST.md](docs/IMPLEMENTATION_VERIFICATION_CHECKLIST.md)         | Verification questions  | Implementers, QA |
 | [docs/FFNX_JAPANESE_IMPLEMENTATION_MASTER_BIBLE.md](docs/FFNX_JAPANESE_IMPLEMENTATION_MASTER_BIBLE.md) | Complete technical spec | All implementers |
 
 ### Reference Documents
 
-| Document | Purpose | Use |
-|----------|---------|-----|
-| [docs/reference/TOOL_GUIDE.md](docs/reference/TOOL_GUIDE.md) | Tool chain guide | How-to |
-| [docs/reference/AF3DN_ANALYSIS.md](docs/reference/AF3DN_ANALYSIS.md) | Reverse engineering | Reference |
-| [docs/character_maps/JAFONT_CHARACTER_MAP.md](docs/character_maps/JAFONT_CHARACTER_MAP.md) | Character encoding | Reference |
-| [docs/TEST_PROCEDURE.md](docs/TEST_PROCEDURE.md) | Testing guide | QA |
+| Document                                                                                   | Purpose             | Use       |
+| ------------------------------------------------------------------------------------------ | ------------------- | --------- |
+| [docs/reference/TOOL_GUIDE.md](docs/reference/TOOL_GUIDE.md)                               | Tool chain guide    | How-to    |
+| [docs/reference/AF3DN_ANALYSIS.md](docs/reference/AF3DN_ANALYSIS.md)                       | Reverse engineering | Reference |
+| [docs/character_maps/JAFONT_CHARACTER_MAP.md](docs/character_maps/JAFONT_CHARACTER_MAP.md) | Character encoding  | Reference |
+| [docs/TEST_PROCEDURE.md](docs/TEST_PROCEDURE.md)                                           | Testing guide       | QA        |
 
 ### Roadmap Documents
 
-| Document | Purpose | Audience |
-|----------|---------|----------|
-| [docs/roadmap/FEATURE_ROADMAP.md](docs/roadmap/FEATURE_ROADMAP.md) | All phases (1-6) | Product management |
+| Document                                                                                                 | Purpose               | Audience              |
+| -------------------------------------------------------------------------------------------------------- | --------------------- | --------------------- |
+| [docs/roadmap/FEATURE_ROADMAP.md](docs/roadmap/FEATURE_ROADMAP.md)                                       | All phases (1-6)      | Product management    |
 | [docs/roadmap/FFNX_CROWDSOURCED_TRANSLATION_SPEC.md](docs/roadmap/FFNX_CROWDSOURCED_TRANSLATION_SPEC.md) | Phase 6 detailed spec | Full-stack developers |
 
 ---
@@ -250,6 +258,7 @@ reference/repomix_snapshots/ (can regenerate if needed)
 **Goal:** Prepare Windows build environment and verify assumptions
 
 **Tasks:**
+
 1. Build FFNx from source on Windows
 2. Reverse-engineer AF3DN.P (reference implementation)
 3. Create test environment setup guide
@@ -273,6 +282,7 @@ reference/repomix_snapshots/ (can regenerate if needed)
 ### Phase 4: Advanced Features (4-6 weeks) - Future
 
 **Features:**
+
 - Furigana support (pronunciation guides)
 - Runtime language switching (F12 hotkey)
 - Battle text support
@@ -286,6 +296,7 @@ reference/repomix_snapshots/ (can regenerate if needed)
 ### Phase 5: Polish & Distribution (2-4 weeks) - Future
 
 **Tasks:**
+
 - 7th Heaven .iro package
 - User installation guide
 - Performance optimization
@@ -299,6 +310,7 @@ reference/repomix_snapshots/ (can regenerate if needed)
 ### Phase 6: Crowdsourced Translation (8-10 weeks) - Optional
 
 **Features:**
+
 - In-game submission hotkey (Ctrl+T)
 - Web-based voting/moderation platform
 - Automated .iro export
@@ -313,17 +325,20 @@ reference/repomix_snapshots/ (can regenerate if needed)
 ## 🧠 Technical Summary
 
 **Problem:**
+
 - FF7 English PC uses 1 font texture (256 characters max)
 - Japanese needs ~2,300 characters (6 texture pages)
 - Requires multi-page font system + FA-FE encoding
 
 **Solution:**
+
 - Extend FFNx driver (open-source, community-maintained)
 - Replicate AF3DN.P's proven architecture (Square Enix, 2013)
 - Implement 6-texture system + FA-FE byte markers
 - Build for extensibility (future multi-language support)
 
 **Why This Works:**
+
 - Square Enix already proved it works (AF3DN.P reference)
 - FFNx is actively maintained and extensible
 - We have complete character mapping (1,331 chars, 100% accurate)
@@ -339,6 +354,7 @@ This project requires building FFNx PR #737 from source. For a complete step-by-
 ### Quick Start (If You're Experienced)
 
 **Prerequisites:**
+
 - Windows 10/11 (64-bit)
 - Visual Studio 2022 Community with C++ workload
 - CMake 3.15+ (we used portable CMake 3.27.8 at `C:\cmake-3.27.8\`)
@@ -346,6 +362,7 @@ This project requires building FFNx PR #737 from source. For a complete step-by-
 - vcpkg (cloned to `C:\vcpkg\`)
 
 **Clone PR #737:**
+
 ```batch
 cd C:\
 git clone --recursive https://github.com/julianxhokaxhiu/FFNx.git FFNx
@@ -355,6 +372,7 @@ git checkout pr737-japanese
 ```
 
 **Bootstrap vcpkg:**
+
 ```batch
 cd C:\vcpkg
 .\bootstrap-vcpkg.bat
@@ -362,6 +380,7 @@ cd C:\vcpkg
 ```
 
 **Configure and Build:**
+
 ```batch
 cd C:\FFNx
 cmake --preset Release
@@ -369,15 +388,18 @@ cmake --build .build --config Release
 ```
 
 **Or from WSL2:**
+
 ```bash
 powershell.exe -Command "cd C:\FFNx; C:\cmake-3.27.8\cmake-3.27.8-windows-x86_64\bin\cmake.exe --build .build --config Release"
 ```
 
 **Build Output:**
+
 - `C:\FFNx\.build\Release\FFNx.dll`
 - Auto-copies to FF7 directories as `AF3DN.P`
 
 **Build Time:**
+
 - First build: 30-60 minutes (vcpkg compiles dependencies)
 - Subsequent builds: 1-3 minutes
 
@@ -395,12 +417,14 @@ See [docs/SESSION_HANDOFF_2025-11-26.md](docs/SESSION_HANDOFF_2025-11-26.md) for
 ## 🔧 Tools & Dependencies
 
 **Required for Building FFNx:**
+
 - **Visual Studio 2022 Community** - C++ compiler with Windows SDK
 - **CMake 3.15+** - Build system generator
 - **vcpkg** - C++ package manager (compiles dependencies from source)
 - **Git** - Version control
 
 **Optional Tools:**
+
 - **Ghidra** - For reverse engineering AF3DN.P
 - **x64dbg** - Dynamic analysis/debugging
 - **Tex Tools v1.0.4.7** - TEX ↔ PNG conversion
