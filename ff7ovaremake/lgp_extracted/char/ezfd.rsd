@@ -1,7 +1,0 @@
-@RSD940102
-# Output by SGI RSD fileset library libRsdObj.
-PLY=EZFE.PLY
-MAT=EZFE.MAT
-GRP=EZFE.GRP
-# Texture files
-NTEX=0

@@ -1,7 +1,0 @@
-@RSD940102
-# created by Meditor on Sat Dec 07 02:43:35 1996
-PLY=ELB.PLY
-MAT=ELB.MAT
-GRP=ELB.GRP
-# Number of TIM (Texture) Files
-NTEX=0

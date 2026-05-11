@@ -1,9 +1,0 @@
-@RSD940102
-# Output by SGI RSD fileset library libRsdObj.
-PLY=CFCB.PLY
-MAT=CFCB.MAT
-GRP=CFCB.GRP
-# Texture files
-NTEX=2
-TEX[0]=CFCC.TIM
-TEX[1]=CFCD.TIM

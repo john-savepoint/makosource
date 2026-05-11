@@ -1,9 +1,0 @@
-@RSD940102
-# Output by SGI RSD fileset library libRsdObj.
-PLY=AWIF.PLY
-MAT=AWIF.MAT
-GRP=AWIF.GRP
-# Texture files
-NTEX=2
-TEX[0]=AWJA.TIM
-TEX[1]=AWJB.TIM

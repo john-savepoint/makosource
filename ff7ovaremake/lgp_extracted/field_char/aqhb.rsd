@@ -1,7 +1,0 @@
-@RSD940102
-# Output by SGI RSD fileset library libRsdObj.
-PLY=AQHC.PLY
-MAT=AQHC.MAT
-GRP=AQHC.GRP
-# Texture files
-NTEX=0

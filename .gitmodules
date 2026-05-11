@@ -13,3 +13,6 @@
 [submodule "ffnx-features"]
 	path = ffnx-features
 	url = https://github.com/john-savepoint/ffnx-features.git
+[submodule "ff7-modding-research"]
+	path = ff7-modding-research
+	url = https://github.com/john-savepoint/ff7-modding-research.git

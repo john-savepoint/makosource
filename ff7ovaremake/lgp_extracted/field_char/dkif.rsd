@@ -1,8 +1,0 @@
-@RSD940102
-# Output by SGI RSD fileset library libRsdObj.
-PLY=DKJA.PLY
-MAT=DKJA.MAT
-GRP=DKJA.GRP
-# Texture files
-NTEX=1
-TEX[0]=DKJB.TIM

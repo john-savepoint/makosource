@@ -1,7 +1,0 @@
-@RSD940102
-# Output by SGI RSD fileset library libRsdObj.
-PLY=EZHE.PLY
-MAT=EZHE.MAT
-GRP=EZHE.GRP
-# Texture files
-NTEX=0

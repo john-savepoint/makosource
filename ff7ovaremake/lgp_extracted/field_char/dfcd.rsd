@@ -1,7 +1,0 @@
-@RSD940102
-# Output by SGI RSD fileset library libRsdObj.
-PLY=DFCE.PLY
-MAT=DFCE.MAT
-GRP=DFCE.GRP
-# Texture files
-NTEX=0

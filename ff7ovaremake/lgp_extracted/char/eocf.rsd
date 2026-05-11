@@ -1,8 +1,0 @@
-@RSD940102
-# Output by SGI RSD fileset library libRsdObj.
-PLY=EODA.PLY
-MAT=EODA.MAT
-GRP=EODA.GRP
-# Texture files
-NTEX=1
-TEX[0]=EODB.TIM

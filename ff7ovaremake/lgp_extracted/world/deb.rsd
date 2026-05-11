@@ -1,7 +1,0 @@
-@RSD940102
-# created by Meditor on Wed Oct 02 17:20:46 1996
-PLY=DEC.PLY
-MAT=DEC.MAT
-GRP=DEC.GRP
-# Number of TIM (Texture) Files
-NTEX=0

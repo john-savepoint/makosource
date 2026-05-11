@@ -1,7 +1,0 @@
-@RSD940102
-# Output by SGI RSD fileset library libRsdObj.
-PLY=BEEA.PLY
-MAT=BEEA.MAT
-GRP=BEEA.GRP
-# Texture files
-NTEX=0
