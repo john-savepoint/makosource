@@ -19,9 +19,10 @@ FF7-Japanese-Mod/mods/
 assets/fonts/
 
 # Working directories (development artifacts)
+# Allow submodule pointers within these dirs (extracted to own repos in 2026-05-11 split)
 char_portrait_dbox/
-font_sdf_converter/
-font_sdf_converter */
+font_sdf_converter/*
+!font_sdf_converter/mahou-sdf
 video_title_charportrait/
 
 # Chrome profile data (generated cache, never commit)
