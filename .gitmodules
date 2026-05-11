@@ -22,3 +22,6 @@
 [submodule "japanese-assets-extracted"]
 	path = japanese-assets-extracted
 	url = https://github.com/john-savepoint/ff7-game-assets.git
+[submodule "docs/QHIMM"]
+	path = docs/QHIMM
+	url = https://github.com/john-savepoint/ff7-community-corpus.git
